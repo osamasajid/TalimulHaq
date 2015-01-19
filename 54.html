@@ -1,0 +1,279 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page54</title>
+</head>
+
+<body onload="load54()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_54{left:460px;top:1136px;}
+#t2_54{left:110px;top:262px;}
+#t3_54{left:110px;top:299px;}
+#t4_54{left:110px;top:315px;}
+#t5_54{left:110px;top:331px;}
+#t6_54{left:110px;top:347px;}
+#t7_54{left:110px;top:370px;}
+#t8_54{left:110px;top:411px;}
+#t9_54{left:127px;top:411px;}
+#ta_54{left:110px;top:431px;}
+#tb_54{left:127px;top:431px;}
+#tc_54{left:110px;top:451px;}
+#td_54{left:127px;top:451px;}
+#te_54{left:110px;top:470px;}
+#tf_54{left:127px;top:470px;}
+#tg_54{left:110px;top:502px;}
+#th_54{left:150px;top:502px;}
+#ti_54{left:205px;top:497px;}
+#tj_54{left:693px;top:666px;}
+#tk_54{left:693px;top:682px;}
+#tl_54{left:693px;top:714px;}
+#tm_54{left:693px;top:729px;}
+#tn_54{left:110px;top:745px;}
+#to_54{left:110px;top:761px;}
+#tp_54{left:110px;top:777px;}
+#tq_54{left:110px;top:793px;}
+#tr_54{left:110px;top:824px;}
+#ts_54{left:110px;top:844px;}
+#tt_54{left:128px;top:844px;}
+#tu_54{left:110px;top:866px;}
+#tv_54{left:128px;top:866px;}
+#tw_54{left:110px;top:887px;}
+#tx_54{left:128px;top:887px;}
+#ty_54{left:110px;top:909px;}
+#tz_54{left:128px;top:909px;}
+#t10_54{left:110px;top:931px;}
+#t11_54{left:128px;top:931px;}
+#t12_54{left:685px;top:988px;}
+#t13_54{left:685px;top:1004px;}
+#t14_54{left:685px;top:1022px;}
+
+.s3_54{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT54;
+	color: rgb(0,0,0);
+}
+
+.s1_54{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT54;
+	color: rgb(0,0,0);
+}
+
+.s2_54{
+	FONT-SIZE: 55px;
+	FONT-FAMILY: TimesNewRomanPS-BoldItalicMT;
+	color: rgb(0,0,0);
+	FONT-WEIGHT: bold;
+	FONT-STYLE: italic;
+}
+
+.s5_54{
+	FONT-SIZE: 55px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT54;
+	color: rgb(0,0,0);
+}
+
+.s7_54{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT54;
+	color: rgb(0,0,0);
+}
+
+.s6_54{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT54;
+	color: rgb(0,0,0);
+}
+
+.s4_54{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT54;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT54;
+	src :url("54/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT54;
+	src :url("54/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_54" class="t s1_54">54</div>
+<div id="t2_54" class="t s2_54">Bismillahi Ar-Rahmani Ar-Rahim </div>
+<div id="t3_54" class="t s2_54">1- Kul huwa Allahu ahad </div>
+<div id="t4_54" class="t s2_54">2- Allahu-s-samad </div>
+<div id="t5_54" class="t s2_54">3- Laialed ualamulad </div>
+<div id="t6_54" class="t s2_54">4- Ualamiaku-l-lahu kufuwan ahad </div>
+<div id="t7_54" class="t s3_54">In the name of Allah, Most Gracious, Most Merciful </div>
+<div id="t8_54" class="t s4_54">1.</div>
+<div id="t9_54" class="t s3_54">Say: He is Allah, the One and Only; </div>
+<div id="ta_54" class="t s4_54">2.</div>
+<div id="tb_54" class="t s3_54">Allah, the Eternal, Absolute; </div>
+<div id="tc_54" class="t s4_54">3.</div>
+<div id="td_54" class="t s3_54">He begetteth not, nor is He begotten; </div>
+<div id="te_54" class="t s4_54">4.</div>
+<div id="tf_54" class="t s3_54">And there is none like unto Him. </div>
+<div id="tg_54" class="t s5_54">Surat </div>
+<div id="th_54" class="t s5_54">Al-Falaq </div>
+<div id="ti_54" class="t s6_54">The Daybreak, Dawn (Quran Surah 113)</div>
+<div id="tj_54" class="t s2_54">Bismillahi Ar-</div>
+<div id="tk_54" class="t s2_54">Rahmani Ar-Rahim </div>
+<div id="tl_54" class="t s2_54">1- Kul A'udhu bi-</div>
+<div id="tm_54" class="t s2_54">Rabbi-l-falaq </div>
+<div id="tn_54" class="t s2_54">2- Minsherri ma-khalaq </div>
+<div id="to_54" class="t s2_54">3- Wa minsherri ghasiqin idha Waqab </div>
+<div id="tp_54" class="t s2_54">4- Wa minsherri n-naffathati fi-l-'Uqad </div>
+<div id="tq_54" class="t s2_54">5- Wa minsherri hasidin idha hasad </div>
+<div id="tr_54" class="t s3_54">In the name of Allah, Most Gracious, Most Merciful </div>
+<div id="ts_54" class="t s7_54">1.</div>
+<div id="tt_54" class="t s6_54">Say: I seek refuge with the Lord of the Dawn </div>
+<div id="tu_54" class="t s7_54">2.</div>
+<div id="tv_54" class="t s6_54">From the mischief of created things; </div>
+<div id="tw_54" class="t s7_54">3.</div>
+<div id="tx_54" class="t s6_54">From the mischief of Darkness as it overspreads; </div>
+<div id="ty_54" class="t s7_54">4.</div>
+<div id="tz_54" class="t s6_54">From the mischief of those who practice secret arts; </div>
+<div id="t10_54" class="t s7_54">5.</div>
+<div id="t11_54" class="t s6_54">And from the mischief of the envious one as he practices envy. </div>
+<div id="t12_54" class="t s5_54">Surat – An-Nâs </div>
+<div id="t13_54" class="t s1_54">Mankind (Quran </div>
+<div id="t14_54" class="t s1_54">Surah 114)</div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg54Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg54"><object width="935" height="1210" data="54/54.svg" type="image/svg+xml" id="pdf54" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld54" type="text/javascript">
+
+var isIE = false;
+var f54 = [['t2_54',780],['t3_54',578],['t4_54',420],['t5_54',490],['t6_54',811],['t7_54',1411],['t9_54',971],['tb_54',771],['td_54',992],['tf_54',883],['ti_54',1197],['tj_54',326],['tk_54',454],['tl_54',402],['tn_54',546],['to_54',870],['tp_54',899],['tq_54',817],['tr_54',1411],['tt_54',1326],['tv_54',1065],['tx_54',1436],['tz_54',1520],['t11_54',1849],['t12_54',363],['t13_54',411],['t14_54',271]];
+function load54(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f54);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 41;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_54");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

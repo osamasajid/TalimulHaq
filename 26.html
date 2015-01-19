@@ -1,0 +1,203 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page26</title>
+</head>
+
+<body onload="load26()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_26{left:460px;top:1136px;}
+#t2_26{left:137px;top:153px;}
+#t3_26{left:165px;top:153px;}
+#t4_26{left:137px;top:220px;}
+#t5_26{left:165px;top:220px;}
+#t6_26{left:137px;top:549px;}
+#t7_26{left:165px;top:549px;}
+#t8_26{left:555px;top:847px;}
+#t9_26{left:582px;top:847px;}
+#ta_26{left:137px;top:880px;}
+#tb_26{left:165px;top:880px;}
+#tc_26{left:165px;top:898px;}
+#td_26{left:325px;top:931px;}
+#te_26{left:115px;top:1051px;}
+#tf_26{left:416px;top:1073px;}
+
+.s1_26{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT26;
+	color: rgb(0,0,0);
+}
+
+.s3_26{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT26;
+	color: rgb(0,0,0);
+}
+
+.s2_26{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT26;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT26;
+	src :url("26/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT26;
+	src :url("26/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_26" class="t s1_26">26</div>
+<div id="t2_26" class="t s1_26">7.</div>
+<div id="t3_26" class="t s1_26">Then make KHILAL of the BEARD. </div>
+<div id="t4_26" class="t s1_26">8.</div>
+<div id="t5_26" class="t s1_26">Thereafter wash the RIGHT HAND INCLUDING(, THE ELBOW THREE times. </div>
+<div id="t6_26" class="t s1_26">9.</div>
+<div id="t7_26" class="t s1_26">Then wash the LEFT HAND INCLUDING the ELBOW. </div>
+<div id="t8_26" class="t s1_26">10.</div>
+<div id="t9_26" class="t s1_26">Then make KHILAL of the FINGERS. </div>
+<div id="ta_26" class="t s1_26">11.</div>
+<div id="tb_26" class="t s1_26">Thereafter wet the hands and pass them over the head, ears and neck. This must be done ONCE only. It is </div>
+<div id="tc_26" class="t s1_26">known as MASAH. </div>
+<div id="td_26" class="t s2_26">DU'A WHILST MAKING WUDHU </div>
+<div id="te_26" class="t s3_26">O Allah' forgive my sins and give expansion (abundance) in my home and grant me blessings in </div>
+<div id="tf_26" class="t s3_26">my substance. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg26Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg26"><object width="935" height="1210" data="26/26.svg" type="image/svg+xml" id="pdf26" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld26" type="text/javascript">
+
+var isIE = false;
+var f26 = [['t3_26',912],['t5_26',2018],['t7_26',1408],['t9_26',960],['tb_26',2594],['tc_26',486],['td_26',1137],['te_26',2820],['tf_26',415]];
+function load26(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f26);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 16;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_26");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

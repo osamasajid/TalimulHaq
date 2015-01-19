@@ -1,0 +1,245 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page63</title>
+</head>
+
+<body onload="load63()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_63{left:460px;top:1136px;}
+#t2_63{left:110px;top:54px;}
+#t3_63{left:372px;top:393px;}
+#t4_63{left:401px;top:414px;}
+#t5_63{left:340px;top:435px;}
+#t6_63{left:326px;top:457px;}
+#t7_63{left:314px;top:478px;}
+#t8_63{left:291px;top:499px;}
+#t9_63{left:271px;top:521px;}
+#ta_63{left:329px;top:542px;}
+#tb_63{left:362px;top:563px;}
+#tc_63{left:381px;top:585px;}
+#td_63{left:369px;top:646px;}
+#te_63{left:341px;top:666px;}
+#tf_63{left:325px;top:685px;}
+#tg_63{left:227px;top:705px;}
+#th_63{left:249px;top:724px;}
+#ti_63{left:228px;top:744px;}
+#tj_63{left:225px;top:763px;}
+#tk_63{left:295px;top:782px;}
+#tl_63{left:344px;top:802px;}
+#tm_63{left:362px;top:821px;}
+#tn_63{left:110px;top:849px;}
+#to_63{left:110px;top:870px;}
+#tp_63{left:110px;top:894px;}
+#tq_63{left:110px;top:918px;}
+#tr_63{left:110px;top:942px;}
+#ts_63{left:110px;top:966px;}
+#tt_63{left:138px;top:1041px;}
+#tu_63{left:165px;top:1041px;}
+
+.s3_63{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT63;
+	color: rgb(0,0,0);
+}
+
+.s1_63{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT63;
+	color: rgb(0,0,0);
+}
+
+.s5_63{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT63;
+	color: rgb(0,0,0);
+}
+
+.s2_63{
+	FONT-SIZE: 82px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT63;
+	color: rgb(0,0,0);
+}
+
+.s4_63{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT63;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT63;
+	src :url("63/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT63;
+	src :url("63/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_63" class="t s1_63">63</div>
+<div id="t2_63" class="t s2_63">This Ayah should be memorized and read once after every Farz Salaah. </div>
+<div id="t3_63" class="t s3_63">Allaho la illaha illa huwa. </div>
+<div id="t4_63" class="t s3_63">Al haiyul qayyum </div>
+<div id="t5_63" class="t s3_63">La ta'khozuhoo sinatun wala naum </div>
+<div id="t6_63" class="t s3_63">Lahu ma fis samaa waate wama fil ard </div>
+<div id="t7_63" class="t s3_63">Manzallazi yashfa'u indadhu illa bi iznehi </div>
+<div id="t8_63" class="t s3_63">Ya'lamu man baina adideehim wama khalfahum </div>
+<div id="t9_63" class="t s3_63">Walla yuheetuna bi shai'im min ilmihi illa bimashaa'a </div>
+<div id="ta_63" class="t s3_63">Wase'a kursiuhus samaawaati wal ard </div>
+<div id="tb_63" class="t s3_63">Wala ya'oododhu hifzuhuma </div>
+<div id="tc_63" class="t s3_63">Wa huwal Aliul Azeem </div>
+<div id="td_63" class="t s4_63">God! There is no god but He. </div>
+<div id="te_63" class="t s4_63">The Ever-Living, the Self-Subsisting. </div>
+<div id="tf_63" class="t s4_63">Neither slumber overtakes Him, nor sleep. </div>
+<div id="tg_63" class="t s4_63">To him belongs whatever is in the heavens and whatever is in the earth. </div>
+<div id="th_63" class="t s4_63">Who is he that can intercede with Him except by His permission. </div>
+<div id="ti_63" class="t s4_63">He knows that which is in front of them and that which is behind them. </div>
+<div id="tj_63" class="t s4_63">And they encompass nothing of His knowledge except what He pleases. </div>
+<div id="tk_63" class="t s4_63">His Throne extends over the heavens and the earth. </div>
+<div id="tl_63" class="t s4_63">He is never tired of preserving them. </div>
+<div id="tm_63" class="t s4_63">He is the Most High, the Great. </div>
+<div id="tn_63" class="t s5_63">3 Raknats Witr-Wajib </div>
+<div id="to_63" class="t s2_63">This three-Rak'ah Salaah is offered during the ESHA Salaah. </div>
+<div id="tp_63" class="t s2_63">First the two Rak’aats are performed and alter completing the Tashahhud stand up in </div>
+<div id="tq_63" class="t s2_63">the original position with the arms folded. </div>
+<div id="tr_63" class="t s2_63">After reciting " BISMILLAH" and "ALHAMDO" and a Surah, say "ALLAHU </div>
+<div id="ts_63" class="t s2_63">AKBAR" raising the hands up to the ears and folding </div>
+<div id="tt_63" class="t s2_63">1.</div>
+<div id="tu_63" class="t s2_63">them below the navel. Thereafter recite the DU'A QUNOOT (softly) </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg63Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg63"><object width="935" height="1210" data="63/63.svg" type="image/svg+xml" id="pdf63" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld63" type="text/javascript">
+
+var isIE = false;
+var f63 = [['t2_63',2361],['t3_63',761],['t4_63',529],['t5_63',1019],['t6_63',1129],['t7_63',1226],['t8_63',1414],['t9_63',1576],['ta_63',1108],['tb_63',843],['tc_63',693],['td_63',790],['te_63',1010],['tf_63',1139],['tg_63',1923],['th_63',1750],['ti_63',1914],['tj_63',1939],['tk_63',1376],['tl_63',987],['tm_63',843],['tn_63',705],['to_63',2015],['tp_63',2803],['tq_63',1389],['tr_63',2607],['ts_63',1766],['tu_63',2263]];
+function load63(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f63);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 31;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_63");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

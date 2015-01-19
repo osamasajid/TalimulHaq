@@ -1,0 +1,238 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page57</title>
+</head>
+
+<body onload="load57()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_57{left:460px;top:1136px;}
+#t2_57{left:110px;top:54px;}
+#t3_57{left:110px;top:75px;}
+#t4_57{left:138px;top:223px;}
+#t5_57{left:165px;top:223px;}
+#t6_57{left:165px;top:240px;}
+#t7_57{left:165px;top:274px;}
+#t8_57{left:165px;top:291px;}
+#t9_57{left:165px;top:309px;}
+#ta_57{left:165px;top:327px;}
+#tb_57{left:165px;top:345px;}
+#tc_57{left:165px;top:363px;}
+#td_57{left:165px;top:381px;}
+#te_57{left:165px;top:399px;}
+#tf_57{left:165px;top:417px;}
+#tg_57{left:165px;top:434px;}
+#th_57{left:137px;top:961px;}
+#ti_57{left:165px;top:961px;}
+#tj_57{left:110px;top:1050px;}
+#tk_57{left:110px;top:1083px;}
+
+.s1_57{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT57;
+	color: rgb(0,0,0);
+}
+
+.s4_57{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT57;
+	color: rgb(0,0,0);
+}
+
+.s5_57{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(255,0,0);
+	FONT-STYLE: italic;
+}
+
+.s3_57{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT57;
+	color: rgb(0,0,0);
+}
+
+.s2_57{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT57;
+	color: rgb(0,0,0);
+}
+
+.s6_57{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(0,101,0);
+	FONT-STYLE: italic;
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT57;
+	src :url("57/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT57;
+	src :url("57/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT57;
+	src :url("57/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_57" class="t s1_57">57</div>
+<div id="t2_57" class="t s2_57">If one does NOT stand erect after RUKU and merely lifts ones head and goes into Sajdah then </div>
+<div id="t3_57" class="t s2_57">the SALAAH. will NOT be VALID, and it will be NECESSARY to repeat the SALAAH. </div>
+<div id="t4_57" class="t s3_57">•</div>
+<div id="t5_57" class="t s4_57">FIRST SAJDAH</div>
+<div id="t6_57" class="t s1_57">Now saying ALLAHU AKBAR and placing both hands on the knees, go into Sajdah. </div>
+<div id="t7_57" class="t s1_57">(On completing the Takbeer one should have reached the position of Sajdah). When going into Sajdah first </div>
+<div id="t8_57" class="t s1_57">place the KNEES on the ground, then the </div>
+<div id="t9_57" class="t s1_57">HANDS, then the NOSE and then the </div>
+<div id="ta_57" class="t s1_57">FOREHEAD. The FACE should rest between the </div>
+<div id="tb_57" class="t s1_57">two HANDS with FINGERS pointing towards </div>
+<div id="tc_57" class="t s1_57">the Qibla. When in Sajdah the FEET should be </div>
+<div id="td_57" class="t s1_57">upright with the TOES pointing towards the </div>
+<div id="te_57" class="t s1_57">Qibla. The ARMS should not touch the sides of </div>
+<div id="tf_57" class="t s1_57">the BODY nor the ground. The STOMACH </div>
+<div id="tg_57" class="t s1_57">should be away from the THIGHS. </div>
+<div id="th_57" class="t s3_57">•</div>
+<div id="ti_57" class="t s1_57">In Sajdah recite softly at least THREE or FIVE times: </div>
+<div id="tj_57" class="t s5_57">Subhaana Rabbi yal aala </div>
+<div id="tk_57" class="t s6_57">All glory be to my lord, the Most High.</div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg57Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg57"><object width="935" height="1210" data="57/57.svg" type="image/svg+xml" id="pdf57" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld57" type="text/javascript">
+
+var isIE = false;
+var f57 = [['t2_57',2769],['t3_57',2641],['t5_57',441],['t6_57',2099],['t7_57',2627],['t8_57',1016],['t9_57',929],['ta_57',1218],['tb_57',1144],['tc_57',1154],['td_57',1080],['te_57',1170],['tf_57',1082],['tg_57',861],['ti_57',1322],['tj_57',623],['tk_57',954]];
+function load57(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f57);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 21;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_57");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

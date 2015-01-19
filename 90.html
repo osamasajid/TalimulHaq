@@ -1,0 +1,206 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page90</title>
+</head>
+
+<body onload="load90()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_90{left:460px;top:1136px;}
+#t2_90{left:110px;top:54px;}
+#t3_90{left:110px;top:73px;}
+#t4_90{left:110px;top:93px;}
+#t5_90{left:110px;top:112px;}
+#t6_90{left:138px;top:851px;}
+#t7_90{left:138px;top:878px;}
+#t8_90{left:165px;top:878px;}
+#t9_90{left:138px;top:911px;}
+#ta_90{left:165px;top:911px;}
+#tb_90{left:138px;top:944px;}
+#tc_90{left:165px;top:944px;}
+#td_90{left:165px;top:962px;}
+#te_90{left:138px;top:995px;}
+#tf_90{left:165px;top:995px;}
+#tg_90{left:138px;top:1028px;}
+#th_90{left:165px;top:1028px;}
+#ti_90{left:165px;top:1046px;}
+#tj_90{left:138px;top:1079px;}
+#tk_90{left:165px;top:1079px;}
+#tl_90{left:138px;top:1112px;}
+#tm_90{left:165px;top:1112px;}
+
+.s1_90{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT90;
+	color: rgb(0,0,0);
+}
+
+.s2_90{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT90;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT90;
+	src :url("90/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_90" class="t s1_90">90</div>
+<div id="t2_90" class="t s2_90">Khimaar will suffice, but it is SUNNAT to have FIVE. It is MAKROOH to use less than THREE, except </div>
+<div id="t3_90" class="t s2_90">when it is NOT available. It is the duty of the husband to bear the burial expenses of the wife. The Kafn </div>
+<div id="t4_90" class="t s2_90">could be smoked with LOBAAN, etc. but NOT scented with Itr. Children's Kafn should be cut to </div>
+<div id="t5_90" class="t s2_90">appropriate size. </div>
+<div id="t6_90" class="t s2_90">GHUSL REQUIREMENTS </div>
+<div id="t7_90" class="t s1_90">1.</div>
+<div id="t8_90" class="t s1_90">Clean Luke warm water. </div>
+<div id="t9_90" class="t s1_90">2.</div>
+<div id="ta_90" class="t s1_90">A broad bench, stand or platform. </div>
+<div id="tb_90" class="t s1_90">3.</div>
+<div id="tc_90" class="t s1_90">Two large buckets for warm water, one small bucket or utensil, this is for the water to be mixed with a little </div>
+<div id="td_90" class="t s1_90">camphor for use at the end of the Ghusl. </div>
+<div id="te_90" class="t s1_90">4.</div>
+<div id="tf_90" class="t s1_90">Two jugs or mugs for pouring water over the corpse. </div>
+<div id="tg_90" class="t s1_90">5.</div>
+<div id="th_90" class="t s1_90">Leaves of BER tree (Zizyphus Jujuba) if easily available, to be mixed with the like warm water and a cake </div>
+<div id="ti_90" class="t s1_90">of soap. </div>
+<div id="tj_90" class="t s1_90">6.</div>
+<div id="tk_90" class="t s1_90">250g. of cotton wool. </div>
+<div id="tl_90" class="t s1_90">7.</div>
+<div id="tm_90" class="t s1_90">Two Thebans and two bag like mittens with strips. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg90Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg90"><object width="935" height="1210" data="90/90.svg" type="image/svg+xml" id="pdf90" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld90" type="text/javascript">
+
+var isIE = false;
+var f90 = [['t2_90',2826],['t3_90',2792],['t4_90',2612],['t5_90',444],['t6_90',759],['t8_90',605],['ta_90',830],['tc_90',2640],['td_90',986],['tf_90',1296],['th_90',2610],['ti_90',194],['tk_90',527],['tm_90',1241]];
+function load90(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f90);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 23;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_90");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page69</title>
+</head>
+
+<body onload="load69()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_69{left:460px;top:1136px;}
+#t2_69{left:315px;top:54px;}
+#t3_69{left:316px;top:91px;}
+#t4_69{left:138px;top:127px;}
+#t5_69{left:165px;top:127px;}
+#t6_69{left:110px;top:219px;}
+#t7_69{left:110px;top:256px;}
+#t8_69{left:137px;top:325px;}
+#t9_69{left:165px;top:325px;}
+#ta_69{left:137px;top:491px;}
+#tb_69{left:165px;top:491px;}
+#tc_69{left:137px;top:791px;}
+#td_69{left:165px;top:791px;}
+#te_69{left:137px;top:1029px;}
+#tf_69{left:165px;top:1029px;}
+
+.s1_69{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT69;
+	color: rgb(0,0,0);
+}
+
+.s4_69{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(0,176,80);
+	FONT-STYLE: italic;
+}
+
+.s3_69{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT69;
+	color: rgb(255,0,0);
+}
+
+.s2_69{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT69;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT69;
+	src :url("69/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT69;
+	src :url("69/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_69" class="t s1_69">69</div>
+<div id="t2_69" class="t s2_69">FARZ (COMPULSORY IN SALAAH) </div>
+<div id="t3_69" class="t s2_69">THERE ARE SIX FARZ IN SALAAH</div>
+<div id="t4_69" class="t s1_69">1.</div>
+<div id="t5_69" class="t s1_69">TAKBEERE TAHREEMA </div>
+<div id="t6_69" class="t s3_69">ALLAHU AKBAR </div>
+<div id="t7_69" class="t s4_69">Allah Is The Most High </div>
+<div id="t8_69" class="t s1_69">2.</div>
+<div id="t9_69" class="t s1_69">QIYAAM (standing) position. </div>
+<div id="ta_69" class="t s1_69">3.</div>
+<div id="tb_69" class="t s1_69">QIRAAT (Recitation of at least three ayas or one long aayat of the QURAAN). </div>
+<div id="tc_69" class="t s1_69">4.</div>
+<div id="td_69" class="t s1_69">RUKU (to bow down). </div>
+<div id="te_69" class="t s1_69">5.</div>
+<div id="tf_69" class="t s1_69">Both the SAJDAHS (to prostrate). </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg69Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg69"><object width="935" height="1210" data="69/69.svg" type="image/svg+xml" id="pdf69" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld69" type="text/javascript">
+
+var isIE = false;
+var f69 = [['t2_69',1218],['t3_69',1209],['t5_69',675],['t6_69',574],['t7_69',689],['t9_69',745],['tb_69',1944],['td_69',566],['tf_69',843]];
+function load69(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f69);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 16;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_69");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page71</title>
+</head>
+
+<body onload="load71()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_71{left:460px;top:1136px;}
+#t2_71{left:137px;top:54px;}
+#t3_71{left:165px;top:54px;}
+#t4_71{left:458px;top:98px;}
+#t5_71{left:372px;top:119px;}
+#t6_71{left:135px;top:143px;}
+#t7_71{left:135px;top:164px;}
+#t8_71{left:153px;top:182px;}
+#t9_71{left:153px;top:199px;}
+#ta_71{left:153px;top:217px;}
+#tb_71{left:153px;top:235px;}
+#tc_71{left:138px;top:255px;}
+#td_71{left:138px;top:282px;}
+#te_71{left:165px;top:282px;}
+#tf_71{left:138px;top:315px;}
+#tg_71{left:165px;top:315px;}
+#th_71{left:138px;top:349px;}
+#ti_71{left:165px;top:349px;}
+#tj_71{left:138px;top:382px;}
+#tk_71{left:165px;top:382px;}
+#tl_71{left:165px;top:399px;}
+#tm_71{left:137px;top:433px;}
+#tn_71{left:165px;top:433px;}
+#to_71{left:137px;top:466px;}
+#tp_71{left:165px;top:466px;}
+#tq_71{left:137px;top:499px;}
+#tr_71{left:165px;top:499px;}
+#ts_71{left:137px;top:532px;}
+#tt_71{left:165px;top:532px;}
+#tu_71{left:137px;top:565px;}
+#tv_71{left:165px;top:565px;}
+#tw_71{left:137px;top:598px;}
+#tx_71{left:165px;top:598px;}
+#ty_71{left:137px;top:631px;}
+#tz_71{left:165px;top:631px;}
+#t10_71{left:137px;top:664px;}
+#t11_71{left:165px;top:664px;}
+#t12_71{left:137px;top:697px;}
+#t13_71{left:165px;top:697px;}
+#t14_71{left:137px;top:730px;}
+#t15_71{left:165px;top:730px;}
+#t16_71{left:165px;top:748px;}
+#t17_71{left:137px;top:781px;}
+#t18_71{left:165px;top:781px;}
+#t19_71{left:165px;top:799px;}
+#t1a_71{left:137px;top:832px;}
+#t1b_71{left:165px;top:832px;}
+#t1c_71{left:165px;top:850px;}
+#t1d_71{left:138px;top:883px;}
+#t1e_71{left:165px;top:883px;}
+#t1f_71{left:165px;top:901px;}
+#t1g_71{left:165px;top:919px;}
+#t1h_71{left:138px;top:952px;}
+#t1i_71{left:165px;top:952px;}
+#t1j_71{left:165px;top:970px;}
+#t1k_71{left:138px;top:1003px;}
+#t1l_71{left:165px;top:1003px;}
+#t1m_71{left:138px;top:1036px;}
+#t1n_71{left:165px;top:1036px;}
+#t1o_71{left:138px;top:1069px;}
+#t1p_71{left:165px;top:1069px;}
+
+.s3_71{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT71;
+	color: rgb(0,0,0);
+}
+
+.s1_71{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT71;
+	color: rgb(0,0,0);
+}
+
+.s2_71{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT71;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT71;
+	src :url("71/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT71;
+	src :url("71/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_71" class="t s1_71">71</div>
+<div id="t2_71" class="t s1_71">14.</div>
+<div id="t3_71" class="t s1_71">To say six additional TAKBEERS in both Eid Salaah. </div>
+<div id="t4_71" class="t s2_71">21 </div>
+<div id="t5_71" class="t s2_71">SUNNATS IN SALAAH </div>
+<div id="t6_71" class="t s1_71">Q. What is meant by SUNNAT in SALAAH?</div>
+<div id="t7_71" class="t s1_71">A. Things which have been proven to be done in Salaah by the holy Prophet (Peace be upon him) but not so </div>
+<div id="t8_71" class="t s1_71">much stress has been laid upon them as is laid upon things FARZ and WAJIB are known as SUNNAT. </div>
+<div id="t9_71" class="t s1_71">If any of these are missed unknowingly, neither does it invalidate the Salaah nor does Sajdah Sahw </div>
+<div id="ta_71" class="t s1_71">become necessary. If these are left knowingly, the Salaah is valid and there is no need for Sajdah Sahw. </div>
+<div id="tb_71" class="t s1_71">However, such a person is condemned.</div>
+<div id="tc_71" class="t s3_71">There are 21 Sunnats in Salaah </div>
+<div id="td_71" class="t s1_71">1.</div>
+<div id="te_71" class="t s1_71">To raise the hands up to the EARS before saying TAKBEERE TAHREEMA. </div>
+<div id="tf_71" class="t s1_71">2.</div>
+<div id="tg_71" class="t s1_71">While raising the hands for Takbeer, keep the fingers of both the hands RAISED and facing the QIBLAH. </div>
+<div id="th_71" class="t s1_71">3.</div>
+<div id="ti_71" class="t s1_71">Not to BEND the HEAD when saying Takbeer. </div>
+<div id="tj_71" class="t s1_71">4.</div>
+<div id="tk_71" class="t s1_71">Saying Takbeer Tahrimi and other Takbeer ALOUD by the IMAAM according to the NEED, while going </div>
+<div id="tl_71" class="t s1_71">from one RUKN (posture) to the other. </div>
+<div id="tm_71" class="t s1_71">5.</div>
+<div id="tn_71" class="t s1_71">To fold the RIGHT hand around the LEFT below the NAVEL. </div>
+<div id="to_71" class="t s1_71">6.</div>
+<div id="tp_71" class="t s1_71">Saying SANAA. </div>
+<div id="tq_71" class="t s1_71">7.</div>
+<div id="tr_71" class="t s1_71">To recite TA'AWWUZ. </div>
+<div id="ts_71" class="t s1_71">8.</div>
+<div id="tt_71" class="t s1_71">To recite the complete BISMILLAH. </div>
+<div id="tu_71" class="t s1_71">9.</div>
+<div id="tv_71" class="t s1_71">To recite only SURAH FATIHA in the THIRD and FOURTH Rak’aats of FARDH Salaah. </div>
+<div id="tw_71" class="t s1_71">10.</div>
+<div id="tx_71" class="t s1_71">To say AA'MEEN (softly). </div>
+<div id="ty_71" class="t s1_71">11.</div>
+<div id="tz_71" class="t s1_71">To recite Sanaa, Ta'awwuz and Aameen SOFTLY. </div>
+<div id="t10_71" class="t s1_71">12.</div>
+<div id="t11_71" class="t s1_71">To recite as much QIRAAT as is SUNNAT for every Salaah. </div>
+<div id="t12_71" class="t s1_71">13.</div>
+<div id="t13_71" class="t s1_71">To say TASBIH at least THREE times each in RUKU and SAJDAH. </div>
+<div id="t14_71" class="t s1_71">14.</div>
+<div id="t15_71" class="t s1_71">To keep the BACK and the HEAD in the SAME LEVEL while holding the KNEES with FINGERS of </div>
+<div id="t16_71" class="t s1_71">both the hands in RUKU. </div>
+<div id="t17_71" class="t s1_71">15.</div>
+<div id="t18_71" class="t s1_71">Saying by Imam SAMIALLAHU LIMAN HAMIDAH in Qawmah followed by RABBANA LAKAL </div>
+<div id="t19_71" class="t s1_71">HAMD by Muqtadi. The MUNFARID(individual) should say both TASMI and TAHMEED. </div>
+<div id="t1a_71" class="t s1_71">16.</div>
+<div id="t1b_71" class="t s1_71">While going into SAJDAH, FIRST place the KNEES, then the HANDS and lastly the FOREHEAD on the </div>
+<div id="t1c_71" class="t s1_71">GROUND. </div>
+<div id="t1d_71" class="t s1_71">17.</div>
+<div id="t1e_71" class="t s1_71">In QA'IDAH or JALSA, placing the LEFT FOOT on the ground HORIZONTALLY and sitting upon it and </div>
+<div id="t1f_71" class="t s1_71">RAISING the RIGHT FOOT VERTICALLY so that the TOES are facing the QIBLAH and resting both </div>
+<div id="t1g_71" class="t s1_71">the HANDS on the THIGHS. </div>
+<div id="t1h_71" class="t s1_71">18.</div>
+<div id="t1i_71" class="t s1_71">To RAISE the INDEX FINGER of the RIGHT HAND as one says "ASH HADU ALLAH ILAHA" in </div>
+<div id="t1j_71" class="t s1_71">TASHAHHUD. </div>
+<div id="t1k_71" class="t s1_71">19.</div>
+<div id="t1l_71" class="t s1_71">To recite DUROOD SHARIF in QA'IDAH AKHEERA after TASHAHHUD. </div>
+<div id="t1m_71" class="t s1_71">20.</div>
+<div id="t1n_71" class="t s1_71">To read DUA after DUROOD SHARIF. </div>
+<div id="t1o_71" class="t s1_71">21.</div>
+<div id="t1p_71" class="t s1_71">To turn the FACE for SALLAAM towards the RIGHT FIRST and then to the LEFT </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg71Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg71"><object width="935" height="1210" data="71/71.svg" type="image/svg+xml" id="pdf71" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld71" type="text/javascript">
+
+var isIE = false;
+var f71 = [['t3_71',1326],['t5_71',764],['t6_71',1122],['t7_71',2646],['t8_71',2530],['t9_71',2431],['ta_71',2543],['tb_71',959],['tc_71',834],['te_71',1904],['tg_71',2610],['ti_71',1169],['tk_71',2603],['tl_71',959],['tn_71',1542],['tp_71',412],['tr_71',585],['tt_71',913],['tv_71',2242],['tx_71',664],['tz_71',1246],['t11_71',1503],['t13_71',1698],['t15_71',2523],['t16_71',625],['t18_71',2501],['t19_71',2286],['t1b_71',2617],['t1e_71',2638],['t1f_71',2560],['t1g_71',724],['t1i_71',2511],['t1l_71',1911],['t1n_71',992],['t1p_71',2068]];
+function load71(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f71);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 62;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_71");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

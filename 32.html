@@ -1,0 +1,276 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page32</title>
+</head>
+
+<body onload="load32()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_32{left:460px;top:1136px;}
+#t2_32{left:137px;top:54px;}
+#t3_32{left:165px;top:54px;}
+#t4_32{left:193px;top:87px;}
+#t5_32{left:220px;top:87px;}
+#t6_32{left:193px;top:120px;}
+#t7_32{left:220px;top:120px;}
+#t8_32{left:193px;top:153px;}
+#t9_32{left:220px;top:153px;}
+#ta_32{left:138px;top:186px;}
+#tb_32{left:165px;top:186px;}
+#tc_32{left:355px;top:186px;}
+#td_32{left:401px;top:186px;}
+#te_32{left:483px;top:186px;}
+#tf_32{left:529px;top:186px;}
+#tg_32{left:138px;top:220px;}
+#th_32{left:165px;top:220px;}
+#ti_32{left:138px;top:253px;}
+#tj_32{left:165px;top:253px;}
+#tk_32{left:138px;top:286px;}
+#tl_32{left:165px;top:286px;}
+#tm_32{left:138px;top:319px;}
+#tn_32{left:165px;top:319px;}
+#to_32{left:138px;top:352px;}
+#tp_32{left:165px;top:352px;}
+#tq_32{left:472px;top:352px;}
+#tr_32{left:509px;top:352px;}
+#ts_32{left:707px;top:352px;}
+#tt_32{left:165px;top:373px;}
+#tu_32{left:138px;top:410px;}
+#tv_32{left:165px;top:410px;}
+#tw_32{left:547px;top:410px;}
+#tx_32{left:607px;top:410px;}
+#ty_32{left:138px;top:446px;}
+#tz_32{left:165px;top:446px;}
+#t10_32{left:114px;top:483px;}
+#t11_32{left:165px;top:483px;}
+#t12_32{left:192px;top:516px;}
+#t13_32{left:220px;top:516px;}
+#t14_32{left:192px;top:549px;}
+#t15_32{left:220px;top:549px;}
+#t16_32{left:192px;top:582px;}
+#t17_32{left:220px;top:582px;}
+#t18_32{left:192px;top:615px;}
+#t19_32{left:220px;top:615px;}
+#t1a_32{left:138px;top:648px;}
+#t1b_32{left:165px;top:648px;}
+#t1c_32{left:138px;top:685px;}
+#t1d_32{left:165px;top:685px;}
+#t1e_32{left:138px;top:721px;}
+#t1f_32{left:165px;top:721px;}
+#t1g_32{left:138px;top:758px;}
+#t1h_32{left:165px;top:758px;}
+#t1i_32{left:138px;top:795px;}
+#t1j_32{left:165px;top:795px;}
+#t1k_32{left:138px;top:831px;}
+#t1l_32{left:165px;top:831px;}
+
+.s1_32{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT32;
+	color: rgb(0,0,0);
+}
+
+.s2_32{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT32;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT32;
+	src :url("32/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_32" class="t s1_32">32</div>
+<div id="t2_32" class="t s1_32">9.</div>
+<div id="t3_32" class="t s1_32">Translate the Duaas read at the following times: </div>
+<div id="t4_32" class="t s1_32">a.</div>
+<div id="t5_32" class="t s1_32">before begining Wudhu </div>
+<div id="t6_32" class="t s1_32">b.</div>
+<div id="t7_32" class="t s1_32">whilst performing Wudhu </div>
+<div id="t8_32" class="t s1_32">c.</div>
+<div id="t9_32" class="t s1_32">after completing Wudhu. </div>
+<div id="ta_32" class="t s1_32">10.</div>
+<div id="tb_32" class="t s1_32">During Wudhu one should sit .</div>
+<div id="tc_32" class="t s1_32">............</div>
+<div id="td_32" class="t s1_32">and face the .</div>
+<div id="te_32" class="t s1_32">............</div>
+<div id="tf_32" class="t s1_32">if possible. </div>
+<div id="tg_32" class="t s1_32">11.</div>
+<div id="th_32" class="t s1_32">Mention the benefits of using the MISWAAK. </div>
+<div id="ti_32" class="t s1_32">12.</div>
+<div id="tj_32" class="t s1_32">The using of Miswaak is: a) Mustahab b) Sunnah c) Farz. </div>
+<div id="tk_32" class="t s1_32">13.</div>
+<div id="tl_32" class="t s1_32">Explain the term MASAH and the procedure of making Masah Of the neck. </div>
+<div id="tm_32" class="t s1_32">14.</div>
+<div id="tn_32" class="t s1_32">Explain the term KHILAL. </div>
+<div id="to_32" class="t s2_32">15.</div>
+<div id="tp_32" class="t s2_32">Both the feet should be washed With the .</div>
+<div id="tq_32" class="t s2_32">.......</div>
+<div id="tr_32" class="t s2_32">hand and the finger of the .</div>
+<div id="ts_32" class="t s2_32">... hand should </div>
+<div id="tt_32" class="t s2_32">be used for the Khila of the toes. </div>
+<div id="tu_32" class="t s2_32">16.</div>
+<div id="tv_32" class="t s2_32">Khilal of the toes should begin at III' toe and at the .</div>
+<div id="tw_32" class="t s2_32">............</div>
+<div id="tx_32" class="t s2_32">toe. </div>
+<div id="ty_32" class="t s2_32">17.</div>
+<div id="tz_32" class="t s2_32">Explain: </div>
+<div id="t10_32" class="t s1_32">.</div>
+<div id="t11_32" class="t s1_32">Farz </div>
+<div id="t12_32" class="t s1_32">a.</div>
+<div id="t13_32" class="t s1_32">Sunnah </div>
+<div id="t14_32" class="t s1_32">b.</div>
+<div id="t15_32" class="t s1_32">Mustahab </div>
+<div id="t16_32" class="t s1_32">c.</div>
+<div id="t17_32" class="t s1_32">Makrooh </div>
+<div id="t18_32" class="t s1_32">d.</div>
+<div id="t19_32" class="t s1_32">Nawaqis. </div>
+<div id="t1a_32" class="t s2_32">18.</div>
+<div id="t1b_32" class="t s2_32">Mention the Faraa'iz, Sunnats, Mustahab, Makroohs and Nawaqis of Wudhu. </div>
+<div id="t1c_32" class="t s2_32">19.</div>
+<div id="t1d_32" class="t s2_32">Will the Wudhu break if blood or Pus does not flow from the wound? </div>
+<div id="t1e_32" class="t s2_32">20.</div>
+<div id="t1f_32" class="t s2_32">What happens if a person doubts of having washed a certain part or not? </div>
+<div id="t1g_32" class="t s2_32">21.</div>
+<div id="t1h_32" class="t s2_32">Mention three points regarding Masah over a bandage. </div>
+<div id="t1i_32" class="t s2_32">22.</div>
+<div id="t1j_32" class="t s2_32">Is it necessary to make Wudhu after having taken a bath? </div>
+<div id="t1k_32" class="t s2_32">23.</div>
+<div id="t1l_32" class="t s2_32">Does fluid that flows out of the eye while yawning, break the Wudhu? </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg32Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg32"><object width="935" height="1210" data="32/32.svg" type="image/svg+xml" id="pdf32" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld32" type="text/javascript">
+
+var isIE = false;
+var f32 = [['t3_32',1175],['t5_32',584],['t7_32',637],['t9_32',615],['tb_32',758],['td_32',327],['tf_32',269],['th_32',1143],['tj_32',1412],['tl_32',1861],['tn_32',667],['tp_32',1228],['tr_32',792],['ts_32',430],['tt_32',958],['tv_32',1528],['t1b_32',2264],['t1d_32',2042],['t1f_32',2122],['t1h_32',1607],['t1j_32',1679],['t1l_32',2064]];
+function load32(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f32);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 58;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_32");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

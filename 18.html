@@ -1,0 +1,269 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page18</title>
+</head>
+
+<body onload="load18()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_18{left:460px;top:1136px;}
+#t2_18{left:138px;top:54px;}
+#t3_18{left:165px;top:54px;}
+#t4_18{left:165px;top:80px;}
+#t5_18{left:138px;top:122px;}
+#t6_18{left:165px;top:122px;}
+#t7_18{left:165px;top:148px;}
+#t8_18{left:138px;top:189px;}
+#t9_18{left:165px;top:189px;}
+#ta_18{left:138px;top:231px;}
+#tb_18{left:165px;top:231px;}
+#tc_18{left:294px;top:273px;}
+#td_18{left:587px;top:273px;}
+#te_18{left:229px;top:318px;}
+#tf_18{left:596px;top:318px;}
+#tg_18{left:291px;top:361px;}
+#th_18{left:593px;top:361px;}
+#ti_18{left:138px;top:395px;}
+#tj_18{left:165px;top:395px;}
+#tk_18{left:138px;top:436px;}
+#tl_18{left:165px;top:436px;}
+#tm_18{left:138px;top:478px;}
+#tn_18{left:165px;top:478px;}
+#to_18{left:138px;top:519px;}
+#tp_18{left:165px;top:519px;}
+#tq_18{left:138px;top:560px;}
+#tr_18{left:165px;top:560px;}
+#ts_18{left:165px;top:587px;}
+#tt_18{left:451px;top:627px;}
+#tu_18{left:138px;top:685px;}
+#tv_18{left:165px;top:685px;}
+#tw_18{left:138px;top:726px;}
+#tx_18{left:165px;top:726px;}
+#ty_18{left:138px;top:767px;}
+#tz_18{left:165px;top:767px;}
+#t10_18{left:138px;top:809px;}
+#t11_18{left:165px;top:809px;}
+#t12_18{left:138px;top:850px;}
+#t13_18{left:165px;top:850px;}
+#t14_18{left:165px;top:877px;}
+#t15_18{left:138px;top:918px;}
+#t16_18{left:165px;top:918px;}
+#t17_18{left:138px;top:959px;}
+#t18_18{left:165px;top:959px;}
+#t19_18{left:138px;top:1001px;}
+#t1a_18{left:165px;top:1001px;}
+#t1b_18{left:165px;top:1027px;}
+#t1c_18{left:138px;top:1068px;}
+#t1d_18{left:165px;top:1068px;}
+#t1e_18{left:138px;top:1110px;}
+#t1f_18{left:165px;top:1110px;}
+
+.s1_18{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT18;
+	color: rgb(0,0,0);
+}
+
+.s2_18{
+	FONT-SIZE: 97px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT18;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT18;
+	src :url("18/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT18;
+	src :url("18/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_18" class="t s1_18">18</div>
+<div id="t2_18" class="t s1_18">2.</div>
+<div id="t3_18" class="t s1_18">Once again every Person that lived on this earth from the time of Hazrat AADAM (Alayhis Salaam) up to, </div>
+<div id="t4_18" class="t s1_18">the final day would be given new life. </div>
+<div id="t5_18" class="t s1_18">3.</div>
+<div id="t6_18" class="t s1_18">They will all gather before Allah Ta’aala for judgment in the MAIDAAN-ES-HASHR (Field of </div>
+<div id="t7_18" class="t s1_18">Resurrection). </div>
+<div id="t8_18" class="t s1_18">4.</div>
+<div id="t9_18" class="t s1_18">They would have to give an account of their deeds. </div>
+<div id="ta_18" class="t s1_18">5.</div>
+<div id="tb_18" class="t s1_18">The day on which this will be done is; called </div>
+<div id="tc_18" class="t s1_18">YAUM-UL-HASHR :</div>
+<div id="td_18" class="t s1_18">Day of Resurrection </div>
+<div id="te_18" class="t s1_18">YAUM-UL-JAZA and YAUMUD DEEN :</div>
+<div id="tf_18" class="t s1_18">Day of Judgment </div>
+<div id="tg_18" class="t s1_18">YAUM-UL-HISAAB :</div>
+<div id="th_18" class="t s1_18">Day of Reckoning </div>
+<div id="ti_18" class="t s1_18">6.</div>
+<div id="tj_18" class="t s1_18">The good would he blessed and rewarded with JANNAT or PARADISE. </div>
+<div id="tk_18" class="t s1_18">7.</div>
+<div id="tl_18" class="t s1_18">The evil ones would be punished in JAHANNAM (Hell) </div>
+<div id="tm_18" class="t s1_18">8.</div>
+<div id="tn_18" class="t s1_18">Besides the Kuffaar and Mushrikeen, Allah Ta’aala will forgive whomsoever He wishes. </div>
+<div id="to_18" class="t s1_18">9.</div>
+<div id="tp_18" class="t s1_18">KUFFAAR - Plural of KAAFIR meaning one who disbelieves in Allah. </div>
+<div id="tq_18" class="t s1_18">10.</div>
+<div id="tr_18" class="t s1_18">MUSHRIKEEN - Plural of MUSHRIK meaning one who associates with Allah Ta’aala any partner in His </div>
+<div id="ts_18" class="t s1_18">being or attributes. </div>
+<div id="tt_18" class="t s2_18">QUESTIONS</div>
+<div id="tu_18" class="t s1_18">1.</div>
+<div id="tv_18" class="t s1_18">What does Islam teach? </div>
+<div id="tw_18" class="t s1_18">2.</div>
+<div id="tx_18" class="t s1_18">What is the meaning of Kalima Shahadat? </div>
+<div id="ty_18" class="t s1_18">3.</div>
+<div id="tz_18" class="t s1_18">Give another name for Kalima Tayyeba? </div>
+<div id="t10_18" class="t s1_18">4.</div>
+<div id="t11_18" class="t s1_18">What does Iman (Belief) mean to a Muslim? </div>
+<div id="t12_18" class="t s1_18">5.</div>
+<div id="t13_18" class="t s1_18">A Muslim has to proclaim faith in 7 things. These are mentioned in Iman-E-Mufassal. What are these 7 </div>
+<div id="t14_18" class="t s1_18">things. </div>
+<div id="t15_18" class="t s1_18">6.</div>
+<div id="t16_18" class="t s1_18">What is the meaning of Kalima Tauheed? </div>
+<div id="t17_18" class="t s1_18">7.</div>
+<div id="t18_18" class="t s1_18">What are the five Pillars of Islam? </div>
+<div id="t19_18" class="t s1_18">8.</div>
+<div id="t1a_18" class="t s1_18">Read the following and explain their meanings, </div>
+<div id="t1b_18" class="t s1_18">(A) Kalima Tamjeed (B) The 5th Kalima. (C) Iman-E-Mujmal (D) Iman E-Mufassal. </div>
+<div id="t1c_18" class="t s1_18">9.</div>
+<div id="t1d_18" class="t s1_18">Translate the following into English. </div>
+<div id="t1e_18" class="t s1_18">10.</div>
+<div id="t1f_18" class="t s1_18">Who are the Kiraaman Kaatibeen and what do they do? </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg18Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg18"><object width="935" height="1210" data="18/18.svg" type="image/svg+xml" id="pdf18" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld18" type="text/javascript">
+
+var isIE = false;
+var f18 = [['t3_18',2612],['t4_18',930],['t6_18',2351],['t9_18',1254],['tb_18',1098],['tc_18',550],['td_18',497],['te_18',1067],['tf_18',422],['tg_18',570],['th_18',449],['tj_18',1795],['tl_18',1394],['tn_18',2181],['tp_18',1763],['tr_18',2607],['ts_18',461],['tv_18',584],['tx_18',1035],['tz_18',1002],['t11_18',1094],['t13_18',2533],['t16_18',1021],['t18_18',841],['t1a_18',1162],['t1b_18',2086],['t1d_18',901],['t1f_18',1362]];
+function load18(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f18);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 52;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_18");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

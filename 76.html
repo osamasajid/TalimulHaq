@@ -1,0 +1,296 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page76</title>
+</head>
+
+<body onload="load76()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_76{left:460px;top:1136px;}
+#t2_76{left:110px;top:54px;}
+#t3_76{left:110px;top:72px;}
+#t4_76{left:137px;top:98px;}
+#t5_76{left:137px;top:124px;}
+#t6_76{left:165px;top:124px;}
+#t7_76{left:137px;top:158px;}
+#t8_76{left:165px;top:158px;}
+#t9_76{left:137px;top:192px;}
+#ta_76{left:165px;top:192px;}
+#tb_76{left:137px;top:226px;}
+#tc_76{left:165px;top:226px;}
+#td_76{left:165px;top:244px;}
+#te_76{left:427px;top:244px;}
+#tf_76{left:137px;top:278px;}
+#tg_76{left:165px;top:278px;}
+#th_76{left:165px;top:296px;}
+#ti_76{left:137px;top:330px;}
+#tj_76{left:165px;top:330px;}
+#tk_76{left:165px;top:348px;}
+#tl_76{left:165px;top:366px;}
+#tm_76{left:165px;top:384px;}
+#tn_76{left:165px;top:402px;}
+#to_76{left:137px;top:436px;}
+#tp_76{left:165px;top:436px;}
+#tq_76{left:165px;top:454px;}
+#tr_76{left:137px;top:488px;}
+#ts_76{left:165px;top:488px;}
+#tt_76{left:165px;top:506px;}
+#tu_76{left:137px;top:540px;}
+#tv_76{left:165px;top:540px;}
+#tw_76{left:348px;top:565px;}
+#tx_76{left:138px;top:591px;}
+#ty_76{left:165px;top:591px;}
+#tz_76{left:138px;top:624px;}
+#t10_76{left:165px;top:624px;}
+#t11_76{left:138px;top:657px;}
+#t12_76{left:165px;top:657px;}
+#t13_76{left:138px;top:690px;}
+#t14_76{left:165px;top:690px;}
+#t15_76{left:138px;top:723px;}
+#t16_76{left:165px;top:723px;}
+#t17_76{left:138px;top:756px;}
+#t18_76{left:165px;top:756px;}
+#t19_76{left:165px;top:774px;}
+#t1a_76{left:138px;top:807px;}
+#t1b_76{left:165px;top:807px;}
+#t1c_76{left:138px;top:840px;}
+#t1d_76{left:165px;top:840px;}
+#t1e_76{left:319px;top:866px;}
+#t1f_76{left:138px;top:1022px;}
+#t1g_76{left:165px;top:1022px;}
+#t1h_76{left:165px;top:1040px;}
+#t1i_76{left:138px;top:1074px;}
+#t1j_76{left:165px;top:1074px;}
+#t1k_76{left:165px;top:1092px;}
+
+.s1_76{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT76;
+	color: rgb(0,0,0);
+}
+
+.s3_76{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT76;
+	color: rgb(0,0,0);
+}
+
+.s2_76{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT76;
+	color: rgb(0,0,0);
+}
+
+.s4_76{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT76;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT76;
+	src :url("76/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT76;
+	src :url("76/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT76;
+	src :url("76/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_76" class="t s1_76">76</div>
+<div id="t2_76" class="t s2_76">N.B. A PERSON SHOULD NOT RUN IN THE MUSJID TO JOIN THE JAMAAT IF HE IS AFRAID OF </div>
+<div id="t3_76" class="t s2_76">MISSING ANY RAKA'AT. IT IS NOT PROPER TO RUN IN THE MUSJID.</div>
+<div id="t4_76" class="t s1_76">THE QAZAA SALAAT </div>
+<div id="t5_76" class="t s3_76">•</div>
+<div id="t6_76" class="t s1_76">Any Salaat performed in its TIME: is called ADAA. </div>
+<div id="t7_76" class="t s3_76">•</div>
+<div id="t8_76" class="t s1_76">FARZ and WAAJIB Salaat performed AFTER its time has EXPIRED will be called QAZAA. </div>
+<div id="t9_76" class="t s3_76">•</div>
+<div id="ta_76" class="t s1_76">E.g. If ASR Salaat is performed at MAGHRIB time, it will be Qazaa. </div>
+<div id="tb_76" class="t s3_76">•</div>
+<div id="tc_76" class="t s1_76">To DELAY any FARZ, WAJIB or SUNNATE MUAKKADAH Salaat INTENTIONALLY and cause </div>
+<div id="td_76" class="t s1_76">them to become QAZAA is very SINFUL.</div>
+<div id="te_76" class="t s1_76">. </div>
+<div id="tf_76" class="t s3_76">•</div>
+<div id="tg_76" class="t s1_76">It is COMPULSORY upon every MUSLIM to perform the missed number of Farz and Wajib Salaal since </div>
+<div id="th_76" class="t s1_76">the time one has become baaligh (reached the age of PUBERTY). </div>
+<div id="ti_76" class="t s3_76">•</div>
+<div id="tj_76" class="t s1_76">If a person has missed less than SIX Salaat and no other Salaat besides these are QAZAA, then BEFORE </div>
+<div id="tk_76" class="t s1_76">beginning the performance of the SIXTH Salaat in its time, QAZAA of the missed number of Salaat will </div>
+<div id="tl_76" class="t s1_76">have to be performed in ORDER. E.g. If a person has missed the Fajr, Zohar and Asr Salaat and no other </div>
+<div id="tm_76" class="t s1_76">Salaat besides these are Qazaa and the time of Magrib has begun, in this case FIRST the Fajr, Zohar and </div>
+<div id="tn_76" class="t s1_76">Asr must be performed in order and thereafter the Magrib Salaat should be. performed. </div>
+<div id="to_76" class="t s3_76">•</div>
+<div id="tp_76" class="t s1_76">If there is FEAR that by performing the Qazaa Salaat, the time for the Adaa Salaat will EXPIRE, then the </div>
+<div id="tq_76" class="t s1_76">ADA A Salaat must be performed FIRST. </div>
+<div id="tr_76" class="t s3_76">•</div>
+<div id="ts_76" class="t s1_76">For a person who has missed more than FIVE Salaat, it is NOT necessary upon him to perform the Qazaa </div>
+<div id="tt_76" class="t s1_76">Salaat in OR-DER. </div>
+<div id="tu_76" class="t s3_76">•</div>
+<div id="tv_76" class="t s1_76">He may perform the ADAA Salaat first and then the QAZAA Salaat. </div>
+<div id="tw_76" class="t s1_76">THE NIYYAT OF QAZAA SALAAH </div>
+<div id="tx_76" class="t s1_76">1.</div>
+<div id="ty_76" class="t s1_76">When making the NIYAAT for QAZAA, it is necessary to make Niyyat for the particular Salaah missed. </div>
+<div id="tz_76" class="t s1_76">2.</div>
+<div id="t10_76" class="t s1_76">If one has missed a number of Salaat, then one should make Niyyat (intention) thus: </div>
+<div id="t11_76" class="t s1_76">3.</div>
+<div id="t12_76" class="t s1_76">I am performing such and such day's Fajr or Zuhur. </div>
+<div id="t13_76" class="t s1_76">4.</div>
+<div id="t14_76" class="t s1_76">If a person has missed MORE than ONE Fajr or Zuhur, it will not be sufficient to say. </div>
+<div id="t15_76" class="t s1_76">5.</div>
+<div id="t16_76" class="t s1_76">"I am performing Qazaa for Fajr or Zuhr'. One should say: " I am performing such and such day's Fajr". </div>
+<div id="t17_76" class="t s1_76">6.</div>
+<div id="t18_76" class="t s1_76">If one has missed so many Farz Salaat that one does NOT remember the exact number of days when the </div>
+<div id="t19_76" class="t s1_76">Salaat was missed, then the Niyyat should be made as follows: </div>
+<div id="t1a_76" class="t s1_76">7.</div>
+<div id="t1b_76" class="t s1_76">"Oh Allah! I am performing the FIRST Fair or the FIRST Zuhr Fare. from those which I have missed" </div>
+<div id="t1c_76" class="t s1_76">8.</div>
+<div id="t1d_76" class="t s1_76">Continue doing this until satisfied that all the missed number of Salaat are performed. </div>
+<div id="t1e_76" class="t s4_76">THE MUSAAFIR'S (Traveler’s) SALAAH. </div>
+<div id="t1f_76" class="t s3_76">•</div>
+<div id="t1g_76" class="t s1_76">In SHARI'AT a person who intends to TRAVEL a distance of 77 kms. (48 miles) or more, is called a </div>
+<div id="t1h_76" class="t s1_76">MUSAAFIR. </div>
+<div id="t1i_76" class="t s3_76">•</div>
+<div id="t1j_76" class="t s1_76">A person who travels 77 kms. or more and intends to REMAIN at one's destination for LESS than 15 days, </div>
+<div id="t1k_76" class="t s1_76">is also a MUSAAFIR. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg76Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg76"><object width="935" height="1210" data="76/76.svg" type="image/svg+xml" id="pdf76" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld76" type="text/javascript">
+
+var isIE = false;
+var f76 = [['t2_76',2785],['t3_76',2042],['t4_76',606],['t6_76',1285],['t8_76',2311],['ta_76',1701],['tc_76',2508],['td_76',1046],['tg_76',2598],['th_76',1614],['tj_76',2583],['tk_76',2570],['tl_76',2576],['tm_76',2559],['tn_76',2133],['tp_76',2587],['tq_76',1033],['ts_76',2587],['tt_76',471],['tv_76',1691],['tw_76',958],['ty_76',2576],['t10_76',2061],['t12_76',1261],['t14_76',2110],['t16_76',2544],['t18_76',2550],['t19_76',1535],['t1b_76',2510],['t1d_76',2100],['t1e_76',1187],['t1g_76',2481],['t1j_76',2626],['t1k_76',544]];
+function load76(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f76);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 57;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_76");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

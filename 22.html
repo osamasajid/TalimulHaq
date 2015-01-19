@@ -1,0 +1,302 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page22</title>
+</head>
+
+<body onload="load22()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_22{left:460px;top:1136px;}
+#t2_22{left:162px;top:53px;}
+#t3_22{left:232px;top:53px;}
+#t4_22{left:131px;top:97px;}
+#t5_22{left:344px;top:118px;}
+#t6_22{left:137px;top:147px;}
+#t7_22{left:138px;top:176px;}
+#t8_22{left:165px;top:176px;}
+#t9_22{left:138px;top:209px;}
+#ta_22{left:165px;top:209px;}
+#tb_22{left:138px;top:243px;}
+#tc_22{left:165px;top:243px;}
+#td_22{left:138px;top:276px;}
+#te_22{left:165px;top:276px;}
+#tf_22{left:138px;top:309px;}
+#tg_22{left:165px;top:309px;}
+#th_22{left:138px;top:342px;}
+#ti_22{left:165px;top:342px;}
+#tj_22{left:138px;top:375px;}
+#tk_22{left:165px;top:375px;}
+#tl_22{left:138px;top:408px;}
+#tm_22{left:165px;top:408px;}
+#tn_22{left:138px;top:441px;}
+#to_22{left:165px;top:441px;}
+#tp_22{left:138px;top:474px;}
+#tq_22{left:165px;top:474px;}
+#tr_22{left:138px;top:507px;}
+#ts_22{left:165px;top:507px;}
+#tt_22{left:138px;top:540px;}
+#tu_22{left:165px;top:540px;}
+#tv_22{left:138px;top:573px;}
+#tw_22{left:165px;top:573px;}
+#tx_22{left:138px;top:607px;}
+#ty_22{left:165px;top:607px;}
+#tz_22{left:137px;top:640px;}
+#t10_22{left:165px;top:640px;}
+#t11_22{left:395px;top:683px;}
+#t12_22{left:460px;top:704px;}
+#t13_22{left:409px;top:740px;}
+#t14_22{left:423px;top:758px;}
+#t15_22{left:311px;top:843px;}
+#t16_22{left:292px;top:860px;}
+#t17_22{left:559px;top:839px;}
+#t18_22{left:513px;top:860px;}
+#t19_22{left:566px;top:897px;}
+#t1a_22{left:260px;top:923px;}
+#t1b_22{left:382px;top:923px;}
+#t1c_22{left:516px;top:923px;}
+#t1d_22{left:635px;top:923px;}
+#t1e_22{left:501px;top:977px;}
+#t1f_22{left:498px;top:998px;}
+#t1g_22{left:508px;top:1019px;}
+#t1h_22{left:626px;top:977px;}
+#t1i_22{left:618px;top:998px;}
+#t1j_22{left:639px;top:1019px;}
+
+.s4_22{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT22;
+	color: rgb(0,0,0);
+}
+
+.s3_22{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(0,0,0);
+	FONT-STYLE: italic;
+}
+
+.s1_22{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT22;
+	color: rgb(0,0,0);
+}
+
+.s6_22{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT22;
+	color: rgb(0,0,0);
+}
+
+.s2_22{
+	FONT-SIZE: 97px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT22;
+	color: rgb(0,0,0);
+}
+
+.s5_22{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT22;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT22;
+	src :url("22/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT22;
+	src :url("22/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_22" class="t s1_22">22</div>
+<div id="t2_22" class="t s2_22">Ghufra</div>
+<div id="t3_22" class="t s2_22">nak, Allhamdullilahe lazee azhab annee laza wa afanee </div>
+<div id="t4_22" class="t s3_22">O ALLAH! I seek Your pardon. All praises are due to ALLAH Who has taken away from me </div>
+<div id="t5_22" class="t s3_22">discomfort and granted me relief.</div>
+<div id="t6_22" class="t s4_22">QUESTIONS </div>
+<div id="t7_22" class="t s1_22">1.</div>
+<div id="t8_22" class="t s1_22">Name the two types of NAJAASAT? </div>
+<div id="t9_22" class="t s1_22">2.</div>
+<div id="ta_22" class="t s1_22">What is HUKMI Najaasat? </div>
+<div id="tb_22" class="t s1_22">3.</div>
+<div id="tc_22" class="t s1_22">How should one clean Najaasat GHALIZA that is on the body or clothes? </div>
+<div id="td_22" class="t s1_22">4.</div>
+<div id="te_22" class="t s1_22">What is HAQEEQI Najaasat? </div>
+<div id="tf_22" class="t s1_22">5.</div>
+<div id="tg_22" class="t s1_22">Give examples of Najaasat KHAFIFAH? </div>
+<div id="th_22" class="t s1_22">6.</div>
+<div id="ti_22" class="t s1_22">Give examples of NAJAASATE GHALIZA? </div>
+<div id="tj_22" class="t s1_22">7.</div>
+<div id="tk_22" class="t s1_22">Explain MAKROOH'? </div>
+<div id="tl_22" class="t s1_22">8.</div>
+<div id="tm_22" class="t s1_22">Explain MAKROOH-E-TAHREEMEE? </div>
+<div id="tn_22" class="t s1_22">9.</div>
+<div id="to_22" class="t s1_22">What is HARAAM'? </div>
+<div id="tp_22" class="t s1_22">10.</div>
+<div id="tq_22" class="t s1_22">How is it to face the KA'BA when making ISTINJA? </div>
+<div id="tr_22" class="t s1_22">11.</div>
+<div id="ts_22" class="t s1_22">With which foot one should enter the TOILET? </div>
+<div id="tt_22" class="t s1_22">12.</div>
+<div id="tu_22" class="t s1_22">What is the meaning of ISTINJA? </div>
+<div id="tv_22" class="t s1_22">13.</div>
+<div id="tw_22" class="t s1_22">Can one use printed paper for ISTINJA? </div>
+<div id="tx_22" class="t s1_22">14.</div>
+<div id="ty_22" class="t s1_22">What is the meaning of the DU'A that is recited before entering the TOILET? </div>
+<div id="tz_22" class="t s1_22">15.</div>
+<div id="t10_22" class="t s1_22">Which direction should one not face towards nor show one's back during urinating or passing stool? </div>
+<div id="t11_22" class="t s5_22">Wudhu (Ablution) </div>
+<div id="t12_22" class="t s4_22">Part 3 </div>
+<div id="t13_22" class="t s6_22">NAJAAST (Filth) </div>
+<div id="t14_22" class="t s1_22">is of two types </div>
+<div id="t15_22" class="t s6_22">HAQEEQI</div>
+<div id="t16_22" class="t s1_22">which can be seen  </div>
+<div id="t17_22" class="t s5_22">HUKMI</div>
+<div id="t18_22" class="t s4_22">which cannot be seen </div>
+<div id="t19_22" class="t s1_22">HADAS  </div>
+<div id="t1a_22" class="t s1_22">Ghaliza  </div>
+<div id="t1b_22" class="t s1_22">Khafifah </div>
+<div id="t1c_22" class="t s1_22">Hadase </div>
+<div id="t1d_22" class="t s1_22">Hadase  </div>
+<div id="t1e_22" class="t s4_22">ASGHAR </div>
+<div id="t1f_22" class="t s4_22">(in need of </div>
+<div id="t1g_22" class="t s4_22">Wudhu) </div>
+<div id="t1h_22" class="t s4_22">AKBAR </div>
+<div id="t1i_22" class="t s4_22">(in need of </div>
+<div id="t1j_22" class="t s4_22">bath) </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg22Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg22"><object width="935" height="1210" data="22/22.svg" type="image/svg+xml" id="pdf22" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld22" type="text/javascript">
+
+var isIE = false;
+var f22 = [['t3_22',2164],['t4_22',2693],['t5_22',985],['t8_22',915],['ta_22',667],['tc_22',1814],['te_22',732],['tg_22',1012],['ti_22',1118],['tk_22',561],['tm_22',1000],['to_22',516],['tq_22',1311],['ts_22',1172],['tu_22',841],['tw_22',997],['ty_22',1903],['t10_22',2456],['t11_22',580],['t12_22',173],['t13_22',465],['t14_22',359],['t16_22',463],['t18_22',629],['t19_22',226],['t1a_22',205],['t1d_22',195],['t1f_22',317],['t1i_22',317]];
+function load22(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f22);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 56;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_22");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

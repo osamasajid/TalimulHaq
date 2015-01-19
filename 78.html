@@ -1,0 +1,307 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page78</title>
+</head>
+
+<body onload="load78()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_78{left:460px;top:1136px;}
+#t2_78{left:348px;top:54px;}
+#t3_78{left:379px;top:75px;}
+#t4_78{left:135px;top:103px;}
+#t5_78{left:248px;top:110px;}
+#t6_78{left:254px;top:127px;}
+#t7_78{left:253px;top:145px;}
+#t8_78{left:397px;top:103px;}
+#t9_78{left:518px;top:103px;}
+#ta_78{left:637px;top:103px;}
+#tb_78{left:756px;top:103px;}
+#tc_78{left:162px;top:128px;}
+#td_78{left:413px;top:127px;}
+#te_78{left:545px;top:128px;}
+#tf_78{left:664px;top:128px;}
+#tg_78{left:774px;top:128px;}
+#th_78{left:134px;top:152px;}
+#ti_78{left:354px;top:152px;}
+#tj_78{left:516px;top:152px;}
+#tk_78{left:636px;top:152px;}
+#tl_78{left:751px;top:152px;}
+#tm_78{left:110px;top:184px;}
+#tn_78{left:110px;top:201px;}
+#to_78{left:110px;top:235px;}
+#tp_78{left:110px;top:268px;}
+#tq_78{left:110px;top:286px;}
+#tr_78{left:110px;top:303px;}
+#ts_78{left:269px;top:337px;}
+#tt_78{left:137px;top:370px;}
+#tu_78{left:165px;top:370px;}
+#tv_78{left:165px;top:388px;}
+#tw_78{left:137px;top:421px;}
+#tx_78{left:165px;top:421px;}
+#ty_78{left:137px;top:454px;}
+#tz_78{left:165px;top:454px;}
+#t10_78{left:137px;top:487px;}
+#t11_78{left:165px;top:487px;}
+#t12_78{left:165px;top:505px;}
+#t13_78{left:137px;top:538px;}
+#t14_78{left:165px;top:538px;}
+#t15_78{left:110px;top:571px;}
+#t16_78{left:274px;top:604px;}
+#t17_78{left:110px;top:637px;}
+#t18_78{left:110px;top:655px;}
+#t19_78{left:110px;top:673px;}
+#t1a_78{left:110px;top:691px;}
+#t1b_78{left:110px;top:724px;}
+#t1c_78{left:110px;top:742px;}
+#t1d_78{left:110px;top:760px;}
+#t1e_78{left:110px;top:793px;}
+#t1f_78{left:110px;top:811px;}
+#t1g_78{left:110px;top:828px;}
+#t1h_78{left:299px;top:854px;}
+#t1i_78{left:137px;top:879px;}
+#t1j_78{left:165px;top:879px;}
+#t1k_78{left:137px;top:913px;}
+#t1l_78{left:165px;top:913px;}
+#t1m_78{left:137px;top:946px;}
+#t1n_78{left:165px;top:946px;}
+#t1o_78{left:137px;top:979px;}
+#t1p_78{left:165px;top:979px;}
+#t1q_78{left:137px;top:1012px;}
+#t1r_78{left:165px;top:1012px;}
+#t1s_78{left:137px;top:1045px;}
+#t1t_78{left:165px;top:1045px;}
+#t1u_78{left:110px;top:1078px;}
+#t1v_78{left:110px;top:1096px;}
+
+.s1_78{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT78;
+	color: rgb(0,0,0);
+}
+
+.s3_78{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT78;
+	color: rgb(0,0,0);
+}
+
+.s2_78{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT78;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT78;
+	src :url("78/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT78;
+	src :url("78/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_78" class="t s1_78">78</div>
+<div id="t2_78" class="t s2_78">SUMMARY OF JUMUH SALAAT </div>
+<div id="t3_78" class="t s2_78">JUMAH 14 RAKAATS </div>
+<div id="t4_78" class="t s1_78">SUNNAT  </div>
+<div id="t5_78" class="t s1_78">After which </div>
+<div id="t6_78" class="t s1_78">comes the </div>
+<div id="t7_78" class="t s1_78">KHUTBA  </div>
+<div id="t8_78" class="t s1_78">FARZ </div>
+<div id="t9_78" class="t s1_78">SUNNAT </div>
+<div id="ta_78" class="t s1_78">SUNNAT  </div>
+<div id="tb_78" class="t s1_78">NAFIL</div>
+<div id="tc_78" class="t s3_78">4</div>
+<div id="td_78" class="t s1_78">2 </div>
+<div id="te_78" class="t s3_78">4</div>
+<div id="tf_78" class="t s3_78">2</div>
+<div id="tg_78" class="t s3_78">2</div>
+<div id="th_78" class="t s1_78">Muakkada  </div>
+<div id="ti_78" class="t s1_78">said in congregation </div>
+<div id="tj_78" class="t s1_78">Muakkada </div>
+<div id="tk_78" class="t s1_78">Muakkada  </div>
+<div id="tl_78" class="t s1_78">Optional </div>
+<div id="tm_78" class="t s1_78">Jumuah Salaat is FARZ and more emphasis has been laid on it than on ZOHAR There is no Zuhr Farz Salaat on </div>
+<div id="tn_78" class="t s1_78">Friday. The Jumuah Salaat has been fixed in place of Zuhr Salaat. </div>
+<div id="to_78" class="t s1_78">Jumuah Salaat is FARZ on all FREE, MAJOR, SANE, HEALTHY and MUQEEM MEN. </div>
+<div id="tp_78" class="t s1_78">It is NOT Farz on MINOR CHII.DREN, SLAVES, MAD, SICK and BLIND PERSONS. MUSAFIRS, WOMEN </div>
+<div id="tq_78" class="t s1_78">and those who, have some VALID EXCUSE, e.g. fear of an enemy or very heavy rain. They should perform their </div>
+<div id="tr_78" class="t s1_78">ZOHAR Salaat instead. </div>
+<div id="ts_78" class="t s3_78">THE CONDITIONS FOR SAYING THE JUMUH SALAAT</div>
+<div id="tt_78" class="t s1_78">1.</div>
+<div id="tu_78" class="t s1_78">The Jumuah Salaat should be in a city, BIG VILLAGE or a TOWN like the CITY. It is NOT PROPER, to </div>
+<div id="tv_78" class="t s1_78">perform the Jumuah Salaat in a SMALL VILLAGE. </div>
+<div id="tw_78" class="t s1_78">2.</div>
+<div id="tx_78" class="t s1_78">Jumuah should be performed at Zuhr time. </div>
+<div id="ty_78" class="t s1_78">3.</div>
+<div id="tz_78" class="t s1_78">KHUTBAH (address by the Imam) should be delivered BEFORE the Salaat. </div>
+<div id="t10_78" class="t s1_78">4.</div>
+<div id="t11_78" class="t s1_78">The Salaat should be read with Jamaat. It is compulsory to have at least three men besides the Imam to </div>
+<div id="t12_78" class="t s1_78">offer the Salaat or else the Salaat will not be valid. </div>
+<div id="t13_78" class="t s1_78">5.</div>
+<div id="t14_78" class="t s1_78">IZNE AAM (permission to all to attend). </div>
+<div id="t15_78" class="t s1_78">* If all these FIVE CONDITIONS are found, performing of the Jumuah Salaat will be CORRECT. </div>
+<div id="t16_78" class="t s3_78">THE MASNOON METHOD OF DELIVERING KHUTBA</div>
+<div id="t17_78" class="t s1_78">Before the Jumuah Salaat the Imam should sit on the MIMBAR, (the raised platform in the Masjid) and the </div>
+<div id="t18_78" class="t s1_78">Muezzin should call out the Azan in the presence of the Imam. The Imam should then stand up and deliver the </div>
+<div id="t19_78" class="t s1_78">KHUTBA facing the congregation. It is MAKROOHE TAHREEMEE to deliver the KHUTBAH in any language </div>
+<div id="t1a_78" class="t s1_78">besides ARABIC. </div>
+<div id="t1b_78" class="t s1_78">After the FIRST Khutba he should sit down for a while and then stand up again for the SECOND Khutba. </div>
+<div id="t1c_78" class="t s1_78">Thereafter the Imam should step down and stand in FRONT of the MEHRAAB or the ARCH. The Muezzin should </div>
+<div id="t1d_78" class="t s1_78">call out the TAKBEER and those present should stand up and offer their Salaat with the IMAAM. </div>
+<div id="t1e_78" class="t s1_78">The Azan for the Khutba should be said in FRONT of the KHATEEB (the person delivering the Khutba), near the </div>
+<div id="t1f_78" class="t s1_78">MIMBAR or from the SECOND or THIRD ROW of the Musaliesor at the END of the ROWS or from OUTSIDE </div>
+<div id="t1g_78" class="t s1_78">the MUSJID. It is ALLOWED in ALL the ways. </div>
+<div id="t1h_78" class="t s1_78">THINGS NOT ALLOWED DURING THE KHUTBA </div>
+<div id="t1i_78" class="t s1_78">1.</div>
+<div id="t1j_78" class="t s1_78">Talking. </div>
+<div id="t1k_78" class="t s1_78">2.</div>
+<div id="t1l_78" class="t s1_78">Offering SUNNAT and NAFL Salaat. </div>
+<div id="t1m_78" class="t s1_78">3.</div>
+<div id="t1n_78" class="t s1_78">Eating. </div>
+<div id="t1o_78" class="t s1_78">4.</div>
+<div id="t1p_78" class="t s1_78">Drinking. </div>
+<div id="t1q_78" class="t s1_78">5.</div>
+<div id="t1r_78" class="t s1_78">To reply to any TALK. </div>
+<div id="t1s_78" class="t s1_78">6.</div>
+<div id="t1t_78" class="t s1_78">Reciting the QURAAN SHARIF, etc. </div>
+<div id="t1u_78" class="t s1_78">All those things which DISTURB the Khutba become MAKROOH from the minute the Imam prepares to deliver </div>
+<div id="t1v_78" class="t s1_78">the Khutba. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg78Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg78"><object width="935" height="1210" data="78/78.svg" type="image/svg+xml" id="pdf78" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld78" type="text/javascript">
+
+var isIE = false;
+var f78 = [['t2_78',1067],['t3_78',707],['t4_78',264],['t5_78',294],['t6_78',246],['t7_78',270],['ta_78',264],['th_78',274],['ti_78',497],['tk_78',274],['tm_78',2749],['tn_78',1615],['to_78',2209],['tp_78',2785],['tq_78',2793],['tr_78',580],['ts_78',1587],['tu_78',2604],['tv_78',1283],['tx_78',1046],['tz_78',1881],['t11_78',2516],['t12_78',1237],['t14_78',1006],['t15_78',2427],['t16_78',1550],['t17_78',2631],['t18_78',2708],['t19_78',2788],['t1a_78',442],['t1b_78',2602],['t1c_78',2832],['t1d_78',2407],['t1e_78',2805],['t1f_78',2799],['t1g_78',1199],['t1h_78',1345],['t1l_78',935],['t1r_78',570],['t1t_78',926],['t1u_78',2783],['t1v_78',286]];
+function load78(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f78);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 68;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_78");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

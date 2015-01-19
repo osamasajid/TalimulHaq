@@ -1,0 +1,281 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page19</title>
+</head>
+
+<body onload="load19()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_19{left:460px;top:1136px;}
+#t2_19{left:138px;top:54px;}
+#t3_19{left:165px;top:54px;}
+#t4_19{left:138px;top:96px;}
+#t5_19{left:165px;top:96px;}
+#t6_19{left:138px;top:137px;}
+#t7_19{left:165px;top:137px;}
+#t8_19{left:138px;top:178px;}
+#t9_19{left:165px;top:178px;}
+#ta_19{left:138px;top:220px;}
+#tb_19{left:165px;top:220px;}
+#tc_19{left:138px;top:261px;}
+#td_19{left:165px;top:261px;}
+#te_19{left:138px;top:303px;}
+#tf_19{left:165px;top:303px;}
+#tg_19{left:138px;top:344px;}
+#th_19{left:165px;top:344px;}
+#ti_19{left:138px;top:386px;}
+#tj_19{left:165px;top:386px;}
+#tk_19{left:138px;top:427px;}
+#tl_19{left:165px;top:427px;}
+#tm_19{left:138px;top:468px;}
+#tn_19{left:165px;top:468px;}
+#to_19{left:138px;top:510px;}
+#tp_19{left:165px;top:510px;}
+#tq_19{left:138px;top:551px;}
+#tr_19{left:165px;top:551px;}
+#ts_19{left:138px;top:593px;}
+#tt_19{left:165px;top:593px;}
+#tu_19{left:138px;top:634px;}
+#tv_19{left:165px;top:634px;}
+#tw_19{left:138px;top:676px;}
+#tx_19{left:165px;top:676px;}
+#ty_19{left:138px;top:717px;}
+#tz_19{left:165px;top:717px;}
+#t10_19{left:196px;top:717px;}
+#t11_19{left:327px;top:717px;}
+#t12_19{left:442px;top:815px;}
+#t13_19{left:445px;top:836px;}
+#t14_19{left:409px;top:877px;}
+#t15_19{left:423px;top:894px;}
+#t16_19{left:313px;top:975px;}
+#t17_19{left:293px;top:993px;}
+#t18_19{left:559px;top:971px;}
+#t19_19{left:514px;top:992px;}
+#t1a_19{left:481px;top:1050px;}
+#t1b_19{left:576px;top:1068px;}
+#t1c_19{left:261px;top:1063px;}
+#t1d_19{left:246px;top:1081px;}
+#t1e_19{left:377px;top:1059px;}
+#t1f_19{left:369px;top:1081px;}
+
+.s1_19{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT19;
+	color: rgb(0,0,0);
+}
+
+.s4_19{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT19;
+	color: rgb(0,0,0);
+}
+
+.s3_19{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT19;
+	color: rgb(0,0,0);
+}
+
+.s2_19{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT19;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT19;
+	src :url("19/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT19;
+	src :url("19/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_19" class="t s1_19">19</div>
+<div id="t2_19" class="t s1_19">11.</div>
+<div id="t3_19" class="t s1_19">What are Sahfas and to which Nabis they were given? How many to each Nabi? </div>
+<div id="t4_19" class="t s1_19">12.</div>
+<div id="t5_19" class="t s1_19">What is the meaning of KHATAMUN NABIYEEN? </div>
+<div id="t6_19" class="t s1_19">13.</div>
+<div id="t7_19" class="t s1_19">Name, some of the famous NABIES? </div>
+<div id="t8_19" class="t s1_19">14.</div>
+<div id="t9_19" class="t s1_19">What did the PROPHETS of ALLAH preach about ALLAH? </div>
+<div id="ta_19" class="t s1_19">15.</div>
+<div id="tb_19" class="t s1_19">What is TAQDEER or FATE called? </div>
+<div id="tc_19" class="t s1_19">16.</div>
+<div id="td_19" class="t s1_19">What are some of the SIGNS of QIYAMAT? </div>
+<div id="te_19" class="t s1_19">17.</div>
+<div id="tf_19" class="t s1_19">What is the meaning of Yaum-UI-Hasher and Yaum-Ul-Hisaab? </div>
+<div id="tg_19" class="t s1_19">18.</div>
+<div id="th_19" class="t s1_19">Name the four famous ANGELS? </div>
+<div id="ti_19" class="t s1_19">19.</div>
+<div id="tj_19" class="t s1_19">State the Responsibility of the four famous ANGELS? </div>
+<div id="tk_19" class="t s1_19">20.</div>
+<div id="tl_19" class="t s1_19">Name the four main BOOKS and to whom they were Revealed? </div>
+<div id="tm_19" class="t s1_19">21.</div>
+<div id="tn_19" class="t s1_19">Over a period of how many years was the QUR'AN SHARIEF revealed? </div>
+<div id="to_19" class="t s1_19">22.</div>
+<div id="tp_19" class="t s1_19">Approximately how many NABIS were sent to the World? </div>
+<div id="tq_19" class="t s1_19">23.</div>
+<div id="tr_19" class="t s1_19">When will QIYAMAT take place? </div>
+<div id="ts_19" class="t s1_19">24.</div>
+<div id="tt_19" class="t s1_19">Who are the SAHAABA and mention what NABI Alay-His Salaam has mentioned regarding them? </div>
+<div id="tu_19" class="t s1_19">25.</div>
+<div id="tv_19" class="t s1_19">Mention the ranks of the Sahaaba and name the Ashara-E-Mubassharah? </div>
+<div id="tw_19" class="t s1_19">26.</div>
+<div id="tx_19" class="t s1_19">Explain the rank of WALI and the rank of a LOWEST SAHAABI? </div>
+<div id="ty_19" class="t s1_19">27.</div>
+<div id="tz_19" class="t s1_19">It is .</div>
+<div id="t10_19" class="t s1_19">.................................</div>
+<div id="t11_19" class="t s1_19">to show respect to all the SAHAABAH. </div>
+<div id="t12_19" class="t s2_19">Istinja </div>
+<div id="t13_19" class="t s3_19">Part-2 </div>
+<div id="t14_19" class="t s4_19">NAJAAST (Filth) </div>
+<div id="t15_19" class="t s1_19">is of two types </div>
+<div id="t16_19" class="t s4_19">HAQEEQI</div>
+<div id="t17_19" class="t s1_19">which can be seen  </div>
+<div id="t18_19" class="t s2_19">HUKMI</div>
+<div id="t19_19" class="t s3_19">which cannot be seen </div>
+<div id="t1a_19" class="t s1_19">e.g. breaking of Wudhu or a need of </div>
+<div id="t1b_19" class="t s1_19">Bath.  </div>
+<div id="t1c_19" class="t s1_19">Ghaliza </div>
+<div id="t1d_19" class="t s1_19">(heavy type)  </div>
+<div id="t1e_19" class="t s3_19">Khafifah </div>
+<div id="t1f_19" class="t s3_19">(light type) </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg19Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg19"><object width="935" height="1210" data="19/19.svg" type="image/svg+xml" id="pdf19" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld19" type="text/javascript">
+
+var isIE = false;
+var f19 = [['t3_19',1967],['t5_19',1302],['t7_19',922],['t9_19',1511],['tb_19',916],['td_19',1117],['tf_19',1586],['th_19',834],['tj_19',1337],['tl_19',1576],['tn_19',1788],['tp_19',1444],['tr_19',852],['tt_19',2453],['tv_19',1787],['tx_19',1657],['tz_19',124],['t11_19',983],['t14_19',465],['t15_19',359],['t17_19',463],['t19_19',629],['t1a_19',889],['t1b_19',146],['t1d_19',323],['t1f_19',328]];
+function load19(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f19);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 52;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_19");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

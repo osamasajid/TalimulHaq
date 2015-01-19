@@ -1,0 +1,231 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page4</title>
+</head>
+
+<body onload="load4()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_4{left:464px;top:1136px;}
+#t2_4{left:110px;top:54px;}
+#t3_4{left:110px;top:85px;}
+#t4_4{left:110px;top:132px;}
+#t5_4{left:110px;top:163px;}
+#t6_4{left:429px;top:234px;}
+#t7_4{left:344px;top:273px;}
+#t8_4{left:296px;top:304px;}
+#t9_4{left:110px;top:351px;}
+#ta_4{left:110px;top:382px;}
+#tb_4{left:110px;top:413px;}
+#tc_4{left:110px;top:460px;}
+#td_4{left:110px;top:491px;}
+#te_4{left:110px;top:538px;}
+#tf_4{left:110px;top:569px;}
+#tg_4{left:435px;top:616px;}
+#th_4{left:110px;top:662px;}
+#ti_4{left:110px;top:694px;}
+#tj_4{left:110px;top:725px;}
+#tk_4{left:429px;top:811px;}
+#tl_4{left:335px;top:849px;}
+#tm_4{left:379px;top:881px;}
+#tn_4{left:286px;top:912px;}
+#to_4{left:396px;top:944px;}
+#tp_4{left:110px;top:983px;}
+#tq_4{left:110px;top:1009px;}
+#tr_4{left:110px;top:1043px;}
+#ts_4{left:110px;top:1074px;}
+#tt_4{left:110px;top:1105px;}
+
+.s1_4{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT4;
+	color: rgb(0,0,0);
+}
+
+.s2_4{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT4;
+	color: rgb(0,0,0);
+}
+
+.s3_4{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT4;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT4;
+	src :url("4/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT4;
+	src :url("4/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_4" class="t s1_4">4</div>
+<div id="t2_4" class="t s2_4">(Harat Maulana Muhammed Masihullah Saheb The Late Mohammed Masihullah Khan Saheb </div>
+<div id="t3_4" class="t s2_4">(R.A) passed away on Jalalabad at the age of 83 years. </div>
+<div id="t4_4" class="t s2_4">May Allah Ta’aala fill his Qabr with Noor. </div>
+<div id="t5_4" class="t s2_4">Umzinto, Natal, South Africa. 25 Rabi Ul Awwal 1399 A.H -Friday 23 February 1979 A.D. </div>
+<div id="t6_4" class="t s3_4">Foreword </div>
+<div id="t7_4" class="t s2_4">by Hazrat Mufti Mahmood Saheb </div>
+<div id="t8_4" class="t s2_4">(Grand Mufti of Darul Uloom Deoband, India) </div>
+<div id="t9_4" class="t s2_4">Glory be to Allah and Salutations on the Holy Prophet Mohammed, (S.A.W.) Masha-Allah this </div>
+<div id="ta_4" class="t s2_4">publication called ‘Talimul Haq’ has been written on a very good pattern. In it, the basic beliefs, </div>
+<div id="tb_4" class="t s2_4">practices, character and devotional aspects (of a Muslim’s life) have been explained. </div>
+<div id="tc_4" class="t s2_4">If children read, understand and practice accordingly then Insha-Allah their lives can be moulded </div>
+<div id="td_4" class="t s2_4">according to the Sunnah and they will be safe from ignorance and being led astray. </div>
+<div id="te_4" class="t s2_4">May Allah reward the writer and accept his service and grant as many people as possible the </div>
+<div id="tf_4" class="t s2_4">ability to have benefit from the publication. </div>
+<div id="tg_4" class="t s2_4">Aameen. </div>
+<div id="th_4" class="t s2_4">(Mufti) Mahmood Saheb. </div>
+<div id="ti_4" class="t s2_4">(Grand Mufti of Darul Uloom, Deoband.) </div>
+<div id="tj_4" class="t s2_4">Stanger Natal. South Africa. 18 Ramadaan 1401. 20 July 1981. </div>
+<div id="tk_4" class="t s3_4">Foreword </div>
+<div id="tl_4" class="t s2_4">by Hazrat Mufti Wali Hassan Saheb </div>
+<div id="tm_4" class="t s2_4">Mufti Shaikul Hadith of </div>
+<div id="tn_4" class="t s2_4">Jamiatul Uloom of Islamia Allama Binnori Town </div>
+<div id="to_4" class="t s2_4">Karachi 5, Pakistan </div>
+<div id="tp_4" class="t s1_4">To equip the youth of the Muslim Ummat with religious education and tranning is an important duty and whosever </div>
+<div id="tq_4" class="t s1_4">will take an active part in this field will be entitled to ample reward by Almighty Allah, Insha-Allah. </div>
+<div id="tr_4" class="t s2_4">The writer was pleased to note that Shabbir Ahmed Desai Soofi has commenced a very </div>
+<div id="ts_4" class="t s2_4">beneficial publication in Urdu and English called ‘Talimul Haq’ to educate the Muslim children </div>
+<div id="tt_4" class="t s2_4">in their beliefs and practices. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg4Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg4"><object width="935" height="1210" data="4/4.svg" type="image/svg+xml" id="pdf4" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld4" type="text/javascript">
+
+var isIE = false;
+var f4 = [['t2_4',2758],['t3_4',1602],['t4_4',1263],['t5_4',2696],['t7_4',989],['t8_4',1375],['t9_4',2798],['ta_4',2829],['tb_4',2482],['tc_4',2855],['td_4',2432],['te_4',2717],['tf_4',1278],['th_4',751],['ti_4',1224],['tj_4',1852],['tl_4',1061],['tm_4',707],['tn_4',1449],['to_4',573],['tp_4',2819],['tq_4',2462],['tr_4',2559],['ts_4',2816],['tt_4',846]];
+function load4(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f4);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 30;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_4");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

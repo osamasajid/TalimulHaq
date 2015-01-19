@@ -1,0 +1,236 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page89</title>
+</head>
+
+<body onload="load89()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_89{left:460px;top:1136px;}
+#t2_89{left:137px;top:348px;}
+#t3_89{left:165px;top:348px;}
+#t4_89{left:165px;top:366px;}
+#t5_89{left:165px;top:384px;}
+#t6_89{left:165px;top:401px;}
+#t7_89{left:165px;top:419px;}
+#t8_89{left:137px;top:737px;}
+#t9_89{left:165px;top:737px;}
+#ta_89{left:138px;top:762px;}
+#tb_89{left:110px;top:789px;}
+#tc_89{left:110px;top:809px;}
+#td_89{left:110px;top:828px;}
+#te_89{left:110px;top:848px;}
+#tf_89{left:110px;top:883px;}
+#tg_89{left:110px;top:917px;}
+#th_89{left:110px;top:937px;}
+#ti_89{left:110px;top:956px;}
+#tj_89{left:110px;top:975px;}
+#tk_89{left:110px;top:995px;}
+#tl_89{left:110px;top:1014px;}
+#tm_89{left:137px;top:1041px;}
+#tn_89{left:110px;top:1068px;}
+#to_89{left:110px;top:1088px;}
+#tp_89{left:110px;top:1107px;}
+#tq_89{left:700px;top:1107px;}
+
+.s1_89{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT89;
+	color: rgb(0,0,0);
+}
+
+.s4_89{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT89;
+	color: rgb(0,0,0);
+}
+
+.s2_89{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NKJHPH-Wingdings-Regular89;
+	color: rgb(0,0,0);
+}
+
+.s3_89{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT89;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT89;
+	src :url("89/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT89;
+	src :url("89/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NKJHPH-Wingdings-Regular89;
+	src :url("89/fonts/NKJHPH-Wingdings-Regular.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_89" class="t s1_89">89</div>
+<div id="t2_89" class="t s2_89">±</div>
+<div id="t3_89" class="t s1_89">The SHIQ: where the soft nature of the ground does not allow a LAHD to be made, then a shallow trench </div>
+<div id="t4_89" class="t s1_89">should be dug in the centre at the bottom of the Qabr, to allow the body to be placed in this trench. Timber </div>
+<div id="t5_89" class="t s1_89">may he used to cover this. The use of any fabrics or blankets, etc is undesirable and wasteful. The bamboo </div>
+<div id="t6_89" class="t s1_89">or planks must be cut to size and set to fit properly in the grave before burial, to avoid last minute </div>
+<div id="t7_89" class="t s1_89">inconvenience. </div>
+<div id="t8_89" class="t s2_89">±</div>
+<div id="t9_89" class="t s1_89">Note: It is MAKROOH (undesirable) to dig out and prepare one's own grave during one's lifetime. </div>
+<div id="ta_89" class="t s3_89">THE KAFN </div>
+<div id="tb_89" class="t s3_89">The Kafn are the grave clothes of the dead. It is desirable that the Kafn be of white material and of </div>
+<div id="tc_89" class="t s3_89">medium quality according to the status of the deceased. Rasulullah said "Do not use expensive cloth in </div>
+<div id="td_89" class="t s3_89">Kafn, because it will very soon decay." It is PERMISSIBLE to prepare one's Kafn during one's lifetime. </div>
+<div id="te_89" class="t s3_89">This will avoid last minute rush and inconvenience. </div>
+<div id="tf_89" class="t s4_89">KAFN FOR MALE</div>
+<div id="tg_89" class="t s3_89">The MASNOON Kafn for a male is an IZAAR, QAMEES and LIFAFAH. The Izaar is this case is a sheet </div>
+<div id="th_89" class="t s3_89">from the head to the feet, whereas the Qamees is a long sheet that has to be folded in half and an opening </div>
+<div id="ti_89" class="t s3_89">cut to allow it to be put on as a shirt. The latter will have no pockets, sleeves or seams. The Lifafah is a </div>
+<div id="tj_89" class="t s3_89">sheet from above the head to below the feet, (see diagrams on page 125) Just TWO, the Izaar and Lifafah </div>
+<div id="tk_89" class="t s3_89">will also suffice, but it is SUNNAT to have the THREE. It is MAKROOH to use less than two without a </div>
+<div id="tl_89" class="t s3_89">valid reason. </div>
+<div id="tm_89" class="t s3_89">KAFN FOR FEMALE </div>
+<div id="tn_89" class="t s3_89">The MASNOON Kafn for a female consists of an IZAAR, KHIMAAR (Orni), QAMEES, LIFAFAH and </div>
+<div id="to_89" class="t s3_89">a piece calf material to' hold the breasts (SINABAND). The Khimaar is the Veil. The piece of material to </div>
+<div id="tp_89" class="t s3_89">hold the breasts should preferably be from the breasts to the thighs. Three garments, i.e.</div>
+<div id="tq_89" class="t s3_89">.Izaar, Lifafah and </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg89Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg89"><object width="935" height="1210" data="89/89.svg" type="image/svg+xml" id="pdf89" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld89" type="text/javascript">
+
+var isIE = false;
+var f89 = [['t3_89',2588],['t4_89',2612],['t5_89',2608],['t6_89',2391],['t9_89',2417],['ta_89',329],['tb_89',2648],['tc_89',2763],['td_89',2797],['te_89',1389],['tf_89',566],['tg_89',2847],['th_89',2824],['ti_89',2770],['tj_89',2831],['tk_89',2811],['tl_89',343],['tm_89',615],['tn_89',2837],['to_89',2827],['tp_89',2359],['tq_89',496]];
+function load89(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f89);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 27;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_89");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

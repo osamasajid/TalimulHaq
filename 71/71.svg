@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<style type="text/css"><![CDATA[
+.g4_71{
+fill: #FFFFFF;
+}
+.g1_71{
+fill: #A0A0A0;
+}
+.g2_71{
+fill: none;
+stroke: #A0A0A0;
+stroke-width: 1;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+.g3_71{
+fill: none;
+stroke: #E3E3E3;
+stroke-width: 1;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+]]></style>
+</defs>
+<path d="M110,94l715,0l0,-3L110,91l0,3Z" class="g1_71" />
+<path d="M110.5,92.5l0,-1" class="g2_71" />
+<path d="M110.5,92.5l714,0" class="g2_71" />
+<path d="M824.5,92.5l0,-1" class="g3_71" />
+<path d="M824.5,92.5l0,-1" class="g2_71" />
+<path d="M110.5,93.5l0,-1" class="g2_71" />
+<path d="M824.5,93.5l0,-1" class="g3_71" />
+<path d="M110.5,94.5l0,-1" class="g2_71" />
+<path d="M110.5,94.5l715,0" class="g3_71" />
+<path d="M824.5,94.5l0,-1" class="g3_71" />
+<path d="M165,1123l211,0l0,-35l-211,0l0,35Z" class="g4_71" />
+<image x="165" y="1088" width="213" height="36" xlink:href="img/1.png" />
+</svg>

@@ -1,0 +1,234 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page77</title>
+</head>
+
+<body onload="load77()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_77{left:460px;top:1136px;}
+#t2_77{left:137px;top:55px;}
+#t3_77{left:165px;top:55px;}
+#t4_77{left:165px;top:73px;}
+#t5_77{left:137px;top:107px;}
+#t6_77{left:165px;top:107px;}
+#t7_77{left:165px;top:125px;}
+#t8_77{left:137px;top:159px;}
+#t9_77{left:165px;top:159px;}
+#ta_77{left:165px;top:177px;}
+#tb_77{left:137px;top:211px;}
+#tc_77{left:165px;top:211px;}
+#td_77{left:165px;top:229px;}
+#te_77{left:137px;top:263px;}
+#tf_77{left:165px;top:263px;}
+#tg_77{left:165px;top:281px;}
+#th_77{left:137px;top:315px;}
+#ti_77{left:165px;top:315px;}
+#tj_77{left:165px;top:333px;}
+#tk_77{left:437px;top:401px;}
+#tl_77{left:365px;top:459px;}
+#tm_77{left:114px;top:1042px;}
+#tn_77{left:131px;top:1060px;}
+#to_77{left:120px;top:1078px;}
+#tp_77{left:313px;top:1096px;}
+
+.s1_77{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT77;
+	color: rgb(0,0,0);
+}
+
+.s4_77{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT77;
+	color: rgb(0,0,0);
+}
+
+.s2_77{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT77;
+	color: rgb(0,0,0);
+}
+
+.s3_77{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT77;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT77;
+	src :url("77/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT77;
+	src :url("77/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT77;
+	src :url("77/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_77" class="t s1_77">77</div>
+<div id="t2_77" class="t s2_77">•</div>
+<div id="t3_77" class="t s1_77">A Musaafir who intends remaining at his destination for 15 days or more, will only be a Musaafir during </div>
+<div id="t4_77" class="t s1_77">his journey. Once he reaches his destination, he will not be a Musaafir. </div>
+<div id="t5_77" class="t s2_77">•</div>
+<div id="t6_77" class="t s1_77">A Musaafir should make QASR of the ZOHAR, ASR and ESHA (FARZ only), i.e. one must perform </div>
+<div id="t7_77" class="t s1_77">TWO Farz only ie. instead of FOUR Rak’aats. </div>
+<div id="t8_77" class="t s2_77">•</div>
+<div id="t9_77" class="t s1_77">There is no Qasr in the Farz of Fajr and Maghreb. Similarly there is no Qasr of Witr, Sunnah or Nafl </div>
+<div id="ta_77" class="t s1_77">Salaat. </div>
+<div id="tb_77" class="t s2_77">•</div>
+<div id="tc_77" class="t s1_77">A Musaafir who performs his Salaah behind a MUQEEM IMAAM, (who is not a Musaafir) should </div>
+<div id="td_77" class="t s1_77">perform the full four Rak’aats in the Zuhr, Asr and Esha Farz. </div>
+<div id="te_77" class="t s2_77">•</div>
+<div id="tf_77" class="t s1_77">If the IMAAM is a Musaafir and muqtadi a Muqeem, the Musaafir Imam should complete his Salaah after </div>
+<div id="tg_77" class="t s1_77">two Rak’aats and there after he must ask the Muqeem Muqtadis to complete their Salaah by saying. </div>
+<div id="th_77" class="t s2_77">•</div>
+<div id="ti_77" class="t s1_77">"Complete your Salaah, I am a Musaafir," The Muqeem Muqtadis should then stand up and complete the </div>
+<div id="tj_77" class="t s1_77">remaining two Rak’aats without reciting sura Fatiha or any other surah. </div>
+<div id="tk_77" class="t s3_77">PART 9 </div>
+<div id="tl_77" class="t s3_77">JUMAH (Friday) SALAAT </div>
+<div id="tm_77" class="t s4_77">"O you who believe! When the call is made for Salaat on FRIDAY, then HASTEN to the REMEMBRANCE </div>
+<div id="tn_77" class="t s4_77">of ALLAH and LEAVE off BUSINESS. That is BETTER for you if you know. Thus, when the Salaat is </div>
+<div id="to_77" class="t s4_77">completed, then disperse through the and land seek Allah's GRACE and REMEMBER Allah OFTEN that </div>
+<div id="tp_77" class="t s4_77">you may be SUCCESSFUL." (Al-Qur'an 62: 9) </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg77Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg77"><object width="935" height="1210" data="77/77.svg" type="image/svg+xml" id="pdf77" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld77" type="text/javascript">
+
+var isIE = false;
+var f77 = [['t3_77',2567],['t4_77',1739],['t6_77',2493],['t7_77',1143],['t9_77',2467],['tc_77',2436],['td_77',1521],['tf_77',2605],['tg_77',2441],['ti_77',2574],['tj_77',1751],['tk_77',242],['tl_77',818],['tm_77',2825],['tn_77',2694],['to_77',2781],['tp_77',1236]];
+function load77(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f77);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 26;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_77");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

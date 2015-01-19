@@ -1,0 +1,273 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page20</title>
+</head>
+
+<body onload="load20()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_20{left:460px;top:1136px;}
+#t2_20{left:217px;top:80px;}
+#t3_20{left:452px;top:70px;}
+#t4_20{left:468px;top:88px;}
+#t5_20{left:217px;top:148px;}
+#t6_20{left:469px;top:138px;}
+#t7_20{left:452px;top:155px;}
+#t8_20{left:212px;top:214px;}
+#t9_20{left:491px;top:205px;}
+#ta_20{left:480px;top:223px;}
+#tb_20{left:259px;top:281px;}
+#tc_20{left:438px;top:270px;}
+#td_20{left:515px;top:288px;}
+#te_20{left:246px;top:338px;}
+#tf_20{left:252px;top:356px;}
+#tg_20{left:518px;top:347px;}
+#th_20{left:266px;top:403px;}
+#ti_20{left:507px;top:403px;}
+#tj_20{left:397px;top:455px;}
+#tk_20{left:285px;top:472px;}
+#tl_20{left:137px;top:498px;}
+#tm_20{left:165px;top:498px;}
+#tn_20{left:137px;top:531px;}
+#to_20{left:165px;top:531px;}
+#tp_20{left:110px;top:564px;}
+#tq_20{left:110px;top:597px;}
+#tr_20{left:110px;top:615px;}
+#ts_20{left:110px;top:649px;}
+#tt_20{left:110px;top:681px;}
+#tu_20{left:110px;top:715px;}
+#tv_20{left:110px;top:748px;}
+#tw_20{left:110px;top:766px;}
+#tx_20{left:339px;top:838px;}
+#ty_20{left:535px;top:838px;}
+#tz_20{left:705px;top:838px;}
+#t10_20{left:162px;top:875px;}
+#t11_20{left:339px;top:875px;}
+#t12_20{left:506px;top:875px;}
+#t13_20{left:680px;top:875px;}
+#t14_20{left:149px;top:918px;}
+#t15_20{left:339px;top:918px;}
+#t16_20{left:506px;top:918px;}
+#t17_20{left:680px;top:918px;}
+#t18_20{left:152px;top:954px;}
+#t19_20{left:339px;top:954px;}
+#t1a_20{left:503px;top:954px;}
+#t1b_20{left:680px;top:954px;}
+#t1c_20{left:162px;top:992px;}
+#t1d_20{left:336px;top:992px;}
+#t1e_20{left:680px;top:992px;}
+#t1f_20{left:164px;top:1029px;}
+#t1g_20{left:357px;top:1029px;}
+#t1h_20{left:680px;top:1029px;}
+
+.s1_20{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT20;
+	color: rgb(0,0,0);
+}
+
+.s2_20{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT20;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT20;
+	src :url("20/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT20;
+	src :url("20/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_20" class="t s1_20">20</div>
+<div id="t2_20" class="t s2_20">NAJAASATE HAQEEQI:</div>
+<div id="t3_20" class="t s1_20">Uncleanliness or filth that can be seen </div>
+<div id="t4_20" class="t s1_20">e.g. urine, stool, blood and wine. </div>
+<div id="t5_20" class="t s2_20">NAJAASATE GHALIZA:</div>
+<div id="t6_20" class="t s1_20">Dense (heavy) types of Najaasat </div>
+<div id="t7_20" class="t s1_20">e.g. Urine and Stool of human beings. </div>
+<div id="t8_20" class="t s2_20">NAJAASATE KHAFIFAH:</div>
+<div id="t9_20" class="t s1_20">Lighter types of Najaasat </div>
+<div id="ta_20" class="t s1_20">e.g. Urine of Halaal animals. </div>
+<div id="tb_20" class="t s2_20">MAKROOH:</div>
+<div id="tc_20" class="t s1_20">Disliked or something which is against the </div>
+<div id="td_20" class="t s1_20">conduct of Islam. </div>
+<div id="te_20" class="t s2_20">MAKROOH - E -</div>
+<div id="tf_20" class="t s2_20">TAHREEMEE:</div>
+<div id="tg_20" class="t s1_20">Near to Haraam. </div>
+<div id="th_20" class="t s2_20">HARAAM:</div>
+<div id="ti_20" class="t s1_20">Illegal or forbidden. </div>
+<div id="tj_20" class="t s2_20">NAJAASATE HAQEEQI </div>
+<div id="tk_20" class="t s1_20">THERE ARE TWO TYPES OF NAJAASATE HAQEEQI. </div>
+<div id="tl_20" class="t s1_20">1.</div>
+<div id="tm_20" class="t s2_20">NAJAASATE GHALIZA</div>
+<div id="tn_20" class="t s1_20">2.</div>
+<div id="to_20" class="t s2_20">NAJAASATE KHAFIFAH.</div>
+<div id="tp_20" class="t s2_20">Examples of NAJAASATE GHALIZA:</div>
+<div id="tq_20" class="t s1_20">Urine and stool of human beings and the excretion of all animals and the urine of all Haraam (forbidden) animals, </div>
+<div id="tr_20" class="t s1_20">flowing blood of human beings and animals, wine, fowl and duck excretion. </div>
+<div id="ts_20" class="t s2_20">Examples of NAJAASATE KHAFIFAH: </div>
+<div id="tt_20" class="t s1_20">Urine of HALAAL ANIMALS (animals permitted for eating) and the excretion of HARAAM BIRDS. </div>
+<div id="tu_20" class="t s2_20">NAJAASATE HAQEEQI:</div>
+<div id="tv_20" class="t s1_20">Whether Najaasat Haqeeqi (Ghaliza or Khafifah) is on the body or cloth can be cleaned by washing three times. </div>
+<div id="tw_20" class="t s1_20">After every wash the garment must be squeezed. </div>
+<div id="tx_20" class="t s1_20">STOOL Excreta) </div>
+<div id="ty_20" class="t s1_20">URINE </div>
+<div id="tz_20" class="t s1_20">BLOOD </div>
+<div id="t10_20" class="t s1_20">HUMAN BEINGS </div>
+<div id="t11_20" class="t s1_20">Najaasat Ghaliza</div>
+<div id="t12_20" class="t s1_20">Najaasat Ghaliza </div>
+<div id="t13_20" class="t s1_20">Najaasat Ghaliza</div>
+<div id="t14_20" class="t s1_20">HARAAM ANIMALS  </div>
+<div id="t15_20" class="t s1_20">Najaasat Ghaliza</div>
+<div id="t16_20" class="t s1_20">Najaasat Ghaliza</div>
+<div id="t17_20" class="t s1_20">Najaasat Ghaliza</div>
+<div id="t18_20" class="t s1_20">HALAAL ANIMALS  </div>
+<div id="t19_20" class="t s1_20">Najaasat Ghaliza</div>
+<div id="t1a_20" class="t s1_20">Najaasat Khafifah </div>
+<div id="t1b_20" class="t s1_20">Najaasat Ghaliza</div>
+<div id="t1c_20" class="t s1_20">HARAAM BIRDS </div>
+<div id="t1d_20" class="t s1_20">Najaasat Khafifah </div>
+<div id="t1e_20" class="t s1_20">Najaasat Ghaliza </div>
+<div id="t1f_20" class="t s1_20">HALAAL BIRDS </div>
+<div id="t1g_20" class="t s1_20">Pure-Clean</div>
+<div id="t1h_20" class="t s1_20">Najaasat Ghaliza</div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg20Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg20"><object width="935" height="1210" data="20/20.svg" type="image/svg+xml" id="pdf20" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld20" type="text/javascript">
+
+var isIE = false;
+var f20 = [['t2_20',696],['t3_20',933],['t4_20',805],['t5_20',692],['t6_20',793],['t7_20',932],['t8_20',734],['t9_20',617],['ta_20',705],['tc_20',1045],['td_20',427],['te_20',465],['tg_20',406],['ti_20',492],['tj_20',675],['tk_20',1460],['tm_20',672],['to_20',728],['tp_20',1030],['tq_20',2791],['tr_20',1871],['ts_20',1071],['tt_20',2520],['tu_20',696],['tv_20',2743],['tw_20',1191],['tx_20',420],['t10_20',468],['t11_20',416],['t12_20',416],['t13_20',416],['t14_20',582],['t15_20',416],['t16_20',416],['t17_20',416],['t18_20',562],['t19_20',416],['t1a_20',444],['t1b_20',416],['t1c_20',468],['t1d_20',444],['t1e_20',416],['t1f_20',448],['t1h_20',416]];
+function load20(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f20);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 54;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_20");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

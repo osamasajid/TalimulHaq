@@ -1,0 +1,313 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page37</title>
+</head>
+
+<body onload="load37()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_37{left:460px;top:1136px;}
+#t2_37{left:137px;top:54px;}
+#t3_37{left:165px;top:54px;}
+#t4_37{left:137px;top:87px;}
+#t5_37{left:165px;top:87px;}
+#t6_37{left:137px;top:120px;}
+#t7_37{left:165px;top:120px;}
+#t8_37{left:137px;top:153px;}
+#t9_37{left:165px;top:153px;}
+#ta_37{left:137px;top:186px;}
+#tb_37{left:165px;top:186px;}
+#tc_37{left:137px;top:220px;}
+#td_37{left:165px;top:220px;}
+#te_37{left:137px;top:253px;}
+#tf_37{left:165px;top:253px;}
+#tg_37{left:137px;top:286px;}
+#th_37{left:165px;top:286px;}
+#ti_37{left:332px;top:311px;}
+#tj_37{left:138px;top:340px;}
+#tk_37{left:165px;top:340px;}
+#tl_37{left:165px;top:358px;}
+#tm_37{left:165px;top:376px;}
+#tn_37{left:137px;top:409px;}
+#to_37{left:165px;top:409px;}
+#tp_37{left:165px;top:427px;}
+#tq_37{left:165px;top:445px;}
+#tr_37{left:137px;top:478px;}
+#ts_37{left:165px;top:478px;}
+#tt_37{left:137px;top:511px;}
+#tu_37{left:165px;top:511px;}
+#tv_37{left:165px;top:529px;}
+#tw_37{left:137px;top:562px;}
+#tx_37{left:165px;top:562px;}
+#ty_37{left:165px;top:580px;}
+#tz_37{left:165px;top:598px;}
+#t10_37{left:165px;top:616px;}
+#t11_37{left:165px;top:633px;}
+#t12_37{left:110px;top:666px;}
+#t13_37{left:110px;top:703px;}
+#t14_37{left:138px;top:741px;}
+#t15_37{left:165px;top:741px;}
+#t16_37{left:138px;top:775px;}
+#t17_37{left:165px;top:775px;}
+#t18_37{left:121px;top:808px;}
+#t19_37{left:110px;top:844px;}
+#t1a_37{left:110px;top:866px;}
+#t1b_37{left:110px;top:887px;}
+#t1c_37{left:110px;top:908px;}
+#t1d_37{left:110px;top:945px;}
+#t1e_37{left:110px;top:966px;}
+#t1f_37{left:110px;top:1003px;}
+#t1g_37{left:138px;top:1040px;}
+#t1h_37{left:165px;top:1040px;}
+#t1i_37{left:184px;top:1073px;}
+#t1j_37{left:220px;top:1073px;}
+#t1k_37{left:591px;top:1073px;}
+#t1l_37{left:180px;top:1106px;}
+#t1m_37{left:220px;top:1106px;}
+#t1n_37{left:528px;top:1106px;}
+
+.s1_37{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT37;
+	color: rgb(0,0,0);
+}
+
+.s4_37{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT37;
+	color: rgb(0,0,0);
+}
+
+.s3_37{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NKJHPH-Wingdings-Regular37;
+	color: rgb(0,0,0);
+}
+
+.s2_37{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT37;
+	color: rgb(0,0,0);
+}
+
+.s5_37{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT37;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT37;
+	src :url("37/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT37;
+	src :url("37/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT37;
+	src :url("37/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NKJHPH-Wingdings-Regular37;
+	src :url("37/fonts/NKJHPH-Wingdings-Regular.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_37" class="t s1_37">37</div>
+<div id="t2_37" class="t s1_37">6.</div>
+<div id="t3_37" class="t s1_37">Name TWO types of water that does NOT become IMPURE if something NAJIS (Impure) falls into it? </div>
+<div id="t4_37" class="t s1_37">7.</div>
+<div id="t5_37" class="t s1_37">When does a BIG TANK or RESERVOIR become NAJIS? </div>
+<div id="t6_37" class="t s1_37">8.</div>
+<div id="t7_37" class="t s1_37">What does TAHAARAT mean? </div>
+<div id="t8_37" class="t s1_37">9.</div>
+<div id="t9_37" class="t s1_37">What are the 3 FARAAI'Z of GHUSL? </div>
+<div id="ta_37" class="t s1_37">10.</div>
+<div id="tb_37" class="t s1_37">What are the 5 SUNNATS of GHUSL? </div>
+<div id="tc_37" class="t s1_37">11.</div>
+<div id="td_37" class="t s1_37">What are the 6 Rules whilst making GHUSL? </div>
+<div id="te_37" class="t s1_37">12.</div>
+<div id="tf_37" class="t s1_37">Explain the PROCEDURE for making GHUSL? </div>
+<div id="tg_37" class="t s1_37">13.</div>
+<div id="th_37" class="t s1_37">Explain HADATHE AKBAR? </div>
+<div id="ti_37" class="t s2_37">MASAA-IL PERTAINING TO GHUSL </div>
+<div id="tj_37" class="t s1_37">1.</div>
+<div id="tk_37" class="t s1_37">It is permissible to leave the head dry and wash the rest of the body if it is harmful to apply water to the </div>
+<div id="tl_37" class="t s1_37">head due to some sickness or ailment. However, once the person is cured of his sickness, it is Wajib to </div>
+<div id="tm_37" class="t s1_37">wash the head. Water has to flow over it. </div>
+<div id="tn_37" class="t s1_37">2.</div>
+<div id="to_37" class="t s1_37">Make haste in covering the body. One should not delay in wearing one's clothes after completing the </div>
+<div id="tp_37" class="t s1_37">Ghusl. The Shariat emphasizes this so much, that if the feet have not been washed as yet, then first put on </div>
+<div id="tq_37" class="t s1_37">the clothes and thereafter washes the feet. </div>
+<div id="tr_37" class="t s1_37">3.</div>
+<div id="ts_37" class="t s1_37">It is not necessary to remove the ointment from a cut or wound during Ghusl. Just pour water over it. </div>
+<div id="tt_37" class="t s1_37">4.</div>
+<div id="tu_37" class="t s1_37">After Ghusl, Wudhu should not be made to perform Salaat or for any other Ibaadat since the Ghusl is </div>
+<div id="tv_37" class="t s1_37">sufficient. </div>
+<div id="tw_37" class="t s3_37">±</div>
+<div id="tx_37" class="t s1_37">It is preferable to cut the nails of the fingers and toes as well as remove the hair from under the armpits and </div>
+<div id="ty_37" class="t s1_37">below the navel before taking bath. If one is in the state of Hadase Akbar or Janaabat then it is not </div>
+<div id="tz_37" class="t s1_37">permissible to remove, cut or break any nails or hair from any part of the body. Unwanted hair should </div>
+<div id="t10_37" class="t s1_37">preferably be removed once a week. If this is not possible then every second week. Care should be taken </div>
+<div id="t11_37" class="t s1_37">that it is not left for more than 40 days. Beyond 40 days the neglecter will be guilty of sin. </div>
+<div id="t12_37" class="t s2_37">Note: It is compulsory for a person who is in the state of Janaabat (impurity) to perform Ghusl. </div>
+<div id="t13_37" class="t s2_37">It is also compulsory for a woman to have a bath after Haidh and Nifaas. </div>
+<div id="t14_37" class="t s4_37">•</div>
+<div id="t15_37" class="t s1_37">Haidh: the female monthly period of menstruation. The maximum period of ten days. </div>
+<div id="t16_37" class="t s4_37">•</div>
+<div id="t17_37" class="t s1_37">Nifaas: the blood which flows after childbirth The maximum period is forty days. </div>
+<div id="t18_37" class="t s5_37">SEQUENCE TO BE FOLLOWED IN CLIPPING OF THE FINGER AND TOE NAILS. </div>
+<div id="t19_37" class="t s2_37">Pairing of the finger nails should begin at the SHAHAADAT finger (index finger of the right </div>
+<div id="t1a_37" class="t s2_37">hand). The nails of the balance three fingers (of the right hand) should be clipped next, in order. </div>
+<div id="t1b_37" class="t s2_37">Thereafter continue with the small finger of the left hand and complete the remaining three </div>
+<div id="t1c_37" class="t s2_37">fingers and thumb, in sequence. Lastly, clip the nail of the right thumb. </div>
+<div id="t1d_37" class="t s2_37">Clipping of the TOE nails should begin at the small toe of the RIGHT foot and end at the small </div>
+<div id="t1e_37" class="t s2_37">toe of the LEFT foot, in order. </div>
+<div id="t1f_37" class="t s5_37">QUESTIONS:</div>
+<div id="t1g_37" class="t s1_37">1.</div>
+<div id="t1h_37" class="t s1_37">True or False </div>
+<div id="t1i_37" class="t s1_37">i.</div>
+<div id="t1j_37" class="t s1_37">GHUSL will be VALID if one does not make the NIYYAH.</div>
+<div id="t1k_37" class="t s1_37">................</div>
+<div id="t1l_37" class="t s1_37">ii.</div>
+<div id="t1m_37" class="t s1_37">One must face the QIBLA while making GHUSL.</div>
+<div id="t1n_37" class="t s1_37">......................</div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg37Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg37"><object width="935" height="1210" data="37/37.svg" type="image/svg+xml" id="pdf37" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld37" type="text/javascript">
+
+var isIE = false;
+var f37 = [['t3_37',2540],['t5_37',1462],['t7_37',789],['t9_37',966],['tb_37',973],['td_37',1126],['tf_37',1194],['th_37',761],['ti_37',1193],['tk_37',2538],['tl_37',2514],['tm_37',1006],['to_37',2468],['tp_37',2589],['tq_37',1023],['ts_37',2475],['tu_37',2482],['tx_37',2628],['ty_37',2407],['tz_37',2496],['t10_37',2566],['t11_37',2208],['t12_37',2788],['t13_37',2133],['t15_37',2091],['t17_37',1999],['t18_37',2775],['t19_37',2737],['t1a_37',2814],['t1b_37',2670],['t1c_37',2087],['t1d_37',2794],['t1e_37',892],['t1h_37',327],['t1j_37',1484],['t1m_37',1232]];
+function load37(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f37);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 60;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_37");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

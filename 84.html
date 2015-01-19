@@ -1,0 +1,271 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page84</title>
+</head>
+
+<body onload="load84()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_84{left:460px;top:1136px;}
+#t2_84{left:165px;top:54px;}
+#t3_84{left:165px;top:72px;}
+#t4_84{left:138px;top:97px;}
+#t5_84{left:138px;top:127px;}
+#t6_84{left:165px;top:127px;}
+#t7_84{left:165px;top:145px;}
+#t8_84{left:165px;top:163px;}
+#t9_84{left:165px;top:181px;}
+#ta_84{left:137px;top:215px;}
+#tb_84{left:165px;top:215px;}
+#tc_84{left:165px;top:233px;}
+#td_84{left:165px;top:251px;}
+#te_84{left:165px;top:269px;}
+#tf_84{left:165px;top:287px;}
+#tg_84{left:137px;top:321px;}
+#th_84{left:165px;top:321px;}
+#ti_84{left:165px;top:339px;}
+#tj_84{left:165px;top:356px;}
+#tk_84{left:110px;top:423px;}
+#tl_84{left:206px;top:541px;}
+#tm_84{left:258px;top:577px;}
+#tn_84{left:389px;top:603px;}
+#to_84{left:110px;top:736px;}
+#tp_84{left:110px;top:757px;}
+#tq_84{left:110px;top:778px;}
+#tr_84{left:138px;top:816px;}
+#ts_84{left:165px;top:816px;}
+#tt_84{left:165px;top:834px;}
+#tu_84{left:266px;top:859px;}
+#tv_84{left:110px;top:938px;}
+#tw_84{left:110px;top:964px;}
+#tx_84{left:110px;top:1079px;}
+
+.s1_84{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT84;
+	color: rgb(0,0,0);
+}
+
+.s7_84{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(0,0,0);
+	FONT-STYLE: italic;
+}
+
+.s4_84{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT84;
+	color: rgb(0,0,0);
+}
+
+.s6_84{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(0,0,0);
+	FONT-STYLE: italic;
+}
+
+.s3_84{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT84;
+	color: rgb(0,0,0);
+}
+
+.s2_84{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT84;
+	color: rgb(0,0,0);
+}
+
+.s5_84{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(255,0,0);
+	FONT-STYLE: italic;
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT84;
+	src :url("84/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT84;
+	src :url("84/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT84;
+	src :url("84/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_84" class="t s1_84">84</div>
+<div id="t2_84" class="t s1_84">When one is incapable of reciting the Qur'an, someone else may be requested to recite these Suras or any </div>
+<div id="t3_84" class="t s1_84">other portion of the Qur'an. </div>
+<div id="t4_84" class="t s2_84">THE TALQEEN </div>
+<div id="t5_84" class="t s3_84">•</div>
+<div id="t6_84" class="t s1_84">TALQEEN is to remind the dying person of the two SHAHADATS, (i.e. Ash hadu alla ilâha il-lal-laahu </div>
+<div id="t7_84" class="t s1_84">was ash hadu Anna Muham-madan Abduhu wa Rasuluhu). When the end nears the dying person's breath </div>
+<div id="t8_84" class="t s1_84">quickens, the knees becomes so weak that they cannot move, the nose becomes bent and the temples </div>
+<div id="t9_84" class="t s1_84">subside. By these signs understand that the person is nearing the end. </div>
+<div id="ta_84" class="t s3_84">•</div>
+<div id="tb_84" class="t s1_84">The Talqeen should be read before the dying person takes hits last breaths. The Muhtadhar must NOT he </div>
+<div id="tc_84" class="t s1_84">asked or ORDERED to read the Kalima, but must be helped to recall it. This can easily be done by reciting </div>
+<div id="td_84" class="t s1_84">the Kalima aloud while being present in the room. Once the departing person utters the Kalima all who are </div>
+<div id="te_84" class="t s1_84">present should remain SILENT. The dying person should NOT be drawn into, any WORLDY discussions, </div>
+<div id="tf_84" class="t s1_84">but if he discusses any worldly affair, then the Talqeen should be repeated. </div>
+<div id="tg_84" class="t s3_84">•</div>
+<div id="th_84" class="t s1_84">After the Muhtadhar passes away, his mouth should be kept CLOSED by fastening a piece of Clean </div>
+<div id="ti_84" class="t s1_84">material around his chin and over his head, his eyes should be also be closed. Both feet should be tied </div>
+<div id="tj_84" class="t s1_84">together with a similar piece of cloth, and the body covered with a Clean sheet. </div>
+<div id="tk_84" class="t s4_84">The one who does this should read </div>
+<div id="tl_84" class="t s5_84">Bismi Allah, wa `ala millat Irasuli Allah salla Allahu `alaihi wa sallam</div>
+<div id="tm_84" class="t s1_84">(In the name of Allah and on creed, religion and faith of Rasulullah) </div>
+<div id="tn_84" class="t s2_84">He may further read : </div>
+<div id="to_84" class="t s6_84">(O! Allah, ease upon him matters, and make light for him whatever comes hereafter, and honor </div>
+<div id="tp_84" class="t s6_84">him with Your meeting and make that which he has gone to better than that which he come out </div>
+<div id="tq_84" class="t s6_84">from.)</div>
+<div id="tr_84" class="t s3_84">•</div>
+<div id="ts_84" class="t s1_84">N.B It is MAKROOH (disliked) to recite the Holy Qur'an near the deceased person's body during the </div>
+<div id="tt_84" class="t s1_84">period between DEATH and the GHUSL </div>
+<div id="tu_84" class="t s2_84">All the individuals of the deceased’s family may read : </div>
+<div id="tv_84" class="t s7_84">(O! Allah, forgive me and him, and grant me a good reward after him.) </div>
+<div id="tw_84" class="t s4_84">And those who are grieved by this demise may read. </div>
+<div id="tx_84" class="t s6_84">(To Allah do we belong, and to him shall we return.)</div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg84Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg84"><object width="935" height="1210" data="84/84.svg" type="image/svg+xml" id="pdf84" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld84" type="text/javascript">
+
+var isIE = false;
+var f84 = [['t2_84',2576],['t3_84',670],['t4_84',498],['t6_84',2563],['t7_84',2577],['t8_84',2463],['t9_84',1695],['tb_84',2575],['tc_84',2624],['td_84',2615],['te_84',2616],['tf_84',1836],['th_84',2450],['ti_84',2495],['tj_84',1940],['tk_84',1075],['tl_84',2093],['tm_84',1674],['tn_84',631],['to_84',2800],['tp_84',2776],['ts_84',2480],['tt_84',1014],['tu_84',1608],['tv_84',1748],['tw_84',1630],['tx_84',1545]];
+function load84(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f84);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 34;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_84");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

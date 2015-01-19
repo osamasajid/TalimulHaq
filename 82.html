@@ -1,0 +1,283 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page82</title>
+</head>
+
+<body onload="load82()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_82{left:460px;top:1136px;}
+#t2_82{left:110px;top:54px;}
+#t3_82{left:110px;top:72px;}
+#t4_82{left:110px;top:90px;}
+#t5_82{left:110px;top:108px;}
+#t6_82{left:162px;top:108px;}
+#t7_82{left:110px;top:126px;}
+#t8_82{left:242px;top:126px;}
+#t9_82{left:110px;top:145px;}
+#ta_82{left:110px;top:163px;}
+#tb_82{left:652px;top:163px;}
+#tc_82{left:110px;top:181px;}
+#td_82{left:110px;top:199px;}
+#te_82{left:110px;top:232px;}
+#tf_82{left:110px;top:249px;}
+#tg_82{left:110px;top:267px;}
+#th_82{left:110px;top:285px;}
+#ti_82{left:110px;top:303px;}
+#tj_82{left:110px;top:321px;}
+#tk_82{left:110px;top:339px;}
+#tl_82{left:110px;top:357px;}
+#tm_82{left:110px;top:375px;}
+#tn_82{left:110px;top:408px;}
+#to_82{left:110px;top:426px;}
+#tp_82{left:110px;top:443px;}
+#tq_82{left:110px;top:461px;}
+#tr_82{left:110px;top:479px;}
+#ts_82{left:110px;top:497px;}
+#tt_82{left:110px;top:530px;}
+#tu_82{left:234px;top:530px;}
+#tv_82{left:110px;top:548px;}
+#tw_82{left:110px;top:581px;}
+#tx_82{left:110px;top:599px;}
+#ty_82{left:110px;top:633px;}
+#tz_82{left:110px;top:650px;}
+#t10_82{left:110px;top:683px;}
+#t11_82{left:110px;top:705px;}
+#t12_82{left:110px;top:741px;}
+#t13_82{left:110px;top:762px;}
+#t14_82{left:110px;top:784px;}
+#t15_82{left:110px;top:820px;}
+#t16_82{left:110px;top:842px;}
+#t17_82{left:110px;top:863px;}
+#t18_82{left:110px;top:900px;}
+#t19_82{left:138px;top:929px;}
+#t1a_82{left:138px;top:958px;}
+#t1b_82{left:165px;top:958px;}
+#t1c_82{left:138px;top:991px;}
+#t1d_82{left:165px;top:991px;}
+#t1e_82{left:138px;top:1024px;}
+#t1f_82{left:165px;top:1024px;}
+#t1g_82{left:138px;top:1057px;}
+#t1h_82{left:165px;top:1057px;}
+#t1i_82{left:138px;top:1090px;}
+#t1j_82{left:165px;top:1090px;}
+
+.s1_82{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT82;
+	color: rgb(0,0,0);
+}
+
+.s2_82{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT82;
+	color: rgb(0,0,0);
+}
+
+.s3_82{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT82;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT82;
+	src :url("82/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT82;
+	src :url("82/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_82" class="t s1_82">82</div>
+<div id="t2_82" class="t s2_82">"ALLAHUMMA INNI ASTAKHYIRUKA BI'ILMIKA WA ASTAQDIRUKA BI QUDRATIKA WA AS-</div>
+<div id="t3_82" class="t s2_82">ALUKA MIN FADHLKA-AL-AZIM, FA INNAKA TAQDIRU WALAA AQDIRU WATA'LAMU WALAA </div>
+<div id="t4_82" class="t s2_82">A'LAMU, WA ANTA 'ALLAMUL-GUYYUB. ALLAHUUMA IN KUNTA TA'LAMU ANNA HADHAL-</div>
+<div id="t5_82" class="t s2_82">AMRA</div>
+<div id="t6_82" class="t s1_82">(Here the person makes mention of the matter for which guidance is sought, i.e., "should I move, take that </div>
+<div id="t7_82" class="t s1_82">job, marry her, etc.") </div>
+<div id="t8_82" class="t s2_82">KHEIRUN LEE FII DINII WAMA'AASHII WA'AAQIBATA AMRII FAQDURHU LII, </div>
+<div id="t9_82" class="t s2_82">WA YASSIR-HU LII THUMMA BAARIK LII FIIHI, WAIN KUNTA TA' LAMU ANNA HADHAL-AMRA</div>
+<div id="ta_82" class="t s1_82">(also at this point the person makes mention of the matter for which guidance is sought) </div>
+<div id="tb_82" class="t s2_82">SHARRUN LEE FII </div>
+<div id="tc_82" class="t s2_82">DINII WA MA'AASHII WA'AAQIBATA AMRII, FASRIFHU 'ANNII WASRIFNII 'ANHU WAQDUR </div>
+<div id="td_82" class="t s2_82">LEE YAL-KHAIRA HEYTHU KANA THUMMA ARDHINI BIHII."</div>
+<div id="te_82" class="t s1_82">Which means: </div>
+<div id="tf_82" class="t s1_82">"O Lord, I seek your guidance, through Your knowledge and power; and I ask You of Your great bounties; for You </div>
+<div id="tg_82" class="t s1_82">decree and I do not decree; and You know and I know not; You are the Knower of invisible things. O Lord, if You </div>
+<div id="th_82" class="t s1_82">know that this matter (here the person makes mention of the matter for which guidance is sought, i.e., "should I </div>
+<div id="ti_82" class="t s1_82">move, take that job, marry her, etc."), is of benefit to me in my religion, in my livelihood and in its outcome, decide </div>
+<div id="tj_82" class="t s1_82">it for me and make it easy for me and then bless it for me. And if You know that this matter (here again the person </div>
+<div id="tk_82" class="t s1_82">makes mention of the matter for which guidance is sought) is bad for me in my religion, in my livelihood, and in its </div>
+<div id="tl_82" class="t s1_82">outcome, turn it from me and divert me from it and decree good for me wherever it may be and make me pleased </div>
+<div id="tm_82" class="t s1_82">with it." </div>
+<div id="tn_82" class="t s1_82">Having sought Allah's guidance as above, the person then resumes his/her routine affairs and waits for the due </div>
+<div id="to_82" class="t s1_82">response from Allah. This can appear to the person by way of the feeling you have in your heart about the matter of </div>
+<div id="tp_82" class="t s1_82">either confidence or further indecision. Thus, when you feel in your heart a sense of vigor, optimism or confidence </div>
+<div id="tq_82" class="t s1_82">about the intended undertaking, you may construe this as a positive response from Allah (swt) and may accordingly </div>
+<div id="tr_82" class="t s1_82">proceed forward with the intended undertaking. If, on the other hand, the opposite is true and your sense of doubt or </div>
+<div id="ts_82" class="t s1_82">worries have not cleared, then you may want to avoid the proposed undertaking as it could mean a bad outcome. </div>
+<div id="tt_82" class="t s2_82">Allah (swt) says: ".</div>
+<div id="tu_82" class="t s2_82">..It is possible that ye dislike a thing which is good for you, and that you may love a thing </div>
+<div id="tv_82" class="t s2_82">which is bad for you. But Allah knoweth and you know not." (Qur'an 2:216)</div>
+<div id="tw_82" class="t s1_82">Indeed the essence of this prayer is to test someone's trust in Allah, hence, the need to abide by the guidance of </div>
+<div id="tx_82" class="t s1_82">Allah whether it means pursuing or abandoning the intended undertaking. Allah also says: </div>
+<div id="ty_82" class="t s2_82">"...and if anyone puts his trust in Allah, sufficient is Allah for him. For verily Allah surely accomplishes His </div>
+<div id="tz_82" class="t s2_82">purpose: Verily, for all things has Allah appointed a due proportion." (Qur'an 65:3)</div>
+<div id="t10_82" class="t s3_82">Upon reciting the underline words think of the reason and work for which Istikhaarah is being </div>
+<div id="t11_82" class="t s3_82">made. Thereafter sleep on clean bedding with Wudhu facing the qiblah. </div>
+<div id="t12_82" class="t s3_82">One should not make Istikhaarah for performing a Farz duty of should I perform Hajj or not. </div>
+<div id="t13_82" class="t s3_82">Istikhaarah should rather be made to determine the time of travel for Hajj e.g. When should I </div>
+<div id="t14_82" class="t s3_82">travel for Hajj? </div>
+<div id="t15_82" class="t s3_82">If a person has committed any sin perform two Rak’aats Salaat and thereafter recite Durood upon </div>
+<div id="t16_82" class="t s3_82">Nabi (Sallallaahu alaihi wa Sallam). Allah's pardon by a firm pledge saying: Oh Allah! I shall </div>
+<div id="t17_82" class="t s3_82">not commit this sin again. Oh Allah! forgive me. </div>
+<div id="t18_82" class="t s3_82">By the grace of Allah Ta’aala the sin will be forgiven. </div>
+<div id="t19_82" class="t s3_82">QUESTIONS </div>
+<div id="t1a_82" class="t s1_82">1.</div>
+<div id="t1b_82" class="t s1_82">What should one ensure before Salaah? </div>
+<div id="t1c_82" class="t s1_82">2.</div>
+<div id="t1d_82" class="t s1_82">Will the Salaah be correct if any garment is overlapping the ankles? </div>
+<div id="t1e_82" class="t s1_82">3.</div>
+<div id="t1f_82" class="t s1_82">Is it necessary to make a verbal intention for Salaah? </div>
+<div id="t1g_82" class="t s1_82">4.</div>
+<div id="t1h_82" class="t s1_82">Where should the eyes be fixed during Qiyaam'? </div>
+<div id="t1i_82" class="t s1_82">5.</div>
+<div id="t1j_82" class="t s1_82">Explain the difference between a male's and female's Ruku and Sajdah. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg82Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg82"><object width="935" height="1210" data="82/82.svg" type="image/svg+xml" id="pdf82" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld82" type="text/javascript">
+
+var isIE = false;
+var f82 = [['t2_82',2775],['t3_82',2835],['t4_82',2768],['t6_82',2600],['t7_82',512],['t8_82',2332],['t9_82',2857],['ta_82',2153],['tb_82',541],['tc_82',2736],['td_82',1837],['te_82',352],['tf_82',2837],['tg_82',2816],['th_82',2730],['ti_82',2833],['tj_82',2805],['tk_82',2834],['tl_82',2770],['tm_82',198],['tn_82',2706],['to_82',2835],['tp_82',2815],['tq_82',2836],['tr_82',2850],['ts_82',2757],['tt_82',497],['tu_82',2316],['tv_82',1996],['tw_82',2720],['tx_82',2213],['ty_82',2805],['tz_82',2199],['t10_82',2763],['t11_82',2103],['t12_82',2716],['t13_82',2727],['t14_82',449],['t15_82',2859],['t16_82',2753],['t17_82',1430],['t18_82',1588],['t1b_82',971],['t1d_82',1664],['t1f_82',1296],['t1h_82',1195],['t1j_82',1745]];
+function load82(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f82);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 56;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_82");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

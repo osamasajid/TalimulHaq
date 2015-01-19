@@ -1,0 +1,320 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page38</title>
+</head>
+
+<body onload="load38()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_38{left:460px;top:1136px;}
+#t2_38{left:176px;top:54px;}
+#t3_38{left:220px;top:54px;}
+#t4_38{left:577px;top:54px;}
+#t5_38{left:177px;top:87px;}
+#t6_38{left:220px;top:87px;}
+#t7_38{left:633px;top:87px;}
+#t8_38{left:181px;top:120px;}
+#t9_38{left:220px;top:120px;}
+#ta_38{left:666px;top:120px;}
+#tb_38{left:177px;top:153px;}
+#tc_38{left:220px;top:153px;}
+#td_38{left:173px;top:186px;}
+#te_38{left:220px;top:186px;}
+#tf_38{left:642px;top:186px;}
+#tg_38{left:168px;top:220px;}
+#th_38{left:220px;top:220px;}
+#ti_38{left:732px;top:220px;}
+#tj_38{left:177px;top:253px;}
+#tk_38{left:220px;top:253px;}
+#tl_38{left:700px;top:253px;}
+#tm_38{left:137px;top:286px;}
+#tn_38{left:165px;top:286px;}
+#to_38{left:137px;top:319px;}
+#tp_38{left:165px;top:319px;}
+#tq_38{left:165px;top:337px;}
+#tr_38{left:137px;top:370px;}
+#ts_38{left:165px;top:370px;}
+#tt_38{left:137px;top:403px;}
+#tu_38{left:165px;top:403px;}
+#tv_38{left:137px;top:436px;}
+#tw_38{left:165px;top:436px;}
+#tx_38{left:165px;top:454px;}
+#ty_38{left:137px;top:487px;}
+#tz_38{left:165px;top:487px;}
+#t10_38{left:137px;top:520px;}
+#t11_38{left:165px;top:520px;}
+#t12_38{left:137px;top:553px;}
+#t13_38{left:165px;top:553px;}
+#t14_38{left:137px;top:586px;}
+#t15_38{left:165px;top:586px;}
+#t16_38{left:137px;top:619px;}
+#t17_38{left:165px;top:619px;}
+#t18_38{left:322px;top:645px;}
+#t19_38{left:409px;top:666px;}
+#t1a_38{left:138px;top:709px;}
+#t1b_38{left:138px;top:739px;}
+#t1c_38{left:165px;top:739px;}
+#t1d_38{left:165px;top:757px;}
+#t1e_38{left:138px;top:791px;}
+#t1f_38{left:165px;top:791px;}
+#t1g_38{left:138px;top:816px;}
+#t1h_38{left:138px;top:846px;}
+#t1i_38{left:165px;top:846px;}
+#t1j_38{left:138px;top:879px;}
+#t1k_38{left:165px;top:879px;}
+#t1l_38{left:138px;top:912px;}
+#t1m_38{left:165px;top:912px;}
+#t1n_38{left:138px;top:945px;}
+#t1o_38{left:165px;top:945px;}
+#t1p_38{left:165px;top:963px;}
+#t1q_38{left:138px;top:996px;}
+#t1r_38{left:165px;top:996px;}
+#t1s_38{left:165px;top:1014px;}
+#t1t_38{left:138px;top:1047px;}
+#t1u_38{left:165px;top:1047px;}
+#t1v_38{left:138px;top:1080px;}
+#t1w_38{left:165px;top:1080px;}
+
+.s1_38{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT38;
+	color: rgb(0,0,0);
+}
+
+.s4_38{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT38;
+	color: rgb(0,0,0);
+}
+
+.s3_38{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT38;
+	color: rgb(0,0,0);
+}
+
+.s2_38{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT38;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT38;
+	src :url("38/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT38;
+	src :url("38/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT38;
+	src :url("38/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_38" class="t s1_38">38</div>
+<div id="t2_38" class="t s1_38">iii.</div>
+<div id="t3_38" class="t s1_38">It is better to READ KALIMAH while GHUSL (bathing).</div>
+<div id="t4_38" class="t s1_38">.................</div>
+<div id="t5_38" class="t s1_38">iv.</div>
+<div id="t6_38" class="t s1_38">GHUSL will NOT be valid if the mouth is thoroughly rinsed once .</div>
+<div id="t7_38" class="t s1_38">..............</div>
+<div id="t8_38" class="t s1_38">v.</div>
+<div id="t9_38" class="t s1_38">In GHUSL it is COMPULSORY to wet the base of each and every hair .</div>
+<div id="ta_38" class="t s1_38">.............</div>
+<div id="tb_38" class="t s1_38">vi.</div>
+<div id="tc_38" class="t s1_38">It is SUNNAT to clean the body by rubbing it whilst making GHUSL? </div>
+<div id="td_38" class="t s1_38">vii.</div>
+<div id="te_38" class="t s1_38">For GHUSL to be valid RINGS and EARRINGS, must be removed .</div>
+<div id="tf_38" class="t s1_38">...............</div>
+<div id="tg_38" class="t s1_38">viii.</div>
+<div id="th_38" class="t s1_38">It is necessary to repeat the WHOLE GHUSL if any portion of the body is left dry .</div>
+<div id="ti_38" class="t s1_38">..................</div>
+<div id="tj_38" class="t s1_38">ix.</div>
+<div id="tk_38" class="t s1_38">It is preferable to do WUDHU again immediately after completing the Ghusl .</div>
+<div id="tl_38" class="t s1_38">............</div>
+<div id="tm_38" class="t s1_38">2.</div>
+<div id="tn_38" class="t s1_38">Is it permissible to leave the head dry during a FARDH Ghusl ? </div>
+<div id="to_38" class="t s1_38">3.</div>
+<div id="tp_38" class="t s1_38">If, due to some illness, a person did not wash his head during a FARDH Ghusl then is it necessary to repeat </div>
+<div id="tq_38" class="t s1_38">the entire Ghusl? </div>
+<div id="tr_38" class="t s1_38">4.</div>
+<div id="ts_38" class="t s1_38">What is the ruling of the Shariat regarding the covering of the body? </div>
+<div id="tt_38" class="t s1_38">5.</div>
+<div id="tu_38" class="t s1_38">What should he done regarding the ointment on a wound? </div>
+<div id="tv_38" class="t s1_38">6.</div>
+<div id="tw_38" class="t s1_38">What should a person do if it is realized after a Fardh Ghusl that some hard food particle which stuck </div>
+<div id="tx_38" class="t s1_38">between the teeth? Why is this necessary? </div>
+<div id="ty_38" class="t s1_38">7.</div>
+<div id="tz_38" class="t s1_38">After Ghusl, if a person performs Salaat without performing Wudhu, then is such a Salaat accepted? </div>
+<div id="t10_38" class="t s1_38">8.</div>
+<div id="t11_38" class="t s1_38">Is it permissible to remove the hair, clip the finger nails or have a haircut in the states of Janaabat? </div>
+<div id="t12_38" class="t s1_38">9.</div>
+<div id="t13_38" class="t s1_38">What is the maximum period that unwanted hair should be left from the body? </div>
+<div id="t14_38" class="t s1_38">10.</div>
+<div id="t15_38" class="t s1_38">If this period as mentioned in 8 is exceeded, what will happen? </div>
+<div id="t16_38" class="t s1_38">11.</div>
+<div id="t17_38" class="t s1_38">What is the sequence to be followed when clipping the finger and toe nails? </div>
+<div id="t18_38" class="t s2_38">Dry Ablution and Wiping over Socks </div>
+<div id="t19_38" class="t s2_38">TAYAMMUM </div>
+<div id="t1a_38" class="t s3_38">PART 5 </div>
+<div id="t1b_38" class="t s4_38">•</div>
+<div id="t1c_38" class="t s1_38">To get rid of NAJAASATE HUKMIYYA by making use of clean earth or clay in a special way is called </div>
+<div id="t1d_38" class="t s1_38">TAYAMMUM. </div>
+<div id="t1e_38" class="t s4_38">•</div>
+<div id="t1f_38" class="t s1_38">TAYAMMUM is permitted when water is not available or when the use of water is injurious to health. </div>
+<div id="t1g_38" class="t s3_38">TAYAMMUM IS PERMITTED IN THE FOLLOWING CASES: </div>
+<div id="t1h_38" class="t s1_38">1.</div>
+<div id="t1i_38" class="t s1_38">When water is not available within a radius of approximately 1.7 Kilometers (one mile). </div>
+<div id="t1j_38" class="t s1_38">2.</div>
+<div id="t1k_38" class="t s1_38">When there is fear of any enemy or a dangerous animal or a sneck near the water. </div>
+<div id="t1l_38" class="t s1_38">3.</div>
+<div id="t1m_38" class="t s1_38">When the water is so little that, if the water is used up for Wudhu or Ghusl then there is fear of thirst. </div>
+<div id="t1n_38" class="t s1_38">4.</div>
+<div id="t1o_38" class="t s1_38">When there is no rope or bucket to draw water from a well or one cannot reach water that is nearby (due to </div>
+<div id="t1p_38" class="t s1_38">some reason) and no other person is available to fetch the water. </div>
+<div id="t1q_38" class="t s1_38">5.</div>
+<div id="t1r_38" class="t s1_38">When it is known by one's own experience or a capable doctor says that the use of water would definitely </div>
+<div id="t1s_38" class="t s1_38">be injurious to one's health. </div>
+<div id="t1t_38" class="t s1_38">6.</div>
+<div id="t1u_38" class="t s1_38">When one does not have sufficient amount of money to pay for water which is being sold. </div>
+<div id="t1v_38" class="t s1_38">7.</div>
+<div id="t1w_38" class="t s1_38">Or if water is sold at a very ridiculous price. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg38Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg38"><object width="935" height="1210" data="38/38.svg" type="image/svg+xml" id="pdf38" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld38" type="text/javascript">
+
+var isIE = false;
+var f38 = [['t3_38',1426],['t6_38',1650],['t9_38',1783],['tc_38',1738],['te_38',1688],['th_38',2048],['tk_38',1918],['tn_38',1564],['tp_38',2635],['tq_38',419],['ts_38',1681],['tu_38',1424],['tw_38',2482],['tx_38',1033],['tz_38',2459],['t11_38',2411],['t13_38',1925],['t15_38',1548],['t17_38',1860],['t18_38',1159],['t1a_38',242],['t1c_38',2566],['t1f_38',2524],['t1g_38',1940],['t1i_38',2162],['t1k_38',2000],['t1m_38',2481],['t1o_38',2621],['t1p_38',1577],['t1r_38',2588],['t1s_38',674],['t1u_38',2209],['t1w_38',1083]];
+function load38(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f38);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 69;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_38");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

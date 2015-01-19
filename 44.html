@@ -1,0 +1,316 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page44</title>
+</head>
+
+<body onload="load44()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_44{left:460px;top:1136px;}
+#t2_44{left:137px;top:55px;}
+#t3_44{left:165px;top:55px;}
+#t4_44{left:137px;top:89px;}
+#t5_44{left:165px;top:89px;}
+#t6_44{left:165px;top:107px;}
+#t7_44{left:137px;top:140px;}
+#t8_44{left:165px;top:140px;}
+#t9_44{left:165px;top:158px;}
+#ta_44{left:137px;top:191px;}
+#tb_44{left:165px;top:191px;}
+#tc_44{left:165px;top:209px;}
+#td_44{left:137px;top:242px;}
+#te_44{left:165px;top:242px;}
+#tf_44{left:165px;top:260px;}
+#tg_44{left:137px;top:293px;}
+#th_44{left:165px;top:293px;}
+#ti_44{left:165px;top:311px;}
+#tj_44{left:137px;top:344px;}
+#tk_44{left:165px;top:344px;}
+#tl_44{left:137px;top:377px;}
+#tm_44{left:165px;top:377px;}
+#tn_44{left:165px;top:395px;}
+#to_44{left:137px;top:428px;}
+#tp_44{left:165px;top:428px;}
+#tq_44{left:165px;top:446px;}
+#tr_44{left:110px;top:479px;}
+#ts_44{left:138px;top:516px;}
+#tt_44{left:165px;top:516px;}
+#tu_44{left:138px;top:549px;}
+#tv_44{left:165px;top:549px;}
+#tw_44{left:138px;top:582px;}
+#tx_44{left:165px;top:582px;}
+#ty_44{left:137px;top:615px;}
+#tz_44{left:165px;top:615px;}
+#t10_44{left:165px;top:633px;}
+#t11_44{left:137px;top:666px;}
+#t12_44{left:165px;top:666px;}
+#t13_44{left:137px;top:699px;}
+#t14_44{left:165px;top:699px;}
+#t15_44{left:137px;top:732px;}
+#t16_44{left:165px;top:732px;}
+#t17_44{left:137px;top:765px;}
+#t18_44{left:165px;top:765px;}
+#t19_44{left:137px;top:798px;}
+#t1a_44{left:165px;top:798px;}
+#t1b_44{left:137px;top:831px;}
+#t1c_44{left:165px;top:831px;}
+#t1d_44{left:137px;top:865px;}
+#t1e_44{left:165px;top:865px;}
+#t1f_44{left:137px;top:898px;}
+#t1g_44{left:165px;top:898px;}
+#t1h_44{left:137px;top:931px;}
+#t1i_44{left:165px;top:931px;}
+#t1j_44{left:165px;top:949px;}
+#t1k_44{left:137px;top:982px;}
+#t1l_44{left:165px;top:982px;}
+#t1m_44{left:352px;top:982px;}
+#t1n_44{left:409px;top:982px;}
+#t1o_44{left:480px;top:982px;}
+#t1p_44{left:542px;top:982px;}
+#t1q_44{left:137px;top:1015px;}
+#t1r_44{left:165px;top:1015px;}
+#t1s_44{left:137px;top:1048px;}
+#t1t_44{left:165px;top:1048px;}
+#t1u_44{left:137px;top:1081px;}
+#t1v_44{left:165px;top:1081px;}
+#t1w_44{left:137px;top:1114px;}
+#t1x_44{left:165px;top:1114px;}
+
+.s1_44{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT44;
+	color: rgb(0,0,0);
+}
+
+.s3_44{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT44;
+	color: rgb(0,0,0);
+}
+
+.s2_44{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT44;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT44;
+	src :url("44/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT44;
+	src :url("44/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT44;
+	src :url("44/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_44" class="t s1_44">44</div>
+<div id="t2_44" class="t s2_44">•</div>
+<div id="t3_44" class="t s1_44">If only one sock was removed then, too, it is Wajib to remove the other one and wash both feet. </div>
+<div id="t4_44" class="t s2_44">•</div>
+<div id="t5_44" class="t s1_44">Even if only the foreleg is exposed by lowering the Khuff, it will be regarded as if the whole sock has been </div>
+<div id="t6_44" class="t s1_44">removed. It will then be COMPULSORY to remove the Khuffain and wash both feet. </div>
+<div id="t7_44" class="t s1_44">1.</div>
+<div id="t8_44" class="t s1_44">It is not permissible to make Masah on a Khuff which is torn to such an extent that an area equal to the size </div>
+<div id="t9_44" class="t s1_44">of three small toes is exposed. It is permissible to make Masah on the sock if it is torn less than this. </div>
+<div id="ta_44" class="t s1_44">2.</div>
+<div id="tb_44" class="t s1_44">If the seam of the Khuff comes loose, but while walking the foot is not exposed, Masah on such Khuffain </div>
+<div id="tc_44" class="t s1_44">will be valid. </div>
+<div id="td_44" class="t s1_44">3.</div>
+<div id="te_44" class="t s1_44">If a Muqeem who has made Masah Alal Khuffain goes on a journey before the expiry of 24 hours, then his </div>
+<div id="tf_44" class="t s1_44">mash may be extended to 72 hours. His Masah will now be valid for 72 hours. </div>
+<div id="tg_44" class="t s1_44">4.</div>
+<div id="th_44" class="t s1_44">If a Musaafir who has made Masah Alal Khuffain, returns to his home town then his Masah will be valid </div>
+<div id="ti_44" class="t s1_44">for only 24 hours. </div>
+<div id="tj_44" class="t s1_44">5.</div>
+<div id="tk_44" class="t s1_44">It is permissible to make Masah on ordinary woolen, etc, socks which have been covered with leather . </div>
+<div id="tl_44" class="t s1_44">6.</div>
+<div id="tm_44" class="t s1_44">If Ghusl becomes compulsory then Masah Alal Khuffain will not be permissible even if the valid period </div>
+<div id="tn_44" class="t s1_44">has not yet expired. The Khuffain must be removed when the Ghusl is taken and the feet washed. </div>
+<div id="to_44" class="t s1_44">7.</div>
+<div id="tp_44" class="t s1_44">If after making Masah one sets foot in a puddle of water and water enters the Khuff wetting more than half </div>
+<div id="tq_44" class="t s1_44">the foot, then Masah will be Break. Both Khuffain must be removed and the feet washed. </div>
+<div id="tr_44" class="t s3_44">QUESTIONS</div>
+<div id="ts_44" class="t s1_44">1.</div>
+<div id="tt_44" class="t s1_44">What is Tayammum? </div>
+<div id="tu_44" class="t s1_44">2.</div>
+<div id="tv_44" class="t s1_44">Mention seven instances when Tayammum is permissible. </div>
+<div id="tw_44" class="t s1_44">3.</div>
+<div id="tx_44" class="t s1_44">Can Tayammum and Salaah be made on ground on which something Najis has fallen and become dry? </div>
+<div id="ty_44" class="t s1_44">4.</div>
+<div id="tz_44" class="t s1_44">If a person's body and clothes are Najis and the person is in need of Wudhu or Ghusl, then what should he </div>
+<div id="t10_44" class="t s1_44">do if the time for Salaat has come and he has very little water? </div>
+<div id="t11_44" class="t s1_44">5.</div>
+<div id="t12_44" class="t s1_44">Mention the compulsory acts of Tayammum. </div>
+<div id="t13_44" class="t s1_44">6.</div>
+<div id="t14_44" class="t s1_44">Explain in detail and in correct order the Masnoon procedure of Tayammum. </div>
+<div id="t15_44" class="t s1_44">7.</div>
+<div id="t16_44" class="t s1_44">Should the Khilal of fingers and the bard be done during Tayammum? </div>
+<div id="t17_44" class="t s1_44">8.</div>
+<div id="t18_44" class="t s1_44">What is it to make Khilal of the fingers and beard during Tayammum. </div>
+<div id="t19_44" class="t s1_44">9.</div>
+<div id="t1a_44" class="t s1_44">Mention eight items on which Tayammum is permitted. </div>
+<div id="t1b_44" class="t s1_44">10.</div>
+<div id="t1c_44" class="t s1_44">Is Tayammum permissible for Wudhu and Ghusl or only for Wudhu? </div>
+<div id="t1d_44" class="t s1_44">11.</div>
+<div id="t1e_44" class="t s1_44">Mention five items on Tayammum is not permitted. </div>
+<div id="t1f_44" class="t s1_44">12.</div>
+<div id="t1g_44" class="t s1_44">Is it necessary for items to cover with dust for Tayammum? </div>
+<div id="t1h_44" class="t s1_44">13.</div>
+<div id="t1i_44" class="t s1_44">Can a stone, brick or clay pot be used for Tayammum even though it has been washed and is free from </div>
+<div id="t1j_44" class="t s1_44">dust. </div>
+<div id="t1k_44" class="t s1_44">14.</div>
+<div id="t1l_44" class="t s1_44">If one has the fear of missing .</div>
+<div id="t1m_44" class="t s1_44">..............</div>
+<div id="t1n_44" class="t s1_44">Salaah and.</div>
+<div id="t1o_44" class="t s1_44">...............</div>
+<div id="t1p_44" class="t s1_44">Salaah, it is permissible to make Tayammum. </div>
+<div id="t1q_44" class="t s1_44">15.</div>
+<div id="t1r_44" class="t s1_44">Name two Salaat for which there is no Qazaa. </div>
+<div id="t1s_44" class="t s1_44">16.</div>
+<div id="t1t_44" class="t s1_44">If water is found after Salaat has been performed, is it necessary to repeat the said Salaat? </div>
+<div id="t1u_44" class="t s1_44">17.</div>
+<div id="t1v_44" class="t s1_44">What is the duration of Tayammum? </div>
+<div id="t1w_44" class="t s1_44">18.</div>
+<div id="t1x_44" class="t s1_44">Mention the Nawaqis of Tayammum. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg44Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg44"><object width="935" height="1210" data="44/44.svg" type="image/svg+xml" id="pdf44" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld44" type="text/javascript">
+
+var isIE = false;
+var f44 = [['t3_44',2345],['t5_44',2627],['t6_44',2103],['t8_44',2630],['t9_44',2448],['tb_44',2588],['tc_44',321],['te_44',2622],['tf_44',1920],['th_44',2571],['ti_44',440],['tk_44',2519],['tm_44',2553],['tn_44',2386],['tp_44',2619],['tq_44',2190],['tt_44',526],['tv_44',1429],['tx_44',2522],['tz_44',2603],['t10_44',1530],['t12_44',1103],['t14_44',1889],['t16_44',1725],['t18_44',1716],['t1a_44',1365],['t1c_44',1704],['t1e_44',1267],['t1g_44',1463],['t1i_44',2517],['t1l_44',746],['t1n_44',283],['t1p_44',1116],['t1r_44',1125],['t1t_44',2198],['t1v_44',903],['t1x_44',918]];
+function load44(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f44);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 70;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_44");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page60</title>
+</head>
+
+<body onload="load60()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_60{left:460px;top:1136px;}
+#t2_60{left:110px;top:113px;}
+#t3_60{left:110px;top:149px;}
+#t4_60{left:110px;top:207px;}
+#t5_60{left:110px;top:231px;}
+#t6_60{left:110px;top:256px;}
+#t7_60{left:110px;top:574px;}
+#t8_60{left:110px;top:593px;}
+#t9_60{left:110px;top:612px;}
+#ta_60{left:110px;top:647px;}
+#tb_60{left:110px;top:665px;}
+#tc_60{left:110px;top:683px;}
+#td_60{left:307px;top:716px;}
+#te_60{left:307px;top:735px;}
+#tf_60{left:307px;top:755px;}
+#tg_60{left:307px;top:789px;}
+#th_60{left:307px;top:894px;}
+#ti_60{left:110px;top:913px;}
+#tj_60{left:110px;top:932px;}
+#tk_60{left:110px;top:952px;}
+#tl_60{left:110px;top:971px;}
+#tm_60{left:138px;top:1008px;}
+#tn_60{left:165px;top:1006px;}
+#to_60{left:165px;top:1026px;}
+
+.s5_60{
+	FONT-SIZE: 82px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT60;
+	color: rgb(0,0,0);
+}
+
+.s6_60{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(255,0,0);
+	FONT-STYLE: italic;
+}
+
+.s1_60{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT60;
+	color: rgb(0,0,0);
+}
+
+.s3_60{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(0,176,80);
+	FONT-STYLE: italic;
+}
+
+.s8_60{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT60;
+	color: rgb(0,0,0);
+}
+
+.s7_60{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT60;
+	color: rgb(0,0,0);
+}
+
+.s4_60{
+	FONT-SIZE: 82px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT60;
+	color: rgb(0,0,0);
+}
+
+.s9_60{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT60;
+	color: rgb(0,0,0);
+}
+
+.s2_60{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT60;
+	color: rgb(255,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT60;
+	src :url("60/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT60;
+	src :url("60/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT60;
+	src :url("60/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_60" class="t s1_60">60</div>
+<div id="t2_60" class="t s2_60">ALLAHU AKBAR </div>
+<div id="t3_60" class="t s3_60">Allah Is The Most High </div>
+<div id="t4_60" class="t s4_60">FIRST QAIDAH</div>
+<div id="t5_60" class="t s5_60">then read </div>
+<div id="t6_60" class="t s4_60">TASHAHHUD:</div>
+<div id="t7_60" class="t s6_60">At-tahiy-yatu lil-lahi was'salawatu wat-tay'yibatu As-Sallamu 'alayka ay-yuhan-nabiy-yu warahma </div>
+<div id="t8_60" class="t s6_60">tullahi wa barakatuhu. As-Sallamu 'alayna wa'ala 'ibadil-la his-saliheen. "Ash hadu anla ilâha Illal lahu </div>
+<div id="t9_60" class="t s6_60">wa ash hadu an-na Muhammadan'ab-duhu wa rasuluh</div>
+<div id="ta_60" class="t s1_60">(All reverence, all worship, all sanctity are due to Allah, Peace be upon you O Prophet, and the mercy of Allah and </div>
+<div id="tb_60" class="t s1_60">His blessings. Peace be upon us and all the righteous servants of Allah. I bear witness that none is worthy of </div>
+<div id="tc_60" class="t s1_60">worship besides Allah and Muhammad (S.A.W.) is His servant and Messenger.) </div>
+<div id="td_60" class="t s7_60">On reaching the Tashhadu form a circle with the thumb and middle finger </div>
+<div id="te_60" class="t s7_60">and lift the index finger of the right hand and at ILLALLAHU drop it onto </div>
+<div id="tf_60" class="t s7_60">the thigh. </div>
+<div id="tg_60" class="t s7_60">The circle should be maintained to the end. </div>
+<div id="th_60" class="t s8_60">THIRD AND FOURTH RAK'AHS</div>
+<div id="ti_60" class="t s7_60">If one wishes to perform four Rak’aats one should not read anything more than the TASHAHHUD, but </div>
+<div id="tj_60" class="t s7_60">saying ALLAHU AKBAR stand up and perform the remaining two Rak’aats. No other Surah should be </div>
+<div id="tk_60" class="t s7_60">read after SURATUL FATIHA in the THIRD and FOURTH Rak’aats of any FARZ Salaah, but it is </div>
+<div id="tl_60" class="t s7_60">WAAJIB to do so in any SUNNAT or NAFL Salaah. </div>
+<div id="tm_60" class="t s9_60">•</div>
+<div id="tn_60" class="t s8_60">SECOND QAIDAH</div>
+<div id="to_60" class="t s7_60">In the second Qaida after the Tashahhud read DUROODE IBRAHIM: </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg60Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg60"><object width="935" height="1210" data="60/60.svg" type="image/svg+xml" id="pdf60" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld60" type="text/javascript">
+
+var isIE = false;
+var f60 = [['t2_60',574],['t3_60',689],['t4_60',601],['t5_60',305],['t7_60',2670],['t8_60',2831],['t9_60',1477],['ta_60',2822],['tb_60',2655],['tc_60',1969],['td_60',1985],['te_60',2007],['tf_60',254],['tg_60',1161],['th_60',1007],['ti_60',2780],['tj_60',2789],['tk_60',2693],['tl_60',1434],['tn_60',571],['to_60',1890]];
+function load60(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f60);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 25;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_60");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

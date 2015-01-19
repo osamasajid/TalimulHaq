@@ -1,0 +1,253 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page41</title>
+</head>
+
+<body onload="load41()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_41{left:460px;top:1136px;}
+#t2_41{left:110px;top:127px;}
+#t3_41{left:110px;top:383px;}
+#t4_41{left:110px;top:404px;}
+#t5_41{left:110px;top:441px;}
+#t6_41{left:222px;top:480px;}
+#t7_41{left:249px;top:517px;}
+#t8_41{left:277px;top:517px;}
+#t9_41{left:324px;top:517px;}
+#ta_41{left:249px;top:550px;}
+#tb_41{left:277px;top:550px;}
+#tc_41{left:249px;top:583px;}
+#td_41{left:277px;top:583px;}
+#te_41{left:249px;top:616px;}
+#tf_41{left:277px;top:616px;}
+#tg_41{left:249px;top:649px;}
+#th_41{left:277px;top:649px;}
+#ti_41{left:249px;top:682px;}
+#tj_41{left:277px;top:682px;}
+#tk_41{left:249px;top:715px;}
+#tl_41{left:277px;top:715px;}
+#tm_41{left:249px;top:748px;}
+#tn_41{left:277px;top:751px;}
+#to_41{left:251px;top:788px;}
+#tp_41{left:278px;top:788px;}
+#tq_41{left:326px;top:788px;}
+#tr_41{left:251px;top:821px;}
+#ts_41{left:278px;top:821px;}
+#tt_41{left:251px;top:854px;}
+#tu_41{left:278px;top:854px;}
+#tv_41{left:251px;top:887px;}
+#tw_41{left:278px;top:887px;}
+#tx_41{left:251px;top:920px;}
+#ty_41{left:278px;top:920px;}
+#tz_41{left:251px;top:953px;}
+#t10_41{left:278px;top:953px;}
+#t11_41{left:251px;top:986px;}
+#t12_41{left:278px;top:986px;}
+#t13_41{left:251px;top:1019px;}
+#t14_41{left:282px;top:1022px;}
+
+.s1_41{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT41;
+	color: rgb(0,0,0);
+}
+
+.s2_41{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT41;
+	color: rgb(0,0,0);
+}
+
+.s3_41{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT41;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT41;
+	src :url("41/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT41;
+	src :url("41/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_41" class="t s1_41">41</div>
+<div id="t2_41" class="t s2_41">Rub the right hand over the complete left hand including the elbow. </div>
+<div id="t3_41" class="t s2_41">Then do KHILAL of fingers. If one is wearing a ring it is necessary to remove it or at least </div>
+<div id="t4_41" class="t s2_41">revolve it. It is SUNNAT to do KHILAL of the beard also . </div>
+<div id="t5_41" class="t s3_41">TAYAMMUM IS ALLOWED FOR BOTH WUDHU AND GHUSL.</div>
+<div id="t6_41" class="t s3_41">ITEMS ON WHICH TAYAMMUM IS PERMITTED</div>
+<div id="t7_41" class="t s1_41">1.</div>
+<div id="t8_41" class="t s1_41">Taahir </div>
+<div id="t9_41" class="t s1_41">(Pure) earth. </div>
+<div id="ta_41" class="t s1_41">2.</div>
+<div id="tb_41" class="t s1_41">Sand. </div>
+<div id="tc_41" class="t s1_41">3.</div>
+<div id="td_41" class="t s1_41">Stone. </div>
+<div id="te_41" class="t s1_41">4.</div>
+<div id="tf_41" class="t s1_41">Limestone. </div>
+<div id="tg_41" class="t s1_41">5.</div>
+<div id="th_41" class="t s1_41">Baked earthen pots (Unglazed). </div>
+<div id="ti_41" class="t s1_41">6.</div>
+<div id="tj_41" class="t s1_41">Walls of mud, stone or brick. </div>
+<div id="tk_41" class="t s1_41">7.</div>
+<div id="tl_41" class="t s1_41">Clay. </div>
+<div id="tm_41" class="t s2_41">8.</div>
+<div id="tn_41" class="t s1_41">All items which have thick dust on them.  </div>
+<div id="to_41" class="t s1_41">9.</div>
+<div id="tp_41" class="t s1_41">Taahir </div>
+<div id="tq_41" class="t s1_41">(Pure) earth. </div>
+<div id="tr_41" class="t s1_41">10.</div>
+<div id="ts_41" class="t s1_41">Sand. </div>
+<div id="tt_41" class="t s1_41">11.</div>
+<div id="tu_41" class="t s1_41">Stone. </div>
+<div id="tv_41" class="t s1_41">12.</div>
+<div id="tw_41" class="t s1_41">Limestone. </div>
+<div id="tx_41" class="t s1_41">13.</div>
+<div id="ty_41" class="t s1_41">Baked earthen pots (Unglazed). </div>
+<div id="tz_41" class="t s1_41">14.</div>
+<div id="t10_41" class="t s1_41">Walls of mud, stone or brick. </div>
+<div id="t11_41" class="t s1_41">15.</div>
+<div id="t12_41" class="t s1_41">Clay. </div>
+<div id="t13_41" class="t s2_41">16.</div>
+<div id="t14_41" class="t s1_41">All items which have thick dust on them.  </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg41Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg41"><object width="935" height="1210" data="41/41.svg" type="image/svg+xml" id="pdf41" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld41" type="text/javascript">
+
+var isIE = false;
+var f41 = [['t2_41',1990],['t3_41',2662],['t4_41',1744],['t5_41',2136],['t6_41',1687],['t9_41',306],['th_41',777],['tj_41',717],['tn_41',1022],['tq_41',306],['ty_41',777],['t10_41',717],['t14_41',1022]];
+function load41(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f41);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 41;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_41");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

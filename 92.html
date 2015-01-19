@@ -1,0 +1,192 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page92</title>
+</head>
+
+<body onload="load92()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_92{left:460px;top:1136px;}
+#t2_92{left:110px;top:546px;}
+#t3_92{left:110px;top:582px;}
+#t4_92{left:110px;top:604px;}
+#t5_92{left:138px;top:942px;}
+#t6_92{left:165px;top:942px;}
+#t7_92{left:165px;top:960px;}
+#t8_92{left:165px;top:978px;}
+#t9_92{left:165px;top:996px;}
+#ta_92{left:138px;top:1029px;}
+#tb_92{left:165px;top:1029px;}
+#tc_92{left:165px;top:1047px;}
+#td_92{left:137px;top:1080px;}
+#te_92{left:165px;top:1080px;}
+#tf_92{left:165px;top:1098px;}
+
+.s1_92{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT92;
+	color: rgb(0,0,0);
+}
+
+.s2_92{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT92;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT92;
+	src :url("92/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_92" class="t s1_92">92</div>
+<div id="t2_92" class="t s2_92">However, it is preferable to place the body with the FACE towards the QIBLAH as NABI </div>
+<div id="t3_92" class="t s2_92">(Sallallaahu alaihi wa Sallam) has mentioned that the Ka'ba is the Qibla of both, the living and </div>
+<div id="t4_92" class="t s2_92">the dead. </div>
+<div id="t5_92" class="t s1_92">3.</div>
+<div id="t6_92" class="t s1_92">NO HAIR of the head, beard or any other part of the body must be cut, shaved, trimmed or combed. The </div>
+<div id="t7_92" class="t s1_92">nails tall should NOT he cut. Circumcision is also NOT permissible. All rings, jewelry, wigs etc., should he </div>
+<div id="t8_92" class="t s1_92">removed. Where the false teeth of the dead person can easily be removed, these should preferably be taken </div>
+<div id="t9_92" class="t s1_92">out. </div>
+<div id="ta_92" class="t s1_92">4.</div>
+<div id="tb_92" class="t s1_92">Thereafter the body should be put on the stand, the SATR (private party) covered. (The male's Satr from </div>
+<div id="tc_92" class="t s1_92">the navel to the knees, and the female's from above the breast to the ankles.) </div>
+<div id="td_92" class="t s1_92">5.</div>
+<div id="te_92" class="t s1_92">The stomach should be gently be massaged, then both the Istinja places should be washed with mittens on, </div>
+<div id="tf_92" class="t s1_92">without looking at the private parts. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg92Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg92"><object width="935" height="1210" data="92/92.svg" type="image/svg+xml" id="pdf92" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld92" type="text/javascript">
+
+var isIE = false;
+var f92 = [['t2_92',2645],['t3_92',2776],['t4_92',265],['t6_92',2565],['t7_92',2640],['t8_92',2617],['tb_92',2560],['tc_92',1866],['te_92',2613],['tf_92',875]];
+function load92(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f92);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 16;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_92");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page8</title>
+</head>
+
+<body onload="load8()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_8{left:464px;top:1136px;}
+#t2_8{left:437px;top:85px;}
+#t3_8{left:110px;top:182px;}
+#t4_8{left:110px;top:229px;}
+#t5_8{left:138px;top:276px;}
+#t6_8{left:165px;top:276px;}
+#t7_8{left:138px;top:317px;}
+#t8_8{left:165px;top:317px;}
+#t9_8{left:138px;top:359px;}
+#ta_8{left:165px;top:359px;}
+#tb_8{left:248px;top:400px;}
+#tc_8{left:275px;top:400px;}
+#td_8{left:248px;top:441px;}
+#te_8{left:275px;top:441px;}
+#tf_8{left:275px;top:468px;}
+#tg_8{left:275px;top:494px;}
+#th_8{left:248px;top:535px;}
+#ti_8{left:275px;top:535px;}
+#tj_8{left:248px;top:577px;}
+#tk_8{left:275px;top:577px;}
+#tl_8{left:248px;top:618px;}
+#tm_8{left:275px;top:618px;}
+#tn_8{left:248px;top:660px;}
+#to_8{left:275px;top:660px;}
+#tp_8{left:138px;top:701px;}
+#tq_8{left:165px;top:701px;}
+#tr_8{left:138px;top:742px;}
+#ts_8{left:165px;top:742px;}
+#tt_8{left:138px;top:784px;}
+#tu_8{left:165px;top:784px;}
+
+.s1_8{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT8;
+	color: rgb(0,0,0);
+}
+
+.s2_8{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT8;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT8;
+	src :url("8/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_8" class="t s1_8">8</div>
+<div id="t2_8" class="t s2_8">PART 1 </div>
+<div id="t3_8" class="t s2_8">In the name of Allah, the most beneficent, the most merciful. </div>
+<div id="t4_8" class="t s2_8">We praise Allah the great and pray for Allah's blessings to His noble Prophet </div>
+<div id="t5_8" class="t s1_8">1.</div>
+<div id="t6_8" class="t s1_8">The name of our RELIGION is ISLAM.</div>
+<div id="t7_8" class="t s1_8">2.</div>
+<div id="t8_8" class="t s1_8">ISLAM stands on FIVE PILLARS. </div>
+<div id="t9_8" class="t s1_8">3.</div>
+<div id="ta_8" class="t s1_8">These pillars are as follows : </div>
+<div id="tb_8" class="t s1_8">a.</div>
+<div id="tc_8" class="t s1_8">KALIMA TAYYIBAH </div>
+<div id="td_8" class="t s1_8">b.</div>
+<div id="te_8" class="t s1_8">Every Muslim must BELIEVE in and DECLARE the KALIMA which means that there </div>
+<div id="tf_8" class="t s1_8">is none worthy of worship but ALLAH and Muhammad ( Sallallaahu-Alaihi-Wa-</div>
+<div id="tg_8" class="t s1_8">Sallam), is ALLAH's Messenger. </div>
+<div id="th_8" class="t s1_8">c.</div>
+<div id="ti_8" class="t s1_8">SALAAT - Daily five times SALAAH </div>
+<div id="tj_8" class="t s1_8">d.</div>
+<div id="tk_8" class="t s1_8">To give ZAKAAT. </div>
+<div id="tl_8" class="t s1_8">e.</div>
+<div id="tm_8" class="t s1_8">SAUM (FASTING ) in the month of RAMADHAAN. </div>
+<div id="tn_8" class="t s1_8">f.</div>
+<div id="to_8" class="t s1_8">To perform HAJ. </div>
+<div id="tp_8" class="t s1_8">4.</div>
+<div id="tq_8" class="t s1_8">ISLAM is a religion of peace. </div>
+<div id="tr_8" class="t s1_8">5.</div>
+<div id="ts_8" class="t s1_8">ISLAM is a perfect and true religion. </div>
+<div id="tt_8" class="t s1_8">6.</div>
+<div id="tu_8" class="t s1_8">ISLAM teaches us all the good things about this world and the hereafter. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg8Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg8"><object width="935" height="1210" data="8/8.svg" type="image/svg+xml" id="pdf8" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld8" type="text/javascript">
+
+var isIE = false;
+var f8 = [['t2_8',242],['t3_8',1790],['t4_8',2261],['t6_8',989],['t8_8',867],['ta_8',703],['tc_8',581],['te_8',2153],['tf_8',1999],['tg_8',815],['ti_8',951],['tk_8',472],['tm_8',1336],['to_8',424],['tq_8',732],['ts_8',911],['tu_8',1784]];
+function load8(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f8);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 31;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_8");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

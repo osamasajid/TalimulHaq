@@ -1,0 +1,279 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page53</title>
+</head>
+
+<body onload="load53()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_53{left:460px;top:1136px;}
+#t2_53{left:719px;top:303px;}
+#t3_53{left:755px;top:303px;}
+#t4_53{left:747px;top:323px;}
+#t5_53{left:143px;top:344px;}
+#t6_53{left:116px;top:379px;}
+#t7_53{left:143px;top:379px;}
+#t8_53{left:116px;top:415px;}
+#t9_53{left:143px;top:415px;}
+#ta_53{left:116px;top:451px;}
+#tb_53{left:143px;top:451px;}
+#tc_53{left:116px;top:487px;}
+#td_53{left:143px;top:487px;}
+#te_53{left:116px;top:523px;}
+#tf_53{left:143px;top:523px;}
+#tg_53{left:116px;top:559px;}
+#th_53{left:143px;top:559px;}
+#ti_53{left:110px;top:594px;}
+#tj_53{left:110px;top:631px;}
+#tk_53{left:110px;top:659px;}
+#tl_53{left:128px;top:659px;}
+#tm_53{left:110px;top:695px;}
+#tn_53{left:128px;top:695px;}
+#to_53{left:110px;top:732px;}
+#tp_53{left:128px;top:732px;}
+#tq_53{left:110px;top:769px;}
+#tr_53{left:128px;top:769px;}
+#ts_53{left:110px;top:806px;}
+#tt_53{left:128px;top:806px;}
+#tu_53{left:110px;top:843px;}
+#tv_53{left:128px;top:843px;}
+#tw_53{left:110px;top:880px;}
+#tx_53{left:128px;top:880px;}
+#ty_53{left:110px;top:901px;}
+#tz_53{left:110px;top:974px;}
+#t10_53{left:110px;top:996px;}
+#t11_53{left:110px;top:1017px;}
+#t12_53{left:110px;top:1058px;}
+#t13_53{left:215px;top:1054px;}
+
+.s6_53{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT53;
+	color: rgb(0,0,0);
+}
+
+.s3_53{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: TimesNewRomanPS-BoldItalicMT;
+	color: rgb(0,0,0);
+	FONT-WEIGHT: bold;
+	FONT-STYLE: italic;
+}
+
+.s1_53{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT53;
+	color: rgb(0,0,0);
+}
+
+.s2_53{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	color: rgb(0,0,0);
+	FONT-WEIGHT: bold;
+	FONT-STYLE: italic;
+}
+
+.s5_53{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT53;
+	color: rgb(0,0,0);
+}
+
+.s7_53{
+	FONT-SIZE: 55px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT53;
+	color: rgb(0,0,0);
+}
+
+.s4_53{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT53;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT53;
+	src :url("53/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT53;
+	src :url("53/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_53" class="t s1_53">53</div>
+<div id="t2_53" class="t s2_53">1. </div>
+<div id="t3_53" class="t s3_53">Bismillahi </div>
+<div id="t4_53" class="t s3_53">r-Rahmâni </div>
+<div id="t5_53" class="t s3_53">r-Rahim </div>
+<div id="t6_53" class="t s2_53">2. </div>
+<div id="t7_53" class="t s3_53">Al hamdu li-Llahi rab-bil 'alamin </div>
+<div id="t8_53" class="t s2_53">3. </div>
+<div id="t9_53" class="t s3_53">Ar-Rahmani r-Rahim </div>
+<div id="ta_53" class="t s2_53">4. </div>
+<div id="tb_53" class="t s3_53">Maliki yaumi d-din </div>
+<div id="tc_53" class="t s2_53">5. </div>
+<div id="td_53" class="t s3_53">Iyyâka na'budu wa iyyâka nasta'in </div>
+<div id="te_53" class="t s2_53">6. </div>
+<div id="tf_53" class="t s3_53">Ihdina s-sirâta al-mustaqîm </div>
+<div id="tg_53" class="t s2_53">7. </div>
+<div id="th_53" class="t s3_53">Sirâta l-ladhina an'amta 'alaihim, ghairil maghdubi 'alaihim wa laddhhalleen </div>
+<div id="ti_53" class="t s3_53">AAMEEN </div>
+<div id="tj_53" class="t s4_53">In the name of Allah, Most Gracious, Most Merciful </div>
+<div id="tk_53" class="t s5_53">1.</div>
+<div id="tl_53" class="t s6_53">In the name of Allah, Most Gracious, Most Merciful. </div>
+<div id="tm_53" class="t s5_53">2.</div>
+<div id="tn_53" class="t s6_53">Praise be to Allah, the Cherisher and Sustainer of the worlds; </div>
+<div id="to_53" class="t s5_53">3.</div>
+<div id="tp_53" class="t s6_53">Most Gracious, Most Merciful; </div>
+<div id="tq_53" class="t s5_53">4.</div>
+<div id="tr_53" class="t s6_53">Master of the Day of Judgment. </div>
+<div id="ts_53" class="t s5_53">5.</div>
+<div id="tt_53" class="t s6_53">Thee do we worship, and Thine aid we seek. </div>
+<div id="tu_53" class="t s5_53">6.</div>
+<div id="tv_53" class="t s6_53">Show us the straight way, </div>
+<div id="tw_53" class="t s5_53">7.</div>
+<div id="tx_53" class="t s6_53">The way of those on whom Thou hast bestowed Thy Grace, those whose (portion) is not </div>
+<div id="ty_53" class="t s6_53">wrath, and who go not astray. </div>
+<div id="tz_53" class="t s6_53">Then recite BISMILLAHIR RAHMAANIR RAHEEM and any Surah thereafter. It is necessary </div>
+<div id="t10_53" class="t s6_53">that a minimum of three short Ayahs or one long Ayah be read in proper sequence as in the </div>
+<div id="t11_53" class="t s6_53">Quran. These are some short suras from the Quran. </div>
+<div id="t12_53" class="t s7_53">Surat Al-Ikhlâs </div>
+<div id="t13_53" class="t s6_53">The Unity, Sincerity, Oneness Of Allah (Quran Surah 112)</div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg53Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg53"><object width="935" height="1210" data="53/53.svg" type="image/svg+xml" id="pdf53" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld53" type="text/javascript">
+
+var isIE = false;
+var f53 = [['t7_53',851],['t9_53',550],['tb_53',486],['td_53',882],['tf_53',705],['th_53',1981],['tj_53',1411],['tl_53',1559],['tn_53',1797],['tp_53',918],['tr_53',932],['tt_53',1308],['tv_53',756],['tx_53',2591],['ty_53',870],['tz_53',2811],['t10_53',2677],['t11_53',1499],['t12_53',364],['t13_53',1732]];
+function load53(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f53);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 40;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_53");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

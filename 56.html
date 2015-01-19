@@ -1,0 +1,301 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page56</title>
+</head>
+
+<body onload="load56()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_56{left:460px;top:1136px;}
+#t2_56{left:110px;top:54px;}
+#t3_56{left:128px;top:54px;}
+#t4_56{left:110px;top:76px;}
+#t5_56{left:128px;top:76px;}
+#t6_56{left:110px;top:97px;}
+#t7_56{left:128px;top:97px;}
+#t8_56{left:110px;top:119px;}
+#t9_56{left:128px;top:119px;}
+#ta_56{left:110px;top:148px;}
+#tb_56{left:110px;top:185px;}
+#tc_56{left:138px;top:223px;}
+#td_56{left:165px;top:223px;}
+#te_56{left:137px;top:257px;}
+#tf_56{left:165px;top:257px;}
+#tg_56{left:137px;top:291px;}
+#th_56{left:165px;top:291px;}
+#ti_56{left:137px;top:325px;}
+#tj_56{left:165px;top:325px;}
+#tk_56{left:110px;top:358px;}
+#tl_56{left:127px;top:396px;}
+#tm_56{left:165px;top:396px;}
+#tn_56{left:154px;top:414px;}
+#to_56{left:127px;top:448px;}
+#tp_56{left:165px;top:448px;}
+#tq_56{left:127px;top:482px;}
+#tr_56{left:165px;top:482px;}
+#ts_56{left:110px;top:569px;}
+#tt_56{left:110px;top:586px;}
+#tu_56{left:110px;top:622px;}
+#tv_56{left:203px;top:622px;}
+#tw_56{left:110px;top:659px;}
+#tx_56{left:110px;top:692px;}
+#ty_56{left:110px;top:725px;}
+#tz_56{left:216px;top:725px;}
+#t10_56{left:110px;top:762px;}
+#t11_56{left:110px;top:799px;}
+#t12_56{left:110px;top:891px;}
+#t13_56{left:110px;top:924px;}
+#t14_56{left:110px;top:957px;}
+#t15_56{left:354px;top:957px;}
+#t16_56{left:110px;top:978px;}
+#t17_56{left:110px;top:1075px;}
+#t18_56{left:110px;top:1108px;}
+
+.s7_56{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(255,0,0);
+	FONT-STYLE: italic;
+}
+
+.s1_56{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT56;
+	color: rgb(0,0,0);
+}
+
+.s6_56{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(0,0,0);
+	FONT-STYLE: italic;
+}
+
+.s5_56{
+	FONT-SIZE: 57px;
+	FONT-FAMILY: TimesNewRomanPS-BoldItalicMT;
+	color: rgb(0,0,0);
+	FONT-WEIGHT: bold;
+	FONT-STYLE: italic;
+}
+
+.s4_56{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT56;
+	color: rgb(0,0,0);
+}
+
+.s3_56{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT56;
+	color: rgb(0,0,0);
+}
+
+.s8_56{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(0,101,0);
+	FONT-STYLE: italic;
+}
+
+.s2_56{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT56;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT56;
+	src :url("56/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT56;
+	src :url("56/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT56;
+	src :url("56/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_56" class="t s1_56">56</div>
+<div id="t2_56" class="t s2_56">2.</div>
+<div id="t3_56" class="t s3_56">No profit to him from all his wealth, and all his gains! </div>
+<div id="t4_56" class="t s2_56">3.</div>
+<div id="t5_56" class="t s3_56">Burnt soon will he be in a Fire of Blazing Flame! </div>
+<div id="t6_56" class="t s2_56">4.</div>
+<div id="t7_56" class="t s3_56">His wife shall carry the (crackling) wood - As fuel!- </div>
+<div id="t8_56" class="t s2_56">5.</div>
+<div id="t9_56" class="t s3_56">A twisted rope of palm-leaf fibre round her (own) neck! </div>
+<div id="ta_56" class="t s2_56">The EYES should be fixed onto the FEET.</div>
+<div id="tb_56" class="t s2_56">MEN</div>
+<div id="tc_56" class="t s4_56">•</div>
+<div id="td_56" class="t s1_56">In RUKU hold both the KNEES with the fingers APART. </div>
+<div id="te_56" class="t s4_56">•</div>
+<div id="tf_56" class="t s1_56">Ensure that the ARMS do not touch the BODY. </div>
+<div id="tg_56" class="t s4_56">•</div>
+<div id="th_56" class="t s1_56">Keep the BACK straight, while the HEAD should neither be LOWERED nor RAISED. </div>
+<div id="ti_56" class="t s4_56">•</div>
+<div id="tj_56" class="t s1_56">In RUKU recite softly at least THREE or FIVE times. </div>
+<div id="tk_56" class="t s2_56">WOMEN</div>
+<div id="tl_56" class="t s4_56">•</div>
+<div id="tm_56" class="t s1_56">When making RUKU a WOMAN should only BEND over sufficiently so that her HANDS reach her </div>
+<div id="tn_56" class="t s1_56">KNEES. </div>
+<div id="to_56" class="t s4_56">•</div>
+<div id="tp_56" class="t s1_56">The HANDS should be placed on the KNEES, with the FINGERS kept together. </div>
+<div id="tq_56" class="t s4_56">•</div>
+<div id="tr_56" class="t s1_56">In RUKU the ELBOWS should TOUCH the sides of the BODY and the FEET kept TOGETHER. </div>
+<div id="ts_56" class="t s5_56">Subhana rabbiya al-'Azem</div>
+<div id="tt_56" class="t s6_56">(How Glorious is my Lord the Great.) </div>
+<div id="tu_56" class="t s2_56">TASMEE : </div>
+<div id="tv_56" class="t s3_56">To say 'Sami Allahu Liman Hamedah.' </div>
+<div id="tw_56" class="t s7_56">Sami 'allah hu liman hamida </div>
+<div id="tx_56" class="t s8_56">Verily Allah listens to one who praises him</div>
+<div id="ty_56" class="t s2_56">QAWMAH : </div>
+<div id="tz_56" class="t s3_56">To stand up after RUKU. </div>
+<div id="t10_56" class="t s3_56">Now stand up straight and whilst coming up say: </div>
+<div id="t11_56" class="t s2_56">TASMEE</div>
+<div id="t12_56" class="t s7_56">Sami 'allah hu liman hamida </div>
+<div id="t13_56" class="t s8_56">Verily Allah listens to one who praises him</div>
+<div id="t14_56" class="t s3_56">Then in the upright position say: </div>
+<div id="t15_56" class="t s2_56">THAMID</div>
+<div id="t16_56" class="t s3_56">Rabba na Lakal Hamd. </div>
+<div id="t17_56" class="t s7_56">Rab-bana Lakal Hamd </div>
+<div id="t18_56" class="t s8_56">O! our Lord, all the praises be to you </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg56Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg56"><object width="935" height="1210" data="56/56.svg" type="image/svg+xml" id="pdf56" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld56" type="text/javascript">
+
+var isIE = false;
+var f56 = [['t3_56',1586],['t5_56',1447],['t7_56',1531],['t9_56',1644],['ta_56',1323],['td_56',1425],['tf_56',1174],['th_56',2150],['tj_56',1326],['tm_56',2483],['tp_56',1984],['tr_56',2409],['ts_56',637],['tt_56',1113],['tu_56',352],['tv_56',1136],['tw_56',709],['tx_56',1054],['ty_56',405],['tz_56',743],['t10_56',1434],['t12_56',709],['t13_56',1054],['t14_56',957],['t16_56',675],['t17_56',563],['t18_56',918]];
+function load56(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f56);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 45;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_56");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

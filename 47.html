@@ -1,0 +1,235 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page47</title>
+</head>
+
+<body onload="load47()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_47{left:460px;top:1136px;}
+#t2_47{left:319px;top:98px;}
+#t3_47{left:336px;top:119px;}
+#t4_47{left:389px;top:209px;}
+#t5_47{left:299px;top:301px;}
+#t6_47{left:449px;top:322px;}
+#t7_47{left:376px;top:440px;}
+#t8_47{left:281px;top:652px;}
+#t9_47{left:524px;top:652px;}
+#ta_47{left:298px;top:677px;}
+#tb_47{left:277px;top:702px;}
+#tc_47{left:286px;top:727px;}
+#td_47{left:287px;top:752px;}
+#te_47{left:323px;top:752px;}
+#tf_47{left:429px;top:777px;}
+#tg_47{left:271px;top:810px;}
+#th_47{left:271px;top:831px;}
+#ti_47{left:271px;top:852px;}
+#tj_47{left:271px;top:874px;}
+#tk_47{left:271px;top:895px;}
+#tl_47{left:271px;top:917px;}
+#tm_47{left:274px;top:999px;}
+#tn_47{left:138px;top:1036px;}
+#to_47{left:165px;top:1036px;}
+#tp_47{left:138px;top:1069px;}
+#tq_47{left:165px;top:1069px;}
+#tr_47{left:138px;top:1102px;}
+#ts_47{left:165px;top:1102px;}
+
+.s1_47{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT47;
+	color: rgb(0,0,0);
+}
+
+.s3_47{
+	FONT-SIZE: 85px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT47;
+	color: rgb(0,0,0);
+}
+
+.s2_47{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT47;
+	color: rgb(0,0,0);
+}
+
+.s4_47{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT47;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT47;
+	src :url("47/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT47;
+	src :url("47/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_47" class="t s1_47">47</div>
+<div id="t2_47" class="t s2_47">and in Fajr Azan after hearing the above </div>
+<div id="t3_47" class="t s2_47">(As Salaatu Khairum Minan Naum) </div>
+<div id="t4_47" class="t s2_47">ONE SHOULD SAY </div>
+<div id="t5_47" class="t s2_47">You have spoken the truth and you have done </div>
+<div id="t6_47" class="t s2_47">well. </div>
+<div id="t7_47" class="t s2_47">DUAA AFTER AZAAN </div>
+<div id="t8_47" class="t s3_47">Allaahumma Rabba haath</div>
+<div id="t9_47" class="t s3_47">ihid-da 'watit-</div>
+<div id="ta_47" class="t s3_47">taammati wassalaatil-qaa'imati, 'aati </div>
+<div id="tb_47" class="t s3_47">Muhammadanil-waseelata walfadheelata, </div>
+<div id="tc_47" class="t s3_47">wab 'ath-hu maqaamam-mahmoodanil-</div>
+<div id="td_47" class="t s3_47">lath</div>
+<div id="te_47" class="t s3_47">ee wa'adtahu, 'innaka laa tukhliful-</div>
+<div id="tf_47" class="t s3_47">mee'aad </div>
+<div id="tg_47" class="t s2_47">O Allah! Lord of this perfect Call and of the Salaat </div>
+<div id="th_47" class="t s2_47">about to be established bestow upon Muhammad the </div>
+<div id="ti_47" class="t s2_47">Wasilah (intercession), Grace and the lofty rank. </div>
+<div id="tj_47" class="t s2_47">Establish him on Makaame Mahmood which You </div>
+<div id="tk_47" class="t s2_47">have promised him. Verily, you do not go against the </div>
+<div id="tl_47" class="t s2_47">Promise. </div>
+<div id="tm_47" class="t s4_47">THERE ARE SEVEN MUSTAHABS IN AZAAN</div>
+<div id="tn_47" class="t s1_47">1.</div>
+<div id="to_47" class="t s1_47">To stand facing the QIBLAH. </div>
+<div id="tp_47" class="t s1_47">2.</div>
+<div id="tq_47" class="t s1_47">Not to make haste in saying Azan. </div>
+<div id="tr_47" class="t s1_47">3.</div>
+<div id="ts_47" class="t s1_47">To put both index fingers in the ears. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg47Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg47"><object width="935" height="1210" data="47/47.svg" type="image/svg+xml" id="pdf47" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld47" type="text/javascript">
+
+var isIE = false;
+var f47 = [['t2_47',1184],['t3_47',1051],['t4_47',629],['t5_47',1345],['t7_47',735],['t8_47',969],['t9_47',520],['ta_47',1353],['tb_47',1520],['tc_47',1454],['te_47',1298],['tg_47',1496],['th_47',1542],['ti_47',1427],['tj_47',1461],['tk_47',1562],['tm_47',1550],['to_47',734],['tq_47',842],['ts_47',907]];
+function load47(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f47);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 29;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_47");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

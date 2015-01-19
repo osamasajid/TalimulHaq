@@ -1,0 +1,261 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page70</title>
+</head>
+
+<body onload="load70()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_70{left:460px;top:1136px;}
+#t2_70{left:138px;top:171px;}
+#t3_70{left:165px;top:171px;}
+#t4_70{left:165px;top:189px;}
+#t5_70{left:184px;top:464px;}
+#t6_70{left:261px;top:464px;}
+#t7_70{left:179px;top:488px;}
+#t8_70{left:179px;top:509px;}
+#t9_70{left:198px;top:527px;}
+#ta_70{left:198px;top:545px;}
+#tb_70{left:179px;top:566px;}
+#tc_70{left:198px;top:574px;}
+#td_70{left:198px;top:592px;}
+#te_70{left:260px;top:619px;}
+#tf_70{left:138px;top:648px;}
+#tg_70{left:165px;top:648px;}
+#th_70{left:138px;top:681px;}
+#ti_70{left:165px;top:681px;}
+#tj_70{left:165px;top:699px;}
+#tk_70{left:138px;top:732px;}
+#tl_70{left:165px;top:732px;}
+#tm_70{left:165px;top:750px;}
+#tn_70{left:138px;top:783px;}
+#to_70{left:165px;top:783px;}
+#tp_70{left:138px;top:816px;}
+#tq_70{left:165px;top:816px;}
+#tr_70{left:138px;top:849px;}
+#ts_70{left:165px;top:849px;}
+#tt_70{left:138px;top:883px;}
+#tu_70{left:165px;top:883px;}
+#tv_70{left:138px;top:916px;}
+#tw_70{left:165px;top:916px;}
+#tx_70{left:137px;top:949px;}
+#ty_70{left:165px;top:949px;}
+#tz_70{left:165px;top:967px;}
+#t10_70{left:137px;top:1000px;}
+#t11_70{left:165px;top:1000px;}
+#t12_70{left:137px;top:1033px;}
+#t13_70{left:165px;top:1033px;}
+#t14_70{left:165px;top:1051px;}
+#t15_70{left:137px;top:1084px;}
+#t16_70{left:165px;top:1084px;}
+#t17_70{left:137px;top:1117px;}
+#t18_70{left:165px;top:1117px;}
+
+.s1_70{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT70;
+	color: rgb(0,0,0);
+}
+
+.s3_70{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT70;
+	color: rgb(0,0,0);
+}
+
+.s2_70{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT70;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT70;
+	src :url("70/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT70;
+	src :url("70/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_70" class="t s1_70">70</div>
+<div id="t2_70" class="t s1_70">6.</div>
+<div id="t3_70" class="t s1_70">QAA'DAH AKHEERA (To sit so long at the end of the last Rak’aats that one can read the </div>
+<div id="t4_70" class="t s1_70">TASHAH'HUD). </div>
+<div id="t5_70" class="t s2_70">WAAJIB </div>
+<div id="t6_70" class="t s3_70">(NECESSARY lN SALAAH)</div>
+<div id="t7_70" class="t s1_70">Q. What does WAAJIBAATE SALAAH mean'? </div>
+<div id="t8_70" class="t s1_70">A. WAAJIBAAT are those items that are necessary to complete the Salaah. IF one misses </div>
+<div id="t9_70" class="t s1_70">any one of them unknowingly, this mistake can be compensated by performing SAJDA </div>
+<div id="ta_70" class="t s1_70">SAHW (Sajdah done for mistakes made unknowingly). </div>
+<div id="tb_70" class="t s1_70">* </div>
+<div id="tc_70" class="t s1_70">If one does not perform SAJDA SAHW or if one misses a WAAJIB knowingly, it is </div>
+<div id="td_70" class="t s1_70">necessary to perform that Salaah all over again. </div>
+<div id="te_70" class="t s3_70">THERE ARE FOURTEEN WAAJIBAAT IN SALAAH </div>
+<div id="tf_70" class="t s1_70">1.</div>
+<div id="tg_70" class="t s1_70">Fixing the first two Rak’aats of the FARZ Salaah for QIRAAT. </div>
+<div id="th_70" class="t s1_70">2.</div>
+<div id="ti_70" class="t s1_70">It is Wajib to recite Surah Fatiha in all the Rak’aats of every Salaah. However, in the third and fourth </div>
+<div id="tj_70" class="t s1_70">Rak’aats of any Farz Salaah, it is Sunnah and not Wajib. </div>
+<div id="tk_70" class="t s1_70">3.</div>
+<div id="tl_70" class="t s1_70">To recite a Surah or a lengthy Aayat or three small Aayats after SURAH-E-FAATIHA in the first two </div>
+<div id="tm_70" class="t s1_70">Rak’aats of FARZ Salaah and in all the Rak’aats of WAAJIB, SUNNAT and NAFIL Salaah. </div>
+<div id="tn_70" class="t s1_70">4.</div>
+<div id="to_70" class="t s1_70">To read SURA FATIHA before any other Surah or Aya. </div>
+<div id="tp_70" class="t s1_70">5.</div>
+<div id="tq_70" class="t s1_70">To maintain order between QIRAAT, RUKU, SAJDA and RAKAAT. </div>
+<div id="tr_70" class="t s1_70">6.</div>
+<div id="ts_70" class="t s1_70">QAUMA (Standing up erect after RUKU). </div>
+<div id="tt_70" class="t s1_70">7.</div>
+<div id="tu_70" class="t s1_70">JALSA (Sitting between the two SAJDAS). </div>
+<div id="tv_70" class="t s1_70">8.</div>
+<div id="tw_70" class="t s1_70">TA'DEELE ARKAAN, i.e. performing RUKU, SAJDA, etc. with contentment and in a good way. </div>
+<div id="tx_70" class="t s1_70">9.</div>
+<div id="ty_70" class="t s1_70">QAADAH-OOLAA or sitting to the extent of saying TASHAHHUD after two Rak’aats in Salaah of three </div>
+<div id="tz_70" class="t s1_70">or four Rak’aats. </div>
+<div id="t10_70" class="t s1_70">10.</div>
+<div id="t11_70" class="t s1_70">To read TASHAHHUD in the two QA'DAAS. </div>
+<div id="t12_70" class="t s1_70">11.</div>
+<div id="t13_70" class="t s1_70">To recite QIRAAT aloud in Fajr, Maghreb, Esha, Jumuah, Eidain and Taraaweeh Salaat in Ramadan by the </div>
+<div id="t14_70" class="t s1_70">Imam. The Imam should recite Zuhr and Asr Salaah silently. </div>
+<div id="t15_70" class="t s1_70">12.</div>
+<div id="t16_70" class="t s1_70">To end the Salaah by saying SALAAM. </div>
+<div id="t17_70" class="t s1_70">13.</div>
+<div id="t18_70" class="t s1_70">To say TAKBEER (Allahu-Akbar) for QUNOOT in Witr Salaah and also recite DUA-E-QUNOOT. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg70Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg70"><object width="935" height="1210" data="70/70.svg" type="image/svg+xml" id="pdf70" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld70" type="text/javascript">
+
+var isIE = false;
+var f70 = [['t3_70',2220],['t6_70',882],['t7_70',1196],['t8_70',2203],['t9_70',2143],['ta_70',1358],['tc_70',2072],['td_70',1164],['te_70',1656],['tg_70',1558],['ti_70',2482],['tj_70',1387],['tl_70',2500],['tm_70',2282],['to_70',1384],['tq_70',1725],['ts_70',1050],['tu_70',1076],['tw_70',2412],['ty_70',2605],['tz_70',414],['t11_70',1144],['t13_70',2638],['t14_70',1487],['t16_70',982],['t18_70',2462]];
+function load70(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f70);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 45;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_70");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

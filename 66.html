@@ -1,0 +1,336 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page66</title>
+</head>
+
+<body onload="load66()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_66{left:460px;top:1136px;}
+#t2_66{left:401px;top:54px;}
+#t3_66{left:411px;top:75px;}
+#t4_66{left:137px;top:105px;}
+#t5_66{left:429px;top:126px;}
+#t6_66{left:138px;top:163px;}
+#t7_66{left:165px;top:163px;}
+#t8_66{left:138px;top:196px;}
+#t9_66{left:165px;top:196px;}
+#ta_66{left:138px;top:229px;}
+#tb_66{left:165px;top:229px;}
+#tc_66{left:138px;top:262px;}
+#td_66{left:165px;top:262px;}
+#te_66{left:138px;top:295px;}
+#tf_66{left:165px;top:295px;}
+#tg_66{left:138px;top:328px;}
+#th_66{left:165px;top:328px;}
+#ti_66{left:138px;top:361px;}
+#tj_66{left:165px;top:361px;}
+#tk_66{left:138px;top:394px;}
+#tl_66{left:165px;top:394px;}
+#tm_66{left:110px;top:427px;}
+#tn_66{left:138px;top:465px;}
+#to_66{left:165px;top:465px;}
+#tp_66{left:138px;top:499px;}
+#tq_66{left:165px;top:499px;}
+#tr_66{left:138px;top:533px;}
+#ts_66{left:165px;top:533px;}
+#tt_66{left:138px;top:567px;}
+#tu_66{left:165px;top:567px;}
+#tv_66{left:138px;top:601px;}
+#tw_66{left:165px;top:601px;}
+#tx_66{left:165px;top:619px;}
+#ty_66{left:138px;top:653px;}
+#tz_66{left:165px;top:653px;}
+#t10_66{left:165px;top:671px;}
+#t11_66{left:138px;top:705px;}
+#t12_66{left:165px;top:705px;}
+#t13_66{left:138px;top:739px;}
+#t14_66{left:165px;top:739px;}
+#t15_66{left:138px;top:773px;}
+#t16_66{left:165px;top:773px;}
+#t17_66{left:138px;top:807px;}
+#t18_66{left:165px;top:807px;}
+#t19_66{left:138px;top:842px;}
+#t1a_66{left:165px;top:842px;}
+#t1b_66{left:165px;top:859px;}
+#t1c_66{left:747px;top:859px;}
+#t1d_66{left:138px;top:894px;}
+#t1e_66{left:165px;top:894px;}
+#t1f_66{left:138px;top:928px;}
+#t1g_66{left:165px;top:928px;}
+#t1h_66{left:388px;top:960px;}
+#t1i_66{left:110px;top:1009px;}
+#t1j_66{left:344px;top:1009px;}
+#t1k_66{left:473px;top:1009px;}
+#t1l_66{left:569px;top:1009px;}
+#t1m_66{left:614px;top:1009px;}
+#t1n_66{left:684px;top:1009px;}
+#t1o_66{left:729px;top:998px;}
+#t1p_66{left:729px;top:1019px;}
+#t1q_66{left:787px;top:1009px;}
+#t1r_66{left:110px;top:1058px;}
+#t1s_66{left:344px;top:1058px;}
+#t1t_66{left:473px;top:1048px;}
+#t1u_66{left:473px;top:1069px;}
+#t1v_66{left:569px;top:1058px;}
+#t1w_66{left:110px;top:1097px;}
+#t1x_66{left:344px;top:1097px;}
+#t1y_66{left:473px;top:1097px;}
+#t1z_66{left:569px;top:1097px;}
+#t20_66{left:614px;top:1097px;}
+#t21_66{left:684px;top:1097px;}
+
+.s1_66{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT66;
+	color: rgb(0,0,0);
+}
+
+.s5_66{
+	FONT-SIZE: 82px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT66;
+	color: rgb(0,154,0);
+}
+
+.s4_66{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT66;
+	color: rgb(0,0,0);
+}
+
+.s2_66{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT66;
+	color: rgb(0,0,0);
+}
+
+.s3_66{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT66;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT66;
+	src :url("66/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT66;
+	src :url("66/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT66;
+	src :url("66/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_66" class="t s1_66">66</div>
+<div id="t2_66" class="t s2_66">Conditions for Salaah </div>
+<div id="t3_66" class="t s2_66">(SHARAA'TT) </div>
+<div id="t4_66" class="t s3_66">EIGHT CONDITIONS THAT MUST BE OBSERVED BEFORF ONE PFRFORMS </div>
+<div id="t5_66" class="t s3_66">SALAAH</div>
+<div id="t6_66" class="t s1_66">1.</div>
+<div id="t7_66" class="t s1_66">To make Wudhu if necessary. </div>
+<div id="t8_66" class="t s1_66">2.</div>
+<div id="t9_66" class="t s1_66">To make Ghusl if necessary. </div>
+<div id="ta_66" class="t s1_66">3.</div>
+<div id="tb_66" class="t s1_66">Taharat (cleanliness) of body and dress. </div>
+<div id="tc_66" class="t s1_66">4.</div>
+<div id="td_66" class="t s1_66">Taharat (cleanliness) of place. </div>
+<div id="te_66" class="t s1_66">5.</div>
+<div id="tf_66" class="t s1_66">Facing towards the QIBLAH. </div>
+<div id="tg_66" class="t s1_66">6.</div>
+<div id="th_66" class="t s1_66">Covering of Satr (private parts). </div>
+<div id="ti_66" class="t s1_66">7.</div>
+<div id="tj_66" class="t s1_66">Niyyat (intention) for Salaah. </div>
+<div id="tk_66" class="t s1_66">8.</div>
+<div id="tl_66" class="t s1_66">Performing Salaat at the Prescribed times. </div>
+<div id="tm_66" class="t s2_66">* If any one of these conditions is omitted, Salaat will not be accepted. </div>
+<div id="tn_66" class="t s4_66">•</div>
+<div id="to_66" class="t s1_66">N.B. A MALE's satr is from the NAVEL to the KNEE (including knee). </div>
+<div id="tp_66" class="t s4_66">•</div>
+<div id="tq_66" class="t s1_66">And a FEMALE'S satr is her ENTIRE BODY except her FACE and HANDS to the WRIST. </div>
+<div id="tr_66" class="t s4_66">•</div>
+<div id="ts_66" class="t s1_66">TAHARAH (cleanliness) means one's body should be free from all NAJAASAT. (Filth and Impurities). </div>
+<div id="tt_66" class="t s4_66">•</div>
+<div id="tu_66" class="t s1_66">There are TWO types of NAJAASAT. One HAQEEQI, the other HUKMI. </div>
+<div id="tv_66" class="t s4_66">•</div>
+<div id="tw_66" class="t s1_66">NAJAASATE HAQEEQI is the NAJAASAT which CAN BE SEEN (External impurity) ea. urine, blood, </div>
+<div id="tx_66" class="t s1_66">stool and wine. </div>
+<div id="ty_66" class="t s4_66">•</div>
+<div id="tz_66" class="t s1_66">NAJAASATE HUKMI is that Najaasat (impurity and filth) which cannot be seen, e.g. </div>
+<div id="t10_66" class="t s1_66">(a) HADATH (b) JANABAH. </div>
+<div id="t11_66" class="t s4_66">•</div>
+<div id="t12_66" class="t s1_66">HADATH: to be without WUDHU. </div>
+<div id="t13_66" class="t s4_66">•</div>
+<div id="t14_66" class="t s1_66">JANABAH: state of a person on whom GHUSL. or bath has become COMPULSORY. </div>
+<div id="t15_66" class="t s4_66">•</div>
+<div id="t16_66" class="t s1_66">It is necessary that one's body should be free from both types of NAJAASAT before performing Salaah. </div>
+<div id="t17_66" class="t s4_66">•</div>
+<div id="t18_66" class="t s1_66">One should face towards the KA'BAH SHARIF when performing Salaah. </div>
+<div id="t19_66" class="t s4_66">•</div>
+<div id="t1a_66" class="t s1_66">We are ordered to face KA'BAH SHARIF because the KA'BAH is the House of Allah, which is in the city </div>
+<div id="t1b_66" class="t s1_66">of MECCA. One must always keep one's chest towards the KA'BAH while performing Salaah.</div>
+<div id="t1c_66" class="t s1_66">. </div>
+<div id="t1d_66" class="t s4_66">•</div>
+<div id="t1e_66" class="t s1_66">The direction of the HOLY KA'BAH SHARIF is called the QIBLAH. </div>
+<div id="t1f_66" class="t s4_66">•</div>
+<div id="t1g_66" class="t s1_66">Salaah is COMPULSORY FIVE TIMES daily. </div>
+<div id="t1h_66" class="t s5_66">SALAAH CHART</div>
+<div id="t1i_66" class="t s2_66">Names of five daily Salaah </div>
+<div id="t1j_66" class="t s2_66">Total Rak’aats </div>
+<div id="t1k_66" class="t s2_66">Sunnah </div>
+<div id="t1l_66" class="t s2_66">Farz</div>
+<div id="t1m_66" class="t s2_66">Sunnah </div>
+<div id="t1n_66" class="t s2_66">Nafl </div>
+<div id="t1o_66" class="t s2_66">Witr </div>
+<div id="t1p_66" class="t s2_66">Wajib</div>
+<div id="t1q_66" class="t s2_66">Nafl</div>
+<div id="t1r_66" class="t s2_66">Fajr </div>
+<div id="t1s_66" class="t s2_66">4 </div>
+<div id="t1t_66" class="t s2_66">2 </div>
+<div id="t1u_66" class="t s2_66">Muakkada </div>
+<div id="t1v_66" class="t s2_66">2 </div>
+<div id="t1w_66" class="t s2_66">Zuhur </div>
+<div id="t1x_66" class="t s2_66">12 </div>
+<div id="t1y_66" class="t s2_66">4 </div>
+<div id="t1z_66" class="t s2_66">4 </div>
+<div id="t20_66" class="t s2_66">2 </div>
+<div id="t21_66" class="t s2_66">2 </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg66Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg66"><object width="935" height="1210" data="66/66.svg" type="image/svg+xml" id="pdf66" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld66" type="text/javascript">
+
+var isIE = false;
+var f66 = [['t2_66',640],['t4_66',2641],['t7_66',734],['t9_66',699],['tb_66',978],['td_66',738],['tf_66',729],['th_66',785],['tj_66',721],['tl_66',1030],['tm_66',2077],['to_66',1773],['tq_66',2277],['ts_66',2552],['tu_66',1839],['tw_66',2596],['tx_66',373],['tz_66',2117],['t10_66',747],['t12_66',881],['t14_66',2139],['t16_66',2554],['t18_66',1810],['t1a_66',2614],['t1b_66',2328],['t1e_66',1719],['t1g_66',1157],['t1h_66',633],['t1i_66',794],['t1j_66',430]];
+function load66(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f66);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 74;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_66");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

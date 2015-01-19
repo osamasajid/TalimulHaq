@@ -1,0 +1,241 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page172</title>
+</head>
+
+<body onload="load172()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_172{left:456px;top:1136px;}
+#t2_172{left:342px;top:56px;}
+#t3_172{left:118px;top:127px;}
+#t4_172{left:118px;top:145px;}
+#t5_172{left:118px;top:163px;}
+#t6_172{left:118px;top:180px;}
+#t7_172{left:325px;top:247px;}
+#t8_172{left:118px;top:273px;}
+#t9_172{left:118px;top:291px;}
+#ta_172{left:320px;top:314px;}
+#tb_172{left:118px;top:341px;}
+#tc_172{left:118px;top:359px;}
+#td_172{left:309px;top:381px;}
+#te_172{left:118px;top:409px;}
+#tf_172{left:317px;top:433px;}
+#tg_172{left:118px;top:461px;}
+#th_172{left:244px;top:485px;}
+#ti_172{left:118px;top:513px;}
+#tj_172{left:118px;top:539px;}
+#tk_172{left:297px;top:563px;}
+#tl_172{left:118px;top:589px;}
+#tm_172{left:118px;top:607px;}
+#tn_172{left:118px;top:629px;}
+#to_172{left:151px;top:665px;}
+#tp_172{left:378px;top:685px;}
+#tq_172{left:127px;top:705px;}
+#tr_172{left:530px;top:708px;}
+#ts_172{left:320px;top:726px;}
+
+.s1_172{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT172;
+	color: rgb(0,0,0);
+}
+
+.s2_172{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT172;
+	color: rgb(0,0,0);
+}
+
+.s3_172{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM172;
+	color: rgb(0,176,80);
+}
+
+.s5_172{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM172;
+	color: rgb(0,0,255);
+}
+
+.s4_172{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM172;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM172;
+	src :url("172/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT172;
+	src :url("172/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_172" class="t s1_172">172</div>
+<div id="t2_172" class="t s2_172">The Fifth Kalima </div>
+<div id="t3_172" class="t s1_172">Al-laa-hum-ma in-nee a-'oozhu bi-ka min an ush-rika bika shay-aw-wa ana a'lamu bi-hee was-</div>
+<div id="t4_172" class="t s1_172">tagh-fi-ru-ka limaa-laa a\lamu hihee tub-tu 'an-hu wa ta-bar-ra'-tu minal kufli wash-shirki wal-</div>
+<div id="t5_172" class="t s1_172">kizhbi wal ma-'aa-see kul-li-haa aslam-tu wa aa-man-tu wa a-qoolu laa ilaaha il-lal-laahu </div>
+<div id="t6_172" class="t s1_172">muhammadur-raso`,lul-laah. </div>
+<div id="t7_172" class="t s2_172">Iman (Belief) Mujmal </div>
+<div id="t8_172" class="t s1_172">Aa-man-tu bil-laahi ka-maa hu-wa bi-as-maaihee wa sifaa ti-hee wa qa-bil ltu ja-mee-a ah-kaa-</div>
+<div id="t9_172" class="t s1_172">mi -hee. </div>
+<div id="ta_172" class="t s2_172">Iman (Belief) Mufassal </div>
+<div id="tb_172" class="t s1_172">Aa-mantu bil-laahi wa ma-laa-i ka-ti-hee waku-tu-bi-hee wa r u-su-il-hee wal-yaw-mil aakhi-ri </div>
+<div id="tc_172" class="t s1_172">wal qadri khay-ri-hee wa shar-ri-hee mi-nal-laa-i ta-'aa-laa wal ba' si ba' dal mawt.</div>
+<div id="td_172" class="t s2_172">Before Entering the Toilet </div>
+<div id="te_172" class="t s1_172">Al-laa-hum-ma in-nee a-'oo-zhu-bi-ka mi-nal khu-bu-si wal kha-baa-is:</div>
+<div id="tf_172" class="t s2_172">After Leaving the Toilet </div>
+<div id="tg_172" class="t s1_172">Ghuf-raa-nak al-ham-du-lil-laa-hil-la-zhi azh-ha-ba 'an-nil-a-zhaa wa 'aa-faa-nee.</div>
+<div id="th_172" class="t s2_172">Dua Before Commencing Wudhu (ablution) </div>
+<div id="ti_172" class="t s1_172">Bis-mill-laa-hi wal ham-du-lil-laah. </div>
+<div id="tj_172" class="t s1_172">Al-laa-hum-magh-fir lee zham-bee wa-was-si' lee fee daa-ree wa baa-rik lee fee riz-qee</div>
+<div id="tk_172" class="t s2_172">Dua after Completing Wudhu </div>
+<div id="tl_172" class="t s1_172">Ash-hadu al-laa-ilaaha il-lal-laahu wa ash-haduan-na Muham-madan 'abdu-hoo wa rasooluh. </div>
+<div id="tm_172" class="t s1_172">Al-laa-hum-maj 'al-nee minat-taw waa-bee-na waj'al-nee minal muta-tah-hi-reen. </div>
+<div id="tn_172" class="t s1_172">Bismil-laa-hir-rahmaa-nir-raheem. </div>
+<div id="to_172" class="t s3_172">Please let us know of any spelling or gramamr errors. Your input is very </div>
+<div id="tp_172" class="t s3_172">valuable. </div>
+<div id="tq_172" class="t s4_172">Download this free book from The Islamic Bulletin </div>
+<div id="tr_172" class="t s5_172">www.islamicbulletin.com</div>
+<div id="ts_172" class="t s4_172">And go to free e-books. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg172Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg172"><object width="935" height="1210" data="172/172.svg" type="image/svg+xml" id="pdf172" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld172" type="text/javascript">
+
+var isIE = false;
+var f172 = [['t2_172',509],['t3_172',2318],['t4_172',2316],['t5_172',2182],['t7_172',647],['t8_172',2333],['t9_172',200],['ta_172',684],['tb_172',2330],['tc_172',2020],['td_172',773],['te_172',1753],['tf_172',715],['tg_172',1996],['th_172',1294],['ti_172',874],['tj_172',2141],['tk_172',873],['tl_172',2277],['tm_172',1991],['to_172',2076],['tq_172',1592],['ts_172',723]];
+function load172(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f172);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 29;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_172");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

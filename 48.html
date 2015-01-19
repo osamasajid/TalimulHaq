@@ -1,0 +1,277 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page48</title>
+</head>
+
+<body onload="load48()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_48{left:460px;top:1136px;}
+#t2_48{left:137px;top:54px;}
+#t3_48{left:165px;top:54px;}
+#t4_48{left:137px;top:87px;}
+#t5_48{left:165px;top:87px;}
+#t6_48{left:137px;top:120px;}
+#t7_48{left:165px;top:120px;}
+#t8_48{left:413px;top:198px;}
+#t9_48{left:412px;top:216px;}
+#ta_48{left:414px;top:270px;}
+#tb_48{left:138px;top:313px;}
+#tc_48{left:165px;top:313px;}
+#td_48{left:501px;top:313px;}
+#te_48{left:614px;top:313px;}
+#tf_48{left:165px;top:347px;}
+#tg_48{left:165px;top:380px;}
+#th_48{left:438px;top:405px;}
+#ti_48{left:110px;top:434px;}
+#tj_48{left:110px;top:470px;}
+#tk_48{left:414px;top:547px;}
+#tl_48{left:296px;top:623px;}
+#tm_48{left:493px;top:623px;}
+#tn_48{left:308px;top:644px;}
+#to_48{left:484px;top:644px;}
+#tp_48{left:110px;top:713px;}
+#tq_48{left:130px;top:746px;}
+#tr_48{left:110px;top:768px;}
+#ts_48{left:110px;top:791px;}
+#tt_48{left:110px;top:813px;}
+#tu_48{left:110px;top:835px;}
+#tv_48{left:130px;top:853px;}
+#tw_48{left:110px;top:876px;}
+#tx_48{left:110px;top:898px;}
+#ty_48{left:130px;top:916px;}
+#tz_48{left:110px;top:939px;}
+#t10_48{left:110px;top:961px;}
+#t11_48{left:130px;top:968px;}
+#t12_48{left:130px;top:990px;}
+#t13_48{left:130px;top:1011px;}
+#t14_48{left:427px;top:1044px;}
+#t15_48{left:110px;top:1073px;}
+#t16_48{left:110px;top:1105px;}
+
+.s5_48{
+	FONT-SIZE: 48px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT48;
+	color: rgb(0,0,0);
+}
+
+.s1_48{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT48;
+	color: rgb(0,0,0);
+}
+
+.s6_48{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT48;
+	color: rgb(0,0,0);
+}
+
+.s4_48{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(255,0,0);
+	FONT-STYLE: italic;
+}
+
+.s3_48{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT48;
+	color: rgb(0,0,0);
+}
+
+.s2_48{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(255,0,0);
+	FONT-STYLE: italic;
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT48;
+	src :url("48/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT48;
+	src :url("48/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_48" class="t s1_48">48</div>
+<div id="t2_48" class="t s1_48">4.</div>
+<div id="t3_48" class="t s1_48">To call Azan from a high place. </div>
+<div id="t4_48" class="t s1_48">5.</div>
+<div id="t5_48" class="t s1_48">To say Azan in a loud voice. </div>
+<div id="t6_48" class="t s1_48">6.</div>
+<div id="t7_48" class="t s1_48">To turn the face right when saying. </div>
+<div id="t8_48" class="t s2_48">Hayya 'alas salah </div>
+<div id="t9_48" class="t s1_48">and to the left when saying </div>
+<div id="ta_48" class="t s2_48">Hayya 'alal falah</div>
+<div id="tb_48" class="t s1_48">7.</div>
+<div id="tc_48" class="t s1_48">To say 'Assalaatoo-khairoom-minannaiom' twice after </div>
+<div id="td_48" class="t s2_48">'Hayya alal falah'</div>
+<div id="te_48" class="t s1_48">in the Azan of Fajr Salaah. </div>
+<div id="tf_48" class="t s1_48">Saying AZAAN without Wudhu is permissible but it is bad to make a habit of it. </div>
+<div id="tg_48" class="t s1_48">AZAAN is SUNNAT, but as it reveals a special glory of Islam, much stress is laid on it. </div>
+<div id="th_48" class="t s3_48">IQAAMAT </div>
+<div id="ti_48" class="t s3_48">Q. What is IQAAMAT? </div>
+<div id="tj_48" class="t s3_48">A. IQAAMAT is to repeat the wordings of AZAAN at the beginning of FARZ Salaah. </div>
+<div id="tk_48" class="t s2_48">Hayya 'alal falah</div>
+<div id="tl_48" class="t s4_48">Qad q'amatis sal'ah </div>
+<div id="tm_48" class="t s4_48">Qad q'amatis sal'ah </div>
+<div id="tn_48" class="t s5_48">The (Jammat) prayer is ready </div>
+<div id="to_48" class="t s5_48">The (Jammat) prayer is ready </div>
+<div id="tp_48" class="t s6_48">AZAAN and IQAAMAT are SUNNAT for MEN only </div>
+<div id="tq_48" class="t s1_48">Iqaama is SUNNAT for FARZ Salaah only. It is not Sunnah for any other Salaah.</div>
+<div id="tr_48" class="t s1_48">Q. If anyone performs his Farz Salaat at home, should he say Azan and Iqaama?</div>
+<div id="ts_48" class="t s1_48">A. Azan and Iqaama in the neighboring Masjid will be sufficient, but it is better to say them at home also.</div>
+<div id="tt_48" class="t s1_48">Q. Should a traveler say Azan and Iqaama during a journey?</div>
+<div id="tu_48" class="t s1_48">A. Yes, both Azan and Iqaama should be said when one is at a lonely place. It won't matter if one says only Iqaama </div>
+<div id="tv_48" class="t s1_48">and not Azan, However, it is Makrooh to leave the both.</div>
+<div id="tw_48" class="t s1_48">Q. Is it permissible if one person says the Azan and another says the Iqaama?</div>
+<div id="tx_48" class="t s1_48">A. If one who said the Azan is not present or if he is there but does not mind, then another person may say Iqaama. </div>
+<div id="ty_48" class="t s1_48">If the person who said Azan minds, then it is Makrooh for another person to say the Iqaama. </div>
+<div id="tz_48" class="t s1_48">Q. How much time should be allowed to pass between Azan and Iqaama?</div>
+<div id="t10_48" class="t s1_48">A. </div>
+<div id="t11_48" class="t s3_48">In all Salaat except Maghreb, one should wait for the Iqaama till the persons who are eating or </div>
+<div id="t12_48" class="t s3_48">are in the toilet can join the Salaah. In Maghreb Salaat it is advisable that after the Azan, </div>
+<div id="t13_48" class="t s3_48">Iqaama should be said after the lapse of the time equal to the reciting of THREE AAYATS. </div>
+<div id="t14_48" class="t s6_48">IJAABAT </div>
+<div id="t15_48" class="t s3_48">Repeating the words of Azan and Iqaama is called IJAABAT. </div>
+<div id="t16_48" class="t s1_48">Q. What is IJAABAT for Azan and Iqaama and what is the order for that?</div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg48Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg48"><object width="935" height="1210" data="48/48.svg" type="image/svg+xml" id="pdf48" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld48" type="text/javascript">
+
+var isIE = false;
+var f48 = [['t3_48',777],['t5_48',703],['t7_48',860],['t8_48',440],['t9_48',662],['ta_48',426],['tc_48',1326],['td_48',439],['te_48',658],['tf_48',1978],['tg_48',2161],['ti_48',712],['tj_48',2538],['tk_48',426],['tl_48',585],['tm_48',585],['tn_48',571],['to_48',571],['tp_48',1669],['tq_48',2006],['tr_48',1971],['ts_48',2595],['tt_48',1486],['tu_48',2833],['tv_48',1382],['tw_48',1897],['tx_48',2822],['ty_48',2264],['tz_48',1809],['t11_48',2774],['t12_48',2602],['t13_48',2691],['t15_48',1817],['t16_48',1821]];
+function load48(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f48);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 43;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_48");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

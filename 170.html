@@ -1,0 +1,188 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page170</title>
+</head>
+
+<body onload="load170()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_170{left:456px;top:1136px;}
+#t2_170{left:250px;top:72px;}
+#t3_170{left:367px;top:72px;}
+#t4_170{left:246px;top:118px;}
+#t5_170{left:367px;top:118px;}
+#t6_170{left:251px;top:165px;}
+#t7_170{left:367px;top:165px;}
+#t8_170{left:247px;top:208px;}
+#t9_170{left:367px;top:208px;}
+#ta_170{left:247px;top:251px;}
+#tb_170{left:367px;top:251px;}
+#tc_170{left:247px;top:295px;}
+#td_170{left:367px;top:295px;}
+
+.s1_170{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT170;
+	color: rgb(0,0,0);
+}
+
+.s2_170{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT170;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT170;
+	src :url("170/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_170" class="t s1_170">170</div>
+<div id="t2_170" class="t s2_170">s </div>
+<div id="t3_170" class="t s2_170">Approximate with a heavy "s". </div>
+<div id="t4_170" class="t s2_170">sh </div>
+<div id="t5_170" class="t s2_170">Pronounced as the "sh" as in "shine". </div>
+<div id="t6_170" class="t s2_170">t </div>
+<div id="t7_170" class="t s2_170">Approximate with a heavy "t". </div>
+<div id="t8_170" class="t s2_170">th </div>
+<div id="t9_170" class="t s2_170">Pronounce as the "th" in "thin". </div>
+<div id="ta_170" class="t s2_170">th </div>
+<div id="tb_170" class="t s2_170">Pronounce as the "th" in "this". </div>
+<div id="tc_170" class="t s2_170">th </div>
+<div id="td_170" class="t s2_170">Approximate with "th" as in "this". </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg170Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg170"><object width="935" height="1210" data="170/170.svg" type="image/svg+xml" id="pdf170" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld170" type="text/javascript">
+
+var isIE = false;
+var f170 = [['t3_170',905],['t5_170',1088],['t7_170',897],['t9_170',923],['tb_170',915],['td_170',1029]];
+function load170(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f170);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 14;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_170");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page65</title>
+</head>
+
+<body onload="load65()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_65{left:460px;top:1136px;}
+#t2_65{left:266px;top:110px;}
+#t3_65{left:214px;top:172px;}
+#t4_65{left:245px;top:238px;}
+#t5_65{left:518px;top:108px;}
+#t6_65{left:558px;top:185px;}
+#t7_65{left:521px;top:257px;}
+#t8_65{left:271px;top:381px;}
+#t9_65{left:178px;top:426px;}
+#ta_65{left:390px;top:585px;}
+#tb_65{left:440px;top:607px;}
+#tc_65{left:360px;top:628px;}
+#td_65{left:460px;top:650px;}
+#te_65{left:118px;top:674px;}
+#tf_65{left:118px;top:702px;}
+#tg_65{left:173px;top:702px;}
+#th_65{left:118px;top:735px;}
+#ti_65{left:173px;top:735px;}
+#tj_65{left:118px;top:768px;}
+#tk_65{left:173px;top:768px;}
+#tl_65{left:118px;top:802px;}
+#tm_65{left:173px;top:802px;}
+#tn_65{left:118px;top:835px;}
+#to_65{left:173px;top:835px;}
+#tp_65{left:118px;top:868px;}
+#tq_65{left:173px;top:871px;}
+#tr_65{left:110px;top:943px;}
+#ts_65{left:110px;top:979px;}
+#tt_65{left:110px;top:1000px;}
+#tu_65{left:110px;top:1037px;}
+#tv_65{left:110px;top:1058px;}
+
+.s3_65{
+	FONT-SIZE: 82px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT65;
+	color: rgb(0,0,0);
+}
+
+.s1_65{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT65;
+	color: rgb(0,0,0);
+}
+
+.s5_65{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT65;
+	color: rgb(0,0,0);
+}
+
+.s2_65{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT65;
+	color: rgb(0,0,0);
+}
+
+.s4_65{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT65;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT65;
+	src :url("65/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT65;
+	src :url("65/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_65" class="t s1_65">65</div>
+<div id="t2_65" class="t s1_65">and to You do we pray </div>
+<div id="t3_65" class="t s1_65">and to You do we flee and we are quick </div>
+<div id="t4_65" class="t s1_65">and we fear Your punishment  </div>
+<div id="t5_65" class="t s1_65">O Allah : You alone we serve </div>
+<div id="t6_65" class="t s1_65">and we prostrate </div>
+<div id="t7_65" class="t s1_65">and we hope for Your mercy  </div>
+<div id="t8_65" class="t s2_65">No doubt Your punishment overtakes the unbelievers </div>
+<div id="t9_65" class="t s3_65">Go into RUKU, and then complete the SALAAH in the usual manner. </div>
+<div id="ta_65" class="t s2_65">Conditions And Rules of </div>
+<div id="tb_65" class="t s4_65">Prayer </div>
+<div id="tc_65" class="t s2_65">According to Sunnah (HANAFI) </div>
+<div id="td_65" class="t s2_65">Part 8 </div>
+<div id="te_65" class="t s5_65">Index</div>
+<div id="tf_65" class="t s1_65">1.</div>
+<div id="tg_65" class="t s1_65">Introduction </div>
+<div id="th_65" class="t s1_65">2.</div>
+<div id="ti_65" class="t s1_65">Conditions for Salaah </div>
+<div id="tj_65" class="t s1_65">3.</div>
+<div id="tk_65" class="t s1_65">Salaah Chart </div>
+<div id="tl_65" class="t s1_65">4.</div>
+<div id="tm_65" class="t s1_65">TIMES OF SALAAH </div>
+<div id="tn_65" class="t s1_65">5.</div>
+<div id="to_65" class="t s1_65">FARZ </div>
+<div id="tp_65" class="t s2_65">6.</div>
+<div id="tq_65" class="t s1_65">WAAJIB  </div>
+<div id="tr_65" class="t s4_65">Introduction</div>
+<div id="ts_65" class="t s2_65">SALAAH is a special type prayer that has been taught by ALLAH and the HOLY.PROPHET </div>
+<div id="tt_65" class="t s2_65">MUHAMMAD (Sallallaahu Alaihi Wa Sallam). </div>
+<div id="tu_65" class="t s2_65">EIGHT conditions are to be observed before one performs Salaah. Without them Salaah cannot </div>
+<div id="tv_65" class="t s2_65">be performed. These EIGHT conditions are called SHARAA'IT. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg65Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg65"><object width="935" height="1210" data="65/65.svg" type="image/svg+xml" id="pdf65" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld65" type="text/javascript">
+
+var isIE = false;
+var f65 = [['t2_65',561],['t3_65',977],['t4_65',744],['t5_65',729],['t6_65',405],['t7_65',722],['t8_65',1569],['t9_65',2318],['ta_65',731],['tc_65',967],['td_65',173],['ti_65',534],['tk_65',314],['tm_65',541],['tq_65',247],['ts_65',2748],['tt_65',1415],['tu_65',2795],['tv_65',1888]];
+function load65(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f65);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 32;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_65");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

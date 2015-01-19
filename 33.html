@@ -1,0 +1,253 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page33</title>
+</head>
+
+<body onload="load33()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_33{left:460px;top:1136px;}
+#t2_33{left:361px;top:54px;}
+#t3_33{left:451px;top:75px;}
+#t4_33{left:138px;top:425px;}
+#t5_33{left:138px;top:454px;}
+#t6_33{left:165px;top:454px;}
+#t7_33{left:791px;top:454px;}
+#t8_33{left:165px;top:472px;}
+#t9_33{left:138px;top:505px;}
+#ta_33{left:165px;top:505px;}
+#tb_33{left:165px;top:523px;}
+#tc_33{left:165px;top:541px;}
+#td_33{left:138px;top:574px;}
+#te_33{left:165px;top:574px;}
+#tf_33{left:165px;top:592px;}
+#tg_33{left:138px;top:625px;}
+#th_33{left:165px;top:625px;}
+#ti_33{left:707px;top:625px;}
+#tj_33{left:165px;top:643px;}
+#tk_33{left:138px;top:676px;}
+#tl_33{left:165px;top:676px;}
+#tm_33{left:165px;top:694px;}
+#tn_33{left:192px;top:727px;}
+#to_33{left:220px;top:727px;}
+#tp_33{left:192px;top:760px;}
+#tq_33{left:220px;top:760px;}
+#tr_33{left:501px;top:760px;}
+#ts_33{left:138px;top:793px;}
+#tt_33{left:165px;top:793px;}
+#tu_33{left:165px;top:811px;}
+#tv_33{left:165px;top:829px;}
+#tw_33{left:165px;top:847px;}
+#tx_33{left:138px;top:880px;}
+#ty_33{left:165px;top:880px;}
+#tz_33{left:165px;top:898px;}
+#t10_33{left:165px;top:915px;}
+#t11_33{left:190px;top:915px;}
+#t12_33{left:138px;top:948px;}
+#t13_33{left:165px;top:948px;}
+#t14_33{left:165px;top:966px;}
+
+.s1_33{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT33;
+	color: rgb(0,0,0);
+}
+
+.s3_33{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT33;
+	color: rgb(0,0,0);
+}
+
+.s2_33{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT33;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT33;
+	src :url("33/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT33;
+	src :url("33/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_33" class="t s1_33">33</div>
+<div id="t2_33" class="t s2_33">Ghusl (Obligatory Shower) </div>
+<div id="t3_33" class="t s3_33">PART 4 </div>
+<div id="t4_33" class="t s3_33">MORE ABOUT WATER </div>
+<div id="t5_33" class="t s1_33">1.</div>
+<div id="t6_33" class="t s1_33">The water with which Wudhu or Ghusl has been made is called MUSTA'MAL (used) WATER. This </div>
+<div id="t7_33" class="t s1_33">itself </div>
+<div id="t8_33" class="t s1_33">is TAAHIR, but Wudhu or Ghusl is not ALLOWED with this water. </div>
+<div id="t9_33" class="t s1_33">2.</div>
+<div id="ta_33" class="t s1_33">Water from which DOGS, PIGS or ANIMALS of PREY have drunk is NAJIS (Impure). The water which </div>
+<div id="tb_33" class="t s1_33">a CAT drinks immediately after eating a mouse or any other creature is NAJIS (Impure). Water left by a </div>
+<div id="tc_33" class="t s1_33">person who has just drunk WINE is also NAJIS (Impure). </div>
+<div id="td_33" class="t s1_33">3.</div>
+<div id="te_33" class="t s1_33">Water left by a cat (if it has not just eaten a mouse), a cow, buffalo or hen that eats anything Impure (filth), </div>
+<div id="tf_33" class="t s1_33">lizard, crow, kite, hawk, eagle and all other Haraam birds, is MAKROOH. </div>
+<div id="tg_33" class="t s1_33">4.</div>
+<div id="th_33" class="t s1_33">The water which has been left over after drinking by human beings, Halaal animals’ e.g.</div>
+<div id="ti_33" class="t s1_33">. a cow, goats, </div>
+<div id="tj_33" class="t s1_33">pigeons, doves and horses, is TAAHIR (clean). </div>
+<div id="tk_33" class="t s1_33">5.</div>
+<div id="tl_33" class="t s1_33">All types of water will become NAJIS if NAJAASAT falls into them. However, two types of water are </div>
+<div id="tm_33" class="t s1_33">excluded from this rule, namely: </div>
+<div id="tn_33" class="t s1_33">a.</div>
+<div id="to_33" class="t s1_33">Flowing water of river or sea and </div>
+<div id="tp_33" class="t s1_33">b.</div>
+<div id="tq_33" class="t s1_33">STORED water in LARGE QUANTITY, e.g.</div>
+<div id="tr_33" class="t s1_33">. large reservoir or huge tank. </div>
+<div id="ts_33" class="t s1_33">6.</div>
+<div id="tt_33" class="t s1_33">Stored or standing water which covers an area of approximately 21 x 21 FEET, THAT IS + (6.5m. x 6.5m) </div>
+<div id="tu_33" class="t s1_33">and is deep enough so that a person can take out water with his hands without baring the ground, is </div>
+<div id="tv_33" class="t s1_33">regarded as large quantity of water. Any tank or reservoir as big as that will be called a BIG TANK or a </div>
+<div id="tw_33" class="t s1_33">BIG RESERVOIR. </div>
+<div id="tx_33" class="t s1_33">7.</div>
+<div id="ty_33" class="t s1_33">Any animal or bird which has FLOWING BLOOD and falls into water of a SMALL quantity and dies will </div>
+<div id="tz_33" class="t s1_33">make the water NAJIS (Impure). </div>
+<div id="t10_33" class="t s1_33">E.g.</div>
+<div id="t11_33" class="t s1_33">. birds, fowls, pigeons, cats or mice, etc. </div>
+<div id="t12_33" class="t s1_33">8.</div>
+<div id="t13_33" class="t s1_33">The water of a big tank or reservoir becomes NAJIS when the TASTE, COLOUR or SMELL of the </div>
+<div id="t14_33" class="t s1_33">NAJAASAT becomes apparent. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg33Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg33"><object width="935" height="1210" data="33/33.svg" type="image/svg+xml" id="pdf33" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld33" type="text/javascript">
+
+var isIE = false;
+var f33 = [['t2_33',852],['t3_33',242],['t4_33',760],['t6_33',2474],['t8_33',1686],['ta_33',2601],['tb_33',2557],['tc_33',1422],['te_33',2621],['tf_33',1827],['th_33',2167],['ti_33',351],['tj_33',1161],['tl_33',2524],['tm_33',797],['to_33',818],['tq_33',1124],['tr_33',724],['tt_33',2626],['tu_33',2431],['tv_33',2549],['tw_33',476],['ty_33',2620],['tz_33',804],['t11_33',985],['t13_33',2450],['t14_33',788]];
+function load33(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f33);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 41;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_33");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

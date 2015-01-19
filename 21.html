@@ -1,0 +1,272 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page21</title>
+</head>
+
+<body onload="load21()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_21{left:460px;top:1136px;}
+#t2_21{left:448px;top:75px;}
+#t3_21{left:138px;top:104px;}
+#t4_21{left:165px;top:104px;}
+#t5_21{left:165px;top:122px;}
+#t6_21{left:265px;top:122px;}
+#t7_21{left:138px;top:155px;}
+#t8_21{left:165px;top:155px;}
+#t9_21{left:138px;top:188px;}
+#ta_21{left:165px;top:188px;}
+#tb_21{left:165px;top:206px;}
+#tc_21{left:138px;top:239px;}
+#td_21{left:165px;top:239px;}
+#te_21{left:165px;top:257px;}
+#tf_21{left:165px;top:275px;}
+#tg_21{left:165px;top:293px;}
+#th_21{left:138px;top:326px;}
+#ti_21{left:165px;top:326px;}
+#tj_21{left:138px;top:359px;}
+#tk_21{left:165px;top:359px;}
+#tl_21{left:165px;top:377px;}
+#tm_21{left:138px;top:410px;}
+#tn_21{left:165px;top:410px;}
+#to_21{left:426px;top:410px;}
+#tp_21{left:165px;top:428px;}
+#tq_21{left:138px;top:461px;}
+#tr_21{left:165px;top:461px;}
+#ts_21{left:165px;top:479px;}
+#tt_21{left:138px;top:512px;}
+#tu_21{left:165px;top:512px;}
+#tv_21{left:138px;top:545px;}
+#tw_21{left:165px;top:545px;}
+#tx_21{left:165px;top:563px;}
+#ty_21{left:138px;top:596px;}
+#tz_21{left:165px;top:596px;}
+#t10_21{left:308px;top:622px;}
+#t11_21{left:165px;top:782px;}
+#t12_21{left:207px;top:782px;}
+#t13_21{left:736px;top:782px;}
+#t14_21{left:195px;top:826px;}
+#t15_21{left:110px;top:862px;}
+#t16_21{left:355px;top:891px;}
+#t17_21{left:110px;top:920px;}
+
+.s4_21{
+	FONT-SIZE: 97px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT21;
+	color: rgb(0,0,0);
+}
+
+.s1_21{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT21;
+	color: rgb(0,0,0);
+}
+
+.s5_21{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(0,0,0);
+	FONT-STYLE: italic;
+}
+
+.s3_21{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT21;
+	color: rgb(0,0,0);
+}
+
+.s2_21{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT21;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT21;
+	src :url("21/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT21;
+	src :url("21/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_21" class="t s1_21">21</div>
+<div id="t2_21" class="t s2_21">ISTINJA </div>
+<div id="t3_21" class="t s1_21">1.</div>
+<div id="t4_21" class="t s1_21">ISTINJA means cleaning the private parts after passing out urine and stool by using clean water and clay-</div>
+<div id="t5_21" class="t s1_21">Toiletpaper.etc </div>
+<div id="t6_21" class="t s1_21">It is SUNNAT to make ISTINJA after passing out urine, stool, etc. </div>
+<div id="t7_21" class="t s1_21">2.</div>
+<div id="t8_21" class="t s1_21">It is permissible to use lumps of dry earth for ISTINJA, provided the body is properly cleaned. </div>
+<div id="t9_21" class="t s1_21">3.</div>
+<div id="ta_21" class="t s1_21">For passing urine and stool, one should go to a place of privacy (toilet) and seat oneself at ease. After </div>
+<div id="tb_21" class="t s1_21">relieving, wash the private parts until satisfied that they have become clean. </div>
+<div id="tc_21" class="t s1_21">4.</div>
+<div id="td_21" class="t s1_21">It is MAKROOH to make ISTINJA with coal, bones, glass, baked bricks, printed paper, etc. It is not </div>
+<div id="te_21" class="t s1_21">proper to use paper for ISTINJA which is also used for writing and printing. But with toilet paper it is </div>
+<div id="tf_21" class="t s1_21">different. It can be used for ISTINJA, since it was made only for that purpose and not for writing or </div>
+<div id="tg_21" class="t s1_21">printing. </div>
+<div id="th_21" class="t s1_21">5.</div>
+<div id="ti_21" class="t s1_21">It is MARKOOH to pass out urine while standing. </div>
+<div id="tj_21" class="t s1_21">6.</div>
+<div id="tk_21" class="t s1_21">It is MAKROOH-E-TAHREEMEE to face or show the back to the KA'BA when passing out urine or </div>
+<div id="tl_21" class="t s1_21">stool. </div>
+<div id="tm_21" class="t s1_21">7.</div>
+<div id="tn_21" class="t s1_21">It is FORBIDDEN to make little children </div>
+<div id="to_21" class="t s1_21">seat facing or showing their backs towards the KA'BA when </div>
+<div id="tp_21" class="t s1_21">passing out urine or stool. </div>
+<div id="tq_21" class="t s1_21">8.</div>
+<div id="tr_21" class="t s1_21">Remove rings, badges or anything else on which the name of ALLAH, His RASOOL. (Sallallaahu-Alayhi-</div>
+<div id="ts_21" class="t s1_21">Wa-Sallam), Quranic verses or Hadith are written. It is permitted to have them in the pocket. </div>
+<div id="tt_21" class="t s1_21">9.</div>
+<div id="tu_21" class="t s1_21">Use the LEFT HAND only in ISTINJA. </div>
+<div id="tv_21" class="t s1_21">10.</div>
+<div id="tw_21" class="t s1_21">Do not urinate or pass stool on a public road or path, beneath a fruit tree, or a tree giving shade or in a well, </div>
+<div id="tx_21" class="t s1_21">dam or river. </div>
+<div id="ty_21" class="t s1_21">11.</div>
+<div id="tz_21" class="t s1_21">If you are in an open place and there is no toilet, then sit in a place where you cannot be seen by others. </div>
+<div id="t10_21" class="t s3_21">BEFORE ENTERING THE TOILET RECITE : </div>
+<div id="t11_21" class="t s4_21">Alla</div>
+<div id="t12_21" class="t s4_21">humma innee Auozu bika minal-khubuthi wal –khaba</div>
+<div id="t13_21" class="t s4_21">-ith </div>
+<div id="t14_21" class="t s5_21">O ALLAH! I seek protection in You from the MALE and FEMALE DEVIL.</div>
+<div id="t15_21" class="t s2_21">ENTER the toilet with the LEFT FOOT </div>
+<div id="t16_21" class="t s2_21">AFTER LEAVING THE TOILET </div>
+<div id="t17_21" class="t s2_21">Step out with the RIGHT FOOT and once OUTSIDE RECITE: </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg21Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg21"><object width="935" height="1210" data="21/21.svg" type="image/svg+xml" id="pdf21" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld21" type="text/javascript">
+
+var isIE = false;
+var f21 = [['t4_21',2593],['t6_21',1638],['t8_21',2319],['ta_21',2486],['tb_21',1857],['td_21',2464],['te_21',2499],['tf_21',2445],['ti_21',1235],['tk_21',2491],['tn_21',1014],['to_21',1485],['tp_21',636],['tr_21',2627],['ts_21',2274],['tu_21',983],['tw_21',2636],['tx_21',318],['tz_21',2536],['t10_21',1273],['t12_21',2115],['t14_21',2181],['t15_21',1173],['t16_21',1010],['t17_21',1859]];
+function load21(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f21);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 44;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_21");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page74</title>
+</head>
+
+<body onload="load74()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_74{left:460px;top:1136px;}
+#t2_74{left:330px;top:54px;}
+#t3_74{left:110px;top:80px;}
+#t4_74{left:110px;top:97px;}
+#t5_74{left:110px;top:131px;}
+#t6_74{left:110px;top:148px;}
+#t7_74{left:110px;top:182px;}
+#t8_74{left:137px;top:215px;}
+#t9_74{left:165px;top:215px;}
+#ta_74{left:165px;top:232px;}
+#tb_74{left:137px;top:266px;}
+#tc_74{left:165px;top:266px;}
+#td_74{left:137px;top:299px;}
+#te_74{left:165px;top:299px;}
+#tf_74{left:165px;top:317px;}
+#tg_74{left:165px;top:352px;}
+#th_74{left:165px;top:370px;}
+#ti_74{left:153px;top:396px;}
+#tj_74{left:137px;top:421px;}
+#tk_74{left:165px;top:421px;}
+#tl_74{left:137px;top:454px;}
+#tm_74{left:165px;top:454px;}
+#tn_74{left:137px;top:487px;}
+#to_74{left:165px;top:487px;}
+#tp_74{left:137px;top:520px;}
+#tq_74{left:165px;top:520px;}
+#tr_74{left:137px;top:553px;}
+#ts_74{left:165px;top:553px;}
+#tt_74{left:137px;top:587px;}
+#tu_74{left:165px;top:587px;}
+#tv_74{left:137px;top:620px;}
+#tw_74{left:165px;top:620px;}
+#tx_74{left:110px;top:653px;}
+#ty_74{left:110px;top:671px;}
+#tz_74{left:110px;top:689px;}
+#t10_74{left:110px;top:706px;}
+#t11_74{left:349px;top:732px;}
+#t12_74{left:366px;top:750px;}
+#t13_74{left:110px;top:775px;}
+#t14_74{left:110px;top:793px;}
+#t15_74{left:110px;top:811px;}
+#t16_74{left:110px;top:844px;}
+#t17_74{left:110px;top:862px;}
+#t18_74{left:348px;top:887px;}
+#t19_74{left:137px;top:913px;}
+#t1a_74{left:165px;top:913px;}
+#t1b_74{left:165px;top:931px;}
+#t1c_74{left:137px;top:964px;}
+#t1d_74{left:165px;top:964px;}
+#t1e_74{left:137px;top:997px;}
+#t1f_74{left:165px;top:997px;}
+#t1g_74{left:137px;top:1030px;}
+#t1h_74{left:165px;top:1030px;}
+#t1i_74{left:137px;top:1063px;}
+#t1j_74{left:165px;top:1063px;}
+#t1k_74{left:165px;top:1081px;}
+
+.s1_74{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT74;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT74;
+	src :url("74/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_74" class="t s1_74">74</div>
+<div id="t2_74" class="t s1_74">SALAAT WITH JAMAAT AND IMAMAT </div>
+<div id="t3_74" class="t s1_74">JAMAAT is the PERFORMING of SALAAT by MANY persons COLLECTIVELY, in which the IMAAM (leader) </div>
+<div id="t4_74" class="t s1_74">conducts the SALAAT and those following him are called MUQTADIS. </div>
+<div id="t5_74" class="t s1_74">To perform the FIVE DAILY SALAAT with JAMAAT is WAAJIB and to NEGLECT the JAMAAT is very </div>
+<div id="t6_74" class="t s1_74">SINFUL. </div>
+<div id="t7_74" class="t s1_74">Performing SALAAT with JAMAAT has MANY BENEFITS, e.g.: </div>
+<div id="t8_74" class="t s1_74">1.</div>
+<div id="t9_74" class="t s1_74">The THAWAAB (reward) of performing Salaat with JAMAAT in the MUSJID is TWENTY SEVEN </div>
+<div id="ta_74" class="t s1_74">times GREATER than performing SALAAT ALONE. </div>
+<div id="tb_74" class="t s1_74">2.</div>
+<div id="tc_74" class="t s1_74">Muslims MEET FIVE times a day and this creates LOVE and UNITY. </div>
+<div id="td_74" class="t s1_74">3.</div>
+<div id="te_74" class="t s1_74">The Salaat of the sinful become more acceptable by joining and performing Salaat with other pious </div>
+<div id="tf_74" class="t s1_74">persons, etc. </div>
+<div id="tg_74" class="t s1_74">NB. It is NOT WAJIB upon WOMEN, CHILDREN, SICK PERSONS, those NURSING the SICK, VERY </div>
+<div id="th_74" class="t s1_74">OLD persons and the BLIND to ATTEND the JAMAAT. </div>
+<div id="ti_74" class="t s1_74">REASONS WHEN A PERSON IS EXCUSED FROM ATTENDING THE JAMA'AT IN A MUSJID. </div>
+<div id="tj_74" class="t s1_74">1.</div>
+<div id="tk_74" class="t s1_74">HEAVY RAINS. </div>
+<div id="tl_74" class="t s1_74">2.</div>
+<div id="tm_74" class="t s1_74">DIRTY and MUDDY ROADS. </div>
+<div id="tn_74" class="t s1_74">3.</div>
+<div id="to_74" class="t s1_74">Very COLD WEATHER. </div>
+<div id="tp_74" class="t s1_74">4.</div>
+<div id="tq_74" class="t s1_74">STORMY NIGHT. </div>
+<div id="tr_74" class="t s1_74">5.</div>
+<div id="ts_74" class="t s1_74">When a person is a MUSAFIR and the time for DEPARTURE of TRAIN, PLANE or SHIP is NEAR. </div>
+<div id="tt_74" class="t s1_74">6.</div>
+<div id="tu_74" class="t s1_74">When one is in NEED to go to the toilet. </div>
+<div id="tv_74" class="t s1_74">7.</div>
+<div id="tw_74" class="t s1_74">When one is very HUNGRY and FOOD is being SERVED. </div>
+<div id="tx_74" class="t s1_74">A JAMAAT consists of AT LEAST TWO persons: the IMAM and the MUQTADI. The MUQTADI should </div>
+<div id="ty_74" class="t s1_74">STAND at the RIGHT of the Imam in such a manner that the TOES of the Muqtadi should he PARALLEL to the </div>
+<div id="tz_74" class="t s1_74">ANKLE of the IMAAM If there are TWO or MORE Muqtadis, the Imam should STAND AHEAD and the </div>
+<div id="t10_74" class="t s1_74">Muqtadis BEHIND. </div>
+<div id="t11_74" class="t s1_74">THE MANNER IN WHICH PEOPLE </div>
+<div id="t12_74" class="t s1_74">SHOULD STAND IN JAMAAT </div>
+<div id="t13_74" class="t s1_74">The Muqtadis should STAND CLOSE to each other and in a STRAIGHT ROW. NO SPACE should be LEFT in </div>
+<div id="t14_74" class="t s1_74">between, CHILDREN should STAND in the BACK ROW. It is MAKRUH to INCLUDE CHILDREN in the </div>
+<div id="t15_74" class="t s1_74">MEN'S ROW. </div>
+<div id="t16_74" class="t s1_74">If the Imam’s Salaat becomes FAASID (void) then the Muqtadis Salaat will ALSO become FAASID. It will be </div>
+<div id="t17_74" class="t s1_74">NECESSARY for the Muqtadis to REPEAT the Salaat. </div>
+<div id="t18_74" class="t s1_74">WHO DESERVES TO BE AN IMAM </div>
+<div id="t19_74" class="t s1_74">1.</div>
+<div id="t1a_74" class="t s1_74">That person who knows the MASAA'IL (rules) of Salaat </div>
+<div id="t1b_74" class="t s1_74">WELL provided he is NOT a FAASIQ (an open sinner). </div>
+<div id="t1c_74" class="t s1_74">2.</div>
+<div id="t1d_74" class="t s1_74">Then a person who can RECITE the HOLY QURAAN WELL. </div>
+<div id="t1e_74" class="t s1_74">3.</div>
+<div id="t1f_74" class="t s1_74">There after a person who is PIOUS. </div>
+<div id="t1g_74" class="t s1_74">4.</div>
+<div id="t1h_74" class="t s1_74">Then the OLDEST person. </div>
+<div id="t1i_74" class="t s1_74">5.</div>
+<div id="t1j_74" class="t s1_74">Then the GOOD - MANNERED and KIND. However, if there is a FIXED Imam in a Masjid, then he will </div>
+<div id="t1k_74" class="t s1_74">still DESERVE the HONOUR to be the Imam. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg74Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg74"><object width="935" height="1210" data="74/74.svg" type="image/svg+xml" id="pdf74" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld74" type="text/javascript">
+
+var isIE = false;
+var f74 = [['t2_74',1101],['t3_74',2860],['t4_74',1784],['t5_74',2675],['t7_74',1662],['t9_74',2496],['ta_74',1337],['tc_74',1738],['te_74',2432],['tf_74',305],['tg_74',2633],['th_74',1419],['ti_74',2517],['tk_74',429],['tm_74',777],['to_74',635],['tq_74',477],['ts_74',2503],['tu_74',999],['tw_74',1473],['tx_74',2651],['ty_74',2783],['tz_74',2630],['t10_74',493],['t11_74',943],['t12_74',813],['t13_74',2773],['t14_74',2679],['t15_74',354],['t16_74',2732],['t17_74',1362],['t18_74',956],['t1a_74',1391],['t1b_74',1385],['t1d_74',1554],['t1f_74',878],['t1h_74',661],['t1j_74',2606],['t1k_74',1149]];
+function load74(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f74);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 57;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_74");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

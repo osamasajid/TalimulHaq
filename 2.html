@@ -1,0 +1,243 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page2</title>
+</head>
+
+<body onload="load2()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_2{left:464px;top:1136px;}
+#t2_2{left:238px;top:53px;}
+#t3_2{left:110px;top:105px;}
+#t4_2{left:117px;top:105px;}
+#t5_2{left:110px;top:136px;}
+#t6_2{left:110px;top:167px;}
+#t7_2{left:110px;top:199px;}
+#t8_2{left:110px;top:230px;}
+#t9_2{left:110px;top:261px;}
+#ta_2{left:110px;top:293px;}
+#tb_2{left:110px;top:324px;}
+#tc_2{left:110px;top:355px;}
+#td_2{left:110px;top:387px;}
+#te_2{left:110px;top:418px;}
+#tf_2{left:110px;top:449px;}
+#tg_2{left:110px;top:496px;}
+#th_2{left:110px;top:527px;}
+#ti_2{left:110px;top:559px;}
+#tj_2{left:110px;top:590px;}
+#tk_2{left:110px;top:621px;}
+#tl_2{left:110px;top:653px;}
+#tm_2{left:110px;top:684px;}
+#tn_2{left:110px;top:731px;}
+#to_2{left:110px;top:762px;}
+#tp_2{left:110px;top:793px;}
+#tq_2{left:110px;top:840px;}
+#tr_2{left:110px;top:886px;}
+#ts_2{left:110px;top:918px;}
+#tt_2{left:110px;top:949px;}
+#tu_2{left:429px;top:1035px;}
+#tv_2{left:224px;top:1074px;}
+#tw_2{left:356px;top:1105px;}
+
+.s4_2{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT2;
+	color: rgb(0,0,0);
+}
+
+.s1_2{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT2;
+	color: rgb(0,0,0);
+}
+
+.s3_2{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT2;
+	color: rgb(0,0,0);
+}
+
+.s2_2{
+	FONT-SIZE: 122px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT2;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT2;
+	src :url("2/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT2;
+	src :url("2/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_2" class="t s1_2">2</div>
+<div id="t2_2" class="t s2_2">Taleemul Haq (Teachings of Islam)</div>
+<div id="t3_2" class="t s3_2">I</div>
+<div id="t4_2" class="t s4_2">n the midst of growing influence of anti-Islamic, anti-natural and neckd western culture and </div>
+<div id="t5_2" class="t s4_2">ethos, the need of Islamic way of life is enormous for this material life here in this world. </div>
+<div id="t6_2" class="t s4_2">However, the codes and rulings of shariat, a complete code of life, are based on the success and </div>
+<div id="t7_2" class="t s4_2">development for both the life here and hereafter. Islam has given its ruling and commandments </div>
+<div id="t8_2" class="t s4_2">to all the spheres of our individual and social life. The book "TALIMUL HAQUE (THE </div>
+<div id="t9_2" class="t s4_2">TEACHINGS OF ISLAM)' however, has discussed on the basic principle and practices of Islam </div>
+<div id="ta_2" class="t s4_2">e.g. Iman (belief and faith), Salaah (prayer), Saum (fasting), Hajj (Pilgrimage to Makkah </div>
+<div id="tb_2" class="t s4_2">Mukarramah) and Zakat which is also popularly known as "five pillars of Islam". These are the </div>
+<div id="tc_2" class="t s4_2">basic teachings of Islam which every Muslim must be acquainted with and follow accordingly </div>
+<div id="td_2" class="t s4_2">before he/she proceed for further duties and rights of Islam. This book has given a unique </div>
+<div id="te_2" class="t s4_2">explanation on this very topic in details. It also includes decrees and suggestions about various </div>
+<div id="tf_2" class="t s4_2">extraordinary or compacted questions. </div>
+<div id="tg_2" class="t s4_2">The explanation given is in an easy and clear manner in the light and sprit of Qur'an and Sunnah. </div>
+<div id="th_2" class="t s4_2">Special references of Hanafi viewpoints have been discussed as and where needed. The book </div>
+<div id="ti_2" class="t s4_2">was originally written for the Madrasa students but undoubtedly it is unique companion for him </div>
+<div id="tj_2" class="t s4_2">who is willing to learn the said basic teachings of Islam. In the last chapter, transliteration of </div>
+<div id="tk_2" class="t s4_2">important Arabic text has been added which will benefit those unfamiliar with the Arabic </div>
+<div id="tl_2" class="t s4_2">language or reading of its alphabets. We believe that this humble effort will benefit the readers in </div>
+<div id="tm_2" class="t s4_2">assimilating important teachings of Islam. </div>
+<div id="tn_2" class="t s4_2">At last we would like to express our gratitude to Mr. Mohd. Umar Gautam, Director - MMERC, </div>
+<div id="to_2" class="t s4_2">New Delhi, whose hericulate and sublime efforts caused this book to come in this shape. May we </div>
+<div id="tp_2" class="t s4_2">request you all, to remember us in your prayers. </div>
+<div id="tq_2" class="t s4_2">WaSallam. </div>
+<div id="tr_2" class="t s4_2">Maulana Badruddin Ajmal Ali Al-Qasimi </div>
+<div id="ts_2" class="t s4_2">President, Markazul Ma-Arif </div>
+<div id="tt_2" class="t s4_2">Member, Majlis-e-Shoora, Darul Uloom, Deoband (India) </div>
+<div id="tu_2" class="t s3_2">Foreword </div>
+<div id="tv_2" class="t s4_2">By Hazrat Maulana Shaykh Muhammad Zakaria Saheb Khandelvi </div>
+<div id="tw_2" class="t s4_2">(Nawwaral laahu marqadahu.) </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg2Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg2"><object width="935" height="1210" data="2/2.svg" type="image/svg+xml" id="pdf2" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld2" type="text/javascript">
+
+var isIE = false;
+var f2 = [['t2_2',1839],['t4_2',2695],['t5_2',2618],['t6_2',2805],['t7_2',2789],['t8_2',2592],['t9_2',2829],['ta_2',2606],['tb_2',2795],['tc_2',2765],['td_2',2630],['te_2',2781],['tf_2',1125],['tg_2',2845],['th_2',2731],['ti_2',2810],['tj_2',2717],['tk_2',2624],['tl_2',2856],['tm_2',1233],['tn_2',2820],['to_2',2857],['tp_2',1406],['tr_2',1227],['ts_2',854],['tt_2',1707],['tv_2',1949],['tw_2',890]];
+function load2(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f2);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 33;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_2");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

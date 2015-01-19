@@ -1,0 +1,227 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page96</title>
+</head>
+
+<body onload="load96()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_96{left:460px;top:1136px;}
+#t2_96{left:110px;top:54px;}
+#t3_96{left:110px;top:75px;}
+#t4_96{left:110px;top:97px;}
+#t5_96{left:110px;top:118px;}
+#t6_96{left:110px;top:155px;}
+#t7_96{left:110px;top:191px;}
+#t8_96{left:110px;top:213px;}
+#t9_96{left:173px;top:242px;}
+#ta_96{left:138px;top:271px;}
+#tb_96{left:165px;top:271px;}
+#tc_96{left:165px;top:289px;}
+#td_96{left:138px;top:322px;}
+#te_96{left:165px;top:322px;}
+#tf_96{left:137px;top:355px;}
+#tg_96{left:165px;top:355px;}
+#th_96{left:165px;top:373px;}
+#ti_96{left:138px;top:406px;}
+#tj_96{left:165px;top:406px;}
+#tk_96{left:165px;top:424px;}
+#tl_96{left:165px;top:441px;}
+#tm_96{left:165px;top:459px;}
+#tn_96{left:137px;top:492px;}
+#to_96{left:165px;top:492px;}
+#tp_96{left:138px;top:927px;}
+#tq_96{left:165px;top:927px;}
+#tr_96{left:165px;top:945px;}
+
+.s1_96{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT96;
+	color: rgb(0,0,0);
+}
+
+.s2_96{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT96;
+	color: rgb(0,0,0);
+}
+
+.s3_96{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT96;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT96;
+	src :url("96/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT96;
+	src :url("96/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_96" class="t s1_96">96</div>
+<div id="t2_96" class="t s2_96">The Janaza Salaat is FARZE KIFAAYAH on all Muslims present. It consist of FOUR </div>
+<div id="t3_96" class="t s2_96">TAKBEERS, THANA, DUROOD, and a MASNOON DUA for the deceased and TWO </div>
+<div id="t4_96" class="t s2_96">SALAAMS. All these. are said SILENTLY by both, the Imam and Muqtadis. Just the Imam </div>
+<div id="t5_96" class="t s2_96">should call out the Takbeer and Salaam aloud. </div>
+<div id="t6_96" class="t s3_96">THERE ARE TWO FARZ IN JANAAZAH SALAAH</div>
+<div id="t7_96" class="t s2_96">1. To stand and perform the Salaat. </div>
+<div id="t8_96" class="t s2_96">2. To recite all the FOUR Takbirs. </div>
+<div id="t9_96" class="t s2_96">THE MASNOON MANNER OF PERFORMING THE JANAAZAH SALAAH </div>
+<div id="ta_96" class="t s1_96">1.</div>
+<div id="tb_96" class="t s1_96">The body of the Mayyit should be placed with head on the RIGHT side of the Imam, who will face the </div>
+<div id="tc_96" class="t s1_96">Qibla </div>
+<div id="td_96" class="t s1_96">2.</div>
+<div id="te_96" class="t s1_96">The Imam should stand in line with the CHEST of the deceased whilst performing the Salaat. </div>
+<div id="tf_96" class="t s1_96">3.</div>
+<div id="tg_96" class="t s1_96">It is MUSTAHAB to make an odd number of SAFS (rows) The Safs for Janaza Salaah should be CLSE to </div>
+<div id="th_96" class="t s1_96">one another, because there are NO Sajdah to be made. </div>
+<div id="ti_96" class="t s1_96">4.</div>
+<div id="tj_96" class="t s1_96">After the Safs are straightened the NIYYAT should be made. The Niyyat should be made thus : I am </div>
+<div id="tk_96" class="t s1_96">performing this Janaza Salaat for Allah behind this Imam. (The Salaat being a Dua for the Mayyit.) After </div>
+<div id="tl_96" class="t s1_96">the Niyyat the hands should be raised up to the EARS, and the Imam should say Allahu Akbar loudly, and </div>
+<div id="tm_96" class="t s1_96">the Muqtadis softly. Then fold them under the navel similar to all daily Salaat. </div>
+<div id="tn_96" class="t s1_96">5.</div>
+<div id="to_96" class="t s1_96">Then recite THANA softly: </div>
+<div id="tp_96" class="t s1_96">6.</div>
+<div id="tq_96" class="t s1_96">The Imam will then recite the Takbeer aloud and the Muqtadi softly for the second time. The hands should </div>
+<div id="tr_96" class="t s1_96">NOT be raised when saying, this and all subsequent Takbirs. The Durood Ibrahim should now be read : </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg96Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg96"><object width="935" height="1210" data="96/96.svg" type="image/svg+xml" id="pdf96" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld96" type="text/javascript">
+
+var isIE = false;
+var f96 = [['t2_96',2530],['t3_96',2582],['t4_96',2705],['t5_96',1357],['t6_96',1690],['t7_96',1031],['t8_96',1011],['t9_96',2351],['tb_96',2517],['te_96',2290],['tg_96',2608],['th_96',1327],['tj_96',2469],['tk_96',2577],['tl_96',2607],['tm_96',1920],['to_96',679],['tq_96',2615],['tr_96',2541]];
+function load96(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f96);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 28;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_96");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

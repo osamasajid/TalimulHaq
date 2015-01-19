@@ -1,0 +1,233 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page3</title>
+</head>
+
+<body onload="load3()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_3{left:464px;top:1136px;}
+#t2_3{left:408px;top:54px;}
+#t3_3{left:426px;top:85px;}
+#t4_3{left:348px;top:117px;}
+#t5_3{left:110px;top:163px;}
+#t6_3{left:110px;top:195px;}
+#t7_3{left:110px;top:226px;}
+#t8_3{left:110px;top:257px;}
+#t9_3{left:110px;top:289px;}
+#ta_3{left:110px;top:320px;}
+#tb_3{left:110px;top:351px;}
+#tc_3{left:353px;top:398px;}
+#td_3{left:248px;top:444px;}
+#te_3{left:355px;top:444px;}
+#tf_3{left:219px;top:476px;}
+#tg_3{left:441px;top:476px;}
+#th_3{left:115px;top:522px;}
+#ti_3{left:110px;top:554px;}
+#tj_3{left:110px;top:585px;}
+#tk_3{left:429px;top:671px;}
+#tl_3{left:142px;top:710px;}
+#tm_3{left:373px;top:756px;}
+#tn_3{left:338px;top:788px;}
+#to_3{left:110px;top:834px;}
+#tp_3{left:110px;top:881px;}
+#tq_3{left:110px;top:912px;}
+#tr_3{left:110px;top:959px;}
+#ts_3{left:110px;top:990px;}
+#tt_3{left:110px;top:1036px;}
+#tu_3{left:424px;top:1083px;}
+
+.s1_3{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT3;
+	color: rgb(0,0,0);
+}
+
+.s2_3{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT3;
+	color: rgb(0,0,0);
+}
+
+.s3_3{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT3;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT3;
+	src :url("3/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT3;
+	src :url("3/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_3" class="t s1_3">3</div>
+<div id="t2_3" class="t s2_3">Sheikhul Hadith </div>
+<div id="t3_3" class="t s2_3">Saharanpur </div>
+<div id="t4_3" class="t s2_3">Muhajir Madinah Munawwarah. </div>
+<div id="t5_3" class="t s2_3">For the teaching of pupils at the Primary Madrsah as this compilation of a few publications </div>
+<div id="t6_3" class="t s2_3">called `Taleemul Haq' was given to this humble servant (of Allah) by its publishers. I heard </div>
+<div id="t7_3" class="t s2_3">extracts from a few places and found it to be very useful in its organizers. His pleasure and love </div>
+<div id="t8_3" class="t s2_3">and give them as much ability as possible to follow the footsteps of Rasulullah Sallallaahu-</div>
+<div id="t9_3" class="t s2_3">Alaihi-Wa-Sallam. May Allah Ta’aala grant the Muslims the concern for the education and </div>
+<div id="ta_3" class="t s2_3">correct upbringing of their children and save them from all mischief and problems and give each </div>
+<div id="tb_3" class="t s2_3">person a good death on his due time. </div>
+<div id="tc_3" class="t s2_3">Maulana Abdul Hafez, (Saheb) </div>
+<div id="td_3" class="t s2_3">On behalf of: </div>
+<div id="te_3" class="t s2_3">(Hazrat Sheikh) Muhammed Zakaria (Saheb) </div>
+<div id="tf_3" class="t s2_3">Stanger, Natal. South Africa. </div>
+<div id="tg_3" class="t s2_3">28 Sha-baan, 1401 Hijri. 1 July, 1981 </div>
+<div id="th_3" class="t s2_3">(Hazrat Sheikh) Muhammed Zakaria (Saheb) was born on Thursday 11th of Ramadan 1315 </div>
+<div id="ti_3" class="t s2_3">Hijri (2/2/1898) Passed away at Madinah Munawwarah on Monday the 1st of Sha-baan 1402 </div>
+<div id="tj_3" class="t s2_3">corresponding to 24th May 1982 (Allah Ta'aala fill his qabr with Noor) AMEEN. </div>
+<div id="tk_3" class="t s3_3">Foreword </div>
+<div id="tl_3" class="t s2_3">By Masihu Ummat Hazrat Maulana Shah Muhammed Masihullah Khan Saheb Sherwani</div>
+<div id="tm_3" class="t s2_3">Principal Madrasa Arabia </div>
+<div id="tn_3" class="t s2_3">Miftahul Uloom, Jalalabad, INDIA </div>
+<div id="to_3" class="t s2_3">We Praise Allah the great and Pray for Allah's blessings to His Noble Messenger. </div>
+<div id="tp_3" class="t s2_3">This humble person had an opportunity of visiting the press of Dawatul Haq - Taleemul Haq and </div>
+<div id="tq_3" class="t s2_3">was very pleased to note the clear printing and script. </div>
+<div id="tr_3" class="t s2_3">I was also very pleased to note that the books are free from pictures of animate objects. May </div>
+<div id="ts_3" class="t s2_3">Allah Ta-ala Grant the best of rewards (to its Publishers.) </div>
+<div id="tt_3" class="t s2_3">May Allah Ta-ala grant His constant favors to serve the Deen with peace and ease. </div>
+<div id="tu_3" class="t s3_3">WaSallam.</div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg3Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg3"><object width="935" height="1210" data="3/3.svg" type="image/svg+xml" id="pdf3" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld3" type="text/javascript">
+
+var isIE = false;
+var f3 = [['t2_3',479],['t4_3',956],['t5_3',2672],['t6_3',2682],['t7_3',2811],['t8_3',2678],['t9_3',2681],['ta_3',2834],['tb_3',1076],['tc_3',917],['td_3',391],['te_3',1328],['tf_3',852],['tg_3',1102],['th_3',2688],['ti_3',2733],['tj_3',2392],['tl_3',2607],['tm_3',755],['tn_3',1032],['to_3',2394],['tp_3',2840],['tq_3',1567],['tr_3',2711],['ts_3',1685],['tt_3',2428]];
+function load3(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f3);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 31;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_3");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

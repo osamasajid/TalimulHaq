@@ -1,0 +1,216 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page7</title>
+</head>
+
+<body onload="load7()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_7{left:464px;top:1136px;}
+#t2_7{left:110px;top:54px;}
+#t3_7{left:110px;top:80px;}
+#t4_7{left:110px;top:122px;}
+#t5_7{left:110px;top:163px;}
+#t6_7{left:110px;top:189px;}
+#t7_7{left:110px;top:231px;}
+#t8_7{left:110px;top:257px;}
+#t9_7{left:110px;top:298px;}
+#ta_7{left:110px;top:325px;}
+#tb_7{left:110px;top:366px;}
+#tc_7{left:110px;top:392px;}
+#td_7{left:110px;top:434px;}
+#te_7{left:110px;top:460px;}
+#tf_7{left:138px;top:501px;}
+#tg_7{left:165px;top:501px;}
+#th_7{left:138px;top:543px;}
+#ti_7{left:165px;top:543px;}
+#tj_7{left:165px;top:569px;}
+#tk_7{left:165px;top:595px;}
+#tl_7{left:138px;top:637px;}
+#tm_7{left:165px;top:637px;}
+#tn_7{left:165px;top:663px;}
+#to_7{left:138px;top:704px;}
+#tp_7{left:165px;top:704px;}
+#tq_7{left:165px;top:731px;}
+#tr_7{left:165px;top:757px;}
+#ts_7{left:138px;top:798px;}
+#tt_7{left:165px;top:798px;}
+#tu_7{left:165px;top:824px;}
+
+.s1_7{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT7;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT7;
+	src :url("7/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_7" class="t s1_7">7</div>
+<div id="t2_7" class="t s1_7">Then all the children should read the lesson aloud, at the same time, but each child reading at his/her own speed </div>
+<div id="t3_7" class="t s1_7">with the teacher going round helping and encouraging. </div>
+<div id="t4_7" class="t s1_7">Practical demonstration is very essential in explaining the procedure of performing Ablution, Prayer, etc. </div>
+<div id="t5_7" class="t s1_7">The teaching of this subject should be as practical as possible. This Kitaab has been written to enable the child to </div>
+<div id="t6_7" class="t s1_7">grasp the basic Duaas and to apply them to daily living. </div>
+<div id="t7_7" class="t s1_7">The questions at the end of each part may be answered in written or oral forms. These questions will ensure that the </div>
+<div id="t8_7" class="t s1_7">child has read with understanding. </div>
+<div id="t9_7" class="t s1_7">Practical tasks appear in some parts. The simple things to be constructed by the children will assist in making the </div>
+<div id="ta_7" class="t s1_7">subject a reality. </div>
+<div id="tb_7" class="t s1_7">It is suggested that once a part has been completed and the questions have been answered, the teacher help the </div>
+<div id="tc_7" class="t s1_7">children to make their own brief notes to emphasize the important facts. </div>
+<div id="td_7" class="t s1_7">Apart from the practical work assigned at the end of a chapter, the following approaches are suggested as teacher </div>
+<div id="te_7" class="t s1_7">and children proceed together through the Kitaab. </div>
+<div id="tf_7" class="t s1_7">1.</div>
+<div id="tg_7" class="t s1_7">Clothes should be checked regularly and advice should be given to those whose clothes are dirty. </div>
+<div id="th_7" class="t s1_7">2.</div>
+<div id="ti_7" class="t s1_7">It should be remembered that rules of cleasiness apply to the home as well as to the Madrasa. On his visits </div>
+<div id="tj_7" class="t s1_7">to the children's homes, the teacher will see how successful his teaching is. When he finds an unhygienic </div>
+<div id="tk_7" class="t s1_7">home, he should try to get cooperation of parents. This will make his teaching successful. </div>
+<div id="tl_7" class="t s1_7">3.</div>
+<div id="tm_7" class="t s1_7">Cleanliness of the classroom : Children should take turns in sweeping and dusting the classroom. Windows </div>
+<div id="tn_7" class="t s1_7">should be cleaned regularly. </div>
+<div id="to_7" class="t s1_7">4.</div>
+<div id="tp_7" class="t s1_7">Personal cleanliness : Regular inspection of children should be conducted to see that they are clean. Head, </div>
+<div id="tq_7" class="t s1_7">face, hands, feet, fingernails and teeth should be inspected. Boys should be encouraged to keep their hair </div>
+<div id="tr_7" class="t s1_7">short. </div>
+<div id="ts_7" class="t s1_7">5.</div>
+<div id="tt_7" class="t s1_7">Toilets : The need to keep the toilets clean is very important. They should be cleaned regularly and water </div>
+<div id="tu_7" class="t s1_7">must always be Pure&amp;clean. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg7Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg7"><object width="935" height="1210" data="7/7.svg" type="image/svg+xml" id="pdf7" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld7" type="text/javascript">
+
+var isIE = false;
+var f7 = [['t2_7',2741],['t3_7',1344],['t4_7',2573],['t5_7',2770],['t6_7',1363],['t7_7',2836],['t8_7',843],['t9_7',2770],['ta_7',403],['tb_7',2701],['tc_7',1762],['td_7',2774],['te_7',1222],['tg_7',2381],['ti_7',2605],['tj_7',2570],['tk_7',2194],['tm_7',2630],['tn_7',691],['tp_7',2602],['tq_7',2569],['tt_7',2575],['tu_7',697]];
+function load7(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f7);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 31;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_7");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

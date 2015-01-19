@@ -1,0 +1,291 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page79</title>
+</head>
+
+<body onload="load79()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_79{left:460px;top:1136px;}
+#t2_79{left:380px;top:54px;}
+#t3_79{left:110px;top:80px;}
+#t4_79{left:137px;top:113px;}
+#t5_79{left:165px;top:113px;}
+#t6_79{left:137px;top:146px;}
+#t7_79{left:165px;top:146px;}
+#t8_79{left:137px;top:179px;}
+#t9_79{left:165px;top:179px;}
+#ta_79{left:137px;top:212px;}
+#tb_79{left:165px;top:212px;}
+#tc_79{left:137px;top:245px;}
+#td_79{left:165px;top:245px;}
+#te_79{left:137px;top:278px;}
+#tf_79{left:165px;top:278px;}
+#tg_79{left:137px;top:311px;}
+#th_79{left:165px;top:311px;}
+#ti_79{left:137px;top:344px;}
+#tj_79{left:165px;top:344px;}
+#tk_79{left:137px;top:377px;}
+#tl_79{left:165px;top:377px;}
+#tm_79{left:137px;top:410px;}
+#tn_79{left:165px;top:410px;}
+#to_79{left:110px;top:444px;}
+#tp_79{left:137px;top:478px;}
+#tq_79{left:165px;top:478px;}
+#tr_79{left:137px;top:512px;}
+#ts_79{left:165px;top:512px;}
+#tt_79{left:137px;top:546px;}
+#tu_79{left:165px;top:546px;}
+#tv_79{left:137px;top:580px;}
+#tw_79{left:165px;top:580px;}
+#tx_79{left:137px;top:614px;}
+#ty_79{left:165px;top:614px;}
+#tz_79{left:137px;top:648px;}
+#t10_79{left:165px;top:648px;}
+#t11_79{left:137px;top:682px;}
+#t12_79{left:165px;top:682px;}
+#t13_79{left:336px;top:708px;}
+#t14_79{left:137px;top:734px;}
+#t15_79{left:165px;top:734px;}
+#t16_79{left:137px;top:768px;}
+#t17_79{left:165px;top:768px;}
+#t18_79{left:165px;top:786px;}
+#t19_79{left:137px;top:820px;}
+#t1a_79{left:165px;top:820px;}
+#t1b_79{left:137px;top:853px;}
+#t1c_79{left:165px;top:853px;}
+#t1d_79{left:137px;top:887px;}
+#t1e_79{left:165px;top:887px;}
+#t1f_79{left:137px;top:920px;}
+#t1g_79{left:165px;top:920px;}
+#t1h_79{left:137px;top:954px;}
+#t1i_79{left:165px;top:954px;}
+#t1j_79{left:165px;top:972px;}
+#t1k_79{left:137px;top:1005px;}
+#t1l_79{left:165px;top:1005px;}
+#t1m_79{left:165px;top:1023px;}
+#t1n_79{left:137px;top:1056px;}
+#t1o_79{left:165px;top:1056px;}
+#t1p_79{left:137px;top:1089px;}
+#t1q_79{left:165px;top:1089px;}
+
+.s1_79{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT79;
+	color: rgb(0,0,0);
+}
+
+.s2_79{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT79;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJIKOL-SymbolMT79;
+	src :url("79/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT79;
+	src :url("79/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_79" class="t s1_79">79</div>
+<div id="t2_79" class="t s1_79">SALAAT OF THE EIDAIN </div>
+<div id="t3_79" class="t s1_79">Things which are MUSTAHAB and SUNNAT on EID DAYS: </div>
+<div id="t4_79" class="t s1_79">1.</div>
+<div id="t5_79" class="t s1_79">To take a BATH and use MISWAAK. </div>
+<div id="t6_79" class="t s1_79">2.</div>
+<div id="t7_79" class="t s1_79">To put on one's BEST CLOTHES. </div>
+<div id="t8_79" class="t s1_79">3.</div>
+<div id="t9_79" class="t s1_79">To use ITR. </div>
+<div id="ta_79" class="t s1_79">4.</div>
+<div id="tb_79" class="t s1_79">To eat DATES or any other SWEETS before going for the EIDUL FITR Salaat. </div>
+<div id="tc_79" class="t s1_79">5.</div>
+<div id="td_79" class="t s1_79">To give SADAQATUL FITR BEFORE going for the EIDUL, FITR Salaat. </div>
+<div id="te_79" class="t s1_79">6.</div>
+<div id="tf_79" class="t s1_79">To perform the Eid Salaat at the EID GAAH (a place fixed for EID Salaat outside the population). </div>
+<div id="tg_79" class="t s1_79">7.</div>
+<div id="th_79" class="t s1_79">To go by FOOT. (Walking) </div>
+<div id="ti_79" class="t s1_79">8.</div>
+<div id="tj_79" class="t s1_79">To go by ONE ROUTE and return by ANOTHER. </div>
+<div id="tk_79" class="t s1_79">9.</div>
+<div id="tl_79" class="t s1_79">NOT to perform NAFL at HOME or at the EID GAAH BEFORE and AFTER the EID Salaat. </div>
+<div id="tm_79" class="t s1_79">10.</div>
+<div id="tn_79" class="t s1_79">To EAT the MEAT of QURBAANI (sacrifice) of one's own offering, after the EIDUL ADHAA Salaat. </div>
+<div id="to_79" class="t s1_79">* On EIDUL FITR one should say TAKBIR in a LOW voice while going for Salaat. </div>
+<div id="tp_79" class="t s2_79">•</div>
+<div id="tq_79" class="t s1_79">It is MUSTAHAB to say TAKBIR ALOUD while going for EIDUL ADHAA Salaat. </div>
+<div id="tr_79" class="t s2_79">•</div>
+<div id="ts_79" class="t s1_79">Both the Eid Salaat are WAAJIB upon all those on whom the JUM'AH Salaat is FARZ. </div>
+<div id="tt_79" class="t s2_79">•</div>
+<div id="tu_79" class="t s1_79">The conditions for Eid Salaat are the same as those for Jumuah. </div>
+<div id="tv_79" class="t s2_79">•</div>
+<div id="tw_79" class="t s1_79">However, KHUTBA is NOT Farz for EID nor is it Farz to be said BEFORE the Salaat. </div>
+<div id="tx_79" class="t s2_79">•</div>
+<div id="ty_79" class="t s1_79">KHUTBA after Salaat is SUNNAT. </div>
+<div id="tz_79" class="t s2_79">•</div>
+<div id="t10_79" class="t s1_79">There are TWO Rak'aats in each of the TWO Eid Salaat with SIX extra TAKBIRS. </div>
+<div id="t11_79" class="t s2_79">•</div>
+<div id="t12_79" class="t s1_79">There is NO Azan or Iqaama. </div>
+<div id="t13_79" class="t s1_79">HOW TO PERFORM THE EID SALAAT </div>
+<div id="t14_79" class="t s2_79">•</div>
+<div id="t15_79" class="t s1_79">First of all the NIYYAT should be made as follows: </div>
+<div id="t16_79" class="t s2_79">•</div>
+<div id="t17_79" class="t s1_79">"I am performing TWO Rak’aats Eidul Fitr (or Eidul Adha) Wajib with six extra Takbeer behind this </div>
+<div id="t18_79" class="t s1_79">Imam, (Allahu Akbar)". </div>
+<div id="t19_79" class="t s2_79">•</div>
+<div id="t1a_79" class="t s1_79">Fold the HANDS after the Takbeer Tahrimi and read THANA. </div>
+<div id="t1b_79" class="t s1_79">1.</div>
+<div id="t1c_79" class="t s1_79">Then raising both the hands up to the EARS bring them down after saying Allahu Akbar. </div>
+<div id="t1d_79" class="t s1_79">2.</div>
+<div id="t1e_79" class="t s1_79">Do the same for the second time. </div>
+<div id="t1f_79" class="t s1_79">3.</div>
+<div id="t1g_79" class="t s1_79">For the third time raise the hands up to the ears and saying Takbir fold them below the navel. </div>
+<div id="t1h_79" class="t s2_79">•</div>
+<div id="t1i_79" class="t s1_79">The Imam should read the Ta'awwuz, Tasmiah and Surah Fatiha along with another Surat and then go into </div>
+<div id="t1j_79" class="t s1_79">RUKU. </div>
+<div id="t1k_79" class="t s1_79">1.</div>
+<div id="t1l_79" class="t s1_79">When all stand up for the SECOND Rak’aats, the Imam should recite the QIRAAT and after that all should </div>
+<div id="t1m_79" class="t s1_79">say TAKBEER and raise the hands up to the ears and let them down. </div>
+<div id="t1n_79" class="t s1_79">2.</div>
+<div id="t1o_79" class="t s1_79">Again the hands should be raised up to the ears for the second Takbeer and let down. </div>
+<div id="t1p_79" class="t s1_79">3.</div>
+<div id="t1q_79" class="t s1_79">For the THIRD Takbeer the hands should also be raised up to the ears and let down. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg79Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg79"><object width="935" height="1210" data="79/79.svg" type="image/svg+xml" id="pdf79" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld79" type="text/javascript">
+
+var isIE = false;
+var f79 = [['t2_79',697],['t3_79',1548],['t5_79',942],['t7_79',849],['t9_79',294],['tb_79',1967],['td_79',1854],['tf_79',2411],['th_79',680],['tj_79',1249],['tl_79',2311],['tn_79',2541],['to_79',2076],['tq_79',2097],['ts_79',2152],['tu_79',1559],['tw_79',2136],['ty_79',883],['t10_79',2046],['t12_79',725],['t13_79',1054],['t15_79',1278],['t17_79',2485],['t18_79',589],['t1a_79',1546],['t1c_79',2188],['t1e_79',807],['t1g_79',2283],['t1i_79',2612],['t1l_79',2637],['t1m_79',1692],['t1o_79',2085],['t1q_79',2064]];
+function load79(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f79);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 63;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_79");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page6</title>
+</head>
+
+<body onload="load6()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_6{left:464px;top:1136px;}
+#t2_6{left:435px;top:86px;}
+#t3_6{left:375px;top:119px;}
+#t4_6{left:251px;top:146px;}
+#t5_6{left:110px;top:187px;}
+#t6_6{left:110px;top:213px;}
+#t7_6{left:110px;top:255px;}
+#t8_6{left:110px;top:281px;}
+#t9_6{left:110px;top:307px;}
+#ta_6{left:110px;top:349px;}
+#tb_6{left:110px;top:390px;}
+#tc_6{left:110px;top:431px;}
+#td_6{left:110px;top:458px;}
+#te_6{left:110px;top:499px;}
+#tf_6{left:110px;top:525px;}
+#tg_6{left:110px;top:567px;}
+#th_6{left:110px;top:593px;}
+#ti_6{left:110px;top:619px;}
+#tj_6{left:110px;top:661px;}
+#tk_6{left:110px;top:687px;}
+#tl_6{left:110px;top:713px;}
+#tm_6{left:110px;top:739px;}
+#tn_6{left:267px;top:781px;}
+#to_6{left:351px;top:822px;}
+#tp_6{left:110px;top:864px;}
+#tq_6{left:110px;top:905px;}
+#tr_6{left:110px;top:947px;}
+#ts_6{left:110px;top:973px;}
+#tt_6{left:110px;top:1014px;}
+#tu_6{left:110px;top:1056px;}
+#tv_6{left:110px;top:1082px;}
+
+.s1_6{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT6;
+	color: rgb(0,0,0);
+}
+
+.s2_6{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT6;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT6;
+	src :url("6/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT6;
+	src :url("6/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_6" class="t s1_6">6</div>
+<div id="t2_6" class="t s2_6">Foreword </div>
+<div id="t3_6" class="t s1_6">by Maulana Osman K. Kadwa </div>
+<div id="t4_6" class="t s1_6">Principal Madrasa Islamiah, Umzinto, Natal, Republic of South Africa </div>
+<div id="t5_6" class="t s1_6">In every age and era, whenever the character, knowledge and action began to decline and degenerate, Almightily </div>
+<div id="t6_6" class="t s1_6">Allah Ta’aala always inspired some individuals to make an effort for the upliftment of Ummat. </div>
+<div id="t7_6" class="t s1_6">In contemporary times, when generally the Muslim masses show indifference towards the basic fundamentals of </div>
+<div id="t8_6" class="t s1_6">Islam and are disinclined towards religious practices, Almighty Allah guided Hajji Shabbir Ahmed to publish the </div>
+<div id="t9_6" class="t s1_6">simplified, illustrated and easily understood “TALEEMUL HAQ”, under the guidance of the Ulama. </div>
+<div id="ta_6" class="t s1_6">Unlike other authors (publishers), he has not only undertaken the publishing of this book, but also teaches it. </div>
+<div id="tb_6" class="t s1_6">By the grace of Allah Ta’aala this book has been accepted by students as well as by the Ulama. </div>
+<div id="tc_6" class="t s1_6">Qari Ismail Desai (son of Hajee Shabbir Ahmed) has checked the references of the different Masaa’il, Corrected </div>
+<div id="td_6" class="t s1_6">and amended the previous edition and has typesetted the entire book. </div>
+<div id="te_6" class="t s1_6">Due to the simple language, illustrations, etc, Alhamdulillah many Madras’as here and abroad have included this </div>
+<div id="tf_6" class="t s1_6">Kitaab in their syllabuses. </div>
+<div id="tg_6" class="t s1_6">The blessings and Duaas of the pious have played a vital role in the acceptance of this book. May Allah Ta’aala </div>
+<div id="th_6" class="t s1_6">accept these valuable efforts of the publisher and reward him immensely in both the worlds and make this great </div>
+<div id="ti_6" class="t s1_6">work a means of his salvation. </div>
+<div id="tj_6" class="t s1_6">I hope and pray that the Ummah at large, will benefit from this valuable contribution. Aameen. </div>
+<div id="tk_6" class="t s1_6">(moulana) Osman Kassim Kadwa. </div>
+<div id="tl_6" class="t s1_6">Principal : Madressa Islamiah. </div>
+<div id="tm_6" class="t s1_6">Umzinto, Natal. </div>
+<div id="tn_6" class="t s2_6">In the Name of Allah, The Most Merciful and Compassionate </div>
+<div id="to_6" class="t s1_6">How a reading lesson should be taken </div>
+<div id="tp_6" class="t s1_6">First give the children a minute or two to look at the : </div>
+<div id="tq_6" class="t s1_6">Illustration and Dua's, then : </div>
+<div id="tr_6" class="t s1_6">Step 1 Teach the new words on the Blackboard </div>
+<div id="ts_6" class="t s1_6">(3 to 4 minutes) </div>
+<div id="tt_6" class="t s1_6">Step 2 Read through the whole lesson with the class, twice. </div>
+<div id="tu_6" class="t s1_6">Step 3 This should be taken as a second period spent on the same lesson. The teacher should spend only a few </div>
+<div id="tv_6" class="t s1_6">minutes revising the new words and reading once through the lesson with the class. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg6Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg6"><object width="935" height="1210" data="6/6.svg" type="image/svg+xml" id="pdf6" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld6" type="text/javascript">
+
+var isIE = false;
+var f6 = [['t3_6',743],['t4_6',1730],['t5_6',2767],['t6_6',2328],['t7_6',2753],['t8_6',2774],['t9_6',2469],['ta_6',2663],['tb_6',2333],['tc_6',2756],['td_6',1691],['te_6',2766],['tf_6',636],['tg_6',2739],['th_6',2733],['ti_6',745],['tj_6',2327],['tk_6',843],['tl_6',744],['tm_6',392],['tn_6',1601],['to_6',931],['tp_6',1310],['tq_6',693],['tr_6',1159],['ts_6',389],['tt_6',1454],['tu_6',2699],['tv_6',2044]];
+function load6(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f6);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 32;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_6");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

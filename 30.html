@@ -1,0 +1,288 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page30</title>
+</head>
+
+<body onload="load30()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_30{left:460px;top:1136px;}
+#t2_30{left:137px;top:54px;}
+#t3_30{left:165px;top:54px;}
+#t4_30{left:314px;top:101px;}
+#t5_30{left:138px;top:130px;}
+#t6_30{left:165px;top:130px;}
+#t7_30{left:165px;top:148px;}
+#t8_30{left:138px;top:181px;}
+#t9_30{left:165px;top:181px;}
+#ta_30{left:165px;top:199px;}
+#tb_30{left:138px;top:232px;}
+#tc_30{left:165px;top:232px;}
+#td_30{left:165px;top:250px;}
+#te_30{left:138px;top:283px;}
+#tf_30{left:165px;top:283px;}
+#tg_30{left:165px;top:301px;}
+#th_30{left:138px;top:334px;}
+#ti_30{left:165px;top:334px;}
+#tj_30{left:165px;top:352px;}
+#tk_30{left:138px;top:385px;}
+#tl_30{left:165px;top:385px;}
+#tm_30{left:138px;top:418px;}
+#tn_30{left:165px;top:418px;}
+#to_30{left:137px;top:451px;}
+#tp_30{left:165px;top:451px;}
+#tq_30{left:165px;top:469px;}
+#tr_30{left:137px;top:502px;}
+#ts_30{left:165px;top:502px;}
+#tt_30{left:165px;top:520px;}
+#tu_30{left:137px;top:553px;}
+#tv_30{left:165px;top:553px;}
+#tw_30{left:165px;top:571px;}
+#tx_30{left:165px;top:589px;}
+#ty_30{left:137px;top:622px;}
+#tz_30{left:165px;top:622px;}
+#t10_30{left:165px;top:640px;}
+#t11_30{left:165px;top:657px;}
+#t12_30{left:137px;top:691px;}
+#t13_30{left:165px;top:691px;}
+#t14_30{left:165px;top:708px;}
+#t15_30{left:137px;top:742px;}
+#t16_30{left:165px;top:742px;}
+#t17_30{left:165px;top:759px;}
+#t18_30{left:165px;top:777px;}
+#t19_30{left:165px;top:795px;}
+#t1a_30{left:137px;top:828px;}
+#t1b_30{left:165px;top:828px;}
+#t1c_30{left:165px;top:846px;}
+#t1d_30{left:137px;top:879px;}
+#t1e_30{left:165px;top:879px;}
+#t1f_30{left:165px;top:897px;}
+#t1g_30{left:137px;top:930px;}
+#t1h_30{left:165px;top:930px;}
+#t1i_30{left:165px;top:948px;}
+#t1j_30{left:165px;top:966px;}
+#t1k_30{left:137px;top:999px;}
+#t1l_30{left:165px;top:999px;}
+#t1m_30{left:165px;top:1017px;}
+#t1n_30{left:137px;top:1050px;}
+#t1o_30{left:165px;top:1050px;}
+#t1p_30{left:165px;top:1068px;}
+#t1q_30{left:510px;top:1068px;}
+#t1r_30{left:165px;top:1086px;}
+
+.s1_30{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT30;
+	color: rgb(0,0,0);
+}
+
+.s2_30{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT30;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT30;
+	src :url("30/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_30" class="t s1_30">30</div>
+<div id="t2_30" class="t s1_30">8.</div>
+<div id="t3_30" class="t s1_30">FLOWING of BLOOD or Pus from any part of the body. </div>
+<div id="t4_30" class="t s2_30">MASAA-IL PERTAINING TO WUDHU </div>
+<div id="t5_30" class="t s1_30">1.</div>
+<div id="t6_30" class="t s1_30">If blood or pus does not move from the place of the wound or sore, Wudhu will not break. Wudhu will </div>
+<div id="t7_30" class="t s1_30">only break if the impurity flows out of the wound or sore. </div>
+<div id="t8_30" class="t s1_30">2.</div>
+<div id="t9_30" class="t s1_30">If clots of blood come out of the nose while blowing it, Wudhu will not break. Wudhu will only break if </div>
+<div id="ta_30" class="t s1_30">the blood is in the fluid state. </div>
+<div id="tb_30" class="t s1_30">3.</div>
+<div id="tc_30" class="t s1_30">If a pimple has to burst in the eye, then the Wudhu will only break if the fluid (that comes out of the </div>
+<div id="td_30" class="t s1_30">pimple) flows out of the eye. </div>
+<div id="te_30" class="t s1_30">4.</div>
+<div id="tf_30" class="t s1_30">If the blood in the saliva is more than the saliva, Wudhu will break. Therefore if one's saliva is reddish </div>
+<div id="tg_30" class="t s1_30">because of blood, Wudhu will break. </div>
+<div id="th_30" class="t s1_30">5.</div>
+<div id="ti_30" class="t s1_30">Blood appearing on a toothpick will not break Wudhu, if the effect of the blood cannot be seen in the </div>
+<div id="tj_30" class="t s1_30">saliva. </div>
+<div id="tk_30" class="t s1_30">6.</div>
+<div id="tl_30" class="t s1_30">Fluid from a paining ear will break the Wudhu, even if there is no sore or pimple in the ear. </div>
+<div id="tm_30" class="t s1_30">7.</div>
+<div id="tn_30" class="t s1_30">Water which flows from the eyes because of the eyes paining, will break the Wudhu. </div>
+<div id="to_30" class="t s1_30">8.</div>
+<div id="tp_30" class="t s1_30">If males fall asleep in the position of Sajdah, but do not topple over, Wudhu is not broken. However, if </div>
+<div id="tq_30" class="t s1_30">females fall asleep in the position of Sajdah, Wudhu will break. </div>
+<div id="tr_30" class="t s1_30">9.</div>
+<div id="ts_30" class="t s1_30">A doubt will not break Wudhu. One remembers that Wudhu was made, but cannot remember if the Wudhu </div>
+<div id="tt_30" class="t s1_30">was broken. In such a case of doubt the Wudhu will be considered valid. </div>
+<div id="tu_30" class="t s1_30">10.</div>
+<div id="tv_30" class="t s1_30">During Wudhu one doubts whether a certain part was washed or not. In this case that particular part should </div>
+<div id="tw_30" class="t s1_30">be washed. However, if such doubt occurs after the completion of Wudhu, then the Wudhu will be </div>
+<div id="tx_30" class="t s1_30">complete. No notice should be taken of the doubt. </div>
+<div id="ty_30" class="t s1_30">11.</div>
+<div id="tz_30" class="t s1_30">After Wudhu if one remembers well that a certain part was not washed or Masah of the head was not made, </div>
+<div id="t10_30" class="t s1_30">then that part should be washed only or Masah should be made. There is no need to repeat the whole </div>
+<div id="t11_30" class="t s1_30">Wudhu. </div>
+<div id="t12_30" class="t s1_30">12.</div>
+<div id="t13_30" class="t s1_30">It is not permissible to touch the Quran Sharif and tray, plate, etc. on which a verse of the Quran Sharif is </div>
+<div id="t14_30" class="t s1_30">written or engraved, without Wudhu. </div>
+<div id="t15_30" class="t s1_30">13.</div>
+<div id="t16_30" class="t s1_30">It is Mustahab (preferable) to make Wudhu for each Salaat even though one may be in the state of Wudhu. </div>
+<div id="t17_30" class="t s1_30">It is Mustahab only if at least two Rak'aats Salaat have been performed with the previous Wudhu. Thus if </div>
+<div id="t18_30" class="t s1_30">one did not perform any Salaat, it will not be permissible to perform fresh Wudhu before that Wudhu has </div>
+<div id="t19_30" class="t s1_30">been either broken or at least two Rak’aats Salaat have been performed. </div>
+<div id="t1a_30" class="t s1_30">14.</div>
+<div id="t1b_30" class="t s1_30">If the four parts (that are Fare to be washed in Wudhu) become soaked in the rain or have been washed by </div>
+<div id="t1c_30" class="t s1_30">swimming or taking a bath, etc. then Wudhu will be valid even if one had no intention of Wudhu. </div>
+<div id="t1d_30" class="t s1_30">15.</div>
+<div id="t1e_30" class="t s1_30">While making Wudhu one should take care not to strike the water against the face causing it to splash. To </div>
+<div id="t1f_30" class="t s1_30">do so is Makrooh. </div>
+<div id="t1g_30" class="t s1_30">16.</div>
+<div id="t1h_30" class="t s1_30">While making Wudhu the eyes should not be closed so tightly that the water is prevented from. Moistening </div>
+<div id="t1i_30" class="t s1_30">the eyelashes or blocking the entry of water into the eye wells. To do so is Makrooh Tahrimi. If everyone </div>
+<div id="t1j_30" class="t s1_30">eyelash remains dry or water has not entered the eye wells, the Wudhu will be incomplete. </div>
+<div id="t1k_30" class="t s1_30">17.</div>
+<div id="t1l_30" class="t s1_30">The mouth should not be closed tightly while making Wudhu. To do so is Makrooh Tahrimi. If any part of </div>
+<div id="t1m_30" class="t s1_30">the lips remains dry, the Wudhu will be incomplete. </div>
+<div id="t1n_30" class="t s1_30">18.</div>
+<div id="t1o_30" class="t s1_30">Wudhu will not be valid if any substance which does not allow water to seep through, sticks on any one of </div>
+<div id="t1p_30" class="t s1_30">the four parts that are Farz. to be washed in Wudhu, e.g.</div>
+<div id="t1q_30" class="t s1_30">. gum, paint, cutex (fingernail paint), etc. If one </div>
+<div id="t1r_30" class="t s1_30">realizes after Wudhu that some gum or cutex has covered the fingernail (for example), then the Wudhu will </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg30Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg30"><object width="935" height="1210" data="30/30.svg" type="image/svg+xml" id="pdf30" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld30" type="text/javascript">
+
+var isIE = false;
+var f30 = [['t3_30',1406],['t4_30',1229],['t6_30',2521],['t7_30',1414],['t9_30',2557],['ta_30',713],['tc_30',2453],['td_30',708],['tf_30',2513],['tg_30',906],['ti_30',2482],['tl_30',2244],['tn_30',2085],['tp_30',2525],['tq_30',1560],['ts_30',2625],['tt_30',1782],['tv_30',2627],['tw_30',2419],['tx_30',1223],['tz_30',2637],['t10_30',2467],['t13_30',2582],['t14_30',911],['t16_30',2617],['t17_30',2584],['t18_30',2581],['t19_30',1760],['t1b_30',2603],['t1c_30',2395],['t1e_30',2592],['t1f_30',443],['t1h_30',2629],['t1i_30',2583],['t1j_30',2217],['t1l_30',2615],['t1m_30',1272],['t1o_30',2613],['t1p_30',1379],['t1q_30',1166],['t1r_30',2636]];
+function load30(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f30);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 64;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_30");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

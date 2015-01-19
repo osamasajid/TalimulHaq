@@ -1,0 +1,289 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page72</title>
+</head>
+
+<body onload="load72()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_72{left:460px;top:1136px;}
+#t2_72{left:110px;top:72px;}
+#t3_72{left:137px;top:90px;}
+#t4_72{left:110px;top:108px;}
+#t5_72{left:137px;top:133px;}
+#t6_72{left:165px;top:133px;}
+#t7_72{left:137px;top:166px;}
+#t8_72{left:165px;top:166px;}
+#t9_72{left:138px;top:200px;}
+#ta_72{left:165px;top:200px;}
+#tb_72{left:165px;top:217px;}
+#tc_72{left:137px;top:251px;}
+#td_72{left:165px;top:251px;}
+#te_72{left:137px;top:284px;}
+#tf_72{left:165px;top:284px;}
+#tg_72{left:165px;top:301px;}
+#th_72{left:137px;top:327px;}
+#ti_72{left:110px;top:353px;}
+#tj_72{left:110px;top:386px;}
+#tk_72{left:110px;top:404px;}
+#tl_72{left:110px;top:437px;}
+#tm_72{left:137px;top:470px;}
+#tn_72{left:165px;top:470px;}
+#to_72{left:165px;top:488px;}
+#tp_72{left:137px;top:521px;}
+#tq_72{left:165px;top:521px;}
+#tr_72{left:137px;top:554px;}
+#ts_72{left:165px;top:554px;}
+#tt_72{left:137px;top:587px;}
+#tu_72{left:165px;top:587px;}
+#tv_72{left:137px;top:620px;}
+#tw_72{left:165px;top:620px;}
+#tx_72{left:137px;top:653px;}
+#ty_72{left:165px;top:653px;}
+#tz_72{left:137px;top:686px;}
+#t10_72{left:165px;top:686px;}
+#t11_72{left:137px;top:719px;}
+#t12_72{left:165px;top:719px;}
+#t13_72{left:137px;top:752px;}
+#t14_72{left:165px;top:752px;}
+#t15_72{left:137px;top:786px;}
+#t16_72{left:165px;top:786px;}
+#t17_72{left:137px;top:819px;}
+#t18_72{left:165px;top:819px;}
+#t19_72{left:137px;top:852px;}
+#t1a_72{left:165px;top:852px;}
+#t1b_72{left:165px;top:870px;}
+#t1c_72{left:137px;top:903px;}
+#t1d_72{left:165px;top:903px;}
+#t1e_72{left:137px;top:936px;}
+#t1f_72{left:165px;top:936px;}
+#t1g_72{left:165px;top:954px;}
+#t1h_72{left:137px;top:987px;}
+#t1i_72{left:165px;top:987px;}
+#t1j_72{left:137px;top:1020px;}
+#t1k_72{left:165px;top:1020px;}
+#t1l_72{left:165px;top:1038px;}
+#t1m_72{left:137px;top:1071px;}
+#t1n_72{left:165px;top:1071px;}
+#t1o_72{left:137px;top:1104px;}
+#t1p_72{left:165px;top:1104px;}
+
+.s1_72{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT72;
+	color: rgb(0,0,0);
+}
+
+.s2_72{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT72;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT72;
+	src :url("72/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT72;
+	src :url("72/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_72" class="t s1_72">72</div>
+<div id="t2_72" class="t s2_72">Mustahabbaat -e- Salaah </div>
+<div id="t3_72" class="t s1_72">THERE ARE 5 MUSTAHABS </div>
+<div id="t4_72" class="t s2_72">(PREFERABLE IN SALAAH) </div>
+<div id="t5_72" class="t s1_72">1.</div>
+<div id="t6_72" class="t s1_72">To pull the PALMS out of the SLEEVES while saying TAKEERE TAHREEMA. </div>
+<div id="t7_72" class="t s1_72">2.</div>
+<div id="t8_72" class="t s1_72">Saying TASBEEH more than THREE times in RUKU and SAJDAH by MUNFARID. (individual) </div>
+<div id="t9_72" class="t s1_72">3.</div>
+<div id="ta_72" class="t s1_72">To keep the EYES towards the place of SAJDAH in QIYAAM, at the TOES in RUKU, towards the LAP </div>
+<div id="tb_72" class="t s1_72">in QA'IDA and JALSA, and at the SHOULDERS while turning for SALAAM. </div>
+<div id="tc_72" class="t s1_72">4.</div>
+<div id="td_72" class="t s1_72">To try best NOT to COUGH. </div>
+<div id="te_72" class="t s1_72">5.</div>
+<div id="tf_72" class="t s1_72">To try and keep the MOUTH CLOSED when YAWNING, but if it is OPENED, to COVER it by the </div>
+<div id="tg_72" class="t s1_72">UPPER portion of the RIGHT HAND in QIYAAM and by the LEFT HAND in all others postures. </div>
+<div id="th_72" class="t s1_72">Makruhaat -e- Salaah </div>
+<div id="ti_72" class="t s2_72">(Acts disliked in Salaah)</div>
+<div id="tj_72" class="t s2_72">DOING OF A MAKROOH ACT IN SALAAH CAUSES THE FULL BLESSING OF SALAAH TO BE </div>
+<div id="tk_72" class="t s2_72">LOST ALTHOUGH THE SALAAH WILL NOT HAVE TO BE REPEATED.</div>
+<div id="tl_72" class="t s1_72">Some MAKROOH ACTS in SALAAH are : </div>
+<div id="tm_72" class="t s1_72">1.</div>
+<div id="tn_72" class="t s1_72">Saying SALAAH BARE-HEADED due to LAZINESS or CARELESSNESS and to EXPOSE the ARMS </div>
+<div id="to_72" class="t s1_72">ABOVE the ELBOWS. </div>
+<div id="tp_72" class="t s1_72">2.</div>
+<div id="tq_72" class="t s1_72">PLAYING with CLOTHES or the BODY. </div>
+<div id="tr_72" class="t s1_72">3.</div>
+<div id="ts_72" class="t s1_72">Performing Salaah in CLOTHES in which people do NOT ORDINARILY LIKE to go OUT. </div>
+<div id="tt_72" class="t s1_72">4.</div>
+<div id="tu_72" class="t s1_72">To dust the floor with one's hands to prevent the soiling of clothes. </div>
+<div id="tv_72" class="t s1_72">5.</div>
+<div id="tw_72" class="t s1_72">Performing Salaah when one has the URGE to URINATE or PASS STOOL. </div>
+<div id="tx_72" class="t s1_72">6.</div>
+<div id="ty_72" class="t s1_72">To CRACK one's FINGERS or PUTTING of FINGERS of one hand into FINGERS of the other HAND. </div>
+<div id="tz_72" class="t s1_72">7.</div>
+<div id="t10_72" class="t s1_72">TURNING the FACE away from QIBLA and LOOKING AROUND. </div>
+<div id="t11_72" class="t s1_72">8.</div>
+<div id="t12_72" class="t s1_72">It is MAKROOH for MEN to REST BOTH the ARMS and WRISTS on the GROUND in SAJDAH. </div>
+<div id="t13_72" class="t s1_72">9.</div>
+<div id="t14_72" class="t s1_72">Performing Salaah when another person FACING him sits AHEAD. </div>
+<div id="t15_72" class="t s1_72">10.</div>
+<div id="t16_72" class="t s1_72">YAWNING INTENTIONALLY and NOT PREVENTING it if one CAN do so. </div>
+<div id="t17_72" class="t s1_72">11.</div>
+<div id="t18_72" class="t s1_72">CLOSING the EYES, but if it is done to CONCENTRATE in Salaah, it is ALLOWED. </div>
+<div id="t19_72" class="t s1_72">12.</div>
+<div id="t1a_72" class="t s1_72">It is Makrooh for a Baalig (mature) person to stand alone behind a Saff (row) when there is place in the </div>
+<div id="t1b_72" class="t s1_72">Saff before him. </div>
+<div id="t1c_72" class="t s1_72">13.</div>
+<div id="t1d_72" class="t s1_72">Performing Salaah in CLOTHES with PICTURES of LIVING OBJECTS on them. </div>
+<div id="t1e_72" class="t s1_72">14.</div>
+<div id="t1f_72" class="t s1_72">Performing Salaah at a place where there is a PICTURE of a LIVING (animate) object ABOVE or on the </div>
+<div id="t1g_72" class="t s1_72">RIGHT or LEFT side of the SALAAHI or on the place where he makes SAJDAH. </div>
+<div id="t1h_72" class="t s1_72">15.</div>
+<div id="t1i_72" class="t s1_72">To COUNT Aayats, Suras or Tasbihs on FINGERS in Salaah. </div>
+<div id="t1j_72" class="t s1_72">16.</div>
+<div id="t1k_72" class="t s1_72">Performing Salaah with a SHEET or CLOTHES WRAPPED on the BODY in such a way that it makes it </div>
+<div id="t1l_72" class="t s1_72">DIFFICULT to FREE the HANDS QUICKLY. </div>
+<div id="t1m_72" class="t s1_72">17.</div>
+<div id="t1n_72" class="t s1_72">To YAWN and STRETCH ARMS to REMOVE LAZINESS. </div>
+<div id="t1o_72" class="t s1_72">18.</div>
+<div id="t1p_72" class="t s1_72">Doing something AGAINST SUNNAT in Salaah. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg72Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg72"><object width="935" height="1210" data="72/72.svg" type="image/svg+xml" id="pdf72" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld72" type="text/javascript">
+
+var isIE = false;
+var f72 = [['t2_72',658],['t3_72',774],['t4_72',806],['t6_72',2009],['t8_72',2429],['ta_72',2583],['tb_72',1942],['td_72',719],['tf_72',2477],['tg_72',2432],['th_72',527],['ti_72',635],['tj_72',2694],['tk_72',2041],['tl_72',1093],['tn_72',2590],['to_72',584],['tq_72',1046],['ts_72',2286],['tu_72',1638],['tw_72',1884],['ty_72',2580],['t10_72',1712],['t12_72',2472],['t14_72',1681],['t16_72',1969],['t18_72',2151],['t1a_72',2535],['t1b_72',400],['t1d_72',2038],['t1f_72',2588],['t1g_72',2026],['t1i_72',1525],['t1k_72',2581],['t1l_72',1165],['t1n_72',1513],['t1p_72',1230]];
+function load72(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f72);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 62;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_72");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

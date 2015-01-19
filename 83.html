@@ -1,0 +1,298 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page83</title>
+</head>
+
+<body onload="load83()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_83{left:460px;top:1136px;}
+#t2_83{left:137px;top:54px;}
+#t3_83{left:165px;top:54px;}
+#t4_83{left:137px;top:87px;}
+#t5_83{left:165px;top:87px;}
+#t6_83{left:137px;top:120px;}
+#t7_83{left:165px;top:120px;}
+#t8_83{left:137px;top:153px;}
+#t9_83{left:165px;top:153px;}
+#ta_83{left:137px;top:186px;}
+#tb_83{left:165px;top:186px;}
+#tc_83{left:137px;top:220px;}
+#td_83{left:165px;top:220px;}
+#te_83{left:137px;top:253px;}
+#tf_83{left:165px;top:253px;}
+#tg_83{left:547px;top:253px;}
+#th_83{left:137px;top:286px;}
+#ti_83{left:165px;top:286px;}
+#tj_83{left:137px;top:319px;}
+#tk_83{left:165px;top:319px;}
+#tl_83{left:137px;top:352px;}
+#tm_83{left:165px;top:352px;}
+#tn_83{left:137px;top:385px;}
+#to_83{left:165px;top:385px;}
+#tp_83{left:137px;top:418px;}
+#tq_83{left:165px;top:418px;}
+#tr_83{left:137px;top:451px;}
+#ts_83{left:165px;top:451px;}
+#tt_83{left:137px;top:484px;}
+#tu_83{left:165px;top:484px;}
+#tv_83{left:137px;top:517px;}
+#tw_83{left:165px;top:517px;}
+#tx_83{left:137px;top:550px;}
+#ty_83{left:165px;top:550px;}
+#tz_83{left:137px;top:584px;}
+#t10_83{left:165px;top:584px;}
+#t11_83{left:137px;top:617px;}
+#t12_83{left:165px;top:617px;}
+#t13_83{left:137px;top:650px;}
+#t14_83{left:165px;top:650px;}
+#t15_83{left:137px;top:683px;}
+#t16_83{left:165px;top:683px;}
+#t17_83{left:342px;top:708px;}
+#t18_83{left:330px;top:730px;}
+#t19_83{left:433px;top:751px;}
+#t1a_83{left:115px;top:888px;}
+#t1b_83{left:110px;top:924px;}
+#t1c_83{left:110px;top:946px;}
+#t1d_83{left:110px;top:967px;}
+#t1e_83{left:110px;top:988px;}
+#t1f_83{left:110px;top:1010px;}
+#t1g_83{left:138px;top:1047px;}
+#t1h_83{left:165px;top:1047px;}
+#t1i_83{left:165px;top:1065px;}
+#t1j_83{left:137px;top:1099px;}
+#t1k_83{left:165px;top:1099px;}
+#t1l_83{left:165px;top:1117px;}
+
+.s1_83{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT83;
+	color: rgb(0,0,0);
+}
+
+.s4_83{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT83;
+	color: rgb(0,0,0);
+}
+
+.s3_83{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT83;
+	color: rgb(0,0,0);
+}
+
+.s2_83{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT83;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT83;
+	src :url("83/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT83;
+	src :url("83/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT83;
+	src :url("83/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_83" class="t s1_83">83</div>
+<div id="t2_83" class="t s1_83">6.</div>
+<div id="t3_83" class="t s1_83">Explain the difference in the sitting posture between a male and female. </div>
+<div id="t4_83" class="t s1_83">7.</div>
+<div id="t5_83" class="t s1_83">Explain in detail the procedure of the three Witr Wajib. </div>
+<div id="t6_83" class="t s1_83">8.</div>
+<div id="t7_83" class="t s1_83">What is Salaah ? </div>
+<div id="t8_83" class="t s1_83">9.</div>
+<div id="t9_83" class="t s1_83">Mention the condition of Salaah. </div>
+<div id="ta_83" class="t s1_83">10.</div>
+<div id="tb_83" class="t s1_83">Outline the difference between a male's and female's Satr. </div>
+<div id="tc_83" class="t s1_83">11.</div>
+<div id="td_83" class="t s1_83">Draw and complete the Salaah charts </div>
+<div id="te_83" class="t s1_83">12.</div>
+<div id="tf_83" class="t s1_83">Mention the times when it is forbidden to perform any Salaah.</div>
+<div id="tg_83" class="t s1_83">. </div>
+<div id="th_83" class="t s1_83">13.</div>
+<div id="ti_83" class="t s1_83">Mention the prescribed time for each Salaah. </div>
+<div id="tj_83" class="t s1_83">14.</div>
+<div id="tk_83" class="t s1_83">Mention the Farz, Waajibaat, 10 Sunnats, Mustahab, 10 Makruhaat and the Mufsidaate Salaah. </div>
+<div id="tl_83" class="t s1_83">15.</div>
+<div id="tm_83" class="t s1_83">Mention the times when it is permissible, Wajib and Farz to break one's Salaah. </div>
+<div id="tn_83" class="t s1_83">16.</div>
+<div id="to_83" class="t s1_83">How should one perform Qazaa of a number of Salaat missed. </div>
+<div id="tp_83" class="t s1_83">17.</div>
+<div id="tq_83" class="t s1_83">When will a person become a Musaafir and how long will one remain a Musaafir? </div>
+<div id="tr_83" class="t s1_83">18.</div>
+<div id="ts_83" class="t s1_83">For which Salaah should one make Qasr? </div>
+<div id="tt_83" class="t s1_83">19.</div>
+<div id="tu_83" class="t s1_83">Mention the conditions for the Jumuah Salaat. </div>
+<div id="tv_83" class="t s1_83">20.</div>
+<div id="tw_83" class="t s1_83">Mention things not allowed during the Khutba. </div>
+<div id="tx_83" class="t s1_83">21.</div>
+<div id="ty_83" class="t s1_83">How should one perform the Eid Salaat? </div>
+<div id="tz_83" class="t s1_83">22.</div>
+<div id="t10_83" class="t s1_83">When is it permissible to perform Salaah seated? </div>
+<div id="t11_83" class="t s1_83">23.</div>
+<div id="t12_83" class="t s1_83">If one does not have the strength to make Ruku or Sajdah, what should he do'? </div>
+<div id="t13_83" class="t s1_83">24.</div>
+<div id="t14_83" class="t s1_83">In the case of fainting, when is a person excused from performing Salaah? </div>
+<div id="t15_83" class="t s1_83">25.</div>
+<div id="t16_83" class="t s1_83">Can a sick person perform Salaah on Impure (unclean) bedding ? </div>
+<div id="t17_83" class="t s2_83">Janaza (Prayer over dead body) </div>
+<div id="t18_83" class="t s3_83">DEATH AND BURIAL OF A MUSLIM </div>
+<div id="t19_83" class="t s3_83">PART 10 </div>
+<div id="t1a_83" class="t s2_83">THE MUHTADHAR </div>
+<div id="t1b_83" class="t s3_83">A person on whom the signs of DEATH are clearly seen is called a MUHTADHAR. It is </div>
+<div id="t1c_83" class="t s3_83">SUNNAT to let him lie on his RIGHT side facing the QIBLAH. It is permitted that he be </div>
+<div id="t1d_83" class="t s3_83">positioned to lie on his BACK with his FEET towards the QIBLAH, and the head slightly raised </div>
+<div id="t1e_83" class="t s3_83">with a cushion so that it faces the Qibla. all the bed linen must be CLEAN. If moving the </div>
+<div id="t1f_83" class="t s3_83">Muhtadhar causes him any discomfort then leave him in any convenient position. </div>
+<div id="t1g_83" class="t s4_83">•</div>
+<div id="t1h_83" class="t s1_83">It is desirable to use LOBAAN, itr or any other aromatics that are PURE in the room. Anyone who is in the </div>
+<div id="t1i_83" class="t s1_83">state of Janaabat, Haiz or Nifaas must leave the apartment. </div>
+<div id="t1j_83" class="t s4_83">•</div>
+<div id="t1k_83" class="t s1_83">At this time the recitals of Suras YASEEN (starting at the 17th Ruku of the 22nd Chapter) and RA'D </div>
+<div id="t1l_83" class="t s1_83">(beginning at the 6th Ruku of the 13th Chapter) is recommended. This may be done in the same room. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg83Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg83"><object width="935" height="1210" data="83/83.svg" type="image/svg+xml" id="pdf83" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld83" type="text/javascript">
+
+var isIE = false;
+var f83 = [['t3_83',1759],['t5_83',1359],['t7_83',411],['t9_83',805],['tb_83',1417],['td_83',910],['tf_83',1527],['ti_83',1100],['tk_83',2328],['tm_83',1953],['to_83',1527],['tq_83',2020],['ts_83',1019],['tu_83',1131],['tw_83',1153],['ty_83',999],['t10_83',1200],['t12_83',1928],['t14_83',1822],['t16_83',1599],['t17_83',1002],['t18_83',1209],['t19_83',278],['t1a_83',669],['t1b_83',2613],['t1c_83',2620],['t1d_83',2831],['t1e_83',2613],['t1f_83',2389],['t1h_83',2633],['t1i_83',1436],['t1k_83',2473],['t1l_83',2508]];
+function load83(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f83);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 58;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_83");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

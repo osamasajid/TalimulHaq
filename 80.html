@@ -1,0 +1,306 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page80</title>
+</head>
+
+<body onload="load80()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_80{left:460px;top:1136px;}
+#t2_80{left:137px;top:54px;}
+#t3_80{left:165px;top:54px;}
+#t4_80{left:137px;top:87px;}
+#t5_80{left:165px;top:87px;}
+#t6_80{left:696px;top:87px;}
+#t7_80{left:165px;top:105px;}
+#t8_80{left:137px;top:138px;}
+#t9_80{left:165px;top:138px;}
+#ta_80{left:165px;top:156px;}
+#tb_80{left:137px;top:189px;}
+#tc_80{left:165px;top:189px;}
+#td_80{left:362px;top:215px;}
+#te_80{left:110px;top:240px;}
+#tf_80{left:137px;top:273px;}
+#tg_80{left:165px;top:273px;}
+#th_80{left:137px;top:306px;}
+#ti_80{left:165px;top:306px;}
+#tj_80{left:137px;top:339px;}
+#tk_80{left:165px;top:339px;}
+#tl_80{left:137px;top:373px;}
+#tm_80{left:165px;top:373px;}
+#tn_80{left:137px;top:406px;}
+#to_80{left:165px;top:406px;}
+#tp_80{left:165px;top:424px;}
+#tq_80{left:137px;top:457px;}
+#tr_80{left:165px;top:457px;}
+#ts_80{left:192px;top:490px;}
+#tt_80{left:220px;top:490px;}
+#tu_80{left:192px;top:523px;}
+#tv_80{left:220px;top:523px;}
+#tw_80{left:192px;top:556px;}
+#tx_80{left:220px;top:556px;}
+#ty_80{left:192px;top:589px;}
+#tz_80{left:220px;top:589px;}
+#t10_80{left:220px;top:607px;}
+#t11_80{left:137px;top:640px;}
+#t12_80{left:165px;top:640px;}
+#t13_80{left:137px;top:673px;}
+#t14_80{left:165px;top:673px;}
+#t15_80{left:165px;top:691px;}
+#t16_80{left:137px;top:724px;}
+#t17_80{left:165px;top:724px;}
+#t18_80{left:165px;top:742px;}
+#t19_80{left:137px;top:775px;}
+#t1a_80{left:165px;top:775px;}
+#t1b_80{left:165px;top:793px;}
+#t1c_80{left:137px;top:826px;}
+#t1d_80{left:165px;top:826px;}
+#t1e_80{left:165px;top:844px;}
+#t1f_80{left:137px;top:877px;}
+#t1g_80{left:165px;top:877px;}
+#t1h_80{left:165px;top:895px;}
+#t1i_80{left:137px;top:928px;}
+#t1j_80{left:165px;top:928px;}
+#t1k_80{left:165px;top:946px;}
+#t1l_80{left:137px;top:979px;}
+#t1m_80{left:165px;top:979px;}
+#t1n_80{left:165px;top:997px;}
+#t1o_80{left:165px;top:1030px;}
+#t1p_80{left:165px;top:1048px;}
+#t1q_80{left:192px;top:1081px;}
+#t1r_80{left:220px;top:1081px;}
+#t1s_80{left:220px;top:1099px;}
+
+.s1_80{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT80;
+	color: rgb(0,0,0);
+}
+
+.s3_80{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NKJHPH-Wingdings-Regular80;
+	color: rgb(0,0,0);
+}
+
+.s2_80{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT80;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT80;
+	src :url("80/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT80;
+	src :url("80/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NKJHPH-Wingdings-Regular80;
+	src :url("80/fonts/NKJHPH-Wingdings-Regular.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_80" class="t s1_80">80</div>
+<div id="t2_80" class="t s1_80">4.</div>
+<div id="t3_80" class="t s1_80">Then saying the FOURTH Takbeer everyone should go into Ruku and complete the Salaat as usual. </div>
+<div id="t4_80" class="t s1_80">5.</div>
+<div id="t5_80" class="t s1_80">Then the Imam should stand up and deliver the Khutba and all should sit SILENTLY </div>
+<div id="t6_80" class="t s1_80">and LISTEN the </div>
+<div id="t7_80" class="t s1_80">same. </div>
+<div id="t8_80" class="t s1_80">6.</div>
+<div id="t9_80" class="t s1_80">There are TWO Khutbas also tor Eidain. The Imam's sing for a while in between the two KHUTBA is </div>
+<div id="ta_80" class="t s1_80">MASNOON. </div>
+<div id="tb_80" class="t s1_80">7.</div>
+<div id="tc_80" class="t s1_80">It is WAAJIB To LISTEN to the Khutba of Eidain. </div>
+<div id="td_80" class="t s2_80">SALAAH OF A SICK PERSON </div>
+<div id="te_80" class="t s1_80">A person is ALLOWED to perform his SALAAT in the SITTING POSITION under these circumstances: </div>
+<div id="tf_80" class="t s3_80">±</div>
+<div id="tg_80" class="t s1_80">When a SICK person has NO STRENGTH to STAND and perform his Salaat. </div>
+<div id="th_80" class="t s3_80">±</div>
+<div id="ti_80" class="t s1_80">STANDING causes him GREAT PAIN. </div>
+<div id="tj_80" class="t s3_80">±</div>
+<div id="tk_80" class="t s1_80">It may INCREASE his ILLNESS. </div>
+<div id="tl_80" class="t s3_80">±</div>
+<div id="tm_80" class="t s1_80">When a SICK person is ABLE to STAND but CANNOT go into RUKU or SAJDA. </div>
+<div id="tn_80" class="t s3_80">±</div>
+<div id="to_80" class="t s1_80">If a person does NOT have the strength to make RUKU or SAJDA, then the Ruku and Sajdah must be </div>
+<div id="tp_80" class="t s1_80">made by ISHARA (gestures), i.e. BOWING the HEAD SLIGHTLY for RUKU and MORE for SAJDA. </div>
+<div id="tq_80" class="t s3_80">±</div>
+<div id="tr_80" class="t s1_80">If a person CANNOT perform his Salaat SITTING, then he should perform it LYING DOWN. </div>
+<div id="ts_80" class="t s3_80">±</div>
+<div id="tt_80" class="t s1_80">E.g. LIE: down on the BACK with the LEGS towards the QIBLA. </div>
+<div id="tu_80" class="t s3_80">±</div>
+<div id="tv_80" class="t s1_80">The LEGS should NOT be STRETCHED but the KNEES should be RAISED. </div>
+<div id="tw_80" class="t s3_80">±</div>
+<div id="tx_80" class="t s1_80">The HEAD should REST at a HIGH LEVEL with a PILLOW under it. </div>
+<div id="ty_80" class="t s3_80">±</div>
+<div id="tz_80" class="t s1_80">The Salaat must be made by ISHARA (gesture), but for SAJDA he should BOW his HEAD </div>
+<div id="t10_80" class="t s1_80">MORE than for RUKU. </div>
+<div id="t11_80" class="t s3_80">±</div>
+<div id="t12_80" class="t s1_80">This is the BEST and MOST PREFERRED POSTURE. </div>
+<div id="t13_80" class="t s3_80">±</div>
+<div id="t14_80" class="t s1_80">If the KNEES CANNOT be RAISED then one CAN STRETCH one's LEGS towards the QIBLA but the </div>
+<div id="t15_80" class="t s1_80">HEAD should be RAISED and FACING the QIBLAH </div>
+<div id="t16_80" class="t s3_80">±</div>
+<div id="t17_80" class="t s1_80">One may also LIE down on the RIGHT SIDE with the HEAD towards the QIBLA or the LEFT SIDE with </div>
+<div id="t18_80" class="t s1_80">the HEAD towards the QIBLA. However, it is PREFERABLE to LIE on the RIGHT SIDE. </div>
+<div id="t19_80" class="t s3_80">±</div>
+<div id="t1a_80" class="t s1_80">If a person FAINTS for LESS than a FULL DAY and NIGHT, he MUST perform the missed number of </div>
+<div id="t1b_80" class="t s1_80">Salaat. </div>
+<div id="t1c_80" class="t s3_80">±</div>
+<div id="t1d_80" class="t s1_80">However, if he FAINTS for a FULL day and night or more, he must not perform the Salaat he has missed. </div>
+<div id="t1e_80" class="t s1_80">He is EXEMPTED from performing them and there is NO QAZAA. </div>
+<div id="t1f_80" class="t s3_80">±</div>
+<div id="t1g_80" class="t s1_80">If the patient has NO STRENGTH even to MOVE the HEAD for ISHARA (gesture), then one should </div>
+<div id="t1h_80" class="t s1_80">NOT perform the Salaat. </div>
+<div id="t1i_80" class="t s3_80">±</div>
+<div id="t1j_80" class="t s1_80">If this condition continues for MORE than a DAY and NIGHT, one will NOT be BOUND to perform </div>
+<div id="t1k_80" class="t s1_80">QAZA. for the missed number of Salaat. </div>
+<div id="t1l_80" class="t s3_80">±</div>
+<div id="t1m_80" class="t s1_80">If one GAINS the strength of moving the HEAD for ISHARA (gesture) within a day or night or in a period </div>
+<div id="t1n_80" class="t s1_80">lesser than that, the QAZA will have to be performed for the five or lesser Salaat. </div>
+<div id="t1o_80" class="t s1_80">NB. TAYAMMUM is PERMITTED when it is KNOWN by one's OWN EXPERIENCE or a GOOD </div>
+<div id="t1p_80" class="t s1_80">DOCTOR says that the USE of WATER would DEFINITELY be INJURIOUS to one's HEALTH. </div>
+<div id="t1q_80" class="t s3_80">±</div>
+<div id="t1r_80" class="t s1_80">If a sick person's bedding is NAJIS (impure) and changing it would cause great inconvinience to </div>
+<div id="t1s_80" class="t s1_80">the patient, then Salaah may be performed on the same bedding. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg80Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg80"><object width="935" height="1210" data="80/80.svg" type="image/svg+xml" id="pdf80" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld80" type="text/javascript">
+
+var isIE = false;
+var f80 = [['t3_80',2449],['t5_80',2091],['t6_80',405],['t9_80',2505],['tc_80',1258],['td_80',845],['te_80',2596],['tg_80',1927],['ti_80',992],['tk_80',835],['tm_80',2068],['to_80',2508],['tp_80',2556],['tr_80',2331],['tt_80',1632],['tv_80',1929],['tx_80',1740],['tz_80',2255],['t10_80',589],['t12_80',1376],['t14_80',2577],['t15_80',1345],['t17_80',2618],['t18_80',2250],['t1a_80',2561],['t1d_80',2607],['t1e_80',1680],['t1g_80',2500],['t1h_80',609],['t1j_80',2498],['t1k_80',997],['t1m_80',2632],['t1n_80',1998],['t1o_80',2483],['t1p_80',2427],['t1r_80',2368],['t1s_80',1572]];
+function load80(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f80);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 65;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_80");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

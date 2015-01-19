@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<style type="text/css"><![CDATA[
+.g1_49{
+fill: #FFFFFF;
+}
+]]></style>
+</defs>
+<path d="M110,184l137,0l0,-32l-137,0l0,32Z" class="g1_49" />
+<image x="110" y="151" width="138" height="34" xlink:href="img/1.png" />
+<path d="M287,184l129,0l0,-29l-129,0l0,29Z" class="g1_49" />
+<image x="287" y="155" width="130" height="30" xlink:href="img/2.png" />
+<path d="M110,272l222,0l0,-32l-222,0l0,32Z" class="g1_49" />
+<image x="110" y="239" width="223" height="34" xlink:href="img/3.png" />
+<path d="M110,411l117,0l0,-55l-117,0l0,55Z" class="g1_49" />
+<image x="110" y="356" width="118" height="56" xlink:href="img/4.png" />
+<path d="M110,514l114,0l0,-61l-114,0l0,61Z" class="g1_49" />
+<image x="110" y="453" width="115" height="62" xlink:href="img/5.png" />
+</svg>

@@ -1,0 +1,256 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page91</title>
+</head>
+
+<body onload="load91()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_91{left:460px;top:1136px;}
+#t2_91{left:137px;top:54px;}
+#t3_91{left:165px;top:54px;}
+#t4_91{left:137px;top:87px;}
+#t5_91{left:165px;top:87px;}
+#t6_91{left:165px;top:105px;}
+#t7_91{left:137px;top:138px;}
+#t8_91{left:165px;top:138px;}
+#t9_91{left:137px;top:171px;}
+#ta_91{left:165px;top:171px;}
+#tb_91{left:138px;top:197px;}
+#tc_91{left:110px;top:224px;}
+#td_91{left:110px;top:243px;}
+#te_91{left:110px;top:262px;}
+#tf_91{left:110px;top:282px;}
+#tg_91{left:110px;top:301px;}
+#th_91{left:110px;top:321px;}
+#ti_91{left:110px;top:340px;}
+#tj_91{left:110px;top:360px;}
+#tk_91{left:138px;top:395px;}
+#tl_91{left:165px;top:395px;}
+#tm_91{left:165px;top:413px;}
+#tn_91{left:138px;top:447px;}
+#to_91{left:165px;top:447px;}
+#tp_91{left:165px;top:465px;}
+#tq_91{left:138px;top:499px;}
+#tr_91{left:165px;top:499px;}
+#ts_91{left:165px;top:517px;}
+#tt_91{left:138px;top:551px;}
+#tu_91{left:165px;top:551px;}
+#tv_91{left:165px;top:569px;}
+#tw_91{left:110px;top:603px;}
+#tx_91{left:138px;top:637px;}
+#ty_91{left:165px;top:637px;}
+#tz_91{left:165px;top:655px;}
+#t10_91{left:165px;top:691px;}
+
+.s1_91{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT91;
+	color: rgb(0,0,0);
+}
+
+.s4_91{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT91;
+	color: rgb(0,0,0);
+}
+
+.s3_91{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT91;
+	color: rgb(0,0,0);
+}
+
+.s2_91{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT91;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT91;
+	src :url("91/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT91;
+	src :url("91/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT91;
+	src :url("91/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_91" class="t s1_91">91</div>
+<div id="t2_91" class="t s1_91">8.</div>
+<div id="t3_91" class="t s1_91">A scissor for removing the deceased's clothing. </div>
+<div id="t4_91" class="t s1_91">9.</div>
+<div id="t5_91" class="t s1_91">Lobaan (Frankincense-Aromatic gum resin obtained from trees) or any other Pure incense for smoking the </div>
+<div id="t6_91" class="t s1_91">bench, stand or platform. </div>
+<div id="t7_91" class="t s1_91">10.</div>
+<div id="t8_91" class="t s1_91">One clean sheet to cover during Ghusl and one to cover before after Ghusl. </div>
+<div id="t9_91" class="t s1_91">11.</div>
+<div id="ta_91" class="t s1_91">One clean towel or a piece of material for drying the corpse. </div>
+<div id="tb_91" class="t s2_91">WHO SHOULD PERFORM THE GHUSL </div>
+<div id="tc_91" class="t s2_91">The Ghusl is the bath for the body of the dead person. An adult male should he bathed by his FATHER, </div>
+<div id="td_91" class="t s2_91">SON or BROTHER. An adult female by her MOTHER, DAUGHTER or SISTER. If none of these </div>
+<div id="te_91" class="t s2_91">persons are present then any near relative could carry out this duty (male for male and female for female). </div>
+<div id="tf_91" class="t s2_91">If any of these are not in the position to perform the Ghusl then the most pious person present should be </div>
+<div id="tg_91" class="t s2_91">requested to carry out this rite. The person giving the Ghusl should be assisted by others. The person </div>
+<div id="th_91" class="t s2_91">performing the Ghusl must himself or herself be Pure and in a state of Wudhu. It is MAKROOH for a </div>
+<div id="ti_91" class="t s2_91">woman who is MENSTRUATING or in a state of NIFAAS (period after birth of a child) to perform the </div>
+<div id="tj_91" class="t s2_91">Ghusl. </div>
+<div id="tk_91" class="t s3_91">•</div>
+<div id="tl_91" class="t s1_91">If a MALE passes away and there are NO MALES to bathe him then no other woman besides his WIFE is </div>
+<div id="tm_91" class="t s1_91">permitted to carry out the Ghusl. </div>
+<div id="tn_91" class="t s3_91">•</div>
+<div id="to_91" class="t s1_91">In the case of a WOMAN if there are no LADIES to perform the GHUSL the HUSBAND CANNOT </div>
+<div id="tp_91" class="t s1_91">perform the Ghusl of his WIFE) </div>
+<div id="tq_91" class="t s3_91">•</div>
+<div id="tr_91" class="t s1_91">In both instance TAYAMMUM should be performed. The Tayammum for Ghusl is the same as that for </div>
+<div id="ts_91" class="t s1_91">Wudhu. </div>
+<div id="tt_91" class="t s3_91">•</div>
+<div id="tu_91" class="t s1_91">A CHILD who has NOT reached the age (Male or Female) may be given Ghusl by any adult male or </div>
+<div id="tv_91" class="t s1_91">female if a member of the same sex is not available. </div>
+<div id="tw_91" class="t s4_91">THE GHUSL (MASNOON SEQUENCE)</div>
+<div id="tx_91" class="t s1_91">1.</div>
+<div id="ty_91" class="t s1_91">A bench, stand or platform on which the Ghusl will be carried out must be washed, cleaned and fumigated </div>
+<div id="tz_91" class="t s1_91">with Lobaan or any other Pure aromatic, three, five or seven times. </div>
+<div id="t10_91" class="t s1_91">During GHUSL, it is PERMISSIBLE to place the body in one of the following positions : </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg91Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg91"><object width="935" height="1210" data="91/91.svg" type="image/svg+xml" id="pdf91" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld91" type="text/javascript">
+
+var isIE = false;
+var f91 = [['t3_91',1157],['t5_91',2612],['t6_91',614],['t8_91',1841],['ta_91',1478],['tb_91',1167],['tc_91',2795],['td_91',2661],['te_91',2845],['tf_91',2795],['tg_91',2708],['th_91',2736],['ti_91',2788],['tl_91',2609],['tm_91',800],['to_91',2482],['tp_91',789],['tr_91',2540],['tu_91',2472],['tv_91',1272],['tw_91',1190],['ty_91',2610],['tz_91',1641],['t10_91',2204]];
+function load91(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f91);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 37;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_91");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

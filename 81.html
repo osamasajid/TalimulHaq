@@ -1,0 +1,219 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page81</title>
+</head>
+
+<body onload="load81()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_81{left:460px;top:1136px;}
+#t2_81{left:192px;top:54px;}
+#t3_81{left:220px;top:54px;}
+#t4_81{left:220px;top:72px;}
+#t5_81{left:137px;top:105px;}
+#t6_81{left:165px;top:105px;}
+#t7_81{left:137px;top:138px;}
+#t8_81{left:165px;top:138px;}
+#t9_81{left:165px;top:156px;}
+#ta_81{left:137px;top:189px;}
+#tb_81{left:165px;top:189px;}
+#tc_81{left:165px;top:207px;}
+#td_81{left:137px;top:232px;}
+#te_81{left:110px;top:258px;}
+#tf_81{left:110px;top:276px;}
+#tg_81{left:110px;top:294px;}
+#th_81{left:110px;top:312px;}
+#ti_81{left:110px;top:329px;}
+#tj_81{left:110px;top:358px;}
+#tk_81{left:206px;top:358px;}
+#tl_81{left:110px;top:391px;}
+#tm_81{left:110px;top:409px;}
+#tn_81{left:110px;top:427px;}
+#to_81{left:110px;top:445px;}
+#tp_81{left:110px;top:463px;}
+#tq_81{left:110px;top:481px;}
+
+.s1_81{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT81;
+	color: rgb(0,0,0);
+}
+
+.s2_81{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NKJHPH-Wingdings-Regular81;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT81;
+	src :url("81/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NKJHPH-Wingdings-Regular81;
+	src :url("81/fonts/NKJHPH-Wingdings-Regular.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_81" class="t s1_81">81</div>
+<div id="t2_81" class="t s2_81">±</div>
+<div id="t3_81" class="t s1_81">A PARALYSED person or one who is so sick that he cannot use water for ISTINJA, should use </div>
+<div id="t4_81" class="t s1_81">toilet paper or something absorbent or dry clay to clean himself. </div>
+<div id="t5_81" class="t s2_81">±</div>
+<div id="t6_81" class="t s1_81">If he cannot do this also, he should perform his Salaat without even making Istinja. </div>
+<div id="t7_81" class="t s2_81">±</div>
+<div id="t8_81" class="t s1_81">One who has undergone eye surgery and is not allowed to shake his head by the doctor, should perform his </div>
+<div id="t9_81" class="t s1_81">Salaat lying down. </div>
+<div id="ta_81" class="t s2_81">±</div>
+<div id="tb_81" class="t s1_81">TAYAMMUM should be made if he cannot make WUDHU. If he cannot perform Tayammum himself, he </div>
+<div id="tc_81" class="t s1_81">may be assisted. </div>
+<div id="td_81" class="t s1_81">THE SALAAH OF IS'TIKHAARAH </div>
+<div id="te_81" class="t s1_81">When a person wishes to carry out some important work, guidance should be sought from Allah Ta'aala. This </div>
+<div id="tf_81" class="t s1_81">seeking of guidance is called ISTIKHAARAH. Nabi (Sallallaahu alaihi wa Sallam) has mentioned that a person </div>
+<div id="tg_81" class="t s1_81">who does not seek guidance from Allah Ta’aala and does not carry out Istikhaarah is deprived of all good and is </div>
+<div id="th_81" class="t s1_81">unfortunate. InshAllah there will be no regret if Istikhaarah is made before accepting a proposal for marriage, travel, </div>
+<div id="ti_81" class="t s1_81">important business or any other important task. Perform two Rak'aats Nafl Salaat. Thereafter praise Allah by </div>
+<div id="tj_81" class="t s1_81">saying</div>
+<div id="tk_81" class="t s1_81">Thereafter recite Durood upon Nabi (Sallallaahu alaihe wa Sallam ) </div>
+<div id="tl_81" class="t s1_81">This is a prayer known in Arabic as Salatul-Isstikhara and its importance is such that Prophet Muhammad (pbuh) </div>
+<div id="tm_81" class="t s1_81">used to teach his companions about it the same way he used to teach them the verses of the Holy Qur'an. The </div>
+<div id="tn_81" class="t s1_81">companion Jabir (may Allah be pleased with him) said that the Prophet (pbuh) used to strongly encourage us to </div>
+<div id="to_81" class="t s1_81">practice Istikhaarah for all our affairs. The manner of performing this prayer is that the person comes up with a Nafl </div>
+<div id="tp_81" class="t s1_81">prayer of two Rak’aats (units) at anytime during the day or night. Upon completing this, the person then recites a </div>
+<div id="tq_81" class="t s1_81">private supplication in which he/she seeks the guidance of Allah (swt). This goes as follows: </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg81Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg81"><object width="935" height="1210" data="81/81.svg" type="image/svg+xml" id="pdf81" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld81" type="text/javascript">
+
+var isIE = false;
+var f81 = [['t3_81',2360],['t4_81',1570],['t6_81',2037],['t8_81',2628],['t9_81',458],['tb_81',2614],['tc_81',399],['td_81',922],['te_81',2687],['tf_81',2743],['tg_81',2750],['th_81',2854],['ti_81',2663],['tk_81',1659],['tl_81',2772],['tm_81',2672],['tn_81',2731],['to_81',2845],['tp_81',2770],['tq_81',2270]];
+function load81(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f81);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 27;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_81");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

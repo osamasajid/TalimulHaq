@@ -1,0 +1,296 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page43</title>
+</head>
+
+<body onload="load43()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_43{left:460px;top:1136px;}
+#t2_43{left:110px;top:135px;}
+#t3_43{left:138px;top:171px;}
+#t4_43{left:165px;top:171px;}
+#t5_43{left:165px;top:189px;}
+#t6_43{left:138px;top:222px;}
+#t7_43{left:165px;top:222px;}
+#t8_43{left:165px;top:240px;}
+#t9_43{left:137px;top:273px;}
+#ta_43{left:165px;top:273px;}
+#tb_43{left:137px;top:306px;}
+#tc_43{left:165px;top:306px;}
+#td_43{left:137px;top:339px;}
+#te_43{left:165px;top:339px;}
+#tf_43{left:165px;top:357px;}
+#tg_43{left:165px;top:375px;}
+#th_43{left:165px;top:393px;}
+#ti_43{left:165px;top:411px;}
+#tj_43{left:137px;top:444px;}
+#tk_43{left:165px;top:444px;}
+#tl_43{left:165px;top:462px;}
+#tm_43{left:165px;top:480px;}
+#tn_43{left:165px;top:498px;}
+#to_43{left:165px;top:516px;}
+#tp_43{left:165px;top:533px;}
+#tq_43{left:137px;top:567px;}
+#tr_43{left:165px;top:567px;}
+#ts_43{left:165px;top:584px;}
+#tt_43{left:165px;top:602px;}
+#tu_43{left:137px;top:635px;}
+#tv_43{left:165px;top:635px;}
+#tw_43{left:165px;top:653px;}
+#tx_43{left:165px;top:671px;}
+#ty_43{left:165px;top:689px;}
+#tz_43{left:165px;top:707px;}
+#t10_43{left:137px;top:740px;}
+#t11_43{left:165px;top:740px;}
+#t12_43{left:165px;top:758px;}
+#t13_43{left:165px;top:776px;}
+#t14_43{left:165px;top:809px;}
+#t15_43{left:138px;top:845px;}
+#t16_43{left:165px;top:845px;}
+#t17_43{left:165px;top:863px;}
+#t18_43{left:165px;top:881px;}
+#t19_43{left:138px;top:914px;}
+#t1a_43{left:165px;top:914px;}
+#t1b_43{left:165px;top:932px;}
+#t1c_43{left:138px;top:965px;}
+#t1d_43{left:165px;top:965px;}
+#t1e_43{left:165px;top:983px;}
+#t1f_43{left:165px;top:1001px;}
+#t1g_43{left:138px;top:1034px;}
+#t1h_43{left:165px;top:1034px;}
+#t1i_43{left:165px;top:1052px;}
+#t1j_43{left:165px;top:1070px;}
+#t1k_43{left:165px;top:1088px;}
+
+.s1_43{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT43;
+	color: rgb(0,0,0);
+}
+
+.s3_43{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NKJHPH-Wingdings-Regular43;
+	color: rgb(0,0,0);
+}
+
+.s4_43{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT43;
+	color: rgb(0,0,0);
+}
+
+.s2_43{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT43;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT43;
+	src :url("43/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT43;
+	src :url("43/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NKJHPH-Wingdings-Regular43;
+	src :url("43/fonts/NKJHPH-Wingdings-Regular.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_43" class="t s1_43">43</div>
+<div id="t2_43" class="t s2_43">THE CONDITIONS FOR MASAH</div>
+<div id="t3_43" class="t s1_43">1.</div>
+<div id="t4_43" class="t s1_43">The socks must be strong enough to enable walking in them on roads for approximately three miles </div>
+<div id="t5_43" class="t s1_43">without the socks tearing. </div>
+<div id="t6_43" class="t s1_43">2.</div>
+<div id="t7_43" class="t s1_43">The socks should remain in position (covering the foreleg) without being tied. They should not slip. Socks </div>
+<div id="t8_43" class="t s1_43">which have elastic sewn into them (to keep them in position) will be regarded as being tied. </div>
+<div id="t9_43" class="t s1_43">3.</div>
+<div id="ta_43" class="t s1_43">Water must not be able to seep through. </div>
+<div id="tb_43" class="t s1_43">4.</div>
+<div id="tc_43" class="t s1_43">The socks must not be transparent or even semitransparent. </div>
+<div id="td_43" class="t s3_43">±</div>
+<div id="te_43" class="t s1_43">If any one of the four conditions is lacking, Masah on such socks will not be permissible. Khuffain on </div>
+<div id="tf_43" class="t s1_43">which Masah is made are generally made to leather. The type of socks woolen, nylon, etc., generally worn </div>
+<div id="tg_43" class="t s1_43">nowadays is not classified as "Khuffain". it is, therefore, not permissible to make Masah on them. If socks </div>
+<div id="th_43" class="t s1_43">are made of a material other than leather and </div>
+<div id="ti_43" class="t s1_43">the aforementioned four requirements are met, Masah will be permissible on them. </div>
+<div id="tj_43" class="t s3_43">±</div>
+<div id="tk_43" class="t s1_43">For the Masah Alal Khuffain to be valid, it is essential to put on the Khuffain after complete Wudhu has </div>
+<div id="tl_43" class="t s1_43">been made. </div>
+<div id="tm_43" class="t s1_43">If the Khuffain have been put on before a complete Wudhu has been made, Masah on them will not be </div>
+<div id="tn_43" class="t s1_43">permissible. Firstly, a complete Wudhu has to be made, then only should the Khuffain be put on. </div>
+<div id="to_43" class="t s1_43">Thereafter if Wudhu breaks, it will be permissible to make Masah Alal Khuffain without washing the feet </div>
+<div id="tp_43" class="t s1_43">when Wudhu is being made. </div>
+<div id="tq_43" class="t s3_43">±</div>
+<div id="tr_43" class="t s1_43">For a MUQEEM (one who is not a traveler - MUSAAFIR) Masah Alal Khuffain is valid for a period of 24 </div>
+<div id="ts_43" class="t s1_43">hours. </div>
+<div id="tt_43" class="t s1_43">For a MUSAAFIR the period permissible is up to 72 hours. </div>
+<div id="tu_43" class="t s3_43">±</div>
+<div id="tv_43" class="t s1_43">The period of 24 or 72 hours will be reckoned from the time the Wudhu (after which the Khuffain were put </div>
+<div id="tw_43" class="t s1_43">on ) breaks, not from the time the Khuffain were put on. For example, a Muqeem makes Wudhu at 6 p.m. </div>
+<div id="tx_43" class="t s1_43">and after completing his Wudhu he puts on Khuffain. At 8 p.m. his Wudhu breaks, twenty-four hours will </div>
+<div id="ty_43" class="t s1_43">be reckoned from 8 p.m. Hence, it will be permissible for him to make Masah Alal Khuffain each time he </div>
+<div id="tz_43" class="t s1_43">takes Wudhu until 8 p.m. the next day. </div>
+<div id="t10_43" class="t s3_43">±</div>
+<div id="t11_43" class="t s1_43">Upon expiry of 24 hours, Masah Alal Khuffain will no longer be valid. When the period of (24 hours for </div>
+<div id="t12_43" class="t s1_43">the Muqeem and 72 hours for the Musaafir) expires, the KHUFFAIN should be removed and the FEET </div>
+<div id="t13_43" class="t s1_43">washed. It is not necessary to renew the WUDHU. </div>
+<div id="t14_43" class="t s4_43">THE METHOD OF MASAH ALAL KHUF'F'AIN IS AS FOLLOWS </div>
+<div id="t15_43" class="t s3_43">±</div>
+<div id="t16_43" class="t s1_43">Draw the fingers of the right hand on the upper surface of the Khuffain starting from the toes and ending </div>
+<div id="t17_43" class="t s1_43">(the Masah) at the foreleg (just above the ankle). The Masah should be done once only on each sock. The </div>
+<div id="t18_43" class="t s1_43">right hand should be used for the right Khuff and the left hand for the left Khuff. </div>
+<div id="t19_43" class="t s3_43">±</div>
+<div id="t1a_43" class="t s1_43">If the back of the hand was used to make the Masah, it will be valid. However, one should not </div>
+<div id="t1b_43" class="t s1_43">unnecessarily depart from the correct .Sunnah method. </div>
+<div id="t1c_43" class="t s3_43">±</div>
+<div id="t1d_43" class="t s1_43">It is not permissible to make Masah on the side or at the under surface of the Khuffain. It is FARDH to </div>
+<div id="t1e_43" class="t s1_43">make Masah on each sock to the extent of three full fingers, i.e. the full surface area of three fingers must </div>
+<div id="t1f_43" class="t s1_43">be drawn from the toes to the foreleg. </div>
+<div id="t1g_43" class="t s3_43">±</div>
+<div id="t1h_43" class="t s1_43">The following acts will nullify the Masah which was made on the Khuffain : </div>
+<div id="t1i_43" class="t s1_43">1. All things which break Wudhu. </div>
+<div id="t1j_43" class="t s1_43">2. Removal of the Khuff (sock). </div>
+<div id="t1k_43" class="t s1_43">3. The expiry of the period, i.e. 24 hours for the Muqeem and 72 hours for the Musaafir. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg43Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg43"><object width="935" height="1210" data="43/43.svg" type="image/svg+xml" id="pdf43" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld43" type="text/javascript">
+
+var isIE = false;
+var f43 = [['t2_43',1109],['t4_43',2437],['t5_43',630],['t7_43',2610],['t8_43',2246],['ta_43',978],['tc_43',1452],['te_43',2502],['tf_43',2607],['tg_43',2601],['th_43',1095],['ti_43',2028],['tk_43',2555],['tl_43',278],['tm_43',2514],['tn_43',2373],['to_43',2592],['tp_43',700],['tr_43',2621],['tt_43',1460],['tv_43',2635],['tw_43',2589],['tx_43',2600],['ty_43',2588],['tz_43',950],['t11_43',2571],['t12_43',2537],['t13_43',1241],['t14_43',2054],['t16_43',2569],['t17_43',2585],['t18_43',1980],['t1a_43',2307],['t1b_43',1341],['t1d_43',2523],['t1e_43',2582],['t1f_43',923],['t1h_43',1877],['t1i_43',834],['t1j_43',785],['t1k_43',2165]];
+function load43(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f43);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 57;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_43");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

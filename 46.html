@@ -1,0 +1,257 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page46</title>
+</head>
+
+<body onload="load46()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_46{left:460px;top:1136px;}
+#t2_46{left:262px;top:64px;}
+#t3_46{left:555px;top:64px;}
+#t4_46{left:225px;top:195px;}
+#t5_46{left:286px;top:212px;}
+#t6_46{left:207px;top:230px;}
+#t7_46{left:261px;top:248px;}
+#t8_46{left:518px;top:195px;}
+#t9_46{left:579px;top:212px;}
+#ta_46{left:476px;top:230px;}
+#tb_46{left:577px;top:248px;}
+#tc_46{left:225px;top:330px;}
+#td_46{left:264px;top:363px;}
+#te_46{left:266px;top:398px;}
+#tf_46{left:518px;top:325px;}
+#tg_46{left:557px;top:357px;}
+#th_46{left:561px;top:375px;}
+#ti_46{left:219px;top:474px;}
+#tj_46{left:266px;top:527px;}
+#tk_46{left:266px;top:545px;}
+#tl_46{left:512px;top:477px;}
+#tm_46{left:559px;top:531px;}
+#tn_46{left:559px;top:549px;}
+#to_46{left:278px;top:632px;}
+#tp_46{left:238px;top:650px;}
+#tq_46{left:571px;top:631px;}
+#tr_46{left:531px;top:649px;}
+#ts_46{left:409px;top:725px;}
+#tt_46{left:324px;top:743px;}
+#tu_46{left:271px;top:779px;}
+#tv_46{left:360px;top:779px;}
+#tw_46{left:444px;top:779px;}
+#tx_46{left:494px;top:779px;}
+#ty_46{left:594px;top:779px;}
+
+.s5_46{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: TimesNewRomanPS-BoldItalicMT;
+	color: rgb(0,0,0);
+	FONT-WEIGHT: bold;
+	FONT-STYLE: italic;
+}
+
+.s1_46{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT46;
+	color: rgb(0,0,0);
+}
+
+.s3_46{
+	FONT-SIZE: 55px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT46;
+	color: rgb(0,176,80);
+}
+
+.s6_46{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT46;
+	color: rgb(255,0,0);
+}
+
+.s2_46{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(255,0,0);
+	FONT-STYLE: italic;
+}
+
+.s4_46{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT46;
+	color: rgb(0,176,80);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT46;
+	src :url("46/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_46" class="t s1_46">46</div>
+<div id="t2_46" class="t s1_46">worship but Allah. </div>
+<div id="t3_46" class="t s1_46">worship but Allah.  </div>
+<div id="t4_46" class="t s2_46">Ash hadu an-na Muhammadar </div>
+<div id="t5_46" class="t s2_46">rasulul lah </div>
+<div id="t6_46" class="t s1_46">I testify that Muhammad (S.A.W.) is </div>
+<div id="t7_46" class="t s1_46">Allah's Messenger. </div>
+<div id="t8_46" class="t s2_46">Ash hadu an-na Muhammadar </div>
+<div id="t9_46" class="t s2_46">rasulul lah </div>
+<div id="ta_46" class="t s1_46">I testify that Muhammad (S.A.W.) is Allah's </div>
+<div id="tb_46" class="t s1_46">Messenger. </div>
+<div id="tc_46" class="t s3_46">Turn the FACE right when saying </div>
+<div id="td_46" class="t s2_46">Hayya 'alas salah </div>
+<div id="te_46" class="t s1_46">Come for Salaah. </div>
+<div id="tf_46" class="t s3_46">Turn the FACE right when saying </div>
+<div id="tg_46" class="t s2_46">Hayya 'alas salah</div>
+<div id="th_46" class="t s1_46">Come for Salaah  </div>
+<div id="ti_46" class="t s4_46">Turn the FACE left when saying </div>
+<div id="tj_46" class="t s2_46">Hayya 'alal falah</div>
+<div id="tk_46" class="t s1_46">Come to success.  </div>
+<div id="tl_46" class="t s4_46">Turn the FACE left when saying </div>
+<div id="tm_46" class="t s2_46">Hayya 'alal falah</div>
+<div id="tn_46" class="t s1_46">Come to success.  </div>
+<div id="to_46" class="t s2_46">Allahu Akbar</div>
+<div id="tp_46" class="t s1_46">Allah is the greatest of all. </div>
+<div id="tq_46" class="t s2_46">Allahu Akbar</div>
+<div id="tr_46" class="t s1_46">Allah is the greatest of all.  </div>
+<div id="ts_46" class="t s2_46">La ilaaha Illal Lah</div>
+<div id="tt_46" class="t s1_46">There is none worthy of worship besides Allah </div>
+<div id="tu_46" class="t s1_46">**Only In the </div>
+<div id="tv_46" class="t s5_46">Azan of Fajr</div>
+<div id="tw_46" class="t s1_46">after “ “</div>
+<div id="tx_46" class="t s6_46">Hayya alal falah</div>
+<div id="ty_46" class="t s1_46">” Say twice </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg46Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg46"><object width="935" height="1210" data="46/46.svg" type="image/svg+xml" id="pdf46" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld46" type="text/javascript">
+
+var isIE = false;
+var f46 = [['t2_46',458],['t3_46',474],['t4_46',753],['t5_46',267],['t6_46',901],['t7_46',466],['t8_46',753],['t9_46',267],['ta_46',1087],['tc_46',753],['td_46',440],['te_46',427],['tf_46',753],['tg_46',439],['th_46',426],['ti_46',802],['tj_46',426],['tk_46',438],['tl_46',802],['tm_46',426],['tn_46',438],['to_46',329],['tp_46',646],['tq_46',329],['tr_46',661],['ts_46',465],['tt_46',1150],['tu_46',340],['tv_46',323],['tw_46',197],['tx_46',400],['ty_46',281]];
+function load46(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f46);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 35;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_46");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

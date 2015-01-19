@@ -1,0 +1,260 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page17</title>
+</head>
+
+<body onload="load17()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_17{left:460px;top:1136px;}
+#t2_17{left:427px;top:54px;}
+#t3_17{left:138px;top:93px;}
+#t4_17{left:165px;top:93px;}
+#t5_17{left:138px;top:134px;}
+#t6_17{left:165px;top:134px;}
+#t7_17{left:138px;top:176px;}
+#t8_17{left:165px;top:176px;}
+#t9_17{left:165px;top:202px;}
+#ta_17{left:138px;top:244px;}
+#tb_17{left:165px;top:244px;}
+#tc_17{left:138px;top:285px;}
+#td_17{left:165px;top:285px;}
+#te_17{left:165px;top:311px;}
+#tf_17{left:385px;top:345px;}
+#tg_17{left:138px;top:384px;}
+#th_17{left:165px;top:384px;}
+#ti_17{left:138px;top:425px;}
+#tj_17{left:165px;top:425px;}
+#tk_17{left:165px;top:452px;}
+#tl_17{left:165px;top:478px;}
+#tm_17{left:138px;top:519px;}
+#tn_17{left:165px;top:519px;}
+#to_17{left:138px;top:561px;}
+#tp_17{left:165px;top:561px;}
+#tq_17{left:165px;top:587px;}
+#tr_17{left:138px;top:628px;}
+#ts_17{left:165px;top:628px;}
+#tt_17{left:165px;top:655px;}
+#tu_17{left:138px;top:696px;}
+#tv_17{left:165px;top:696px;}
+#tw_17{left:193px;top:737px;}
+#tx_17{left:220px;top:737px;}
+#ty_17{left:193px;top:779px;}
+#tz_17{left:220px;top:779px;}
+#t10_17{left:193px;top:820px;}
+#t11_17{left:220px;top:820px;}
+#t12_17{left:193px;top:862px;}
+#t13_17{left:220px;top:862px;}
+#t14_17{left:193px;top:903px;}
+#t15_17{left:220px;top:903px;}
+#t16_17{left:193px;top:945px;}
+#t17_17{left:220px;top:945px;}
+#t18_17{left:193px;top:986px;}
+#t19_17{left:220px;top:986px;}
+#t1a_17{left:420px;top:1051px;}
+#t1b_17{left:138px;top:1090px;}
+#t1c_17{left:165px;top:1090px;}
+#t1d_17{left:165px;top:1116px;}
+
+.s1_17{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT17;
+	color: rgb(0,0,0);
+}
+
+.s2_17{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT17;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT17;
+	src :url("17/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_17" class="t s1_17">17</div>
+<div id="t2_17" class="t s2_17">Fate (Taqdeer) </div>
+<div id="t3_17" class="t s1_17">1.</div>
+<div id="t4_17" class="t s1_17">Allah has the knowledge of everything before its creation. </div>
+<div id="t5_17" class="t s1_17">2.</div>
+<div id="t6_17" class="t s1_17">Allah has given human beings the willpower and the ability of doing good or bad. </div>
+<div id="t7_17" class="t s1_17">3.</div>
+<div id="t8_17" class="t s1_17">Allah's knowledge of what good or bad one would do even before one is created is called TAQDEER or </div>
+<div id="t9_17" class="t s1_17">FATE. </div>
+<div id="ta_17" class="t s1_17">4.</div>
+<div id="tb_17" class="t s1_17">All favors are by Allah's will alone and no misfortune can happen excect by the will of Allah. </div>
+<div id="tc_17" class="t s1_17">5.</div>
+<div id="td_17" class="t s1_17">Therefore we should not despair over any misfortune or boast over any favur. This teaches us that we </div>
+<div id="te_17" class="t s1_17">should be thankful to Allah for his favurs and patient over any misfortune. </div>
+<div id="tf_17" class="t s2_17">The Last Day (Qiyaamah) </div>
+<div id="tg_17" class="t s1_17">1.</div>
+<div id="th_17" class="t s1_17">This world will one day come to an end. </div>
+<div id="ti_17" class="t s1_17">2.</div>
+<div id="tj_17" class="t s1_17">Besides Allah Ta’aala no one knows the exact day of Qiyaamah. Only this much is known that on one </div>
+<div id="tk_17" class="t s1_17">Friday the 10th of Muharram Hazrat ISRAFEEL (Alayhis Sallam) will be ordered to blow the soor </div>
+<div id="tl_17" class="t s1_17">(Bugle). </div>
+<div id="tm_17" class="t s1_17">3.</div>
+<div id="tn_17" class="t s1_17">The sound will cause every living person or creature to die </div>
+<div id="to_17" class="t s1_17">4.</div>
+<div id="tp_17" class="t s1_17">The earth will be shaken up. The mountains will become like flakes of cotton wool, the sun and the moon </div>
+<div id="tq_17" class="t s1_17">will crash. The stars will lose their shine and the whole universe will be destroyed. </div>
+<div id="tr_17" class="t s1_17">5.</div>
+<div id="ts_17" class="t s1_17">The approach of Qiyaamah will be known by its signs shown to us by our NAIBIE HAZRAT </div>
+<div id="tt_17" class="t s1_17">MUHAMMAD MUSTAFA (Sallallaahu Alayhi-Wa-Sallam). </div>
+<div id="tu_17" class="t s1_17">6.</div>
+<div id="tv_17" class="t s1_17">Some of these signs are as follows: </div>
+<div id="tw_17" class="t s1_17">1.</div>
+<div id="tx_17" class="t s1_17">People will disobey their parents and disrespect them. </div>
+<div id="ty_17" class="t s1_17">2.</div>
+<div id="tz_17" class="t s1_17">Breach of trust. </div>
+<div id="t10_17" class="t s1_17">3.</div>
+<div id="t11_17" class="t s1_17">Singing, music and dancing will become common. </div>
+<div id="t12_17" class="t s1_17">4.</div>
+<div id="t13_17" class="t s1_17">Illiterate people will become leaders. </div>
+<div id="t14_17" class="t s1_17">5.</div>
+<div id="t15_17" class="t s1_17">People will speak ill of their ancestors and the previous pious people. </div>
+<div id="t16_17" class="t s1_17">6.</div>
+<div id="t17_17" class="t s1_17">People of low means will begin to boast of high buildings. </div>
+<div id="t18_17" class="t s1_17">7.</div>
+<div id="t19_17" class="t s1_17">Unworthy people will be given high posts. </div>
+<div id="t1a_17" class="t s2_17">The life After Death </div>
+<div id="t1b_17" class="t s1_17">1.</div>
+<div id="t1c_17" class="t s1_17">After the day of Qiyaamah when everything will be destroyed, Hazrat ISRAFEEL (Alayhis Sallam) will be </div>
+<div id="t1d_17" class="t s1_17">ordered to blow the bugle (Soor) for the second time. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg17Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg17"><object width="935" height="1210" data="17/17.svg" type="image/svg+xml" id="pdf17" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld17" type="text/javascript">
+
+var isIE = false;
+var f17 = [['t2_17',434],['t4_17',1426],['t6_17',2009],['t8_17',2558],['tb_17',2296],['td_17',2488],['te_17',1825],['tf_17',767],['th_17',989],['tj_17',2504],['tk_17',2426],['tn_17',1441],['tp_17',2590],['tq_17',2026],['ts_17',2297],['tt_17',1514],['tv_17',861],['tx_17',1320],['tz_17',380],['t11_17',1241],['t13_17',906],['t15_17',1700],['t17_17',1433],['t19_17',1045],['t1a_17',597],['t1c_17',2630],['t1d_17',1305]];
+function load17(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f17);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 50;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_17");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

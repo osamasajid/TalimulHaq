@@ -1,0 +1,237 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page62</title>
+</head>
+
+<body onload="load62()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_62{left:460px;top:1136px;}
+#t2_62{left:329px;top:128px;}
+#t3_62{left:330px;top:149px;}
+#t4_62{left:251px;top:182px;}
+#t5_62{left:329px;top:295px;}
+#t6_62{left:330px;top:316px;}
+#t7_62{left:117px;top:349px;}
+#t8_62{left:359px;top:367px;}
+#t9_62{left:383px;top:393px;}
+#ta_62{left:110px;top:422px;}
+#tb_62{left:419px;top:543px;}
+#tc_62{left:419px;top:561px;}
+#td_62{left:419px;top:578px;}
+#te_62{left:391px;top:614px;}
+#tf_62{left:391px;top:632px;}
+#tg_62{left:391px;top:650px;}
+#th_62{left:112px;top:675px;}
+#ti_62{left:425px;top:699px;}
+#tj_62{left:381px;top:1096px;}
+
+.s3_62{
+	FONT-SIZE: 82px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT62;
+	color: rgb(0,0,0);
+}
+
+.s1_62{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT62;
+	color: rgb(0,0,0);
+}
+
+.s4_62{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT62;
+	color: rgb(0,0,0);
+}
+
+.s2_62{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(255,0,0);
+	FONT-STYLE: italic;
+}
+
+.s5_62{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(255,0,0);
+	FONT-STYLE: italic;
+}
+
+.s6_62{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT62;
+	color: rgb(0,101,0);
+}
+
+.s7_62{
+	FONT-SIZE: 82px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT62;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT62;
+	src :url("62/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT62;
+	src :url("62/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_62" class="t s1_62">62</div>
+<div id="t2_62" class="t s2_62">As-Sallamu 'alaykum wa rahmatullah</div>
+<div id="t3_62" class="t s1_62">(Peace be upon you and the mercy of Allah.)</div>
+<div id="t4_62" class="t s3_62">Then turn the face to the left, and repeat the Salaam. </div>
+<div id="t5_62" class="t s2_62">As-Sallamu 'alaykum wa rahmatullah</div>
+<div id="t6_62" class="t s1_62">(Peace be upon you and the mercy of Allah.)</div>
+<div id="t7_62" class="t s1_62">When making Salaam one should make intention of greeting the Angels, When making Salaam the eyes should be </div>
+<div id="t8_62" class="t s1_62">fixed onto the respective shoulders. </div>
+<div id="t9_62" class="t s4_62">Completion of Salaah </div>
+<div id="ta_62" class="t s1_62">On completing the Salaah one should recite ASTAGHFIRULLAH thrice. </div>
+<div id="tb_62" class="t s5_62">Astagh firul-lah </div>
+<div id="tc_62" class="t s5_62">Astagh firul-lah </div>
+<div id="td_62" class="t s5_62">Astagh firul-lah </div>
+<div id="te_62" class="t s6_62">I ask Allah to forgive me </div>
+<div id="tf_62" class="t s6_62">I ask Allah to forgive me </div>
+<div id="tg_62" class="t s6_62">I ask Allah to forgive me</div>
+<div id="th_62" class="t s3_62">Then one should raise both hands to the level of the chest and make Du’aa to ALLAH </div>
+<div id="ti_62" class="t s3_62">TA'ALA : </div>
+<div id="tj_62" class="t s7_62">AAYATUL KURSI</div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg62Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg62"><object width="935" height="1210" data="62/62.svg" type="image/svg+xml" id="pdf62" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld62" type="text/javascript">
+
+var isIE = false;
+var f62 = [['t2_62',1106],['t3_62',1098],['t4_62',1728],['t5_62',1106],['t6_62',1098],['t7_62',2805],['t8_62',871],['t9_62',676],['ta_62',1806],['tb_62',390],['tc_62',390],['td_62',390],['te_62',614],['tf_62',614],['tg_62',614],['th_62',2844],['ti_62',336],['tj_62',688]];
+function load62(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f62);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 20;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_62");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

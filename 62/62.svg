@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<clipPath id="c0_62"><path d="M303.5,113.5l0,-58l328,0l0,58Z" /></clipPath>
+<clipPath id="c1_62"><path d="M303.5,280.5l0,-58l328,0l0,58Z" /></clipPath>
+<clipPath id="c2_62"><path d="M239.5,1057.5l0,-318l456,0l0,318Z" /></clipPath>
+<style type="text/css"><![CDATA[
+.g2_62{
+}
+.g1_62{
+fill: #FFFFFF;
+}
+.g3_62{
+fill: none;
+stroke: #F2F2F2;
+stroke-width: 5;
+stroke-linecap: round;
+stroke-linejoin: miter;
+stroke-miterlimit: 8;
+}
+]]></style>
+</defs>
+<g clip-path="url(#c0_62)">
+<path d="M303,113l328,0l0,-58L303,55l0,58Z" class="g1_62" />
+</g>
+<image x="303" y="55" width="330" height="60" xlink:href="img/1.png" />
+<image x="303" y="55" width="330" height="60" xlink:href="img/2.png" />
+<g clip-path="url(#c1_62)">
+<path d="M303,280l328,0l0,-58l-328,0l0,58Z" class="g1_62" />
+</g>
+<image x="303" y="222" width="330" height="60" xlink:href="img/3.png" />
+<image x="303" y="222" width="330" height="60" xlink:href="img/4.png" />
+<image x="180" y="455" width="576" height="82" xlink:href="img/5.png" />
+<g clip-path="url(#c2_62)">
+<path d="M239,1057l456,0l0,-318l-456,0l0,318Z" class="g1_62" />
+</g>
+<image x="239" y="739" width="458" height="320" xlink:href="img/6.png" />
+<image x="239" y="739" width="458" height="320" xlink:href="img/7.png" />
+<image x="756" y="64" width="114" height="61" xlink:href="img/8.png" />
+<path fill-rule="evenodd" d="M837,67l0,12l-80,0l0,23l80,0l0,11L863,90Z" class="g2_62" />
+<path d="M837.5,67.5l0,12l-80,0l0,23l80,0l0,11l26,-23Z" class="g3_62" />
+<image x="175" y="229" width="114" height="67" xlink:href="img/9.png" />
+<image x="282" y="288" width="7" height="7" xlink:href="img/10.png" />
+<path fill-rule="evenodd" d="M204,232l0,12l78,0l0,25l-78,0l0,13L178,257Z" class="g2_62" />
+<path d="M204.5,232.5l0,12l78,0l0,25l-78,0l0,13l-26,-25Z" class="g3_62" />
+</svg>

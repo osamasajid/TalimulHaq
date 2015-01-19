@@ -1,0 +1,360 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page88</title>
+</head>
+
+<body onload="load88()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_88{left:460px;top:1136px;}
+#t2_88{left:138px;top:83px;}
+#t3_88{left:165px;top:83px;}
+#t4_88{left:165px;top:101px;}
+#t5_88{left:138px;top:134px;}
+#t6_88{left:165px;top:134px;}
+#t7_88{left:138px;top:167px;}
+#t8_88{left:165px;top:167px;}
+#t9_88{left:165px;top:185px;}
+#ta_88{left:165px;top:203px;}
+#tb_88{left:165px;top:221px;}
+#tc_88{left:138px;top:254px;}
+#td_88{left:165px;top:254px;}
+#te_88{left:165px;top:272px;}
+#tf_88{left:138px;top:305px;}
+#tg_88{left:165px;top:305px;}
+#th_88{left:165px;top:323px;}
+#ti_88{left:110px;top:356px;}
+#tj_88{left:138px;top:392px;}
+#tk_88{left:165px;top:392px;}
+#tl_88{left:138px;top:426px;}
+#tm_88{left:165px;top:426px;}
+#tn_88{left:175px;top:504px;}
+#to_88{left:175px;top:521px;}
+#tp_88{left:315px;top:482px;}
+#tq_88{left:315px;top:521px;}
+#tr_88{left:453px;top:521px;}
+#ts_88{left:547px;top:521px;}
+#tt_88{left:175px;top:555px;}
+#tu_88{left:315px;top:546px;}
+#tv_88{left:315px;top:564px;}
+#tw_88{left:453px;top:546px;}
+#tx_88{left:453px;top:564px;}
+#ty_88{left:547px;top:555px;}
+#tz_88{left:175px;top:598px;}
+#t10_88{left:315px;top:589px;}
+#t11_88{left:315px;top:607px;}
+#t12_88{left:331px;top:611px;}
+#t13_88{left:453px;top:589px;}
+#t14_88{left:453px;top:607px;}
+#t15_88{left:547px;top:598px;}
+#t16_88{left:175px;top:641px;}
+#t17_88{left:315px;top:632px;}
+#t18_88{left:315px;top:650px;}
+#t19_88{left:355px;top:653px;}
+#t1a_88{left:453px;top:641px;}
+#t1b_88{left:547px;top:641px;}
+#t1c_88{left:310px;top:675px;}
+#t1d_88{left:175px;top:719px;}
+#t1e_88{left:315px;top:707px;}
+#t1f_88{left:315px;top:728px;}
+#t1g_88{left:334px;top:735px;}
+#t1h_88{left:453px;top:719px;}
+#t1i_88{left:547px;top:711px;}
+#t1j_88{left:547px;top:728px;}
+#t1k_88{left:175px;top:783px;}
+#t1l_88{left:315px;top:774px;}
+#t1m_88{left:315px;top:792px;}
+#t1n_88{left:359px;top:796px;}
+#t1o_88{left:453px;top:783px;}
+#t1p_88{left:547px;top:774px;}
+#t1q_88{left:547px;top:792px;}
+#t1r_88{left:138px;top:834px;}
+#t1s_88{left:350px;top:867px;}
+#t1t_88{left:138px;top:902px;}
+#t1u_88{left:165px;top:902px;}
+#t1v_88{left:138px;top:935px;}
+#t1w_88{left:165px;top:935px;}
+#t1x_88{left:138px;top:968px;}
+#t1y_88{left:165px;top:968px;}
+#t1z_88{left:440px;top:993px;}
+#t20_88{left:351px;top:1013px;}
+#t21_88{left:138px;top:1040px;}
+#t22_88{left:165px;top:1040px;}
+#t23_88{left:165px;top:1058px;}
+#t24_88{left:165px;top:1076px;}
+
+.s4_88{
+	FONT-SIZE: 45px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT88;
+	color: rgb(0,0,0);
+}
+
+.s1_88{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT88;
+	color: rgb(0,0,0);
+}
+
+.s8_88{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NKJHPH-Wingdings-Regular88;
+	color: rgb(0,0,0);
+}
+
+.s3_88{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT88;
+	color: rgb(0,0,0);
+}
+
+.s6_88{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT88;
+	color: rgb(0,0,0);
+}
+
+.s5_88{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT88;
+	color: rgb(0,0,0);
+}
+
+.s7_88{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT88;
+	color: rgb(0,0,0);
+}
+
+.s2_88{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT88;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT88;
+	src :url("88/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT88;
+	src :url("88/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NKJHPH-Wingdings-Regular88;
+	src :url("88/fonts/NKJHPH-Wingdings-Regular.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_88" class="t s1_88">88</div>
+<div id="t2_88" class="t s1_88">a.</div>
+<div id="t3_88" class="t s1_88">SHEETING : 4 metres-140 cm 150 cm or 180 cm wide according to the size of the body (1.75 meters for </div>
+<div id="t4_88" class="t s1_88">Izaar and 2.25 meters for Lifafah) OR </div>
+<div id="t5_88" class="t s1_88">b.</div>
+<div id="t6_88" class="t s1_88">CALICO : 1.80 meters, 90 cm wide for Ames. </div>
+<div id="t7_88" class="t s1_88">c.</div>
+<div id="t8_88" class="t s1_88">Any other material 2.50 meters 115 cm wide, this has to be made into two pieces for Tehbands, about 115 </div>
+<div id="t9_88" class="t s1_88">cm x 115 cm. The balance should be used for making up bag like mittens, to be used for covering hands </div>
+<div id="ta_88" class="t s1_88">when performing Ghusl. A few strips must be kept for fastening the bags onto the hands and for tying the </div>
+<div id="tb_88" class="t s1_88">Kafn after it has been put on. </div>
+<div id="tc_88" class="t s1_88">d.</div>
+<div id="td_88" class="t s1_88">60 grams camphor cut fine, 60 grams sandal wood powder and rose water for paste to be put off the body </div>
+<div id="te_88" class="t s1_88">that touch the ground when making Sajdah. </div>
+<div id="tf_88" class="t s1_88">e.</div>
+<div id="tg_88" class="t s1_88">One small bottle Itr or Hunoot if easily available, for males only. (Hunoot is anything with which a corpse </div>
+<div id="th_88" class="t s1_88">is perfumed, consisting of musk, sandal wood, ambergris and camphor or any Clean substance.) </div>
+<div id="ti_88" class="t s2_88">ADDITIONAL KAFN REQIREMENTS FOR FEMALES</div>
+<div id="tj_88" class="t s1_88">a.</div>
+<div id="tk_88" class="t s1_88">CALICO: 140 meters, 90 cm, wide for Khimaar (Orni). </div>
+<div id="tl_88" class="t s1_88">b.</div>
+<div id="tm_88" class="t s1_88">CALICO: 180 to 2.50 meters, 90 cm wide for a woman's breast, (Sina band). </div>
+<div id="tn_88" class="t s1_88">NAME OF </div>
+<div id="to_88" class="t s1_88">GARMENT  </div>
+<div id="tp_88" class="t s3_88">MALE AND FEMALE</div>
+<div id="tq_88" class="t s1_88">LENGTH </div>
+<div id="tr_88" class="t s1_88">WIDTH </div>
+<div id="ts_88" class="t s1_88">DESCRIPTION </div>
+<div id="tt_88" class="t s1_88">Izaar  </div>
+<div id="tu_88" class="t s1_88">180 cm </div>
+<div id="tv_88" class="t s1_88">(2 yds)  </div>
+<div id="tw_88" class="t s1_88">150cm/180cm</div>
+<div id="tx_88" class="t s1_88">(60" / 72") </div>
+<div id="ty_88" class="t s1_88">To cover from head to toe  </div>
+<div id="tz_88" class="t s1_88">Lifafah Chadar  </div>
+<div id="t10_88" class="t s1_88">225 cm </div>
+<div id="t11_88" class="t s1_88">(2 </div>
+<div id="t12_88" class="t s4_88">1/2 yds) </div>
+<div id="t13_88" class="t s1_88">150cm/180cm</div>
+<div id="t14_88" class="t s1_88">(60" / 72") </div>
+<div id="t15_88" class="t s1_88">15 cm longer than Izaar  </div>
+<div id="t16_88" class="t s1_88">QAmees Kafni  </div>
+<div id="t17_88" class="t s1_88">180 to 250 cm </div>
+<div id="t18_88" class="t s1_88">(2 to2 </div>
+<div id="t19_88" class="t s4_88">3/4 yds) </div>
+<div id="t1a_88" class="t s1_88">90 cm (36")  </div>
+<div id="t1b_88" class="t s1_88">From shoulder to below the knees </div>
+<div id="t1c_88" class="t s3_88">ADDITIONAL ITEMS FOR FEMALES ONLY</div>
+<div id="t1d_88" class="t s1_88">Khimaar Orni  </div>
+<div id="t1e_88" class="t s5_88">140 cm </div>
+<div id="t1f_88" class="t s5_88">(1 </div>
+<div id="t1g_88" class="t s4_88">1/2yds) </div>
+<div id="t1h_88" class="t s1_88">90 cm (36" ) </div>
+<div id="t1i_88" class="t s1_88">To cover head and hair over </div>
+<div id="t1j_88" class="t s1_88">breast  </div>
+<div id="t1k_88" class="t s1_88">Sinaband  </div>
+<div id="t1l_88" class="t s1_88">180 to 250 cm </div>
+<div id="t1m_88" class="t s1_88">(2 to 2 </div>
+<div id="t1n_88" class="t s4_88">3/4yds) </div>
+<div id="t1o_88" class="t s1_88">90cm (36")  </div>
+<div id="t1p_88" class="t s1_88">From under the arm pits to the </div>
+<div id="t1q_88" class="t s1_88">things.  </div>
+<div id="t1r_88" class="t s1_88">c.</div>
+<div id="t1s_88" class="t s6_88">REQUIREMENTS FOR QABR:</div>
+<div id="t1t_88" class="t s1_88">a.</div>
+<div id="t1u_88" class="t s1_88">Unbaked bricks, bamboo or timber where the ground is soft. </div>
+<div id="t1v_88" class="t s1_88">b.</div>
+<div id="t1w_88" class="t s1_88">Sufficient spades. </div>
+<div id="t1x_88" class="t s1_88">c.</div>
+<div id="t1y_88" class="t s1_88">The approximate depth of a grave for adults should be according to the height of the deceased. </div>
+<div id="t1z_88" class="t s7_88">THE QABR </div>
+<div id="t20_88" class="t s7_88">GRAVES ARE OF TWO TYPES: </div>
+<div id="t21_88" class="t s8_88">±</div>
+<div id="t22_88" class="t s1_88">The LAHAD: Where the ground and sides of the Qabr are firm, then a recess should be dug on the Qibla </div>
+<div id="t23_88" class="t s1_88">side to allow placing the body in the recess. Unbaked bricks should preferably be used to close the recess, </div>
+<div id="t24_88" class="t s1_88">and made to fit neatly. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg88Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg88"><object width="935" height="1210" data="88/88.svg" type="image/svg+xml" id="pdf88" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld88" type="text/javascript">
+
+var isIE = false;
+var f88 = [['t3_88',2579],['t4_88',932],['t6_88',1138],['t8_88',2598],['t9_88',2552],['ta_88',2587],['tb_88',714],['td_88',2585],['te_88',1068],['tg_88',2604],['th_88',2351],['ti_88',1814],['tk_88',1363],['tm_88',1885],['tn_88',274],['to_88',318],['tp_88',609],['tt_88',137],['tu_88',181],['tv_88',187],['tx_88',261],['ty_88',654],['tz_88',388],['t10_88',181],['t12_88',149],['t14_88',261],['t15_88',597],['t16_88',384],['t17_88',352],['t18_88',145],['t19_88',149],['t1a_88',309],['t1b_88',833],['t1c_88',1259],['t1d_88',357],['t1e_88',217],['t1h_88',309],['t1i_88',691],['t1j_88',161],['t1k_88',243],['t1l_88',352],['t1m_88',160],['t1o_88',294],['t1p_88',745],['t1q_88',180],['t1s_88',942],['t1u_88',1480],['t1w_88',435],['t1y_88',2319],['t1z_88',333],['t20_88',932],['t22_88',2572],['t23_88',2596],['t24_88',549]];
+function load88(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f88);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 77;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_88");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

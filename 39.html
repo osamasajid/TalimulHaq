@@ -1,0 +1,269 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page39</title>
+</head>
+
+<body onload="load39()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_39{left:460px;top:1136px;}
+#t2_39{left:137px;top:54px;}
+#t3_39{left:165px;top:54px;}
+#t4_39{left:165px;top:72px;}
+#t5_39{left:137px;top:105px;}
+#t6_39{left:165px;top:105px;}
+#t7_39{left:192px;top:138px;}
+#t8_39{left:220px;top:138px;}
+#t9_39{left:192px;top:171px;}
+#ta_39{left:220px;top:171px;}
+#tb_39{left:192px;top:204px;}
+#tc_39{left:220px;top:204px;}
+#td_39{left:192px;top:237px;}
+#te_39{left:220px;top:237px;}
+#tf_39{left:137px;top:271px;}
+#tg_39{left:165px;top:271px;}
+#th_39{left:165px;top:288px;}
+#ti_39{left:137px;top:321px;}
+#tj_39{left:165px;top:321px;}
+#tk_39{left:165px;top:339px;}
+#tl_39{left:137px;top:372px;}
+#tm_39{left:165px;top:372px;}
+#tn_39{left:165px;top:390px;}
+#to_39{left:165px;top:408px;}
+#tp_39{left:165px;top:426px;}
+#tq_39{left:428px;top:452px;}
+#tr_39{left:354px;top:473px;}
+#ts_39{left:279px;top:502px;}
+#tt_39{left:110px;top:538px;}
+#tu_39{left:138px;top:575px;}
+#tv_39{left:165px;top:575px;}
+#tw_39{left:138px;top:608px;}
+#tx_39{left:165px;top:608px;}
+#ty_39{left:138px;top:641px;}
+#tz_39{left:165px;top:641px;}
+#t10_39{left:110px;top:667px;}
+#t11_39{left:398px;top:696px;}
+#t12_39{left:531px;top:696px;}
+#t13_39{left:110px;top:804px;}
+#t14_39{left:110px;top:825px;}
+#t15_39{left:110px;top:847px;}
+#t16_39{left:110px;top:868px;}
+#t17_39{left:110px;top:890px;}
+#t18_39{left:110px;top:926px;}
+#t19_39{left:110px;top:963px;}
+#t1a_39{left:110px;top:999px;}
+#t1b_39{left:110px;top:1021px;}
+#t1c_39{left:110px;top:1058px;}
+
+.s1_39{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT39;
+	color: rgb(0,0,0);
+}
+
+.s3_39{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT39;
+	color: rgb(0,0,0);
+}
+
+.s2_39{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT39;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT39;
+	src :url("39/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT39;
+	src :url("39/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_39" class="t s1_39">39</div>
+<div id="t2_39" class="t s1_39">8.</div>
+<div id="t3_39" class="t s1_39">One is at a place where there is no water, he himself guesses or someone tells him that water is available </div>
+<div id="t4_39" class="t s1_39">within approx one mile. It will now be necessary to fetch water and perform Wudhu. </div>
+<div id="t5_39" class="t s1_39">9.</div>
+<div id="t6_39" class="t s1_39">It will not be necessary to fetch water if: </div>
+<div id="t7_39" class="t s1_39">a.</div>
+<div id="t8_39" class="t s1_39">there is no trace of water; </div>
+<div id="t9_39" class="t s1_39">b.</div>
+<div id="ta_39" class="t s1_39">no one is present to give information regarding water; </div>
+<div id="tb_39" class="t s1_39">c.</div>
+<div id="tc_39" class="t s1_39">It is believed that water will be found after a distance of approx. 1 mile or more. </div>
+<div id="td_39" class="t s1_39">d.</div>
+<div id="te_39" class="t s1_39">Tayammum will now be permissible for Wudhu. </div>
+<div id="tf_39" class="t s1_39">10.</div>
+<div id="tg_39" class="t s1_39">If so little water is available that a person can only carry out the four FARAA'ID of WUDHU, then </div>
+<div id="th_39" class="t s1_39">TAYAMMUM is not permissible. </div>
+<div id="ti_39" class="t s1_39">11.</div>
+<div id="tj_39" class="t s1_39">If something NAJIS had fallen on the ground or sand etc., it is not permissible to use that earth for </div>
+<div id="tk_39" class="t s1_39">TAYAMMUM even if it dries up. But Salaah on that place is permissible after it has become dry. </div>
+<div id="tl_39" class="t s1_39">12.</div>
+<div id="tm_39" class="t s1_39">Q If there is very little water, and one is in need of GHUSL or WUDHU and his clothes and body is also </div>
+<div id="tn_39" class="t s1_39">NAJIS (Impure) what should one do? </div>
+<div id="to_39" class="t s1_39">A First: One should wash off the NAJAASAT from one's body and clothes. </div>
+<div id="tp_39" class="t s1_39">Then: Do TAYAMMUM. </div>
+<div id="tq_39" class="t s2_39">Faraa-idh </div>
+<div id="tr_39" class="t s3_39">(Compulsory Acts) of Tayammum </div>
+<div id="ts_39" class="t s2_39">THERE ARE THREE FARZ IN TAYAMMUM</div>
+<div id="tt_39" class="t s3_39">FARAA'IZ (COMPULSORY ACTS) OF TAYAMMUM : </div>
+<div id="tu_39" class="t s1_39">1.</div>
+<div id="tv_39" class="t s1_39">NIYYAT (intention) </div>
+<div id="tw_39" class="t s1_39">2.</div>
+<div id="tx_39" class="t s1_39">Striking both hands on earth and rubbing them on the face. </div>
+<div id="ty_39" class="t s1_39">3.</div>
+<div id="tz_39" class="t s1_39">Striking both hands on earth and rubbing both forearms including the elbows. </div>
+<div id="t10_39" class="t s2_39">Masnoon way of Tayammum </div>
+<div id="t11_39" class="t s2_39">FIRST RECITE </div>
+<div id="t12_39" class="t s3_39">: </div>
+<div id="t13_39" class="t s2_39">AND MAKE NIYYAT</div>
+<div id="t14_39" class="t s3_39">For GHUSL one should make the intention: </div>
+<div id="t15_39" class="t s3_39">"I am making TAYAMMUM for GHUSL". </div>
+<div id="t16_39" class="t s3_39">For WUDHU one should make the intention: </div>
+<div id="t17_39" class="t s3_39">"I am making TAYAMMUM for WUDHU". </div>
+<div id="t18_39" class="t s2_39">FIRST</div>
+<div id="t19_39" class="t s3_39">Make NIYYAT or intention in the following way : </div>
+<div id="t1a_39" class="t s3_39">"O Allah, I am making TAYAMMUM for WUDHU or GHUSL, to perform my SALAAH or </div>
+<div id="t1b_39" class="t s3_39">recite the QURAAN SHARIF, etc. </div>
+<div id="t1c_39" class="t s2_39">SECOND</div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg39Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg39"><object width="935" height="1210" data="39/39.svg" type="image/svg+xml" id="pdf39" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld39" type="text/javascript">
+
+var isIE = false;
+var f39 = [['t3_39',2560],['t4_39',2078],['t6_39',990],['t8_39',625],['ta_39',1322],['tc_39',1964],['te_39',1195],['tg_39',2431],['th_39',840],['tj_39',2410],['tk_39',2393],['tm_39',2568],['tn_39',923],['to_39',1856],['tp_39',641],['tr_39',1014],['ts_39',1506],['tt_39',1724],['tv_39',509],['tx_39',1444],['tz_39',1906],['t10_39',914],['t11_39',514],['t13_39',711],['t14_39',1287],['t15_39',1284],['t16_39',1323],['t17_39',1320],['t19_39',1492],['t1a_39',2738],['t1b_39',1022]];
+function load39(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f39);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 49;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_39");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

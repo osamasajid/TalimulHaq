@@ -1,0 +1,295 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page94</title>
+</head>
+
+<body onload="load94()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_94{left:460px;top:1136px;}
+#t2_94{left:137px;top:54px;}
+#t3_94{left:165px;top:54px;}
+#t4_94{left:165px;top:72px;}
+#t5_94{left:137px;top:105px;}
+#t6_94{left:165px;top:105px;}
+#t7_94{left:137px;top:138px;}
+#t8_94{left:165px;top:138px;}
+#t9_94{left:165px;top:156px;}
+#ta_94{left:137px;top:189px;}
+#tb_94{left:165px;top:189px;}
+#tc_94{left:138px;top:214px;}
+#td_94{left:138px;top:244px;}
+#te_94{left:165px;top:244px;}
+#tf_94{left:165px;top:261px;}
+#tg_94{left:165px;top:279px;}
+#th_94{left:138px;top:312px;}
+#ti_94{left:165px;top:312px;}
+#tj_94{left:165px;top:330px;}
+#tk_94{left:138px;top:363px;}
+#tl_94{left:165px;top:363px;}
+#tm_94{left:138px;top:396px;}
+#tn_94{left:165px;top:396px;}
+#to_94{left:137px;top:430px;}
+#tp_94{left:165px;top:430px;}
+#tq_94{left:137px;top:463px;}
+#tr_94{left:165px;top:463px;}
+#ts_94{left:137px;top:496px;}
+#tt_94{left:165px;top:496px;}
+#tu_94{left:137px;top:529px;}
+#tv_94{left:165px;top:529px;}
+#tw_94{left:137px;top:562px;}
+#tx_94{left:165px;top:562px;}
+#ty_94{left:137px;top:595px;}
+#tz_94{left:165px;top:595px;}
+#t10_94{left:165px;top:613px;}
+#t11_94{left:138px;top:638px;}
+#t12_94{left:138px;top:667px;}
+#t13_94{left:165px;top:667px;}
+#t14_94{left:138px;top:700px;}
+#t15_94{left:165px;top:700px;}
+#t16_94{left:165px;top:718px;}
+#t17_94{left:138px;top:744px;}
+#t18_94{left:110px;top:773px;}
+#t19_94{left:110px;top:794px;}
+#t1a_94{left:110px;top:815px;}
+#t1b_94{left:110px;top:852px;}
+#t1c_94{left:110px;top:873px;}
+#t1d_94{left:110px;top:895px;}
+#t1e_94{left:110px;top:916px;}
+#t1f_94{left:138px;top:945px;}
+#t1g_94{left:138px;top:975px;}
+#t1h_94{left:165px;top:975px;}
+#t1i_94{left:138px;top:1009px;}
+#t1j_94{left:165px;top:1009px;}
+#t1k_94{left:165px;top:1027px;}
+#t1l_94{left:138px;top:1061px;}
+#t1m_94{left:165px;top:1061px;}
+#t1n_94{left:137px;top:1095px;}
+#t1o_94{left:165px;top:1095px;}
+#t1p_94{left:165px;top:1113px;}
+
+.s1_94{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT94;
+	color: rgb(0,0,0);
+}
+
+.s3_94{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT94;
+	color: rgb(0,0,0);
+}
+
+.s2_94{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT94;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJIKOL-SymbolMT94;
+	src :url("94/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT94;
+	src :url("94/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_94" class="t s1_94">94</div>
+<div id="t2_94" class="t s1_94">5.</div>
+<div id="t3_94" class="t s1_94">Then rub camphor mixture paste on the places of SAJDAH, (i. e. those parts of the body that touch the </div>
+<div id="t4_94" class="t s1_94">ground in SALAAH : forehead, nose both the palms, knees and the forefeet. </div>
+<div id="t5_94" class="t s1_94">6.</div>
+<div id="t6_94" class="t s1_94">First fold the LEFT flap and on it the RIGHT flap of the IZAAR over the QAMEES. </div>
+<div id="t7_94" class="t s1_94">7.</div>
+<div id="t8_94" class="t s1_94">Thereafter fold the LIFAFAH in the same manner. Remember that the RIGHT flap must be always on the </div>
+<div id="t9_94" class="t s1_94">top. </div>
+<div id="ta_94" class="t s1_94">8.</div>
+<div id="tb_94" class="t s1_94">Lastly fasten the ends of the LIFAFAH at the head side, feet and around the middle with strips of the cloth. </div>
+<div id="tc_94" class="t s2_94">FEMALE : </div>
+<div id="td_94" class="t s1_94">1.</div>
+<div id="te_94" class="t s1_94">First spread the LIFAFAH out on the ground, then the SINABAND, on it the IZAAR and then the </div>
+<div id="tf_94" class="t s1_94">QAMEES in the same manner stated for males. The SINABAND may also be placed between the Mar and </div>
+<div id="tg_94" class="t s1_94">Ames car lastly cover the Lifafah. </div>
+<div id="th_94" class="t s1_94">2.</div>
+<div id="ti_94" class="t s1_94">Lower the body gently onto the Kafn and cover the top of the body up to the calf with the folded portion of </div>
+<div id="tj_94" class="t s1_94">the Ames. </div>
+<div id="tk_94" class="t s1_94">3.</div>
+<div id="tl_94" class="t s1_94">Remove the Tehband and sheet used for covering the Satr. DO NOT use itr, Surmah or any other make-up. </div>
+<div id="tm_94" class="t s1_94">4.</div>
+<div id="tn_94" class="t s1_94">Rub camphor mixture onto the places of Sajdah the forehead, nose, both palms, knees and the forefeet. </div>
+<div id="to_94" class="t s1_94">5.</div>
+<div id="tp_94" class="t s1_94">The hair should be divided into two parts and put onto the right and left breast over the Ames. </div>
+<div id="tq_94" class="t s1_94">6.</div>
+<div id="tr_94" class="t s1_94">Cover the head and hair with the Orni. Do not fasten or fold it. </div>
+<div id="ts_94" class="t s1_94">7.</div>
+<div id="tt_94" class="t s1_94">Fold the Izaar, the left flap first and then the right over the Ames and Orni. </div>
+<div id="tu_94" class="t s1_94">8.</div>
+<div id="tv_94" class="t s1_94">Now close the Sin hand (breast cover) over these in the same manner. </div>
+<div id="tw_94" class="t s1_94">9.</div>
+<div id="tx_94" class="t s1_94">Close the Lifafah, the left flap first and then the right. </div>
+<div id="ty_94" class="t s1_94">10.</div>
+<div id="tz_94" class="t s1_94">Lastly fasten the ends of the Lifafah at the head side, feet and around the Middle with strips of cloth, keep </div>
+<div id="t10_94" class="t s1_94">to the complete Kafn in place. </div>
+<div id="t11_94" class="t s2_94">PROHIBITED ARTICLES IN THE KAFN </div>
+<div id="t12_94" class="t s1_94">1.</div>
+<div id="t13_94" class="t s1_94">It is prohibited to enclose any charter or any other Du’aa on the Kafn. </div>
+<div id="t14_94" class="t s1_94">2.</div>
+<div id="t15_94" class="t s1_94">It is forbidden to write the Kalima or any other Du’aa on the Kafn or on the chest of the deceased with </div>
+<div id="t16_94" class="t s1_94">camphor, ink, etc. </div>
+<div id="t17_94" class="t s2_94">WHAT TO DO AFTER THE KAFN </div>
+<div id="t18_94" class="t s2_94">With the completion of the Ghusl and Kafn, the Mayyit (deceased person) is ready for DAFAN </div>
+<div id="t19_94" class="t s2_94">(burial). No time should be wasted and the Salaah of the Janaza should be arranged without </div>
+<div id="t1a_94" class="t s2_94">delay. Rasulullah (S.A.W.) has said: </div>
+<div id="t1b_94" class="t s2_94">"If a person passes away, hasten him to his grave and do not keep him away." The Janaza Salaah </div>
+<div id="t1c_94" class="t s2_94">should be arranged quickly and the Mayyit should be buried in the nearest Muslim Qabrastaan </div>
+<div id="t1d_94" class="t s2_94">(cemetery). To transport the body over long distances is undesirable. It is also MAKROOH to </div>
+<div id="t1e_94" class="t s2_94">delay the Janaza Salaah and wait for late comers to increase the Jamaat. </div>
+<div id="t1f_94" class="t s2_94">IMPORTANT: </div>
+<div id="t1g_94" class="t s3_94">•</div>
+<div id="t1h_94" class="t s1_94">It is only permissible for MAHRAM women of the deceased male to see his face. </div>
+<div id="t1i_94" class="t s3_94">•</div>
+<div id="t1j_94" class="t s1_94">They are his WIFE, MOTHER, GRAND MOTHER (paternal and maternal), SISTERS, AUNTS and </div>
+<div id="t1k_94" class="t s1_94">(GRAND DAUGHTERS, etc. </div>
+<div id="t1l_94" class="t s3_94">•</div>
+<div id="t1m_94" class="t s1_94">Similarly only the MAHRAM males should view the face of a deceased female. </div>
+<div id="t1n_94" class="t s3_94">•</div>
+<div id="t1o_94" class="t s1_94">They are her HUSBAND, FATHER, GRAND FATHER, BROTHERS, UNCLES, SONS and </div>
+<div id="t1p_94" class="t s1_94">GRANDSONS, etc. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg94Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg94"><object width="935" height="1210" data="94/94.svg" type="image/svg+xml" id="pdf94" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld94" type="text/javascript">
+
+var isIE = false;
+var f94 = [['t3_94',2518],['t4_94',1870],['t6_94',2080],['t8_94',2595],['tb_94',2629],['tc_94',331],['te_94',2412],['tf_94',2619],['tg_94',833],['ti_94',2628],['tj_94',247],['tl_94',2624],['tn_94',2521],['tp_94',2305],['tr_94',1535],['tt_94',1834],['tv_94',1711],['tx_94',1314],['tz_94',2598],['t10_94',738],['t11_94',1277],['t13_94',1710],['t15_94',2512],['t16_94',440],['t17_94',1086],['t18_94',2799],['t19_94',2687],['t1a_94',1068],['t1b_94',2840],['t1c_94',2773],['t1d_94',2756],['t1e_94',2106],['t1h_94',1998],['t1j_94',2476],['t1k_94',743],['t1m_94',1960],['t1o_94',2305],['t1p_94',492]];
+function load94(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f94);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 62;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_94");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page73</title>
+</head>
+
+<body onload="load73()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_73{left:460px;top:1136px;}
+#t2_73{left:137px;top:54px;}
+#t3_73{left:110px;top:72px;}
+#t4_73{left:115px;top:72px;}
+#t5_73{left:110px;top:98px;}
+#t6_73{left:110px;top:116px;}
+#t7_73{left:110px;top:149px;}
+#t8_73{left:137px;top:182px;}
+#t9_73{left:165px;top:182px;}
+#ta_73{left:165px;top:200px;}
+#tb_73{left:137px;top:233px;}
+#tc_73{left:165px;top:233px;}
+#td_73{left:137px;top:266px;}
+#te_73{left:165px;top:266px;}
+#tf_73{left:165px;top:284px;}
+#tg_73{left:137px;top:317px;}
+#th_73{left:165px;top:317px;}
+#ti_73{left:165px;top:335px;}
+#tj_73{left:137px;top:368px;}
+#tk_73{left:165px;top:368px;}
+#tl_73{left:137px;top:401px;}
+#tm_73{left:165px;top:401px;}
+#tn_73{left:137px;top:434px;}
+#to_73{left:165px;top:434px;}
+#tp_73{left:137px;top:467px;}
+#tq_73{left:165px;top:467px;}
+#tr_73{left:165px;top:485px;}
+#ts_73{left:137px;top:518px;}
+#tt_73{left:165px;top:518px;}
+#tu_73{left:137px;top:551px;}
+#tv_73{left:165px;top:551px;}
+#tw_73{left:586px;top:551px;}
+#tx_73{left:137px;top:584px;}
+#ty_73{left:165px;top:584px;}
+#tz_73{left:137px;top:617px;}
+#t10_73{left:165px;top:617px;}
+#t11_73{left:165px;top:635px;}
+#t12_73{left:137px;top:668px;}
+#t13_73{left:165px;top:668px;}
+#t14_73{left:137px;top:702px;}
+#t15_73{left:165px;top:702px;}
+#t16_73{left:137px;top:735px;}
+#t17_73{left:165px;top:735px;}
+#t18_73{left:137px;top:768px;}
+#t19_73{left:165px;top:768px;}
+#t1a_73{left:202px;top:793px;}
+#t1b_73{left:137px;top:819px;}
+#t1c_73{left:165px;top:819px;}
+#t1d_73{left:137px;top:852px;}
+#t1e_73{left:165px;top:852px;}
+#t1f_73{left:165px;top:870px;}
+#t1g_73{left:137px;top:903px;}
+#t1h_73{left:165px;top:903px;}
+#t1i_73{left:165px;top:921px;}
+#t1j_73{left:137px;top:954px;}
+#t1k_73{left:165px;top:954px;}
+#t1l_73{left:110px;top:987px;}
+#t1m_73{left:110px;top:1005px;}
+#t1n_73{left:110px;top:1038px;}
+#t1o_73{left:110px;top:1056px;}
+#t1p_73{left:110px;top:1074px;}
+
+.s1_73{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT73;
+	color: rgb(0,0,0);
+}
+
+.s2_73{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT73;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT73;
+	src :url("73/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT73;
+	src :url("73/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_73" class="t s1_73">73</div>
+<div id="t2_73" class="t s1_73">Mufsidaat -e- Salaah </div>
+<div id="t3_73" class="t s1_73">(</div>
+<div id="t4_73" class="t s2_73">Breakers of Salaah)</div>
+<div id="t5_73" class="t s2_73">MUFSIDAAT-E-SALAAH ARE FACTORS WHICH NULLIFY THE PRAYERS (SALAAH) AND MAKE </div>
+<div id="t6_73" class="t s2_73">IT NECESSARY TO BE REPEATED.</div>
+<div id="t7_73" class="t s1_73">The following are some of the MUFSIDAAT : </div>
+<div id="t8_73" class="t s1_73">1.</div>
+<div id="t9_73" class="t s1_73">To TALK in Salaah KNOWINGLY or UNKNOWINGLY, a FEW WORDS or MANY will BREAK the </div>
+<div id="ta_73" class="t s1_73">Salaah. </div>
+<div id="tb_73" class="t s1_73">2.</div>
+<div id="tc_73" class="t s1_73">To GREET a person by ASallamu Alaikum, or by any other method while performing Salaah. </div>
+<div id="td_73" class="t s1_73">3.</div>
+<div id="te_73" class="t s1_73">To REPLY to GREETINGS or saying Yarhamukallah to one who SNEEZES and saying Ameen to a DUA </div>
+<div id="tf_73" class="t s1_73">NOT CON-NECTED to his Salaah. </div>
+<div id="tg_73" class="t s1_73">4.</div>
+<div id="th_73" class="t s1_73">To say Inna Lil Lahi Wa Inna Ilaihi Raajioon on some SAD NEWS or Alhamdulillah or Subhanallah on </div>
+<div id="ti_73" class="t s1_73">hearing some GOOD or STRANGE NEWS. </div>
+<div id="tj_73" class="t s1_73">5.</div>
+<div id="tk_73" class="t s1_73">To make NOISE or say "OH!" or "AAH!" due to PAIN etc. </div>
+<div id="tl_73" class="t s1_73">6.</div>
+<div id="tm_73" class="t s1_73">Correcting the Qiraat of a person other than his own Imaam. </div>
+<div id="tn_73" class="t s1_73">7.</div>
+<div id="to_73" class="t s1_73">To RECITE the QURAAN by L.()OKING at the TFXT. </div>
+<div id="tp_73" class="t s1_73">8.</div>
+<div id="tq_73" class="t s1_73">To do such an act which gives the IMPRESSION to ONLOOKERS that he is doing something else, rather </div>
+<div id="tr_73" class="t s1_73">than PERFORMING Salaah. This is called AMALE KATHEER. </div>
+<div id="ts_73" class="t s1_73">9.</div>
+<div id="tt_73" class="t s1_73">EATING or DRINKING KNOWINNGLY or UNKNOWINGLY. </div>
+<div id="tu_73" class="t s1_73">10.</div>
+<div id="tv_73" class="t s1_73">To TURN the CHEST away from the QLBLA without an EXCUSE.</div>
+<div id="tw_73" class="t s1_73">. </div>
+<div id="tx_73" class="t s1_73">11.</div>
+<div id="ty_73" class="t s1_73">Doing SAJDA at a NAJIS place. </div>
+<div id="tz_73" class="t s1_73">12.</div>
+<div id="t10_73" class="t s1_73">DELAY in COVERING the SATR (private parts) when uncovered, to the extent of performing ONE </div>
+<div id="t11_73" class="t s1_73">RUKN in Salaah. </div>
+<div id="t12_73" class="t s1_73">13.</div>
+<div id="t13_73" class="t s1_73">UTTERANCES in PAIN or TROUBLE. </div>
+<div id="t14_73" class="t s1_73">14.</div>
+<div id="t15_73" class="t s1_73">An ADULT'S LAUGHING ALOUD. </div>
+<div id="t16_73" class="t s1_73">15.</div>
+<div id="t17_73" class="t s1_73">To STEP AHEAD of the Imam DURING the Salaah. </div>
+<div id="t18_73" class="t s1_73">16.</div>
+<div id="t19_73" class="t s1_73">Making some GREAT ERROR in the QIRAAT of the HOLY QURAAN. </div>
+<div id="t1a_73" class="t s1_73">IT IS PERMISSIBLE TO BREAK ONE'S SALAAH IN THE FOLLOWING CASES: </div>
+<div id="t1b_73" class="t s1_73">1.</div>
+<div id="t1c_73" class="t s1_73">When there is an URGE to PASS URINE or STOOL. </div>
+<div id="t1d_73" class="t s1_73">2.</div>
+<div id="t1e_73" class="t s1_73">When a SNAKE, SCORPION or some other HARMFUL. CREATURE or ANIMAL makes it's </div>
+<div id="t1f_73" class="t s1_73">APPERANCE. </div>
+<div id="t1g_73" class="t s1_73">3.</div>
+<div id="t1h_73" class="t s1_73">When one FEARS that a TRAIN on which one is to TRAVEL would DEPART and thus cause GREAT </div>
+<div id="t1i_73" class="t s1_73">INCONVENIENCE. </div>
+<div id="t1j_73" class="t s1_73">4.</div>
+<div id="t1k_73" class="t s1_73">When one FEARS that a THIEF would get away with his SHOES or any other PROPERTY. </div>
+<div id="t1l_73" class="t s1_73">It is WAJIB to BREAK one's SALAAH in order to ANSWER a PARENT or a GRANDPARENT who has </div>
+<div id="t1m_73" class="t s1_73">CALLELD out in DISTRESS. Nevertheless, it is NOT NECESSARY when someone is AROUND to ASSIST. </div>
+<div id="t1n_73" class="t s1_73">It is FARZ to BREAK one's Salaah when it is FEARED that a BLIND PERSON would FALL into a PIT or a </div>
+<div id="t1o_73" class="t s1_73">WELL if he is NOT STOPPED. It is FARZ to BREAK one's Salaah when some person has caught on FIRE and </div>
+<div id="t1p_73" class="t s1_73">requires ASSISTANCE. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg73Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg73"><object width="935" height="1210" data="73/73.svg" type="image/svg+xml" id="pdf73" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld73" type="text/javascript">
+
+var isIE = false;
+var f73 = [['t2_73',510],['t4_73',518],['t5_73',2809],['t6_73',1015],['t7_73',1146],['t9_73',2573],['tc_73',2307],['te_73',2623],['tf_73',877],['th_73',2557],['ti_73',1090],['tk_73',1463],['tm_73',1479],['to_73',1383],['tq_73',2610],['tr_73',1602],['tt_73',1624],['tv_73',1683],['ty_73',804],['t10_73',2479],['t11_73',431],['t13_73',1000],['t15_73',928],['t17_73',1309],['t19_73',1810],['t1a_73',2123],['t1c_73',1319],['t1e_73',2346],['t1h_73',2548],['t1k_73',2276],['t1l_73',2627],['t1m_73',2730],['t1n_73',2687],['t1o_73',2752],['t1p_73',599]];
+function load73(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f73);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 62;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_73");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

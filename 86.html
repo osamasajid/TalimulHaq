@@ -1,0 +1,255 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page86</title>
+</head>
+
+<body onload="load86()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_86{left:460px;top:1136px;}
+#t2_86{left:119px;top:680px;}
+#t3_86{left:114px;top:715px;}
+#t4_86{left:521px;top:715px;}
+#t5_86{left:110px;top:734px;}
+#t6_86{left:110px;top:754px;}
+#t7_86{left:110px;top:774px;}
+#t8_86{left:406px;top:774px;}
+#t9_86{left:415px;top:774px;}
+#ta_86{left:469px;top:774px;}
+#tb_86{left:477px;top:774px;}
+#tc_86{left:487px;top:774px;}
+#td_86{left:493px;top:774px;}
+#te_86{left:114px;top:809px;}
+#tf_86{left:114px;top:844px;}
+#tg_86{left:309px;top:844px;}
+#th_86{left:353px;top:844px;}
+#ti_86{left:362px;top:844px;}
+#tj_86{left:554px;top:844px;}
+#tk_86{left:605px;top:844px;}
+#tl_86{left:614px;top:844px;}
+#tm_86{left:110px;top:863px;}
+#tn_86{left:522px;top:863px;}
+#to_86{left:564px;top:863px;}
+#tp_86{left:110px;top:883px;}
+#tq_86{left:165px;top:883px;}
+#tr_86{left:230px;top:883px;}
+#ts_86{left:478px;top:883px;}
+#tt_86{left:513px;top:883px;}
+#tu_86{left:110px;top:903px;}
+#tv_86{left:110px;top:938px;}
+#tw_86{left:643px;top:938px;}
+#tx_86{left:110px;top:973px;}
+#ty_86{left:110px;top:992px;}
+#tz_86{left:110px;top:1027px;}
+#t10_86{left:560px;top:1027px;}
+#t11_86{left:110px;top:1062px;}
+#t12_86{left:110px;top:1081px;}
+#t13_86{left:187px;top:1081px;}
+#t14_86{left:195px;top:1081px;}
+#t15_86{left:110px;top:1101px;}
+
+.s1_86{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT86;
+	color: rgb(0,0,0);
+}
+
+.s3_86{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT86;
+	color: rgb(0,0,0);
+}
+
+.s2_86{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT86;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT86;
+	src :url("86/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT86;
+	src :url("86/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_86" class="t s1_86">86</div>
+<div id="t2_86" class="t s2_86">2.THE KAFAN OF A FEMALE</div>
+<div id="t3_86" class="t s3_86">The Kafan of a female should consist of five white garments</div>
+<div id="t4_86" class="t s3_86">, (Two winding sheet, a long loose sleeveless </div>
+<div id="t5_86" class="t s3_86">shirt{From shoulder to feet}, a waist wrapper, and a head veil ), these should be large enough to cover the </div>
+<div id="t6_86" class="t s3_86">whole body and may be perfumed with incense, a loin cloth may be used to bind the upper part of her </div>
+<div id="t7_86" class="t s3_86">legs, use 4 tie ropes, each one is 7 feet long</div>
+<div id="t8_86" class="t s2_86">(</div>
+<div id="t9_86" class="t s3_86">Figure (</div>
+<div id="ta_86" class="t s2_86">2</div>
+<div id="tb_86" class="t s3_86">) </div>
+<div id="tc_86" class="t s2_86">)</div>
+<div id="td_86" class="t s3_86">. </div>
+<div id="te_86" class="t s2_86">STEPS OF SHROUDING :</div>
+<div id="tf_86" class="t s3_86">The garments are spread out </div>
+<div id="tg_86" class="t s2_86">( First</div>
+<div id="th_86" class="t s3_86">:</div>
+<div id="ti_86" class="t s3_86">winding sheets {7 x 7 feet}, </div>
+<div id="tj_86" class="t s2_86">Second</div>
+<div id="tk_86" class="t s3_86">:</div>
+<div id="tl_86" class="t s3_86">the long loose sleeveless shirt </div>
+<div id="tm_86" class="t s3_86">{3 1/2 x 14 feet, with a hole in the middle line for the head}, </div>
+<div id="tn_86" class="t s2_86">Third</div>
+<div id="to_86" class="t s3_86">: waist wrapper {6 feet x 3 1/2 feet }, </div>
+<div id="tp_86" class="t s2_86">Fourth</div>
+<div id="tq_86" class="t s3_86">head veil</div>
+<div id="tr_86" class="t s3_86">{a 4x4 square feet white sheet}, and </div>
+<div id="ts_86" class="t s2_86">Fifth</div>
+<div id="tt_86" class="t s3_86">: the loin cloth {12 inches wide x 4 feet long} </div>
+<div id="tu_86" class="t s2_86">).</div>
+<div id="tv_86" class="t s3_86">The deceased, covered with a sheet, is lifted and laid on her back on the shroud</div>
+<div id="tw_86" class="t s2_86">.</div>
+<div id="tx_86" class="t s3_86">Some scent or perfume may be put on those parts of the body upon which one rests during prostration that </div>
+<div id="ty_86" class="t s3_86">is the forehead, nose, hands, knees, and feet. </div>
+<div id="tz_86" class="t s3_86">The loin cloth is bound round her upper legs (Acts like underwear)</div>
+<div id="t10_86" class="t s2_86">.</div>
+<div id="t11_86" class="t s3_86">The waist wrapper is tied in place. Put on the sleeveless shirt (Long to cover the body from the shoulder </div>
+<div id="t12_86" class="t s3_86">to the feet) </div>
+<div id="t13_86" class="t s2_86">. </div>
+<div id="t14_86" class="t s3_86">Put the head veil. The deceased’s left hand should be placed on her chest, then put her right </div>
+<div id="t15_86" class="t s3_86">hand on the left hand like the way in the Salaat (Prayer). </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg86Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg86"><object width="935" height="1210" data="86/86.svg" type="image/svg+xml" id="pdf86" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld86" type="text/javascript">
+
+var isIE = false;
+var f86 = [['t2_86',926],['t3_86',1626],['t4_86',1215],['t5_86',2850],['t6_86',2733],['t7_86',1165],['t9_86',214],['te_86',784],['tf_86',760],['tg_86',177],['ti_86',752],['tl_86',798],['tm_86',1629],['to_86',1002],['tq_86',244],['tr_86',974],['tt_86',1231],['tv_86',2131],['tx_86',2856],['ty_86',1195],['tz_86',1799],['t11_86',2797],['t12_86',291],['t14_86',2461],['t15_86',1517]];
+function load86(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f86);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 42;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_86");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

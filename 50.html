@@ -1,0 +1,250 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page50</title>
+</head>
+
+<body onload="load50()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_50{left:460px;top:1136px;}
+#t2_50{left:446px;top:504px;}
+#t3_50{left:291px;top:585px;}
+#t4_50{left:288px;top:607px;}
+#t5_50{left:138px;top:636px;}
+#t6_50{left:165px;top:636px;}
+#t7_50{left:165px;top:672px;}
+#t8_50{left:165px;top:690px;}
+#t9_50{left:401px;top:715px;}
+#ta_50{left:280px;top:747px;}
+#tb_50{left:578px;top:747px;}
+#tc_50{left:166px;top:805px;}
+#td_50{left:166px;top:823px;}
+#te_50{left:166px;top:841px;}
+#tf_50{left:166px;top:859px;}
+#tg_50{left:166px;top:877px;}
+#th_50{left:166px;top:894px;}
+#ti_50{left:512px;top:805px;}
+#tj_50{left:512px;top:823px;}
+#tk_50{left:512px;top:841px;}
+#tl_50{left:512px;top:859px;}
+#tm_50{left:512px;top:877px;}
+#tn_50{left:512px;top:894px;}
+#to_50{left:138px;top:943px;}
+#tp_50{left:138px;top:973px;}
+#tq_50{left:165px;top:973px;}
+#tr_50{left:429px;top:999px;}
+#ts_50{left:192px;top:1025px;}
+#tt_50{left:220px;top:1025px;}
+#tu_50{left:217px;top:1060px;}
+#tv_50{left:244px;top:1060px;}
+#tw_50{left:137px;top:1094px;}
+#tx_50{left:165px;top:1094px;}
+
+.s1_50{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT50;
+	color: rgb(0,0,0);
+}
+
+.s4_50{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT50;
+	color: rgb(0,0,0);
+}
+
+.s3_50{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT50;
+	color: rgb(0,0,0);
+}
+
+.s2_50{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT50;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT50;
+	src :url("50/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT50;
+	src :url("50/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT50;
+	src :url("50/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_50" class="t s1_50">50</div>
+<div id="t2_50" class="t s2_50">Part 7 </div>
+<div id="t3_50" class="t s2_50">HOW SHOULD ONE PERFORM TWO RAKAAT </div>
+<div id="t4_50" class="t s2_50">SALAAHACCORDING TO SUNNAH (Hanafi) </div>
+<div id="t5_50" class="t s1_50">1.</div>
+<div id="t6_50" class="t s3_50">BEFORE SALAAH</div>
+<div id="t7_50" class="t s1_50">Ensure that clothes are Pure and make Wudhu. Stand respectfully on a Pure place facing the Qibla. Keep </div>
+<div id="t8_50" class="t s1_50">feet parallel about four fingers apart with toes pointing towards the Qibla and submit totally to Allah. </div>
+<div id="t9_50" class="t s2_50">VERY IMPORTANT </div>
+<div id="ta_50" class="t s2_50">FOR MALES </div>
+<div id="tb_50" class="t s2_50">FOR FEMALES </div>
+<div id="tc_50" class="t s1_50">No garment, jubba or trousers should be allowed to </div>
+<div id="td_50" class="t s1_50">overlap the ankles. It is Makrooh Tahrimi to perform </div>
+<div id="te_50" class="t s1_50">Salaah whilst any garment is overlapping the ankles. </div>
+<div id="tf_50" class="t s1_50">This means that the Farz of Salaah will be considered </div>
+<div id="tg_50" class="t s1_50">as performed but there is very little Sawaab or </div>
+<div id="th_50" class="t s1_50">benefit in such Salaah. </div>
+<div id="ti_50" class="t s1_50">WOMEN also perform their Salaat in the </div>
+<div id="tj_50" class="t s1_50">same way, except for a few differences. </div>
+<div id="tk_50" class="t s1_50">WITHOUT HANDS BEING EXPOSED </div>
+<div id="tl_50" class="t s1_50">WOMEN should raise their hands to the </div>
+<div id="tm_50" class="t s1_50">height of their shoulders when saying </div>
+<div id="tn_50" class="t s1_50">Takbeer Tahrimi.(Allahu Akbar) </div>
+<div id="to_50" class="t s2_50">NIYYAH </div>
+<div id="tp_50" class="t s4_50">•</div>
+<div id="tq_50" class="t s1_50">Make Niyyat (Intention) of whichever Salaah one wishes to perform. </div>
+<div id="tr_50" class="t s3_50">EXAMPLE</div>
+<div id="ts_50" class="t s4_50">•</div>
+<div id="tt_50" class="t s1_50">I am perform two Rak’aats Farz Salaah of Fajr (to please Allah) facing towards the Qibla. </div>
+<div id="tu_50" class="t s4_50">•</div>
+<div id="tv_50" class="t s1_50">When performing Salaah led by an IMAAM, one should also make intention that: </div>
+<div id="tw_50" class="t s4_50">•</div>
+<div id="tx_50" class="t s1_50">I am following this IMAAM. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg50Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg50"><object width="935" height="1210" data="50/50.svg" type="image/svg+xml" id="pdf50" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld50" type="text/javascript">
+
+var isIE = false;
+var f50 = [['t2_50',173],['t3_50',1525],['t4_50',1437],['t6_50',522],['t7_50',2570],['t8_50',2480],['t9_50',644],['ta_50',408],['tb_50',494],['tc_50',1259],['td_50',1299],['te_50',1290],['tf_50',1312],['tg_50',1134],['th_50',555],['ti_50',1011],['tj_50',973],['tk_50',1008],['tl_50',988],['tm_50',922],['tn_50',805],['tq_50',1692],['tt_50',2203],['tv_50',2007],['tx_50',716]];
+function load50(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f50);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 34;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_50");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

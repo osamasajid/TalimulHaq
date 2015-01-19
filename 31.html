@@ -1,0 +1,293 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page31</title>
+</head>
+
+<body onload="load31()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_31{left:460px;top:1136px;}
+#t2_31{left:165px;top:54px;}
+#t3_31{left:165px;top:72px;}
+#t4_31{left:137px;top:105px;}
+#t5_31{left:165px;top:105px;}
+#t6_31{left:165px;top:123px;}
+#t7_31{left:137px;top:156px;}
+#t8_31{left:165px;top:156px;}
+#t9_31{left:165px;top:174px;}
+#ta_31{left:165px;top:192px;}
+#tb_31{left:138px;top:225px;}
+#tc_31{left:165px;top:225px;}
+#td_31{left:165px;top:243px;}
+#te_31{left:138px;top:276px;}
+#tf_31{left:165px;top:276px;}
+#tg_31{left:165px;top:294px;}
+#th_31{left:165px;top:312px;}
+#ti_31{left:138px;top:345px;}
+#tj_31{left:165px;top:345px;}
+#tk_31{left:165px;top:363px;}
+#tl_31{left:165px;top:380px;}
+#tm_31{left:138px;top:414px;}
+#tn_31{left:165px;top:414px;}
+#to_31{left:165px;top:431px;}
+#tp_31{left:138px;top:464px;}
+#tq_31{left:165px;top:464px;}
+#tr_31{left:138px;top:498px;}
+#ts_31{left:165px;top:498px;}
+#tt_31{left:165px;top:515px;}
+#tu_31{left:165px;top:533px;}
+#tv_31{left:434px;top:567px;}
+#tw_31{left:253px;top:616px;}
+#tx_31{left:241px;top:634px;}
+#ty_31{left:290px;top:652px;}
+#tz_31{left:478px;top:652px;}
+#t10_31{left:430px;top:712px;}
+#t11_31{left:138px;top:742px;}
+#t12_31{left:165px;top:742px;}
+#t13_31{left:469px;top:742px;}
+#t14_31{left:165px;top:759px;}
+#t15_31{left:138px;top:793px;}
+#t16_31{left:165px;top:793px;}
+#t17_31{left:138px;top:826px;}
+#t18_31{left:165px;top:826px;}
+#t19_31{left:193px;top:859px;}
+#t1a_31{left:220px;top:859px;}
+#t1b_31{left:193px;top:892px;}
+#t1c_31{left:220px;top:892px;}
+#t1d_31{left:193px;top:925px;}
+#t1e_31{left:220px;top:925px;}
+#t1f_31{left:138px;top:958px;}
+#t1g_31{left:165px;top:958px;}
+#t1h_31{left:138px;top:991px;}
+#t1i_31{left:165px;top:991px;}
+#t1j_31{left:138px;top:1024px;}
+#t1k_31{left:165px;top:1024px;}
+#t1l_31{left:138px;top:1057px;}
+#t1m_31{left:165px;top:1057px;}
+#t1n_31{left:138px;top:1090px;}
+#t1o_31{left:165px;top:1090px;}
+
+.s1_31{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT31;
+	color: rgb(0,0,0);
+}
+
+.s3_31{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT31;
+	color: rgb(0,0,0);
+}
+
+.s2_31{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT31;
+	color: rgb(255,255,255);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT31;
+	src :url("31/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT31;
+	src :url("31/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_31" class="t s1_31">31</div>
+<div id="t2_31" class="t s1_31">only be valid if the gum or cutex is removed and the fingernail washed. There is no need to renew the </div>
+<div id="t3_31" class="t s1_31">Wudhu. </div>
+<div id="t4_31" class="t s1_31">19.</div>
+<div id="t5_31" class="t s1_31">If removal of the ointment from a sore or wound is harmful then it will not be necessary to remove it. If </div>
+<div id="t6_31" class="t s1_31">pouring water over the affected part is also harmful than merely make Masah of the affected part. </div>
+<div id="t7_31" class="t s1_31">20.</div>
+<div id="t8_31" class="t s1_31">If the wound or sore is bandaged and one will experience difficulty in opening and tying the bandage for </div>
+<div id="t9_31" class="t s1_31">Masah purpose, or Masah on the affected part will be harmful, then Masah should be made over the </div>
+<div id="ta_31" class="t s1_31">bandage. </div>
+<div id="tb_31" class="t s1_31">21.</div>
+<div id="tc_31" class="t s1_31">If this difficulty does not exist, then it will be necessary to open the bandage, plaster, etc., and make Masah </div>
+<div id="td_31" class="t s1_31">on the affected part. </div>
+<div id="te_31" class="t s1_31">22.</div>
+<div id="tf_31" class="t s1_31">It is best to make Masah over the whole of the upper surface of the bandage, etc. It is Wajib to make Masah </div>
+<div id="tg_31" class="t s1_31">of more than half the bandage, etc. If only half or less than half the bandage was covered by Masah, the </div>
+<div id="th_31" class="t s1_31">Wudhu will not be valid. </div>
+<div id="ti_31" class="t s1_31">23.</div>
+<div id="tj_31" class="t s1_31">After making Masah if the bandage, plaster, etc., comes loose and it is realized that the affected part has </div>
+<div id="tk_31" class="t s1_31">healed, then the Mash made will not be valid. It will now be necessary to wash the particular part. It is not </div>
+<div id="tl_31" class="t s1_31">necessary to renew the Wudhu. </div>
+<div id="tm_31" class="t s1_31">24.</div>
+<div id="tn_31" class="t s1_31">If the beard is thick then it is not Farz for the water to reach the skin under it during Wudhu. If the beard </div>
+<div id="to_31" class="t s1_31">grows sparsely so that the skin under it can be seen, then it is Farz for the water to reach the skin as well. </div>
+<div id="tp_31" class="t s1_31">25.</div>
+<div id="tq_31" class="t s1_31">Liquid that comes out of the eye while yawning, does not break Wudhu. </div>
+<div id="tr_31" class="t s1_31">26.</div>
+<div id="ts_31" class="t s1_31">Fingernails should be kept short. Dirt accumulates under long fingernails. Wudhu and Ghusl will not be </div>
+<div id="tt_31" class="t s1_31">valid if the dirt is of such a nature that it does not allow water to seep through. It is also against Islamic </div>
+<div id="tu_31" class="t s1_31">hygiene and Taharat rules to keep long fingernails and to allow dirt to accumulate under them. </div>
+<div id="tv_31" class="t s2_31">Bad Odur</div>
+<div id="tw_31" class="t s1_31">The odur of cigarettes, cigars, raw onions, etc. is offensive to both the </div>
+<div id="tx_31" class="t s1_31">Musallies and the Malaa'ikah (Angels). If one has smoked then the mouth </div>
+<div id="ty_31" class="t s1_31">should be thoroughly washed </div>
+<div id="tz_31" class="t s1_31">before entering the Masjid. </div>
+<div id="t10_31" class="t s3_31">QUESTIONS </div>
+<div id="t11_31" class="t s1_31">1.</div>
+<div id="t12_31" class="t s1_31">Explain the term NAJAASAT and the difference</div>
+<div id="t13_31" class="t s1_31">between NAJAASATE HAQEEQI and NAJAASATE </div>
+<div id="t14_31" class="t s1_31">HUKMI. </div>
+<div id="t15_31" class="t s1_31">2.</div>
+<div id="t16_31" class="t s1_31">Explain the terms NAJAASATE GHALIZAH and NAJAASATE KHAFIFAH and give examples for each. </div>
+<div id="t17_31" class="t s1_31">3.</div>
+<div id="t18_31" class="t s1_31">Explain the terms : </div>
+<div id="t19_31" class="t s1_31">1.</div>
+<div id="t1a_31" class="t s1_31">Hadas </div>
+<div id="t1b_31" class="t s1_31">2.</div>
+<div id="t1c_31" class="t s1_31">Hadase Asghar </div>
+<div id="t1d_31" class="t s1_31">3.</div>
+<div id="t1e_31" class="t s1_31">Hadase Akbar. </div>
+<div id="t1f_31" class="t s1_31">4.</div>
+<div id="t1g_31" class="t s1_31">Explain the terms NAJIS. </div>
+<div id="t1h_31" class="t s1_31">5.</div>
+<div id="t1i_31" class="t s1_31">What is the difference between WUDHU and GHUSL? </div>
+<div id="t1j_31" class="t s1_31">6.</div>
+<div id="t1k_31" class="t s1_31">Mention 6 types of water that can be used to perform Wudhu or Ghusl. </div>
+<div id="t1l_31" class="t s1_31">7.</div>
+<div id="t1m_31" class="t s1_31">Name 5 types of water with which Wudhu or Ghusl is not permissible. </div>
+<div id="t1n_31" class="t s1_31">8.</div>
+<div id="t1o_31" class="t s1_31">NIYAAT for Wudhu is: Farz, Sunnats or Mustahab? </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg31Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg31"><object width="935" height="1210" data="31/31.svg" type="image/svg+xml" id="pdf31" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld31" type="text/javascript">
+
+var isIE = false;
+var f31 = [['t2_31',2492],['t5_31',2539],['t6_31',2387],['t8_31',2567],['t9_31',2447],['tc_31',2628],['td_31',490],['tf_31',2640],['tg_31',2540],['th_31',612],['tj_31',2549],['tk_31',2601],['tl_31',769],['tn_31',2560],['to_31',2570],['tq_31',1771],['ts_31',2548],['tt_31',2525],['tu_31',2315],['tv_31',264],['tw_31',1714],['tx_31',1808],['ty_31',721],['tz_31',664],['t12_31',1198],['t13_31',1336],['t16_31',2635],['t18_31',464],['t1c_31',373],['t1e_31',364],['t1g_31',629],['t1i_31',1366],['t1k_31',1742],['t1m_31',1732],['t1o_31',1294]];
+function load31(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f31);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 61;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_31");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

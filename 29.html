@@ -1,0 +1,280 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page29</title>
+</head>
+
+<body onload="load29()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_29{left:460px;top:1136px;}
+#t2_29{left:137px;top:54px;}
+#t3_29{left:165px;top:54px;}
+#t4_29{left:137px;top:87px;}
+#t5_29{left:165px;top:87px;}
+#t6_29{left:137px;top:120px;}
+#t7_29{left:165px;top:120px;}
+#t8_29{left:137px;top:153px;}
+#t9_29{left:165px;top:153px;}
+#ta_29{left:137px;top:186px;}
+#tb_29{left:165px;top:186px;}
+#tc_29{left:137px;top:220px;}
+#td_29{left:165px;top:220px;}
+#te_29{left:137px;top:253px;}
+#tf_29{left:165px;top:253px;}
+#tg_29{left:137px;top:286px;}
+#th_29{left:165px;top:286px;}
+#ti_29{left:362px;top:311px;}
+#tj_29{left:110px;top:340px;}
+#tk_29{left:110px;top:377px;}
+#tl_29{left:138px;top:413px;}
+#tm_29{left:165px;top:413px;}
+#tn_29{left:138px;top:446px;}
+#to_29{left:165px;top:446px;}
+#tp_29{left:138px;top:480px;}
+#tq_29{left:165px;top:480px;}
+#tr_29{left:138px;top:513px;}
+#ts_29{left:165px;top:513px;}
+#tt_29{left:138px;top:546px;}
+#tu_29{left:165px;top:546px;}
+#tv_29{left:358px;top:571px;}
+#tw_29{left:110px;top:600px;}
+#tx_29{left:110px;top:621px;}
+#ty_29{left:110px;top:658px;}
+#tz_29{left:138px;top:695px;}
+#t10_29{left:165px;top:695px;}
+#t11_29{left:138px;top:728px;}
+#t12_29{left:165px;top:728px;}
+#t13_29{left:138px;top:761px;}
+#t14_29{left:165px;top:761px;}
+#t15_29{left:138px;top:794px;}
+#t16_29{left:165px;top:794px;}
+#t17_29{left:366px;top:819px;}
+#t18_29{left:110px;top:848px;}
+#t19_29{left:110px;top:870px;}
+#t1a_29{left:138px;top:906px;}
+#t1b_29{left:165px;top:906px;}
+#t1c_29{left:138px;top:939px;}
+#t1d_29{left:165px;top:939px;}
+#t1e_29{left:138px;top:972px;}
+#t1f_29{left:165px;top:972px;}
+#t1g_29{left:138px;top:1006px;}
+#t1h_29{left:165px;top:1006px;}
+#t1i_29{left:138px;top:1039px;}
+#t1j_29{left:165px;top:1039px;}
+#t1k_29{left:138px;top:1072px;}
+#t1l_29{left:165px;top:1072px;}
+#t1m_29{left:138px;top:1105px;}
+#t1n_29{left:165px;top:1105px;}
+
+.s1_29{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT29;
+	color: rgb(0,0,0);
+}
+
+.s2_29{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT29;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT29;
+	src :url("29/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_29" class="t s1_29">29</div>
+<div id="t2_29" class="t s1_29">6.</div>
+<div id="t3_29" class="t s1_29">Passing water into the nostrils thrice. </div>
+<div id="t4_29" class="t s1_29">7.</div>
+<div id="t5_29" class="t s1_29">KHILAL i.e. to pass wet fingers into the beard. </div>
+<div id="t6_29" class="t s1_29">8.</div>
+<div id="t7_29" class="t s1_29">KHILAL of the fingers and toes. </div>
+<div id="t8_29" class="t s1_29">9.</div>
+<div id="t9_29" class="t s1_29">Washing of each part THREE times. </div>
+<div id="ta_29" class="t s1_29">10.</div>
+<div id="tb_29" class="t s1_29">MASAH of the whole head ONCE. </div>
+<div id="tc_29" class="t s1_29">11.</div>
+<div id="td_29" class="t s1_29">MASAH of both the ears ONCE. </div>
+<div id="te_29" class="t s1_29">12.</div>
+<div id="tf_29" class="t s1_29">Wudhu done SYSTEMATICALLY. </div>
+<div id="tg_29" class="t s1_29">13.</div>
+<div id="th_29" class="t s1_29">Washing of each part one after the other without pause, so no part dries up before the Wudhu is completed. </div>
+<div id="ti_29" class="t s2_29">There are 5 Mustahab in Wudhu </div>
+<div id="tj_29" class="t s2_29">Carrying out a MUSTAHAB act brings SAWAAB or reward but no sin if left out. </div>
+<div id="tk_29" class="t s2_29">The items MUSTAHAB in WUDHU are: </div>
+<div id="tl_29" class="t s1_29">1.</div>
+<div id="tm_29" class="t s1_29">To begin from the RIGHT. </div>
+<div id="tn_29" class="t s1_29">2.</div>
+<div id="to_29" class="t s1_29">To make Masah of the neck. </div>
+<div id="tp_29" class="t s1_29">3.</div>
+<div id="tq_29" class="t s1_29">Not to take ASSISTANCE from anyone. </div>
+<div id="tr_29" class="t s1_29">4.</div>
+<div id="ts_29" class="t s1_29">To face the OIBLA </div>
+<div id="tt_29" class="t s1_29">5.</div>
+<div id="tu_29" class="t s1_29">To sit on the high and clean place. </div>
+<div id="tv_29" class="t s2_29">There are 4 Makroohat in Wudhu </div>
+<div id="tw_29" class="t s2_29">Committing of a MAKROOH act in Wudhu causes the full BLESSING of Wudhu to be lost </div>
+<div id="tx_29" class="t s2_29">although the Wudhu will not have to be REPEATED. </div>
+<div id="ty_29" class="t s2_29">The items MAKROOH in WUDHU are: </div>
+<div id="tz_29" class="t s1_29">1.</div>
+<div id="t10_29" class="t s1_29">To make Wudhu in a DIRTY PLACE. </div>
+<div id="t11_29" class="t s1_29">2.</div>
+<div id="t12_29" class="t s1_29">To clean the nose with the RIGHT HAND </div>
+<div id="t13_29" class="t s1_29">3.</div>
+<div id="t14_29" class="t s1_29">To talk of WORLDLY AFFAIRS. </div>
+<div id="t15_29" class="t s1_29">4.</div>
+<div id="t16_29" class="t s1_29">To do WUDHU against the SUNNAT. </div>
+<div id="t17_29" class="t s2_29">There are 8 Nawaqis in Wudhu </div>
+<div id="t18_29" class="t s2_29">EIGHT things NULLIFY (break) the WUDHU. They are called NAWAQISE (breakers of) </div>
+<div id="t19_29" class="t s2_29">WUDHU. </div>
+<div id="t1a_29" class="t s1_29">1.</div>
+<div id="t1b_29" class="t s1_29">Discharging of URINE, STOOL or the coming out of anything from the PRIVATE PARTS. </div>
+<div id="t1c_29" class="t s1_29">2.</div>
+<div id="t1d_29" class="t s1_29">Discharging of GASES. </div>
+<div id="t1e_29" class="t s1_29">3.</div>
+<div id="t1f_29" class="t s1_29">VOMITING IS MOUTHFUL </div>
+<div id="t1g_29" class="t s1_29">4.</div>
+<div id="t1h_29" class="t s1_29">To fall ASLEEP lying down or by resting the body against something. </div>
+<div id="t1i_29" class="t s1_29">5.</div>
+<div id="t1j_29" class="t s1_29">To FAINT due to some illness or any other reason. </div>
+<div id="t1k_29" class="t s1_29">6.</div>
+<div id="t1l_29" class="t s1_29">Becoming INSANE or going MAD. </div>
+<div id="t1m_29" class="t s1_29">7.</div>
+<div id="t1n_29" class="t s1_29">LAUGHING, ALOUD whilst in SALAAH. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg29Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg29"><object width="935" height="1210" data="29/29.svg" type="image/svg+xml" id="pdf29" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld29" type="text/javascript">
+
+var isIE = false;
+var f29 = [['t3_29',905],['t5_29',1160],['t7_29',804],['t9_29',898],['tb_29',872],['td_29',814],['tf_29',895],['th_29',2630],['ti_29',951],['tj_29',2413],['tk_29',1222],['tm_29',662],['to_29',697],['tq_29',1001],['ts_29',478],['tu_29',841],['tv_29',984],['tw_29',2701],['tx_29',1574],['ty_29',1189],['t10_29',945],['t12_29',1040],['t14_29',847],['t16_29',955],['t17_29',918],['t18_29',2679],['t1b_29',2264],['t1d_29',591],['t1f_29',736],['t1h_29',1727],['t1j_29',1250],['t1l_29',887],['t1n_29',1077]];
+function load29(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f29);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 60;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_29");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

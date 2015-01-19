@@ -1,0 +1,262 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page67</title>
+</head>
+
+<body onload="load67()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_67{left:460px;top:1136px;}
+#t2_67{left:473px;top:58px;}
+#t3_67{left:110px;top:108px;}
+#t4_67{left:344px;top:108px;}
+#t5_67{left:473px;top:87px;}
+#t6_67{left:473px;top:108px;}
+#t7_67{left:473px;top:130px;}
+#t8_67{left:569px;top:108px;}
+#t9_67{left:110px;top:158px;}
+#ta_67{left:344px;top:158px;}
+#tb_67{left:569px;top:158px;}
+#tc_67{left:614px;top:158px;}
+#td_67{left:684px;top:158px;}
+#te_67{left:110px;top:208px;}
+#tf_67{left:344px;top:208px;}
+#tg_67{left:473px;top:186px;}
+#th_67{left:473px;top:208px;}
+#ti_67{left:473px;top:229px;}
+#tj_67{left:569px;top:208px;}
+#tk_67{left:614px;top:208px;}
+#tl_67{left:684px;top:208px;}
+#tm_67{left:729px;top:208px;}
+#tn_67{left:787px;top:208px;}
+#to_67{left:110px;top:262px;}
+#tp_67{left:110px;top:283px;}
+#tq_67{left:253px;top:272px;}
+#tr_67{left:276px;top:272px;}
+#ts_67{left:300px;top:272px;}
+#tt_67{left:323px;top:272px;}
+#tu_67{left:347px;top:272px;}
+#tv_67{left:494px;top:262px;}
+#tw_67{left:494px;top:283px;}
+#tx_67{left:110px;top:337px;}
+#ty_67{left:275px;top:316px;}
+#tz_67{left:275px;top:337px;}
+#t10_67{left:275px;top:359px;}
+#t11_67{left:649px;top:316px;}
+#t12_67{left:649px;top:337px;}
+#t13_67{left:649px;top:359px;}
+#t14_67{left:110px;top:392px;}
+#t15_67{left:286px;top:392px;}
+#t16_67{left:469px;top:392px;}
+#t17_67{left:367px;top:468px;}
+#t18_67{left:141px;top:511px;}
+#t19_67{left:123px;top:532px;}
+#t1a_67{left:117px;top:553px;}
+#t1b_67{left:167px;top:575px;}
+
+.s1_67{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT67;
+	color: rgb(0,0,0);
+}
+
+.s2_67{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT67;
+	color: rgb(0,0,0);
+}
+
+.s3_67{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT67;
+	color: rgb(250,250,250);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT67;
+	src :url("67/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_67" class="t s1_67">67</div>
+<div id="t2_67" class="t s2_67">Muakkada </div>
+<div id="t3_67" class="t s2_67">Asr </div>
+<div id="t4_67" class="t s2_67">8 </div>
+<div id="t5_67" class="t s2_67">4 </div>
+<div id="t6_67" class="t s2_67">Ghair </div>
+<div id="t7_67" class="t s2_67">Muakkada </div>
+<div id="t8_67" class="t s2_67">4 </div>
+<div id="t9_67" class="t s2_67">Maghreb </div>
+<div id="ta_67" class="t s2_67">7 </div>
+<div id="tb_67" class="t s2_67">3 </div>
+<div id="tc_67" class="t s2_67">2 </div>
+<div id="td_67" class="t s2_67">2 </div>
+<div id="te_67" class="t s2_67">Esha </div>
+<div id="tf_67" class="t s2_67">17 </div>
+<div id="tg_67" class="t s2_67">4 </div>
+<div id="th_67" class="t s2_67">Ghair </div>
+<div id="ti_67" class="t s2_67">Muakkada </div>
+<div id="tj_67" class="t s2_67">4 </div>
+<div id="tk_67" class="t s2_67">2 </div>
+<div id="tl_67" class="t s2_67">2 </div>
+<div id="tm_67" class="t s2_67">3 </div>
+<div id="tn_67" class="t s2_67">2 </div>
+<div id="to_67" class="t s2_67">Jumuah </div>
+<div id="tp_67" class="t s2_67">14 Rak’aats </div>
+<div id="tq_67" class="t s2_67">4 </div>
+<div id="tr_67" class="t s2_67">2 </div>
+<div id="ts_67" class="t s2_67">4 </div>
+<div id="tt_67" class="t s2_67">2 </div>
+<div id="tu_67" class="t s2_67">2 (Optional) </div>
+<div id="tv_67" class="t s2_67">There is no Zuhur Salaat </div>
+<div id="tw_67" class="t s2_67">after Friday (Jumuah) Salaat. </div>
+<div id="tx_67" class="t s2_67">Eid - 2 Rak’aats </div>
+<div id="ty_67" class="t s2_67">No Azan or Iqaama for Eidul-Fitr </div>
+<div id="tz_67" class="t s2_67">or Eidul-Adha Salaat. No Nafl Salaat </div>
+<div id="t10_67" class="t s2_67">before and after Eid Salaat. </div>
+<div id="t11_67" class="t s2_67">2 Rak’aats Wajib </div>
+<div id="t12_67" class="t s2_67">with six extra </div>
+<div id="t13_67" class="t s2_67">TAKBEERS. </div>
+<div id="t14_67" class="t s2_67">Janaza Salaah </div>
+<div id="t15_67" class="t s2_67">4 Takbirs only </div>
+<div id="t16_67" class="t s2_67">No Azan, Iqaama or Rak’aats </div>
+<div id="t17_67" class="t s3_67">TARAWIH 20 RAKAATS </div>
+<div id="t18_67" class="t s2_67">Taraaweeh Salaah is Sunnah -E - Muakkada for MEN and WOMEN during the month of </div>
+<div id="t19_67" class="t s2_67">RAMADAAN only. The twenty Rak’aats of Taraaweeh Salaah are performed after the FARZ </div>
+<div id="t1a_67" class="t s2_67">and SUNNAT of ESHA Salaah The 20 Rak’aats with 10 Salaams are Masnoon. i.e. One should </div>
+<div id="t1b_67" class="t s2_67">make niyyat for two raka'ats of Taraawih each time, and WITR Salaah there after. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg67Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg67"><object width="935" height="1210" data="67/67.svg" type="image/svg+xml" id="pdf67" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld67" type="text/javascript">
+
+var isIE = false;
+var f67 = [['tp_67',348],['tu_67',361],['tv_67',725],['tw_67',856],['tx_67',475],['ty_67',988],['tz_67',1092],['t10_67',801],['t11_67',509],['t12_67',399],['t14_67',410],['t15_67',428],['t16_67',869],['t17_67',800],['t18_67',2614],['t19_67',2755],['t1a_67',2807],['t1b_67',2406]];
+function load67(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f67);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 48;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_67");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page93</title>
+</head>
+
+<body onload="load93()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_93{left:460px;top:1136px;}
+#t2_93{left:137px;top:54px;}
+#t3_93{left:165px;top:54px;}
+#t4_93{left:165px;top:72px;}
+#t5_93{left:137px;top:105px;}
+#t6_93{left:165px;top:105px;}
+#t7_93{left:165px;top:123px;}
+#t8_93{left:165px;top:141px;}
+#t9_93{left:192px;top:174px;}
+#ta_93{left:220px;top:174px;}
+#tb_93{left:192px;top:207px;}
+#tc_93{left:220px;top:207px;}
+#td_93{left:192px;top:240px;}
+#te_93{left:220px;top:240px;}
+#tf_93{left:192px;top:273px;}
+#tg_93{left:220px;top:273px;}
+#th_93{left:137px;top:306px;}
+#ti_93{left:165px;top:306px;}
+#tj_93{left:165px;top:324px;}
+#tk_93{left:165px;top:342px;}
+#tl_93{left:137px;top:375px;}
+#tm_93{left:165px;top:375px;}
+#tn_93{left:165px;top:393px;}
+#to_93{left:165px;top:411px;}
+#tp_93{left:137px;top:444px;}
+#tq_93{left:165px;top:444px;}
+#tr_93{left:165px;top:462px;}
+#ts_93{left:165px;top:480px;}
+#tt_93{left:165px;top:498px;}
+#tu_93{left:165px;top:515px;}
+#tv_93{left:137px;top:549px;}
+#tw_93{left:165px;top:549px;}
+#tx_93{left:165px;top:566px;}
+#ty_93{left:165px;top:584px;}
+#tz_93{left:137px;top:617px;}
+#t10_93{left:165px;top:617px;}
+#t11_93{left:165px;top:635px;}
+#t12_93{left:137px;top:668px;}
+#t13_93{left:165px;top:668px;}
+#t14_93{left:137px;top:701px;}
+#t15_93{left:165px;top:701px;}
+#t16_93{left:165px;top:719px;}
+#t17_93{left:165px;top:737px;}
+#t18_93{left:137px;top:770px;}
+#t19_93{left:165px;top:770px;}
+#t1a_93{left:293px;top:895px;}
+#t1b_93{left:375px;top:916px;}
+#t1c_93{left:138px;top:945px;}
+#t1d_93{left:165px;top:945px;}
+#t1e_93{left:165px;top:963px;}
+#t1f_93{left:165px;top:981px;}
+#t1g_93{left:138px;top:1014px;}
+#t1h_93{left:165px;top:1014px;}
+#t1i_93{left:165px;top:1032px;}
+#t1j_93{left:138px;top:1065px;}
+#t1k_93{left:165px;top:1065px;}
+#t1l_93{left:137px;top:1098px;}
+#t1m_93{left:165px;top:1098px;}
+
+.s1_93{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT93;
+	color: rgb(0,0,0);
+}
+
+.s2_93{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT93;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT93;
+	src :url("93/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_93" class="t s1_93">93</div>
+<div id="t2_93" class="t s1_93">6.</div>
+<div id="t3_93" class="t s1_93">The nostrils, ears and mouth should be closed with cotton wool to prevent water from entering the body </div>
+<div id="t4_93" class="t s1_93">during the Ghusl. </div>
+<div id="t5_93" class="t s1_93">7.</div>
+<div id="t6_93" class="t s1_93">If the deceased has reached the age of puberty, and on whom salah was farz, he must be given WUDHU. </div>
+<div id="t7_93" class="t s1_93">This Wudhu is similar to that of Salaah, with the exception of GARGLING and putting water into the </div>
+<div id="t8_93" class="t s1_93">NOSTRILS. The proper sequence should be to wash : </div>
+<div id="t9_93" class="t s1_93">1.</div>
+<div id="ta_93" class="t s1_93">The FACE. </div>
+<div id="tb_93" class="t s1_93">2.</div>
+<div id="tc_93" class="t s1_93">ARMS to the ELBOWS. </div>
+<div id="td_93" class="t s1_93">3.</div>
+<div id="te_93" class="t s1_93">MASAH of the HEAD and </div>
+<div id="tf_93" class="t s1_93">4.</div>
+<div id="tg_93" class="t s1_93">FEET up to the ANKLES. </div>
+<div id="th_93" class="t s1_93">8.</div>
+<div id="ti_93" class="t s1_93">If the dead person is in the state of JANAABAT, HAIZ or NIFAAS, (a state in which GHUSL is WAAJIB </div>
+<div id="tj_93" class="t s1_93">on him/her), then the mouth HAS TO be gargled and nostrils be made wet. This can be done with a little </div>
+<div id="tk_93" class="t s1_93">bit of cotton wool. </div>
+<div id="tl_93" class="t s1_93">9.</div>
+<div id="tm_93" class="t s1_93">After Wudhu, the head and beard should first be washed with soap or any other cleaning agent. If these are </div>
+<div id="tn_93" class="t s1_93">not readily available, pure clean water will suffice. The temperature of the water must be that which a </div>
+<div id="to_93" class="t s1_93">living person normally uses when bathing. </div>
+<div id="tp_93" class="t s1_93">10.</div>
+<div id="tq_93" class="t s1_93">Thereafter the body should be tilted onto its left side to allow the right side to be washed first. Warm water </div>
+<div id="tr_93" class="t s1_93">should now be poured over the body from head to the toes once, and the body should be washed with soap </div>
+<div id="ts_93" class="t s1_93">until the water has reached the bottom, (left side). The body should now be washed again twice by pouring </div>
+<div id="tt_93" class="t s1_93">water from head to toe. The body should then be turned onto it's right side and the left side bathed </div>
+<div id="tu_93" class="t s1_93">similarly. </div>
+<div id="tv_93" class="t s1_93">11.</div>
+<div id="tw_93" class="t s1_93">Thereafter the body should be lifted slightly to a sitting position, and the stomach be gently massage with a </div>
+<div id="tx_93" class="t s1_93">downward stroke. Whatever comes out of the body should be washed away. The WUDHU and GHUSI </div>
+<div id="ty_93" class="t s1_93">need NOT be REPEATED in case any impurity does come out. </div>
+<div id="tz_93" class="t s1_93">12.</div>
+<div id="t10_93" class="t s1_93">The body should since again be turned onto its left side and camphor water poured over it from head to </div>
+<div id="t11_93" class="t s1_93">Toe three times. </div>
+<div id="t12_93" class="t s1_93">13.</div>
+<div id="t13_93" class="t s1_93">All the cotton wool should now removed from the mouth, ears and nose. </div>
+<div id="t14_93" class="t s1_93">14.</div>
+<div id="t15_93" class="t s1_93">With this, the Ghusl is complete and the body could be wiped with a towel or a piece of material. The </div>
+<div id="t16_93" class="t s1_93">SATR must be kept covered. The FIRST Tehband will be wet due to the Ghusl. It should thus be changed </div>
+<div id="t17_93" class="t s1_93">for a second one. Care should be taken that while doing this the SATR is NOT exposed. </div>
+<div id="t18_93" class="t s1_93">15.</div>
+<div id="t19_93" class="t s1_93">The body should then be wrapped in a sheet and carried carefully onto the Kafn. </div>
+<div id="t1a_93" class="t s2_93">HOW THE KAFN SHOULD BE PUT ON MALE: </div>
+<div id="t1b_93" class="t s2_93">MASNOON SEQENCE. </div>
+<div id="t1c_93" class="t s1_93">1.</div>
+<div id="t1d_93" class="t s1_93">First spread the LIFAFAH on the floor, then on it the IZAAR and on it that portion of the QAMEES that </div>
+<div id="t1e_93" class="t s1_93">will be under the body. The portion that will cover the top of the body should be folded and put at the head </div>
+<div id="t1f_93" class="t s1_93">side. </div>
+<div id="t1g_93" class="t s1_93">2.</div>
+<div id="t1h_93" class="t s1_93">Lower the body gently onto the Kafn and cover the top of the belly up to the calf with the folded portion of </div>
+<div id="t1i_93" class="t s1_93">the Qamees. </div>
+<div id="t1j_93" class="t s1_93">3.</div>
+<div id="t1k_93" class="t s1_93">Remove the TEHBAND and sheet used for covering the SATR. </div>
+<div id="t1l_93" class="t s1_93">4.</div>
+<div id="t1m_93" class="t s1_93">Rub ITR or HUNOOT on the HEAD and BEARD. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg93Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg93"><object width="935" height="1210" data="93/93.svg" type="image/svg+xml" id="pdf93" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld93" type="text/javascript">
+
+var isIE = false;
+var f93 = [['t3_93',2545],['t4_93',428],['t6_93',2573],['t7_93',2494],['t8_93',1324],['ta_93',282],['tc_93',609],['te_93',668],['tg_93',649],['ti_93',2623],['tj_93',2561],['tk_93',453],['tm_93',2624],['tn_93',2493],['to_93',1042],['tq_93',2620],['tr_93',2614],['ts_93',2620],['tt_93',2402],['tw_93',2626],['tx_93',2535],['ty_93',1556],['t10_93',2530],['t11_93',395],['t13_93',1778],['t15_93',2492],['t16_93',2598],['t17_93',2160],['t19_93',1972],['t1a_93',1505],['t1b_93',735],['t1d_93',2571],['t1e_93',2623],['t1h_93',2628],['t1i_93',302],['t1k_93',1570],['t1m_93',1253]];
+function load93(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f93);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 59;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_93");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

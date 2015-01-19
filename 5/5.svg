@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<style type="text/css"><![CDATA[
+.g1_5{
+fill: #FFFFFF;
+}
+]]></style>
+</defs>
+<path d="M107,86l720,0l0,-31L107,55l0,31Z" class="g1_5" />
+<path d="M107,125l720,0l0,-39L107,86l0,39Z" class="g1_5" />
+<path d="M107,164l720,0l0,-39l-720,0l0,39Z" class="g1_5" />
+<path d="M107,195l720,0l0,-31l-720,0l0,31Z" class="g1_5" />
+<path d="M107,226l720,0l0,-31l-720,0l0,31Z" class="g1_5" />
+<path d="M107,258l720,0l0,-32l-720,0l0,32Z" class="g1_5" />
+<path d="M107,297l720,0l0,-39l-720,0l0,39Z" class="g1_5" />
+<path d="M107,336l720,0l0,-39l-720,0l0,39Z" class="g1_5" />
+<path d="M107,375l720,0l0,-39l-720,0l0,39Z" class="g1_5" />
+<path d="M107,406l720,0l0,-31l-720,0l0,31Z" class="g1_5" />
+<path d="M107,438l720,0l0,-32l-720,0l0,32Z" class="g1_5" />
+<path d="M107,471l720,0l0,-33l-720,0l0,33Z" class="g1_5" />
+<path d="M107,498l720,0l0,-27l-720,0l0,27Z" class="g1_5" />
+<path d="M107,531l720,0l0,-33l-720,0l0,33Z" class="g1_5" />
+<path d="M107,558l720,0l0,-27l-720,0l0,27Z" class="g1_5" />
+<path d="M107,584l720,0l0,-26l-720,0l0,26Z" class="g1_5" />
+<path d="M107,610l720,0l0,-26l-720,0l0,26Z" class="g1_5" />
+<path d="M107,636l720,0l0,-26l-720,0l0,26Z" class="g1_5" />
+<path d="M107,663l720,0l0,-27l-720,0l0,27Z" class="g1_5" />
+<path d="M107,689l720,0l0,-26l-720,0l0,26Z" class="g1_5" />
+<path d="M107,715l720,0l0,-26l-720,0l0,26Z" class="g1_5" />
+<path d="M107,749l720,0l0,-34l-720,0l0,34Z" class="g1_5" />
+<path d="M107,775l720,0l0,-26l-720,0l0,26Z" class="g1_5" />
+<path d="M107,801l720,0l0,-26l-720,0l0,26Z" class="g1_5" />
+<path d="M107,827l720,0l0,-26l-720,0l0,26Z" class="g1_5" />
+<path d="M107,861l720,0l0,-34l-720,0l0,34Z" class="g1_5" />
+<path d="M107,895l720,0l0,-34l-720,0l0,34Z" class="g1_5" />
+<path d="M107,929l720,0l0,-34l-720,0l0,34Z" class="g1_5" />
+<path d="M107,970l720,0l0,-41l-720,0l0,41Z" class="g1_5" />
+<path d="M107,1012l720,0l0,-42l-720,0l0,42Z" class="g1_5" />
+<path d="M107,1050l720,0l0,-38l-720,0l0,38Z" class="g1_5" />
+<path d="M107,1089l720,0l0,-39l-720,0l0,39Z" class="g1_5" />
+<path d="M107,1128l720,0l0,-39l-720,0l0,39Z" class="g1_5" />
+</svg>

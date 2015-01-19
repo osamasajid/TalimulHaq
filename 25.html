@@ -1,0 +1,188 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page25</title>
+</head>
+
+<body onload="load25()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_25{left:460px;top:1136px;}
+#t2_25{left:137px;top:320px;}
+#t3_25{left:165px;top:320px;}
+#t4_25{left:193px;top:552px;}
+#t5_25{left:220px;top:552px;}
+#t6_25{left:220px;top:570px;}
+#t7_25{left:138px;top:603px;}
+#t8_25{left:165px;top:603px;}
+#t9_25{left:165px;top:621px;}
+#ta_25{left:138px;top:937px;}
+#tb_25{left:165px;top:937px;}
+#tc_25{left:165px;top:955px;}
+#td_25{left:165px;top:973px;}
+
+.s1_25{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT25;
+	color: rgb(0,0,0);
+}
+
+.s2_25{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: CourierNewPSMT;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT25;
+	src :url("25/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_25" class="t s1_25">25</div>
+<div id="t2_25" class="t s1_25">4.</div>
+<div id="t3_25" class="t s1_25">Use a MISWAAK for cleaning the teeth and then GARGLE the mouth THREE times. </div>
+<div id="t4_25" class="t s2_25">o</div>
+<div id="t5_25" class="t s1_25">It is SUNNAT to make MISWAAK during WUDHU. By using a Miswaak the reward of a </div>
+<div id="t6_25" class="t s1_25">SALAAH increases 70 times. </div>
+<div id="t7_25" class="t s1_25">5.</div>
+<div id="t8_25" class="t s1_25">Thereafter take water up to the NOSTRILS THREE times with the RIGHT hand and clean the nose with </div>
+<div id="t9_25" class="t s1_25">the LEFT hand. </div>
+<div id="ta_25" class="t s1_25">6.</div>
+<div id="tb_25" class="t s1_25">Then wash your FACE THREE, times. Wash from the </div>
+<div id="tc_25" class="t s1_25">hairy part of the forehead to below the chin and from one </div>
+<div id="td_25" class="t s1_25">ear lobe to the other. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg25Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg25"><object width="935" height="1210" data="25/25.svg" type="image/svg+xml" id="pdf25" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld25" type="text/javascript">
+
+var isIE = false;
+var f25 = [['t3_25',2114],['t5_25',2229],['t6_25',728],['t8_25',2565],['t9_25',386],['tb_25',1338],['tc_25',1405],['td_25',506]];
+function load25(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f25);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 14;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_25");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

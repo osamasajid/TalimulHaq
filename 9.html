@@ -1,0 +1,221 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page9</title>
+</head>
+
+<body onload="load9()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_9{left:464px;top:1136px;}
+#t2_9{left:422px;top:85px;}
+#t3_9{left:400px;top:124px;}
+#t4_9{left:127px;top:331px;}
+#t5_9{left:231px;top:349px;}
+#t6_9{left:404px;top:331px;}
+#t7_9{left:435px;top:349px;}
+#t8_9{left:110px;top:415px;}
+#t9_9{left:110px;top:447px;}
+#ta_9{left:408px;top:485px;}
+#tb_9{left:293px;top:525px;}
+#tc_9{left:635px;top:525px;}
+#td_9{left:321px;top:735px;}
+#te_9{left:320px;top:753px;}
+#tf_9{left:659px;top:733px;}
+#tg_9{left:639px;top:751px;}
+#th_9{left:148px;top:840px;}
+#ti_9{left:213px;top:861px;}
+#tj_9{left:606px;top:857px;}
+#tk_9{left:415px;top:941px;}
+#tl_9{left:256px;top:981px;}
+#tm_9{left:209px;top:1064px;}
+#tn_9{left:292px;top:1064px;}
+#to_9{left:582px;top:1066px;}
+
+.s1_9{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT9;
+	color: rgb(0,0,0);
+}
+
+.s2_9{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT9;
+	color: rgb(0,0,0);
+}
+
+.s3_9{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT9;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT9;
+	src :url("9/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT9;
+	src :url("9/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_9" class="t s1_9">9</div>
+<div id="t2_9" class="t s2_9">Kalima of Islam </div>
+<div id="t3_9" class="t s3_9">The First Kalima</div>
+<div id="t4_9" class="t s1_9">1. (There is none worthy of Worship but </div>
+<div id="t5_9" class="t s1_9">Allah)  </div>
+<div id="t6_9" class="t s1_9">2. (Muhammad (Sallallaahu-Alaihi-Wa-</div>
+<div id="t7_9" class="t s1_9">Sallam) is Allah's Messenger)  </div>
+<div id="t8_9" class="t s2_9">This KALIMA is also called : </div>
+<div id="t9_9" class="t s2_9">KALIMA TAUHEED AND KALIMA TAYYIBAH </div>
+<div id="ta_9" class="t s2_9">The Second Kalima </div>
+<div id="tb_9" class="t s3_9">KALIMA SHAHADAT (TESTIFICATION</div>
+<div id="tc_9" class="t s2_9">) </div>
+<div id="td_9" class="t s1_9">2.There is none worthy of worship but </div>
+<div id="te_9" class="t s1_9">Allah  </div>
+<div id="tf_9" class="t s1_9">1. I testify </div>
+<div id="tg_9" class="t s1_9">that  </div>
+<div id="th_9" class="t s2_9">4. that Muhammad (Sallallaahu-Alaihi-Wa-Sallam) </div>
+<div id="ti_9" class="t s2_9">is Allah's servent and messenger.) </div>
+<div id="tj_9" class="t s1_9">3. and I testify  </div>
+<div id="tk_9" class="t s2_9">The Third Kalima </div>
+<div id="tl_9" class="t s3_9">KALIMA TAMJEED (GLORIFICATION OF Allah.)</div>
+<div id="tm_9" class="t s1_9">2. All praise </div>
+<div id="tn_9" class="t s1_9">be to Allah  </div>
+<div id="to_9" class="t s1_9">1. Glory be to Allah.  </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg9Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg9"><object width="935" height="1210" data="9/9.svg" type="image/svg+xml" id="pdf9" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld9" type="text/javascript">
+
+var isIE = false;
+var f9 = [['t2_9',475],['t3_9',542],['t4_9',993],['t5_9',171],['t6_9',984],['t7_9',748],['t8_9',878],['t9_9',1544],['ta_9',582],['tb_9',1367],['td_9',943],['te_9',151],['tf_9',250],['tg_9',107],['th_9',1511],['ti_9',997],['tj_9',369],['tk_9',529],['tl_9',1691],['tm_9',301],['tn_9',287],['to_9',523]];
+function load9(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f9);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 25;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_9");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

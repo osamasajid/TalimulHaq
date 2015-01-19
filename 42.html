@@ -1,0 +1,260 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page42</title>
+</head>
+
+<body onload="load42()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_42{left:460px;top:1136px;}
+#t2_42{left:226px;top:70px;}
+#t3_42{left:249px;top:107px;}
+#t4_42{left:277px;top:107px;}
+#t5_42{left:249px;top:140px;}
+#t6_42{left:277px;top:140px;}
+#t7_42{left:249px;top:173px;}
+#t8_42{left:277px;top:173px;}
+#t9_42{left:249px;top:206px;}
+#ta_42{left:277px;top:206px;}
+#tb_42{left:249px;top:239px;}
+#tc_42{left:277px;top:242px;}
+#td_42{left:110px;top:302px;}
+#te_42{left:110px;top:339px;}
+#tf_42{left:110px;top:360px;}
+#tg_42{left:110px;top:397px;}
+#th_42{left:138px;top:434px;}
+#ti_42{left:165px;top:434px;}
+#tj_42{left:138px;top:469px;}
+#tk_42{left:165px;top:469px;}
+#tl_42{left:110px;top:501px;}
+#tm_42{left:110px;top:538px;}
+#tn_42{left:110px;top:559px;}
+#to_42{left:110px;top:596px;}
+#tp_42{left:110px;top:617px;}
+#tq_42{left:138px;top:646px;}
+#tr_42{left:110px;top:675px;}
+#ts_42{left:110px;top:712px;}
+#tt_42{left:110px;top:748px;}
+#tu_42{left:110px;top:785px;}
+#tv_42{left:110px;top:822px;}
+#tw_42{left:110px;top:858px;}
+#tx_42{left:110px;top:895px;}
+#ty_42{left:110px;top:916px;}
+#tz_42{left:293px;top:953px;}
+#t10_42{left:110px;top:989px;}
+#t11_42{left:110px;top:1011px;}
+#t12_42{left:110px;top:1032px;}
+
+.s1_42{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT42;
+	color: rgb(0,0,0);
+}
+
+.s4_42{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT42;
+	color: rgb(0,0,0);
+}
+
+.s3_42{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT42;
+	color: rgb(0,0,0);
+}
+
+.s2_42{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT42;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT42;
+	src :url("42/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT42;
+	src :url("42/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT42;
+	src :url("42/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_42" class="t s1_42">42</div>
+<div id="t2_42" class="t s2_42">ITEMS ON WHICH TAYAMMUM IS NOT PERMITTED</div>
+<div id="t3_42" class="t s1_42">1.</div>
+<div id="t4_42" class="t s1_42">Wood. </div>
+<div id="t5_42" class="t s1_42">2.</div>
+<div id="t6_42" class="t s1_42">Metal. </div>
+<div id="t7_42" class="t s1_42">3.</div>
+<div id="t8_42" class="t s1_42">Glass. </div>
+<div id="t9_42" class="t s1_42">4.</div>
+<div id="ta_42" class="t s1_42">Food items. </div>
+<div id="tb_42" class="t s3_42">5.</div>
+<div id="tc_42" class="t s1_42">All items which burn to ash, rot or melt.  </div>
+<div id="td_42" class="t s3_42">Things on which TAYAMMUM is allowed need not be covered with dust. </div>
+<div id="te_42" class="t s3_42">If there is a stone, brick or clay pot, it can be used for TAYAMMUM even after it was washed </div>
+<div id="tf_42" class="t s3_42">clean and has no dust on it. </div>
+<div id="tg_42" class="t s3_42">TAYAMMUM is permissible if one is on the point of missing the: </div>
+<div id="th_42" class="t s4_42">•</div>
+<div id="ti_42" class="t s1_42">JANAZA SALAAH or </div>
+<div id="tj_42" class="t s4_42">•</div>
+<div id="tk_42" class="t s1_42">EIDAIN SALAAH </div>
+<div id="tl_42" class="t s3_42">There is no Qazaa for these two Salaah. </div>
+<div id="tm_42" class="t s3_42">It will not be necessary to repeat the Salaah already performed for water is found after the </div>
+<div id="tn_42" class="t s3_42">Salaah. </div>
+<div id="to_42" class="t s3_42">The duration of TAYAMMUM is as long as water is not available or the helplessness continues. </div>
+<div id="tp_42" class="t s3_42">This can last for years. </div>
+<div id="tq_42" class="t s3_42">NAWAQISE (Breakers of) TAYAMMUM </div>
+<div id="tr_42" class="t s2_42">NAWAQISE TAYAMMUM</div>
+<div id="ts_42" class="t s3_42">Things which break WUDHU also break TAYAMMUM. </div>
+<div id="tt_42" class="t s3_42">TAYAMMUM for GHUSL breaks only after HADASE AKBAR. </div>
+<div id="tu_42" class="t s3_42">TAYAMMUM done when water is not found, breaks when water is found. </div>
+<div id="tv_42" class="t s3_42">Tayammum done due to a disease, breaks when one is cured from that disease. </div>
+<div id="tw_42" class="t s3_42">One can perform any number of Salaah by one TAYAMMUM as long as it does not break. </div>
+<div id="tx_42" class="t s3_42">TAYAMMUM done for FARZ Salaah will be valid for NAFL, for reading the HOLY </div>
+<div id="ty_42" class="t s3_42">QURAAN, Janaza Salaah, Sajdah-E-Tilaawat and for all other kinds of Salaah. </div>
+<div id="tz_42" class="t s2_42">MASAH ON THE KHUF - FAIN (MOZAH)</div>
+<div id="t10_42" class="t s3_42">KHUF-FAIN are special types of socks. Instead of washing the feet during Wudhu, it is </div>
+<div id="t11_42" class="t s3_42">permissible to pass moist hands over such socks. This is known as MASAH ALAL KHUF-</div>
+<div id="t12_42" class="t s3_42">FAIN. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg42Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg42"><object width="935" height="1210" data="42/42.svg" type="image/svg+xml" id="pdf42" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld42" type="text/javascript">
+
+var isIE = false;
+var f42 = [['t2_42',1864],['ta_42',288],['tc_42',998],['td_42',2196],['te_42',2779],['tf_42',797],['tg_42',1954],['ti_42',569],['tk_42',475],['tl_42',1166],['tm_42',2638],['to_42',2834],['tp_42',666],['tq_42',1267],['tr_42',892],['ts_42',1687],['tt_42',1937],['tu_42',2202],['tv_42',2311],['tw_42',2674],['tx_42',2525],['ty_42',2326],['tz_42',1396],['t10_42',2575],['t11_42',2683]];
+function load42(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f42);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 39;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_42");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

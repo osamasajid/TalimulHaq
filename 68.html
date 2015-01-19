@@ -1,0 +1,249 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page68</title>
+</head>
+
+<body onload="load68()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_68{left:460px;top:1136px;}
+#t2_68{left:400px;top:54px;}
+#t3_68{left:327px;top:83px;}
+#t4_68{left:535px;top:83px;}
+#t5_68{left:545px;top:83px;}
+#t6_68{left:455px;top:655px;}
+#t7_68{left:110px;top:675px;}
+#t8_68{left:146px;top:675px;}
+#t9_68{left:110px;top:697px;}
+#ta_68{left:146px;top:697px;}
+#tb_68{left:449px;top:717px;}
+#tc_68{left:110px;top:737px;}
+#td_68{left:110px;top:755px;}
+#te_68{left:132px;top:737px;}
+#tf_68{left:110px;top:776px;}
+#tg_68{left:110px;top:794px;}
+#th_68{left:132px;top:776px;}
+#ti_68{left:132px;top:794px;}
+#tj_68{left:456px;top:847px;}
+#tk_68{left:110px;top:867px;}
+#tl_68{left:147px;top:867px;}
+#tm_68{left:110px;top:888px;}
+#tn_68{left:147px;top:888px;}
+#to_68{left:147px;top:906px;}
+#tp_68{left:440px;top:926px;}
+#tq_68{left:110px;top:946px;}
+#tr_68{left:146px;top:946px;}
+#ts_68{left:110px;top:967px;}
+#tt_68{left:146px;top:967px;}
+#tu_68{left:453px;top:987px;}
+#tv_68{left:110px;top:1008px;}
+#tw_68{left:110px;top:1025px;}
+#tx_68{left:132px;top:1008px;}
+#ty_68{left:110px;top:1047px;}
+#tz_68{left:110px;top:1064px;}
+#t10_68{left:132px;top:1047px;}
+#t11_68{left:132px;top:1064px;}
+#t12_68{left:132px;top:1082px;}
+
+.s1_68{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT68;
+	color: rgb(0,0,0);
+}
+
+.s2_68{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT68;
+	color: rgb(0,0,0);
+}
+
+.s3_68{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT68;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT68;
+	src :url("68/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT68;
+	src :url("68/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_68" class="t s1_68">68</div>
+<div id="t2_68" class="t s2_68">TIMES OF SALAAH </div>
+<div id="t3_68" class="t s3_68">VARY ACCORDING TO </div>
+<div id="t4_68" class="t s2_68">S</div>
+<div id="t5_68" class="t s3_68">EASON </div>
+<div id="t6_68" class="t s1_68">Fajr </div>
+<div id="t7_68" class="t s1_68">Q.: </div>
+<div id="t8_68" class="t s1_68">When does the time for Fajr begin and when does it end? </div>
+<div id="t9_68" class="t s1_68">A.: </div>
+<div id="ta_68" class="t s1_68">From SUBHA SADIQ (Early Dawn) up to a little before SUNRISE. </div>
+<div id="tb_68" class="t s1_68">Zuhur </div>
+<div id="tc_68" class="t s1_68">Q.</div>
+<div id="td_68" class="t s1_68">: </div>
+<div id="te_68" class="t s1_68">When does the time for Zuhur begin and when does it end? </div>
+<div id="tf_68" class="t s1_68">A.</div>
+<div id="tg_68" class="t s1_68">: </div>
+<div id="th_68" class="t s1_68">From after Zawaal (Past Noon) up to the time that the shadow of any object becomes twice the length of the </div>
+<div id="ti_68" class="t s1_68">object plus the original shadow that was there at MID-DAY (ZAWAAL). </div>
+<div id="tj_68" class="t s1_68">Asr </div>
+<div id="tk_68" class="t s1_68">Q.: </div>
+<div id="tl_68" class="t s1_68">When does the time for Asr begin and when does it end? </div>
+<div id="tm_68" class="t s1_68">A.: </div>
+<div id="tn_68" class="t s1_68">It begins when Zuhur time finishes and ends at a little before SUNSET. To delay the Asr Salaah until the </div>
+<div id="to_68" class="t s1_68">color of the sun has turned PALE (yellow) is MAKRUH. </div>
+<div id="tp_68" class="t s1_68">Maghreb </div>
+<div id="tq_68" class="t s1_68">Q.: </div>
+<div id="tr_68" class="t s1_68">What is the time for Magrib Salaah? </div>
+<div id="ts_68" class="t s1_68">A.: </div>
+<div id="tt_68" class="t s1_68">From SUNSET up to the time the REDNESS fades on the horizon. </div>
+<div id="tu_68" class="t s1_68">Esha </div>
+<div id="tv_68" class="t s1_68">Q.</div>
+<div id="tw_68" class="t s1_68">: </div>
+<div id="tx_68" class="t s1_68">When does Esha time begin? </div>
+<div id="ty_68" class="t s1_68">A.</div>
+<div id="tz_68" class="t s1_68">: </div>
+<div id="t10_68" class="t s1_68">Esha time begins after the REDNESS on the horizon disappears (about an hour and half after sunset) and lasts </div>
+<div id="t11_68" class="t s1_68">up to a little before SUBHA SADIQ (dawn). It is MUSTAHAB to read Esha Salaah before one third of the night </div>
+<div id="t12_68" class="t s1_68">has passed and it is MAKROOH to delay Esha Salaah until after MID-NIGHT. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg68Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg68"><object width="935" height="1210" data="68/68.svg" type="image/svg+xml" id="pdf68" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld68" type="text/javascript">
+
+var isIE = false;
+var f68 = [['t2_68',646],['t3_68',813],['t8_68',1403],['ta_68',1678],['te_68',1455],['th_68',2648],['ti_68',1808],['tl_68',1393],['tn_68',2574],['to_68',1404],['tr_68',893],['tt_68',1641],['tx_68',712],['t10_68',2702],['t11_68',2769],['t12_68',1943]];
+function load68(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f68);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 39;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_68");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

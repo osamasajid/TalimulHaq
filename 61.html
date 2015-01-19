@@ -1,0 +1,218 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page61</title>
+</head>
+
+<body onload="load61()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_61{left:460px;top:1136px;}
+#t2_61{left:115px;top:392px;}
+#t3_61{left:280px;top:413px;}
+#t4_61{left:118px;top:453px;}
+#t5_61{left:284px;top:474px;}
+#t6_61{left:110px;top:512px;}
+#t7_61{left:110px;top:530px;}
+#t8_61{left:110px;top:548px;}
+#t9_61{left:110px;top:566px;}
+#ta_61{left:110px;top:584px;}
+#tb_61{left:327px;top:641px;}
+#tc_61{left:323px;top:665px;}
+#td_61{left:177px;top:910px;}
+#te_61{left:143px;top:931px;}
+#tf_61{left:130px;top:960px;}
+#tg_61{left:126px;top:978px;}
+#th_61{left:441px;top:996px;}
+#ti_61{left:110px;top:1029px;}
+#tj_61{left:219px;top:1068px;}
+
+.s4_61{
+	FONT-SIZE: 82px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT61;
+	color: rgb(0,0,0);
+}
+
+.s1_61{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT61;
+	color: rgb(0,0,0);
+}
+
+.s2_61{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(255,0,0);
+	FONT-STYLE: italic;
+}
+
+.s3_61{
+	FONT-SIZE: 82px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT61;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT61;
+	src :url("61/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT61;
+	src :url("61/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_61" class="t s1_61">61</div>
+<div id="t2_61" class="t s2_61">Allah humma sal-li 'ala Muhammadin wa 'ala ali Muhammadin, Kama sal-layta 'ala Ibraheema </div>
+<div id="t3_61" class="t s2_61">Wa 'ala aali Ibraheema innaka hameedum majeed. </div>
+<div id="t4_61" class="t s2_61">Allah humma barik 'ala Muhammadin wa 'ala ali Muhammadin, Kama barakta 'ala Ibraheema </div>
+<div id="t5_61" class="t s2_61">Wa 'ala aali IbraheemaInnaka hameedum majeed</div>
+<div id="t6_61" class="t s1_61">O Allah! Shower Your mercy upon Muhammad (S.A.W.) and the followers of Muhammad (S.A.W.) as You </div>
+<div id="t7_61" class="t s1_61">showered Your mercy upon Ebrahim (A.S.) and the followers of Ebrahim (a.s.). Behold You are praiseworthy, </div>
+<div id="t8_61" class="t s1_61">glorious. O Allah! Shower Your blessings upon Muhammad (S.A.W.) and the followers Muhammad (S.A.W.), as </div>
+<div id="t9_61" class="t s1_61">You showered Your blessing. upon Ebrahim (a.s.) and the followers of Ebrahim (a.s.) Behold, You are </div>
+<div id="ta_61" class="t s1_61">praiseworthy, glorious.</div>
+<div id="tb_61" class="t s3_61">THE DU'AS AFTER DUROOD</div>
+<div id="tc_61" class="t s4_61">After the Durood recite this Du’aa: </div>
+<div id="td_61" class="t s2_61">Allah humma innee zalamtu nafsee Zulman Katheeran, wala yaghfi ruz zunuba</div>
+<div id="te_61" class="t s2_61">illa anta faghfirlee maghfiratam min 'indika, war hamnee innaka antal ghafurur raheem</div>
+<div id="tf_61" class="t s1_61">O! Allah. I have been extremely unjust to myself, and none grants forgiveness against sins but You; therefore, </div>
+<div id="tg_61" class="t s1_61">forgive me, will forgiveness that comes from You, and have Mercy upon me. Verily You are the Forgiving, the </div>
+<div id="th_61" class="t s1_61">Merciful </div>
+<div id="ti_61" class="t s3_61">SALAAM</div>
+<div id="tj_61" class="t s4_61">Complete the Salaah by turning the face to the right saying : </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg61Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg61"><object width="935" height="1210" data="61/61.svg" type="image/svg+xml" id="pdf61" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld61" type="text/javascript">
+
+var isIE = false;
+var f61 = [['t2_61',2821],['t3_61',1497],['t4_61',2796],['t5_61',1464],['t6_61',2662],['t7_61',2717],['t8_61',2794],['t9_61',2524],['ta_61',567],['tb_61',1128],['tc_61',1158],['td_61',2322],['te_61',2597],['tf_61',2701],['tg_61',2730],['tj_61',1990]];
+function load61(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f61);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 20;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_61");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

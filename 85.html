@@ -1,0 +1,286 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page85</title>
+</head>
+
+<body onload="load85()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_85{left:460px;top:1136px;}
+#t2_85{left:110px;top:111px;}
+#t3_85{left:110px;top:147px;}
+#t4_85{left:110px;top:165px;}
+#t5_85{left:137px;top:191px;}
+#t6_85{left:165px;top:191px;}
+#t7_85{left:137px;top:224px;}
+#t8_85{left:165px;top:224px;}
+#t9_85{left:137px;top:257px;}
+#ta_85{left:165px;top:257px;}
+#tb_85{left:137px;top:290px;}
+#tc_85{left:165px;top:290px;}
+#td_85{left:165px;top:308px;}
+#te_85{left:137px;top:341px;}
+#tf_85{left:165px;top:341px;}
+#tg_85{left:165px;top:359px;}
+#th_85{left:137px;top:392px;}
+#ti_85{left:165px;top:392px;}
+#tj_85{left:137px;top:425px;}
+#tk_85{left:165px;top:425px;}
+#tl_85{left:137px;top:458px;}
+#tm_85{left:165px;top:458px;}
+#tn_85{left:137px;top:491px;}
+#to_85{left:165px;top:491px;}
+#tp_85{left:137px;top:524px;}
+#tq_85{left:165px;top:524px;}
+#tr_85{left:138px;top:550px;}
+#ts_85{left:110px;top:577px;}
+#tt_85{left:114px;top:612px;}
+#tu_85{left:454px;top:612px;}
+#tv_85{left:110px;top:631px;}
+#tw_85{left:110px;top:651px;}
+#tx_85{left:144px;top:651px;}
+#ty_85{left:154px;top:651px;}
+#tz_85{left:208px;top:651px;}
+#t10_85{left:216px;top:651px;}
+#t11_85{left:226px;top:651px;}
+#t12_85{left:232px;top:651px;}
+#t13_85{left:110px;top:685px;}
+#t14_85{left:114px;top:720px;}
+#t15_85{left:114px;top:755px;}
+#t16_85{left:110px;top:774px;}
+#t17_85{left:110px;top:794px;}
+#t18_85{left:110px;top:829px;}
+#t19_85{left:110px;top:848px;}
+#t1a_85{left:110px;top:867px;}
+#t1b_85{left:110px;top:887px;}
+#t1c_85{left:110px;top:922px;}
+#t1d_85{left:110px;top:941px;}
+#t1e_85{left:336px;top:941px;}
+
+.s1_85{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT85;
+	color: rgb(0,0,0);
+}
+
+.s5_85{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT85;
+	color: rgb(0,0,0);
+}
+
+.s3_85{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT85;
+	color: rgb(0,0,0);
+}
+
+.s2_85{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(0,0,0);
+	FONT-STYLE: italic;
+}
+
+.s4_85{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT85;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT85;
+	src :url("85/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT85;
+	src :url("85/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_85" class="t s1_85">85</div>
+<div id="t2_85" class="t s2_85">(O! Allah, reward me in my affliction, and requite me with (something) better than this.)</div>
+<div id="t3_85" class="t s3_85">WHAT TO DO AFTER A PERSON </div>
+<div id="t4_85" class="t s3_85">HAS PASSED AWAY </div>
+<div id="t5_85" class="t s1_85">1.</div>
+<div id="t6_85" class="t s1_85">Obtain a doctor's certificate. </div>
+<div id="t7_85" class="t s1_85">2.</div>
+<div id="t8_85" class="t s1_85">Obtain a burial order. </div>
+<div id="t9_85" class="t s1_85">3.</div>
+<div id="ta_85" class="t s1_85">Obtain a death certificate. </div>
+<div id="tb_85" class="t s1_85">4.</div>
+<div id="tc_85" class="t s1_85">If the body is to be removed from one Municipality to another then it is necessary to obtain a REMOVAL </div>
+<div id="td_85" class="t s1_85">ORDER from the police of the town in which the death took place. </div>
+<div id="te_85" class="t s1_85">5.</div>
+<div id="tf_85" class="t s1_85">If the death is due to unnatural causes (e.g. drowning or a motor accident, etc.) then one must comply with </div>
+<div id="tg_85" class="t s1_85">the legal requirements. </div>
+<div id="th_85" class="t s1_85">6.</div>
+<div id="ti_85" class="t s1_85">Inform relatives and friends of the death and of the time of Janaza. </div>
+<div id="tj_85" class="t s1_85">7.</div>
+<div id="tk_85" class="t s1_85">Prepare the Grave. </div>
+<div id="tl_85" class="t s1_85">8.</div>
+<div id="tm_85" class="t s1_85">Perform GHUSL. </div>
+<div id="tn_85" class="t s1_85">9.</div>
+<div id="to_85" class="t s1_85">Put on the KAFAN. </div>
+<div id="tp_85" class="t s1_85">10.</div>
+<div id="tq_85" class="t s1_85">Arrange transport if the QABRASTAAN (cemetery) is at a distance. </div>
+<div id="tr_85" class="t s4_85">REQUIREMENTS FOR MALE AND FEMALE KAFN </div>
+<div id="ts_85" class="t s5_85">THE KAFAN OF A MALE</div>
+<div id="tt_85" class="t s4_85">The Kafan of a male should consist of three white</div>
+<div id="tu_85" class="t s4_85">winding sheets about{7 x 7 feet}, clean and large </div>
+<div id="tv_85" class="t s4_85">enough to conceal the whole body, after having been perfumed with incense. Use 4 tie ropes, each 7 feet </div>
+<div id="tw_85" class="t s4_85">long </div>
+<div id="tx_85" class="t s5_85">(</div>
+<div id="ty_85" class="t s4_85">Figure (</div>
+<div id="tz_85" class="t s5_85">1</div>
+<div id="t10_85" class="t s4_85">) </div>
+<div id="t11_85" class="t s5_85">)</div>
+<div id="t12_85" class="t s4_85">. </div>
+<div id="t13_85" class="t s4_85">The material of the sheet should not be silk, nor should any gold be used. </div>
+<div id="t14_85" class="t s5_85">STEPS OF SHROUDING :</div>
+<div id="t15_85" class="t s4_85">The winding sheets should be spread out one on the top of the other . The deceased, covered with a sheet, </div>
+<div id="t16_85" class="t s4_85">is lifted and laid on his back on the winding sheets. Some scent or perfume may be put on those parts of </div>
+<div id="t17_85" class="t s4_85">the body upon which one rests during prostration that is the forehead, nose, hands, knees, and feet. </div>
+<div id="t18_85" class="t s4_85">If it is possible the deceased’s left hand should be placed on his chest, then put his right hand on the left </div>
+<div id="t19_85" class="t s4_85">hand like the way in the Salaat (Prayer). The edge of the top sheet is folded over the deceased right side, </div>
+<div id="t1a_85" class="t s4_85">then the other edge over his left side. Then the second sheet should be folded the same way. The third and </div>
+<div id="t1b_85" class="t s4_85">the largest sheet should be treated the same way. </div>
+<div id="t1c_85" class="t s4_85">These sheets should be fastened with a piece of cloth {Tie ropes}, one above the head, and another under </div>
+<div id="t1d_85" class="t s4_85">the feet, and two around the body</div>
+<div id="t1e_85" class="t s5_85">.</div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg85Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg85"><object width="935" height="1210" data="85/85.svg" type="image/svg+xml" id="pdf85" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld85" type="text/javascript">
+
+var isIE = false;
+var f85 = [['t2_85',2164],['t3_85',952],['t4_85',586],['t6_85',691],['t8_85',528],['ta_85',632],['tc_85',2596],['td_85',1643],['tf_85',2611],['tg_85',559],['ti_85',1633],['tk_85',458],['tm_85',435],['to_85',491],['tq_85',1681],['tr_85',1520],['ts_85',790],['tt_85',1341],['tu_85',1325],['tv_85',2810],['ty_85',214],['t13_85',1970],['t14_85',784],['t15_85',2837],['t16_85',2793],['t17_85',2652],['t18_85',2791],['t19_85',2805],['t1a_85',2850],['t1b_85',1308],['t1c_85',2828],['t1d_85',902]];
+function load85(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f85);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 51;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_85");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

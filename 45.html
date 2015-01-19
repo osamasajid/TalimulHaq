@@ -1,0 +1,282 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page45</title>
+</head>
+
+<body onload="load45()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_45{left:460px;top:1136px;}
+#t2_45{left:137px;top:54px;}
+#t3_45{left:165px;top:54px;}
+#t4_45{left:137px;top:87px;}
+#t5_45{left:165px;top:87px;}
+#t6_45{left:137px;top:120px;}
+#t7_45{left:165px;top:120px;}
+#t8_45{left:137px;top:153px;}
+#t9_45{left:165px;top:153px;}
+#ta_45{left:137px;top:186px;}
+#tb_45{left:165px;top:186px;}
+#tc_45{left:137px;top:220px;}
+#td_45{left:165px;top:220px;}
+#te_45{left:137px;top:253px;}
+#tf_45{left:165px;top:253px;}
+#tg_45{left:137px;top:286px;}
+#th_45{left:165px;top:286px;}
+#ti_45{left:137px;top:319px;}
+#tj_45{left:165px;top:319px;}
+#tk_45{left:137px;top:352px;}
+#tl_45{left:165px;top:352px;}
+#tm_45{left:137px;top:385px;}
+#tn_45{left:165px;top:385px;}
+#to_45{left:137px;top:418px;}
+#tp_45{left:165px;top:418px;}
+#tq_45{left:137px;top:451px;}
+#tr_45{left:165px;top:451px;}
+#ts_45{left:137px;top:484px;}
+#tt_45{left:165px;top:484px;}
+#tu_45{left:137px;top:517px;}
+#tv_45{left:165px;top:517px;}
+#tw_45{left:377px;top:543px;}
+#tx_45{left:460px;top:564px;}
+#ty_45{left:110px;top:593px;}
+#tz_45{left:110px;top:630px;}
+#t10_45{left:110px;top:666px;}
+#t11_45{left:110px;top:688px;}
+#t12_45{left:110px;top:724px;}
+#t13_45{left:110px;top:761px;}
+#t14_45{left:363px;top:790px;}
+#t15_45{left:189px;top:819px;}
+#t16_45{left:278px;top:971px;}
+#t17_45{left:240px;top:989px;}
+#t18_45{left:238px;top:1007px;}
+#t19_45{left:571px;top:966px;}
+#t1a_45{left:533px;top:984px;}
+#t1b_45{left:531px;top:1002px;}
+#t1c_45{left:225px;top:1088px;}
+#t1d_45{left:209px;top:1106px;}
+#t1e_45{left:518px;top:1086px;}
+#t1f_45{left:502px;top:1104px;}
+
+.s1_45{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT45;
+	color: rgb(0,0,0);
+}
+
+.s4_45{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(255,0,0);
+	FONT-STYLE: italic;
+}
+
+.s3_45{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT45;
+	color: rgb(0,0,0);
+}
+
+.s2_45{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT45;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT45;
+	src :url("45/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT45;
+	src :url("45/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_45" class="t s1_45">45</div>
+<div id="t2_45" class="t s1_45">19.</div>
+<div id="t3_45" class="t s1_45">When does Tayammum for Ghusl break?. </div>
+<div id="t4_45" class="t s1_45">20.</div>
+<div id="t5_45" class="t s1_45">Can the performance of one Tayammum be valid for a number of Salaat? </div>
+<div id="t6_45" class="t s1_45">21.</div>
+<div id="t7_45" class="t s1_45">Explain the word "KHUFFAIN". </div>
+<div id="t8_45" class="t s1_45">22.</div>
+<div id="t9_45" class="t s1_45">What is Masah Alal Khuffain? </div>
+<div id="ta_45" class="t s1_45">23.</div>
+<div id="tb_45" class="t s1_45">Mention the four conditions of Masah. </div>
+<div id="tc_45" class="t s1_45">24.</div>
+<div id="td_45" class="t s1_45">What will happen if a condition is lacking? </div>
+<div id="te_45" class="t s1_45">25.</div>
+<div id="tf_45" class="t s1_45">Is it permissible to make Masah on nylon or woolen socks? </div>
+<div id="tg_45" class="t s1_45">26.</div>
+<div id="th_45" class="t s1_45">What is essential for the Masah to be valid? </div>
+<div id="ti_45" class="t s1_45">27.</div>
+<div id="tj_45" class="t s1_45">Will Masah be permissible if the Khuffain have been put on after an incomplete Wudhu? </div>
+<div id="tk_45" class="t s1_45">28.</div>
+<div id="tl_45" class="t s1_45">What is the period of Masah for a Musaafir? </div>
+<div id="tm_45" class="t s1_45">29.</div>
+<div id="tn_45" class="t s1_45">For what period can a Muqeem make Masah? </div>
+<div id="to_45" class="t s1_45">30.</div>
+<div id="tp_45" class="t s1_45">From when will the period of 48 or 72 hours be calculated? </div>
+<div id="tq_45" class="t s1_45">31.</div>
+<div id="tr_45" class="t s1_45">What will happen upon the expiry of this period? </div>
+<div id="ts_45" class="t s1_45">32.</div>
+<div id="tt_45" class="t s1_45">What should be done upon the expiry of this period? Is it necessary to renew the entire Wudhu? </div>
+<div id="tu_45" class="t s1_45">33.</div>
+<div id="tv_45" class="t s1_45">What is the method of Masah Alal Khuffain? </div>
+<div id="tw_45" class="t s2_45">Adhan (Call to Prayer) </div>
+<div id="tx_45" class="t s3_45">Part 6 </div>
+<div id="ty_45" class="t s3_45">AZAAN is SUNNAT only for the five FARZ SALAAH and for JUMUAH SALAAH. </div>
+<div id="tz_45" class="t s3_45">AZAAN is not required for any other Salaah. </div>
+<div id="t10_45" class="t s3_45">AZAAN means to inform, but in Shariat AZAAN means to inform of a particular Salaah in </div>
+<div id="t11_45" class="t s3_45">particular wordings. </div>
+<div id="t12_45" class="t s3_45">The AZAAN for every Farz Salaah should be called out in its prescribed time. </div>
+<div id="t13_45" class="t s3_45">If it was called before the time then it must be called again at the right time. </div>
+<div id="t14_45" class="t s3_45">HOW TO CALL OUT AZAAN </div>
+<div id="t15_45" class="t s1_45">When the time for Salaah comes the MOAZZIN stands up and calls out aloud these words. </div>
+<div id="t16_45" class="t s4_45">Allahu Akbar</div>
+<div id="t17_45" class="t s1_45">Allah is the greatest of all </div>
+<div id="t18_45" class="t s1_45">Allah is the greatest of all. </div>
+<div id="t19_45" class="t s4_45">Allahu Akbar</div>
+<div id="t1a_45" class="t s1_45">Allah is the greatest of all </div>
+<div id="t1b_45" class="t s1_45">Allah is the greatest of all.  </div>
+<div id="t1c_45" class="t s4_45">Ash hadu an la ilaaha Illal lah</div>
+<div id="t1d_45" class="t s1_45">I testify that there is none worthy of </div>
+<div id="t1e_45" class="t s4_45">Ash hadu an la ilaaha Illal lah</div>
+<div id="t1f_45" class="t s1_45">I testify that there is none worthy of </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg45Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg45"><object width="935" height="1210" data="45/45.svg" type="image/svg+xml" id="pdf45" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld45" type="text/javascript">
+
+var isIE = false;
+var f45 = [['t3_45',1028],['t5_45',1796],['t7_45',813],['t9_45',754],['tb_45',947],['td_45',1059],['tf_45',1454],['th_45',1074],['tj_45',2184],['tl_45',1091],['tn_45',1122],['tp_45',1458],['tr_45',1208],['tt_45',2353],['tv_45',1109],['tw_45',723],['tx_45',173],['ty_45',2536],['tz_45',1328],['t10_45',2679],['t11_45',591],['t12_45',2299],['t13_45',2224],['t14_45',942],['t15_45',2230],['t16_45',329],['t17_45',631],['t18_45',646],['t19_45',329],['t1a_45',631],['t1b_45',661],['t1c_45',754],['t1d_45',880],['t1e_45',754],['t1f_45',880]];
+function load45(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f45);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 52;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_45");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

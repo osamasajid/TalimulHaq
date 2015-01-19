@@ -1,0 +1,260 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page24</title>
+</head>
+
+<body onload="load24()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_24{left:460px;top:1136px;}
+#t2_24{left:137px;top:54px;}
+#t3_24{left:165px;top:54px;}
+#t4_24{left:137px;top:87px;}
+#t5_24{left:165px;top:87px;}
+#t6_24{left:518px;top:87px;}
+#t7_24{left:137px;top:120px;}
+#t8_24{left:165px;top:120px;}
+#t9_24{left:137px;top:153px;}
+#ta_24{left:165px;top:153px;}
+#tb_24{left:371px;top:179px;}
+#tc_24{left:138px;top:209px;}
+#td_24{left:165px;top:209px;}
+#te_24{left:138px;top:243px;}
+#tf_24{left:165px;top:243px;}
+#tg_24{left:165px;top:261px;}
+#th_24{left:138px;top:295px;}
+#ti_24{left:165px;top:295px;}
+#tj_24{left:386px;top:327px;}
+#tk_24{left:343px;top:359px;}
+#tl_24{left:311px;top:391px;}
+#tm_24{left:284px;top:412px;}
+#tn_24{left:318px;top:471px;}
+#to_24{left:335px;top:566px;}
+#tp_24{left:388px;top:587px;}
+#tq_24{left:355px;top:734px;}
+#tr_24{left:361px;top:755px;}
+#ts_24{left:138px;top:828px;}
+#tt_24{left:165px;top:828px;}
+#tu_24{left:165px;top:846px;}
+#tv_24{left:138px;top:879px;}
+#tw_24{left:165px;top:879px;}
+#tx_24{left:165px;top:897px;}
+#ty_24{left:138px;top:930px;}
+#tz_24{left:165px;top:930px;}
+
+.s1_24{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT24;
+	color: rgb(0,0,0);
+}
+
+.s5_24{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT24;
+	color: rgb(0,0,0);
+}
+
+.s3_24{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT24;
+	color: rgb(0,0,0);
+}
+
+.s2_24{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT24;
+	color: rgb(0,0,0);
+}
+
+.s4_24{
+	FONT-SIZE: 110px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT24;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT24;
+	src :url("24/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT24;
+	src :url("24/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT24;
+	src :url("24/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_24" class="t s1_24">24</div>
+<div id="t2_24" class="t s1_24">5.</div>
+<div id="t3_24" class="t s1_24">Used water of Wudhu or Ghusl. </div>
+<div id="t4_24" class="t s1_24">6.</div>
+<div id="t5_24" class="t s1_24">Water left over after drinking by HARAAM animals, e.g.</div>
+<div id="t6_24" class="t s1_24">. dogs, pigs or animals of prey. </div>
+<div id="t7_24" class="t s1_24">7.</div>
+<div id="t8_24" class="t s1_24">Water which a cat drinks immediately after eating a mouse is NAJIS. </div>
+<div id="t9_24" class="t s1_24">8.</div>
+<div id="ta_24" class="t s1_24">Water left by a person who has just drunk wine is NAJIS. </div>
+<div id="tb_24" class="t s2_24">THE NIYYAT (Intention) </div>
+<div id="tc_24" class="t s3_24">•</div>
+<div id="td_24" class="t s1_24">It is SUNNAT to make the NIYYAT for WUDHU. </div>
+<div id="te_24" class="t s3_24">•</div>
+<div id="tf_24" class="t s1_24">For Wudhu one should make the Niyyat at heart that he is performing Wudhu to get rid of HADASE </div>
+<div id="tg_24" class="t s1_24">ASGAR. </div>
+<div id="th_24" class="t s3_24">•</div>
+<div id="ti_24" class="t s1_24">HADASE ASGHAR: Means the need of Wudhu. </div>
+<div id="tj_24" class="t s4_24">PRACTICAL </div>
+<div id="tk_24" class="t s4_24">DEMONSTRATION</div>
+<div id="tl_24" class="t s2_24">IS VERY ESSENTIAL IN EXPLAINING </div>
+<div id="tm_24" class="t s2_24">THE PROCEDURE OF MAKING </div>
+<div id="tn_24" class="t s5_24">WUDHU, SALAAH etc.</div>
+<div id="to_24" class="t s5_24">DU'A BEFORE COMMENCING </div>
+<div id="tp_24" class="t s5_24">WUDHU (Ablution) </div>
+<div id="tq_24" class="t s2_24">I begin with the name of Allah </div>
+<div id="tr_24" class="t s2_24">And all praises are for Allah. </div>
+<div id="ts_24" class="t s1_24">1.</div>
+<div id="tt_24" class="t s1_24">To wash one's hands, face and feet, etc. before performing SALAAH is called WUDHU or Ablution. No </div>
+<div id="tu_24" class="t s1_24">Salaah is accepted without Wudhu. </div>
+<div id="tv_24" class="t s1_24">2.</div>
+<div id="tw_24" class="t s1_24">One should sit on a high, and clean place to perform Wudhu. Face the direction towards the Holy KA'BA </div>
+<div id="tx_24" class="t s1_24">Sharif if possible. </div>
+<div id="ty_24" class="t s1_24">3.</div>
+<div id="tz_24" class="t s1_24">Using TAHIR (clean) water FIRST wash BOTH the HANDS up to the WRISTS THREE times. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg24Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg24"><object width="935" height="1210" data="24/24.svg" type="image/svg+xml" id="pdf24" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld24" type="text/javascript">
+
+var isIE = false;
+var f24 = [['t3_24',785],['t5_24',1411],['t6_24',758],['t8_24',1697],['ta_24',1415],['tb_24',774],['td_24',1263],['tf_24',2474],['ti_24',1212],['tl_24',1248],['tm_24',1026],['tn_24',757],['to_24',1058],['tp_24',633],['tq_24',900],['tr_24',852],['tt_24',2571],['tu_24',864],['tw_24',2587],['tx_24',434],['tz_24',2355]];
+function load24(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f24);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 36;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_24");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

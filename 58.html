@@ -1,0 +1,244 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page58</title>
+</head>
+
+<body onload="load58()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_58{left:460px;top:1136px;}
+#t2_58{left:110px;top:54px;}
+#t3_58{left:110px;top:75px;}
+#t4_58{left:110px;top:97px;}
+#t5_58{left:110px;top:170px;}
+#t6_58{left:138px;top:208px;}
+#t7_58{left:165px;top:208px;}
+#t8_58{left:165px;top:226px;}
+#t9_58{left:137px;top:260px;}
+#ta_58{left:165px;top:260px;}
+#tb_58{left:137px;top:294px;}
+#tc_58{left:165px;top:294px;}
+#td_58{left:165px;top:312px;}
+#te_58{left:110px;top:401px;}
+#tf_58{left:110px;top:434px;}
+#tg_58{left:110px;top:452px;}
+#th_58{left:173px;top:452px;}
+#ti_58{left:110px;top:474px;}
+#tj_58{left:110px;top:495px;}
+#tk_58{left:110px;top:516px;}
+#tl_58{left:110px;top:590px;}
+#tm_58{left:110px;top:626px;}
+#tn_58{left:110px;top:647px;}
+
+.s1_58{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT58;
+	color: rgb(0,0,0);
+}
+
+.s4_58{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT58;
+	color: rgb(0,0,0);
+}
+
+.s5_58{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(255,0,0);
+	FONT-STYLE: italic;
+}
+
+.s2_58{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT58;
+	color: rgb(0,0,0);
+}
+
+.s6_58{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(0,101,0);
+	FONT-STYLE: italic;
+}
+
+.s3_58{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT58;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT58;
+	src :url("58/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT58;
+	src :url("58/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT58;
+	src :url("58/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_58" class="t s1_58">58</div>
+<div id="t2_58" class="t s2_58">If there is a valid reason the forehead could be kept off the ground, otherwise the Sajdah will not </div>
+<div id="t3_58" class="t s2_58">be valid. When in Sajdah the feet should not be lifted from the ground. If they are lifted for </div>
+<div id="t4_58" class="t s2_58">duration more than three "SUBHANALLAH" the Salaah will be void. </div>
+<div id="t5_58" class="t s3_58">WOMEN</div>
+<div id="t6_58" class="t s4_58">•</div>
+<div id="t7_58" class="t s1_58">In Sajdah the upper part of the leg (the thigh) should not be upright but in as flat a position as possible, </div>
+<div id="t8_58" class="t s1_58">with the feet spread towards the right. </div>
+<div id="t9_58" class="t s4_58">•</div>
+<div id="ta_58" class="t s1_58">While in Sajdah the stomach and thighs must be kept together. </div>
+<div id="tb_58" class="t s4_58">•</div>
+<div id="tc_58" class="t s1_58">The forearms should be put flat on the ground in Sajdah. </div>
+<div id="td_58" class="t s1_58">Women must not raise their VOICE when reciting TASBEEH. </div>
+<div id="te_58" class="t s5_58">Subhaana Rabbi Yal aala </div>
+<div id="tf_58" class="t s6_58">All glory be to my lord, the Most High.</div>
+<div id="tg_58" class="t s3_58">JALSA</div>
+<div id="th_58" class="t s2_58">(To sit between two Sajdahs) </div>
+<div id="ti_58" class="t s2_58">Saying ALLAHU AKBAR sit up straight, do not sit with the back crooked or stooped. It is </div>
+<div id="tj_58" class="t s2_58">important to sit up and pause after the first Sajdah, merely lifting the head from the ground </div>
+<div id="tk_58" class="t s2_58">without sitting up before the second Sajdah will nullify the Salaah. </div>
+<div id="tl_58" class="t s3_58">MEN</div>
+<div id="tm_58" class="t s2_58">Sit resting the BACK on the LEFT LEG and having the RIGHT LEG raised, the TOES facing </div>
+<div id="tn_58" class="t s2_58">the QIBLQ </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg58Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg58"><object width="935" height="1210" data="58/58.svg" type="image/svg+xml" id="pdf58" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld58" type="text/javascript">
+
+var isIE = false;
+var f58 = [['t2_58',2836],['t3_58',2673],['t4_58',2060],['t7_58',2523],['t8_58',928],['ta_58',1534],['tc_58',1389],['td_58',1541],['te_58',630],['tf_58',954],['th_58',856],['ti_58',2670],['tj_58',2664],['tk_58',1960],['tm_58',2760],['tn_58',331]];
+function load58(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f58);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 24;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_58");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

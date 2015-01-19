@@ -1,0 +1,258 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page49</title>
+</head>
+
+<body onload="load49()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_49{left:460px;top:1136px;}
+#t2_49{left:110px;top:56px;}
+#t3_49{left:130px;top:74px;}
+#t4_49{left:110px;top:114px;}
+#t5_49{left:248px;top:166px;}
+#t6_49{left:110px;top:202px;}
+#t7_49{left:110px;top:271px;}
+#t8_49{left:110px;top:293px;}
+#t9_49{left:138px;top:330px;}
+#ta_49{left:165px;top:330px;}
+#tb_49{left:137px;top:419px;}
+#tc_49{left:165px;top:419px;}
+#td_49{left:138px;top:521px;}
+#te_49{left:138px;top:550px;}
+#tf_49{left:165px;top:550px;}
+#tg_49{left:138px;top:583px;}
+#th_49{left:165px;top:583px;}
+#ti_49{left:138px;top:616px;}
+#tj_49{left:165px;top:616px;}
+#tk_49{left:138px;top:649px;}
+#tl_49{left:165px;top:649px;}
+#tm_49{left:138px;top:682px;}
+#tn_49{left:165px;top:682px;}
+#to_49{left:138px;top:715px;}
+#tp_49{left:165px;top:715px;}
+#tq_49{left:138px;top:748px;}
+#tr_49{left:165px;top:748px;}
+#ts_49{left:138px;top:781px;}
+#tt_49{left:165px;top:781px;}
+#tu_49{left:137px;top:815px;}
+#tv_49{left:165px;top:815px;}
+#tw_49{left:137px;top:848px;}
+#tx_49{left:165px;top:848px;}
+#ty_49{left:137px;top:881px;}
+#tz_49{left:165px;top:881px;}
+#t10_49{left:137px;top:914px;}
+#t11_49{left:165px;top:914px;}
+
+.s1_49{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT49;
+	color: rgb(0,0,0);
+}
+
+.s4_49{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT49;
+	color: rgb(0,0,0);
+}
+
+.s2_49{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT49;
+	color: rgb(0,0,0);
+}
+
+.s3_49{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT49;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT49;
+	src :url("49/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT49;
+	src :url("49/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT49;
+	src :url("49/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_49" class="t s1_49">49</div>
+<div id="t2_49" class="t s1_49">A. Ijaubat for both and Iqaama is MUSTAHAB. Ijaabat means that those hearing should repeat the wordings as the </div>
+<div id="t3_49" class="t s1_49">Muazzin or Mukabbir says. </div>
+<div id="t4_49" class="t s2_49">HOWEVER, AFTER HEARING </div>
+<div id="t5_49" class="t s2_49">AND</div>
+<div id="t6_49" class="t s2_49">ONE SHOULD SAY </div>
+<div id="t7_49" class="t s3_49">There is no Power and might except from Allah. </div>
+<div id="t8_49" class="t s3_49">The most high - The great.</div>
+<div id="t9_49" class="t s4_49">•</div>
+<div id="ta_49" class="t s1_49">In Fajr Azan after hearing one should say </div>
+<div id="tb_49" class="t s4_49">•</div>
+<div id="tc_49" class="t s1_49">In Takbeer, after hearing one should say </div>
+<div id="td_49" class="t s2_49">QUESTIONS: </div>
+<div id="te_49" class="t s1_49">1.</div>
+<div id="tf_49" class="t s1_49">What does the word AZAAN mean? </div>
+<div id="tg_49" class="t s1_49">2.</div>
+<div id="th_49" class="t s1_49">What is the meaning of AZAAN in SHARIAT? </div>
+<div id="ti_49" class="t s1_49">3.</div>
+<div id="tj_49" class="t s1_49">For which SALAAH is AZAAN SUNNAT? </div>
+<div id="tk_49" class="t s1_49">4.</div>
+<div id="tl_49" class="t s1_49">What is the time for calling AZAAN? </div>
+<div id="tm_49" class="t s1_49">5.</div>
+<div id="tn_49" class="t s1_49">What are the SEVEN MUSTAHABS in AZAAN? </div>
+<div id="to_49" class="t s1_49">6.</div>
+<div id="tp_49" class="t s1_49">What is IQAAMAT? </div>
+<div id="tq_49" class="t s1_49">7.</div>
+<div id="tr_49" class="t s1_49">What is IJAABAT? </div>
+<div id="ts_49" class="t s1_49">8.</div>
+<div id="tt_49" class="t s1_49">A person performs his FARZ SALAAH at home should he say AZAAN and IQAAMAT? </div>
+<div id="tu_49" class="t s1_49">9.</div>
+<div id="tv_49" class="t s1_49">How is it to say AZAAN and IQAAMAT without WUDHU? </div>
+<div id="tw_49" class="t s1_49">10.</div>
+<div id="tx_49" class="t s1_49">How long after AZAAN should IQAAMAT be said. </div>
+<div id="ty_49" class="t s1_49">11.</div>
+<div id="tz_49" class="t s1_49">Should a TRAVELLER say AZAAN and IQAAMAT during a JOURNEY </div>
+<div id="t10_49" class="t s1_49">12.</div>
+<div id="t11_49" class="t s1_49">TRANSLATE THE FOLLOWING </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg49Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg49"><object width="935" height="1210" data="49/49.svg" type="image/svg+xml" id="pdf49" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld49" type="text/javascript">
+
+var isIE = false;
+var f49 = [['t2_49',2830],['t3_49',674],['t4_49',981],['t6_49',629],['t7_49',1506],['t8_49',831],['ta_49',1018],['tc_49',990],['tf_49',899],['th_49',1175],['tj_49',1094],['tl_49',930],['tn_49',1241],['tp_49',522],['tr_49',488],['tt_49',2211],['tv_49',1506],['tx_49',1289],['tz_49',1838],['t11_49',872]];
+function load49(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f49);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 38;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_49");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

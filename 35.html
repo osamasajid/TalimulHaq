@@ -1,0 +1,237 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page35</title>
+</head>
+
+<body onload="load35()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_35{left:460px;top:1136px;}
+#t2_35{left:138px;top:262px;}
+#t3_35{left:165px;top:262px;}
+#t4_35{left:319px;top:618px;}
+#t5_35{left:138px;top:647px;}
+#t6_35{left:165px;top:647px;}
+#t7_35{left:138px;top:680px;}
+#t8_35{left:165px;top:680px;}
+#t9_35{left:138px;top:713px;}
+#ta_35{left:165px;top:713px;}
+#tb_35{left:138px;top:746px;}
+#tc_35{left:165px;top:746px;}
+#td_35{left:138px;top:780px;}
+#te_35{left:165px;top:780px;}
+#tf_35{left:379px;top:805px;}
+#tg_35{left:138px;top:834px;}
+#th_35{left:165px;top:834px;}
+#ti_35{left:138px;top:867px;}
+#tj_35{left:165px;top:867px;}
+#tk_35{left:138px;top:900px;}
+#tl_35{left:165px;top:900px;}
+#tm_35{left:137px;top:933px;}
+#tn_35{left:165px;top:933px;}
+#to_35{left:137px;top:966px;}
+#tp_35{left:165px;top:966px;}
+#tq_35{left:137px;top:999px;}
+#tr_35{left:165px;top:999px;}
+#ts_35{left:137px;top:1034px;}
+#tt_35{left:165px;top:1034px;}
+#tu_35{left:165px;top:1051px;}
+#tv_35{left:137px;top:1086px;}
+#tw_35{left:165px;top:1086px;}
+
+.s1_35{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT35;
+	color: rgb(0,0,0);
+}
+
+.s3_35{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT35;
+	color: rgb(0,0,0);
+}
+
+.s2_35{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT35;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJIKOL-SymbolMT35;
+	src :url("35/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT35;
+	src :url("35/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_35" class="t s1_35">35</div>
+<div id="t2_35" class="t s1_35">3.</div>
+<div id="t3_35" class="t s1_35">Passing water over the entire body. </div>
+<div id="t4_35" class="t s2_35">THERE ARE FIVE SUNNATS IN GHUSL </div>
+<div id="t5_35" class="t s1_35">1.</div>
+<div id="t6_35" class="t s1_35">Washing hands up to the wrists. </div>
+<div id="t7_35" class="t s1_35">2.</div>
+<div id="t8_35" class="t s1_35">Washing the private parts and the parts over which uncleanliness is found: </div>
+<div id="t9_35" class="t s1_35">3.</div>
+<div id="ta_35" class="t s1_35">Niyyat of washing off Hukmi Najaasat. </div>
+<div id="tb_35" class="t s1_35">4.</div>
+<div id="tc_35" class="t s1_35">Making Wudhu before washing the body. </div>
+<div id="td_35" class="t s1_35">5.</div>
+<div id="te_35" class="t s1_35">Then passing water over the whole body thrice. </div>
+<div id="tf_35" class="t s2_35">Rules Whilst Making Ghusl </div>
+<div id="tg_35" class="t s1_35">1.</div>
+<div id="th_35" class="t s1_35">Ghusl should be made in a place of total privacy. </div>
+<div id="ti_35" class="t s1_35">2.</div>
+<div id="tj_35" class="t s1_35">One should not face the Qibla whilst making Ghusl. </div>
+<div id="tk_35" class="t s1_35">3.</div>
+<div id="tl_35" class="t s1_35">Ghusl may he performed standing or seated, preferably seated. </div>
+<div id="tm_35" class="t s1_35">4.</div>
+<div id="tn_35" class="t s1_35">Use sufficient water. Do not skimp nor be wasteful </div>
+<div id="to_35" class="t s1_35">5.</div>
+<div id="tp_35" class="t s1_35">Abstain from speaking whilst performing Ghusl. </div>
+<div id="tq_35" class="t s1_35">6.</div>
+<div id="tr_35" class="t s1_35">It is better not to read any Kalima or Ayah while bathing. Before performing Ghusl one should make </div>
+<div id="ts_35" class="t s3_35">•</div>
+<div id="tt_35" class="t s1_35">Niyyat (intention) thus: </div>
+<div id="tu_35" class="t s1_35">I am performing Ghusl to become PURE. </div>
+<div id="tv_35" class="t s3_35">•</div>
+<div id="tw_35" class="t s1_35">Without Niyyat there is no SAWAAB (reward) although Ghusl will be valid. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg35Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg35"><object width="935" height="1210" data="35/35.svg" type="image/svg+xml" id="pdf35" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld35" type="text/javascript">
+
+var isIE = false;
+var f35 = [['t3_35',862],['t4_35',1295],['t6_35',784],['t8_35',1825],['ta_35',966],['tc_35',1023],['te_35',1165],['tf_35',821],['th_35',1202],['tj_35',1275],['tl_35',1535],['tn_35',1251],['tp_35',1192],['tr_35',2472],['tt_35',574],['tu_35',1018],['tw_35',1891]];
+function load35(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f35);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 33;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_35");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

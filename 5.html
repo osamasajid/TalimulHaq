@@ -1,0 +1,244 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page5</title>
+</head>
+
+<body onload="load5()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_5{left:464px;top:1136px;}
+#t2_5{left:110px;top:54px;}
+#t3_5{left:110px;top:85px;}
+#t4_5{left:110px;top:132px;}
+#t5_5{left:110px;top:163px;}
+#t6_5{left:110px;top:195px;}
+#t7_5{left:110px;top:226px;}
+#t8_5{left:110px;top:257px;}
+#t9_5{left:110px;top:304px;}
+#ta_5{left:110px;top:335px;}
+#tb_5{left:429px;top:406px;}
+#tc_5{left:386px;top:445px;}
+#td_5{left:359px;top:471px;}
+#te_5{left:390px;top:497px;}
+#tf_5{left:110px;top:531px;}
+#tg_5{left:110px;top:557px;}
+#th_5{left:110px;top:583px;}
+#ti_5{left:110px;top:610px;}
+#tj_5{left:110px;top:636px;}
+#tk_5{left:110px;top:662px;}
+#tl_5{left:110px;top:688px;}
+#tm_5{left:110px;top:722px;}
+#tn_5{left:110px;top:748px;}
+#to_5{left:110px;top:775px;}
+#tp_5{left:110px;top:801px;}
+#tq_5{left:110px;top:827px;}
+#tr_5{left:110px;top:868px;}
+#ts_5{left:110px;top:895px;}
+#tt_5{left:110px;top:936px;}
+#tu_5{left:110px;top:978px;}
+#tv_5{left:612px;top:1019px;}
+#tw_5{left:577px;top:1050px;}
+
+.s1_5{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT5;
+	color: rgb(0,0,0);
+}
+
+.s4_5{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(0,0,0);
+	FONT-STYLE: italic;
+}
+
+.s2_5{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT5;
+	color: rgb(0,0,0);
+}
+
+.s3_5{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT5;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT5;
+	src :url("5/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT5;
+	src :url("5/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_5" class="t s1_5">5</div>
+<div id="t2_5" class="t s2_5">The rulings on Wuzu, Salaah, Fasting etc., have been explained in simple language and have </div>
+<div id="t3_5" class="t s2_5">been derived from Behishti Zewar and Talimul Islam. </div>
+<div id="t4_5" class="t s2_5">I persuaded through the early chapters of the publication and found the rulings correct in </div>
+<div id="t5_5" class="t s2_5">accordance with Islamic Fiqh (Theology). The printing is Nice. There is a great need for such </div>
+<div id="t6_5" class="t s2_5">publication in countries like South Africa. </div>
+<div id="t7_5" class="t s2_5">Due to the sincerity of the author the publication is ready. May Allah reward him and grant the </div>
+<div id="t8_5" class="t s2_5">youth of the Nation the ability to have benefit from it. </div>
+<div id="t9_5" class="t s2_5">(Mufti Wali Hasan (Saheb), Mufti and Sheikhul Hadith, </div>
+<div id="ta_5" class="t s2_5">Jamiatul Uloom al Islamia, Allama Binnori Town, Karachi 5, Pakistan </div>
+<div id="tb_5" class="t s3_5">Foreword </div>
+<div id="tc_5" class="t s1_5">by Maulana Younus, Patel </div>
+<div id="td_5" class="t s1_5">Secretary of Jamiatul Ulama- Natal </div>
+<div id="te_5" class="t s1_5">Republic of South Africa </div>
+<div id="tf_5" class="t s1_5">Sezela is peaceful little village on the South Coast of Natal. The magnificent sugar mill here had brought people of </div>
+<div id="tg_5" class="t s1_5">different faiths to this little village. It was the late Hajee Ebrahim E. Patel who drew up Hajee Shabbir Ahmed’s </div>
+<div id="th_5" class="t s1_5">attention to the lack of any Islamic Mission work in this area. In the year 1968 it was at Sezela that Hajee Shabbir </div>
+<div id="ti_5" class="t s1_5">Ahmed, son of the late Soofi Ebrahim Desai of Umzinto commenced an effort to impart basic Islamic knowledge to </div>
+<div id="tj_5" class="t s1_5">both the adults and the children of the area. This effort proved a great success and within a short time other villages </div>
+<div id="tk_5" class="t s1_5">and towns like Lawson Estate, Malagazi, Renishaw, Park Rynie, Ixopo, Umkomaas, ets., could also boast of having </div>
+<div id="tl_5" class="t s1_5">a little Madrasa for their pupils. </div>
+<div id="tm_5" class="t s1_5">As most of the Madras’as were established at places where pupils had no background of elementary Islamic </div>
+<div id="tn_5" class="t s1_5">Education, a definite need was felt for the text book in simple English, which would serve as a guide to both the </div>
+<div id="to_5" class="t s1_5">pupils and the staff. In the first chapter, the Taleemul Haq endeavors to explain to the beginners in simple language, </div>
+<div id="tp_5" class="t s1_5">the essential beliefs of a Muslim. Thereafter the laws governing Taharat, Ghusal, Tayammum and Salaah are </div>
+<div id="tq_5" class="t s1_5">explained in the subsequent chapters. </div>
+<div id="tr_5" class="t s1_5">In its compilation extensive use has been made of Mufti Muhammad Kifayatullah’s, Taleemul Islam and </div>
+<div id="ts_5" class="t s1_5">publications of the Watervaal Islamic Institute. </div>
+<div id="tt_5" class="t s1_5">Hajee Shabbir Ahmed is to be congratulated for the compiling, printing and publishing of Taleemul Haq. </div>
+<div id="tu_5" class="t s1_5">May Allah crown his efforts with success. </div>
+<div id="tv_5" class="t s4_5">(Maulana) Younus ER. Patal </div>
+<div id="tw_5" class="t s4_5">225 Sayani Centre, Durban Natal</div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg5Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg5"><object width="935" height="1210" data="5/5.svg" type="image/svg+xml" id="pdf5" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld5" type="text/javascript">
+
+var isIE = false;
+var f5 = [['t2_5',2718],['t3_5',1581],['t4_5',2603],['t5_5',2747],['t6_5',1236],['t7_5',2786],['t8_5',1579],['t9_5',1644],['ta_5',2069],['tc_5',650],['td_5',865],['te_5',618],['tf_5',2814],['tg_5',2743],['th_5',2786],['ti_5',2838],['tj_5',2831],['tk_5',2840],['tl_5',776],['tm_5',2645],['tn_5',2748],['to_5',2843],['tp_5',2666],['tq_5',915],['tr_5',2564],['ts_5',1150],['tt_5',2576],['tu_5',1033],['tv_5',851],['tw_5',992]];
+function load5(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f5);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 33;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_5");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

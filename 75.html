@@ -1,0 +1,283 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page75</title>
+</head>
+
+<body onload="load75()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_75{left:460px;top:1136px;}
+#t2_75{left:110px;top:54px;}
+#t3_75{left:110px;top:72px;}
+#t4_75{left:302px;top:97px;}
+#t5_75{left:110px;top:123px;}
+#t6_75{left:137px;top:156px;}
+#t7_75{left:165px;top:156px;}
+#t8_75{left:137px;top:189px;}
+#t9_75{left:165px;top:189px;}
+#ta_75{left:137px;top:222px;}
+#tb_75{left:165px;top:222px;}
+#tc_75{left:137px;top:255px;}
+#td_75{left:165px;top:255px;}
+#te_75{left:137px;top:288px;}
+#tf_75{left:165px;top:288px;}
+#tg_75{left:137px;top:321px;}
+#th_75{left:165px;top:321px;}
+#ti_75{left:137px;top:347px;}
+#tj_75{left:137px;top:373px;}
+#tk_75{left:165px;top:373px;}
+#tl_75{left:165px;top:391px;}
+#tm_75{left:165px;top:409px;}
+#tn_75{left:137px;top:456px;}
+#to_75{left:165px;top:456px;}
+#tp_75{left:165px;top:474px;}
+#tq_75{left:165px;top:492px;}
+#tr_75{left:137px;top:539px;}
+#ts_75{left:165px;top:539px;}
+#tt_75{left:165px;top:557px;}
+#tu_75{left:137px;top:604px;}
+#tv_75{left:165px;top:604px;}
+#tw_75{left:165px;top:622px;}
+#tx_75{left:137px;top:669px;}
+#ty_75{left:165px;top:669px;}
+#tz_75{left:165px;top:687px;}
+#t10_75{left:165px;top:705px;}
+#t11_75{left:138px;top:752px;}
+#t12_75{left:165px;top:752px;}
+#t13_75{left:165px;top:770px;}
+#t14_75{left:165px;top:788px;}
+#t15_75{left:165px;top:806px;}
+#t16_75{left:138px;top:853px;}
+#t17_75{left:165px;top:853px;}
+#t18_75{left:165px;top:871px;}
+#t19_75{left:165px;top:889px;}
+#t1a_75{left:138px;top:923px;}
+#t1b_75{left:165px;top:923px;}
+#t1c_75{left:165px;top:941px;}
+#t1d_75{left:165px;top:958px;}
+#t1e_75{left:138px;top:992px;}
+#t1f_75{left:165px;top:992px;}
+#t1g_75{left:165px;top:1010px;}
+#t1h_75{left:165px;top:1028px;}
+#t1i_75{left:165px;top:1046px;}
+#t1j_75{left:165px;top:1064px;}
+#t1k_75{left:138px;top:1098px;}
+#t1l_75{left:165px;top:1098px;}
+#t1m_75{left:165px;top:1116px;}
+
+.s1_75{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT75;
+	color: rgb(0,0,0);
+}
+
+.s2_75{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT75;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJIKOL-SymbolMT75;
+	src :url("75/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT75;
+	src :url("75/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_75" class="t s1_75">75</div>
+<div id="t2_75" class="t s1_75">It is MAKRUH to make a FAASIQ, an IGNORANT person or one who indulges in BID'AT or one who is NOT </div>
+<div id="t3_75" class="t s1_75">very CAREFUL in OBSERVING the RULES of SHARI'AT, an IMAAM. </div>
+<div id="t4_75" class="t s1_75">PERSON WHOSE IMAAMAT IS NOT ACCEPTED </div>
+<div id="t5_75" class="t s1_75">SALAAT of any person will not be ACCEPTED if the IMAAM is: </div>
+<div id="t6_75" class="t s1_75">1.</div>
+<div id="t7_75" class="t s1_75">Insane (mad.) </div>
+<div id="t8_75" class="t s1_75">2.</div>
+<div id="t9_75" class="t s1_75">Drunk. </div>
+<div id="ta_75" class="t s1_75">3.</div>
+<div id="tb_75" class="t s1_75">Kaafir (disbeliever). </div>
+<div id="tc_75" class="t s1_75">4.</div>
+<div id="td_75" class="t s1_75">Mushrik. </div>
+<div id="te_75" class="t s1_75">5.</div>
+<div id="tf_75" class="t s1_75">If the IMAAM is not BAALIGH (mature), then the Salaat of the BAALIGH will NOT be accepted. </div>
+<div id="tg_75" class="t s1_75">6.</div>
+<div id="th_75" class="t s1_75">If the IMAAM is a WOMAN, Salaat of MALES will NOT be accepted. </div>
+<div id="ti_75" class="t s1_75">MASBOOQ </div>
+<div id="tj_75" class="t s2_75">•</div>
+<div id="tk_75" class="t s1_75">A person who has joined the Imam whilst the Imam is in RUKU, will be regarded as one who has </div>
+<div id="tl_75" class="t s1_75">performed the complete Rak’ah. Once the Imam has completed the Ruku and a person then joins the Imam, </div>
+<div id="tm_75" class="t s1_75">he has missed a Rak’ah. Such a person is known as a MASBOOQ. </div>
+<div id="tn_75" class="t s2_75">•</div>
+<div id="to_75" class="t s1_75">A person who has missed any Rak’ah and then joined the Jamaa’ah, he should continue the Salaat with the </div>
+<div id="tp_75" class="t s1_75">Imam to the end. Once the Imam turns to say the SECOND SALAAM, the Masbooq should stand up and </div>
+<div id="tq_75" class="t s1_75">complete the missed number of RAK'AATS. </div>
+<div id="tr_75" class="t s2_75">•</div>
+<div id="ts_75" class="t s1_75">If the Masbooq has missed only ONE Rak’aats, he should stand up, read the THANA, TA'AWWUZ, </div>
+<div id="tt_75" class="t s1_75">TASMIA, SURAH FAATIHA and another SURAH and thereafter complete the Salaat. </div>
+<div id="tu_75" class="t s2_75">•</div>
+<div id="tv_75" class="t s1_75">If the Masbooq has missed TWO Rak’aats in FAJR, ZOHAR, ASR or ESHA, he should complete both the </div>
+<div id="tw_75" class="t s1_75">Rak'aats by reciting Sura Fatiha and another Surah in both the Rak’aats. </div>
+<div id="tx_75" class="t s2_75">•</div>
+<div id="ty_75" class="t s1_75">If a person has missed TWO Rak’aats in Magrib Salaat, then after completing the first Rak’aats make </div>
+<div id="tz_75" class="t s1_75">QAIDAH read TASHAHHUD and then stand up for the SECOND Rak’ah. After reciting Sura Fatiha and </div>
+<div id="t10_75" class="t s1_75">another Sura, complete the Salaat. </div>
+<div id="t11_75" class="t s2_75">•</div>
+<div id="t12_75" class="t s1_75">IF THREE Rak'aats were missed in ZOHAR, ASR or ESHA, the Masbooq should stand up and read Sura </div>
+<div id="t13_75" class="t s1_75">Fatiha and a Sura in the FIRST Rak’aats, thereafter make Ruku and Sajdah but BEFORE standing up for </div>
+<div id="t14_75" class="t s1_75">the SECOND Rak’aats, </div>
+<div id="t15_75" class="t s1_75">make QAIDAH (sit down), read Tashahhud and then stand up for the SECOND Rak’ah. </div>
+<div id="t16_75" class="t s2_75">•</div>
+<div id="t17_75" class="t s1_75">In the second Rak’ah recite Sura Fatiha and another Sura, complete the second Raka'a and WITHOUT </div>
+<div id="t18_75" class="t s1_75">sitting for Tashahhud, stand up for the THIRD Rak’ah. In the third Raka’a read ONLY Sura E-'Fatiha and </div>
+<div id="t19_75" class="t s1_75">complete the Salaah. </div>
+<div id="t1a_75" class="t s2_75">•</div>
+<div id="t1b_75" class="t s1_75">If a person has missed all the Rak’aats of any Salaah, then he should REPEAT the whole Salaah after the </div>
+<div id="t1c_75" class="t s1_75">Imam has said the Salaam except that he should NOT raise his hands to say ALLAHU AKBAR (Takbir) in </div>
+<div id="t1d_75" class="t s1_75">the FIRST Raka’a. </div>
+<div id="t1e_75" class="t s2_75">•</div>
+<div id="t1f_75" class="t s1_75">NB. For a person who joins the Jamaa’ah when the Imam is in RUKU, it is FARZ to stand and recite </div>
+<div id="t1g_75" class="t s1_75">TAKBEERE TAHREEMA and thereafter to stand at least for the duration long enough in which </div>
+<div id="t1h_75" class="t s1_75">SUBHANALLAH could be recited once and then go into Ruku. </div>
+<div id="t1i_75" class="t s1_75">Reciting Takbeer and booing into Ruku without PAUSE is not permissible. The Salaah perform in such a </div>
+<div id="t1j_75" class="t s1_75">way will not be VALID and should be REPEATED. </div>
+<div id="t1k_75" class="t s2_75">•</div>
+<div id="t1l_75" class="t s1_75">One should NOT join the Jamaa’ah as soon as the Imam recites the FIRST SALAAM to complete the </div>
+<div id="t1m_75" class="t s1_75">Salaah. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg75Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg75"><object width="935" height="1210" data="75/75.svg" type="image/svg+xml" id="pdf75" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld75" type="text/javascript">
+
+var isIE = false;
+var f75 = [['t2_75',2757],['t3_75',1828],['t4_75',1327],['t5_75',1650],['t7_75',337],['tb_75',497],['tf_75',2441],['th_75',1764],['tk_75',2397],['tl_75',2634],['tm_75',1636],['to_75',2617],['tp_75',2584],['tq_75',1099],['ts_75',2480],['tt_75',2149],['tv_75',2619],['tw_75',1765],['ty_75',2489],['tz_75',2602],['t10_75',837],['t12_75',2592],['t13_75',2572],['t14_75',580],['t15_75',2170],['t17_75',2514],['t18_75',2603],['t19_75',508],['t1b_75',2578],['t1c_75',2631],['t1d_75',461],['t1f_75',2475],['t1g_75',2371],['t1h_75',1575],['t1i_75',2583],['t1j_75',1286],['t1l_75',2496]];
+function load75(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f75);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 59;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_75");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

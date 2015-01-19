@@ -1,0 +1,243 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page59</title>
+</head>
+
+<body onload="load59()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_59{left:460px;top:1136px;}
+#t2_59{left:110px;top:91px;}
+#t3_59{left:110px;top:127px;}
+#t4_59{left:110px;top:164px;}
+#t5_59{left:110px;top:200px;}
+#t6_59{left:110px;top:222px;}
+#t7_59{left:110px;top:243px;}
+#t8_59{left:110px;top:346px;}
+#t9_59{left:110px;top:380px;}
+#ta_59{left:110px;top:416px;}
+#tb_59{left:110px;top:437px;}
+#tc_59{left:110px;top:459px;}
+#td_59{left:110px;top:480px;}
+#te_59{left:138px;top:509px;}
+#tf_59{left:110px;top:530px;}
+#tg_59{left:138px;top:908px;}
+#th_59{left:528px;top:908px;}
+#ti_59{left:165px;top:926px;}
+#tj_59{left:165px;top:944px;}
+#tk_59{left:165px;top:962px;}
+#tl_59{left:165px;top:980px;}
+#tm_59{left:165px;top:998px;}
+#tn_59{left:165px;top:1015px;}
+
+.s1_59{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT59;
+	color: rgb(0,0,0);
+}
+
+.s4_59{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(0,101,0);
+	FONT-STYLE: italic;
+}
+
+.s6_59{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT59;
+	color: rgb(0,0,0);
+}
+
+.s3_59{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT59;
+	color: rgb(0,0,0);
+}
+
+.s5_59{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT59;
+	color: rgb(0,0,0);
+}
+
+.s2_59{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT59;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT59;
+	src :url("59/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT59;
+	src :url("59/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT59;
+	src :url("59/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_59" class="t s1_59">59</div>
+<div id="t2_59" class="t s2_59">WOMEN</div>
+<div id="t3_59" class="t s3_59">NOTE that a GIRL does not sit on her LEFT LEG. </div>
+<div id="t4_59" class="t s2_59">SECOND SAJDAH</div>
+<div id="t5_59" class="t s3_59">The second Sajdah is performed as the first one, i.e. going into Sajdah saying ALLAHU </div>
+<div id="t6_59" class="t s3_59">AKBAR and reading SUBHANA RABBIYAL AA'LAA softly at least three times. One Rak'ah </div>
+<div id="t7_59" class="t s3_59">is now complete. </div>
+<div id="t8_59" class="t s4_59">All glory be to my lord, the Most High.</div>
+<div id="t9_59" class="t s2_59">SECOND RAK'AH</div>
+<div id="ta_59" class="t s3_59">Say ALLAHU AKBAR, stand up for the second Qiyaam. On getting up from the Sajdah first lift </div>
+<div id="tb_59" class="t s3_59">the FOREHEAD, then the NOSE and then the KNEES. Ensure that the HANDS are on the </div>
+<div id="tc_59" class="t s3_59">KNEES and not on the ground for support, except for a valid reason. Saying BISMILLAHIR </div>
+<div id="td_59" class="t s3_59">RAHMANIR RAHEEM recite SURATUL FAATIHA and a Surah and </div>
+<div id="te_59" class="t s3_59">COMPLETE THE SECOND RAK'AH IN THE </div>
+<div id="tf_59" class="t s3_59">SAME MANNER AS THE FIRST ONE </div>
+<div id="tg_59" class="t s5_59">•</div>
+<div id="th_59" class="t s6_59">FIRST </div>
+<div id="ti_59" class="t s6_59">QAIDAH </div>
+<div id="tj_59" class="t s1_59">After completing the Second Sajdah of the second Rak’ah saying ALLAHU AKBAR sit up for Qai'dah. </div>
+<div id="tk_59" class="t s1_59">The method of sitting is placing the LEFT FOOT flat on the ground and sitting on it, with the RIGHT </div>
+<div id="tl_59" class="t s1_59">FOOT upright and its TOES facing towards the Qibla. The HANDS must be placed on the THIGHS with </div>
+<div id="tm_59" class="t s1_59">the tips of the FINGERS near the KNEES. It is important that the fingers are kept close together and that </div>
+<div id="tn_59" class="t s1_59">they face the Qibla and not towards the ground. The EYES should be fixed on the LAP. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg59Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg59"><object width="935" height="1210" data="59/59.svg" type="image/svg+xml" id="pdf59" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld59" type="text/javascript">
+
+var isIE = false;
+var f59 = [['t3_59',1493],['t4_59',616],['t5_59',2586],['t6_59',2800],['t7_59',499],['t8_59',954],['t9_59',616],['ta_59',2839],['tb_59',2666],['tc_59',2730],['td_59',2092],['te_59',1405],['tf_59',1197],['tj_59',2553],['tk_59',2494],['tl_59',2586],['tm_59',2571],['tn_59',2155]];
+function load59(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f59);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 24;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_59");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

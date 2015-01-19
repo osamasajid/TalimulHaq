@@ -1,0 +1,301 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page55</title>
+</head>
+
+<body onload="load55()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_55{left:460px;top:1136px;}
+#t2_55{left:110px;top:90px;}
+#t3_55{left:110px;top:106px;}
+#t4_55{left:110px;top:122px;}
+#t5_55{left:110px;top:137px;}
+#t6_55{left:110px;top:153px;}
+#t7_55{left:110px;top:169px;}
+#t8_55{left:110px;top:185px;}
+#t9_55{left:110px;top:201px;}
+#ta_55{left:110px;top:220px;}
+#tb_55{left:128px;top:220px;}
+#tc_55{left:110px;top:242px;}
+#td_55{left:128px;top:242px;}
+#te_55{left:110px;top:264px;}
+#tf_55{left:128px;top:264px;}
+#tg_55{left:110px;top:285px;}
+#th_55{left:128px;top:285px;}
+#ti_55{left:110px;top:307px;}
+#tj_55{left:128px;top:307px;}
+#tk_55{left:110px;top:329px;}
+#tl_55{left:128px;top:329px;}
+#tm_55{left:110px;top:368px;}
+#tn_55{left:208px;top:366px;}
+#to_55{left:699px;top:420px;}
+#tp_55{left:699px;top:436px;}
+#tq_55{left:699px;top:452px;}
+#tr_55{left:699px;top:469px;}
+#ts_55{left:699px;top:485px;}
+#tt_55{left:699px;top:501px;}
+#tu_55{left:699px;top:517px;}
+#tv_55{left:699px;top:533px;}
+#tw_55{left:699px;top:549px;}
+#tx_55{left:699px;top:565px;}
+#ty_55{left:699px;top:581px;}
+#tz_55{left:110px;top:597px;}
+#t10_55{left:110px;top:617px;}
+#t11_55{left:128px;top:617px;}
+#t12_55{left:110px;top:638px;}
+#t13_55{left:128px;top:638px;}
+#t14_55{left:110px;top:660px;}
+#t15_55{left:128px;top:660px;}
+#t16_55{left:110px;top:681px;}
+#t17_55{left:110px;top:744px;}
+#t18_55{left:150px;top:744px;}
+#t19_55{left:213px;top:742px;}
+#t1a_55{left:110px;top:971px;}
+#t1b_55{left:110px;top:1003px;}
+#t1c_55{left:110px;top:1020px;}
+#t1d_55{left:110px;top:1036px;}
+#t1e_55{left:110px;top:1052px;}
+#t1f_55{left:110px;top:1068px;}
+#t1g_55{left:110px;top:1084px;}
+#t1h_55{left:110px;top:1103px;}
+#t1i_55{left:128px;top:1103px;}
+
+.s3_55{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT55;
+	color: rgb(0,0,0);
+}
+
+.s1_55{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT55;
+	color: rgb(0,0,0);
+}
+
+.s2_55{
+	FONT-SIZE: 55px;
+	FONT-FAMILY: TimesNewRomanPS-BoldItalicMT;
+	color: rgb(0,0,0);
+	FONT-WEIGHT: bold;
+	FONT-STYLE: italic;
+}
+
+.s6_55{
+	FONT-SIZE: 55px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT55;
+	color: rgb(0,0,0);
+}
+
+.s4_55{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT55;
+	color: rgb(0,0,0);
+}
+
+.s5_55{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT55;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT55;
+	src :url("55/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT55;
+	src :url("55/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_55" class="t s1_55">55</div>
+<div id="t2_55" class="t s2_55">Bismillahi Ar-Rahmani Ar-Rahim </div>
+<div id="t3_55" class="t s2_55">1- Kul A'udhu bi-Rabbi-n-nas </div>
+<div id="t4_55" class="t s2_55">2- Maliki-n-nas </div>
+<div id="t5_55" class="t s2_55">3- Ilahi-n-nas </div>
+<div id="t6_55" class="t s2_55">4- Minsherri al Was-Wasi-l-khannas </div>
+<div id="t7_55" class="t s2_55">5- Alladhi yuwaswisu fi suduri-n-nas </div>
+<div id="t8_55" class="t s2_55">6- Mina al Jinnati Wan-nas </div>
+<div id="t9_55" class="t s3_55">In the name of Allah, Most Gracious, Most Merciful </div>
+<div id="ta_55" class="t s4_55">1.</div>
+<div id="tb_55" class="t s5_55">Say: I seek refuge with the Lord and Cherisher of Mankind, </div>
+<div id="tc_55" class="t s4_55">2.</div>
+<div id="td_55" class="t s5_55">The King (or Ruler) of Mankind, </div>
+<div id="te_55" class="t s4_55">3.</div>
+<div id="tf_55" class="t s5_55">The Allah (for judge) of Mankind,- </div>
+<div id="tg_55" class="t s4_55">4.</div>
+<div id="th_55" class="t s5_55">From the mischief of the Whisperer (of Evil), who withdraws (after his whisper),- </div>
+<div id="ti_55" class="t s4_55">5.</div>
+<div id="tj_55" class="t s5_55">(The same) who whispers into the hearts of Mankind,- </div>
+<div id="tk_55" class="t s4_55">6.</div>
+<div id="tl_55" class="t s5_55">Among Jinns and among men </div>
+<div id="tm_55" class="t s6_55">Surat -An-Nasr </div>
+<div id="tn_55" class="t s1_55">Succour, Divine Support (Quran Surah 110) </div>
+<div id="to_55" class="t s6_55">Bismillahi Ar-</div>
+<div id="tp_55" class="t s6_55">Rahmani Ar-Rahim</div>
+<div id="tq_55" class="t s6_55">1- Idha jaa-a-</div>
+<div id="tr_55" class="t s6_55">nasrullahi ual-fat-h </div>
+<div id="ts_55" class="t s6_55">2- Wara-aita annasa </div>
+<div id="tt_55" class="t s6_55">ia-d-khuluna fidini-</div>
+<div id="tu_55" class="t s6_55">llahi afuaja </div>
+<div id="tv_55" class="t s6_55">3- Fasabbih bihamdi </div>
+<div id="tw_55" class="t s6_55">rabbika wastaghrfir-</div>
+<div id="tx_55" class="t s6_55">hu innahu kana </div>
+<div id="ty_55" class="t s6_55">tawwaba </div>
+<div id="tz_55" class="t s3_55">In the name of Allah, Most Gracious, Most Merciful </div>
+<div id="t10_55" class="t s4_55">1.</div>
+<div id="t11_55" class="t s5_55">When comes the Help of Allah, and Victory, </div>
+<div id="t12_55" class="t s4_55">2.</div>
+<div id="t13_55" class="t s5_55">And thou dost see the people enter Allah’s Religion in crowds, </div>
+<div id="t14_55" class="t s4_55">3.</div>
+<div id="t15_55" class="t s5_55">Celebrate the praises of thy Lord, and pray for His Forgiveness: For He is Oft-Returning (in </div>
+<div id="t16_55" class="t s5_55">Grace and Mercy). </div>
+<div id="t17_55" class="t s6_55">Surat </div>
+<div id="t18_55" class="t s6_55">Al-Lahab </div>
+<div id="t19_55" class="t s1_55">Palm Fibre, The Flame (Quran Surah 111) </div>
+<div id="t1a_55" class="t s6_55">Bismillahi Ar-Rahmani Ar-Rahim </div>
+<div id="t1b_55" class="t s6_55">1- Tabbat yada abi lahabin wa tabb </div>
+<div id="t1c_55" class="t s6_55">2- Ma agh-na 'anhu maluhu wa ma kasab </div>
+<div id="t1d_55" class="t s6_55">3- Sayasla naran dhata lahab </div>
+<div id="t1e_55" class="t s6_55">4- Wa-amratuhu hammalata al-hatab </div>
+<div id="t1f_55" class="t s6_55">5- Fijidiha habblun m-min m-masad</div>
+<div id="t1g_55" class="t s3_55">In the name of Allah, Most Gracious, Most Merciful </div>
+<div id="t1h_55" class="t s4_55">1.</div>
+<div id="t1i_55" class="t s5_55">Perish the hands of the Father of Flame! Perish he! </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg55Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg55"><object width="935" height="1210" data="55/55.svg" type="image/svg+xml" id="pdf55" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld55" type="text/javascript">
+
+var isIE = false;
+var f55 = [['t2_55',780],['t3_55',683],['t4_55',356],['t5_55',316],['t6_55',835],['t7_55',840],['t8_55',632],['t9_55',1411],['tb_55',1755],['td_55',970],['tf_55',1035],['th_55',2404],['tj_55',1596],['tl_55',874],['tm_55',364],['tn_55',1085],['to_55',335],['tp_55',472],['tq_55',321],['tr_55',456],['ts_55',480],['tt_55',462],['tu_55',267],['tv_55',485],['tw_55',494],['tx_55',369],['tz_55',1411],['t11_55',1313],['t13_55',1845],['t15_55',2699],['t16_55',552],['t19_55',1040],['t1a_55',807],['t1b_55',838],['t1c_55',976],['t1d_55',684],['t1e_55',884],['t1f_55',855],['t1g_55',1411],['t1i_55',1494]];
+function load55(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f55);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 55;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_55");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>
