@@ -1,0 +1,273 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page131</title>
+</head>
+
+<body onload="load131()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_131{left:456px;top:1136px;}
+#t2_131{left:137px;top:54px;}
+#t3_131{left:165px;top:54px;}
+#t4_131{left:165px;top:72px;}
+#t5_131{left:165px;top:90px;}
+#t6_131{left:138px;top:123px;}
+#t7_131{left:165px;top:123px;}
+#t8_131{left:165px;top:141px;}
+#t9_131{left:138px;top:174px;}
+#ta_131{left:165px;top:174px;}
+#tb_131{left:165px;top:192px;}
+#tc_131{left:138px;top:225px;}
+#td_131{left:165px;top:225px;}
+#te_131{left:165px;top:243px;}
+#tf_131{left:138px;top:276px;}
+#tg_131{left:165px;top:276px;}
+#th_131{left:138px;top:309px;}
+#ti_131{left:165px;top:309px;}
+#tj_131{left:165px;top:327px;}
+#tk_131{left:165px;top:345px;}
+#tl_131{left:165px;top:363px;}
+#tm_131{left:165px;top:380px;}
+#tn_131{left:165px;top:398px;}
+#to_131{left:165px;top:416px;}
+#tp_131{left:138px;top:449px;}
+#tq_131{left:165px;top:449px;}
+#tr_131{left:165px;top:467px;}
+#ts_131{left:165px;top:485px;}
+#tt_131{left:110px;top:518px;}
+#tu_131{left:138px;top:555px;}
+#tv_131{left:165px;top:555px;}
+#tw_131{left:165px;top:573px;}
+#tx_131{left:165px;top:591px;}
+#ty_131{left:110px;top:623px;}
+#tz_131{left:110px;top:645px;}
+#t10_131{left:110px;top:666px;}
+#t11_131{left:110px;top:688px;}
+#t12_131{left:110px;top:717px;}
+#t13_131{left:433px;top:738px;}
+#t14_131{left:110px;top:767px;}
+#t15_131{left:110px;top:803px;}
+#t16_131{left:309px;top:918px;}
+#t17_131{left:110px;top:947px;}
+#t18_131{left:110px;top:968px;}
+#t19_131{left:110px;top:989px;}
+#t1a_131{left:110px;top:1011px;}
+#t1b_131{left:110px;top:1032px;}
+#t1c_131{left:110px;top:1069px;}
+#t1d_131{left:110px;top:1090px;}
+#t1e_131{left:110px;top:1111px;}
+
+.s1_131{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT131;
+	color: rgb(0,0,0);
+}
+
+.s3_131{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT131;
+	color: rgb(0,0,0);
+}
+
+.s2_131{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM131;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM131;
+	src :url("131/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT131;
+	src :url("131/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_131" class="t s1_131">131</div>
+<div id="t2_131" class="t s1_131">7.</div>
+<div id="t3_131" class="t s1_131">If at the beginning of the year one has the full Nisaab and during and year the amount decreases and by the </div>
+<div id="t4_131" class="t s1_131">end of the year posssession of the full Nisaab is regained then it will be Waajib to give Zakaat on this </div>
+<div id="t5_131" class="t s1_131">amount. </div>
+<div id="t6_131" class="t s1_131">8.</div>
+<div id="t7_131" class="t s1_131">If one mixes Halaal and Haraam merchandise and the amount is equal to or exceeds the Nisaab at the end </div>
+<div id="t8_131" class="t s1_131">of the year then it will be necessary to give Zakaat. </div>
+<div id="t9_131" class="t s1_131">9.</div>
+<div id="ta_131" class="t s1_131">It is customary to write the price paid for the merchandise at stock figures. Zakaat should not be calculated </div>
+<div id="tb_131" class="t s1_131">on these stock figures. For Zakaat purpose current purchase value of the merchandise should be calculated. </div>
+<div id="tc_131" class="t s1_131">10.</div>
+<div id="td_131" class="t s1_131">If a few persons are partners in a company and if any one share of the partners is equal to or exceeds </div>
+<div id="te_131" class="t s1_131">Nisaab then it will be necessary for that partner to give Zakaat. </div>
+<div id="tf_131" class="t s1_131">11.</div>
+<div id="tg_131" class="t s1_131">Stock for Zakaat purpose must be calculated according to the Islamic (lunar) year. </div>
+<div id="th_131" class="t s1_131">12.</div>
+<div id="ti_131" class="t s1_131">Zakaat is Farz at the ruling price on shares held in a company at the end of every Islamic year. As </div>
+<div id="tj_131" class="t s1_131">machinery, land, fixtures and fittings, furniture, buildings etc. are exempt from Zakaat, one is allowed to </div>
+<div id="tk_131" class="t s1_131">subtract these from the total assets. This could be obtained from the company's annual report, for example </div>
+<div id="tl_131" class="t s1_131">if one has shares worth $ 100-00 and the machinery, land etc., are worth 5% of the total assets of the </div>
+<div id="tm_131" class="t s1_131">company, then deduct $ 5-00 for machinery, land, fixtures and fittings, furniture and buildings (the </div>
+<div id="tn_131" class="t s1_131">exempted Zakaat items) thereafter dedut the liabilities of the company proportionately to the percentage of </div>
+<div id="to_131" class="t s1_131">shares held, and the Zakaat must be calculated on the balance. </div>
+<div id="tp_131" class="t s1_131">13.</div>
+<div id="tq_131" class="t s1_131">When Zakaat is given on a capital amount once, and thereafter if this same amount remains with the owner </div>
+<div id="tr_131" class="t s1_131">till the following year then Zakaat will be due again. Zakaat will be Farz repeatedly after every Islamic </div>
+<div id="ts_131" class="t s1_131">year has elapsed. </div>
+<div id="tt_131" class="t s2_131">DECREASE IN WEALTH BY THE END OF THE ISLAMIC YEAR.</div>
+<div id="tu_131" class="t s1_131">1.</div>
+<div id="tv_131" class="t s1_131">If Zakaat on wealth has not been given at the end of the Islamic year, and all that wealth either gets lost or </div>
+<div id="tw_131" class="t s1_131">stolen, then such wealth is exempted from Zakaat. In a case where he only gives away part of that wealth, </div>
+<div id="tx_131" class="t s1_131">then Zakaat will be due on the remainder if it is equal to Nisaab. </div>
+<div id="ty_131" class="t s3_131">NOTE: A person is obliged to pay Zakaat on $ 10 000, namely the sum of $250. He sets aside </div>
+<div id="tz_131" class="t s3_131">this amount with a view to paying his Zakaat. The sum of $ 250 is thereafter lost or stolen in </div>
+<div id="t10_131" class="t s3_131">which event the Zakaat obligation is not discharged. If the Zakaat payer dies after setting aside </div>
+<div id="t11_131" class="t s3_131">the sum of $250, it will constitute part of his estate to be transmissible to his heirs. </div>
+<div id="t12_131" class="t s2_131">Slaughtering for Eid al-Adha and New Born Baby(Aqeeqah) </div>
+<div id="t13_131" class="t s3_131">PART 13 </div>
+<div id="t14_131" class="t s3_131">Qurbani MASAA'IL </div>
+<div id="t15_131" class="t s3_131">"It is not their meat, nor their blood that reaches Allah: it is your piety that reaches Him." </div>
+<div id="t16_131" class="t s3_131">THE FIRST TEN DAYS OF ZUL HIJJAH </div>
+<div id="t17_131" class="t s3_131">Hazrat Ibn Abbas (R. A) relates that Rasulullah (S.A.W.) said "On no other days are good deeds </div>
+<div id="t18_131" class="t s3_131">more liked by Allah than on these days meaning the first ten days of Zil Hijjah". The Sahaabah </div>
+<div id="t19_131" class="t s3_131">(R.A.) asked: "O Rasulullah (S.A.W.), not even Jihaad in the way of Allah?" Rasulullah </div>
+<div id="t1a_131" class="t s3_131">(S.A.W.) replied: "Not even Jihaad in the way of Allah, except for that person who goes out to </div>
+<div id="t1b_131" class="t s3_131">fight with his life and wealth and does not return with anything." [Bukhari] </div>
+<div id="t1c_131" class="t s3_131">Rasulullah (S.A.W.) said: "On no days is the worship of Allah desired more than in the first ten </div>
+<div id="t1d_131" class="t s3_131">days of Zil Hijjah. The fast of each of these days is equal to the fast of a whole year, and the </div>
+<div id="t1e_131" class="t s3_131">Ibaadat (worship) of each of these nights is equal to the Ibaadat of Laylatul Qadr. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg131Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg131"><object width="935" height="1210" data="131/131.svg" type="image/svg+xml" id="pdf131" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld131" type="text/javascript">
+
+var isIE = false;
+var f131 = [['t3_131',2622],['t4_131',2487],['t7_131',2584],['t8_131',1251],['ta_131',2616],['tb_131',2625],['td_131',2465],['te_131',1542],['tg_131',2013],['ti_131',2394],['tj_131',2562],['tk_131',2597],['tl_131',2465],['tm_131',2427],['tn_131',2612],['to_131',1521],['tq_131',2622],['tr_131',2521],['ts_131',417],['tt_131',2188],['tv_131',2599],['tw_131',2590],['tx_131',1576],['ty_131',2756],['tz_131',2715],['t10_131',2782],['t11_131',2419],['t12_131',1892],['t13_131',278],['t14_131',605],['t15_131',2620],['t16_131',1269],['t17_131',2826],['t18_131',2789],['t19_131',2585],['t1a_131',2775],['t1b_131',2158],['t1c_131',2802],['t1d_131',2704],['t1e_131',2387]];
+function load131(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f131);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 51;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_131");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

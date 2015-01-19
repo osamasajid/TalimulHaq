@@ -1,0 +1,314 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page113</title>
+</head>
+
+<body onload="load113()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_113{left:456px;top:1136px;}
+#t2_113{left:137px;top:55px;}
+#t3_113{left:165px;top:55px;}
+#t4_113{left:165px;top:73px;}
+#t5_113{left:137px;top:107px;}
+#t6_113{left:165px;top:107px;}
+#t7_113{left:165px;top:125px;}
+#t8_113{left:137px;top:159px;}
+#t9_113{left:165px;top:159px;}
+#ta_113{left:165px;top:177px;}
+#tb_113{left:137px;top:211px;}
+#tc_113{left:165px;top:211px;}
+#td_113{left:646px;top:211px;}
+#te_113{left:165px;top:229px;}
+#tf_113{left:137px;top:263px;}
+#tg_113{left:165px;top:263px;}
+#th_113{left:137px;top:297px;}
+#ti_113{left:165px;top:297px;}
+#tj_113{left:165px;top:315px;}
+#tk_113{left:137px;top:349px;}
+#tl_113{left:165px;top:349px;}
+#tm_113{left:165px;top:367px;}
+#tn_113{left:137px;top:401px;}
+#to_113{left:165px;top:401px;}
+#tp_113{left:165px;top:419px;}
+#tq_113{left:165px;top:437px;}
+#tr_113{left:137px;top:471px;}
+#ts_113{left:165px;top:471px;}
+#tt_113{left:165px;top:489px;}
+#tu_113{left:165px;top:507px;}
+#tv_113{left:165px;top:525px;}
+#tw_113{left:165px;top:542px;}
+#tx_113{left:137px;top:576px;}
+#ty_113{left:165px;top:576px;}
+#tz_113{left:438px;top:602px;}
+#t10_113{left:433px;top:623px;}
+#t11_113{left:138px;top:652px;}
+#t12_113{left:165px;top:652px;}
+#t13_113{left:138px;top:685px;}
+#t14_113{left:165px;top:685px;}
+#t15_113{left:137px;top:719px;}
+#t16_113{left:165px;top:719px;}
+#t17_113{left:165px;top:736px;}
+#t18_113{left:137px;top:770px;}
+#t19_113{left:165px;top:770px;}
+#t1a_113{left:165px;top:787px;}
+#t1b_113{left:137px;top:821px;}
+#t1c_113{left:165px;top:821px;}
+#t1d_113{left:165px;top:838px;}
+#t1e_113{left:137px;top:871px;}
+#t1f_113{left:408px;top:871px;}
+#t1g_113{left:137px;top:905px;}
+#t1h_113{left:165px;top:905px;}
+#t1i_113{left:165px;top:923px;}
+#t1j_113{left:137px;top:956px;}
+#t1k_113{left:165px;top:956px;}
+#t1l_113{left:165px;top:974px;}
+#t1m_113{left:165px;top:991px;}
+#t1n_113{left:137px;top:1025px;}
+#t1o_113{left:165px;top:1025px;}
+#t1p_113{left:165px;top:1043px;}
+#t1q_113{left:165px;top:1060px;}
+
+.s1_113{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT113;
+	color: rgb(0,0,0);
+}
+
+.s3_113{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM113;
+	color: rgb(0,0,0);
+}
+
+.s5_113{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM113;
+	color: rgb(0,0,0);
+}
+
+.s2_113{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT113;
+	color: rgb(0,0,0);
+}
+
+.s4_113{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT113;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM113;
+	src :url("113/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT113;
+	src :url("113/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT113;
+	src :url("113/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_113" class="t s1_113">113</div>
+<div id="t2_113" class="t s2_113">•</div>
+<div id="t3_113" class="t s1_113">The Shariat has NOT specified any particular type or color of clothing that should be worn by those that </div>
+<div id="t4_113" class="t s1_113">are bereaved </div>
+<div id="t5_113" class="t s2_113">•</div>
+<div id="t6_113" class="t s1_113">A Mayyit is one who was bone ALIVE and then passed away. It must be named and Ghusl, Kafn and </div>
+<div id="t7_113" class="t s1_113">Janaza must be performed. </div>
+<div id="t8_113" class="t s2_113">•</div>
+<div id="t9_113" class="t s1_113">A STILL BORN child should be named, given Ghusl and wrapped in a piece of cloth, (NO Kafn) and then </div>
+<div id="ta_113" class="t s1_113">buried. </div>
+<div id="tb_113" class="t s2_113">•</div>
+<div id="tc_113" class="t s1_113">In the case of a miscarriage, if the limbs are formed, then too, it will be given </div>
+<div id="td_113" class="t s1_113">a name,and Ghusl, wrapped </div>
+<div id="te_113" class="t s1_113">in a piece of cloth and buried, just as a still born child. </div>
+<div id="tf_113" class="t s2_113">•</div>
+<div id="tg_113" class="t s1_113">There is NO Janaza Salaat for still born babies. </div>
+<div id="th_113" class="t s2_113">•</div>
+<div id="ti_113" class="t s1_113">IF the limbs are NOT formed, no name will be given and there will be NO Ghusl. The malformed child </div>
+<div id="tj_113" class="t s1_113">should just be wrapped in a piece of cloth and buried </div>
+<div id="tk_113" class="t s2_113">•</div>
+<div id="tl_113" class="t s1_113">If any one of the parents of a dead child is a Muslim, then that child will be regarded as a Muslim Janaza </div>
+<div id="tm_113" class="t s1_113">Salaat should be performed for that child. </div>
+<div id="tn_113" class="t s2_113">•</div>
+<div id="to_113" class="t s1_113">Janaza Salaat shall be said for a person that has committed suicide. It is desirable that someone other than </div>
+<div id="tp_113" class="t s1_113">the appointed Imam or reputable person of the community lead this prayer. Janaza Salaat will be performed </div>
+<div id="tq_113" class="t s1_113">for all Muslims; pious or sinful. </div>
+<div id="tr_113" class="t s2_113">•</div>
+<div id="ts_113" class="t s1_113">It has been narrated by Hazrat Abu Hurayrah (Radhiallaahu anhu) that Rasulullah (S.A.W.) said : "One that </div>
+<div id="tt_113" class="t s1_113">accompanies the Janaza of a Muslim with sincerity and with the intention of Sawaub, and remains with it </div>
+<div id="tu_113" class="t s1_113">until the Salaat is performed and the Mayyit buried, will return (home) with TWO Qiraat Sawab, Of these, </div>
+<div id="tv_113" class="t s1_113">one Qiraat is equal to the mountain of UHUD. A person who only performed the Janaza Salaat and returns, </div>
+<div id="tw_113" class="t s1_113">will return with one Qiraat Sawab" </div>
+<div id="tx_113" class="t s2_113">•</div>
+<div id="ty_113" class="t s1_113">Women do NOT follow the Janaza nor do they visit the Qabrastaan. </div>
+<div id="tz_113" class="t s3_113">Fasting </div>
+<div id="t10_113" class="t s4_113">PART 11 </div>
+<div id="t11_113" class="t s1_113">1.</div>
+<div id="t12_113" class="t s1_113">Fasting in the month of RAMADHAAN is one of the five pillars of Islam. </div>
+<div id="t13_113" class="t s1_113">2.</div>
+<div id="t14_113" class="t s1_113">Fasting in the month of Ramadan is FARZ upon every Muslim, male and female who is sane and mature. </div>
+<div id="t15_113" class="t s1_113">3.</div>
+<div id="t16_113" class="t s1_113">Almighty Allah has promised great reward for those who, Fast, whilst severe punishment is in store for </div>
+<div id="t17_113" class="t s1_113">those who do NOT fast in the month of Ramadan </div>
+<div id="t18_113" class="t s1_113">4.</div>
+<div id="t19_113" class="t s1_113">Fasting has many physical, moral and special benefits. However, Allah has made fasting compulsory so </div>
+<div id="t1a_113" class="t s1_113">that we become pious, God Fearing and God conscious. </div>
+<div id="t1b_113" class="t s1_113">5.</div>
+<div id="t1c_113" class="t s1_113">Fasting in ISLAM means to stay away from EATING, DRINKING and COHABITATION from, Subha </div>
+<div id="t1d_113" class="t s1_113">Sadiq (early dawn) to sunset with a Niyyat or Fasting . </div>
+<div id="t1e_113" class="t s1_113">6.</div>
+<div id="t1f_113" class="t s1_113">There are EIGHT types of FASTING. They are as follows : </div>
+<div id="t1g_113" class="t s1_113">1.</div>
+<div id="t1h_113" class="t s5_113">FARZE MUAIYYAN.</div>
+<div id="t1i_113" class="t s1_113">Fasting for the whole month of Ramadan once a year. </div>
+<div id="t1j_113" class="t s1_113">2.</div>
+<div id="t1k_113" class="t s5_113">FARZ GHAIR MUAIYYAN</div>
+<div id="t1l_113" class="t s1_113">The duty upon one to keep QAZAA of a Fasting (fast) missed in the month of Ramadan with or without a </div>
+<div id="t1m_113" class="t s1_113">valid reason. </div>
+<div id="t1n_113" class="t s1_113">3.</div>
+<div id="t1o_113" class="t s5_113">WAJIB MUAIYYAN</div>
+<div id="t1p_113" class="t s1_113">To vow to keep a fast on a specific day or date for the sake of Allah, upon the fulfillment of some wish or </div>
+<div id="t1q_113" class="t s1_113">desire. (NAZR). </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg113Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg113"><object width="935" height="1210" data="113/113.svg" type="image/svg+xml" id="pdf113" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld113" type="text/javascript">
+
+var isIE = false;
+var f113 = [['t3_113',2555],['t4_113',311],['t6_113',2488],['t7_113',656],['t9_113',2620],['tc_113',1894],['td_113',682],['te_113',1333],['tg_113',1156],['ti_113',2534],['tj_113',1299],['tl_113',2568],['tm_113',1020],['to_113',2587],['tp_113',2634],['tq_113',779],['ts_113',2640],['tt_113',2579],['tu_113',2612],['tv_113',2630],['tw_113',857],['ty_113',1669],['t10_113',278],['t12_113',1822],['t14_113',2581],['t16_113',2529],['t17_113',1210],['t19_113',2543],['t1a_113',1370],['t1c_113',2556],['t1d_113',1340],['t1f_113',1464],['t1h_113',585],['t1i_113',1317],['t1k_113',752],['t1l_113',2595],['t1m_113',313],['t1o_113',563],['t1p_113',2592],['t1q_113',400]];
+function load113(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f113);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 63;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_113");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page154</title>
+</head>
+
+<body onload="load154()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_154{left:456px;top:1136px;}
+#t2_154{left:110px;top:54px;}
+#t3_154{left:110px;top:75px;}
+#t4_154{left:110px;top:97px;}
+#t5_154{left:110px;top:118px;}
+#t6_154{left:110px;top:147px;}
+#t7_154{left:110px;top:173px;}
+#t8_154{left:138px;top:209px;}
+#t9_154{left:165px;top:209px;}
+#ta_154{left:138px;top:242px;}
+#tb_154{left:165px;top:242px;}
+#tc_154{left:110px;top:276px;}
+#td_154{left:513px;top:276px;}
+#te_154{left:138px;top:312px;}
+#tf_154{left:165px;top:312px;}
+#tg_154{left:138px;top:345px;}
+#th_154{left:165px;top:345px;}
+#ti_154{left:138px;top:378px;}
+#tj_154{left:165px;top:378px;}
+#tk_154{left:305px;top:404px;}
+#tl_154{left:138px;top:433px;}
+#tm_154{left:165px;top:433px;}
+#tn_154{left:138px;top:466px;}
+#to_154{left:165px;top:466px;}
+#tp_154{left:138px;top:499px;}
+#tq_154{left:165px;top:499px;}
+#tr_154{left:138px;top:532px;}
+#ts_154{left:165px;top:532px;}
+#tt_154{left:137px;top:565px;}
+#tu_154{left:165px;top:565px;}
+#tv_154{left:137px;top:598px;}
+#tw_154{left:165px;top:598px;}
+#tx_154{left:137px;top:631px;}
+#ty_154{left:165px;top:631px;}
+#tz_154{left:137px;top:665px;}
+#t10_154{left:165px;top:665px;}
+#t11_154{left:137px;top:698px;}
+#t12_154{left:165px;top:698px;}
+#t13_154{left:329px;top:723px;}
+#t14_154{left:138px;top:752px;}
+#t15_154{left:165px;top:752px;}
+#t16_154{left:240px;top:752px;}
+#t17_154{left:165px;top:770px;}
+#t18_154{left:165px;top:788px;}
+#t19_154{left:165px;top:824px;}
+#t1a_154{left:165px;top:842px;}
+#t1b_154{left:138px;top:876px;}
+#t1c_154{left:165px;top:876px;}
+#t1d_154{left:165px;top:894px;}
+#t1e_154{left:165px;top:912px;}
+#t1f_154{left:165px;top:930px;}
+#t1g_154{left:138px;top:964px;}
+#t1h_154{left:165px;top:964px;}
+#t1i_154{left:165px;top:981px;}
+#t1j_154{left:165px;top:999px;}
+#t1k_154{left:295px;top:1025px;}
+#t1l_154{left:110px;top:1054px;}
+#t1m_154{left:110px;top:1075px;}
+#t1n_154{left:138px;top:1112px;}
+#t1o_154{left:165px;top:1112px;}
+
+.s1_154{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT154;
+	color: rgb(0,0,0);
+}
+
+.s5_154{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT154;
+	color: rgb(0,0,0);
+}
+
+.s3_154{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM154;
+	color: rgb(0,0,0);
+}
+
+.s2_154{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT154;
+	color: rgb(0,0,0);
+}
+
+.s6_154{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NKJHPH-Wingdings-Regular154;
+	color: rgb(0,0,0);
+}
+
+.s4_154{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM154;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJIKOL-SymbolMT154;
+	src :url("154/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM154;
+	src :url("154/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT154;
+	src :url("154/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NKJHPH-Wingdings-Regular154;
+	src :url("154/fonts/NKJHPH-Wingdings-Regular.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_154" class="t s1_154">154</div>
+<div id="t2_154" class="t s2_154">It is Sunnate Muakkadah to perform Umrah once in a lifetime. Umrah could be performed </div>
+<div id="t3_154" class="t s2_154">practically throughout the year. However, an Umrah during Ramadhaan is superior to the Umrah </div>
+<div id="t4_154" class="t s2_154">performed on other days. Rasulullah (S.A.W.) has mentioned: "An Umrah performed during </div>
+<div id="t5_154" class="t s2_154">Ramadhaan is equal (in reward) to performing Haj with me." </div>
+<div id="t6_154" class="t s3_154">THE FARAA'IDH AND WAAJIBAAT OF UMRAH: </div>
+<div id="t7_154" class="t s2_154">There are two Farz in Umrah: </div>
+<div id="t8_154" class="t s1_154">1.</div>
+<div id="t9_154" class="t s1_154">To wear the Ihraam. </div>
+<div id="ta_154" class="t s1_154">2.</div>
+<div id="tb_154" class="t s1_154">To complete at least four circuits of Tawaaf. </div>
+<div id="tc_154" class="t s4_154">THERE ARE THREE WAAJIBAATS IN UMRAH</div>
+<div id="td_154" class="t s2_154">: </div>
+<div id="te_154" class="t s1_154">1.</div>
+<div id="tf_154" class="t s1_154">Completion of all seven circuits of Tawaaf. </div>
+<div id="tg_154" class="t s1_154">2.</div>
+<div id="th_154" class="t s1_154">Saiee between Safa and Marwah. </div>
+<div id="ti_154" class="t s1_154">3.</div>
+<div id="tj_154" class="t s1_154">Shaving of the hair or trimming it (equally) on all sides. </div>
+<div id="tk_154" class="t s2_154">THE PROCEDURE OF UMRAH (in brief): </div>
+<div id="tl_154" class="t s1_154">1.</div>
+<div id="tm_154" class="t s1_154">Put on the Ihraam before entering the Meeqaat (boundary). </div>
+<div id="tn_154" class="t s1_154">2.</div>
+<div id="to_154" class="t s1_154">Perform two Rak'aats Sunnatul Ihraam. </div>
+<div id="tp_154" class="t s1_154">3.</div>
+<div id="tq_154" class="t s1_154">Say the Niyyah and Talbiyah. </div>
+<div id="tr_154" class="t s1_154">4.</div>
+<div id="ts_154" class="t s1_154">Proceed to Makkah Mukarramah, en route recite the Talbiyah constantly. </div>
+<div id="tt_154" class="t s1_154">5.</div>
+<div id="tu_154" class="t s1_154">Perform a Tawauf with Idtibaa and Ramal. </div>
+<div id="tv_154" class="t s1_154">6.</div>
+<div id="tw_154" class="t s1_154">Perform two Rakaats Waajib Salaat (after the Tawaaf) behind MAQAAME IBRAHIM. </div>
+<div id="tx_154" class="t s1_154">7.</div>
+<div id="ty_154" class="t s1_154">Proceed to the Multazam and Zam Zam well. </div>
+<div id="tz_154" class="t s1_154">8.</div>
+<div id="t10_154" class="t s1_154">Perform Sa'ee between Safa and Marwah </div>
+<div id="t11_154" class="t s1_154">9.</div>
+<div id="t12_154" class="t s1_154">Shave or trim the hair of the head </div>
+<div id="t13_154" class="t s2_154">DETAILED LESSON ON UMRAH : </div>
+<div id="t14_154" class="t s1_154">1.</div>
+<div id="t15_154" class="t s3_154">IHRAAM:</div>
+<div id="t16_154" class="t s1_154">It is incumbent upon all persons livings beyond the Meeqaat (boundary) to put on the Ihraam If </div>
+<div id="t17_154" class="t s1_154">they intend going to Makkah Mukaramah. A woman not in the state of performing Salaat is not excused </div>
+<div id="t18_154" class="t s1_154">from this. </div>
+<div id="t19_154" class="t s1_154">It is Sunnat to have a bath before putting on the lhraam. If this is not possible, Wudhu will suffice. If is </div>
+<div id="t1a_154" class="t s1_154">Mustahab to pair the nails, trim the hair and remove all unwanted hair before the bath. </div>
+<div id="t1b_154" class="t s5_154">•</div>
+<div id="t1c_154" class="t s1_154">The Ihraam for men consists of two pieces of cloth : one for the lower portion of the body (waist upto </div>
+<div id="t1d_154" class="t s1_154">above the ankles) and the other for the upper portion of the body The head and face should he left </div>
+<div id="t1e_154" class="t s1_154">uncovered. No other garments should he worn. The footwear should be such that the (centre bones) of the </div>
+<div id="t1f_154" class="t s1_154">upper part of the feet (the area of the shoe-lace) must he left uncovered. </div>
+<div id="t1g_154" class="t s5_154">•</div>
+<div id="t1h_154" class="t s1_154">Women will put on their normal clothes However, their heads must be fully covered Their faces and hands </div>
+<div id="t1i_154" class="t s1_154">(upto the wrists) COULD be exposed It becomes WAAJIB to cover their faces if they fear Fitnah. This </div>
+<div id="t1j_154" class="t s1_154">should he done in such a manner that the covering does NOT touch the face. </div>
+<div id="t1k_154" class="t s2_154">2. TWO RAK'AATS SUNNAT OF IHRAAM: </div>
+<div id="t1l_154" class="t s2_154">After putting on the Ihraam, perform 2 Rak'aah Sunnatul Ihraam with the headgear (A </div>
+<div id="t1m_154" class="t s2_154">womanwho is not in the state of performing Salaah, will not perform this Salaah) </div>
+<div id="t1n_154" class="t s6_154">±</div>
+<div id="t1o_154" class="t s1_154">She will perform Ghusl, </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg154Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg154"><object width="935" height="1210" data="154/154.svg" type="image/svg+xml" id="pdf154" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld154" type="text/javascript">
+
+var isIE = false;
+var f154 = [['t2_154',2645],['t3_154',2842],['t4_154',2711],['t5_154',1790],['t6_154',1405],['t7_154',874],['t9_154',496],['tb_154',1089],['tc_154',1612],['tf_154',1063],['th_154',815],['tj_154',1370],['tk_154',1300],['tm_154',1445],['to_154',965],['tq_154',729],['ts_154',1795],['tu_154',1049],['tw_154',2150],['ty_154',1107],['t10_154',1010],['t12_154',822],['t13_154',1110],['t16_154',2337],['t17_154',2550],['t18_154',238],['t19_154',2525],['t1a_154',2113],['t1c_154',2494],['t1d_154',2399],['t1e_154',2596],['t1f_154',1758],['t1h_154',2619],['t1i_154',2528],['t1j_154',1876],['t1k_154',1378],['t1l_154',2526],['t1m_154',2380],['t1o_154',592]];
+function load154(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f154);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 61;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_154");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

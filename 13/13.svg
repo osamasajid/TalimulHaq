@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<style type="text/css"><![CDATA[
+.g1_13{
+fill: #FFFFFF;
+}
+]]></style>
+</defs>
+<path d="M162,81l665,0l0,-26L162,55l0,26Z" class="g1_13" />
+<path d="M135,122l692,0l0,-26L135,96l0,26Z" class="g1_13" />
+<path d="M190,171l637,0l0,-34l-637,0l0,34Z" class="g1_13" />
+<path d="M190,213l637,0l0,-42l-637,0l0,42Z" class="g1_13" />
+<path d="M190,254l637,0l0,-41l-637,0l0,41Z" class="g1_13" />
+<path d="M190,288l637,0l0,-34l-637,0l0,34Z" class="g1_13" />
+<path d="M135,329l692,0l0,-26l-692,0l0,26Z" class="g1_13" />
+<path d="M135,363l692,0l0,-34l-692,0l0,34Z" class="g1_13" />
+<path d="M135,397l692,0l0,-34l-692,0l0,34Z" class="g1_13" />
+<path d="M135,423l692,0l0,-26l-692,0l0,26Z" class="g1_13" />
+<path d="M135,457l692,0l0,-34l-692,0l0,34Z" class="g1_13" />
+<path d="M135,491l692,0l0,-34l-692,0l0,34Z" class="g1_13" />
+<path d="M135,517l692,0l0,-26l-692,0l0,26Z" class="g1_13" />
+<path d="M135,551l692,0l0,-34l-692,0l0,34Z" class="g1_13" />
+<path d="M135,585l692,0l0,-34l-692,0l0,34Z" class="g1_13" />
+<path d="M135,611l692,0l0,-26l-692,0l0,26Z" class="g1_13" />
+<path d="M135,645l692,0l0,-34l-692,0l0,34Z" class="g1_13" />
+<path d="M135,679l692,0l0,-34l-692,0l0,34Z" class="g1_13" />
+<path d="M135,705l692,0l0,-26l-692,0l0,26Z" class="g1_13" />
+<path d="M107,751l720,0l0,-31l-720,0l0,31Z" class="g1_13" />
+<path d="M135,801l692,0l0,-34l-692,0l0,34Z" class="g1_13" />
+<path d="M135,835l692,0l0,-34l-692,0l0,34Z" class="g1_13" />
+<path d="M135,868l692,0l0,-33l-692,0l0,33Z" class="g1_13" />
+<path d="M135,903l692,0l0,-35l-692,0l0,35Z" class="g1_13" />
+<path d="M135,929l692,0l0,-26l-692,0l0,26Z" class="g1_13" />
+<path d="M107,968l720,0l0,-32l-720,0l0,32Z" class="g1_13" />
+<path d="M107,1072l720,0l0,-104l-720,0l0,104Z" class="g1_13" />
+<image x="410" y="968" width="142" height="95" xlink:href="img/1.png" />
+<path d="M135,1106l692,0l0,-27l-692,0l0,27Z" class="g1_13" />
+</svg>

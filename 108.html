@@ -1,0 +1,285 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page108</title>
+</head>
+
+<body onload="load108()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_108{left:456px;top:1136px;}
+#t2_108{left:137px;top:55px;}
+#t3_108{left:165px;top:55px;}
+#t4_108{left:165px;top:73px;}
+#t5_108{left:110px;top:106px;}
+#t6_108{left:110px;top:127px;}
+#t7_108{left:110px;top:149px;}
+#t8_108{left:110px;top:185px;}
+#t9_108{left:372px;top:185px;}
+#ta_108{left:110px;top:222px;}
+#tb_108{left:110px;top:243px;}
+#tc_108{left:110px;top:280px;}
+#td_108{left:110px;top:301px;}
+#te_108{left:110px;top:322px;}
+#tf_108{left:110px;top:344px;}
+#tg_108{left:182px;top:373px;}
+#th_108{left:646px;top:373px;}
+#ti_108{left:110px;top:402px;}
+#tj_108{left:110px;top:423px;}
+#tk_108{left:269px;top:785px;}
+#tl_108{left:110px;top:814px;}
+#tm_108{left:110px;top:835px;}
+#tn_108{left:110px;top:856px;}
+#to_108{left:110px;top:878px;}
+#tp_108{left:110px;top:927px;}
+#tq_108{left:428px;top:927px;}
+#tr_108{left:110px;top:956px;}
+#ts_108{left:229px;top:956px;}
+#tt_108{left:285px;top:956px;}
+#tu_108{left:617px;top:956px;}
+#tv_108{left:735px;top:956px;}
+#tw_108{left:110px;top:977px;}
+#tx_108{left:110px;top:999px;}
+#ty_108{left:110px;top:1020px;}
+#tz_108{left:292px;top:1020px;}
+#t10_108{left:347px;top:1020px;}
+#t11_108{left:110px;top:1041px;}
+#t12_108{left:196px;top:1041px;}
+#t13_108{left:345px;top:1041px;}
+#t14_108{left:376px;top:1041px;}
+#t15_108{left:469px;top:1041px;}
+#t16_108{left:110px;top:1063px;}
+#t17_108{left:302px;top:1063px;}
+
+.s1_108{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT108;
+	color: rgb(0,0,0);
+}
+
+.s6_108{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(0,0,0);
+	FONT-STYLE: italic;
+}
+
+.s4_108{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM108;
+	color: rgb(0,0,0);
+}
+
+.s2_108{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT108;
+	color: rgb(0,0,0);
+}
+
+.s3_108{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT108;
+	color: rgb(0,0,0);
+}
+
+.s5_108{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-BoldItalicMT;
+	color: rgb(0,0,0);
+	FONT-WEIGHT: bold;
+	FONT-STYLE: italic;
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM108;
+	src :url("108/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT108;
+	src :url("108/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT108;
+	src :url("108/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_108" class="t s1_108">108</div>
+<div id="t2_108" class="t s2_108">•</div>
+<div id="t3_108" class="t s1_108">Rasulullah (S.A.W.) has said: "Mention the GOOD actions off your deceased and abstain from the </div>
+<div id="t4_108" class="t s1_108">OFFENSIVE ones." </div>
+<div id="t5_108" class="t s3_108">The time for TA'ZIAT extends for THREE days after the death. It is MAKROOH to make </div>
+<div id="t6_108" class="t s3_108">TA'ZIAT after this period, except in cases where one is NOT present at the Janaza or when the </div>
+<div id="t7_108" class="t s3_108">bereaved is absent. Ta'ziat before the burial is permissible. </div>
+<div id="t8_108" class="t s4_108">VISITING THE GRAVEYARD (</div>
+<div id="t9_108" class="t s5_108">QABRASTAN)</div>
+<div id="ta_108" class="t s3_108">Rasulullah (S.A.W.) has mentioned: "Visit the graves, for surely visiting the graves lessens </div>
+<div id="tb_108" class="t s3_108">worldly love and reminds you of the hereafter. " </div>
+<div id="tc_108" class="t s3_108">The Qabrastaan could be visited on any day. Friday is preferred to this visit, and if possible it </div>
+<div id="td_108" class="t s3_108">should be weekly visit. It has been related in a Hadith that : "Whoever will visit his parents' </div>
+<div id="te_108" class="t s3_108">grave every Friday will be granted Maghfirat and he will be recorded as an obedient son of his </div>
+<div id="tf_108" class="t s3_108">parents. </div>
+<div id="tg_108" class="t s3_108">WHAT TO READ WHEN ENTERING THE GRAVEYARD (</div>
+<div id="th_108" class="t s6_108">QABRASTAN)</div>
+<div id="ti_108" class="t s3_108">Rasulullah (S.A.W.) has taught the Sahaabah R. A., these words as salutation to the people of the </div>
+<div id="tj_108" class="t s3_108">graves and pray for their forgiveness : </div>
+<div id="tk_108" class="t s3_108">WHAT TO RECITE WHEN IN THE QABRASTAN. </div>
+<div id="tl_108" class="t s3_108">There are many supplications that may be read at the grave side, the best being the recital of the </div>
+<div id="tm_108" class="t s3_108">Holy Qur’an stand facing the grave (back towards the Qibla) and recite as much of the Qur'an as </div>
+<div id="tn_108" class="t s3_108">possible and make Du’aa for the Maghfirat (forgiveness) of the departed. A few ways of praying </div>
+<div id="to_108" class="t s3_108">for the dead, as related in the AHAADEES, are given hereafter. </div>
+<div id="tp_108" class="t s3_108">Recite Suraa IKHLAAS </div>
+<div id="tq_108" class="t s3_108">11 times. </div>
+<div id="tr_108" class="t s3_108">It is related in a </div>
+<div id="ts_108" class="t s6_108">Hadith </div>
+<div id="tt_108" class="t s3_108">that whoever visits the graveyard and recites </div>
+<div id="tu_108" class="t s6_108">Surah Al Ikhlas </div>
+<div id="tv_108" class="t s3_108">11 times </div>
+<div id="tw_108" class="t s3_108">and then prays for the dead, will be rewarded as many fold as the number of dead in the </div>
+<div id="tx_108" class="t s3_108">graveyard. </div>
+<div id="ty_108" class="t s3_108">It has been reported in a </div>
+<div id="tz_108" class="t s6_108">Hadith </div>
+<div id="t10_108" class="t s3_108">that whoever visits the graveyard and recites the following </div>
+<div id="t11_108" class="t s3_108">chapters of </div>
+<div id="t12_108" class="t s6_108">Al Fatiha, Al Ikhlâs </div>
+<div id="t13_108" class="t s3_108">and </div>
+<div id="t14_108" class="t s6_108">At Takathur </div>
+<div id="t15_108" class="t s3_108">and then prays for the dead, the people of the </div>
+<div id="t16_108" class="t s3_108">grave will also ask Allah </div>
+<div id="t17_108" class="t s3_108">for such a person's forgiveness. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg108Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg108"><object width="935" height="1210" data="108/108.svg" type="image/svg+xml" id="pdf108" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld108" type="text/javascript">
+
+var isIE = false;
+var f108 = [['t3_108',2418],['t4_108',498],['t5_108',2652],['t6_108',2785],['t7_108',1718],['t8_108',1047],['ta_108',2677],['tb_108',1414],['tc_108',2738],['td_108',2686],['te_108',2775],['tg_108',1854],['ti_108',2854],['tj_108',1117],['tk_108',1586],['tl_108',2812],['tm_108',2831],['tn_108',2836],['to_108',1869],['tp_108',712],['tq_108',268],['tr_108',457],['tt_108',1310],['tu_108',456],['tv_108',250],['tw_108',2573],['ty_108',707],['t10_108',1721],['t11_108',324],['t12_108',579],['t14_108',352],['t15_108',1325],['t16_108',730],['t17_108',919]];
+function load108(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f108);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 44;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_108");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

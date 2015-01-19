@@ -1,0 +1,260 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page117</title>
+</head>
+
+<body onload="load117()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_117{left:456px;top:1136px;}
+#t2_117{left:137px;top:54px;}
+#t3_117{left:165px;top:54px;}
+#t4_117{left:137px;top:87px;}
+#t5_117{left:165px;top:87px;}
+#t6_117{left:409px;top:112px;}
+#t7_117{left:357px;top:134px;}
+#t8_117{left:110px;top:163px;}
+#t9_117{left:110px;top:184px;}
+#ta_117{left:110px;top:206px;}
+#tb_117{left:110px;top:242px;}
+#tc_117{left:219px;top:284px;}
+#td_117{left:249px;top:286px;}
+#te_117{left:249px;top:321px;}
+#tf_117{left:219px;top:345px;}
+#tg_117{left:249px;top:345px;}
+#th_117{left:274px;top:345px;}
+#ti_117{left:110px;top:376px;}
+#tj_117{left:110px;top:398px;}
+#tk_117{left:110px;top:419px;}
+#tl_117{left:110px;top:456px;}
+#tm_117{left:110px;top:492px;}
+#tn_117{left:110px;top:514px;}
+#to_117{left:429px;top:543px;}
+#tp_117{left:110px;top:572px;}
+#tq_117{left:110px;top:608px;}
+#tr_117{left:122px;top:637px;}
+#ts_117{left:660px;top:637px;}
+#tt_117{left:134px;top:659px;}
+#tu_117{left:443px;top:680px;}
+#tv_117{left:110px;top:709px;}
+#tw_117{left:110px;top:730px;}
+#tx_117{left:358px;top:759px;}
+#ty_117{left:110px;top:788px;}
+#tz_117{left:110px;top:810px;}
+#t10_117{left:110px;top:831px;}
+#t11_117{left:110px;top:852px;}
+#t12_117{left:369px;top:881px;}
+#t13_117{left:110px;top:910px;}
+#t14_117{left:110px;top:947px;}
+#t15_117{left:354px;top:976px;}
+#t16_117{left:138px;top:1005px;}
+#t17_117{left:165px;top:1005px;}
+#t18_117{left:138px;top:1038px;}
+#t19_117{left:165px;top:1038px;}
+#t1a_117{left:138px;top:1071px;}
+#t1b_117{left:165px;top:1071px;}
+#t1c_117{left:138px;top:1104px;}
+#t1d_117{left:165px;top:1104px;}
+
+.s1_117{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT117;
+	color: rgb(0,0,0);
+}
+
+.s2_117{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT117;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT117;
+	src :url("117/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_117" class="t s1_117">117</div>
+<div id="t2_117" class="t s1_117">3.</div>
+<div id="t3_117" class="t s1_117">If it is feared that hunger or thirst will lead to death, it is permitted to break one's fast. </div>
+<div id="t4_117" class="t s1_117">4.</div>
+<div id="t5_117" class="t s1_117">It is WAJIB to keep Qazaa of a NAFL fast that was broken before completing it. </div>
+<div id="t6_117" class="t s2_117">FIDYA FOR FAST </div>
+<div id="t7_117" class="t s2_117">FIDYA (COMPENSATION). </div>
+<div id="t8_117" class="t s2_117">1. A very old person who does NOT have the strength to fast or a very sick or diseased person </div>
+<div id="t9_117" class="t s2_117">who has NO hope of recovering after Ramadan, should give FIDYA for each fast missed in </div>
+<div id="ta_117" class="t s2_117">Ramadan. </div>
+<div id="tb_117" class="t s2_117">2. The Fidya for a fast is similar to that of a missed Farz or Wajib Salaat, i.e.: </div>
+<div id="tc_117" class="t s2_117">1. </div>
+<div id="td_117" class="t s1_117">To give 3 1/2 Lbs = approx. 1, 6kg. of wheat </div>
+<div id="te_117" class="t s1_117">OR 7 lbs = approx. 3,2 kg of barley</div>
+<div id="tf_117" class="t s1_117">2. </div>
+<div id="tg_117" class="t s1_117">OR.</div>
+<div id="th_117" class="t s1_117">...the equivalent of the above in cash or kind.</div>
+<div id="ti_117" class="t s2_117">If, however, an old or sick person gains strength or recovers after Ramadan, he must keep the </div>
+<div id="tj_117" class="t s2_117">missed number of fasts and whatever was given as Fidya will be a reward for him from Allah </div>
+<div id="tk_117" class="t s2_117">Ta’aala. </div>
+<div id="tl_117" class="t s2_117">No one is allowed to fast for another (sick or fit) person. </div>
+<div id="tm_117" class="t s2_117">N.B. Children should be encouraged to fast, but should not be forced to complete the fast up to </div>
+<div id="tn_117" class="t s2_117">sunset if they are unable to bear the hunger or thirst. </div>
+<div id="to_117" class="t s2_117">I'TIKAAF </div>
+<div id="tp_117" class="t s2_117">I'TIKAAL means to enter the Masjid with the Niyyat of residing therein. </div>
+<div id="tq_117" class="t s2_117">(MUTAKlF: One who makes ITIKAAF). </div>
+<div id="tr_117" class="t s2_117">TYPES OF ITIKAAF: WAJIB SUNNAT MUSTAHAB WAJIB. </div>
+<div id="ts_117" class="t s2_117">To Vow or pledge to </div>
+<div id="tt_117" class="t s2_117">make I'TIKAAF (on fixed day) for the sake OF Allah upon the fulfillment of some wish or </div>
+<div id="tu_117" class="t s2_117">desire. </div>
+<div id="tv_117" class="t s2_117">The least duration of a WAJIB ITIKAAF is one day and night and it must be accompanied by a </div>
+<div id="tw_117" class="t s2_117">fast. </div>
+<div id="tx_117" class="t s2_117">SUNNAT -E- MUAKKEDA: </div>
+<div id="ty_117" class="t s2_117">To reside the last ten nights and days of Ramadan in the Masjid is SUNNATE MUAKKADAH </div>
+<div id="tz_117" class="t s2_117">ALAL KIFAYAH, i.e. If a person from the community fulfils the obligation of I'tikaaf the entire </div>
+<div id="t10_117" class="t s2_117">community will be absolved of this sacred duty. Otherwise all the residents will be sinful of </div>
+<div id="t11_117" class="t s2_117">neglecting this SUNNAT of our NABI (Sallallaahu-Alaihi-Wa-Sallam). </div>
+<div id="t12_117" class="t s2_117">MUSTAHAB OR NAFIL: </div>
+<div id="t13_117" class="t s2_117">This I'tikaaf can be for any amount of time, even for a few minutes. </div>
+<div id="t14_117" class="t s2_117">No fast (Roza) is conditional for MUSTAHAB or NAFL I'tikaaf. </div>
+<div id="t15_117" class="t s2_117">CONDITIONS OF I'TIKAAF: </div>
+<div id="t16_117" class="t s1_117">1.</div>
+<div id="t17_117" class="t s1_117">Islam </div>
+<div id="t18_117" class="t s1_117">2.</div>
+<div id="t19_117" class="t s1_117">Sane, i.e. a person should not be mad. </div>
+<div id="t1a_117" class="t s1_117">3.</div>
+<div id="t1b_117" class="t s1_117">Taharat. To be free from HADASE AKBAR </div>
+<div id="t1c_117" class="t s1_117">4.</div>
+<div id="t1d_117" class="t s1_117">NIYYAT. Intention. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg117Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg117"><object width="935" height="1210" data="117/117.svg" type="image/svg+xml" id="pdf117" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld117" type="text/javascript">
+
+var isIE = false;
+var f117 = [['t3_117',2098],['t5_117',1979],['t6_117',581],['t7_117',882],['t8_117',2764],['t9_117',2684],['tb_117',2268],['td_117',1101],['te_117',874],['th_117',1104],['ti_117',2741],['tj_117',2739],['tl_117',1655],['tm_117',2784],['tn_117',1532],['tp_117',2137],['tq_117',1219],['tr_117',1914],['ts_117',610],['tt_117',2664],['tv_117',2802],['tx_117',874],['ty_117',2800],['tz_117',2835],['t10_117',2695],['t11_117',2113],['t12_117',785],['t13_117',1982],['t14_117',1911],['t15_117',904],['t19_117',929],['t1b_117',1098],['t1d_117',503]];
+function load117(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f117);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 50;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_117");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

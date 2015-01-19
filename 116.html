@@ -1,0 +1,295 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page116</title>
+</head>
+
+<body onload="load116()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_116{left:456px;top:1136px;}
+#t2_116{left:137px;top:54px;}
+#t3_116{left:165px;top:54px;}
+#t4_116{left:137px;top:87px;}
+#t5_116{left:165px;top:87px;}
+#t6_116{left:165px;top:105px;}
+#t7_116{left:137px;top:138px;}
+#t8_116{left:165px;top:138px;}
+#t9_116{left:165px;top:156px;}
+#ta_116{left:137px;top:189px;}
+#tb_116{left:165px;top:189px;}
+#tc_116{left:165px;top:207px;}
+#td_116{left:137px;top:240px;}
+#te_116{left:165px;top:240px;}
+#tf_116{left:165px;top:258px;}
+#tg_116{left:110px;top:291px;}
+#th_116{left:138px;top:328px;}
+#ti_116{left:165px;top:328px;}
+#tj_116{left:165px;top:346px;}
+#tk_116{left:137px;top:379px;}
+#tl_116{left:165px;top:379px;}
+#tm_116{left:165px;top:397px;}
+#tn_116{left:137px;top:430px;}
+#to_116{left:165px;top:430px;}
+#tp_116{left:165px;top:463px;}
+#tq_116{left:110px;top:499px;}
+#tr_116{left:138px;top:536px;}
+#ts_116{left:165px;top:536px;}
+#tt_116{left:138px;top:569px;}
+#tu_116{left:165px;top:569px;}
+#tv_116{left:138px;top:602px;}
+#tw_116{left:165px;top:602px;}
+#tx_116{left:138px;top:635px;}
+#ty_116{left:165px;top:635px;}
+#tz_116{left:138px;top:668px;}
+#t10_116{left:165px;top:668px;}
+#t11_116{left:138px;top:701px;}
+#t12_116{left:165px;top:701px;}
+#t13_116{left:138px;top:735px;}
+#t14_116{left:165px;top:735px;}
+#t15_116{left:138px;top:768px;}
+#t16_116{left:165px;top:768px;}
+#t17_116{left:138px;top:801px;}
+#t18_116{left:165px;top:801px;}
+#t19_116{left:138px;top:834px;}
+#t1a_116{left:165px;top:834px;}
+#t1b_116{left:138px;top:867px;}
+#t1c_116{left:165px;top:867px;}
+#t1d_116{left:165px;top:885px;}
+#t1e_116{left:138px;top:918px;}
+#t1f_116{left:165px;top:918px;}
+#t1g_116{left:138px;top:951px;}
+#t1h_116{left:165px;top:951px;}
+#t1i_116{left:246px;top:976px;}
+#t1j_116{left:138px;top:1005px;}
+#t1k_116{left:165px;top:1005px;}
+#t1l_116{left:165px;top:1023px;}
+#t1m_116{left:138px;top:1056px;}
+#t1n_116{left:165px;top:1056px;}
+#t1o_116{left:165px;top:1074px;}
+#t1p_116{left:165px;top:1092px;}
+
+.s1_116{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT116;
+	color: rgb(0,0,0);
+}
+
+.s3_116{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT116;
+	color: rgb(0,0,0);
+}
+
+.s2_116{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM116;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM116;
+	src :url("116/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT116;
+	src :url("116/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_116" class="t s1_116">116</div>
+<div id="t2_116" class="t s1_116">7.</div>
+<div id="t3_116" class="t s1_116">Inhaling snuff into the nostrils. </div>
+<div id="t4_116" class="t s1_116">8.</div>
+<div id="t5_116" class="t s1_116">Swallowing the blood from the gums if the color of the blood is more than the saliva with which it is </div>
+<div id="t6_116" class="t s1_116">mixed. </div>
+<div id="t7_116" class="t s1_116">9.</div>
+<div id="t8_116" class="t s1_116">To eat and drink forgetting that one is fasting and thereafter thinking that the fast is broken, to eat and </div>
+<div id="t9_116" class="t s1_116">drink again. </div>
+<div id="ta_116" class="t s1_116">10.</div>
+<div id="tb_116" class="t s1_116">To eat and drink after Subha Sadiq or to break the fast before sunset due to cloudy sky or a faulty watch, </div>
+<div id="tc_116" class="t s1_116">etc., and then realizing one's fault. </div>
+<div id="td_116" class="t s1_116">11.</div>
+<div id="te_116" class="t s1_116">Any other fast other than a Ramadan one, whether broken intentionally or with a good and valid reason, </div>
+<div id="tf_116" class="t s1_116">makes ONLY Qazaa WAJIB. There is NO Kaffarah for breaking any fast besides that of Ramadan. </div>
+<div id="tg_116" class="t s2_116">THINGS THAT MAKE BOTH QAZA AND KAFFARAH WAJIB</div>
+<div id="th_116" class="t s1_116">1.</div>
+<div id="ti_116" class="t s1_116">Eating, drinking or breaking the fast in any other manner, smoking, etc., without a valid reason, will make </div>
+<div id="tj_116" class="t s1_116">both Qazaa and Kaffarah necessary. </div>
+<div id="tk_116" class="t s1_116">2.</div>
+<div id="tl_116" class="t s1_116">Applying SURMA into the eye or rubbing oil on the head and then, thinking that the fast is broken, to eat </div>
+<div id="tm_116" class="t s1_116">and drink intentionally. </div>
+<div id="tn_116" class="t s1_116">3.</div>
+<div id="to_116" class="t s1_116">To drink any kind of medicine intentionally. </div>
+<div id="tp_116" class="t s3_116">(Note: INJECTION is permitted.) </div>
+<div id="tq_116" class="t s2_116">THINGS THAT DO NOT BREAK THE FAST</div>
+<div id="tr_116" class="t s1_116">1.</div>
+<div id="ts_116" class="t s1_116">To eat or drink something unintentionally. </div>
+<div id="tt_116" class="t s1_116">2.</div>
+<div id="tu_116" class="t s1_116">A mosquito, fly or any other object going down the throat unintentionally. </div>
+<div id="tv_116" class="t s1_116">3.</div>
+<div id="tw_116" class="t s1_116">Water entering the ears. </div>
+<div id="tx_116" class="t s1_116">4.</div>
+<div id="ty_116" class="t s1_116">Dust or dirt going down the throat. </div>
+<div id="tz_116" class="t s1_116">5.</div>
+<div id="t10_116" class="t s1_116">Swallowing one's OWN saliva. </div>
+<div id="t11_116" class="t s1_116">6.</div>
+<div id="t12_116" class="t s1_116">Taking an injection. </div>
+<div id="t13_116" class="t s1_116">7.</div>
+<div id="t14_116" class="t s1_116">Applying of Surmah (kohl) into the eyes. </div>
+<div id="t15_116" class="t s1_116">8.</div>
+<div id="t16_116" class="t s1_116">Taking a bath to keep cool. </div>
+<div id="t17_116" class="t s1_116">9.</div>
+<div id="t18_116" class="t s1_116">Rubbing oil onto the body or hair. </div>
+<div id="t19_116" class="t s1_116">10.</div>
+<div id="t1a_116" class="t s1_116">To vomit unintentionally. </div>
+<div id="t1b_116" class="t s1_116">11.</div>
+<div id="t1c_116" class="t s1_116">Applying Itr or perfume. It is NOT permitted to inhale the smoke of Lobaan or Agar Batti whilst fasting. It </div>
+<div id="t1d_116" class="t s1_116">is also NOT permitted to smoke cigarettes or inhale its smoke. </div>
+<div id="t1e_116" class="t s1_116">12.</div>
+<div id="t1f_116" class="t s1_116">Brushing the teeth without tooth paste or powder, ea., using a Miswaak, etc. </div>
+<div id="t1g_116" class="t s1_116">13.</div>
+<div id="t1h_116" class="t s1_116">A dream which makes Ghusl WAAJIB (necessary) does Not break the Fasting (fast). </div>
+<div id="t1i_116" class="t s3_116">PEOPLE EXEMPTED FROM FASTING IN RAMADAAN </div>
+<div id="t1j_116" class="t s1_116">1.</div>
+<div id="t1k_116" class="t s1_116">Sick people when their health is likely to be badly affected by fasting. They should make up the loss, a day </div>
+<div id="t1l_116" class="t s1_116">for a day, when they recover after Ramadan. </div>
+<div id="t1m_116" class="t s1_116">2.</div>
+<div id="t1n_116" class="t s1_116">A Musaafir, (one who is undertaking a journey of more than 77 k.m. and does NOT intend staying more </div>
+<div id="t1o_116" class="t s1_116">than 14 day at his destination). However. it is better for him to fast in Ramadan than keep Qazaa later, </div>
+<div id="t1p_116" class="t s1_116">provided the journey is NOT a tiresome one. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg116Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg116"><object width="935" height="1210" data="116/116.svg" type="image/svg+xml" id="pdf116" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld116" type="text/javascript">
+
+var isIE = false;
+var f116 = [['t3_116',758],['t5_116',2468],['t8_116',2497],['t9_116',293],['tb_116',2566],['tc_116',838],['te_116',2550],['tf_116',2437],['tg_116',2085],['ti_116',2603],['tj_116',884],['tl_116',2586],['tm_116',574],['to_116',1087],['tp_116',990],['tq_116',1473],['ts_116',1038],['tu_116',1821],['tw_116',586],['ty_116',854],['t10_116',767],['t12_116',492],['t14_116',1010],['t16_116',668],['t18_116',837],['t1a_116',627],['t1c_116',2621],['t1d_116',1529],['t1f_116',1865],['t1h_116',2086],['t1i_116',1775],['t1k_116',2622],['t1l_116',1091],['t1n_116',2557],['t1o_116',2502],['t1p_116',1096]];
+function load116(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f116);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 62;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_116");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

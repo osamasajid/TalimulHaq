@@ -1,0 +1,302 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page119</title>
+</head>
+
+<body onload="load119()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_119{left:456px;top:1136px;}
+#t2_119{left:137px;top:55px;}
+#t3_119{left:165px;top:55px;}
+#t4_119{left:165px;top:73px;}
+#t5_119{left:137px;top:107px;}
+#t6_119{left:165px;top:107px;}
+#t7_119{left:165px;top:125px;}
+#t8_119{left:391px;top:125px;}
+#t9_119{left:137px;top:159px;}
+#ta_119{left:165px;top:159px;}
+#tb_119{left:165px;top:177px;}
+#tc_119{left:137px;top:211px;}
+#td_119{left:165px;top:211px;}
+#te_119{left:137px;top:245px;}
+#tf_119{left:165px;top:245px;}
+#tg_119{left:165px;top:263px;}
+#th_119{left:137px;top:297px;}
+#ti_119{left:165px;top:297px;}
+#tj_119{left:165px;top:315px;}
+#tk_119{left:110px;top:348px;}
+#tl_119{left:138px;top:385px;}
+#tm_119{left:165px;top:385px;}
+#tn_119{left:165px;top:403px;}
+#to_119{left:138px;top:436px;}
+#tp_119{left:165px;top:436px;}
+#tq_119{left:165px;top:454px;}
+#tr_119{left:137px;top:487px;}
+#ts_119{left:165px;top:487px;}
+#tt_119{left:165px;top:505px;}
+#tu_119{left:137px;top:538px;}
+#tv_119{left:165px;top:538px;}
+#tw_119{left:165px;top:556px;}
+#tx_119{left:137px;top:589px;}
+#ty_119{left:165px;top:589px;}
+#tz_119{left:165px;top:606px;}
+#t10_119{left:137px;top:640px;}
+#t11_119{left:165px;top:640px;}
+#t12_119{left:165px;top:657px;}
+#t13_119{left:165px;top:675px;}
+#t14_119{left:165px;top:693px;}
+#t15_119{left:165px;top:711px;}
+#t16_119{left:110px;top:744px;}
+#t17_119{left:138px;top:781px;}
+#t18_119{left:165px;top:781px;}
+#t19_119{left:138px;top:814px;}
+#t1a_119{left:165px;top:814px;}
+#t1b_119{left:138px;top:847px;}
+#t1c_119{left:165px;top:847px;}
+#t1d_119{left:138px;top:880px;}
+#t1e_119{left:165px;top:880px;}
+#t1f_119{left:138px;top:913px;}
+#t1g_119{left:165px;top:913px;}
+#t1h_119{left:137px;top:946px;}
+#t1i_119{left:165px;top:946px;}
+#t1j_119{left:110px;top:979px;}
+#t1k_119{left:110px;top:1016px;}
+#t1l_119{left:110px;top:1037px;}
+#t1m_119{left:110px;top:1059px;}
+#t1n_119{left:110px;top:1080px;}
+
+.s1_119{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT119;
+	color: rgb(0,0,0);
+}
+
+.s3_119{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM119;
+	color: rgb(0,0,0);
+}
+
+.s2_119{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT119;
+	color: rgb(0,0,0);
+}
+
+.s4_119{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT119;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM119;
+	src :url("119/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT119;
+	src :url("119/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT119;
+	src :url("119/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_119" class="t s1_119">119</div>
+<div id="t2_119" class="t s2_119">•</div>
+<div id="t3_119" class="t s1_119">If one has missed a few Rak'aats of Taraaweeh and the Imam has commenced the Witr, then this Muqtadi </div>
+<div id="t4_119" class="t s1_119">may join for the Witr and complete the remainder of his Taraaweeh thereafter. </div>
+<div id="t5_119" class="t s2_119">•</div>
+<div id="t6_119" class="t s1_119">20 Rak’aats with 10 Salaams are MASNOON, i.e. one should have a Niyyat for 2 Rak’aats of Taraaweeh </div>
+<div id="t7_119" class="t s1_119">each time. After every four Rakaats </div>
+<div id="t8_119" class="t s1_119">it is Mustahab to sit a while and take a rest. </div>
+<div id="t9_119" class="t s2_119">•</div>
+<div id="ta_119" class="t s1_119">One may remain silent or recite the Quran Sharif or Tasbeeh in a low voice or say Nafl Salaat separately </div>
+<div id="tb_119" class="t s1_119">during the period of rest after every four Rak'aats. </div>
+<div id="tc_119" class="t s2_119">•</div>
+<div id="td_119" class="t s1_119">It is MAKROOH to perform Taraaweeh sitting if one has the strength of Qiyaam (standing). </div>
+<div id="te_119" class="t s2_119">•</div>
+<div id="tf_119" class="t s1_119">While performing Taraaweeh some do not join the Jamaa’ah from the beginning but join the lmam when </div>
+<div id="tg_119" class="t s1_119">he prepares to go into Ruku. This is MAKROOH. They should join at the beginning. </div>
+<div id="th_119" class="t s2_119">•</div>
+<div id="ti_119" class="t s1_119">If one does NOT get the Jamaa’ah for Farz, he should perform his Farz alone and then join the Jamaa’ah </div>
+<div id="tj_119" class="t s1_119">for a Taraaweeh. </div>
+<div id="tk_119" class="t s3_119">VIRTUES OF RAMADAN</div>
+<div id="tl_119" class="t s1_119">1.</div>
+<div id="tm_119" class="t s1_119">Hazrat Abu Hurayrah R. A reported that the Apostle of Allah said: "When Ramadan comes, the doors of </div>
+<div id="tn_119" class="t s1_119">Hell are closed, and the devils are put in chains and the doors of Mercy are opened." </div>
+<div id="to_119" class="t s1_119">2.</div>
+<div id="tp_119" class="t s1_119">The Prophet Muhammad S. A. W. said: "The fragrance of the mouth of a fasting person is more pleasant to </div>
+<div id="tq_119" class="t s1_119">Allah than the smell of musk". </div>
+<div id="tr_119" class="t s1_119">3.</div>
+<div id="ts_119" class="t s1_119">Hazrat Sahl bin Saud (R. A.) reported that Rasulullah Sallallaahu alaihi wa Sallam said: "In Paradise there </div>
+<div id="tt_119" class="t s1_119">are eight doors of which there is a door named RAYYAAN. None but those that fast will enter it". </div>
+<div id="tu_119" class="t s1_119">4.</div>
+<div id="tv_119" class="t s1_119">Hazrat Abu Hurayrah R. A. reported that Rasulullah Sallallaahu alaihi wa Sallam said: "Whoever breaks </div>
+<div id="tw_119" class="t s1_119">fast on one day of Ramadan without excuse or illness, his fasting of whole age will not compensate it. </div>
+<div id="tx_119" class="t s1_119">5.</div>
+<div id="ty_119" class="t s1_119">Hazrat Anas R. A reported that the Messenger of Allah said: "Partake of Sehri before dawn, because in this </div>
+<div id="tz_119" class="t s1_119">Sehri there is Baraka (blessing)." </div>
+<div id="t10_119" class="t s1_119">6.</div>
+<div id="t11_119" class="t s1_119">Hazrat Abu Hurayrah R. A reported that the Messenger (Sallallaahu alaihi wa Sallam) of Allah said: </div>
+<div id="t12_119" class="t s1_119">"Whoever fasts during Ramadan with faith and is hopeful of reward, all his past sins will be forgiven, and </div>
+<div id="t13_119" class="t s1_119">whoever stands up in Salaah with faith and is hopeful of reward, all his past sins will be forgiven, whoever </div>
+<div id="t14_119" class="t s1_119">stands up in Salaah during the blessed night with faith and is hopeful of reward, all his past sins will be </div>
+<div id="t15_119" class="t s1_119">forgiven. </div>
+<div id="t16_119" class="t s3_119">THERE ARE SIX DUTIES IN FAST KNOWN AS SUNNATS.</div>
+<div id="t17_119" class="t s1_119">1.</div>
+<div id="t18_119" class="t s1_119">To partake of Sehri or predawn meals. </div>
+<div id="t19_119" class="t s1_119">2.</div>
+<div id="t1a_119" class="t s1_119">To break fast immediately after sunset. </div>
+<div id="t1b_119" class="t s1_119">3.</div>
+<div id="t1c_119" class="t s1_119">To perform Taraaweeh Salaat at night. </div>
+<div id="t1d_119" class="t s1_119">4.</div>
+<div id="t1e_119" class="t s1_119">To feed the poor and hungry. </div>
+<div id="t1f_119" class="t s1_119">5.</div>
+<div id="t1g_119" class="t s1_119">To increase the reading of the Holy Qur'an. </div>
+<div id="t1h_119" class="t s1_119">6.</div>
+<div id="t1i_119" class="t s1_119">To observe ITIKAAF within the Masjid during the last ten days of Ramadan. </div>
+<div id="t1j_119" class="t s3_119">FASTING TEACHES SYMPATHY FOR THE HUNGRY.</div>
+<div id="t1k_119" class="t s4_119">Fasting is the only method whereby the pangs of hunger, the ever present companion of the poor, </div>
+<div id="t1l_119" class="t s4_119">are experienced by the rich. Thus this experience kindles a spirit of kindness to the poor and </div>
+<div id="t1m_119" class="t s4_119">distressed. It also gives rise to the thought of how people will fare on the day of Resurrection, </div>
+<div id="t1n_119" class="t s4_119">when the greatest urge of hunger and thirst will be felt. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg119Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg119"><object width="935" height="1210" data="119/119.svg" type="image/svg+xml" id="pdf119" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld119" type="text/javascript">
+
+var isIE = false;
+var f119 = [['t3_119',2587],['t4_119',1921],['t6_119',2585],['t7_119',873],['t8_119',1060],['ta_119',2561],['tb_119',1225],['td_119',2266],['tf_119',2570],['tg_119',2081],['ti_119',2565],['tj_119',414],['tk_119',849],['tm_119',2564],['tn_119',2069],['tp_119',2630],['tq_119',749],['ts_119',2604],['tt_119',2413],['tv_119',2564],['tw_119',2499],['ty_119',2631],['tz_119',810],['t11_119',2461],['t12_119',2598],['t13_119',2619],['t14_119',2530],['t16_119',1966],['t18_119',942],['t1a_119',955],['t1c_119',946],['t1e_119',716],['t1g_119',1064],['t1i_119',1896],['t1j_119',1839],['t1k_119',2853],['t1l_119',2707],['t1m_119',2751],['t1n_119',1613]];
+function load119(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f119);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 60;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_119");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page125</title>
+</head>
+
+<body onload="load125()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_125{left:456px;top:1136px;}
+#t2_125{left:137px;top:54px;}
+#t3_125{left:165px;top:54px;}
+#t4_125{left:165px;top:72px;}
+#t5_125{left:137px;top:105px;}
+#t6_125{left:165px;top:105px;}
+#t7_125{left:165px;top:123px;}
+#t8_125{left:110px;top:156px;}
+#t9_125{left:138px;top:193px;}
+#ta_125{left:165px;top:193px;}
+#tb_125{left:165px;top:211px;}
+#tc_125{left:138px;top:244px;}
+#td_125{left:165px;top:244px;}
+#te_125{left:165px;top:262px;}
+#tf_125{left:138px;top:295px;}
+#tg_125{left:165px;top:295px;}
+#th_125{left:138px;top:328px;}
+#ti_125{left:165px;top:328px;}
+#tj_125{left:138px;top:361px;}
+#tk_125{left:165px;top:361px;}
+#tl_125{left:165px;top:379px;}
+#tm_125{left:165px;top:397px;}
+#tn_125{left:165px;top:414px;}
+#to_125{left:137px;top:448px;}
+#tp_125{left:165px;top:448px;}
+#tq_125{left:329px;top:473px;}
+#tr_125{left:110px;top:502px;}
+#ts_125{left:110px;top:538px;}
+#tt_125{left:110px;top:560px;}
+#tu_125{left:110px;top:581px;}
+#tv_125{left:110px;top:602px;}
+#tw_125{left:110px;top:624px;}
+#tx_125{left:110px;top:660px;}
+#ty_125{left:110px;top:709px;}
+#tz_125{left:421px;top:709px;}
+#t10_125{left:532px;top:709px;}
+#t11_125{left:616px;top:709px;}
+#t12_125{left:711px;top:707px;}
+#t13_125{left:110px;top:762px;}
+#t14_125{left:232px;top:760px;}
+#t15_125{left:421px;top:762px;}
+#t16_125{left:532px;top:762px;}
+#t17_125{left:616px;top:762px;}
+#t18_125{left:711px;top:762px;}
+#t19_125{left:110px;top:805px;}
+#t1a_125{left:232px;top:805px;}
+#t1b_125{left:421px;top:805px;}
+#t1c_125{left:532px;top:805px;}
+#t1d_125{left:616px;top:805px;}
+#t1e_125{left:711px;top:805px;}
+#t1f_125{left:110px;top:841px;}
+#t1g_125{left:110px;top:862px;}
+#t1h_125{left:240px;top:891px;}
+#t1i_125{left:138px;top:920px;}
+#t1j_125{left:165px;top:920px;}
+#t1k_125{left:137px;top:954px;}
+#t1l_125{left:165px;top:954px;}
+#t1m_125{left:165px;top:971px;}
+#t1n_125{left:277px;top:997px;}
+#t1o_125{left:110px;top:1026px;}
+#t1p_125{left:110px;top:1047px;}
+#t1q_125{left:253px;top:1095px;}
+#t1r_125{left:457px;top:1087px;}
+#t1s_125{left:457px;top:1104px;}
+
+.s1_125{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT125;
+	color: rgb(0,0,0);
+}
+
+.s3_125{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT125;
+	color: rgb(0,0,0);
+}
+
+.s2_125{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM125;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM125;
+	src :url("125/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT125;
+	src :url("125/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_125" class="t s1_125">125</div>
+<div id="t2_125" class="t s1_125">5.</div>
+<div id="t3_125" class="t s1_125">When the number of each type of animal individually does not make Zakat binding, but the total of both </div>
+<div id="t4_125" class="t s1_125">kinds does amount to the Nisaab then Zakat will be given from the type of animal that is greater in number. </div>
+<div id="t5_125" class="t s1_125">6.</div>
+<div id="t6_125" class="t s1_125">If both kinds are equal in number, one has the option of choosing the Zakat animal from whichever kind he </div>
+<div id="t7_125" class="t s1_125">desires. It must be noted that the Zakat animal should be of a good quality. </div>
+<div id="t8_125" class="t s2_125">ANIMALS ON WHICH ZAKAAT IS NOT FARZ.</div>
+<div id="t9_125" class="t s1_125">1.</div>
+<div id="ta_125" class="t s1_125">Animals that are stall fed for six months of the year and then left to graze on the veld for the remainder of </div>
+<div id="tb_125" class="t s1_125">the year are not Saa'imah and thus no Zakat will be liable on their owner. </div>
+<div id="tc_125" class="t s1_125">2.</div>
+<div id="td_125" class="t s1_125">There is no Zakat payable on animals which are reared for riding, or for drought purpose or for one's own </div>
+<div id="te_125" class="t s1_125">use or consumption. </div>
+<div id="tf_125" class="t s1_125">3.</div>
+<div id="tg_125" class="t s1_125">There is no Zakat on wild game. </div>
+<div id="th_125" class="t s1_125">4.</div>
+<div id="ti_125" class="t s1_125">There is no Zakat on horses, donkeys and mules if they are not for trade. </div>
+<div id="tj_125" class="t s1_125">5.</div>
+<div id="tk_125" class="t s1_125">There is no Zakat on a herd which consists of calves only i.e. until they reach a capable age of breeding. If </div>
+<div id="tl_125" class="t s1_125">such a herd has one animal that could be used for breeding, then Zakat will have to be given on all of them. </div>
+<div id="tm_125" class="t s1_125">In this case that particular full grown animal will have to be given as Zakat. If this animal which is capable </div>
+<div id="tn_125" class="t s1_125">of breeding dies, then Zakat will still be necessary on the rest of the herd of calves. </div>
+<div id="to_125" class="t s1_125">6.</div>
+<div id="tp_125" class="t s1_125">Zakat is not applicable on sheep that are less than twelve months old. </div>
+<div id="tq_125" class="t s3_125">NISAAB AND RATE OF ZAKAAT. </div>
+<div id="tr_125" class="t s3_125">The amount of wealth which makes one liable for Zakat is called Nisaab. </div>
+<div id="ts_125" class="t s3_125">The payment of Zakat is compulsory on the excess wealth or assets which is equal to/or exceeds </div>
+<div id="tt_125" class="t s3_125">the value of Nisaab, and which is possessed for a full Islamic year. If such wealth decreases </div>
+<div id="tu_125" class="t s3_125">during the course of the year, and it increases again to the value of Nisaab before the end of the </div>
+<div id="tv_125" class="t s3_125">year, the Zakat then must be calculated on the full amount that is possessed at the end of the </div>
+<div id="tw_125" class="t s3_125">year. </div>
+<div id="tx_125" class="t s3_125">The Nisaab of gold and silver fixed by Rasulullah Sallallaahu Alaihi Wa Sallam is as follows: </div>
+<div id="ty_125" class="t s1_125">NISAAB </div>
+<div id="tz_125" class="t s1_125">Grams </div>
+<div id="t10_125" class="t s1_125">Tolas  </div>
+<div id="t11_125" class="t s1_125">Grains </div>
+<div id="t12_125" class="t s3_125">Troy Oz </div>
+<div id="t13_125" class="t s1_125">Gold </div>
+<div id="t14_125" class="t s3_125">20 Mithqaals </div>
+<div id="t15_125" class="t s1_125">87.48 </div>
+<div id="t16_125" class="t s1_125">7.5 </div>
+<div id="t17_125" class="t s1_125">1350 </div>
+<div id="t18_125" class="t s1_125">2,8125 </div>
+<div id="t19_125" class="t s1_125">Silver </div>
+<div id="t1a_125" class="t s1_125">200 Dirhams </div>
+<div id="t1b_125" class="t s1_125">612m36</div>
+<div id="t1c_125" class="t s1_125">52.5</div>
+<div id="t1d_125" class="t s1_125">9450</div>
+<div id="t1e_125" class="t s1_125">19,6875</div>
+<div id="t1f_125" class="t s3_125">The rate of Zakat which was fixed by Rasulullah (Sallallaho Alaihe Wa Sallam) is 2,5% (1/40) </div>
+<div id="t1g_125" class="t s3_125">i.e. 2,5 cents in a Dollar. </div>
+<div id="t1h_125" class="t s3_125">THE TIME AND NISAAB OF ZAKAAT FOR LIVESTOCK </div>
+<div id="t1i_125" class="t s1_125">1.</div>
+<div id="t1j_125" class="t s1_125">The owner must have possession of animals for one lunar year before Zakat becomes Fardh. </div>
+<div id="t1k_125" class="t s1_125">2.</div>
+<div id="t1l_125" class="t s1_125">The Nisaab for Saa'imah animals is governed by the number of animals in one's ownership and not by the </div>
+<div id="t1m_125" class="t s1_125">monetary value of each animal. (refer to tables for detail) </div>
+<div id="t1n_125" class="t s3_125">TABLE OF ZAKAAT FOR SHEEP AND GOATS. </div>
+<div id="t1o_125" class="t s3_125">The Nisaab (minimum number) when Zakat becomes applicable is forty animals which are more </div>
+<div id="t1p_125" class="t s3_125">than twelve months old. There is no Zakat if the number is less than forty. </div>
+<div id="t1q_125" class="t s1_125">Number </div>
+<div id="t1r_125" class="t s1_125">ZAKAAT </div>
+<div id="t1s_125" class="t s1_125">1 year old</div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg125Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg125"><object width="935" height="1210" data="125/125.svg" type="image/svg+xml" id="pdf125" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld125" type="text/javascript">
+
+var isIE = false;
+var f125 = [['t3_125',2555],['t4_125',2632],['t6_125',2631],['t7_125',1831],['t8_125',1592],['ta_125',2591],['tb_125',1793],['td_125',2592],['te_125',495],['tg_125',795],['ti_125',1778],['tk_125',2610],['tl_125',2634],['tm_125',2620],['tn_125',2033],['tp_125',1697],['tq_125',1107],['tr_125',2145],['ts_125',2825],['tt_125',2691],['tu_125',2797],['tv_125',2701],['tx_125',2758],['t10_125',151],['t12_125',246],['t14_125',385],['t1a_125',318],['t1f_125',2784],['t1g_125',719],['t1h_125',1823],['t1j_125',2263],['t1l_125',2588],['t1m_125',1402],['t1n_125',1526],['t1o_125',2837],['t1p_125',2173],['t1s_125',245]];
+function load125(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f125);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 65;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_125");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page134</title>
+</head>
+
+<body onload="load134()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_134{left:456px;top:1136px;}
+#t2_134{left:110px;top:54px;}
+#t3_134{left:138px;top:91px;}
+#t4_134{left:165px;top:91px;}
+#t5_134{left:165px;top:109px;}
+#t6_134{left:138px;top:142px;}
+#t7_134{left:165px;top:142px;}
+#t8_134{left:138px;top:175px;}
+#t9_134{left:165px;top:175px;}
+#ta_134{left:165px;top:193px;}
+#tb_134{left:137px;top:226px;}
+#tc_134{left:165px;top:226px;}
+#td_134{left:165px;top:244px;}
+#te_134{left:137px;top:277px;}
+#tf_134{left:165px;top:277px;}
+#tg_134{left:165px;top:295px;}
+#th_134{left:137px;top:328px;}
+#ti_134{left:165px;top:328px;}
+#tj_134{left:165px;top:346px;}
+#tk_134{left:137px;top:379px;}
+#tl_134{left:165px;top:379px;}
+#tm_134{left:165px;top:397px;}
+#tn_134{left:137px;top:430px;}
+#to_134{left:165px;top:430px;}
+#tp_134{left:165px;top:448px;}
+#tq_134{left:289px;top:473px;}
+#tr_134{left:138px;top:502px;}
+#ts_134{left:165px;top:502px;}
+#tt_134{left:165px;top:520px;}
+#tu_134{left:138px;top:553px;}
+#tv_134{left:165px;top:553px;}
+#tw_134{left:138px;top:586px;}
+#tx_134{left:165px;top:586px;}
+#ty_134{left:138px;top:619px;}
+#tz_134{left:165px;top:619px;}
+#t10_134{left:165px;top:637px;}
+#t11_134{left:138px;top:670px;}
+#t12_134{left:165px;top:670px;}
+#t13_134{left:138px;top:703px;}
+#t14_134{left:165px;top:703px;}
+#t15_134{left:138px;top:736px;}
+#t16_134{left:165px;top:736px;}
+#t17_134{left:165px;top:754px;}
+#t18_134{left:138px;top:787px;}
+#t19_134{left:165px;top:787px;}
+#t1a_134{left:165px;top:805px;}
+#t1b_134{left:165px;top:823px;}
+#t1c_134{left:138px;top:856px;}
+#t1d_134{left:165px;top:856px;}
+#t1e_134{left:165px;top:874px;}
+#t1f_134{left:138px;top:907px;}
+#t1g_134{left:165px;top:907px;}
+#t1h_134{left:138px;top:940px;}
+#t1i_134{left:165px;top:940px;}
+#t1j_134{left:165px;top:958px;}
+#t1k_134{left:165px;top:976px;}
+#t1l_134{left:138px;top:1009px;}
+#t1m_134{left:165px;top:1009px;}
+#t1n_134{left:165px;top:1027px;}
+#t1o_134{left:332px;top:1027px;}
+#t1p_134{left:138px;top:1060px;}
+#t1q_134{left:165px;top:1060px;}
+#t1r_134{left:165px;top:1078px;}
+#t1s_134{left:165px;top:1096px;}
+#t1t_134{left:165px;top:1114px;}
+
+.s1_134{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT134;
+	color: rgb(0,0,0);
+}
+
+.s3_134{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT134;
+	color: rgb(0,0,0);
+}
+
+.s2_134{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM134;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM134;
+	src :url("134/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT134;
+	src :url("134/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_134" class="t s1_134">134</div>
+<div id="t2_134" class="t s2_134">THE TIME FOR QURBANI</div>
+<div id="t3_134" class="t s1_134">1.</div>
+<div id="t4_134" class="t s1_134">The time for Qurbani begins after Eid Salaat on the 10th of Zil Hijjah and ends at the setting of the sun on </div>
+<div id="t5_134" class="t s1_134">the 12th of Zil Hijjah. </div>
+<div id="t6_134" class="t s1_134">2.</div>
+<div id="t7_134" class="t s1_134">It is better to make Qurbani on the first day, then the second day and lastly the third day. </div>
+<div id="t8_134" class="t s1_134">3.</div>
+<div id="t9_134" class="t s1_134">Qurbani is allowed during the two intervening nights but it is preferable during the day because of the </div>
+<div id="ta_134" class="t s1_134">possibility of not slaughtering correctly. </div>
+<div id="tb_134" class="t s1_134">4.</div>
+<div id="tc_134" class="t s1_134">People living in remote village areas where Eid Salaat is not performed, may slaughter after Fajr time </div>
+<div id="td_134" class="t s1_134">(Subah Saadiq-early dawn) has set in on the morning of the 10th Zil Hijjah. </div>
+<div id="te_134" class="t s1_134">5.</div>
+<div id="tf_134" class="t s1_134">If a person residing in a town (where Eid Salaat is performed) sends his animal to the village (where Eid </div>
+<div id="tg_134" class="t s1_134">Salaat is not performed), it is permissible that his animal be slaughtered before the Eid Salaat. </div>
+<div id="th_134" class="t s1_134">6.</div>
+<div id="ti_134" class="t s1_134">If a doubt occurs as to whether it is the 12th or the 13th, it is Mustahab (preferable) to give away all the </div>
+<div id="tj_134" class="t s1_134">meat in sacrifice after slaughtering the animal. </div>
+<div id="tk_134" class="t s1_134">7.</div>
+<div id="tl_134" class="t s1_134">If an animal bought for Qurbani was not slaughtered during these days, it must be given away alive, as </div>
+<div id="tm_134" class="t s1_134">charity. </div>
+<div id="tn_134" class="t s1_134">8.</div>
+<div id="to_134" class="t s1_134">These days, i.e. the 10th, 11th and the 12th of Ail Hijjab are known as AYYAAMUN NAHR (the days of </div>
+<div id="tp_134" class="t s1_134">slaughtering). </div>
+<div id="tq_134" class="t s3_134">CONDITIONS FOR THE QURBANI ANIMAL </div>
+<div id="tr_134" class="t s1_134">1.</div>
+<div id="ts_134" class="t s1_134">Qurbani can be made of goats, sheep, cattle and camels; male or female: No other type of animal is allowed </div>
+<div id="tt_134" class="t s1_134">for Qurbani. </div>
+<div id="tu_134" class="t s1_134">2.</div>
+<div id="tv_134" class="t s1_134">Castrated animals may be used for Qurbani. This type of animal is preferable. </div>
+<div id="tw_134" class="t s1_134">3.</div>
+<div id="tx_134" class="t s1_134">Qurbani calf barren animals is also allowed. </div>
+<div id="ty_134" class="t s1_134">4.</div>
+<div id="tz_134" class="t s1_134">Goats, sheep have to be at least one year old. However, very healthy sheep that looks one year old may </div>
+<div id="t10_134" class="t s1_134">also be used. </div>
+<div id="t11_134" class="t s1_134">5.</div>
+<div id="t12_134" class="t s1_134">Cattle must be at least two years old. </div>
+<div id="t13_134" class="t s1_134">6.</div>
+<div id="t14_134" class="t s1_134">Camels must be at least five years old. </div>
+<div id="t15_134" class="t s1_134">7.</div>
+<div id="t16_134" class="t s1_134">Sheep and goats count as one share per animal. Cattle and camels are divided into seven shares per animal, </div>
+<div id="t17_134" class="t s1_134">i.e. the Qurbani of seven persons is allowed with one cow or one camel. </div>
+<div id="t18_134" class="t s1_134">8.</div>
+<div id="t19_134" class="t s1_134">If a person sacrifices one cow or camel (without sharing with others), his Qurbani will be accomplished by </div>
+<div id="t1a_134" class="t s1_134">the whole animal, If the sacrifice several animals instead of one, his Waajib Qurbani will be accomplished </div>
+<div id="t1b_134" class="t s1_134">by one animal and the other animals will be counted as Nafil (voluntary) Qurbani. </div>
+<div id="t1c_134" class="t s1_134">9.</div>
+<div id="t1d_134" class="t s1_134">If less than seven persons make Qurbani of a cow or camel, it is permissible. If any person's share is less </div>
+<div id="t1e_134" class="t s1_134">than one seventh, the Qurbani of all the persons will not be valid. </div>
+<div id="t1f_134" class="t s1_134">10.</div>
+<div id="t1g_134" class="t s1_134">If more than seven persons share one COW or camel, the Qurbani of none of them will be valid. </div>
+<div id="t1h_134" class="t s1_134">11.</div>
+<div id="t1i_134" class="t s1_134">When more than one person makes Qurbani a cow or camel, it is a condition for the validity of the Qurbani </div>
+<div id="t1j_134" class="t s1_134">of all the persons that each one of them have the Niyyat of Qurbani or Aqeeqa. If any one of them has an </div>
+<div id="t1k_134" class="t s1_134">intention of merely eating meat, the Qurbani of all the share-holders will not be valid. </div>
+<div id="t1l_134" class="t s1_134">12.</div>
+<div id="t1m_134" class="t s1_134">When buying a cow or camel one made an intention that he will share this animal with others. After </div>
+<div id="t1n_134" class="t s1_134">purchasing the ani-mal he </div>
+<div id="t1o_134" class="t s1_134">finds others to share with him. This Qurbani will be proper. </div>
+<div id="t1p_134" class="t s1_134">13.</div>
+<div id="t1q_134" class="t s1_134">At the time of purchasing a cow or camel one makes the intention that he will not share this animal with </div>
+<div id="t1r_134" class="t s1_134">others It is now, not good for him,to share that animal with others, but if he does, the Qurbani Of the share-</div>
+<div id="t1s_134" class="t s1_134">holders will be valid. Qurbani will also be valid if he is a person upon whom Qurhani is Waajib. i.e. a rich </div>
+<div id="t1t_134" class="t s1_134">person if he is a poor person then he will have to make Qurbani for that number of shares that he.has given </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg134Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg134"><object width="935" height="1210" data="134/134.svg" type="image/svg+xml" id="pdf134" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld134" type="text/javascript">
+
+var isIE = false;
+var f134 = [['t2_134',905],['t4_134',2600],['t5_134',537],['t7_134',2169],['t9_134',2499],['ta_134',982],['tc_134',2488],['td_134',1854],['tf_134',2560],['tg_134',2297],['ti_134',2536],['tj_134',1137],['tl_134',2517],['to_134',2596],['tq_134',1431],['ts_134',2639],['tt_134',303],['tv_134',1905],['tx_134',1080],['tz_134',2526],['t10_134',315],['t12_134',901],['t14_134',941],['t16_134',2621],['t17_134',1765],['t19_134',2619],['t1a_134',2606],['t1b_134',2012],['t1d_134',2561],['t1e_134',1602],['t1g_134',2360],['t1i_134',2632],['t1j_134',2573],['t1k_134',2100],['t1m_134',2450],['t1n_134',635],['t1o_134',1461],['t1q_134',2552],['t1r_134',2632],['t1s_134',2605],['t1t_134',2621]];
+function load134(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f134);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 66;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_134");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

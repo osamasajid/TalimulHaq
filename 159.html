@@ -1,0 +1,218 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page159</title>
+</head>
+
+<body onload="load159()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_159{left:456px;top:1136px;}
+#t2_159{left:138px;top:498px;}
+#t3_159{left:165px;top:498px;}
+#t4_159{left:165px;top:516px;}
+#t5_159{left:165px;top:534px;}
+#t6_159{left:110px;top:632px;}
+#t7_159{left:110px;top:653px;}
+#t8_159{left:138px;top:691px;}
+#t9_159{left:165px;top:691px;}
+#ta_159{left:165px;top:709px;}
+#tb_159{left:294px;top:734px;}
+#tc_159{left:110px;top:763px;}
+#td_159{left:110px;top:801px;}
+#te_159{left:110px;top:838px;}
+#tf_159{left:110px;top:874px;}
+#tg_159{left:110px;top:911px;}
+#th_159{left:110px;top:932px;}
+#ti_159{left:110px;top:1056px;}
+#tj_159{left:110px;top:1077px;}
+
+.s1_159{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT159;
+	color: rgb(0,0,0);
+}
+
+.s3_159{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(0,0,0);
+	FONT-STYLE: italic;
+}
+
+.s2_159{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT159;
+	color: rgb(0,0,0);
+}
+
+.s4_159{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT159;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJIKOL-SymbolMT159;
+	src :url("159/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT159;
+	src :url("159/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_159" class="t s1_159">159</div>
+<div id="t2_159" class="t s2_159">•</div>
+<div id="t3_159" class="t s1_159">Alter the Du'aa one should to to the well of Zam-Zam and drink as much water as is possible When </div>
+<div id="t4_159" class="t s1_159">drinking Zam-Zam : stand facing the Holy Kaba. recite Bismillah and drink with the right hand Recite lhe </div>
+<div id="t5_159" class="t s1_159">following Du'ua after drinking Zam-Zam: </div>
+<div id="t6_159" class="t s3_159">(O Allah, I am asking You for beneficial knowledge, and abundance in provision, </div>
+<div id="t7_159" class="t s3_159">and cure from every ailment).</div>
+<div id="t8_159" class="t s2_159">•</div>
+<div id="t9_159" class="t s1_159">Make a lot of Du'as at the well and also after drinking Zam Zam. This is a place and time when Du'as are </div>
+<div id="ta_159" class="t s1_159">accepted. </div>
+<div id="tb_159" class="t s4_159">11. SA'EE BETWEEN SARA AND MARWA: </div>
+<div id="tc_159" class="t s4_159">One should not return to the Hajare Aswad and make Istilaam. </div>
+<div id="td_159" class="t s4_159">Whilc making Istilaam. say : </div>
+<div id="te_159" class="t s3_159">(Allah is great, there is no diety besides Allah).</div>
+<div id="tf_159" class="t s4_159">This Istilaam is Mustahab. </div>
+<div id="tg_159" class="t s4_159">After this, proceed to Sata, (preferably through Babus Safa) On reaching Safa, climb onto the </div>
+<div id="th_159" class="t s4_159">rock and facing the Ka'ba, say the Niyyah, (which is Sunnah) : </div>
+<div id="ti_159" class="t s3_159">(O Allah, I intend performing Sa'ee between and Safa and Marwah, seven circuits for Allah, </div>
+<div id="tj_159" class="t s3_159">therefore, make it easy for me, and accept it from me).</div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg159Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg159"><object width="935" height="1210" data="159/159.svg" type="image/svg+xml" id="pdf159" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld159" type="text/javascript">
+
+var isIE = false;
+var f159 = [['t3_159',2437],['t4_159',2597],['t5_159',1025],['t6_159',2387],['t7_159',874],['t9_159',2575],['tb_159',1390],['tc_159',1836],['td_159',845],['te_159',1386],['tf_159',779],['tg_159',2742],['th_159',1837],['ti_159',2709],['tj_159',1596]];
+function load159(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f159);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 20;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_159");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

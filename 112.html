@@ -1,0 +1,240 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page112</title>
+</head>
+
+<body onload="load112()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_112{left:456px;top:1136px;}
+#t2_112{left:165px;top:54px;}
+#t3_112{left:165px;top:72px;}
+#t4_112{left:110px;top:652px;}
+#t5_112{left:138px;top:689px;}
+#t6_112{left:165px;top:689px;}
+#t7_112{left:165px;top:707px;}
+#t8_112{left:138px;top:740px;}
+#t9_112{left:165px;top:740px;}
+#ta_112{left:165px;top:758px;}
+#tb_112{left:165px;top:775px;}
+#tc_112{left:165px;top:793px;}
+#td_112{left:138px;top:826px;}
+#te_112{left:165px;top:826px;}
+#tf_112{left:165px;top:844px;}
+#tg_112{left:138px;top:877px;}
+#th_112{left:165px;top:877px;}
+#ti_112{left:165px;top:895px;}
+#tj_112{left:138px;top:928px;}
+#tk_112{left:165px;top:928px;}
+#tl_112{left:327px;top:954px;}
+#tm_112{left:138px;top:984px;}
+#tn_112{left:165px;top:984px;}
+#to_112{left:138px;top:1018px;}
+#tp_112{left:165px;top:1018px;}
+#tq_112{left:165px;top:1036px;}
+#tr_112{left:165px;top:1054px;}
+#ts_112{left:165px;top:1071px;}
+
+.s1_112{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT112;
+	color: rgb(0,0,0);
+}
+
+.s4_112{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT112;
+	color: rgb(0,0,0);
+}
+
+.s3_112{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT112;
+	color: rgb(0,0,0);
+}
+
+.s2_112{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM112;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJIKOL-SymbolMT112;
+	src :url("112/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM112;
+	src :url("112/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT112;
+	src :url("112/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_112" class="t s1_112">112</div>
+<div id="t2_112" class="t s1_112">wreaths, flowers, paying homage, etc., are INCORRECT according to the SHARI'AT. One should thus </div>
+<div id="t3_112" class="t s1_112">abstain from acting wrongly. </div>
+<div id="t4_112" class="t s2_112">PERIOD OF IDDAT</div>
+<div id="t5_112" class="t s1_112">1.</div>
+<div id="t6_112" class="t s1_112">The period of WAITING after one's HUSBAND dies, is called IDDAT. This period is of FOUR months </div>
+<div id="t7_112" class="t s1_112">and TEN days. </div>
+<div id="t8_112" class="t s1_112">2.</div>
+<div id="t9_112" class="t s1_112">During this period she should remain in the dwelling that they occupied at the time of the death of her </div>
+<div id="ta_112" class="t s1_112">husband. She is NOT allowed to leave this house if she has sufficient provision. If she is the sole bread </div>
+<div id="tb_112" class="t s1_112">winner with no other means of income, then only she is permitted to leave her house during the day. At </div>
+<div id="tc_112" class="t s1_112">night she should return to his house. </div>
+<div id="td_112" class="t s1_112">3.</div>
+<div id="te_112" class="t s1_112">The widow that is expecting a child at the time of the death of her husband, her Iddat will be until the birth </div>
+<div id="tf_112" class="t s1_112">of that child. The four month and ten days should NOT be reckoned in this instance. </div>
+<div id="tg_112" class="t s1_112">4.</div>
+<div id="th_112" class="t s1_112">If a woman is NOT at home at the time of her husband's death, she should return as soon as possible and </div>
+<div id="ti_112" class="t s1_112">pass the period of Iddat at home. The days of Iddat will be calculated from the time of the demise. </div>
+<div id="tj_112" class="t s1_112">5.</div>
+<div id="tk_112" class="t s1_112">A women in Iddat should abstain from using fancy clothing, make-up or jewellery. </div>
+<div id="tl_112" class="t s3_112">A FEW NOTEWORTHY MASAA'IL </div>
+<div id="tm_112" class="t s4_112">•</div>
+<div id="tn_112" class="t s1_112">The trustee of the deceased should pay all the DEBTS as soon as possible. </div>
+<div id="to_112" class="t s4_112">•</div>
+<div id="tp_112" class="t s1_112">Isaale Thawaab for the deceased should be made by feeding the poor, by giving Sadaqa, making Istighfaar </div>
+<div id="tq_112" class="t s1_112">etc. No SPECIFIC dates or days such as the third, seventh, eleventh or fortieth are mentioned in Shar’iah </div>
+<div id="tr_112" class="t s1_112">for such devotions. When giving charity on behalf of the deceased, it is desirable to make Niyyat for the </div>
+<div id="ts_112" class="t s1_112">fulfillment of Qazaa Salaat of the deceased. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg112Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg112"><object width="935" height="1210" data="112/112.svg" type="image/svg+xml" id="pdf112" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld112" type="text/javascript">
+
+var isIE = false;
+var f112 = [['t2_112',2530],['t3_112',708],['t4_112',659],['t6_112',2561],['t7_112',366],['t9_112',2498],['ta_112',2527],['tb_112',2532],['tc_112',888],['te_112',2618],['tf_112',2067],['th_112',2562],['ti_112',2404],['tk_112',2033],['tl_112',1123],['tn_112',1822],['tp_112',2613],['tq_112',2575],['tr_112',2555],['ts_112',1069]];
+function load112(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f112);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 29;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_112");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

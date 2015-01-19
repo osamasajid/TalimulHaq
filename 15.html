@@ -1,0 +1,259 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page15</title>
+</head>
+
+<body onload="load15()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_15{left:460px;top:1136px;}
+#t2_15{left:138px;top:54px;}
+#t3_15{left:165px;top:54px;}
+#t4_15{left:193px;top:96px;}
+#t5_15{left:193px;top:148px;}
+#t6_15{left:138px;top:189px;}
+#t7_15{left:165px;top:189px;}
+#t8_15{left:138px;top:242px;}
+#t9_15{left:165px;top:242px;}
+#ta_15{left:138px;top:324px;}
+#tb_15{left:165px;top:324px;}
+#tc_15{left:165px;top:351px;}
+#td_15{left:138px;top:392px;}
+#te_15{left:165px;top:392px;}
+#tf_15{left:165px;top:418px;}
+#tg_15{left:138px;top:460px;}
+#th_15{left:165px;top:460px;}
+#ti_15{left:138px;top:501px;}
+#tj_15{left:165px;top:501px;}
+#tk_15{left:138px;top:543px;}
+#tl_15{left:165px;top:543px;}
+#tm_15{left:165px;top:569px;}
+#tn_15{left:138px;top:610px;}
+#to_15{left:165px;top:610px;}
+#tp_15{left:138px;top:652px;}
+#tq_15{left:165px;top:652px;}
+#tr_15{left:165px;top:678px;}
+#ts_15{left:138px;top:719px;}
+#tt_15{left:165px;top:719px;}
+#tu_15{left:165px;top:746px;}
+#tv_15{left:165px;top:772px;}
+#tw_15{left:138px;top:813px;}
+#tx_15{left:165px;top:813px;}
+#ty_15{left:165px;top:839px;}
+#tz_15{left:138px;top:881px;}
+#t10_15{left:165px;top:881px;}
+#t11_15{left:165px;top:907px;}
+#t12_15{left:138px;top:948px;}
+#t13_15{left:165px;top:948px;}
+#t14_15{left:264px;top:990px;}
+#t15_15{left:339px;top:1021px;}
+#t16_15{left:110px;top:1068px;}
+#t17_15{left:110px;top:1099px;}
+
+.s1_15{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT15;
+	color: rgb(0,0,0);
+}
+
+.s3_15{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT15;
+	color: rgb(0,0,0);
+}
+
+.s2_15{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT15;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT15;
+	src :url("15/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT15;
+	src :url("15/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_15" class="t s1_15">15</div>
+<div id="t2_15" class="t s1_15">3.</div>
+<div id="t3_15" class="t s1_15">The FIRST of these messengers was : </div>
+<div id="t4_15" class="t s1_15">Hazrat ADAM (Alayhis-Salaam) (Peace be upon him). </div>
+<div id="t5_15" class="t s1_15">Whilst the LAST was Hazrat MUHAMMAD (Sallallaahu-Alaihi-Wa-Sallam) </div>
+<div id="t6_15" class="t s1_15">4.</div>
+<div id="t7_15" class="t s1_15">We do not know the names of all the NABIS that came into the world. </div>
+<div id="t8_15" class="t s1_15">5.</div>
+<div id="t9_15" class="t s1_15">There were about 124, 000 Nabis. (Prophtes &amp; Messengers) </div>
+<div id="ta_15" class="t s1_15">6.</div>
+<div id="tb_15" class="t s1_15">All the NABIS and RASOOLS were human beings whom Allah chose to convey His message to the </div>
+<div id="tc_15" class="t s1_15">people. </div>
+<div id="td_15" class="t s1_15">7.</div>
+<div id="te_15" class="t s1_15">They always spoke the truth, committed no sins and conveyed the message without adding or leaving out </div>
+<div id="tf_15" class="t s1_15">anything. </div>
+<div id="tg_15" class="t s1_15">8.</div>
+<div id="th_15" class="t s1_15">They performed miracles with the help of Allah Ta’aala. </div>
+<div id="ti_15" class="t s1_15">9.</div>
+<div id="tj_15" class="t s1_15">All the RASOOLS were NABIS but not all NABIS were RASOOLS. </div>
+<div id="tk_15" class="t s1_15">10.</div>
+<div id="tl_15" class="t s1_15">A RASOOL is a Prophet who received a new SHARIAT (Divine Law) and Book from Allah. A NABI </div>
+<div id="tm_15" class="t s1_15">follows the SHARIAT of a RASOOL or a Prophet before him. </div>
+<div id="tn_15" class="t s1_15">11.</div>
+<div id="to_15" class="t s1_15">No person can become a NABI or a RASOOL by his own effort. </div>
+<div id="tp_15" class="t s1_15">12.</div>
+<div id="tq_15" class="t s1_15">No more Prophets will come after our NABI Hazrat MUHAMMAD MUSTAFA (Sallallaahu-Alaihi-Wa-</div>
+<div id="tr_15" class="t s1_15">Sallam).He was the final Prophet of Allah. </div>
+<div id="ts_15" class="t s1_15">13.</div>
+<div id="tt_15" class="t s1_15">In the HOLY QURAAN Allah Ta’aala mentioned our NABI Hazrat MUHAMMAD MUSTAFA </div>
+<div id="tu_15" class="t s1_15">(Sallallaahu-Alaihi-Wa-Sallam) as KHAATIMUN NABIYEEN which means that he is the LAST of all the </div>
+<div id="tv_15" class="t s1_15">NABIS. </div>
+<div id="tw_15" class="t s1_15">14.</div>
+<div id="tx_15" class="t s1_15">The name of some other NABIS and RASOOLS mentioned in the QURAAN are Hazrat EBRAHIM, </div>
+<div id="ty_15" class="t s1_15">ISMAIL, YAHYA, ZAKARIA, YUNUS, IDRIS, YAQOOB and SULEMAN (Alay-Himus-Salaam). </div>
+<div id="tz_15" class="t s1_15">15.</div>
+<div id="t10_15" class="t s1_15">Our NABI Hazrat MUHAMMAD MUSTAFA (Sallallaahu-Alaihi-Wa-Sallam) has of the highest position </div>
+<div id="t11_15" class="t s1_15">amongst all the Prophets. </div>
+<div id="t12_15" class="t s1_15">16.</div>
+<div id="t13_15" class="t s1_15">All the prophets of Allah preached about the oneness of Allah Ta’aala. </div>
+<div id="t14_15" class="t s2_15">The SAHAABAH (Companions) of RASULULLAH </div>
+<div id="t15_15" class="t s2_15">( Sallallaahu Alaihi Wa Sallam ).</div>
+<div id="t16_15" class="t s3_15">People who saw NABI (S.A.W.) or stayed in his company, embraced ISLAM and died as </div>
+<div id="t17_15" class="t s3_15">MUSLIMS are known as SAHAABAH. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg15Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg15"><object width="935" height="1210" data="15/15.svg" type="image/svg+xml" id="pdf15" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld15" type="text/javascript">
+
+var isIE = false;
+var f15 = [['t3_15',925],['t4_15',1349],['t5_15',1909],['t7_15',1728],['t9_15',1473],['tb_15',2465],['te_15',2578],['th_15',1386],['tj_15',1705],['tl_15',2522],['tm_15',1538],['to_15',1590],['tq_15',2589],['tr_15',1044],['tt_15',2379],['tu_15',2636],['tx_15',2480],['ty_15',2487],['t10_15',2604],['t11_15',619],['t13_15',1734],['t14_15',1624],['t15_15',1028],['t16_15',2627],['t17_15',1182]];
+function load15(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f15);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 44;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_15");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

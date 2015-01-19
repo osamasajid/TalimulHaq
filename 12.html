@@ -1,0 +1,260 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page12</title>
+</head>
+
+<body onload="load12()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_12{left:460px;top:1136px;}
+#t2_12{left:450px;top:93px;}
+#t3_12{left:138px;top:132px;}
+#t4_12{left:165px;top:132px;}
+#t5_12{left:138px;top:173px;}
+#t6_12{left:165px;top:173px;}
+#t7_12{left:165px;top:200px;}
+#t8_12{left:138px;top:241px;}
+#t9_12{left:165px;top:241px;}
+#ta_12{left:138px;top:283px;}
+#tb_12{left:165px;top:283px;}
+#tc_12{left:138px;top:324px;}
+#td_12{left:165px;top:324px;}
+#te_12{left:138px;top:365px;}
+#tf_12{left:165px;top:365px;}
+#tg_12{left:165px;top:392px;}
+#th_12{left:138px;top:433px;}
+#ti_12{left:165px;top:433px;}
+#tj_12{left:138px;top:474px;}
+#tk_12{left:165px;top:474px;}
+#tl_12{left:138px;top:516px;}
+#tm_12{left:165px;top:516px;}
+#tn_12{left:138px;top:557px;}
+#to_12{left:165px;top:557px;}
+#tp_12{left:138px;top:599px;}
+#tq_12{left:165px;top:599px;}
+#tr_12{left:138px;top:640px;}
+#ts_12{left:165px;top:640px;}
+#tt_12{left:138px;top:682px;}
+#tu_12{left:165px;top:682px;}
+#tv_12{left:138px;top:723px;}
+#tw_12{left:165px;top:723px;}
+#tx_12{left:138px;top:765px;}
+#ty_12{left:165px;top:765px;}
+#tz_12{left:138px;top:806px;}
+#t10_12{left:165px;top:806px;}
+#t11_12{left:138px;top:847px;}
+#t12_12{left:165px;top:847px;}
+#t13_12{left:455px;top:881px;}
+#t14_12{left:138px;top:920px;}
+#t15_12{left:165px;top:920px;}
+#t16_12{left:138px;top:962px;}
+#t17_12{left:165px;top:962px;}
+#t18_12{left:138px;top:1003px;}
+#t19_12{left:165px;top:1003px;}
+#t1a_12{left:138px;top:1044px;}
+#t1b_12{left:165px;top:1044px;}
+#t1c_12{left:138px;top:1086px;}
+#t1d_12{left:165px;top:1086px;}
+
+.s1_12{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT12;
+	color: rgb(0,0,0);
+}
+
+.s2_12{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT12;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT12;
+	src :url("12/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_12" class="t s1_12">12</div>
+<div id="t2_12" class="t s2_12">ALLAH </div>
+<div id="t3_12" class="t s1_12">1.</div>
+<div id="t4_12" class="t s1_12">Allah is ONE. </div>
+<div id="t5_12" class="t s1_12">2.</div>
+<div id="t6_12" class="t s1_12">He alone is worthy of worship. </div>
+<div id="t7_12" class="t s1_12">And none besides Him is worthy of worship. </div>
+<div id="t8_12" class="t s1_12">3.</div>
+<div id="t9_12" class="t s1_12">He has no PARTNER. </div>
+<div id="ta_12" class="t s1_12">4.</div>
+<div id="tb_12" class="t s1_12">Nothing is hidden from Him, He even knows the thoughts that go into a person's mind. </div>
+<div id="tc_12" class="t s1_12">5.</div>
+<div id="td_12" class="t s1_12">He is the most POWERFUL. </div>
+<div id="te_12" class="t s1_12">6.</div>
+<div id="tf_12" class="t s1_12">He created the earth, the skies, the sun, the moon, the stars, the Angels, human beings and the whole </div>
+<div id="tg_12" class="t s1_12">universe. </div>
+<div id="th_12" class="t s1_12">7.</div>
+<div id="ti_12" class="t s1_12">He gives life and death. </div>
+<div id="tj_12" class="t s1_12">8.</div>
+<div id="tk_12" class="t s1_12">He gives sustenance to all creation. </div>
+<div id="tl_12" class="t s1_12">9.</div>
+<div id="tm_12" class="t s1_12">He does not eat, drink or sleep. </div>
+<div id="tn_12" class="t s1_12">10.</div>
+<div id="to_12" class="t s1_12">He is forever and will be forever. </div>
+<div id="tp_12" class="t s1_12">11.</div>
+<div id="tq_12" class="t s1_12">He was not created by anyone. </div>
+<div id="tr_12" class="t s1_12">12.</div>
+<div id="ts_12" class="t s1_12">He does not have any parents, wife or children. </div>
+<div id="tt_12" class="t s1_12">13.</div>
+<div id="tu_12" class="t s1_12">He does not depend on anybody. All depend on Him. </div>
+<div id="tv_12" class="t s1_12">14.</div>
+<div id="tw_12" class="t s1_12">NO body resembles Allah, and He resembles no one. </div>
+<div id="tx_12" class="t s1_12">15.</div>
+<div id="ty_12" class="t s1_12">He is pure from all faults. </div>
+<div id="tz_12" class="t s1_12">16.</div>
+<div id="t10_12" class="t s1_12">He does not have eyes, nose of a body like that of human beings. </div>
+<div id="t11_12" class="t s1_12">17.</div>
+<div id="t12_12" class="t s1_12">We should therefore PRAY to HIM for all our needs. </div>
+<div id="t13_12" class="t s2_12">Angles </div>
+<div id="t14_12" class="t s1_12">1.</div>
+<div id="t15_12" class="t s1_12">Allah has created Angles out of light and gave them various duties to perform. </div>
+<div id="t16_12" class="t s1_12">2.</div>
+<div id="t17_12" class="t s1_12">They are not visible to us. </div>
+<div id="t18_12" class="t s1_12">3.</div>
+<div id="t19_12" class="t s1_12">They do not commit sin nor do they disobey Allah. </div>
+<div id="t1a_12" class="t s1_12">4.</div>
+<div id="t1b_12" class="t s1_12">They do what Allah has ordered. </div>
+<div id="t1c_12" class="t s1_12">5.</div>
+<div id="t1d_12" class="t s1_12">We do not know their exact number. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg12Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg12"><object width="935" height="1210" data="12/12.svg" type="image/svg+xml" id="pdf12" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld12" type="text/javascript">
+
+var isIE = false;
+var f12 = [['t4_12',349],['t6_12',760],['t7_12',1101],['t9_12',555],['tb_12',2131],['td_12',713],['tf_12',2462],['ti_12',580],['tk_12',864],['tm_12',763],['to_12',816],['tq_12',753],['ts_12',1159],['tu_12',1307],['tw_12',1300],['ty_12',629],['t10_12',1592],['t12_12',1309],['t15_12',1924],['t17_12',636],['t19_12',1252],['t1b_12',804],['t1d_12',898]];
+function load12(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f12);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 50;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_12");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

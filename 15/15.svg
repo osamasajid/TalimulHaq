@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<style type="text/css"><![CDATA[
+.g1_15{
+fill: #FFFFFF;
+}
+]]></style>
+</defs>
+<path d="M135,81l692,0l0,-26L135,55l0,26Z" class="g1_15" />
+<path d="M190,122l637,0l0,-26L190,96l0,26Z" class="g1_15" />
+<path d="M190,148l637,0l0,-26l-637,0l0,26Z" class="g1_15" />
+<path d="M190,175l637,0l0,-27l-637,0l0,27Z" class="g1_15" />
+<path d="M135,224l692,0l0,-34l-692,0l0,34Z" class="g1_15" />
+<path d="M135,268l692,0l0,-44l-692,0l0,44Z" class="g1_15" />
+<path d="M162,310l665,0l0,-27l-665,0l0,27Z" class="g1_15" />
+<path d="M135,351l692,0l0,-26l-692,0l0,26Z" class="g1_15" />
+<path d="M135,385l692,0l0,-34l-692,0l0,34Z" class="g1_15" />
+<path d="M135,419l692,0l0,-34l-692,0l0,34Z" class="g1_15" />
+<path d="M135,453l692,0l0,-34l-692,0l0,34Z" class="g1_15" />
+<path d="M135,494l692,0l0,-41l-692,0l0,41Z" class="g1_15" />
+<path d="M135,535l692,0l0,-41l-692,0l0,41Z" class="g1_15" />
+<path d="M135,569l692,0l0,-34l-692,0l0,34Z" class="g1_15" />
+<path d="M135,603l692,0l0,-34l-692,0l0,34Z" class="g1_15" />
+<path d="M135,644l692,0l0,-41l-692,0l0,41Z" class="g1_15" />
+<path d="M135,678l692,0l0,-34l-692,0l0,34Z" class="g1_15" />
+<path d="M135,712l692,0l0,-34l-692,0l0,34Z" class="g1_15" />
+<path d="M135,746l692,0l0,-34l-692,0l0,34Z" class="g1_15" />
+<path d="M135,772l692,0l0,-26l-692,0l0,26Z" class="g1_15" />
+<path d="M135,806l692,0l0,-34l-692,0l0,34Z" class="g1_15" />
+<path d="M135,840l692,0l0,-34l-692,0l0,34Z" class="g1_15" />
+<path d="M135,874l692,0l0,-34l-692,0l0,34Z" class="g1_15" />
+<path d="M135,907l692,0l0,-33l-692,0l0,33Z" class="g1_15" />
+<path d="M135,941l692,0l0,-34l-692,0l0,34Z" class="g1_15" />
+<path d="M135,975l692,0l0,-34l-692,0l0,34Z" class="g1_15" />
+<path d="M107,1022l720,0l0,-32l-720,0l0,32Z" class="g1_15" />
+<path d="M107,1061l720,0l0,-39l-720,0l0,39Z" class="g1_15" />
+<path d="M107,1100l720,0l0,-39l-720,0l0,39Z" class="g1_15" />
+<path d="M107,1131l720,0l0,-31l-720,0l0,31Z" class="g1_15" />
+</svg>

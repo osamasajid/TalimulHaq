@@ -1,0 +1,262 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page139</title>
+</head>
+
+<body onload="load139()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_139{left:456px;top:1136px;}
+#t2_139{left:110px;top:54px;}
+#t3_139{left:110px;top:75px;}
+#t4_139{left:110px;top:97px;}
+#t5_139{left:110px;top:133px;}
+#t6_139{left:110px;top:155px;}
+#t7_139{left:110px;top:191px;}
+#t8_139{left:110px;top:380px;}
+#t9_139{left:110px;top:402px;}
+#ta_139{left:110px;top:423px;}
+#tb_139{left:276px;top:452px;}
+#tc_139{left:110px;top:551px;}
+#td_139{left:137px;top:580px;}
+#te_139{left:292px;top:601px;}
+#tf_139{left:138px;top:632px;}
+#tg_139{left:165px;top:632px;}
+#th_139{left:138px;top:666px;}
+#ti_139{left:165px;top:666px;}
+#tj_139{left:165px;top:684px;}
+#tk_139{left:165px;top:701px;}
+#tl_139{left:165px;top:719px;}
+#tm_139{left:138px;top:753px;}
+#tn_139{left:165px;top:753px;}
+#to_139{left:165px;top:771px;}
+#tp_139{left:165px;top:789px;}
+#tq_139{left:138px;top:823px;}
+#tr_139{left:165px;top:823px;}
+#ts_139{left:165px;top:841px;}
+#tt_139{left:138px;top:875px;}
+#tu_139{left:165px;top:875px;}
+#tv_139{left:165px;top:893px;}
+#tw_139{left:138px;top:927px;}
+#tx_139{left:165px;top:927px;}
+#ty_139{left:165px;top:945px;}
+#tz_139{left:138px;top:979px;}
+#t10_139{left:165px;top:979px;}
+#t11_139{left:254px;top:1004px;}
+#t12_139{left:138px;top:1035px;}
+#t13_139{left:165px;top:1035px;}
+#t14_139{left:165px;top:1053px;}
+#t15_139{left:165px;top:1070px;}
+
+.s1_139{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT139;
+	color: rgb(0,0,0);
+}
+
+.s4_139{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT139;
+	color: rgb(0,0,0);
+}
+
+.s2_139{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT139;
+	color: rgb(0,0,0);
+}
+
+.s3_139{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(0,0,0);
+	FONT-STYLE: italic;
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJIKOL-SymbolMT139;
+	src :url("139/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT139;
+	src :url("139/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_139" class="t s1_139">139</div>
+<div id="t2_139" class="t s2_139">Which means "O' Allah I sacrifice this animal in Thy name as a sadqa for my child in </div>
+<div id="t3_139" class="t s2_139">substitution blood for blood, flesh for flesh, bones for bones, skin for skin and hair for hair. O' </div>
+<div id="t4_139" class="t s2_139">Allah accept this sacrifice for the protection of my child from Hell. </div>
+<div id="t5_139" class="t s2_139">If the Aqueeqa is for girl then in place of and mention the name of the child boy or girl at this </div>
+<div id="t6_139" class="t s2_139">point. </div>
+<div id="t7_139" class="t s2_139">Du'a for slaughtering: Lay the throat of the animal towards the Qiblah and recite: </div>
+<div id="t8_139" class="t s2_139">("For me, I have set my face, firmly and truly towards Him Who created the heavens and the </div>
+<div id="t9_139" class="t s2_139">earth. And never shall I give partners to Allah. Verify my worship and my sacrifice, my living </div>
+<div id="ta_139" class="t s2_139">and my dying are for Allah, Lord of the world. O Allah this sacrifice is from you and is for You.) </div>
+<div id="tb_139" class="t s2_139">WHILE SLAUGHTERING THE ANIMAL READ: </div>
+<div id="tc_139" class="t s3_139">("In the name of Allah is the Greatest")</div>
+<div id="td_139" class="t s2_139">SADAQATUL FITR </div>
+<div id="te_139" class="t s2_139">ON WHOM IS SADAQATUL FITR WAAJIB: </div>
+<div id="tf_139" class="t s4_139">•</div>
+<div id="tg_139" class="t s1_139">Sadaqatul Filr is Waajib upon one who possesses so much that Zakaat is due on him. </div>
+<div id="th_139" class="t s4_139">•</div>
+<div id="ti_139" class="t s1_139">A person (on whom Zakaat is not due) possesses items more than his daily needs (for the purpose of trade </div>
+<div id="tj_139" class="t s1_139">or otherwise). The value of these items adds up to the Nisaab (amount for Zakaat being Waajib). Sada qatul </div>
+<div id="tk_139" class="t s1_139">Fitr will be Waajib upon such a person as well, even though a whole year may not have passed on such </div>
+<div id="tl_139" class="t s1_139">items. </div>
+<div id="tm_139" class="t s4_139">•</div>
+<div id="tn_139" class="t s1_139">A person should discharge his Sada qatul Fitr in respect of himself and all those who are dependent upon </div>
+<div id="to_139" class="t s1_139">him like his wife and his minor children (who do not possess any wealth). If they do, the Sadaqatul Fitr </div>
+<div id="tp_139" class="t s1_139">may be given from their wealth. </div>
+<div id="tq_139" class="t s4_139">•</div>
+<div id="tr_139" class="t s1_139">It is not Waajib to give Sadaqatul Fitr on behalf of a child born on the day of Eid (after the time of Fajr sets </div>
+<div id="ts_139" class="t s1_139">in). </div>
+<div id="tt_139" class="t s4_139">•</div>
+<div id="tu_139" class="t s1_139">It is not Waajib to give Sadaqatul Fitr on behalf of one's mature children. Yes, one may give on behalf of </div>
+<div id="tv_139" class="t s1_139">one's insane child. </div>
+<div id="tw_139" class="t s4_139">•</div>
+<div id="tx_139" class="t s1_139">NOTE: One upon whom Sadaqatul Fitr is Waajib, must discharge this duty whether he has observed the </div>
+<div id="ty_139" class="t s1_139">Siyam of Ramadhaan or not. </div>
+<div id="tz_139" class="t s4_139">•</div>
+<div id="t10_139" class="t s1_139">Sadaqatul Fitr is not Waajib on one for whom it is permissible to take Zakaat and Sadaqatul Fitr. </div>
+<div id="t11_139" class="t s2_139">WHEN DOES SADAQATUL FITR BECOME WAA]IB: </div>
+<div id="t12_139" class="t s4_139">•</div>
+<div id="t13_139" class="t s1_139">Sadaqatul Fitr becomes Waajib on the day of Eid as the time of Fajr Salaah arrives. If one dies before the </div>
+<div id="t14_139" class="t s1_139">time of Fajr Salaah, Sadaqatul Fitr will not be Waajib upon him. Neither should it be taken nor paid from </div>
+<div id="t15_139" class="t s1_139">his property. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg139Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg139"><object width="935" height="1210" data="139/139.svg" type="image/svg+xml" id="pdf139" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld139" type="text/javascript">
+
+var isIE = false;
+var f139 = [['t2_139',2509],['t3_139',2762],['t4_139',1969],['t5_139',2745],['t7_139',2380],['t8_139',2720],['t9_139',2765],['ta_139',2854],['tb_139',1528],['tc_139',1156],['td_139',624],['te_139',1404],['tg_139',2082],['ti_139',2597],['tj_139',2640],['tk_139',2531],['tn_139',2576],['to_139',2533],['tp_139',785],['tr_139',2634],['tu_139',2576],['tv_139',448],['tx_139',2553],['ty_139',702],['t10_139',2370],['t11_139',1705],['t13_139',2580],['t14_139',2580],['t15_139',310]];
+function load139(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f139);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 42;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_139");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

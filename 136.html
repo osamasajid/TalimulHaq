@@ -1,0 +1,271 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page136</title>
+</head>
+
+<body onload="load136()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_136{left:456px;top:1136px;}
+#t2_136{left:192px;top:54px;}
+#t3_136{left:220px;top:54px;}
+#t4_136{left:192px;top:87px;}
+#t5_136{left:220px;top:87px;}
+#t6_136{left:192px;top:120px;}
+#t7_136{left:220px;top:120px;}
+#t8_136{left:165px;top:153px;}
+#t9_136{left:165px;top:175px;}
+#ta_136{left:138px;top:211px;}
+#tb_136{left:165px;top:211px;}
+#tc_136{left:165px;top:229px;}
+#td_136{left:138px;top:262px;}
+#te_136{left:165px;top:262px;}
+#tf_136{left:165px;top:280px;}
+#tg_136{left:165px;top:298px;}
+#th_136{left:138px;top:331px;}
+#ti_136{left:165px;top:331px;}
+#tj_136{left:165px;top:349px;}
+#tk_136{left:165px;top:367px;}
+#tl_136{left:256px;top:392px;}
+#tm_136{left:138px;top:421px;}
+#tn_136{left:165px;top:421px;}
+#to_136{left:165px;top:439px;}
+#tp_136{left:138px;top:472px;}
+#tq_136{left:165px;top:472px;}
+#tr_136{left:165px;top:490px;}
+#ts_136{left:138px;top:523px;}
+#tt_136{left:165px;top:523px;}
+#tu_136{left:137px;top:556px;}
+#tv_136{left:165px;top:556px;}
+#tw_136{left:165px;top:574px;}
+#tx_136{left:137px;top:607px;}
+#ty_136{left:165px;top:607px;}
+#tz_136{left:165px;top:625px;}
+#t10_136{left:165px;top:643px;}
+#t11_136{left:137px;top:676px;}
+#t12_136{left:165px;top:676px;}
+#t13_136{left:165px;top:694px;}
+#t14_136{left:137px;top:727px;}
+#t15_136{left:165px;top:727px;}
+#t16_136{left:137px;top:760px;}
+#t17_136{left:165px;top:760px;}
+#t18_136{left:165px;top:778px;}
+#t19_136{left:138px;top:811px;}
+#t1a_136{left:165px;top:811px;}
+#t1b_136{left:138px;top:844px;}
+#t1c_136{left:165px;top:844px;}
+#t1d_136{left:110px;top:1025px;}
+#t1e_136{left:110px;top:1046px;}
+#t1f_136{left:110px;top:1068px;}
+
+.s1_136{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT136;
+	color: rgb(0,0,0);
+}
+
+.s2_136{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT136;
+	color: rgb(0,0,0);
+}
+
+.s3_136{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(0,0,0);
+	FONT-STYLE: italic;
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT136;
+	src :url("136/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_136" class="t s1_136">136</div>
+<div id="t2_136" class="t s1_136">a.</div>
+<div id="t3_136" class="t s1_136">Qurbani that is made as a Kaffaarah for a Jinaayat (error) committed during Haj. </div>
+<div id="t4_136" class="t s1_136">b.</div>
+<div id="t5_136" class="t s1_136">Qurbani performed for a deceased person due to his Wasiyyat, i.e. his instruction before his death. </div>
+<div id="t6_136" class="t s1_136">c.</div>
+<div id="t7_136" class="t s1_136">Qurbani performed due to a Nazar (vow) one had made. </div>
+<div id="t8_136" class="t s2_136">The meat of the above-mentioned types of Qurbani has to be dis-tributed to the poor and </div>
+<div id="t9_136" class="t s2_136">needy ONLY. </div>
+<div id="ta_136" class="t s1_136">8.</div>
+<div id="tb_136" class="t s1_136">The meat of Nafil (voluntary) Qurbani which one had made for the deceased, can be eaten by all, similar to </div>
+<div id="tc_136" class="t s1_136">one's own Qurbani </div>
+<div id="td_136" class="t s1_136">9.</div>
+<div id="te_136" class="t s1_136">If more than one person participates in the Qurbani of an animal that has seven shares and each share-</div>
+<div id="tf_136" class="t s1_136">holder requests for his share of the meat, then it is necessary that the meat be distributed equally, by </div>
+<div id="tg_136" class="t s1_136">weight. If one person's share is more than the others, it will not be permissible as this will become interest. </div>
+<div id="th_136" class="t s1_136">10.</div>
+<div id="ti_136" class="t s1_136">If one person's share of meat is less than the others, but with the meat, he is given the skin or the head or </div>
+<div id="tj_136" class="t s1_136">legs of the animal, it will now be permissible. Great care should be taken in order to distribute the meat </div>
+<div id="tk_136" class="t s1_136">EQUALLY. </div>
+<div id="tl_136" class="t s2_136">ZABAH (SLAUGHTER) OF THE QURBANI ANIMAL </div>
+<div id="tm_136" class="t s1_136">1.</div>
+<div id="tn_136" class="t s1_136">It is Mustahab (preferable) that the person to whom the Qurbani animal belongs, slaughters it personally, </div>
+<div id="to_136" class="t s1_136">provided he is able to slaughter (make Zabah) properly. </div>
+<div id="tp_136" class="t s1_136">2.</div>
+<div id="tq_136" class="t s1_136">If the owner is unable lo slaughter, it is better to delegate the Zabah to another Muslim who is acquainted </div>
+<div id="tr_136" class="t s1_136">with the require-mcnts of proper Islamic Zabah. </div>
+<div id="ts_136" class="t s1_136">3.</div>
+<div id="tt_136" class="t s1_136">A Muslim woman, who knows how to make Zabah, is also permitted to slaughter. </div>
+<div id="tu_136" class="t s1_136">4.</div>
+<div id="tv_136" class="t s1_136">If the Zabah has been delegated, it is desirable that the person for whom the Qurbani is being made, be </div>
+<div id="tw_136" class="t s1_136">present. </div>
+<div id="tx_136" class="t s1_136">5.</div>
+<div id="ty_136" class="t s1_136">The Islamic Zabah requires that the throat, the external jugular veins and the wind-pipe of the animal to be </div>
+<div id="tz_136" class="t s1_136">swiftly and clearly severed with a very sharp knife, together with the recital of BISMILLAHI AI.LAHU </div>
+<div id="t10_136" class="t s1_136">AKBAR. </div>
+<div id="t11_136" class="t s1_136">6.</div>
+<div id="t12_136" class="t s1_136">If only two of the passages and veins are cut, the Zabah will be incorrect. Yes, if any three of the four are </div>
+<div id="t13_136" class="t s1_136">cut, the zabah will be in order. </div>
+<div id="t14_136" class="t s1_136">7.</div>
+<div id="t15_136" class="t s1_136">It is Mustahab (preferable) to face the Qiblah while slaughtering. </div>
+<div id="t16_136" class="t s1_136">8.</div>
+<div id="t17_136" class="t s1_136">It is preferable to sharpen the knife before slaughtering in order to ease the suffering of the animal. After </div>
+<div id="t18_136" class="t s1_136">slaughtering, the animal should not be skinned or cut up into pieces before it turns completely cold. </div>
+<div id="t19_136" class="t s1_136">9.</div>
+<div id="t1a_136" class="t s1_136">An animal should not be slaughtered in the presence of another animal. </div>
+<div id="t1b_136" class="t s1_136">10.</div>
+<div id="t1c_136" class="t s1_136">Du'aa for slaughtering: Lay the throat of the animal towards the Qiblah and recite: </div>
+<div id="t1d_136" class="t s3_136">(For me, I have set my face firmly and truly towards Him Who created heaven and the earth, and </div>
+<div id="t1e_136" class="t s3_136">never shall I give partners to Allah to verify my worship ad my sacrifice, my living and my dying </div>
+<div id="t1f_136" class="t s3_136">are for allah Lord of the world, Allah this sacrifice is from You and is for You.)</div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg136Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg136"><object width="935" height="1210" data="136/136.svg" type="image/svg+xml" id="pdf136" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld136" type="text/javascript">
+
+var isIE = false;
+var f136 = [['t3_136',1975],['t5_136',2411],['t7_136',1376],['t8_136',2599],['t9_136',415],['tb_136',2630],['tc_136',461],['te_136',2500],['tf_136',2447],['tg_136',2611],['ti_136',2560],['tj_136',2530],['tl_136',1689],['tn_136',2572],['to_136',1364],['tq_136',2581],['tr_136',1175],['tt_136',2012],['tv_136',2518],['ty_136',2613],['tz_136',2556],['t12_136',2581],['t13_136',746],['t15_136',1594],['t17_136',2567],['t18_136',2438],['t1a_136',1746],['t1c_136',2014],['t1d_136',2854],['t1e_136',2837],['t1f_136',2329]];
+function load136(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f136);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 52;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_136");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

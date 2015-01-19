@@ -1,0 +1,225 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page167</title>
+</head>
+
+<body onload="load167()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_167{left:456px;top:1136px;}
+#t2_167{left:744px;top:55px;}
+#t3_167{left:128px;top:67px;}
+#t4_167{left:128px;top:96px;}
+#t5_167{left:128px;top:110px;}
+#t6_167{left:128px;top:139px;}
+#t7_167{left:128px;top:168px;}
+#t8_167{left:128px;top:182px;}
+#t9_167{left:128px;top:211px;}
+#ta_167{left:128px;top:240px;}
+#tb_167{left:128px;top:254px;}
+#tc_167{left:128px;top:283px;}
+#td_167{left:128px;top:312px;}
+#te_167{left:128px;top:326px;}
+#tf_167{left:128px;top:340px;}
+#tg_167{left:604px;top:340px;}
+#th_167{left:128px;top:1046px;}
+
+.s5_167{
+	FONT-SIZE: 48px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT167;
+	color: rgb(0,0,0);
+}
+
+.s2_167{
+	FONT-SIZE: 42px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM167;
+	color: rgb(50,50,50);
+}
+
+.s1_167{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT167;
+	color: rgb(0,0,0);
+}
+
+.s4_167{
+	FONT-SIZE: 48px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT167;
+	color: rgb(50,50,50);
+}
+
+.s3_167{
+	FONT-SIZE: 48px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM167;
+	color: rgb(0,85,0);
+}
+
+.s6_167{
+	FONT-SIZE: 48px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM167;
+	color: rgb(50,50,50);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM167;
+	src :url("167/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT167;
+	src :url("167/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_167" class="t s1_167">167</div>
+<div id="t2_167" class="t s2_167">Ibn Majah</div>
+<div id="t3_167" class="t s3_167">Masjid Jumu`ah </div>
+<div id="t4_167" class="t s4_167">It was here that the first Friday Salah was performed by the Prophet (P.B.U.H.). Near this Masjid was the home of our Nabi’s mother's </div>
+<div id="t5_167" class="t s4_167">family. </div>
+<div id="t6_167" class="t s3_167">Masjid Qiblatain </div>
+<div id="t7_167" class="t s5_167">Here, during a Salah which the Prophet (P.B.U.H.) was performing, the direction of Qiblah changed from Masjid al-Aqsa to the Ka`bah.</div>
+<div id="t8_167" class="t s5_167">Nabi (P.B.U.H.) changed his direction and those standing behind him also changed their direction. </div>
+<div id="t9_167" class="t s3_167">Masjid Ahzab </div>
+<div id="ta_167" class="t s5_167">In this area there were seven Masajid. It was here that the defensive trench was dug by the Prophet (P.B.U.H.) and the Sahabah in the </div>
+<div id="tb_167" class="t s5_167">5th year of Hijrah, to hold out against the enemies. This was known as the “Battle of the Trench”. </div>
+<div id="tc_167" class="t s3_167">Masjid Miqat </div>
+<div id="td_167" class="t s5_167">This is the Miqat for those going from Madinah to Makkah. This Masjid is also called Masjid ash-Shajarah (The Masjid of the Tree) </div>
+<div id="te_167" class="t s5_167">because it is built at the place where the Prophet (P.B.U.H.) rested underneath a tree when going to Makkah. </div>
+<div id="tf_167" class="t s5_167">This Masjid is most commonly known as Masjid Dhul-Hulayfah because it is situated in that area</div>
+<div id="tg_167" class="t s4_167">. </div>
+<div id="th_167" class="t s6_167">Du`a’: At the graves of Uhud</div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg167Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg167"><object width="935" height="1210" data="167/167.svg" type="image/svg+xml" id="pdf167" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld167" type="text/javascript">
+
+var isIE = false;
+var f167 = [['t2_167',196],['t3_167',345],['t4_167',2624],['t6_167',356],['t7_167',2662],['t8_167',1923],['t9_167',294],['ta_167',2603],['tb_167',1907],['tc_167',286],['td_167',2585],['te_167',2118],['tf_167',1902],['th_167',605]];
+function load167(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f167);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 18;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_167");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

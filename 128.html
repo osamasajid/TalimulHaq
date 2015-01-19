@@ -1,0 +1,322 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page128</title>
+</head>
+
+<body onload="load128()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_128{left:456px;top:1136px;}
+#t2_128{left:137px;top:54px;}
+#t3_128{left:165px;top:54px;}
+#t4_128{left:252px;top:54px;}
+#t5_128{left:165px;top:72px;}
+#t6_128{left:137px;top:106px;}
+#t7_128{left:165px;top:106px;}
+#t8_128{left:307px;top:106px;}
+#t9_128{left:165px;top:123px;}
+#ta_128{left:165px;top:141px;}
+#tb_128{left:137px;top:175px;}
+#tc_128{left:165px;top:175px;}
+#td_128{left:316px;top:175px;}
+#te_128{left:165px;top:193px;}
+#tf_128{left:137px;top:226px;}
+#tg_128{left:165px;top:226px;}
+#th_128{left:233px;top:226px;}
+#ti_128{left:165px;top:244px;}
+#tj_128{left:165px;top:262px;}
+#tk_128{left:137px;top:295px;}
+#tl_128{left:165px;top:295px;}
+#tm_128{left:288px;top:295px;}
+#tn_128{left:165px;top:313px;}
+#to_128{left:165px;top:331px;}
+#tp_128{left:138px;top:364px;}
+#tq_128{left:165px;top:364px;}
+#tr_128{left:268px;top:364px;}
+#ts_128{left:165px;top:382px;}
+#tt_128{left:138px;top:415px;}
+#tu_128{left:165px;top:415px;}
+#tv_128{left:165px;top:433px;}
+#tw_128{left:138px;top:466px;}
+#tx_128{left:165px;top:466px;}
+#ty_128{left:165px;top:484px;}
+#tz_128{left:138px;top:517px;}
+#t10_128{left:165px;top:517px;}
+#t11_128{left:165px;top:535px;}
+#t12_128{left:165px;top:553px;}
+#t13_128{left:138px;top:586px;}
+#t14_128{left:165px;top:586px;}
+#t15_128{left:165px;top:604px;}
+#t16_128{left:138px;top:637px;}
+#t17_128{left:165px;top:637px;}
+#t18_128{left:165px;top:655px;}
+#t19_128{left:138px;top:688px;}
+#t1a_128{left:165px;top:688px;}
+#t1b_128{left:165px;top:706px;}
+#t1c_128{left:165px;top:724px;}
+#t1d_128{left:165px;top:742px;}
+#t1e_128{left:137px;top:775px;}
+#t1f_128{left:165px;top:775px;}
+#t1g_128{left:165px;top:792px;}
+#t1h_128{left:110px;top:826px;}
+#t1i_128{left:244px;top:860px;}
+#t1j_128{left:244px;top:878px;}
+#t1k_128{left:244px;top:896px;}
+#t1l_128{left:244px;top:914px;}
+#t1m_128{left:452px;top:860px;}
+#t1n_128{left:452px;top:878px;}
+#t1o_128{left:452px;top:896px;}
+#t1p_128{left:452px;top:914px;}
+#t1q_128{left:110px;top:945px;}
+#t1r_128{left:138px;top:982px;}
+#t1s_128{left:165px;top:982px;}
+#t1t_128{left:165px;top:1000px;}
+#t1u_128{left:138px;top:1033px;}
+#t1v_128{left:165px;top:1033px;}
+#t1w_128{left:165px;top:1051px;}
+#t1x_128{left:165px;top:1069px;}
+
+.s1_128{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT128;
+	color: rgb(0,0,0);
+}
+
+.s4_128{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM128;
+	color: rgb(0,0,0);
+}
+
+.s3_128{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM128;
+	color: rgb(0,0,0);
+}
+
+.s2_128{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NKJHPH-Wingdings-Regular128;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM128;
+	src :url("128/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT128;
+	src :url("128/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NKJHPH-Wingdings-Regular128;
+	src :url("128/fonts/NKJHPH-Wingdings-Regular.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_128" class="t s1_128">128</div>
+<div id="t2_128" class="t s2_128">±</div>
+<div id="t3_128" class="t s3_128">AR RIQAAB</div>
+<div id="t4_128" class="t s1_128">. Those slaves that are permitted to work for remuneration and have an agreement from their </div>
+<div id="t5_128" class="t s1_128">masters to purchase their freedom on payment of fixed amounts. </div>
+<div id="t6_128" class="t s2_128">±</div>
+<div id="t7_128" class="t s3_128">AL GHAARIMEEN.</div>
+<div id="t8_128" class="t s1_128">Those persons that have a debt and do not possess any other wealth or goods with </div>
+<div id="t9_128" class="t s1_128">which they could repay that which they owe. It is conditional that this debt was not created for any un-</div>
+<div id="ta_128" class="t s1_128">Islamic or sinful purpose. </div>
+<div id="tb_128" class="t s2_128">±</div>
+<div id="tc_128" class="t s3_128">FEE SABEELILLAH.</div>
+<div id="td_128" class="t s1_128">Those person that have to carry out a Fardh deed which has become obligatory on </div>
+<div id="te_128" class="t s1_128">them and subsequently (due to loss of wealth) are unable to complete that Fardh. </div>
+<div id="tf_128" class="t s2_128">±</div>
+<div id="tg_128" class="t s3_128">Important</div>
+<div id="th_128" class="t s1_128">: A common misunderstanding about the term FEE Sabeelillah' has misled many to believe that </div>
+<div id="ti_128" class="t s1_128">this includes all types of charitable deeds. The Commentaries of the Qur'anand Ahaadith of Rasul ullah </div>
+<div id="tj_128" class="t s1_128">(Sall allaho Alaihe Wa Sallam) do not support this view. </div>
+<div id="tk_128" class="t s2_128">±</div>
+<div id="tl_128" class="t s3_128">IBN US SABEEL.</div>
+<div id="tm_128" class="t s1_128">Those persons who are Musaafirs (travellers in view of Shairat) and during the course </div>
+<div id="tn_128" class="t s1_128">of their journey do not possess basic necessities, though they are well to do at home. They could be given </div>
+<div id="to_128" class="t s1_128">Zakaat in order to fulfill travel needs to return home. </div>
+<div id="tp_128" class="t s2_128">±</div>
+<div id="tq_128" class="t s3_128">IMPORTANT.</div>
+<div id="tr_128" class="t s1_128">All the above mentioned recipients excluding Al Aamileen must be those who do not </div>
+<div id="ts_128" class="t s1_128">possess the Nisaab. </div>
+<div id="tt_128" class="t s1_128">1.</div>
+<div id="tu_128" class="t s1_128">It is not Jaa'iz (not permissible) in the shariah to give zakaat to a person who owns merchandise or wealth </div>
+<div id="tv_128" class="t s1_128">in excess of his needs to the value of Nisaab nor is it Jaa'iz for such a person to accept Zakaat. </div>
+<div id="tw_128" class="t s1_128">2.</div>
+<div id="tx_128" class="t s1_128">A person that does not own an amount equal to the value of Nisaab is known as Faqir. This person could </div>
+<div id="ty_128" class="t s1_128">be given Zakaat and it is permissible for him to accept Zakaat. </div>
+<div id="tz_128" class="t s1_128">3.</div>
+<div id="t10_128" class="t s1_128">A person owns wealth which in value exceeds the amount of Nisaab, but this wealth is not intended for </div>
+<div id="t11_128" class="t s1_128">business nor does he require it for his daily needs. Such a person is regarded as well to do and should not </div>
+<div id="t12_128" class="t s1_128">be given Zakaat. </div>
+<div id="t13_128" class="t s1_128">4.</div>
+<div id="t14_128" class="t s1_128">The books of a scholar or tools of a tradesman are among his necessities, irrespective of their value. </div>
+<div id="t15_128" class="t s1_128">Besides these if he does not own wealth equal to Nisaab he could be given Zakaat. </div>
+<div id="t16_128" class="t s1_128">5.</div>
+<div id="t17_128" class="t s1_128">When giving Zakaat, Sadaqah etc. one's poor and needy relatives should be given preference. To avoid </div>
+<div id="t18_128" class="t s1_128">embarassing them it should be given to them without saying that it is Zakaat or Sadaqah. </div>
+<div id="t19_128" class="t s1_128">6.</div>
+<div id="t1a_128" class="t s1_128">There is great sawaab in giving Zakaat to poor persons who are striving in the way of the Deen or those </div>
+<div id="t1b_128" class="t s1_128">who are engaged in religious knowledge, or to religious institutions where poor or needy students are being </div>
+<div id="t1c_128" class="t s1_128">cared for. Care should be taken that only such institutions are given Zakaat where it is used according to </div>
+<div id="t1d_128" class="t s1_128">the Shariah. </div>
+<div id="t1e_128" class="t s1_128">7.</div>
+<div id="t1f_128" class="t s1_128">A child of a wealthy father cannot be given Zakaat. When such a child becomes mature in age, and does </div>
+<div id="t1g_128" class="t s1_128">not own wealth to the value of Nisaab, he may then be given Zakaat. </div>
+<div id="t1h_128" class="t s4_128">ZAKAAT CAN BE GIVEN TO A</div>
+<div id="t1i_128" class="t s1_128">brother, sister nephew, niece, </div>
+<div id="t1j_128" class="t s1_128">(brother's and sister's children, </div>
+<div id="t1k_128" class="t s1_128">uncle, aunt,(both paternal and </div>
+<div id="t1l_128" class="t s1_128">maternal,) </div>
+<div id="t1m_128" class="t s1_128">step-grandfather, step-grandmother, </div>
+<div id="t1n_128" class="t s1_128">father-in-law, mother-in-law, </div>
+<div id="t1o_128" class="t s1_128">PROVIDED THEY DO NOT </div>
+<div id="t1p_128" class="t s1_128">POSSESS NISAAB</div>
+<div id="t1q_128" class="t s4_128">PERSONS THAT CANNOT BE GIVEN ZAKAAT.</div>
+<div id="t1r_128" class="t s1_128">1.</div>
+<div id="t1s_128" class="t s1_128">Zakaat cannot be given to Banu Haashim. The Banu Hashim are all the children of Sayyadatina Faatima R. </div>
+<div id="t1t_128" class="t s1_128">A., and all members of Rasulullah Sallaho Alaihe Wa Sallam's family and wives Radiyallahu anhuma. </div>
+<div id="t1u_128" class="t s1_128">2.</div>
+<div id="t1v_128" class="t s1_128">Zakaat cannot be given to parents, grandfather etc. In the same manner one's grandfather etc. In the same </div>
+<div id="t1w_128" class="t s1_128">manner one's children and grandchildren, cannot be given Zakaat, a husband and wife cannot give Zakaat </div>
+<div id="t1x_128" class="t s1_128">to each other. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg128Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg128"><object width="935" height="1210" data="128/128.svg" type="image/svg+xml" id="pdf128" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld128" type="text/javascript">
+
+var isIE = false;
+var f128 = [['t3_128',349],['t4_128',2267],['t5_128',1578],['t7_128',551],['t8_128',2006],['t9_128',2517],['ta_128',626],['tc_128',588],['td_128',2010],['te_128',1978],['th_128',2336],['ti_128',2530],['tj_128',1389],['tl_128',474],['tm_128',2108],['tn_128',2587],['to_128',1294],['tr_128',2088],['ts_128',475],['tu_128',2590],['tv_128',2305],['tx_128',2569],['ty_128',1527],['t10_128',2530],['t11_128',2578],['t12_128',407],['t14_128',2447],['t15_128',2023],['t17_128',2527],['t18_128',2174],['t1a_128',2543],['t1b_128',2636],['t1c_128',2557],['t1d_128',293],['t1f_128',2556],['t1g_128',1684],['t1h_128',1058],['t1i_128',719],['t1j_128',747],['t1k_128',731],['t1m_128',880],['t1n_128',716],['t1o_128',734],['t1p_128',496],['t1q_128',1622],['t1s_128',2624],['t1t_128',2508],['t1v_128',2574],['t1w_128',2588],['t1x_128',332]];
+function load128(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f128);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 70;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_128");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

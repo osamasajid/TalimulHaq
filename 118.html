@@ -1,0 +1,289 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page118</title>
+</head>
+
+<body onload="load118()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_118{left:456px;top:1136px;}
+#t2_118{left:300px;top:54px;}
+#t3_118{left:138px;top:83px;}
+#t4_118{left:165px;top:83px;}
+#t5_118{left:138px;top:116px;}
+#t6_118{left:165px;top:116px;}
+#t7_118{left:138px;top:149px;}
+#t8_118{left:165px;top:149px;}
+#t9_118{left:110px;top:182px;}
+#ta_118{left:280px;top:211px;}
+#tb_118{left:138px;top:240px;}
+#tc_118{left:165px;top:240px;}
+#td_118{left:138px;top:273px;}
+#te_118{left:165px;top:273px;}
+#tf_118{left:138px;top:306px;}
+#tg_118{left:165px;top:306px;}
+#th_118{left:138px;top:341px;}
+#ti_118{left:165px;top:341px;}
+#tj_118{left:549px;top:341px;}
+#tk_118{left:675px;top:341px;}
+#tl_118{left:325px;top:366px;}
+#tm_118{left:138px;top:395px;}
+#tn_118{left:165px;top:395px;}
+#to_118{left:138px;top:428px;}
+#tp_118{left:165px;top:428px;}
+#tq_118{left:138px;top:461px;}
+#tr_118{left:165px;top:461px;}
+#ts_118{left:138px;top:494px;}
+#tt_118{left:165px;top:494px;}
+#tu_118{left:138px;top:527px;}
+#tv_118{left:165px;top:527px;}
+#tw_118{left:138px;top:560px;}
+#tx_118{left:165px;top:560px;}
+#ty_118{left:110px;top:593px;}
+#tz_118{left:110px;top:615px;}
+#t10_118{left:346px;top:644px;}
+#t11_118{left:110px;top:875px;}
+#t12_118{left:110px;top:912px;}
+#t13_118{left:138px;top:950px;}
+#t14_118{left:165px;top:950px;}
+#t15_118{left:138px;top:984px;}
+#t16_118{left:165px;top:984px;}
+#t17_118{left:138px;top:1018px;}
+#t18_118{left:165px;top:1018px;}
+#t19_118{left:165px;top:1036px;}
+#t1a_118{left:165px;top:1054px;}
+#t1b_118{left:138px;top:1088px;}
+#t1c_118{left:165px;top:1088px;}
+#t1d_118{left:165px;top:1106px;}
+
+.s1_118{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT118;
+	color: rgb(0,0,0);
+}
+
+.s4_118{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(0,0,0);
+	FONT-STYLE: italic;
+}
+
+.s3_118{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT118;
+	color: rgb(0,0,0);
+}
+
+.s2_118{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT118;
+	color: rgb(0,0,0);
+}
+
+.s5_118{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM118;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM118;
+	src :url("118/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT118;
+	src :url("118/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT118;
+	src :url("118/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_118" class="t s1_118">118</div>
+<div id="t2_118" class="t s2_118">THINGS PERMITTED DURING I'TIKAAF. </div>
+<div id="t3_118" class="t s1_118">1.</div>
+<div id="t4_118" class="t s1_118">Eating. </div>
+<div id="t5_118" class="t s1_118">2.</div>
+<div id="t6_118" class="t s1_118">Sleeping. </div>
+<div id="t7_118" class="t s1_118">3.</div>
+<div id="t8_118" class="t s1_118">Discussing matters of Deen or necessary talk. </div>
+<div id="t9_118" class="t s2_118">It is MAKROOH to observe complete silence as a form of Ibadat (Worship). </div>
+<div id="ta_118" class="t s2_118">ONE IS PERMITTED TO LEAVE THE MUSJID. </div>
+<div id="tb_118" class="t s1_118">1.</div>
+<div id="tc_118" class="t s1_118">For WAJIB GHUSL. </div>
+<div id="td_118" class="t s1_118">2.</div>
+<div id="te_118" class="t s1_118">For Wudhu. </div>
+<div id="tf_118" class="t s1_118">3.</div>
+<div id="tg_118" class="t s1_118">To follow the call of nature (toilet). </div>
+<div id="th_118" class="t s3_118">•</div>
+<div id="ti_118" class="t s1_118">LEAVING THE MUSJID without a valid Shar'ee reason will </div>
+<div id="tj_118" class="t s1_118">break the ITIKAAF.</div>
+<div id="tk_118" class="t s1_118">. </div>
+<div id="tl_118" class="t s2_118">THINGS TO DO DURING ITIKAAF. </div>
+<div id="tm_118" class="t s1_118">1.</div>
+<div id="tn_118" class="t s1_118">A MUTAKlF should engage himself in Ibaadat. </div>
+<div id="to_118" class="t s1_118">2.</div>
+<div id="tp_118" class="t s1_118">Recital of Holy Quran. </div>
+<div id="tq_118" class="t s1_118">3.</div>
+<div id="tr_118" class="t s1_118">NAFI Salaat and Zikr. </div>
+<div id="ts_118" class="t s1_118">4.</div>
+<div id="tt_118" class="t s1_118">Durood Sharif and Istighfaar. </div>
+<div id="tu_118" class="t s1_118">5.</div>
+<div id="tv_118" class="t s1_118">Remember of Allah Ta’aala. </div>
+<div id="tw_118" class="t s1_118">6.</div>
+<div id="tx_118" class="t s1_118">Learn or teach the knowledge of deen. </div>
+<div id="ty_118" class="t s2_118">A woman should perform ITIKAAF in her home at the place where she performs her daily Salaat </div>
+<div id="tz_118" class="t s2_118">or any suitable place. </div>
+<div id="t10_118" class="t s2_118">NIYYAH FOR NAFL ITIKAAF </div>
+<div id="t11_118" class="t s4_118">(I INTEND MAKING I'TIKAAF FOR ALLAH TILL I REMAIN IN THE MUSJID.)</div>
+<div id="t12_118" class="t s5_118">TARAWEEH</div>
+<div id="t13_118" class="t s3_118">•</div>
+<div id="t14_118" class="t s1_118">Taraaweeh Salaat is SUNNATE MU'AKKADAH for both, men and women. </div>
+<div id="t15_118" class="t s3_118">•</div>
+<div id="t16_118" class="t s1_118">To perform Taraaweeh with Jamaa’ah is SUNNATE KIFAYAH for men. </div>
+<div id="t17_118" class="t s3_118">•</div>
+<div id="t18_118" class="t s1_118">If a person performs Taraaweeh at home whilst Taraaweeh is being performed at the Masjid, he will NOT </div>
+<div id="t19_118" class="t s1_118">be sinful. However, if all the neighbors’ perform their Taraaweeh alone at home, then all will be sinful </div>
+<div id="t1a_118" class="t s1_118">because of neglecting the Jamaa’ah. </div>
+<div id="t1b_118" class="t s3_118">•</div>
+<div id="t1c_118" class="t s1_118">The time for Taraaweeh is from after Esha Salaat to a little before Subha Sadiq. It can be performed before </div>
+<div id="t1d_118" class="t s1_118">and after the Witr Salaat also. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg118Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg118"><object width="935" height="1210" data="118/118.svg" type="image/svg+xml" id="pdf118" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld118" type="text/javascript">
+
+var isIE = false;
+var f118 = [['t2_118',1343],['t8_118',1118],['t9_118',2250],['ta_118',1499],['tc_118',523],['te_118',297],['tg_118',870],['ti_118',1506],['tj_118',502],['tl_118',1140],['tn_118',1176],['tp_118',562],['tr_118',548],['tt_118',723],['tv_118',700],['tx_118',942],['ty_118',2859],['tz_118',624],['t10_118',969],['t11_118',2400],['t14_118',1889],['t16_118',1808],['t18_118',2598],['t19_118',2516],['t1a_118',883],['t1c_118',2621],['t1d_118',729]];
+function load118(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f118);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 50;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_118");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

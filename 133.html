@@ -1,0 +1,286 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page133</title>
+</head>
+
+<body onload="load133()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_133{left:456px;top:1136px;}
+#t2_133{left:165px;top:54px;}
+#t3_133{left:165px;top:72px;}
+#t4_133{left:446px;top:72px;}
+#t5_133{left:267px;top:97px;}
+#t6_133{left:110px;top:126px;}
+#t7_133{left:110px;top:148px;}
+#t8_133{left:110px;top:169px;}
+#t9_133{left:328px;top:198px;}
+#ta_133{left:138px;top:227px;}
+#tb_133{left:165px;top:227px;}
+#tc_133{left:165px;top:245px;}
+#td_133{left:165px;top:263px;}
+#te_133{left:138px;top:296px;}
+#tf_133{left:165px;top:296px;}
+#tg_133{left:165px;top:314px;}
+#th_133{left:165px;top:332px;}
+#ti_133{left:138px;top:365px;}
+#tj_133{left:165px;top:365px;}
+#tk_133{left:165px;top:383px;}
+#tl_133{left:165px;top:400px;}
+#tm_133{left:165px;top:418px;}
+#tn_133{left:138px;top:451px;}
+#to_133{left:165px;top:451px;}
+#tp_133{left:165px;top:469px;}
+#tq_133{left:138px;top:502px;}
+#tr_133{left:165px;top:502px;}
+#ts_133{left:165px;top:520px;}
+#tt_133{left:165px;top:538px;}
+#tu_133{left:165px;top:556px;}
+#tv_133{left:165px;top:574px;}
+#tw_133{left:138px;top:607px;}
+#tx_133{left:165px;top:607px;}
+#ty_133{left:165px;top:625px;}
+#tz_133{left:165px;top:643px;}
+#t10_133{left:165px;top:661px;}
+#t11_133{left:138px;top:694px;}
+#t12_133{left:165px;top:694px;}
+#t13_133{left:165px;top:712px;}
+#t14_133{left:165px;top:729px;}
+#t15_133{left:165px;top:747px;}
+#t16_133{left:165px;top:765px;}
+#t17_133{left:165px;top:783px;}
+#t18_133{left:138px;top:816px;}
+#t19_133{left:165px;top:816px;}
+#t1a_133{left:165px;top:834px;}
+#t1b_133{left:165px;top:852px;}
+#t1c_133{left:165px;top:870px;}
+#t1d_133{left:138px;top:903px;}
+#t1e_133{left:165px;top:903px;}
+#t1f_133{left:165px;top:921px;}
+#t1g_133{left:165px;top:939px;}
+#t1h_133{left:138px;top:972px;}
+#t1i_133{left:165px;top:972px;}
+#t1j_133{left:165px;top:990px;}
+#t1k_133{left:165px;top:1008px;}
+#t1l_133{left:138px;top:1041px;}
+#t1m_133{left:165px;top:1041px;}
+#t1n_133{left:165px;top:1058px;}
+#t1o_133{left:138px;top:1092px;}
+#t1p_133{left:165px;top:1092px;}
+#t1q_133{left:165px;top:1109px;}
+
+.s1_133{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT133;
+	color: rgb(0,0,0);
+}
+
+.s2_133{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT133;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT133;
+	src :url("133/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_133" class="t s1_133">133</div>
+<div id="t2_133" class="t s1_133">afford. The wealthy should make Nafil Qurbani for Rasulullah (Salallaho Alaihe Wa Sallam), his Ummat, </div>
+<div id="t3_133" class="t s1_133">and for their own living or deceased relatives.</div>
+<div id="t4_133" class="t s1_133">. Permission for Nafil Qurbani is not necessary. </div>
+<div id="t5_133" class="t s2_133">WARNING FOR THOSE WHO IGNORE QURBANI </div>
+<div id="t6_133" class="t s2_133">There is a tradition related from Hazrat Abu Hurairah (R.A.) that Rasulullah (S.A.W.) said that </div>
+<div id="t7_133" class="t s2_133">the person who has the means of performing Qurbani but does not do so should not even come </div>
+<div id="t8_133" class="t s2_133">NEAR our EIDGAH, (place of Eid Salaah). </div>
+<div id="t9_133" class="t s2_133">ON WHOM IS QURBANI WAAlIB? </div>
+<div id="ta_133" class="t s1_133">1.</div>
+<div id="tb_133" class="t s1_133">Qurbani is Waajib on all Muslims (male and female) who are sane, Baaligh (have reached the age of </div>
+<div id="tc_133" class="t s1_133">puberty) and are the possessors of minimum Zakatable wealth (Nisab) i.e. about $ 230,00. It is not </div>
+<div id="td_133" class="t s1_133">necessary that the ownership of such wealth be for a full year. </div>
+<div id="te_133" class="t s1_133">2.</div>
+<div id="tf_133" class="t s1_133">Qurbani is Waajib on a man for himself only, not for his wife and children. However, it is his duty to see </div>
+<div id="tg_133" class="t s1_133">that his wife's and grown-up (Baaligh) children's Qurbani are made if they are possessors of Nisaab. If he </div>
+<div id="th_133" class="t s1_133">makes their Qurbani out of his wealth with their permission, their Qurbani will be valid. </div>
+<div id="ti_133" class="t s1_133">3.</div>
+<div id="tj_133" class="t s1_133">Qurbani is not Waajib on poor people (who do not possess wealth equal to Nissab) nor on travellers </div>
+<div id="tk_133" class="t s1_133">(Mussaafirs) nor on minors. If a minor reaches the age of puberty or a Musaafir becomes a Muqeem, i.e. by </div>
+<div id="tl_133" class="t s1_133">completing his journey or in-tending to stay in one place for 15 days or more, before the sunset of the 12th </div>
+<div id="tm_133" class="t s1_133">Zil Hijjah, then Qurbani is Waajib on them. </div>
+<div id="tn_133" class="t s1_133">4.</div>
+<div id="to_133" class="t s1_133">Qurbani on behalf of a deceased person is Waajib if he had made a.Wasiyyat that it should be undertaken </div>
+<div id="tp_133" class="t s1_133">from his wealth, provided the cost does not exceed one third of his net estate. </div>
+<div id="tq_133" class="t s1_133">5.</div>
+<div id="tr_133" class="t s1_133">Qurbani is Waajib on a person who makes a Nazr (Vow), i.e. if a certain work of mine is carried out I will </div>
+<div id="ts_133" class="t s1_133">make Qurbani, then Qurbani becomes Waajib on him when that task is accomplished. This Qurbani must </div>
+<div id="tt_133" class="t s1_133">be carried out in the days of Qurbani, unless it is generally excepted and understood that merely </div>
+<div id="tu_133" class="t s1_133">slaughtering an animal on ANY DAY is referred to as Qurbani, and this had been the intention of the </div>
+<div id="tv_133" class="t s1_133">person who made a vow, then it will be permissible for him to sacrifice an animal on any day. </div>
+<div id="tw_133" class="t s1_133">6.</div>
+<div id="tx_133" class="t s1_133">If a poor person buys an animal during the days of Qurbani, with the intention of Qurbani then it becomes </div>
+<div id="ty_133" class="t s1_133">Waajib upon him to sacrifice this animal. However, if this animal dies or gets lost, Qurbani will not remain </div>
+<div id="tz_133" class="t s1_133">Waajib on him. It will not be necessary for him to buy another animal.If he buys another animal and </div>
+<div id="t10_133" class="t s1_133">thereafter the first one is found, it becomes Waajib upon him to sacrifice both animals. </div>
+<div id="t11_133" class="t s1_133">7.</div>
+<div id="t12_133" class="t s1_133">A person on whom Qurbani is Waajib, purchased an animal for sacrifice. Thereafter this animal was lost, </div>
+<div id="t13_133" class="t s1_133">stolen or died. In such a case it will be Waajib to sacrifice another animal in its place. If, after purchasing </div>
+<div id="t14_133" class="t s1_133">the second animal the first one is found, the sacrificing of only one animal is Waajib upon him. If he </div>
+<div id="t15_133" class="t s1_133">sacrifices the second animal then it is preferable to give as charity the difference in price between the two </div>
+<div id="t16_133" class="t s1_133">animals, if there be any, difference e.g. the 1st animal had cost him $ 100, and the second had cost him </div>
+<div id="t17_133" class="t s1_133">$80. He should now give $20 as charity. However, it is preferable to make Qurbani of both the animals. </div>
+<div id="t18_133" class="t s1_133">8.</div>
+<div id="t19_133" class="t s1_133">A person, on whom Qurbani is Waajib, bought an animal for sacrifice. Due to some reason he did not </div>
+<div id="t1a_133" class="t s1_133">slaughter it on the fixed days of Qurbani. It is now compulsory upon him to give the animal away, alive, as </div>
+<div id="t1b_133" class="t s1_133">charity. If he did not purchase the animal and Qurbani was Waajib on him, it is obligatory for him tot give </div>
+<div id="t1c_133" class="t s1_133">as charity, the value of an animal. </div>
+<div id="t1d_133" class="t s1_133">9.</div>
+<div id="t1e_133" class="t s1_133">If a person, on whom Qurbani was Waajib, failed to carry it out for a number of years, should give the </div>
+<div id="t1f_133" class="t s1_133">value of that number of animals as charity. Slaughtering of that amount of animals during the days of </div>
+<div id="t1g_133" class="t s1_133">Qurbani will not compensate for the missed Qurbani, but will instead be regarded as voluntary Qurbani. </div>
+<div id="t1h_133" class="t s1_133">10.</div>
+<div id="t1i_133" class="t s1_133">If a person carries out Qurbani on behalf of a person on whom Qurbani is Waajib, without his permission </div>
+<div id="t1j_133" class="t s1_133">and without his knowing; this Qurbani will not be valid. If it is done with his permission or instruction, it is </div>
+<div id="t1k_133" class="t s1_133">permissible. </div>
+<div id="t1l_133" class="t s1_133">11.</div>
+<div id="t1m_133" class="t s1_133">It is Mustahab (preferable) for those intending to make Qurbani not to cut their hair or clip their nails (from </div>
+<div id="t1n_133" class="t s1_133">the time the moon for Zil Hijjah is sighted until after Qurbani. </div>
+<div id="t1o_133" class="t s1_133">12.</div>
+<div id="t1p_133" class="t s1_133">Qurbani is an Ibaadat that has to be carried out every year on whom it is Waajib. Being a Hajee is not a </div>
+<div id="t1q_133" class="t s1_133">condition for Qurbani becoming Waajib. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg133Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg133"><object width="935" height="1210" data="133/133.svg" type="image/svg+xml" id="pdf133" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld133" type="text/javascript">
+
+var isIE = false;
+var f133 = [['t2_133',2598],['t3_133',1125],['t4_133',1165],['t5_133',1606],['t6_133',2791],['t7_133',2777],['t8_133',1287],['t9_133',1117],['tb_133',2464],['tc_133',2411],['td_133',1519],['tf_133',2572],['tg_133',2583],['th_133',2159],['tj_133',2451],['tk_133',2636],['tl_133',2615],['tm_133',1072],['to_133',2585],['tp_133',1894],['tr_133',2606],['ts_133',2578],['tt_133',2351],['tu_133',2483],['tv_133',2300],['tx_133',2599],['ty_133',2625],['tz_133',2457],['t10_133',2124],['t12_133',2579],['t13_133',2580],['t14_133',2464],['t15_133',2586],['t16_133',2521],['t17_133',2545],['t19_133',2493],['t1a_133',2623],['t1b_133',2605],['t1c_133',826],['t1e_133',2510],['t1f_133',2481],['t1g_133',2550],['t1i_133',2586],['t1j_133',2634],['t1m_133',2635],['t1n_133',1521],['t1p_133',2532],['t1q_133',1000]];
+function load133(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f133);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 63;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_133");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

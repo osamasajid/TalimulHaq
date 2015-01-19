@@ -1,0 +1,241 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page107</title>
+</head>
+
+<body onload="load107()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_107{left:456px;top:1136px;}
+#t2_107{left:110px;top:392px;}
+#t3_107{left:110px;top:414px;}
+#t4_107{left:110px;top:435px;}
+#t5_107{left:110px;top:456px;}
+#t6_107{left:110px;top:477px;}
+#t7_107{left:110px;top:594px;}
+#t8_107{left:110px;top:615px;}
+#t9_107{left:257px;top:724px;}
+#ta_107{left:110px;top:761px;}
+#tb_107{left:110px;top:797px;}
+#tc_107{left:110px;top:834px;}
+#td_107{left:110px;top:855px;}
+#te_107{left:110px;top:877px;}
+#tf_107{left:110px;top:914px;}
+#tg_107{left:138px;top:951px;}
+#th_107{left:165px;top:951px;}
+#ti_107{left:138px;top:985px;}
+#tj_107{left:165px;top:985px;}
+#tk_107{left:138px;top:1019px;}
+#tl_107{left:165px;top:1019px;}
+#tm_107{left:138px;top:1053px;}
+#tn_107{left:165px;top:1053px;}
+#to_107{left:138px;top:1088px;}
+#tp_107{left:165px;top:1088px;}
+
+.s1_107{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT107;
+	color: rgb(0,0,0);
+}
+
+.s4_107{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM107;
+	color: rgb(0,0,0);
+}
+
+.s3_107{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT107;
+	color: rgb(0,0,0);
+}
+
+.s2_107{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(0,0,0);
+	FONT-STYLE: italic;
+}
+
+.s5_107{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT107;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJIKOL-SymbolMT107;
+	src :url("107/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM107;
+	src :url("107/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT107;
+	src :url("107/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_107" class="t s1_107">107</div>
+<div id="t2_107" class="t s2_107">(Oh Allah, Forgive him, Have mercy upon him, Give him peace and absolve him. Receive him </div>
+<div id="t3_107" class="t s2_107">honorably and make his grave spacious. Wash With water, snow and hail. Clean him from faults </div>
+<div id="t4_107" class="t s2_107">as You clean a white garment from impurity. Require him with an abode better than his abode, </div>
+<div id="t5_107" class="t s2_107">with a household better than his household. Admit him to Jannat and protect him from the </div>
+<div id="t6_107" class="t s2_107">torment of the grave and punishment of the Fire).</div>
+<div id="t7_107" class="t s2_107">(Oh. Allah! Forgive him, and have mercy upon him, Surely You alone are the Forgiver, the </div>
+<div id="t8_107" class="t s2_107">Merciful.)</div>
+<div id="t9_107" class="t s3_107">(O Allah! Protect him from the punishment of the grave.) </div>
+<div id="ta_107" class="t s4_107">TA'ZIAT</div>
+<div id="tb_107" class="t s3_107">(To sympathize with the bereaved) </div>
+<div id="tc_107" class="t s3_107">It is from the teachings of Rasulullah (S.A.W.) that one should console and comfort a Muslim </div>
+<div id="td_107" class="t s3_107">who is in distress. Rasulullah (S.A.W.) has said: "He who consoles the one in distress shall be </div>
+<div id="te_107" class="t s3_107">rewarded as much as the bereaved." </div>
+<div id="tf_107" class="t s4_107">ONE SHOULD TAKE NOTE OF THESE FEW POINTS:</div>
+<div id="tg_107" class="t s5_107">•</div>
+<div id="th_107" class="t s1_107">One should be most HUMBLE. </div>
+<div id="ti_107" class="t s5_107">•</div>
+<div id="tj_107" class="t s1_107">Express his GRIEF. </div>
+<div id="tk_107" class="t s5_107">•</div>
+<div id="tl_107" class="t s1_107">Speak less about WORLDLY affairs. </div>
+<div id="tm_107" class="t s5_107">•</div>
+<div id="tn_107" class="t s1_107">Should NOT joke or laugh. </div>
+<div id="to_107" class="t s5_107">•</div>
+<div id="tp_107" class="t s1_107">Mention the good acts and deeds of the deceased and abstain from the ill ones. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg107Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg107"><object width="935" height="1210" data="107/107.svg" type="image/svg+xml" id="pdf107" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld107" type="text/javascript">
+
+var isIE = false;
+var f107 = [['t2_107',2756],['t3_107',2838],['t4_107',2784],['t5_107',2646],['t6_107',1453],['t7_107',2676],['t9_107',1682],['tb_107',1023],['tc_107',2754],['td_107',2758],['te_107',1052],['tf_107',1821],['th_107',778],['tj_107',489],['tl_107',918],['tn_107',670],['tp_107',1926]];
+function load107(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f107);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 26;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_107");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

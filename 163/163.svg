@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+</defs>
+<image x="238" y="54" width="445" height="96" xlink:href="img/1.png" />
+<image x="262" y="163" width="397" height="63" xlink:href="img/2.png" />
+<image x="237" y="310" width="448" height="650" xlink:href="img/3.png" />
+</svg>

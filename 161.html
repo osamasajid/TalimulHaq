@@ -1,0 +1,328 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page161</title>
+</head>
+
+<body onload="load161()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_161{left:456px;top:1136px;}
+#t2_161{left:297px;top:54px;}
+#t3_161{left:110px;top:83px;}
+#t4_161{left:110px;top:104px;}
+#t5_161{left:138px;top:142px;}
+#t6_161{left:165px;top:142px;}
+#t7_161{left:165px;top:160px;}
+#t8_161{left:165px;top:178px;}
+#t9_161{left:165px;top:211px;}
+#ta_161{left:165px;top:232px;}
+#tb_161{left:138px;top:270px;}
+#tc_161{left:165px;top:270px;}
+#td_161{left:165px;top:288px;}
+#te_161{left:165px;top:306px;}
+#tf_161{left:165px;top:323px;}
+#tg_161{left:165px;top:341px;}
+#th_161{left:165px;top:359px;}
+#ti_161{left:165px;top:377px;}
+#tj_161{left:137px;top:411px;}
+#tk_161{left:165px;top:411px;}
+#tl_161{left:165px;top:429px;}
+#tm_161{left:441px;top:520px;}
+#tn_161{left:352px;top:542px;}
+#to_161{left:261px;top:563px;}
+#tp_161{left:471px;top:566px;}
+#tq_161{left:317px;top:614px;}
+#tr_161{left:110px;top:650px;}
+#ts_161{left:110px;top:693px;}
+#tt_161{left:110px;top:715px;}
+#tu_161{left:372px;top:715px;}
+#tv_161{left:110px;top:744px;}
+#tw_161{left:110px;top:780px;}
+#tx_161{left:117px;top:780px;}
+#ty_161{left:757px;top:798px;}
+#tz_161{left:110px;top:816px;}
+#t10_161{left:746px;top:834px;}
+#t11_161{left:110px;top:851px;}
+#t12_161{left:670px;top:870px;}
+#t13_161{left:110px;top:887px;}
+#t14_161{left:753px;top:905px;}
+#t15_161{left:110px;top:923px;}
+#t16_161{left:753px;top:941px;}
+#t17_161{left:110px;top:959px;}
+#t18_161{left:110px;top:977px;}
+#t19_161{left:748px;top:995px;}
+#t1a_161{left:110px;top:1013px;}
+#t1b_161{left:110px;top:1049px;}
+#t1c_161{left:110px;top:1067px;}
+#t1d_161{left:110px;top:1084px;}
+#t1e_161{left:110px;top:1102px;}
+
+.s1_161{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT161;
+	color: rgb(0,0,0);
+}
+
+.s4_161{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM161;
+	color: rgb(0,0,0);
+}
+
+.s8_161{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT161;
+	color: rgb(50,50,50);
+}
+
+.s6_161{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM161;
+	color: rgb(0,0,0);
+}
+
+.s3_161{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT161;
+	color: rgb(0,0,0);
+}
+
+.s7_161{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM161;
+	color: rgb(0,101,0);
+}
+
+.s2_161{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT161;
+	color: rgb(0,0,0);
+}
+
+.s11_161{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM161;
+	color: rgb(50,50,50);
+}
+
+.s10_161{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT161;
+	color: rgb(50,50,50);
+}
+
+.s9_161{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM161;
+	color: rgb(0,85,0);
+}
+
+.s5_161{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-BoldItalicMT;
+	color: rgb(0,0,0);
+	FONT-WEIGHT: bold;
+	FONT-STYLE: italic;
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM161;
+	src :url("161/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT161;
+	src :url("161/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT161;
+	src :url("161/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_161" class="t s1_161">161</div>
+<div id="t2_161" class="t s2_161">TRIMMING OR SHAVING OF THE HEAD: </div>
+<div id="t3_161" class="t s2_161">Great care must be taken regarding this Mas'alah, for at times some hair remain shorter than the </div>
+<div id="t4_161" class="t s2_161">other. </div>
+<div id="t5_161" class="t s3_161">•</div>
+<div id="t6_161" class="t s1_161">After the Sa'ee, in order to release the Ihraam, it is Waajib to shave or trim the hair of the entire head to </div>
+<div id="t7_161" class="t s1_161">length of, the first joint of the fore finger. The hair should be trimmed more, the shorter hair will also be </div>
+<div id="t8_161" class="t s1_161">trimmed as much as the length of a fore finger. </div>
+<div id="t9_161" class="t s2_161">It is Waajib for a bald person or a person who has wounds on his head to simply pass the </div>
+<div id="ta_161" class="t s2_161">razor over the head. </div>
+<div id="tb_161" class="t s3_161">•</div>
+<div id="tc_161" class="t s1_161">The females will not shave their heads. According to Shari'ah it is unlawful and Haraam for them to do so. </div>
+<div id="td_161" class="t s1_161">In order to re-lease herself from them Ihraam, a woman is only permitted to have her hair trimmed. The </div>
+<div id="te_161" class="t s1_161">best method is that her hair be divided into three parts, keeping one section on back. Thereafter hold each </div>
+<div id="tf_161" class="t s1_161">section separately and trim as much as the first joint of the fore finger (a little more than an inch) from each </div>
+<div id="tg_161" class="t s1_161">section. The womenfolk must have their hair trimmed in privacy, and not on the streets, or the hairdresser. </div>
+<div id="th_161" class="t s1_161">A non-Mahram is not permitted to trim, touch or even look at their hair A Mahram who is no longer a </div>
+<div id="ti_161" class="t s1_161">Muharim could do the trimming for her. She cannot trim her own hair to release herself from the Ihraam. </div>
+<div id="tj_161" class="t s3_161">•</div>
+<div id="tk_161" class="t s1_161">The shaving or trimming of the hair is the last of the actions of Umrah. All the restrictions imposed </div>
+<div id="tl_161" class="t s1_161">because of the Ihraam, will now be lifted. The Umrah is now complete. (Allah knows best ). </div>
+<div id="tm_161" class="t s2_161">Part 15 </div>
+<div id="tn_161" class="t s4_161">Visiting the Grave of Prophet </div>
+<div id="to_161" class="t s5_161">Sallallahu alayhi wasallam</div>
+<div id="tp_161" class="t s6_161">(Peace and Blessing be on him) </div>
+<div id="tq_161" class="t s4_161">VISIT TO MADINA MUNAWWARA</div>
+<div id="tr_161" class="t s2_161">The Prophet (PBUH) has said: </div>
+<div id="ts_161" class="t s7_161">“One prayer in my mosque is better than one thousand prayers in any other mosque </div>
+<div id="tt_161" class="t s7_161">excepting Al-Masjid Al-Haram.”</div>
+<div id="tu_161" class="t s8_161">(Bukhari)</div>
+<div id="tv_161" class="t s9_161">VIRTUES OF MADINAH </div>
+<div id="tw_161" class="t s10_161">“</div>
+<div id="tx_161" class="t s1_161">Whoever visits my resting place, my intercession becomes obligatory for him.” </div>
+<div id="ty_161" class="t s6_161">Daraqutni </div>
+<div id="tz_161" class="t s1_161">“Whoever visits me and has no other motive, has a right over me that I intercede on his behalf.” </div>
+<div id="t10_161" class="t s6_161">at-Tabarani </div>
+<div id="t11_161" class="t s1_161">“Whoever visits me after my death is like he who had visited me during my life.” </div>
+<div id="t12_161" class="t s6_161">at-Tabarani, Daraqutni </div>
+<div id="t13_161" class="t s1_161">“The person who performs Hajj and visits my grave is like he who had visited me during my lifetime.” </div>
+<div id="t14_161" class="t s6_161">al-Bayhaqi </div>
+<div id="t15_161" class="t s1_161">“Whoever undertakes a journey specifically to visit me, will be my neighbour on the Day of Judgement.” </div>
+<div id="t16_161" class="t s6_161">al-Bayhaqi </div>
+<div id="t17_161" class="t s1_161">“Whoever performs Hajj in Makkah, then comes to Madinah with the sole aim of visiting me in my Masjid, shall be </div>
+<div id="t18_161" class="t s1_161">given (the rewards of) two accepted Hajj.” </div>
+<div id="t19_161" class="t s11_161">ad-Daylami </div>
+<div id="t1a_161" class="t s9_161">BEFORE ENTERING MADINAH </div>
+<div id="t1b_161" class="t s1_161">While travelling to Madinah, one should read Salawat and make as much du`a’ as possible. </div>
+<div id="t1c_161" class="t s1_161">One should take care that one does not neglect any Sunnah or even Mustahabb act. Even though such actions are </div>
+<div id="t1d_161" class="t s1_161">understood to be of comparative insignificance whilst on travels, they should be adopted with added zeal, as one is </div>
+<div id="t1e_161" class="t s1_161">going to the place where the one who loved these actions, for himself and for his followers, rests (P.B.U.H.). </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg161Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg161"><object width="935" height="1210" data="161/161.svg" type="image/svg+xml" id="pdf161" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld161" type="text/javascript">
+
+var isIE = false;
+var f161 = [['t2_161',1360],['t3_161',2807],['t6_161',2534],['t7_161',2553],['t8_161',1150],['t9_161',2606],['ta_161',583],['tc_161',2611],['td_161',2538],['te_161',2586],['tf_161',2635],['tg_161',2605],['th_161',2497],['ti_161',2572],['tk_161',2432],['tl_161',2261],['tm_161',210],['tn_161',925],['to_161',824],['tp_161',809],['tq_161',1202],['tr_161',897],['ts_161',2637],['tt_161',1029],['tv_161',695],['tx_161',1941],['tz_161',2349],['t11_161',1993],['t12_161',620],['t13_161',2520],['t15_161',2580],['t17_161',2845],['t18_161',1045],['t1a_161',915],['t1b_161',2237],['t1c_161',2767],['t1d_161',2814],['t1e_161',2667]];
+function load161(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f161);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 51;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_161");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page164</title>
+</head>
+
+<body onload="load164()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_164{left:456px;top:1136px;}
+#t2_164{left:389px;top:70px;}
+#t3_164{left:128px;top:100px;}
+#t4_164{left:128px;top:129px;}
+#t5_164{left:128px;top:143px;}
+#t6_164{left:128px;top:157px;}
+#t7_164{left:128px;top:172px;}
+#t8_164{left:128px;top:186px;}
+#t9_164{left:744px;top:201px;}
+#ta_164{left:128px;top:213px;}
+#tb_164{left:128px;top:228px;}
+#tc_164{left:128px;top:242px;}
+#td_164{left:128px;top:256px;}
+#te_164{left:128px;top:271px;}
+#tf_164{left:128px;top:285px;}
+#tg_164{left:128px;top:300px;}
+#th_164{left:128px;top:314px;}
+#ti_164{left:364px;top:330px;}
+#tj_164{left:128px;top:360px;}
+#tk_164{left:128px;top:374px;}
+#tl_164{left:128px;top:403px;}
+#tm_164{left:128px;top:417px;}
+#tn_164{left:128px;top:431px;}
+#to_164{left:128px;top:446px;}
+#tp_164{left:128px;top:460px;}
+#tq_164{left:128px;top:475px;}
+#tr_164{left:128px;top:489px;}
+#ts_164{left:128px;top:503px;}
+#tt_164{left:128px;top:518px;}
+#tu_164{left:128px;top:532px;}
+#tv_164{left:128px;top:547px;}
+#tw_164{left:128px;top:561px;}
+#tx_164{left:128px;top:575px;}
+#ty_164{left:128px;top:604px;}
+#tz_164{left:128px;top:619px;}
+#t10_164{left:309px;top:727px;}
+#t11_164{left:327px;top:742px;}
+#t12_164{left:437px;top:771px;}
+#t13_164{left:373px;top:894px;}
+#t14_164{left:375px;top:908px;}
+#t15_164{left:134px;top:937px;}
+#t16_164{left:295px;top:952px;}
+#t17_164{left:738px;top:966px;}
+#t18_164{left:128px;top:979px;}
+#t19_164{left:128px;top:993px;}
+#t1a_164{left:376px;top:1089px;}
+#t1b_164{left:743px;top:1104px;}
+#t1c_164{left:128px;top:1117px;}
+
+.s2_164{
+	FONT-SIZE: 48px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM164;
+	color: rgb(0,85,0);
+}
+
+.s1_164{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT164;
+	color: rgb(0,0,0);
+}
+
+.s6_164{
+	FONT-SIZE: 48px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM164;
+	color: rgb(50,50,50);
+}
+
+.s4_164{
+	FONT-SIZE: 42px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM164;
+	color: rgb(0,0,0);
+}
+
+.s3_164{
+	FONT-SIZE: 48px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT164;
+	color: rgb(0,0,0);
+}
+
+.s7_164{
+	FONT-SIZE: 42px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM164;
+	color: rgb(50,50,50);
+}
+
+.s5_164{
+	FONT-SIZE: 48px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM164;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM164;
+	src :url("164/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT164;
+	src :url("164/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_164" class="t s1_164">164</div>
+<div id="t2_164" class="t s2_164">Rawdah (Garden of Paradise) </div>
+<div id="t3_164" class="t s2_164">RAWDAH </div>
+<div id="t4_164" class="t s3_164">The original size was approximately 22 meters in length and 15 meters in width. Thereafter a section was included in the chamber of the</div>
+<div id="t5_164" class="t s3_164">Prophet (P.B.U.H.). </div>
+<div id="t6_164" class="t s3_164">The Rawdah is presently covered by a green carpet and has white pillars. This distinguishes it from its surroundings. </div>
+<div id="t7_164" class="t s3_164">The Prophet (P.B.U.H.) has said, “What is between my house and my Mimbar (pulpit) is a garden from amongst the gardens of </div>
+<div id="t8_164" class="t s3_164">paradise.” </div>
+<div id="t9_164" class="t s4_164">al-Bukhari</div>
+<div id="ta_164" class="t s3_164">It is due to this and our belief that a person who gains entry into heaven will never be taken out of it (to be sentenced to punishment), </div>
+<div id="tb_164" class="t s3_164">that scholars have said that one should include in one’s du`a’ the meaning, that the Prophet (P.B.U.H.) does not lie and Allah’s promise </div>
+<div id="tc_164" class="t s3_164">to the people who gain entry to heaven is also true. Thus may Allah allow us to be included amongst those fortunate souls who gain </div>
+<div id="td_164" class="t s3_164">entry to heaven without reckoning. </div>
+<div id="te_164" class="t s3_164">Our beliefs also tell us that those who are in heaven have all their wishes granted by Allah. It is thus like a promise from the Prophet </div>
+<div id="tf_164" class="t s3_164">(P.B.U.H.) that those who are in the Rawdah will certainly have their prayers answered. </div>
+<div id="tg_164" class="t s3_164">One should take note that the Messenger of Allah (P.B.U.H.) has mentioned in numerous traditions reasons for people’s prayers going </div>
+<div id="th_164" class="t s3_164">unanswered. It is imperative that one abstains from such deeds and behaviour.</div>
+<div id="ti_164" class="t s2_164">The Chamber of the Prophet (P.B.U.H.) </div>
+<div id="tj_164" class="t s2_164">THE CHAMBER OF THE PROPHET (P.B.U.H.) </div>
+<div id="tk_164" class="t s2_164">(The Prophet's (P.B.U.H.) resting place) </div>
+<div id="tl_164" class="t s3_164">One should now understand that one is in the presence of the Prophet (P.B.U.H.), and that Allah has enabled him to listen to what is </div>
+<div id="tm_164" class="t s3_164">being said to him. </div>
+<div id="tn_164" class="t s3_164">There are three gold wire-mesh enclosures, with round holes in all of them. There are three round holes in the middle enclosure, and </div>
+<div id="to_164" class="t s3_164">only two in the others. </div>
+<div id="tp_164" class="t s3_164">In the middle enclosure the first hole (which is the largest of all) is directly in line with face of Rasulullah (P.B.U.H.). Moving slightly </div>
+<div id="tq_164" class="t s3_164">to the right is he second hole (of the middle enclosure) which is in line with the face of Abu Bakr (R.A.). Likewise, a third hole in this </div>
+<div id="tr_164" class="t s3_164">same enclosure is aligned to the face of `Umar (R.A.). </div>
+<div id="ts_164" class="t s3_164">Note: It is not worth trying to look through the holes as there is nothing that can be seen apart from a barrier. </div>
+<div id="tt_164" class="t s3_164">One should stand a few yards away from the enclosure facing the chamber (this will be with one’s back towards Qiblah). One must not </div>
+<div id="tu_164" class="t s3_164">be inattentive here nor allow one’s thoughts to wander. Do not stand too close to the chamber (you’ll be stopped by the guard and </div>
+<div id="tv_164" class="t s3_164">humiliated for something not necessary). </div>
+<div id="tw_164" class="t s3_164">It is not compulsory to convey Sallam with specific words. One may recite any such words that convey respect and honour. Avoid </div>
+<div id="tx_164" class="t s3_164">reciting large passages without understanding and feeling. </div>
+<div id="ty_164" class="t s5_164">In front of Rasulullah (P.B.U.H.) recite: </div>
+<div id="tz_164" class="t s5_164">1. Shahadah</div>
+<div id="t10_164" class="t s6_164">I testify that there is none worthy of worship besides Allah </div>
+<div id="t11_164" class="t s6_164">and I testify that Muhammad is Allah’s Messenger. </div>
+<div id="t12_164" class="t s6_164">2. Sallam </div>
+<div id="t13_164" class="t s6_164">Peace be upon you, O Messenger; </div>
+<div id="t14_164" class="t s6_164">and Allah’s mercy and blessings. </div>
+<div id="t15_164" class="t s6_164">3. Du`a’: to Allah through the medium of the Prophet i.e. that Allah forgives you because this was the wish of the Prophet that </div>
+<div id="t16_164" class="t s6_164">all his followers are granted forgiveness and proximity to Allah. </div>
+<div id="t17_164" class="t s7_164">Abu Dawud</div>
+<div id="t18_164" class="t s6_164">4. At this point one may convey the Sallam of others.</div>
+<div id="t19_164" class="t s6_164">Greet Abu Bakr (R.A.) by reciting:</div>
+<div id="t1a_164" class="t s6_164">Peace be upon you, O Abu Bakr.</div>
+<div id="t1b_164" class="t s7_164">al-Bayhaqi</div>
+<div id="t1c_164" class="t s6_164">Then greet `Umar (R.A.) by reciting:</div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg164Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg164"><object width="935" height="1210" data="164/164.svg" type="image/svg+xml" id="pdf164" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld164" type="text/javascript">
+
+var isIE = false;
+var f164 = [['t2_164',625],['t4_164',2662],['t5_164',387],['t6_164',2274],['t7_164',2482],['ta_164',2599],['tb_164',2645],['tc_164',2573],['td_164',682],['te_164',2584],['tf_164',1714],['tg_164',2623],['th_164',1525],['ti_164',828],['tj_164',1040],['tk_164',830],['tl_164',2578],['tm_164',349],['tn_164',2580],['to_164',438],['tp_164',2624],['tq_164',2618],['tr_164',1054],['ts_164',2122],['tt_164',2636],['tu_164',2534],['tv_164',797],['tw_164',2543],['tx_164',1136],['ty_164',826],['tz_164',257],['t10_164',1215],['t11_164',1066],['t12_164',192],['t13_164',698],['t14_164',681],['t15_164',2616],['t16_164',1326],['t17_164',220],['t18_164',1091],['t19_164',728],['t1a_164',679],['t1c_164',766]];
+function load164(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f164);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 49;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_164");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

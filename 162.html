@@ -1,0 +1,283 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page162</title>
+</head>
+
+<body onload="load162()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_162{left:456px;top:1136px;}
+#t2_162{left:110px;top:54px;}
+#t3_162{left:110px;top:72px;}
+#t4_162{left:110px;top:90px;}
+#t5_162{left:110px;top:126px;}
+#t6_162{left:110px;top:162px;}
+#t7_162{left:110px;top:179px;}
+#t8_162{left:110px;top:197px;}
+#t9_162{left:110px;top:215px;}
+#ta_162{left:110px;top:233px;}
+#tb_162{left:110px;top:269px;}
+#tc_162{left:110px;top:305px;}
+#td_162{left:110px;top:323px;}
+#te_162{left:110px;top:340px;}
+#tf_162{left:671px;top:359px;}
+#tg_162{left:110px;top:376px;}
+#th_162{left:110px;top:394px;}
+#ti_162{left:110px;top:412px;}
+#tj_162{left:110px;top:430px;}
+#tk_162{left:110px;top:448px;}
+#tl_162{left:110px;top:466px;}
+#tm_162{left:110px;top:484px;}
+#tn_162{left:110px;top:501px;}
+#to_162{left:110px;top:519px;}
+#tp_162{left:110px;top:537px;}
+#tq_162{left:110px;top:555px;}
+#tr_162{left:110px;top:573px;}
+#ts_162{left:110px;top:591px;}
+#tt_162{left:110px;top:609px;}
+#tu_162{left:110px;top:627px;}
+#tv_162{left:110px;top:644px;}
+#tw_162{left:110px;top:662px;}
+#tx_162{left:110px;top:680px;}
+#ty_162{left:110px;top:698px;}
+#tz_162{left:110px;top:716px;}
+#t10_162{left:110px;top:734px;}
+#t11_162{left:110px;top:752px;}
+#t12_162{left:110px;top:770px;}
+#t13_162{left:110px;top:787px;}
+#t14_162{left:110px;top:823px;}
+#t15_162{left:110px;top:859px;}
+#t16_162{left:110px;top:877px;}
+#t17_162{left:110px;top:895px;}
+#t18_162{left:110px;top:913px;}
+#t19_162{left:110px;top:931px;}
+#t1a_162{left:110px;top:948px;}
+#t1b_162{left:382px;top:986px;}
+#t1c_162{left:128px;top:1016px;}
+#t1d_162{left:128px;top:1045px;}
+
+.s4_162{
+	FONT-SIZE: 48px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM162;
+	color: rgb(0,85,0);
+}
+
+.s1_162{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT162;
+	color: rgb(0,0,0);
+}
+
+.s5_162{
+	FONT-SIZE: 48px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM162;
+	color: rgb(50,50,50);
+}
+
+.s3_162{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM162;
+	color: rgb(0,0,0);
+}
+
+.s2_162{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM162;
+	color: rgb(0,85,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM162;
+	src :url("162/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT162;
+	src :url("162/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_162" class="t s1_162">162</div>
+<div id="t2_162" class="t s1_162">One should be full of zeal and enthusiasm. If this is not the case then one should read of the sacrifices of the Prophet </div>
+<div id="t3_162" class="t s1_162">(P.B.U.H.) for his Ummah and for the things that have been promised to us if we love and follow him. One should </div>
+<div id="t4_162" class="t s1_162">also increase the salutations that one sends upon him to try and achieve this effect. </div>
+<div id="t5_162" class="t s2_162">IN MADINAH </div>
+<div id="t6_162" class="t s1_162">Upon entry into the blessed city of Madinah, one should quickly attend to necessary arrangements, get freshened up </div>
+<div id="t7_162" class="t s1_162">(perform Ghusl) and try to reach the Masjid without delay. </div>
+<div id="t8_162" class="t s1_162">Thereafter one should wear one’s best Islamic clothes. Men should also apply `Itr. If possible one should at this </div>
+<div id="t9_162" class="t s1_162">point donate something in charity. In short one should try to adopt as many Sunan one can before proceeding. One </div>
+<div id="ta_162" class="t s1_162">should intend to continue to adopt these Sunan even after departure. </div>
+<div id="tb_162" class="t s2_162">WHILST IN MADINAH </div>
+<div id="tc_162" class="t s1_162">One should spend as much time as possible in the Masjid. And when there, one should perform I`tikaf. Nafl I`tikaf </div>
+<div id="td_162" class="t s1_162">can be of any duration. </div>
+<div id="te_162" class="t s1_162">Remain busy in worship as good deeds in Madinah are equal to 1,000 good deeds elsewhere. </div>
+<div id="tf_162" class="t s3_162">al-Bukhari and Muslim </div>
+<div id="tg_162" class="t s1_162">Perform all Salah with congregation at the Masjid an-Nabawi. As the reward for Salah with congregation is 25/27 </div>
+<div id="th_162" class="t s1_162">times greater than Salah offered individually. </div>
+<div id="ti_162" class="t s1_162">Nafl Salah should in general be performed as much as possible in the Rawdah. The best times to go are away from </div>
+<div id="tj_162" class="t s1_162">Salah times as there are considerably less people then. </div>
+<div id="tk_162" class="t s1_162">Besides compulsory duties and necessities, the most virtuous act whilst performing Ziyarah is the continuous </div>
+<div id="tl_162" class="t s1_162">recitation of Salawat and Sallam. As often as possible recite Sallam at the Prophet’s grave. If Sallam is not possible </div>
+<div id="tm_162" class="t s1_162">by the Sacred Chamber then it can be said from anywhere within the Masjid. Even if one passes the grave from the </div>
+<div id="tn_162" class="t s1_162">outside, convey Sallam before continuing. </div>
+<div id="to_162" class="t s1_162">Recite Salawat abundantly with complete sincerity and true adoration. Also be sure to perform as many Sunan as </div>
+<div id="tp_162" class="t s1_162">possible. </div>
+<div id="tq_162" class="t s1_162">One should avoid all prohibited and undesirable deeds and items. And one should endeavor to do as many good </div>
+<div id="tr_162" class="t s1_162">deeds as possible. </div>
+<div id="ts_162" class="t s1_162">Respect and honour all of Madinah’s citizens. Treat them kindly. Even if they may not be willing to return the </div>
+<div id="tt_162" class="t s1_162">favour, one should bear it with patience. Avoid quarrelling and dispute. </div>
+<div id="tu_162" class="t s1_162">Smile in the face of difficulty and hardship. Allow the thought of earning Allah’s and His Prophet’s pleasure stop </div>
+<div id="tv_162" class="t s1_162">one’s complaints. </div>
+<div id="tw_162" class="t s1_162">If one buys anything in Madinah, buy with the intention of assisting the traders in their livelihood. Such an intention </div>
+<div id="tx_162" class="t s1_162">will reap additional virtue, as long as what is to be brought is appropriate according to Islam. </div>
+<div id="ty_162" class="t s1_162">In Ramadan the Masjid-un-Nabawi is open at night. Some of these doors are open and it is possible to get to the </div>
+<div id="tz_162" class="t s1_162">Rawdah and perform `Ibadah with ease, for as long as one desires (even the whole night long if one wishes). The </div>
+<div id="t10_162" class="t s1_162">door facing Shari’ (road) `Abdul `Aziz is one that is generally open in Ramadan. </div>
+<div id="t11_162" class="t s1_162">Throughout the year, the Masjid is usually closed at night. It does however, open early (approximately 3 A.M.). At </div>
+<div id="t12_162" class="t s1_162">this time one can enter the Masjid and perform one’s `Ibadah with ease. The doors which they open first, vary. One </div>
+<div id="t13_162" class="t s1_162">may be able to find out which one will open first from the guards, by asking them politely. </div>
+<div id="t14_162" class="t s2_162">BEFORE LEAVING MADINAH </div>
+<div id="t15_162" class="t s1_162">Try to perform one’s final two rak`ahs in the Rawdah. Thereafter offer one’s farewell Sallam to the Prophet </div>
+<div id="t16_162" class="t s1_162">(P.B.U.H.). </div>
+<div id="t17_162" class="t s1_162">Thereafter engage in du`a’. One should also spend time reflecting on one’s actions when returning home. This is so </div>
+<div id="t18_162" class="t s1_162">that if one can remember any wrong or inappropriate action one can repent to Allah over it. As one is still a traveller </div>
+<div id="t19_162" class="t s1_162">until one returns home, and that the traveller’s supplications are accepted, one should supplicate for one’s own </div>
+<div id="t1a_162" class="t s1_162">forgiveness and also for the forgiveness for the Ummah in general over and over again. </div>
+<div id="t1b_162" class="t s4_162">The Prophet’s (P.B.U.H.) Masjid </div>
+<div id="t1c_162" class="t s4_162">WHEN ENTERING MASJID-UN-NABAWI </div>
+<div id="t1d_162" class="t s5_162">If possible enter from Bab al-Jibril with the right foot with the intention of Nafl I`tikaf and recite: </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg162Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg162"><object width="935" height="1210" data="162/162.svg" type="image/svg+xml" id="pdf162" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld162" type="text/javascript">
+
+var isIE = false;
+var f162 = [['t2_162',2858],['t3_162',2807],['t4_162',2020],['t5_162',390],['t6_162',2842],['t7_162',1440],['t8_162',2735],['t9_162',2809],['ta_162',1669],['tb_162',654],['tc_162',2814],['td_162',564],['te_162',2278],['tf_162',616],['tg_162',2793],['th_162',1109],['ti_162',2808],['tj_162',1328],['tk_162',2673],['tl_162',2829],['tm_162',2819],['tn_162',1035],['to_162',2770],['tq_162',2742],['tr_162',437],['ts_162',2701],['tt_162',1754],['tu_162',2785],['tv_162',432],['tw_162',2853],['tx_162',2279],['ty_162',2745],['tz_162',2775],['t10_162',1979],['t11_162',2816],['t12_162',2829],['t13_162',2222],['t14_162',875],['t15_162',2643],['t17_162',2831],['t18_162',2852],['t19_162',2712],['t1a_162',2142],['t1b_162',683],['t1c_162',934],['t1d_162',2029]];
+function load162(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f162);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 50;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_162");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page138</title>
+</head>
+
+<body onload="load138()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_138{left:456px;top:1136px;}
+#t2_138{left:137px;top:54px;}
+#t3_138{left:165px;top:54px;}
+#t4_138{left:137px;top:87px;}
+#t5_138{left:165px;top:87px;}
+#t6_138{left:137px;top:120px;}
+#t7_138{left:165px;top:120px;}
+#t8_138{left:137px;top:153px;}
+#t9_138{left:165px;top:153px;}
+#ta_138{left:138px;top:272px;}
+#tb_138{left:127px;top:293px;}
+#tc_138{left:339px;top:315px;}
+#td_138{left:110px;top:343px;}
+#te_138{left:110px;top:365px;}
+#tf_138{left:110px;top:386px;}
+#tg_138{left:110px;top:408px;}
+#th_138{left:110px;top:444px;}
+#ti_138{left:110px;top:465px;}
+#tj_138{left:110px;top:487px;}
+#tk_138{left:110px;top:508px;}
+#tl_138{left:110px;top:530px;}
+#tm_138{left:110px;top:566px;}
+#tn_138{left:110px;top:587px;}
+#to_138{left:110px;top:609px;}
+#tp_138{left:110px;top:630px;}
+#tq_138{left:110px;top:667px;}
+#tr_138{left:110px;top:688px;}
+#ts_138{left:110px;top:725px;}
+#tt_138{left:110px;top:746px;}
+#tu_138{left:110px;top:783px;}
+#tv_138{left:110px;top:804px;}
+#tw_138{left:110px;top:825px;}
+#tx_138{left:110px;top:862px;}
+#ty_138{left:110px;top:883px;}
+
+.s1_138{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT138;
+	color: rgb(0,0,0);
+}
+
+.s2_138{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT138;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT138;
+	src :url("138/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_138" class="t s1_138">138</div>
+<div id="t2_138" class="t s1_138">8.</div>
+<div id="t3_138" class="t s1_138">Avoid eating before Eid Salaat. </div>
+<div id="t4_138" class="t s1_138">9.</div>
+<div id="t5_138" class="t s1_138">(TO to the place of Eid Salaah (if it is within walking distance). </div>
+<div id="t6_138" class="t s1_138">10.</div>
+<div id="t7_138" class="t s1_138">Recite the Takbeeraat aloud on the way to the place of Eid Salaah. </div>
+<div id="t8_138" class="t s1_138">11.</div>
+<div id="t9_138" class="t s1_138">Use different routes to and from the place of Eid Salaat. </div>
+<div id="ta_138" class="t s2_138">AQUEEQA </div>
+<div id="tb_138" class="t s2_138">SACRIFICE OF AN ANIMAL FOR A NEWLY BORN CHILD AND THE REMOVAL OF </div>
+<div id="tc_138" class="t s2_138">THE BABY'S HAIR SACRIFICE. </div>
+<div id="td_138" class="t s2_138">MAS'ALAH No. l: When a child is born, male or female it should be given a name on the </div>
+<div id="te_138" class="t s2_138">seventh day of birth. When the hair of the head of the baby is shaved a sacrifice is also offered </div>
+<div id="tf_138" class="t s2_138">which is called AQUEEQA. By Aqueeqa all impurities of the child are removed and the child is </div>
+<div id="tg_138" class="t s2_138">saved from all calamities by Allah. </div>
+<div id="th_138" class="t s2_138">MA`SAI.AH No. 2: The method Aqeeqah performing is that for a male child, two goats or </div>
+<div id="ti_138" class="t s2_138">sheeps and for a girl one goat or sheep is sacrificed. If an animal of seven shares (cow or camel) </div>
+<div id="tj_138" class="t s2_138">is used for Aqueeqa, then two shares will be taken for a male and one for a female. The hair of </div>
+<div id="tk_138" class="t s2_138">the head is then shaved. Silver, equal to the weight of the shaved hair, is also given in charity. </div>
+<div id="tl_138" class="t s2_138">However, this is not compulsory. </div>
+<div id="tm_138" class="t s2_138">MAS'ALAH No. 3: Aqueeqa is performed on the seventh day of the birth of a child. If not done </div>
+<div id="tn_138" class="t s2_138">on the seventh day, then, whenever it is done, it should be the seventh day, eg. if the child was </div>
+<div id="to_138" class="t s2_138">born on a Friday, then Aqueeqa should be performed on the following Thursday (the 7th day </div>
+<div id="tp_138" class="t s2_138">after birth). If it is not performed on this Thursday, then any other Thursday. </div>
+<div id="tq_138" class="t s2_138">MAS'ALAH No. 4: That animal which is not permissible for Qurbani, is also not permissible for </div>
+<div id="tr_138" class="t s2_138">Aqueeqa. Requiremcnts for the animals of Qurbani and Aqueeqa are the same. </div>
+<div id="ts_138" class="t s2_138">MAS'ALAH No. 5: It is permissible to distribute the meat of an animal of Aqueeqa raw or </div>
+<div id="tt_138" class="t s2_138">cooked, and can also be served to guests. </div>
+<div id="tu_138" class="t s2_138">MAS'ALAH No. 6: If one does not possess sufficient money, then it is permissible for such a </div>
+<div id="tv_138" class="t s2_138">person to sacrifice only one goat for a male child. There is no harm if Aqueeqa is not performed </div>
+<div id="tw_138" class="t s2_138">provided one does not have the means for Aqueeqa. </div>
+<div id="tx_138" class="t s2_138">MAS'ALAH No. 7: Before sacrificing the animal (for Aqueeqa), the following Du'aa may he </div>
+<div id="ty_138" class="t s2_138">recited: </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg138Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg138"><object width="935" height="1210" data="138/138.svg" type="image/svg+xml" id="pdf138" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld138" type="text/javascript">
+
+var isIE = false;
+var f138 = [['t3_138',771],['t5_138',1561],['t7_138',1628],['t9_138',1370],['tb_138',2727],['tc_138',1025],['td_138',2635],['te_138',2771],['tf_138',2822],['tg_138',1027],['th_138',2659],['ti_138',2821],['tj_138',2774],['tk_138',2753],['tl_138',974],['tm_138',2811],['tn_138',2769],['to_138',2722],['tp_138',2246],['tq_138',2839],['tr_138',2308],['ts_138',2655],['tt_138',1205],['tu_138',2739],['tv_138',2818],['tw_138',1522],['tx_138',2728]];
+function load138(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f138);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 35;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_138");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

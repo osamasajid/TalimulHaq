@@ -1,0 +1,634 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page144</title>
+</head>
+
+<body onload="load144()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_144{left:456px;top:1136px;}
+#t2_144{left:211px;top:489px;}
+#t3_144{left:291px;top:489px;}
+#t4_144{left:485px;top:489px;}
+#t5_144{left:123px;top:510px;}
+#t6_144{left:284px;top:510px;}
+#t7_144{left:334px;top:510px;}
+#t8_144{left:343px;top:510px;}
+#t9_144{left:399px;top:510px;}
+#ta_144{left:408px;top:510px;}
+#tb_144{left:459px;top:510px;}
+#tc_144{left:468px;top:510px;}
+#td_144{left:527px;top:510px;}
+#te_144{left:537px;top:510px;}
+#tf_144{left:617px;top:510px;}
+#tg_144{left:626px;top:510px;}
+#th_144{left:673px;top:510px;}
+#ti_144{left:682px;top:510px;}
+#tj_144{left:741px;top:510px;}
+#tk_144{left:750px;top:510px;}
+#tl_144{left:807px;top:510px;}
+#tm_144{left:433px;top:532px;}
+#tn_144{left:464px;top:532px;}
+#to_144{left:110px;top:553px;}
+#tp_144{left:389px;top:570px;}
+#tq_144{left:403px;top:573px;}
+#tr_144{left:400px;top:570px;}
+#ts_144{left:416px;top:575px;}
+#tt_144{left:413px;top:570px;}
+#tu_144{left:426px;top:572px;}
+#tv_144{left:426px;top:570px;}
+#tw_144{left:436px;top:575px;}
+#tx_144{left:437px;top:570px;}
+#ty_144{left:454px;top:575px;}
+#tz_144{left:452px;top:570px;}
+#t10_144{left:464px;top:572px;}
+#t11_144{left:463px;top:570px;}
+#t12_144{left:476px;top:566px;}
+#t13_144{left:477px;top:570px;}
+#t14_144{left:509px;top:570px;letter-spacing:-5px;}
+#t15_144{left:523px;top:572px;}
+#t16_144{left:522px;top:570px;}
+#t17_144{left:530px;top:572px;}
+#t18_144{left:530px;top:570px;}
+#t19_144{left:538px;top:567px;}
+#t1a_144{left:539px;top:570px;}
+#t1b_144{left:350px;top:606px;}
+#t1c_144{left:264px;top:628px;}
+#t1d_144{left:110px;top:645px;}
+#t1e_144{left:346px;top:662px;}
+#t1f_144{left:364px;top:665px;}
+#t1g_144{left:364px;top:662px;}
+#t1h_144{left:383px;top:664px;}
+#t1i_144{left:380px;top:662px;}
+#t1j_144{left:398px;top:665px;}
+#t1k_144{left:399px;top:662px;}
+#t1l_144{left:411px;top:665px;}
+#t1m_144{left:407px;top:662px;}
+#t1n_144{left:435px;top:659px;}
+#t1o_144{left:431px;top:662px;}
+#t1p_144{left:451px;top:664px;}
+#t1q_144{left:450px;top:662px;}
+#t1r_144{left:462px;top:665px;}
+#t1s_144{left:459px;top:662px;}
+#t1t_144{left:486px;top:667px;}
+#t1u_144{left:482px;top:662px;}
+#t1v_144{left:500px;top:658px;}
+#t1w_144{left:500px;top:662px;}
+#t1x_144{left:510px;top:665px;}
+#t1y_144{left:507px;top:662px;}
+#t1z_144{left:525px;top:668px;}
+#t20_144{left:523px;top:662px;}
+#t21_144{left:545px;top:667px;}
+#t22_144{left:543px;top:662px;}
+#t23_144{left:554px;top:664px;}
+#t24_144{left:554px;top:662px;}
+#t25_144{left:567px;top:658px;}
+#t26_144{left:568px;top:662px;}
+#t27_144{left:315px;top:698px;}
+#t28_144{left:187px;top:720px;}
+#t29_144{left:110px;top:738px;}
+#t2a_144{left:284px;top:754px;}
+#t2b_144{left:297px;top:757px;}
+#t2c_144{left:297px;top:754px;}
+#t2d_144{left:311px;top:759px;}
+#t2e_144{left:308px;top:754px;}
+#t2f_144{left:322px;top:757px;}
+#t2g_144{left:320px;top:754px;}
+#t2h_144{left:346px;top:752px;}
+#t2i_144{left:347px;top:754px;}
+#t2j_144{left:364px;top:758px;}
+#t2k_144{left:362px;top:754px;}
+#t2l_144{left:383px;top:754px;}
+#t2m_144{left:391px;top:757px;}
+#t2n_144{left:390px;top:754px;}
+#t2o_144{left:404px;top:756px;}
+#t2p_144{left:404px;top:754px;}
+#t2q_144{left:412px;top:757px;}
+#t2r_144{left:412px;top:754px;}
+#t2s_144{left:431px;top:757px;}
+#t2t_144{left:429px;top:754px;}
+#t2u_144{left:450px;top:757px;}
+#t2v_144{left:450px;top:754px;}
+#t2w_144{left:460px;top:759px;}
+#t2x_144{left:459px;top:754px;}
+#t2y_144{left:479px;top:752px;}
+#t2z_144{left:479px;top:754px;}
+#t30_144{left:501px;top:751px;}
+#t31_144{left:502px;top:754px;}
+#t32_144{left:515px;top:757px;}
+#t33_144{left:512px;top:754px;}
+#t34_144{left:528px;top:759px;}
+#t35_144{left:526px;top:754px;}
+#t36_144{left:563px;top:757px;}
+#t37_144{left:562px;top:754px;}
+#t38_144{left:574px;top:757px;}
+#t39_144{left:573px;top:754px;}
+#t3a_144{left:607px;top:759px;}
+#t3b_144{left:605px;top:754px;}
+#t3c_144{left:616px;top:757px;}
+#t3d_144{left:616px;top:754px;}
+#t3e_144{left:629px;top:750px;}
+#t3f_144{left:630px;top:754px;}
+#t3g_144{left:226px;top:791px;}
+#t3h_144{left:448px;top:791px;}
+#t3i_144{left:692px;top:788px;}
+#t3j_144{left:110px;top:820px;}
+#t3k_144{left:110px;top:849px;}
+#t3l_144{left:331px;top:869px;}
+#t3m_144{left:351px;top:865px;}
+#t3n_144{left:351px;top:869px;}
+#t3o_144{left:360px;top:872px;}
+#t3p_144{left:359px;top:869px;}
+#t3q_144{left:388px;top:873px;}
+#t3r_144{left:385px;top:869px;}
+#t3s_144{left:408px;top:872px;}
+#t3t_144{left:406px;top:869px;}
+#t3u_144{left:418px;top:874px;}
+#t3v_144{left:417px;top:869px;}
+#t3w_144{left:433px;top:872px;}
+#t3x_144{left:429px;top:869px;}
+#t3y_144{left:447px;top:874px;}
+#t3z_144{left:445px;top:869px;}
+#t40_144{left:465px;top:869px;}
+#t41_144{left:482px;top:866px;}
+#t42_144{left:482px;top:869px;}
+#t43_144{left:515px;top:874px;}
+#t44_144{left:514px;top:869px;}
+#t45_144{left:530px;top:872px;}
+#t46_144{left:527px;top:869px;}
+#t47_144{left:560px;top:874px;}
+#t48_144{left:559px;top:869px;}
+#t49_144{left:570px;top:871px;}
+#t4a_144{left:570px;top:869px;}
+#t4b_144{left:583px;top:865px;}
+#t4c_144{left:583px;top:869px;}
+#t4d_144{left:336px;top:904px;}
+#t4e_144{left:352px;top:907px;}
+#t4f_144{left:352px;top:904px;}
+#t4g_144{left:362px;top:910px;}
+#t4h_144{left:360px;top:904px;}
+#t4i_144{left:378px;top:906px;}
+#t4j_144{left:373px;top:904px;}
+#t4k_144{left:392px;top:907px;}
+#t4l_144{left:389px;top:904px;}
+#t4m_144{left:414px;top:907px;}
+#t4n_144{left:410px;top:904px;}
+#t4o_144{left:439px;top:908px;}
+#t4p_144{left:436px;top:904px;}
+#t4q_144{left:450px;top:906px;}
+#t4r_144{left:450px;top:904px;}
+#t4s_144{left:458px;top:898px;}
+#t4t_144{left:458px;top:904px;}
+#t4u_144{left:472px;top:904px;}
+#t4v_144{left:490px;top:907px;}
+#t4w_144{left:490px;top:904px;}
+#t4x_144{left:509px;top:906px;}
+#t4y_144{left:505px;top:904px;}
+#t4z_144{left:531px;top:898px;}
+#t50_144{left:530px;top:904px;}
+#t51_144{left:555px;top:909px;}
+#t52_144{left:554px;top:904px;}
+#t53_144{left:565px;top:906px;}
+#t54_144{left:565px;top:904px;}
+#t55_144{left:578px;top:900px;}
+#t56_144{left:578px;top:904px;}
+#t57_144{left:181px;top:940px;}
+#t58_144{left:163px;top:958px;}
+#t59_144{left:110px;top:976px;}
+#t5a_144{left:687px;top:974px;}
+#t5b_144{left:693px;top:976px;}
+#t5c_144{left:771px;top:976px;}
+#t5d_144{left:110px;top:998px;}
+#t5e_144{left:110px;top:1019px;}
+#t5f_144{left:691px;top:1017px;}
+#t5g_144{left:697px;top:1019px;}
+#t5h_144{left:431px;top:1040px;}
+#t5i_144{left:444px;top:1042px;}
+#t5j_144{left:444px;top:1040px;}
+#t5k_144{left:455px;top:1037px;}
+#t5l_144{left:453px;top:1040px;}
+#t5m_144{left:463px;top:1033px;}
+#t5n_144{left:464px;top:1040px;}
+#t5o_144{left:477px;top:1043px;}
+#t5p_144{left:485px;top:1036px;}
+#t5q_144{left:478px;top:1040px;}
+#t5r_144{left:326px;top:1076px;}
+#t5s_144{left:437px;top:1076px;}
+
+.s9_144{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: TimesNewRomanPS-BoldItalicMT;
+	color: rgb(0,0,0);
+	FONT-WEIGHT: bold;
+	FONT-STYLE: italic;
+}
+
+.s1_144{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT144;
+	color: rgb(0,0,0);
+}
+
+.s5_144{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-BoldItalicMT;
+	color: rgb(0,0,0);
+	FONT-WEIGHT: bold;
+	FONT-STYLE: italic;
+}
+
+.s4_144{
+	FONT-SIZE: 122px;
+	FONT-FAMILY: NJAOCG-TimesNewRomanPS-BoldM144;
+	color: rgb(0,0,0);
+}
+
+.s7_144{
+	FONT-SIZE: 48px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM144;
+	color: rgb(0,0,0);
+}
+
+.s2_144{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT144;
+	color: rgb(0,0,0);
+}
+
+.s8_144{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM144;
+	color: rgb(0,0,0);
+}
+
+.s6_144{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM144;
+	color: rgb(0,0,0);
+}
+
+.s3_144{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT144;
+	color: rgb(0,0,255);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCG-TimesNewRomanPS-BoldM144;
+	src :url("144/fonts/NJAOCG-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM144;
+	src :url("144/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT144;
+	src :url("144/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_144" class="t s1_144">144</div>
+<div id="t2_144" class="t s2_144">Go also to </div>
+<div id="t3_144" class="t s3_144">www.islamicbulletin.com</div>
+<div id="t4_144" class="t s2_144">click on enter here and then Hajj </div>
+<div id="t5_144" class="t s2_144">You have a choice of </div>
+<div id="t6_144" class="t s3_144">Arabic</div>
+<div id="t7_144" class="t s2_144">, </div>
+<div id="t8_144" class="t s3_144">English</div>
+<div id="t9_144" class="t s2_144">, </div>
+<div id="ta_144" class="t s3_144">French</div>
+<div id="tb_144" class="t s2_144">, </div>
+<div id="tc_144" class="t s3_144">German</div>
+<div id="td_144" class="t s2_144">, </div>
+<div id="te_144" class="t s3_144">Indonesian</div>
+<div id="tf_144" class="t s2_144">, </div>
+<div id="tg_144" class="t s3_144">Italian</div>
+<div id="th_144" class="t s2_144">, </div>
+<div id="ti_144" class="t s3_144">Spanish</div>
+<div id="tj_144" class="t s2_144">, </div>
+<div id="tk_144" class="t s3_144">Turkish</div>
+<div id="tl_144" class="t s2_144">, </div>
+<div id="tm_144" class="t s2_144">and </div>
+<div id="tn_144" class="t s3_144">Urdu</div>
+<div id="to_144" class="t s1_144">Proceed to appropriate Meeqaat. On entering state of Ihram recite – </div>
+<div id="tp_144" class="t s4_144"><bdo dir='ltr'>ة</bdo></div>
+<div id="tq_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="tr_144" class="t s4_144"><bdo dir='ltr'>ر</bdo></div>
+<div id="ts_144" class="t s4_144"><bdo dir='ltr'>ْ</bdo></div>
+<div id="tt_144" class="t s4_144"><bdo dir='ltr'>م</bdo></div>
+<div id="tu_144" class="t s4_144"><bdo dir='ltr'>ُ</bdo></div>
+<div id="tv_144" class="t s4_144"><bdo dir='ltr'>ع</bdo></div>
+<div id="tw_144" class="t s4_144"><bdo dir='ltr'>ِ</bdo></div>
+<div id="tx_144" class="t s4_144"><bdo dir='ltr'>ب</bdo></div>
+<div id="ty_144" class="t s4_144"><bdo dir='ltr'>ﱠ</bdo></div>
+<div id="tz_144" class="t s4_144">±</div>
+<div id="t10_144" class="t s4_144"><bdo dir='ltr'>ُ</bdo></div>
+<div id="t11_144" class="t s4_144"><bdo dir='ltr'>ھ</bdo></div>
+<div id="t12_144" class="t s4_144"><bdo dir='ltr'>ﱠ</bdo></div>
+<div id="t13_144" class="t s4_144"><bdo dir='ltr'>ل²ا</bdo></div>
+<div id="t14_144" class="t s4_144"><bdo dir='ltr'>َك</bdo></div>
+<div id="t15_144" class="t s4_144"><bdo dir='ltr'>ْ</bdo></div>
+<div id="t16_144" class="t s4_144"><bdo dir='ltr'>ي</bdo></div>
+<div id="t17_144" class="t s4_144"><bdo dir='ltr'>ﱠ</bdo></div>
+<div id="t18_144" class="t s4_144">³</div>
+<div id="t19_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t1a_144" class="t s4_144">²</div>
+<div id="t1b_144" class="t s5_144">LabbaikAllahumma bi-`umrah</div>
+<div id="t1c_144" class="t s6_144">Here I am O Allah, (in response to Your call) making ‘Umrah. </div>
+<div id="t1d_144" class="t s1_144">In fear of not completing the ‘Umrah, recite – </div>
+<div id="t1e_144" class="t s4_144">´</div>
+<div id="t1f_144" class="t s4_144"><bdo dir='ltr'>ِ</bdo></div>
+<div id="t1g_144" class="t s4_144"><bdo dir='ltr'>نَت</bdo></div>
+<div id="t1h_144" class="t s4_144"><bdo dir='ltr'>ْ</bdo></div>
+<div id="t1i_144" class="t s4_144"><bdo dir='ltr'>س</bdo></div>
+<div id="t1j_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t1k_144" class="t s4_144">³</div>
+<div id="t1l_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t1m_144" class="t s4_144"><bdo dir='ltr'>ح</bdo></div>
+<div id="t1n_144" class="t s4_144"><bdo dir='ltr'>ُ</bdo></div>
+<div id="t1o_144" class="t s4_144"><bdo dir='ltr'>ث</bdo></div>
+<div id="t1p_144" class="t s4_144"><bdo dir='ltr'>ْ</bdo></div>
+<div id="t1q_144" class="t s4_144"><bdo dir='ltr'>ي</bdo></div>
+<div id="t1r_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t1s_144" class="t s4_144"><bdo dir='ltr'>ح</bdo></div>
+<div id="t1t_144" class="t s4_144"><bdo dir='ltr'>ْ</bdo></div>
+<div id="t1u_144" class="t s4_144">´</div>
+<div id="t1v_144" class="t s4_144"><bdo dir='ltr'>ﱢ</bdo></div>
+<div id="t1w_144" class="t s4_144"><bdo dir='ltr'>ل</bdo></div>
+<div id="t1x_144" class="t s4_144"><bdo dir='ltr'>ِ</bdo></div>
+<div id="t1y_144" class="t s4_144">µ</div>
+<div id="t1z_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t20_144" class="t s4_144">¶</div>
+<div id="t21_144" class="t s4_144"><bdo dir='ltr'>ﱠ</bdo></div>
+<div id="t22_144" class="t s4_144">±</div>
+<div id="t23_144" class="t s4_144"><bdo dir='ltr'>ُ</bdo></div>
+<div id="t24_144" class="t s4_144"><bdo dir='ltr'>ھ</bdo></div>
+<div id="t25_144" class="t s4_144"><bdo dir='ltr'>ﱠ</bdo></div>
+<div id="t26_144" class="t s4_144"><bdo dir='ltr'>ل²ا</bdo></div>
+<div id="t27_144" class="t s5_144">Allahumma mahillee haithu habastanee </div>
+<div id="t28_144" class="t s1_144">O Allah, [If I am prevented by an obstacle then indeed] my place is where You prevent me.</div>
+<div id="t29_144" class="t s1_144">Standing, face the Qiblah and recite – </div>
+<div id="t2a_144" class="t s4_144">·</div>
+<div id="t2b_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t2c_144" class="t s4_144"><bdo dir='ltr'>ع</bdo></div>
+<div id="t2d_144" class="t s4_144"><bdo dir='ltr'>ْ</bdo></div>
+<div id="t2e_144" class="t s4_144"><bdo dir='ltr'>م</bdo></div>
+<div id="t2f_144" class="t s4_144"><bdo dir='ltr'>ُ</bdo></div>
+<div id="t2g_144" class="t s4_144">¸</div>
+<div id="t2h_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t2i_144" class="t s4_144">¹</div>
+<div id="t2j_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t2k_144" class="t s4_144"><bdo dir='ltr'>و</bdo></div>
+<div id="t2l_144" class="t s4_144">º</div>
+<div id="t2m_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t2n_144" class="t s4_144"><bdo dir='ltr'>ھ</bdo></div>
+<div id="t2o_144" class="t s4_144"><bdo dir='ltr'>ْ</bdo></div>
+<div id="t2p_144" class="t s4_144"><bdo dir='ltr'>ي</bdo></div>
+<div id="t2q_144" class="t s4_144"><bdo dir='ltr'>ِ</bdo></div>
+<div id="t2r_144" class="t s4_144"><bdo dir='ltr'>ف</bdo></div>
+<div id="t2s_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t2t_144" class="t s4_144"><bdo dir='ltr'>ءº</bdo></div>
+<div id="t2u_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t2v_144" class="t s4_144">»</div>
+<div id="t2w_144" class="t s4_144"><bdo dir='ltr'>ِ</bdo></div>
+<div id="t2x_144" class="t s4_144">¼</div>
+<div id="t2y_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t2z_144" class="t s4_144">¹</div>
+<div id="t30_144" class="t s4_144"><bdo dir='ltr'>ٌ</bdo></div>
+<div id="t31_144" class="t s4_144"><bdo dir='ltr'>ة</bdo></div>
+<div id="t32_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t33_144" class="t s4_144"><bdo dir='ltr'>ر</bdo></div>
+<div id="t34_144" class="t s4_144"><bdo dir='ltr'>ْ</bdo></div>
+<div id="t35_144" class="t s4_144"><bdo dir='ltr'>مُ½</bdo></div>
+<div id="t36_144" class="t s4_144"><bdo dir='ltr'>ِ</bdo></div>
+<div id="t37_144" class="t s4_144"><bdo dir='ltr'>ه</bdo></div>
+<div id="t38_144" class="t s4_144"><bdo dir='ltr'>ِ</bdo></div>
+<div id="t39_144" class="t s4_144"><bdo dir='ltr'>ذَ¾</bdo></div>
+<div id="t3a_144" class="t s4_144"><bdo dir='ltr'>ﱠ</bdo></div>
+<div id="t3b_144" class="t s4_144">±</div>
+<div id="t3c_144" class="t s4_144"><bdo dir='ltr'>ُ</bdo></div>
+<div id="t3d_144" class="t s4_144"><bdo dir='ltr'>ھ</bdo></div>
+<div id="t3e_144" class="t s4_144"><bdo dir='ltr'>ﱠ</bdo></div>
+<div id="t3f_144" class="t s4_144"><bdo dir='ltr'>ل²ا</bdo></div>
+<div id="t3g_144" class="t s5_144">Allahumma haadhihi umrah</div>
+<div id="t3h_144" class="t s2_144">, laa riyaa'a feehaa wa laa sum'ah</div>
+<div id="t3i_144" class="t s7_144">9 C</div>
+<div id="t3j_144" class="t s8_144">O Allah, there is neither showing off nor seeking repute in this ‘Umrah.</div>
+<div id="t3k_144" class="t s2_144">Upon entering al-Masjidul-Haraam with the right foot, recite – </div>
+<div id="t3l_144" class="t s4_144"><bdo dir='ltr'>،±</bdo></div>
+<div id="t3m_144" class="t s4_144"><bdo dir='ltr'>ﱢ</bdo></div>
+<div id="t3n_144" class="t s4_144"><bdo dir='ltr'>ل</bdo></div>
+<div id="t3o_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t3p_144" class="t s4_144">¸</div>
+<div id="t3q_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t3r_144" class="t s4_144"><bdo dir='ltr'>و</bdo></div>
+<div id="t3s_144" class="t s4_144"><bdo dir='ltr'>ٍ</bdo></div>
+<div id="t3t_144" class="t s4_144"><bdo dir='ltr'>د</bdo></div>
+<div id="t3u_144" class="t s4_144"><bdo dir='ltr'>ﱠ</bdo></div>
+<div id="t3v_144" class="t s4_144"><bdo dir='ltr'>م</bdo></div>
+<div id="t3w_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t3x_144" class="t s4_144">µ</div>
+<div id="t3y_144" class="t s4_144"><bdo dir='ltr'>ُ</bdo></div>
+<div id="t3z_144" class="t s4_144">¶</div>
+<div id="t40_144" class="t s4_144"><bdo dir='ltr'>ى</bdo></div>
+<div id="t41_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t42_144" class="t s4_144"><bdo dir='ltr'>لَ½</bdo></div>
+<div id="t43_144" class="t s4_144"><bdo dir='ltr'>ﱢ</bdo></div>
+<div id="t44_144" class="t s4_144">¿</div>
+<div id="t45_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t46_144" class="t s4_144"><bdo dir='ltr'>ص</bdo></div>
+<div id="t47_144" class="t s4_144"><bdo dir='ltr'>ﱠ</bdo></div>
+<div id="t48_144" class="t s4_144">±</div>
+<div id="t49_144" class="t s4_144"><bdo dir='ltr'>ُ</bdo></div>
+<div id="t4a_144" class="t s4_144"><bdo dir='ltr'>ھ</bdo></div>
+<div id="t4b_144" class="t s4_144"><bdo dir='ltr'>ﱠ</bdo></div>
+<div id="t4c_144" class="t s4_144"><bdo dir='ltr'>ل²ا</bdo></div>
+<div id="t4d_144" class="t s4_144"><bdo dir='ltr'>ك</bdo></div>
+<div id="t4e_144" class="t s4_144"><bdo dir='ltr'>ِ</bdo></div>
+<div id="t4f_144" class="t s4_144"><bdo dir='ltr'>ت</bdo></div>
+<div id="t4g_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t4h_144" class="t s4_144"><bdo dir='ltr'>م</bdo></div>
+<div id="t4i_144" class="t s4_144"><bdo dir='ltr'>ْ</bdo></div>
+<div id="t4j_144" class="t s4_144"><bdo dir='ltr'>ح</bdo></div>
+<div id="t4k_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t4l_144" class="t s4_144">¼</div>
+<div id="t4m_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t4n_144" class="t s4_144"><bdo dir='ltr'>Àا</bdo></div>
+<div id="t4o_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t4p_144" class="t s4_144">Á</div>
+<div id="t4q_144" class="t s4_144"><bdo dir='ltr'>ْ</bdo></div>
+<div id="t4r_144" class="t s4_144"><bdo dir='ltr'>ب</bdo></div>
+<div id="t4s_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t4t_144" class="t s4_144"><bdo dir='ltr'>أ</bdo></div>
+<div id="t4u_144" class="t s4_144">´</div>
+<div id="t4v_144" class="t s4_144"><bdo dir='ltr'>ِ</bdo></div>
+<div id="t4w_144" class="t s4_144">²</div>
+<div id="t4x_144" class="t s4_144"><bdo dir='ltr'>ْ</bdo></div>
+<div id="t4y_144" class="t s4_144"><bdo dir='ltr'>Âَت</bdo></div>
+<div id="t4z_144" class="t s4_144"><bdo dir='ltr'>ْ</bdo></div>
+<div id="t50_144" class="t s4_144"><bdo dir='ltr'>فا</bdo></div>
+<div id="t51_144" class="t s4_144"><bdo dir='ltr'>ﱠ</bdo></div>
+<div id="t52_144" class="t s4_144">±</div>
+<div id="t53_144" class="t s4_144"><bdo dir='ltr'>ُ</bdo></div>
+<div id="t54_144" class="t s4_144"><bdo dir='ltr'>ھ</bdo></div>
+<div id="t55_144" class="t s4_144"><bdo dir='ltr'>ﱠ</bdo></div>
+<div id="t56_144" class="t s4_144"><bdo dir='ltr'>ل²ا</bdo></div>
+<div id="t57_144" class="t s9_144">Allahumma salli `alaa muhammadin wa sallim –Allahumma aftah lee abwaaba rahmatika </div>
+<div id="t58_144" class="t s1_144">O Allah, send prayers and peace upon Muhammad, O Allah, open the doors of Your Mercy for me. </div>
+<div id="t59_144" class="t s2_144">Make intention for the Tawaf. Starting at al-Hajarul-Aswad (The Black Stone)</div>
+<div id="t5a_144" class="t s7_144">1</div>
+<div id="t5b_144" class="t s2_144">,men only</div>
+<div id="t5c_144" class="t s2_144">- </div>
+<div id="t5d_144" class="t s2_144">uncover right shoulder by placing Ihram underneath right arm-pit. When beginning each circuit, </div>
+<div id="t5e_144" class="t s2_144">make a sign with your right hand towards al-Hajarul-Aswad (The Black Stone)</div>
+<div id="t5f_144" class="t s7_144">2</div>
+<div id="t5g_144" class="t s2_144">, and recite – </div>
+<div id="t5h_144" class="t s4_144"><bdo dir='ltr'>ر</bdo></div>
+<div id="t5i_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t5j_144" class="t s4_144">³</div>
+<div id="t5k_144" class="t s4_144"><bdo dir='ltr'>ْ</bdo></div>
+<div id="t5l_144" class="t s4_144">Ã</div>
+<div id="t5m_144" class="t s4_144"><bdo dir='ltr'>َ</bdo></div>
+<div id="t5n_144" class="t s4_144"><bdo dir='ltr'>أ</bdo></div>
+<div id="t5o_144" class="t s4_144"><bdo dir='ltr'>ُ</bdo></div>
+<div id="t5p_144" class="t s4_144"><bdo dir='ltr'>ﱠ</bdo></div>
+<div id="t5q_144" class="t s4_144"><bdo dir='ltr'>ﷲ</bdo></div>
+<div id="t5r_144" class="t s2_144">Allahu Akbar (</div>
+<div id="t5s_144" class="t s8_144">Allah is the Greatest). </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg144Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg144"><object width="935" height="1210" data="144/144.svg" type="image/svg+xml" id="pdf144" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld144" type="text/javascript">
+
+var isIE = false;
+var f144 = [['t2_144',301],['t4_144',958],['t5_144',623],['to_144',1656],['t1b_144',936],['t1c_144',1630],['t1d_144',1122],['t27_144',1217],['t28_144',2241],['t29_144',925],['t3g_144',872],['t3h_144',973],['t3i_144',71],['t3j_144',2234],['t3k_144',1841],['t57_144',2290],['t58_144',2437],['t59_144',2306],['t5b_144',292],['t5d_144',2822],['t5e_144',2321],['t5g_144',379],['t5r_144',444],['t5s_144',685]];
+function load144(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f144);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 209;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_144");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

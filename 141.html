@@ -1,0 +1,299 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page141</title>
+</head>
+
+<body onload="load141()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_141{left:456px;top:1136px;}
+#t2_141{left:274px;top:70px;}
+#t3_141{left:550px;top:71px;}
+#t4_141{left:274px;top:120px;}
+#t5_141{left:550px;top:122px;}
+#t6_141{left:274px;top:170px;}
+#t7_141{left:550px;top:172px;}
+#t8_141{left:550px;top:223px;}
+#t9_141{left:210px;top:299px;}
+#ta_141{left:210px;top:322px;}
+#tb_141{left:479px;top:322px;}
+#tc_141{left:210px;top:344px;}
+#td_141{left:479px;top:344px;}
+#te_141{left:210px;top:367px;}
+#tf_141{left:210px;top:389px;}
+#tg_141{left:210px;top:411px;}
+#th_141{left:479px;top:411px;}
+#ti_141{left:210px;top:434px;}
+#tj_141{left:479px;top:434px;}
+#tk_141{left:210px;top:456px;}
+#tl_141{left:210px;top:479px;}
+#tm_141{left:270px;top:479px;}
+#tn_141{left:479px;top:479px;}
+#to_141{left:551px;top:479px;}
+#tp_141{left:210px;top:501px;}
+#tq_141{left:367px;top:501px;}
+#tr_141{left:479px;top:501px;}
+#ts_141{left:551px;top:501px;}
+#tt_141{left:210px;top:524px;}
+#tu_141{left:342px;top:524px;}
+#tv_141{left:479px;top:524px;}
+#tw_141{left:581px;top:524px;}
+#tx_141{left:210px;top:546px;}
+#ty_141{left:275px;top:546px;}
+#tz_141{left:479px;top:546px;}
+#t10_141{left:626px;top:546px;}
+#t11_141{left:425px;top:568px;}
+#t12_141{left:433px;top:589px;}
+#t13_141{left:376px;top:610px;}
+#t14_141{left:386px;top:632px;}
+#t15_141{left:290px;top:653px;}
+#t16_141{left:110px;top:682px;}
+#t17_141{left:110px;top:703px;}
+#t18_141{left:138px;top:740px;}
+#t19_141{left:165px;top:740px;}
+#t1a_141{left:165px;top:758px;}
+#t1b_141{left:165px;top:776px;}
+#t1c_141{left:110px;top:809px;}
+#t1d_141{left:110px;top:845px;}
+#t1e_141{left:138px;top:882px;}
+#t1f_141{left:165px;top:882px;}
+#t1g_141{left:138px;top:915px;}
+#t1h_141{left:165px;top:915px;}
+#t1i_141{left:137px;top:948px;}
+#t1j_141{left:165px;top:948px;}
+#t1k_141{left:165px;top:966px;}
+#t1l_141{left:165px;top:984px;}
+#t1m_141{left:137px;top:1017px;}
+#t1n_141{left:165px;top:1017px;}
+#t1o_141{left:137px;top:1050px;}
+#t1p_141{left:165px;top:1050px;}
+#t1q_141{left:165px;top:1068px;}
+#t1r_141{left:165px;top:1086px;}
+
+.s1_141{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT141;
+	color: rgb(0,0,0);
+}
+
+.s2_141{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT141;
+	color: rgb(0,0,0);
+}
+
+.s3_141{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM141;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM141;
+	src :url("141/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT141;
+	src :url("141/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_141" class="t s1_141">141</div>
+<div id="t2_141" class="t s2_141">40 </div>
+<div id="t3_141" class="t s1_141">animals </div>
+<div id="t4_141" class="t s2_141">200 </div>
+<div id="t5_141" class="t s1_141">animals </div>
+<div id="t6_141" class="t s2_141">201 </div>
+<div id="t7_141" class="t s1_141">animalss </div>
+<div id="t8_141" class="t s1_141">animals </div>
+<div id="t9_141" class="t s1_141">6. Mention 5 MASAARIF (to whom ZAKAAT can be given?</div>
+<div id="ta_141" class="t s1_141">a.......................................</div>
+<div id="tb_141" class="t s1_141">b.........................................</div>
+<div id="tc_141" class="t s1_141">c.......................................</div>
+<div id="td_141" class="t s1_141">d.........................................</div>
+<div id="te_141" class="t s1_141">e.......................................</div>
+<div id="tf_141" class="t s1_141">7. Name 4 types of people to whom ZAKAAT cannot be given?</div>
+<div id="tg_141" class="t s1_141">a.......................................</div>
+<div id="th_141" class="t s1_141">b......................................</div>
+<div id="ti_141" class="t s1_141">c.......................................</div>
+<div id="tj_141" class="t s1_141">d.......................................</div>
+<div id="tk_141" class="t s1_141">8. Can ZAKAAT be given to the following ?</div>
+<div id="tl_141" class="t s1_141">a A child.</div>
+<div id="tm_141" class="t s1_141">...............................</div>
+<div id="tn_141" class="t s1_141">(b) Brother.</div>
+<div id="to_141" class="t s1_141">......................</div>
+<div id="tp_141" class="t s1_141">(c) Madressa (As wages).</div>
+<div id="tq_141" class="t s1_141">...</div>
+<div id="tr_141" class="t s1_141">(d) Student.</div>
+<div id="ts_141" class="t s1_141">....................</div>
+<div id="tt_141" class="t s1_141">(e) Kafn of deceased.</div>
+<div id="tu_141" class="t s1_141">.......</div>
+<div id="tv_141" class="t s1_141">(f) Non-Muslim.</div>
+<div id="tw_141" class="t s1_141">................</div>
+<div id="tx_141" class="t s1_141">(g) Father.</div>
+<div id="ty_141" class="t s1_141">.........................</div>
+<div id="tz_141" class="t s1_141">(h) One's own Children.</div>
+<div id="t10_141" class="t s1_141">.....</div>
+<div id="t11_141" class="t s3_141">Pilgrimage </div>
+<div id="t12_141" class="t s2_141">PART 14 </div>
+<div id="t13_141" class="t s2_141">HAJ IS ONE OF THE FIVE </div>
+<div id="t14_141" class="t s2_141">PILLARS OF ISLAM </div>
+<div id="t15_141" class="t s2_141">THE VIRTUES AND IMPORTANCE OF HAJ. </div>
+<div id="t16_141" class="t s2_141">HAJ means to visit the sacred house of Allah in Makaah Mukarramah during the days of Haj, </div>
+<div id="t17_141" class="t s2_141">(i.e. 8, 9, 10, 11 and 12th of Zil Hijjah). This is the fifth of the religious duties of a Muslim. </div>
+<div id="t18_141" class="t s1_141">1.</div>
+<div id="t19_141" class="t s1_141">Pilgrimage to the house of Allah is a bounded duty unto mankind for him who has the means to find the </div>
+<div id="t1a_141" class="t s1_141">way here unto, and whosoever disbelives, then verily Allah is free and independent form the entire </div>
+<div id="t1b_141" class="t s1_141">universe. </div>
+<div id="t1c_141" class="t s2_141">(Qur'aan; Surah Aale Imraan, verse 97) </div>
+<div id="t1d_141" class="t s2_141">Rasulullah (S.A.W.) is reported to have mentioned: </div>
+<div id="t1e_141" class="t s1_141">1.</div>
+<div id="t1f_141" class="t s1_141">Verily Allah has declared Haj Farz upon you, therefore perform Haj". </div>
+<div id="t1g_141" class="t s1_141">2.</div>
+<div id="t1h_141" class="t s1_141">"Hasten in performing Haj, for verily one never knows what will befall him." </div>
+<div id="t1i_141" class="t s1_141">3.</div>
+<div id="t1j_141" class="t s1_141">"One who dies while on his journey for Haj, Allah will record the reward of Haj for him upto the day of </div>
+<div id="t1k_141" class="t s1_141">Qiyaamah, and one who dies while on his journey for Umrah, Allah will record the reward of Umrah for </div>
+<div id="t1l_141" class="t s1_141">him upto the day of Qiyaamah''. </div>
+<div id="t1m_141" class="t s1_141">4.</div>
+<div id="t1n_141" class="t s1_141">"For an accepted Haj, there is no reward besides Jannah (Paradise). " </div>
+<div id="t1o_141" class="t s1_141">5.</div>
+<div id="t1p_141" class="t s1_141">"One who possesses wealth and has all the means by which he could reach the Sacred House of Allah (the </div>
+<div id="t1q_141" class="t s1_141">Ka'bah) and yet does not perform Haj, he then may either die as a Nasraani (Christian) or a Majoos (fire </div>
+<div id="t1r_141" class="t s1_141">worshipper)". </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg141Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg141"><object width="935" height="1210" data="141/141.svg" type="image/svg+xml" id="pdf141" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld141" type="text/javascript">
+
+var isIE = false;
+var f141 = [['t9_141',1519],['tf_141',1574],['tk_141',1103],['tl_141',240],['tn_141',290],['tp_141',627],['tr_141',290],['tt_141',525],['tv_141',408],['tx_141',259],['tz_141',590],['t12_141',278],['t13_141',840],['t14_141',655],['t15_141',1423],['t16_141',2745],['t17_141',2684],['t19_141',2547],['t1a_141',2421],['t1c_141',1154],['t1d_141',1510],['t1f_141',1711],['t1h_141',1895],['t1j_141',2552],['t1k_141',2566],['t1l_141',782],['t1n_141',1691],['t1p_141',2606],['t1q_141',2551]];
+function load141(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f141);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 64;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_141");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page124</title>
+</head>
+
+<body onload="load124()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_124{left:456px;top:1136px;}
+#t2_124{left:201px;top:54px;}
+#t3_124{left:268px;top:54px;}
+#t4_124{left:430px;top:54px;}
+#t5_124{left:504px;top:54px;}
+#t6_124{left:641px;top:54px;}
+#t7_124{left:280px;top:72px;}
+#t8_124{left:110px;top:101px;}
+#t9_124{left:138px;top:138px;}
+#ta_124{left:165px;top:138px;}
+#tb_124{left:165px;top:155px;}
+#tc_124{left:138px;top:189px;}
+#td_124{left:165px;top:189px;}
+#te_124{left:165px;top:206px;}
+#tf_124{left:165px;top:224px;}
+#tg_124{left:138px;top:257px;}
+#th_124{left:165px;top:257px;}
+#ti_124{left:165px;top:275px;}
+#tj_124{left:165px;top:293px;}
+#tk_124{left:138px;top:326px;}
+#tl_124{left:165px;top:326px;}
+#tm_124{left:165px;top:344px;}
+#tn_124{left:165px;top:362px;}
+#to_124{left:165px;top:380px;}
+#tp_124{left:138px;top:413px;}
+#tq_124{left:165px;top:413px;}
+#tr_124{left:138px;top:446px;}
+#ts_124{left:165px;top:446px;}
+#tt_124{left:138px;top:479px;}
+#tu_124{left:165px;top:479px;}
+#tv_124{left:138px;top:512px;}
+#tw_124{left:165px;top:512px;}
+#tx_124{left:237px;top:538px;}
+#ty_124{left:138px;top:567px;}
+#tz_124{left:165px;top:567px;}
+#t10_124{left:138px;top:600px;}
+#t11_124{left:165px;top:600px;}
+#t12_124{left:165px;top:618px;}
+#t13_124{left:138px;top:651px;}
+#t14_124{left:165px;top:651px;}
+#t15_124{left:165px;top:669px;}
+#t16_124{left:165px;top:686px;}
+#t17_124{left:138px;top:720px;}
+#t18_124{left:165px;top:720px;}
+#t19_124{left:165px;top:737px;}
+#t1a_124{left:138px;top:771px;}
+#t1b_124{left:165px;top:771px;}
+#t1c_124{left:138px;top:804px;}
+#t1d_124{left:165px;top:804px;}
+#t1e_124{left:299px;top:829px;}
+#t1f_124{left:138px;top:858px;}
+#t1g_124{left:165px;top:858px;}
+#t1h_124{left:165px;top:876px;}
+#t1i_124{left:192px;top:909px;}
+#t1j_124{left:220px;top:909px;}
+#t1k_124{left:192px;top:942px;}
+#t1l_124{left:220px;top:942px;}
+#t1m_124{left:137px;top:975px;}
+#t1n_124{left:165px;top:975px;}
+#t1o_124{left:165px;top:993px;}
+#t1p_124{left:137px;top:1026px;}
+#t1q_124{left:165px;top:1026px;}
+#t1r_124{left:165px;top:1044px;}
+#t1s_124{left:137px;top:1077px;}
+#t1t_124{left:165px;top:1077px;}
+#t1u_124{left:165px;top:1095px;}
+
+.s1_124{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT124;
+	color: rgb(0,0,0);
+}
+
+.s2_124{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT124;
+	color: rgb(0,0,255);
+}
+
+.s5_124{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT124;
+	color: rgb(0,0,0);
+}
+
+.s3_124{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT124;
+	color: rgb(0,0,255);
+}
+
+.s4_124{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM124;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM124;
+	src :url("124/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT124;
+	src :url("124/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_124" class="t s1_124">124</div>
+<div id="t2_124" class="t s1_124">Go also to </div>
+<div id="t3_124" class="t s2_124">www.islamicbuleltin.com</div>
+<div id="t4_124" class="t s1_124">to get your </div>
+<div id="t5_124" class="t s2_124">Free Zakat Calculator</div>
+<div id="t6_124" class="t s1_124">in excel format </div>
+<div id="t7_124" class="t s3_124"><a href="http://www.islamicbulletin.com/services/zakat.htm" target="_blank">http://www.islamicbulletin.com/services/zakat.htm</a></div>
+<div id="t8_124" class="t s4_124">TYPES OF WEALTH ON WHICH ZAKAAT IS FARZ.</div>
+<div id="t9_124" class="t s1_124">1.</div>
+<div id="ta_124" class="t s1_124">Zakat is Farz on gold and silver, be it in the form of bullion, jewellery, cash, bank notes, utensils or any </div>
+<div id="tb_124" class="t s1_124">other form. The value of these should he equal to the amount which is shown under Nisaab rate. </div>
+<div id="tc_124" class="t s1_124">2.</div>
+<div id="td_124" class="t s1_124">In the gold possessed is not equal to the value of 87.48 grams, or silver possessed is not equal to the value </div>
+<div id="te_124" class="t s1_124">of 612.36 grams, but the value of both combined is equal to the value of either the Nisaab of gold or silver, </div>
+<div id="tf_124" class="t s1_124">then Zakat will be Farz. </div>
+<div id="tg_124" class="t s1_124">3.</div>
+<div id="th_124" class="t s1_124">In the event of an article not being of pure gold or pure silver, but containing a mixture of other metals and </div>
+<div id="ti_124" class="t s1_124">the gold or silver is regarded as gold or silver and Zakat on this will be Farz. But in this case where the </div>
+<div id="tj_124" class="t s1_124">metal is of greater quantity than either the gold or silver, Zakat will not be Farz on that article </div>
+<div id="tk_124" class="t s1_124">4.</div>
+<div id="tl_124" class="t s1_124">If a person has 620 grams of silver (which is more than the Nisaab) and before a whole year has elapsed he </div>
+<div id="tm_124" class="t s1_124">acquires 50 grams of gold (which is less than the Nisaab), then the value of this gold must be added to the </div>
+<div id="tn_124" class="t s1_124">value of the silver, and thereafter the Nisaab reckoned. The two must not be reckoned separately, as this </div>
+<div id="to_124" class="t s1_124">will be a cause of avoiding Zakat. </div>
+<div id="tp_124" class="t s1_124">5.</div>
+<div id="tq_124" class="t s1_124">Zakat is Farz on merchandise for business, equal to the value of Nisaab. </div>
+<div id="tr_124" class="t s1_124">6.</div>
+<div id="ts_124" class="t s1_124">Zakat is Farz on livestock. </div>
+<div id="tt_124" class="t s1_124">7.</div>
+<div id="tu_124" class="t s1_124">Zakat is Farz on the income of properties if it is equal to the value of Nisaab. </div>
+<div id="tv_124" class="t s1_124">8.</div>
+<div id="tw_124" class="t s1_124">Zakat is Farz on the income derived from a hiring business, such as crockery, motor cars, vans, trucks etc. </div>
+<div id="tx_124" class="t s5_124">TYPES OF WEALTH ON WHICH ZAKAAT IS NOT FARZ. </div>
+<div id="ty_124" class="t s1_124">1.</div>
+<div id="tz_124" class="t s1_124">Zakat is not Wajib on any other metal besides gold and silver. </div>
+<div id="t10_124" class="t s1_124">2.</div>
+<div id="t11_124" class="t s1_124">Zakat is not Wajib on fixtures and fittings of a shop, motor car, truck or any delivery vehicle etc., which is </div>
+<div id="t12_124" class="t s1_124">used in running a business. </div>
+<div id="t13_124" class="t s1_124">3.</div>
+<div id="t14_124" class="t s1_124">There is no Zakat on diamonds, pearls, and other precious or semi-precious stones which are personal use. </div>
+<div id="t15_124" class="t s1_124">Zakat is payable on the gold or silver used in making jewelry with diamonds, pearls etc. There is no Zakat </div>
+<div id="t16_124" class="t s1_124">on imitation jewelry. </div>
+<div id="t17_124" class="t s1_124">4.</div>
+<div id="t18_124" class="t s1_124">There is no Zakat on any number of living quarters, house-hold furniture, crockery, personal clothing, </div>
+<div id="t19_124" class="t s1_124">whether they are in use or not. However, Islam does not justify extravagance. </div>
+<div id="t1a_124" class="t s1_124">5.</div>
+<div id="t1b_124" class="t s1_124">There is no Zakat on a person whose liabilities exceed or equal his assets. </div>
+<div id="t1c_124" class="t s1_124">6.</div>
+<div id="t1d_124" class="t s1_124">A person has $300-00, but owes $ 200-00. Zakat is due on the remaining $100-00. </div>
+<div id="t1e_124" class="t s5_124">ANIMALS ON WHICH ZAKAAT IS FARZ. </div>
+<div id="t1f_124" class="t s1_124">1.</div>
+<div id="t1g_124" class="t s1_124">It is compulsory to give Zakat on camels, cattle, water buffaloes, goats and sheep. (any such Halaal animal </div>
+<div id="t1h_124" class="t s1_124">that can be slaughtered for Qurbani in terms of Shariat) when they: </div>
+<div id="t1i_124" class="t s1_124">a.</div>
+<div id="t1j_124" class="t s1_124">graze on the open veldt of the greater part of the year and are not stall fed; </div>
+<div id="t1k_124" class="t s1_124">b.</div>
+<div id="t1l_124" class="t s1_124">are kept for milk, breeding or fattening. Such animals are termed 'Saa'imah'. </div>
+<div id="t1m_124" class="t s1_124">2.</div>
+<div id="t1n_124" class="t s1_124">Zakat on Saa'imah animals is calculated on number and not value therefore stud or thoroughbred animals </div>
+<div id="t1o_124" class="t s1_124">and crossbred animals are treated alike for Zakat purposes. </div>
+<div id="t1p_124" class="t s1_124">3.</div>
+<div id="t1q_124" class="t s1_124">Where animals are kept for trade, Zakat will be calculated and given as is done in commercial </div>
+<div id="t1r_124" class="t s1_124">establishments. (i.e. on the monetary value of each animal) The Nisaab is the same as that of trading. </div>
+<div id="t1s_124" class="t s1_124">4.</div>
+<div id="t1t_124" class="t s1_124">If one has a mixed flock of goats and sheep and the number of each kind individually makes Zakat </div>
+<div id="t1u_124" class="t s1_124">applicable then the Zakat of each respective group will be given from its own kind. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg124Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg124"><object width="935" height="1210" data="124/124.svg" type="image/svg+xml" id="pdf124" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld124" type="text/javascript">
+
+var isIE = false;
+var f124 = [['t2_124',252],['t4_124',265],['t5_124',533],['t6_124',370],['t8_124',1773],['ta_124',2540],['tb_124',2356],['td_124',2599],['te_124',2624],['tf_124',583],['th_124',2620],['ti_124',2523],['tj_124',2293],['tl_124',2625],['tm_124',2596],['tn_124',2551],['to_124',829],['tq_124',1764],['ts_124',648],['tu_124',1885],['tw_124',2600],['tx_124',1847],['tz_124',1519],['t11_124',2610],['t12_124',663],['t14_124',2607],['t15_124',2603],['t16_124',511],['t18_124',2501],['t19_124',1899],['t1b_124',1805],['t1d_124',2025],['t1e_124',1349],['t1g_124',2616],['t1h_124',1643],['t1j_124',1819],['t1l_124',1861],['t1n_124',2575],['t1o_124',1442],['t1q_124',2302],['t1r_124',2471],['t1t_124',2418],['t1u_124',2038]];
+function load124(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f124);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 67;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_124");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

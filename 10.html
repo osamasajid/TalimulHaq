@@ -1,0 +1,215 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page10</title>
+</head>
+
+<body onload="load10()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_10{left:460px;top:1136px;}
+#t2_10{left:201px;top:102px;}
+#t3_10{left:492px;top:102px;}
+#t4_10{left:136px;top:172px;}
+#t5_10{left:549px;top:173px;}
+#t6_10{left:391px;top:204px;}
+#t7_10{left:252px;top:251px;}
+#t8_10{left:134px;top:337px;}
+#t9_10{left:201px;top:355px;}
+#ta_10{left:560px;top:341px;}
+#tb_10{left:162px;top:454px;}
+#tc_10{left:521px;top:460px;}
+#td_10{left:540px;top:460px;}
+#te_10{left:159px;top:542px;}
+#tf_10{left:327px;top:542px;}
+#tg_10{left:504px;top:544px;}
+#th_10{left:165px;top:624px;}
+#ti_10{left:491px;top:618px;}
+#tj_10{left:418px;top:719px;}
+#tk_10{left:360px;top:758px;}
+#tl_10{left:110px;top:804px;}
+
+.s1_10{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT10;
+	color: rgb(0,0,0);
+}
+
+.s3_10{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT10;
+	color: rgb(0,0,0);
+}
+
+.s2_10{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT10;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT10;
+	src :url("10/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT10;
+	src :url("10/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_10" class="t s1_10">10</div>
+<div id="t2_10" class="t s1_10">4. And Allah is the greatest  </div>
+<div id="t3_10" class="t s1_10">3. There is none worthy of worship besides Allah. </div>
+<div id="t4_10" class="t s1_10">6. except from Allah. The most high - The great.  </div>
+<div id="t5_10" class="t s1_10">5. There is no Power and might  </div>
+<div id="t6_10" class="t s2_10">The Fourth Kalima </div>
+<div id="t7_10" class="t s2_10">KALIMA TAUHEED (Believing in the Unity of Allah.)</div>
+<div id="t8_10" class="t s1_10">1. (There is none worthy of worship </div>
+<div id="t9_10" class="t s1_10">besides Allah.  </div>
+<div id="ta_10" class="t s1_10">2. who is alone </div>
+<div id="tb_10" class="t s1_10">3. (and) He has no partner.  </div>
+<div id="tc_10" class="t s1_10">4. </div>
+<div id="td_10" class="t s1_10">For Him is the Kingdom </div>
+<div id="te_10" class="t s1_10">5. and for Him is all praise.</div>
+<div id="tf_10" class="t s1_10">.  </div>
+<div id="tg_10" class="t s1_10">6. He gives life and causes death. </div>
+<div id="th_10" class="t s1_10">7. In His hand is all good.  </div>
+<div id="ti_10" class="t s1_10">8. And He has power over everything </div>
+<div id="tj_10" class="t s3_10">The Fifth Kalima </div>
+<div id="tk_10" class="t s2_10">KALIMA RADDE - KUFR</div>
+<div id="tl_10" class="t s3_10">(Disproving of Kufr.) </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg10Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg10"><object width="935" height="1210" data="10/10.svg" type="image/svg+xml" id="pdf10" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld10" type="text/javascript">
+
+var isIE = false;
+var f10 = [['t2_10',686],['t3_10',1227],['t4_10',1207],['t5_10',787],['t6_10',611],['t7_10',1723],['t8_10',885],['t9_10',362],['ta_10',371],['tb_10',672],['td_10',601],['te_10',670],['tf_10',30],['tg_10',817],['th_10',650],['ti_10',923],['tj_10',509],['tk_10',856],['tl_10',633]];
+function load10(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f10);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 22;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_10");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page152</title>
+</head>
+
+<body onload="load152()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_152{left:456px;top:1136px;}
+#t2_152{left:126px;top:54px;}
+#t3_152{left:316px;top:73px;}
+#t4_152{left:132px;top:112px;}
+#t5_152{left:277px;top:112px;}
+#t6_152{left:454px;top:112px;}
+#t7_152{left:124px;top:133px;}
+#t8_152{left:595px;top:133px;}
+#t9_152{left:641px;top:133px;}
+#ta_152{left:649px;top:133px;}
+#tb_152{left:701px;top:133px;}
+#tc_152{left:710px;top:131px;}
+#td_152{left:751px;top:131px;}
+#te_152{left:760px;top:133px;}
+#tf_152{left:806px;top:133px;}
+#tg_152{left:277px;top:153px;}
+#th_152{left:331px;top:153px;}
+#ti_152{left:339px;top:153px;}
+#tj_152{left:413px;top:153px;}
+#tk_152{left:421px;top:153px;}
+#tl_152{left:464px;top:153px;}
+#tm_152{left:473px;top:153px;}
+#tn_152{left:526px;top:153px;}
+#to_152{left:534px;top:153px;}
+#tp_152{left:587px;top:153px;}
+#tq_152{left:624px;top:153px;}
+#tr_152{left:110px;top:194px;}
+#ts_152{left:110px;top:215px;}
+#tt_152{left:415px;top:215px;}
+#tu_152{left:609px;top:215px;}
+#tv_152{left:110px;top:236px;}
+#tw_152{left:110px;top:258px;}
+
+.s6_152{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT152;
+	color: rgb(0,0,0);
+}
+
+.s1_152{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT152;
+	color: rgb(0,0,0);
+}
+
+.s5_152{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT152;
+	color: rgb(0,0,255);
+}
+
+.s4_152{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT152;
+	color: rgb(0,0,0);
+}
+
+.s2_152{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(0,0,0);
+	FONT-STYLE: italic;
+}
+
+.s3_152{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT152;
+	color: rgb(0,0,255);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT152;
+	src :url("152/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_152" class="t s1_152">152</div>
+<div id="t2_152" class="t s2_152">Once the Intentions is made to discharge the obligation of Haj. It is Farz to study the Masaaill of Haj </div>
+<div id="t3_152" class="t s2_152">(preferably under the guidance of an Aalim). </div>
+<div id="t4_152" class="t s2_152">You can also refer to </div>
+<div id="t5_152" class="t s3_152">www.islamicbulletin.com</div>
+<div id="t6_152" class="t s4_152">click on enter here and then Hajj to print a one page </div>
+<div id="t7_152" class="t s4_152">double sided guide to atke with you to the Hajj. You have a choice of </div>
+<div id="t8_152" class="t s3_152">Arabic</div>
+<div id="t9_152" class="t s4_152">, </div>
+<div id="ta_152" class="t s3_152">English</div>
+<div id="tb_152" class="t s4_152">, </div>
+<div id="tc_152" class="t s5_152">Farsi </div>
+<div id="td_152" class="t s6_152">, </div>
+<div id="te_152" class="t s3_152">French</div>
+<div id="tf_152" class="t s4_152">, </div>
+<div id="tg_152" class="t s3_152">German</div>
+<div id="th_152" class="t s4_152">, </div>
+<div id="ti_152" class="t s3_152">Indonesian</div>
+<div id="tj_152" class="t s4_152">, </div>
+<div id="tk_152" class="t s3_152">Italian</div>
+<div id="tl_152" class="t s4_152">, </div>
+<div id="tm_152" class="t s3_152">Spanish</div>
+<div id="tn_152" class="t s4_152">, </div>
+<div id="to_152" class="t s3_152">Turkish</div>
+<div id="tp_152" class="t s4_152">, and </div>
+<div id="tq_152" class="t s3_152">Urdu</div>
+<div id="tr_152" class="t s6_152">You can also prints have maps of Makkah, Mina, Arafah, Muzdalifah, and surrounding area to </div>
+<div id="ts_152" class="t s6_152">familiarize yourself. Go to the website at </div>
+<div id="tt_152" class="t s5_152">www.islamicbulletin.com</div>
+<div id="tu_152" class="t s6_152">and click on enter here and </div>
+<div id="tv_152" class="t s6_152">then Hajj. See below map symbols. We have typed also the colour of the symbols, inc ase you </div>
+<div id="tw_152" class="t s6_152">don’t have a colour printer. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg152Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg152"><object width="935" height="1210" data="152/152.svg" type="image/svg+xml" id="pdf152" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld152" type="text/javascript">
+
+var isIE = false;
+var f152 = [['t2_152',2732],['t3_152',1208],['t4_152',564],['t6_152',1395],['t7_152',1867],['tp_152',130],['tr_152',2776],['ts_152',1200],['tu_152',793],['tv_152',2762],['tw_152',801]];
+function load152(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f152);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 33;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_152");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

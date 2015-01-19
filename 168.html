@@ -1,0 +1,213 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page168</title>
+</head>
+
+<body onload="load168()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_168{left:456px;top:1136px;}
+#t2_168{left:324px;top:306px;}
+#t3_168{left:307px;top:320px;}
+#t4_168{left:337px;top:334px;}
+#t5_168{left:372px;top:349px;}
+#t6_168{left:376px;top:363px;}
+#t7_168{left:413px;top:428px;}
+#t8_168{left:351px;top:467px;}
+#t9_168{left:110px;top:522px;}
+#ta_168{left:338px;top:513px;}
+#tb_168{left:110px;top:567px;}
+#tc_168{left:110px;top:588px;}
+#td_168{left:110px;top:609px;}
+#te_168{left:110px;top:631px;}
+
+.s3_168{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT168;
+	color: rgb(0,0,0);
+}
+
+.s2_168{
+	FONT-SIZE: 48px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM168;
+	color: rgb(50,50,50);
+}
+
+.s1_168{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT168;
+	color: rgb(0,0,0);
+}
+
+.s4_168{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM168;
+	color: rgb(0,0,0);
+}
+
+.s5_168{
+	FONT-SIZE: 110px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM168;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM168;
+	src :url("168/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT168;
+	src :url("168/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_168" class="t s1_168">168</div>
+<div id="t2_168" class="t s2_168">Peace be upon you, the people of the land from those </div>
+<div id="t3_168" class="t s2_168">who believe and submit. We are certainly to meet with you. </div>
+<div id="t4_168" class="t s2_168">You are our fore-runners and we are following. </div>
+<div id="t5_168" class="t s2_168">We ask Allah for ourselves and on </div>
+<div id="t6_168" class="t s2_168">your behalf for peace (and ease).</div>
+<div id="t7_168" class="t s3_168">Transliteration </div>
+<div id="t8_168" class="t s4_168">LETTERS REPRESENTING</div>
+<div id="t9_168" class="t s4_168">THE ARABIC ALPHABET</div>
+<div id="ta_168" class="t s5_168">Phonology</div>
+<div id="tb_168" class="t s3_168">The Arabic and English phonological systems vary extensively, not only in the range of sounds </div>
+<div id="tc_168" class="t s3_168">used, but also in the relative importance of vowels and consonants in expressing meaning. While </div>
+<div id="td_168" class="t s3_168">English has 22 vowels and diphthongs to 24 consonants, Arabic has only eight vowels and </div>
+<div id="te_168" class="t s3_168">diphthongs to 32 consonants. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg168Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg168"><object width="935" height="1210" data="168/168.svg" type="image/svg+xml" id="pdf168" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld168" type="text/javascript">
+
+var isIE = false;
+var f168 = [['t2_168',1092],['t3_168',1229],['t4_168',987],['t5_168',713],['t6_168',677],['t8_168',932],['t9_168',882],['tb_168',2799],['tc_168',2842],['td_168',2656],['te_168',856]];
+function load168(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f168);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 15;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_168");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

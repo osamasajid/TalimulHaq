@@ -1,0 +1,217 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page100</title>
+</head>
+
+<body onload="load100()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_100{left:456px;top:1136px;}
+#t2_100{left:110px;top:337px;}
+#t3_100{left:110px;top:682px;}
+#t4_100{left:110px;top:703px;}
+#t5_100{left:110px;top:724px;}
+#t6_100{left:269px;top:761px;}
+#t7_100{left:110px;top:798px;}
+#t8_100{left:110px;top:819px;}
+#t9_100{left:110px;top:840px;}
+#ta_100{left:110px;top:877px;}
+#tb_100{left:110px;top:898px;}
+#tc_100{left:110px;top:920px;}
+#td_100{left:110px;top:941px;}
+#te_100{left:110px;top:962px;}
+#tf_100{left:110px;top:999px;}
+#tg_100{left:138px;top:1036px;}
+#th_100{left:165px;top:1036px;}
+#ti_100{left:165px;top:1054px;}
+#tj_100{left:165px;top:1071px;}
+
+.s1_100{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT100;
+	color: rgb(0,0,0);
+}
+
+.s2_100{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM100;
+	color: rgb(0,0,0);
+}
+
+.s3_100{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT100;
+	color: rgb(0,0,0);
+}
+
+.s4_100{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM100;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM100;
+	src :url("100/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT100;
+	src :url("100/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_100" class="t s1_100">100</div>
+<div id="t2_100" class="t s2_100">Dua for girls </div>
+<div id="t3_100" class="t s3_100">8. The Imam should say the FOURTH Takbeer and thereafter recite the Salaam aloud TWICE, </div>
+<div id="t4_100" class="t s3_100">while turning his face first towards the RIGHT shoulder and then once again while turning his </div>
+<div id="t5_100" class="t s3_100">face towards the left. The Muqtadis should follow by saying the Takbeer and Salaam SOFTLY. </div>
+<div id="t6_100" class="t s4_100">LATE COMERS TO THE JANAAZAH SALAAH</div>
+<div id="t7_100" class="t s3_100">When a LATE COMER FEARS that if he engages himself in WUDHU, he will miss the Janaza </div>
+<div id="t8_100" class="t s3_100">Salaat, then ONLY is it permissible for him to make TAYAMMUM and join the Jamaa’ah. This </div>
+<div id="t9_100" class="t s3_100">rule applies to the Janaza Salaat only. </div>
+<div id="ta_100" class="t s3_100">Whomsoever arrives Or the Janaza Salaat after the Imam has recited ONE or more Takbirs, </div>
+<div id="tb_100" class="t s3_100">should wait and join the Imam when he says the next Takbeer. After the Salaam he should </div>
+<div id="tc_100" class="t s3_100">complete the missed Takbirs by merely saying Allahu Akbar once for every Takbeer missed. No </div>
+<div id="td_100" class="t s3_100">Dua should be read. If the Imam has completed the FOURTH Takbeer then too, the late comer </div>
+<div id="te_100" class="t s3_100">should join and complete all the missed Takbeer, (before the Imam says the Salaam). </div>
+<div id="tf_100" class="t s4_100">THE SHAR'EE METHOD OF DAFN (BURIAL)</div>
+<div id="tg_100" class="t s1_100">1.</div>
+<div id="th_100" class="t s1_100">After the Janaza Salaat is performed the Mayyit should be buried as soon as possible. The Janaza should be </div>
+<div id="ti_100" class="t s1_100">carried and placed at the Qibla side of the grave. The head should be on the RIGHT SIDE of the grave if </div>
+<div id="tj_100" class="t s1_100">one faces the QIBLAH. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg100Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg100"><object width="935" height="1210" data="100/100.svg" type="image/svg+xml" id="pdf100" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld100" type="text/javascript">
+
+var isIE = false;
+var f100 = [['t2_100',333],['t3_100',2782],['t4_100',2767],['t5_100',2808],['t6_100',1583],['t7_100',2815],['t8_100',2834],['t9_100',1104],['ta_100',2687],['tb_100',2651],['tc_100',2834],['td_100',2779],['te_100',2496],['tf_100',1540],['th_100',2634],['ti_100',2566],['tj_100',582]];
+function load100(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f100);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 20;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_100");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

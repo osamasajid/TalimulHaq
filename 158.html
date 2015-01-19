@@ -1,0 +1,417 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page158</title>
+</head>
+
+<body onload="load158()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_158{left:456px;top:1136px;}
+#t2_158{left:137px;top:55px;}
+#t3_158{left:165px;top:55px;}
+#t4_158{left:165px;top:73px;}
+#t5_158{left:110px;top:106px;}
+#t6_158{left:110px;top:143px;}
+#t7_158{left:138px;top:180px;}
+#t8_158{left:165px;top:180px;}
+#t9_158{left:165px;top:198px;}
+#ta_158{left:138px;top:232px;}
+#tb_158{left:165px;top:232px;}
+#tc_158{left:138px;top:266px;}
+#td_158{left:165px;top:266px;}
+#te_158{left:165px;top:284px;}
+#tf_158{left:165px;top:302px;}
+#tg_158{left:136px;top:326px;}
+#th_158{left:146px;top:322px;}
+#ti_158{left:146px;top:326px;}
+#tj_158{left:158px;top:330px;}
+#tk_158{left:158px;top:326px;}
+#tl_158{left:186px;top:331px;}
+#tm_158{left:182px;top:326px;}
+#tn_158{left:211px;top:318px;}
+#to_158{left:212px;top:326px;}
+#tp_158{left:229px;top:322px;}
+#tq_158{left:230px;top:326px;}
+#tr_158{left:243px;top:329px;}
+#ts_158{left:241px;top:326px;}
+#tt_158{left:273px;top:329px;}
+#tu_158{left:267px;top:326px;}
+#tv_158{left:301px;top:330px;}
+#tw_158{left:300px;top:326px;}
+#tx_158{left:319px;top:329px;}
+#ty_158{left:315px;top:326px;}
+#tz_158{left:338px;top:330px;}
+#t10_158{left:334px;top:326px;}
+#t11_158{left:399px;top:326px;}
+#t12_158{left:424px;top:330px;}
+#t13_158{left:424px;top:326px;}
+#t14_158{left:452px;top:331px;}
+#t15_158{left:448px;top:326px;}
+#t16_158{left:477px;top:318px;}
+#t17_158{left:478px;top:326px;}
+#t18_158{left:495px;top:322px;}
+#t19_158{left:495px;top:326px;}
+#t1a_158{left:509px;top:329px;}
+#t1b_158{left:507px;top:326px;}
+#t1c_158{left:538px;top:329px;}
+#t1d_158{left:533px;top:326px;}
+#t1e_158{left:566px;top:326px;}
+#t1f_158{left:576px;top:329px;}
+#t1g_158{left:576px;top:326px;}
+#t1h_158{left:589px;top:321px;}
+#t1i_158{left:588px;top:326px;}
+#t1j_158{left:644px;top:326px;}
+#t1k_158{left:669px;top:330px;}
+#t1l_158{left:669px;top:326px;}
+#t1m_158{left:693px;top:326px;}
+#t1n_158{left:702px;top:322px;}
+#t1o_158{left:703px;top:326px;}
+#t1p_158{left:714px;top:330px;}
+#t1q_158{left:714px;top:326px;}
+#t1r_158{left:747px;top:326px;}
+#t1s_158{left:756px;top:322px;}
+#t1t_158{left:757px;top:326px;}
+#t1u_158{left:767px;top:329px;}
+#t1v_158{left:768px;top:326px;}
+#t1w_158{left:784px;top:329px;}
+#t1x_158{left:780px;top:326px;}
+#t1y_158{left:395px;top:375px;}
+#t1z_158{left:422px;top:371px;}
+#t20_158{left:423px;top:375px;}
+#t21_158{left:471px;top:378px;}
+#t22_158{left:465px;top:375px;}
+#t23_158{left:504px;top:367px;}
+#t24_158{left:502px;top:375px;}
+#t25_158{left:139px;top:426px;}
+#t26_158{left:404px;top:451px;}
+#t27_158{left:112px;top:476px;}
+#t28_158{left:434px;top:492px;}
+#t29_158{left:110px;top:516px;}
+#t2a_158{left:110px;top:535px;}
+#t2b_158{left:239px;top:562px;}
+#t2c_158{left:110px;top:591px;}
+#t2d_158{left:110px;top:612px;}
+#t2e_158{left:110px;top:634px;}
+#t2f_158{left:138px;top:672px;}
+#t2g_158{left:165px;top:672px;}
+#t2h_158{left:165px;top:689px;}
+#t2i_158{left:165px;top:707px;}
+#t2j_158{left:165px;top:725px;}
+#t2k_158{left:138px;top:759px;}
+#t2l_158{left:165px;top:759px;}
+#t2m_158{left:138px;top:793px;}
+#t2n_158{left:165px;top:793px;}
+#t2o_158{left:225px;top:819px;}
+#t2p_158{left:110px;top:848px;}
+#t2q_158{left:110px;top:869px;}
+#t2r_158{left:110px;top:890px;}
+#t2s_158{left:110px;top:912px;}
+#t2t_158{left:110px;top:948px;}
+#t2u_158{left:110px;top:970px;}
+
+.s1_158{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT158;
+	color: rgb(0,0,0);
+}
+
+.s3_158{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM158;
+	color: rgb(0,0,0);
+}
+
+.s8_158{
+	FONT-SIZE: 67px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT158;
+	color: rgb(0,0,0);
+}
+
+.s5_158{
+	FONT-SIZE: 171px;
+	FONT-FAMILY: NJAOCG-TimesNewRomanPS-BoldM158;
+	color: rgb(0,0,0);
+}
+
+.s2_158{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT158;
+	color: rgb(0,0,0);
+}
+
+.s4_158{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT158;
+	color: rgb(0,0,0);
+}
+
+.s6_158{
+	FONT-SIZE: 85px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT158;
+	color: rgb(0,0,0);
+}
+
+.s7_158{
+	FONT-SIZE: 55px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM158;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCG-TimesNewRomanPS-BoldM158;
+	src :url("158/fonts/NJAOCG-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM158;
+	src :url("158/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT158;
+	src :url("158/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT158;
+	src :url("158/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_158" class="t s1_158">158</div>
+<div id="t2_158" class="t s2_158">•</div>
+<div id="t3_158" class="t s1_158">It is Sunnet to make Istilaam of the Hajare Aswad In all seven circuit, Istilaam is Sunnat Mu'akkadah </div>
+<div id="t4_158" class="t s1_158">(emphasised Sunnah). </div>
+<div id="t5_158" class="t s3_158">8. RAMAL:</div>
+<div id="t6_158" class="t s4_158">In the first three circuits of Tawaal it is Sunnat to make Ramal (for men only). </div>
+<div id="t7_158" class="t s2_158">•</div>
+<div id="t8_158" class="t s1_158">Ramal means to walk hastily, take shorter steps, lifting the legs forcefully, keeping the chest out and </div>
+<div id="t9_158" class="t s1_158">moving the shoulders simultaneously. </div>
+<div id="ta_158" class="t s2_158">•</div>
+<div id="tb_158" class="t s1_158">One should walk normally in the four remaining circuits. </div>
+<div id="tc_158" class="t s2_158">•</div>
+<div id="td_158" class="t s1_158">Commence the Tawaaf by moving towards the door of the Ka'ba (counter-clockwise). Move around the </div>
+<div id="te_158" class="t s1_158">Ka'ba and the Hateem. It is Mustahab to place the right palm or both the palm or both the palms on the </div>
+<div id="tf_158" class="t s1_158">Rukne Yamaanee during every round. </div>
+<div id="tg_158" class="t s5_158"><bdo dir='ltr'>ا</bdo></div>
+<div id="th_158" class="t s5_158"><bdo dir='ltr'>َ</bdo></div>
+<div id="ti_158" class="t s5_158"><bdo dir='ltr'>ن</bdo></div>
+<div id="tj_158" class="t s5_158"><bdo dir='ltr'>ِ</bdo></div>
+<div id="tk_158" class="t s5_158"><bdo dir='ltr'>ق</bdo></div>
+<div id="tl_158" class="t s5_158"><bdo dir='ltr'>َ</bdo></div>
+<div id="tm_158" class="t s5_158"><bdo dir='ltr'>و</bdo></div>
+<div id="tn_158" class="t s5_158"><bdo dir='ltr'>ً</bdo></div>
+<div id="to_158" class="t s5_158"><bdo dir='ltr'>ة</bdo></div>
+<div id="tp_158" class="t s5_158"><bdo dir='ltr'>َ</bdo></div>
+<div id="tq_158" class="t s5_158"><bdo dir='ltr'>ن</bdo></div>
+<div id="tr_158" class="t s5_158"><bdo dir='ltr'>َ</bdo></div>
+<div id="ts_158" class="t s5_158"><bdo dir='ltr'>س</bdo></div>
+<div id="tt_158" class="t s5_158"><bdo dir='ltr'>َ</bdo></div>
+<div id="tu_158" class="t s5_158"><bdo dir='ltr'>ح</bdo></div>
+<div id="tv_158" class="t s5_158"><bdo dir='ltr'>ِ</bdo></div>
+<div id="tw_158" class="t s5_158">±</div>
+<div id="tx_158" class="t s5_158"><bdo dir='ltr'>َ</bdo></div>
+<div id="ty_158" class="t s5_158"><bdo dir='ltr'>ر</bdo></div>
+<div id="tz_158" class="t s5_158"><bdo dir='ltr'>ِ</bdo></div>
+<div id="t10_158" class="t s5_158"><bdo dir='ltr'>خل²</bdo></div>
+<div id="t11_158" class="t s5_158"><bdo dir='ltr'>ي</bdo></div>
+<div id="t12_158" class="t s5_158"><bdo dir='ltr'>ِ</bdo></div>
+<div id="t13_158" class="t s5_158"><bdo dir='ltr'>ف</bdo></div>
+<div id="t14_158" class="t s5_158"><bdo dir='ltr'>َ</bdo></div>
+<div id="t15_158" class="t s5_158"><bdo dir='ltr'>و</bdo></div>
+<div id="t16_158" class="t s5_158"><bdo dir='ltr'>ً</bdo></div>
+<div id="t17_158" class="t s5_158"><bdo dir='ltr'>ة</bdo></div>
+<div id="t18_158" class="t s5_158"><bdo dir='ltr'>َ</bdo></div>
+<div id="t19_158" class="t s5_158"><bdo dir='ltr'>ن</bdo></div>
+<div id="t1a_158" class="t s5_158"><bdo dir='ltr'>َ</bdo></div>
+<div id="t1b_158" class="t s5_158"><bdo dir='ltr'>س</bdo></div>
+<div id="t1c_158" class="t s5_158"><bdo dir='ltr'>َ</bdo></div>
+<div id="t1d_158" class="t s5_158"><bdo dir='ltr'>ح</bdo></div>
+<div id="t1e_158" class="t s5_158"><bdo dir='ltr'>ا</bdo></div>
+<div id="t1f_158" class="t s5_158"><bdo dir='ltr'>َ</bdo></div>
+<div id="t1g_158" class="t s5_158">³</div>
+<div id="t1h_158" class="t s5_158"><bdo dir='ltr'>ْ</bdo></div>
+<div id="t1i_158" class="t s5_158"><bdo dir='ltr'>´ﱡدµ²</bdo></div>
+<div id="t1j_158" class="t s5_158"><bdo dir='ltr'>ي</bdo></div>
+<div id="t1k_158" class="t s5_158"><bdo dir='ltr'>ِ</bdo></div>
+<div id="t1l_158" class="t s5_158"><bdo dir='ltr'>ف</bdo></div>
+<div id="t1m_158" class="t s5_158"><bdo dir='ltr'>ا</bdo></div>
+<div id="t1n_158" class="t s5_158"><bdo dir='ltr'>َ</bdo></div>
+<div id="t1o_158" class="t s5_158"><bdo dir='ltr'>ن</bdo></div>
+<div id="t1p_158" class="t s5_158"><bdo dir='ltr'>ِ</bdo></div>
+<div id="t1q_158" class="t s5_158"><bdo dir='ltr'>تآ</bdo></div>
+<div id="t1r_158" class="t s5_158"><bdo dir='ltr'>ا</bdo></div>
+<div id="t1s_158" class="t s5_158"><bdo dir='ltr'>َ</bdo></div>
+<div id="t1t_158" class="t s5_158"><bdo dir='ltr'>ن</bdo></div>
+<div id="t1u_158" class="t s5_158"><bdo dir='ltr'>ﱠ</bdo></div>
+<div id="t1v_158" class="t s5_158"><bdo dir='ltr'>ب</bdo></div>
+<div id="t1w_158" class="t s5_158"><bdo dir='ltr'>َ</bdo></div>
+<div id="t1x_158" class="t s5_158">¶</div>
+<div id="t1y_158" class="t s5_158"><bdo dir='ltr'>¶ا</bdo></div>
+<div id="t1z_158" class="t s5_158"><bdo dir='ltr'>ﱠ</bdo></div>
+<div id="t20_158" class="t s5_158"><bdo dir='ltr'>نµ²</bdo></div>
+<div id="t21_158" class="t s5_158"><bdo dir='ltr'>َ</bdo></div>
+<div id="t22_158" class="t s5_158">·²</div>
+<div id="t23_158" class="t s5_158"><bdo dir='ltr'>َ</bdo></div>
+<div id="t24_158" class="t s5_158"><bdo dir='ltr'>ذَع</bdo></div>
+<div id="t25_158" class="t s6_158">Rabbanaa aatinaa fid-dunyaa hasanatan wa feel aakhirati hasanatan wa qinaa </div>
+<div id="t26_158" class="t s6_158">'adhaaban naar </div>
+<div id="t27_158" class="t s7_158">Our Lord! Give us in this world that which is good and in the Hereafter that which is good, and save us from the torment </div>
+<div id="t28_158" class="t s7_158">of the Fire! </div>
+<div id="t29_158" class="t s8_158">Besides these, any other Du'aa could be recited. Making Zikr and reciting the Holy Qur'aan are also </div>
+<div id="t2a_158" class="t s8_158">permissible. (Women should not raise their voices whilst making Du'aa.) </div>
+<div id="t2b_158" class="t s4_158">9 TWO RAK'AATS WAAJIB SALAAH AFTER TAWAAF : </div>
+<div id="t2c_158" class="t s4_158">After completing the Tawaaf, perform two Rak'aats Waajib Salaah, behind Maqaarne Ihrahim. If </div>
+<div id="t2d_158" class="t s4_158">this is difficult, one may perform it at any other place ( in the Musjide Haraam), preferably close </div>
+<div id="t2e_158" class="t s4_158">to the Ka'ba </div>
+<div id="t2f_158" class="t s2_158">•</div>
+<div id="t2g_158" class="t s1_158">These two Rak'aats should not he performed during the forbidden and Makrooh times, (i.e. at sunrise, </div>
+<div id="t2h_158" class="t s1_158">Zawaal, sunset or after Asr Salaah). For a Tawaaf performed after Asr, the two Waajib Rak'aats will be </div>
+<div id="t2i_158" class="t s1_158">performed immediately after the three Farz of the Maghrib Salaah, and not after the Sunnah of the Maghrib </div>
+<div id="t2j_158" class="t s1_158">Salaah. </div>
+<div id="t2k_158" class="t s2_158">•</div>
+<div id="t2l_158" class="t s1_158">It is Mustahab to recite Surah Kaufiroon in the first Rak'ah and Surah Ikhlaas in the second Rak'ah. </div>
+<div id="t2m_158" class="t s2_158">•</div>
+<div id="t2n_158" class="t s1_158">Rememher: The two Rak'aats Waajib have to be performed for every complete Tawaaf, (i.e seven circuits). </div>
+<div id="t2o_158" class="t s4_158">10. PROCEED TO THE MULTAZAM AND ZAM ZAM WELL: </div>
+<div id="t2p_158" class="t s4_158">One should now proceed to the Multazam, (the area between the elevated door (of the Ka'ba) and </div>
+<div id="t2q_158" class="t s4_158">the Hajare Aswad). Embrace this place by stretching both the hands above the head and clinging </div>
+<div id="t2r_158" class="t s4_158">to the wall of the Ka'ba. One should make abundant Du'a as this is also a place for acceptance of </div>
+<div id="t2s_158" class="t s4_158">Du'as. Shed as many tears as possible and make Du'a most humbly and sincerely. </div>
+<div id="t2t_158" class="t s4_158">It should be remembered that, in the process, one should avoid disturbing, hurting or pushing </div>
+<div id="t2u_158" class="t s4_158">anyone. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg158Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg158"><object width="935" height="1210" data="158/158.svg" type="image/svg+xml" id="pdf158" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld158" type="text/javascript">
+
+var isIE = false;
+var f158 = [['t3_158',2478],['t4_158',541],['t5_158',374],['t6_158',2295],['t8_158',2459],['t9_158',928],['tb_158',1397],['td_158',2542],['te_158',2515],['tf_158',935],['t25_158',2625],['t26_158',505],['t27_158',2844],['t28_158',263],['t29_158',2679],['t2a_158',1957],['t2b_158',1827],['t2c_158',2841],['t2d_158',2835],['t2e_158',351],['t2g_158',2493],['t2h_158',2532],['t2i_158',2631],['t2l_158',2434],['t2n_158',2627],['t2o_158',1942],['t2p_158',2856],['t2q_158',2833],['t2r_158',2830],['t2s_158',2386],['t2t_158',2734]];
+function load158(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f158);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 103;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_158");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

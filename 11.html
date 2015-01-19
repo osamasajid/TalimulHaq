@@ -1,0 +1,227 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page11</title>
+</head>
+
+<body onload="load11()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_11{left:460px;top:1136px;}
+#t2_11{left:110px;top:54px;}
+#t3_11{left:110px;top:85px;}
+#t4_11{left:110px;top:117px;}
+#t5_11{left:110px;top:148px;}
+#t6_11{left:110px;top:179px;}
+#t7_11{left:432px;top:218px;}
+#t8_11{left:110px;top:257px;}
+#t9_11{left:110px;top:289px;}
+#ta_11{left:110px;top:320px;}
+#tb_11{left:110px;top:351px;}
+#tc_11{left:119px;top:398px;}
+#td_11{left:229px;top:608px;}
+#te_11{left:505px;top:619px;}
+#tf_11{left:147px;top:699px;}
+#tg_11{left:453px;top:695px;}
+#th_11{left:110px;top:739px;}
+#ti_11{left:138px;top:778px;}
+#tj_11{left:152px;top:865px;}
+#tk_11{left:388px;top:857px;}
+#tl_11{left:657px;top:862px;}
+#tm_11{left:157px;top:974px;}
+#tn_11{left:352px;top:965px;}
+#to_11{left:561px;top:986px;}
+#tp_11{left:678px;top:1004px;}
+#tq_11{left:351px;top:1074px;}
+#tr_11{left:378px;top:1074px;}
+
+.s1_11{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT11;
+	color: rgb(0,0,0);
+}
+
+.s2_11{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT11;
+	color: rgb(0,0,0);
+}
+
+.s3_11{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT11;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT11;
+	src :url("11/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT11;
+	src :url("11/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_11" class="t s1_11">11</div>
+<div id="t2_11" class="t s2_11">(O Allah ! I seek protection in You from that I should join any partner with You knowingly. I </div>
+<div id="t3_11" class="t s2_11">seek Your forgiveness from that which do not know. I repent from it (ignorance.) I free myself </div>
+<div id="t4_11" class="t s2_11">from disbelief and joining partners with You and from all sins. I submit to Your will I believe </div>
+<div id="t5_11" class="t s2_11">and I declare : There is none worthy of worship besides Allah and Muhammad (Sallallaahu-</div>
+<div id="t6_11" class="t s2_11">Alaihi-Wa-Sallam) is Allah's Messenger. </div>
+<div id="t7_11" class="t s2_11">Iman (Belief) </div>
+<div id="t8_11" class="t s2_11">Question: What is Iman? </div>
+<div id="t9_11" class="t s2_11">Answer: Iman (Belief) is to have FAITH in something and to proclaim it. To a Muslim Iman </div>
+<div id="ta_11" class="t s2_11">(Belief) means firm belief in Allah and the teachings of our Nabi Hazrat MUHAMMAD </div>
+<div id="tb_11" class="t s2_11">MUSTAFA (Sallallaahu-Alaihi-Wa-Sallam). </div>
+<div id="tc_11" class="t s3_11">Iman (Belief) Mujmal</div>
+<div id="td_11" class="t s1_11">2. as He is  </div>
+<div id="te_11" class="t s1_11">1. (I believe in Allah  </div>
+<div id="tf_11" class="t s1_11">4. and I have accepted all His orders.  </div>
+<div id="tg_11" class="t s1_11">3. with his many names and qualities)  </div>
+<div id="th_11" class="t s2_11">A MUSLIM HAS TO PROCLAIM FAITH IN SEVEN THINGS, THESE ARE : </div>
+<div id="ti_11" class="t s2_11">Iman (Belief) Mufassal </div>
+<div id="tj_11" class="t s1_11">1. I believe in Allah,  </div>
+<div id="tk_11" class="t s1_11">2. His Angles, </div>
+<div id="tl_11" class="t s1_11">3. His Books </div>
+<div id="tm_11" class="t s1_11">4. His Messengers,  </div>
+<div id="tn_11" class="t s1_11">5. in the Day of Judgment </div>
+<div id="to_11" class="t s1_11">6.and that fate, it’s good and bad is given by </div>
+<div id="tp_11" class="t s1_11">Allah. </div>
+<div id="tq_11" class="t s1_11">7.</div>
+<div id="tr_11" class="t s1_11">and that life after death. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg11Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg11"><object width="935" height="1210" data="11/11.svg" type="image/svg+xml" id="pdf11" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld11" type="text/javascript">
+
+var isIE = false;
+var f11 = [['t2_11',2746],['t3_11',2779],['t4_11',2751],['t5_11',2703],['t6_11',1207],['t7_11',397],['t8_11',731],['t9_11',2719],['ta_11',2597],['tb_11',1324],['tc_11',685],['td_11',270],['te_11',524],['tf_11',923],['tg_11',941],['th_11',2380],['ti_11',684],['tj_11',519],['tk_11',351],['tl_11',318],['tm_11',482],['tn_11',636],['to_11',1089],['tr_11',584]];
+function load11(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f11);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 28;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_11");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

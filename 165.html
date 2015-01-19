@@ -1,0 +1,317 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page165</title>
+</head>
+
+<body onload="load165()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_165{left:456px;top:1136px;}
+#t2_165{left:384px;top:134px;}
+#t3_165{left:743px;top:149px;}
+#t4_165{left:128px;top:161px;}
+#t5_165{left:743px;top:176px;}
+#t6_165{left:128px;top:188px;}
+#t7_165{left:128px;top:203px;}
+#t8_165{left:128px;top:217px;}
+#t9_165{left:128px;top:231px;}
+#ta_165{left:128px;top:260px;}
+#tb_165{left:128px;top:289px;}
+#tc_165{left:128px;top:303px;}
+#td_165{left:128px;top:318px;}
+#te_165{left:304px;top:332px;}
+#tf_165{left:128px;top:363px;}
+#tg_165{left:128px;top:377px;}
+#th_165{left:128px;top:406px;}
+#ti_165{left:128px;top:420px;}
+#tj_165{left:128px;top:435px;}
+#tk_165{left:128px;top:449px;}
+#tl_165{left:128px;top:463px;}
+#tm_165{left:439px;top:479px;}
+#tn_165{left:128px;top:509px;}
+#to_165{left:128px;top:538px;}
+#tp_165{left:128px;top:552px;}
+#tq_165{left:128px;top:567px;}
+#tr_165{left:128px;top:596px;}
+#ts_165{left:128px;top:638px;}
+#tt_165{left:138px;top:638px;}
+#tu_165{left:128px;top:653px;}
+#tv_165{left:128px;top:667px;}
+#tw_165{left:128px;top:682px;}
+#tx_165{left:128px;top:696px;}
+#ty_165{left:128px;top:710px;}
+#tz_165{left:128px;top:739px;}
+#t10_165{left:128px;top:768px;}
+#t11_165{left:132px;top:768px;}
+#t12_165{left:128px;top:782px;}
+#t13_165{left:128px;top:797px;}
+#t14_165{left:251px;top:797px;}
+#t15_165{left:128px;top:811px;}
+#t16_165{left:128px;top:826px;}
+#t17_165{left:738px;top:840px;}
+#t18_165{left:128px;top:853px;}
+#t19_165{left:128px;top:881px;}
+#t1a_165{left:128px;top:896px;}
+#t1b_165{left:128px;top:910px;}
+#t1c_165{left:128px;top:925px;}
+#t1d_165{left:128px;top:939px;}
+#t1e_165{left:128px;top:953px;}
+#t1f_165{left:128px;top:968px;}
+#t1g_165{left:128px;top:982px;}
+#t1h_165{left:128px;top:997px;}
+#t1i_165{left:128px;top:1011px;}
+#t1j_165{left:692px;top:1026px;}
+#t1k_165{left:128px;top:1038px;}
+#t1l_165{left:128px;top:1067px;}
+#t1m_165{left:128px;top:1081px;}
+#t1n_165{left:719px;top:1096px;}
+#t1o_165{left:128px;top:1108px;}
+
+.s6_165{
+	FONT-SIZE: 55px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM165;
+	color: rgb(0,85,0);
+}
+
+.s2_165{
+	FONT-SIZE: 48px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM165;
+	color: rgb(50,50,50);
+}
+
+.s1_165{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT165;
+	color: rgb(0,0,0);
+}
+
+.s5_165{
+	FONT-SIZE: 48px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM165;
+	color: rgb(0,85,0);
+}
+
+.s4_165{
+	FONT-SIZE: 48px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT165;
+	color: rgb(0,0,0);
+}
+
+.s3_165{
+	FONT-SIZE: 42px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM165;
+	color: rgb(50,50,50);
+}
+
+.s7_165{
+	FONT-SIZE: 48px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT165;
+	color: rgb(50,50,50);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM165;
+	src :url("165/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT165;
+	src :url("165/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_165" class="t s1_165">165</div>
+<div id="t2_165" class="t s2_165">Peace be upon you, O `Umar.</div>
+<div id="t3_165" class="t s3_165">al-Bayhaqi</div>
+<div id="t4_165" class="t s2_165">Thereafter make du`a’ for them both. </div>
+<div id="t5_165" class="t s3_165">al-Bayhaqi</div>
+<div id="t6_165" class="t s4_165">Then face the Qiblah and make du’a silently for oneself, and all one’s loved ones, as well as the entire ummah of the Prophet </div>
+<div id="t7_165" class="t s4_165">(P.B.U.H.) in general. Ask for all those permitted things which Allah alone can grant/fulfil. </div>
+<div id="t8_165" class="t s4_165">It is worth noting that at peak times the guards will only allow people entrance from Bab as-Sallam so that the crowd flows in one </div>
+<div id="t9_165" class="t s4_165">direction briefly pausing for Sallam and then continuing out from Bab Baqi. </div>
+<div id="ta_165" class="t s5_165">MIHRAB OF NABI (P.B.U.H.) </div>
+<div id="tb_165" class="t s4_165">This is identified by an Arabic inscription on the wall that says that this was the place where the Prophet (P.B.U.H.) would offer Salah. </div>
+<div id="tc_165" class="t s4_165">To stop people walking over this place, Abu Bakr built a wall to cover it only leaving that part uncovered where the feet of the Nabi </div>
+<div id="td_165" class="t s4_165">(P.B.U.H.) were placed at the time of Salah. </div>
+<div id="te_165" class="t s6_165">MIMBAR (PULPIT) OF THE PROPHET (P.B.U.H.) </div>
+<div id="tf_165" class="t s4_165">It is on the same place as the current Mimbar where the Jumu`ah and Eid Khutbats (sermons) are performed. </div>
+<div id="tg_165" class="t s5_165">SUFFAH </div>
+<div id="th_165" class="t s4_165">The Suffah (platform/area or the area in the shade of a building) is an area where many of the Sahabah were taught by the Prophet </div>
+<div id="ti_165" class="t s4_165">(P.B.U.H.). Many people assume that the raised platform near Bab Jibril is the Suffah. According to researchers, this could not have </div>
+<div id="tj_165" class="t s4_165">been possible, as their research points to the Suffah being in line with the Masjid. The raised platform is not at such a position. These </div>
+<div id="tk_165" class="t s4_165">researchers claim that the raised area was in actual fact placed there by the Turks as a place where guards would gather and keep watch. </div>
+<div id="tl_165" class="t s4_165">Allah alone knows best. </div>
+<div id="tm_165" class="t s5_165">The Pillars </div>
+<div id="tn_165" class="t s5_165">ASATIN (singular USTUWANAH) – PILLARS </div>
+<div id="to_165" class="t s4_165">There are eight pillars in the Rawdah which have significance. Each pillar is marked on top individually. They are however not to be </div>
+<div id="tp_165" class="t s4_165">kissed, hugged or revered, but rather near them one may offer Salah and make du`a’ to Allah. Most of these are pointed out by scholars </div>
+<div id="tq_165" class="t s4_165">. </div>
+<div id="tr_165" class="t s5_165">Ustuwanah Hannanah (The weeping pillar) </div>
+<div id="ts_165" class="t s7_165">It </div>
+<div id="tt_165" class="t s4_165">was on this spot that once a palm tree used to grow. Prior to the building of the Mimbar, Rasulullah (P.B.U.H.) used to lean on it </div>
+<div id="tu_165" class="t s4_165">while delivering the khutbah. When the mimbar was made, Rasulullah (P.B.U.H.) used that instead during the khutbah. It so happened </div>
+<div id="tv_165" class="t s4_165">when the change took place, such a piercing sound of weeping came from the tree, that those in the Masjid also started weeping. </div>
+<div id="tw_165" class="t s4_165">Rasulullah went to the tree and by placing his hand on it, its crying stopped. Rasulullah then said: “The tree cries because the Dhikr of </div>
+<div id="tx_165" class="t s4_165">Allah I was near it, and now that the Mimbar is built, it has been deprived of this Dhikr in its immediate vicinity. If I did not place my </div>
+<div id="ty_165" class="t s4_165">hand on it, it would have continued to cry till the Day of Qiyamah.” This pillar is adjacent to what was Rasulullah’s place of Salah. </div>
+<div id="tz_165" class="t s5_165">Ustuwanah `A’ishah / Qur`ah </div>
+<div id="t10_165" class="t s7_165">`</div>
+<div id="t11_165" class="t s4_165">A’ishah ((P.B.U.H.).A.) reports that Rasulullah (P.B.U.H.) said: “In this Masjid is one such spot that if people knew the true blessed </div>
+<div id="t12_165" class="t s4_165">nature thereof, they would flock towards it in such a manner, that to pray there they would have to cast lots to get a turn (Arabic for </div>
+<div id="t13_165" class="t s4_165">casting lots is Qur`ah).” </div>
+<div id="t14_165" class="t s4_165">People asked her to point out the exact spot. When she did not answer they sent her nephew `Abdullah ibn </div>
+<div id="t15_165" class="t s4_165">Zubayr. They watched him as he performed Salah at the same spot. They also watched his son `Amir also perform Salah at that spot. It </div>
+<div id="t16_165" class="t s4_165">was on this that they marked this spot as being the one `A’ishah ((P.B.U.H.).A.) had mentioned. </div>
+<div id="t17_165" class="t s3_165">at-Tabarani</div>
+<div id="t18_165" class="t s5_165">Ustuwanah Tawbah / Abu Lubabah </div>
+<div id="t19_165" class="t s4_165">Abu Lubabah t was more furious with the Banu Quray~ah than others, when they went against their pledge with the Muslims, as he had </div>
+<div id="t1a_165" class="t s4_165">trusted them the most. When they were defeated and taken captive he told them that they were to be killed by making a sign across his </div>
+<div id="t1b_165" class="t s4_165">throat. After having done that, he became so grieved at this premature indiscretion that he could not rest. He thereupon came to the </div>
+<div id="t1c_165" class="t s4_165">Masjid and at this spot where a date-tree used to stand, he bound himself to the trunk saying: “As long as my repentance is not accepted </div>
+<div id="t1d_165" class="t s4_165">by Allah, I shall not untie myself from here. And Rasulullah himself must undo my bonds.” When Rasulullah heard this he said: “If he </div>
+<div id="t1e_165" class="t s4_165">had come to me I could have begged forgiveness on his behalf. Now he had acted on his own initiative, I cannot untie him until his </div>
+<div id="t1f_165" class="t s4_165">repentance has been accepted.” For many days he remained tied there. His wife and daughter used to untie him for Salah or for when he </div>
+<div id="t1g_165" class="t s4_165">had to answer the call of nature, and thereafter tie him up again. He remained without food and drink for so long as a result of which his </div>
+<div id="t1h_165" class="t s4_165">sight and hearing were affected. In this state after many days Rasulullah was in Tahajjud prayer in the house of Umm Sallamah, when </div>
+<div id="t1i_165" class="t s4_165">he received the good news that Abu Lubabah’s repentance had been accepted. </div>
+<div id="t1j_165" class="t s3_165">al-Bayhaqi and others </div>
+<div id="t1k_165" class="t s5_165">Ustuwanah Sarir </div>
+<div id="t1l_165" class="t s4_165">It is reported that Rasulullah used to make I`tikaf here, and also sleep here whilst in I`tikaf. There are also narrations that suggest he </div>
+<div id="t1m_165" class="t s4_165">would lean on Ustuwanah Tawbah whilst in I`tikaf </div>
+<div id="t1n_165" class="t s3_165">Ibn Khuzaymah</div>
+<div id="t1o_165" class="t s5_165">Ustuwanah Hars / `Ali </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg165Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg165"><object width="935" height="1210" data="165/165.svg" type="image/svg+xml" id="pdf165" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld165" type="text/javascript">
+
+var isIE = false;
+var f165 = [['t2_165',609],['t4_165',783],['t6_165',2440],['t7_165',1782],['t8_165',2536],['t9_165',1486],['ta_165',647],['tb_165',2635],['tc_165',2580],['td_165',860],['te_165',1253],['tf_165',2116],['th_165',2539],['ti_165',2578],['tj_165',2600],['tk_165',2650],['tl_165',469],['tm_165',229],['tn_165',994],['to_165',2591],['tp_165',2640],['tr_165',904],['tt_165',2511],['tu_165',2626],['tv_165',2506],['tw_165',2624],['tx_165',2611],['ty_165',2560],['tz_165',620],['t11_165',2584],['t12_165',2567],['t13_165',466],['t14_165',2078],['t15_165',2628],['t16_165',1875],['t18_165',750],['t19_165',2652],['t1a_165',2621],['t1b_165',2554],['t1c_165',2652],['t1d_165',2628],['t1e_165',2558],['t1f_165',2652],['t1g_165',2656],['t1h_165',2613],['t1i_165',1524],['t1j_165',406],['t1k_165',357],['t1l_165',2576],['t1m_165',994],['t1n_165',299],['t1o_165',468]];
+function load165(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f165);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 61;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_165");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

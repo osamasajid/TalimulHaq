@@ -1,0 +1,308 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page115</title>
+</head>
+
+<body onload="load115()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_115{left:456px;top:1136px;}
+#t2_115{left:137px;top:54px;}
+#t3_115{left:165px;top:54px;}
+#t4_115{left:137px;top:87px;}
+#t5_115{left:165px;top:87px;}
+#t6_115{left:165px;top:105px;}
+#t7_115{left:137px;top:138px;}
+#t8_115{left:165px;top:138px;}
+#t9_115{left:137px;top:171px;}
+#ta_115{left:165px;top:171px;}
+#tb_115{left:137px;top:204px;}
+#tc_115{left:165px;top:204px;}
+#td_115{left:165px;top:222px;}
+#te_115{left:137px;top:255px;}
+#tf_115{left:165px;top:255px;}
+#tg_115{left:137px;top:288px;}
+#th_115{left:165px;top:288px;}
+#ti_115{left:137px;top:321px;}
+#tj_115{left:165px;top:321px;}
+#tk_115{left:137px;top:355px;}
+#tl_115{left:165px;top:355px;}
+#tm_115{left:137px;top:388px;}
+#tn_115{left:165px;top:388px;}
+#to_115{left:110px;top:421px;}
+#tp_115{left:110px;top:457px;}
+#tq_115{left:110px;top:479px;}
+#tr_115{left:110px;top:516px;}
+#ts_115{left:165px;top:516px;}
+#tt_115{left:165px;top:548px;}
+#tu_115{left:110px;top:585px;}
+#tv_115{left:165px;top:585px;}
+#tw_115{left:165px;top:618px;}
+#tx_115{left:138px;top:655px;}
+#ty_115{left:165px;top:655px;}
+#tz_115{left:165px;top:673px;}
+#t10_115{left:138px;top:706px;}
+#t11_115{left:165px;top:706px;}
+#t12_115{left:138px;top:739px;}
+#t13_115{left:165px;top:739px;}
+#t14_115{left:138px;top:772px;}
+#t15_115{left:165px;top:772px;}
+#t16_115{left:138px;top:805px;}
+#t17_115{left:165px;top:805px;}
+#t18_115{left:165px;top:823px;}
+#t19_115{left:110px;top:856px;}
+#t1a_115{left:138px;top:893px;}
+#t1b_115{left:165px;top:893px;}
+#t1c_115{left:138px;top:926px;}
+#t1d_115{left:165px;top:926px;}
+#t1e_115{left:138px;top:959px;}
+#t1f_115{left:165px;top:959px;}
+#t1g_115{left:138px;top:992px;}
+#t1h_115{left:165px;top:992px;}
+#t1i_115{left:138px;top:1025px;}
+#t1j_115{left:165px;top:1025px;}
+#t1k_115{left:165px;top:1043px;}
+#t1l_115{left:165px;top:1061px;}
+#t1m_115{left:138px;top:1094px;}
+#t1n_115{left:165px;top:1094px;}
+
+.s1_115{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT115;
+	color: rgb(0,0,0);
+}
+
+.s5_115{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NKJHPH-Wingdings-Regular115;
+	color: rgb(0,0,0);
+}
+
+.s4_115{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM115;
+	color: rgb(0,0,0);
+}
+
+.s3_115{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT115;
+	color: rgb(0,0,0);
+}
+
+.s2_115{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM115;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM115;
+	src :url("115/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT115;
+	src :url("115/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NKJHPH-Wingdings-Regular115;
+	src :url("115/fonts/NKJHPH-Wingdings-Regular.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_115" class="t s1_115">115</div>
+<div id="t2_115" class="t s1_115">1.</div>
+<div id="t3_115" class="t s1_115">To chew gum, rubber, plastic items or other such things. </div>
+<div id="t4_115" class="t s1_115">2.</div>
+<div id="t5_115" class="t s1_115">To taste any article of food or drink and spit it out. If a woman has a very ill-tempered husband, it is </div>
+<div id="t6_115" class="t s1_115">permissible for her to taste the food, provided it does not go down the throat. </div>
+<div id="t7_115" class="t s1_115">3.</div>
+<div id="t8_115" class="t s1_115">To collect one's saliva in the mouth and then swallow it, trying to quench thirst. </div>
+<div id="t9_115" class="t s1_115">4.</div>
+<div id="ta_115" class="t s1_115">To delay a bath that has become FARZ knowingly until after Subha Sadiq. </div>
+<div id="tb_115" class="t s1_115">5.</div>
+<div id="tc_115" class="t s1_115">To use paste or tooth powder to clean one's teeth. It is permitted to clean with a Miswaak of any fresh </div>
+<div id="td_115" class="t s1_115">branch or root (tooth stick). </div>
+<div id="te_115" class="t s1_115">6.</div>
+<div id="tf_115" class="t s1_115">To complain of hunger and thirst. </div>
+<div id="tg_115" class="t s1_115">7.</div>
+<div id="th_115" class="t s1_115">To take the water too much up the nostrils when cleaning the nose. </div>
+<div id="ti_115" class="t s1_115">8.</div>
+<div id="tj_115" class="t s1_115">To gargle more than necessary. </div>
+<div id="tk_115" class="t s1_115">9.</div>
+<div id="tl_115" class="t s1_115">To quarrels argue, use filthy or indecent words. </div>
+<div id="tm_115" class="t s1_115">10.</div>
+<div id="tn_115" class="t s1_115">To backbite, tell a lie and swear etc. are sinful acts even when one is not fasting </div>
+<div id="to_115" class="t s2_115">THINGS THAT BREAK ONE'S FAST</div>
+<div id="tp_115" class="t s3_115">1. Things that break one's fast are of two kinds. Some make only Qazaa necessary, whilst others </div>
+<div id="tq_115" class="t s3_115">make both QAZA and KAFFAARAH compulsory. </div>
+<div id="tr_115" class="t s1_115">a.</div>
+<div id="ts_115" class="t s4_115">QAZA: </div>
+<div id="tt_115" class="t s3_115">To keep one fast in place of the one that breaks, or is broken intentionally. </div>
+<div id="tu_115" class="t s1_115">b.</div>
+<div id="tv_115" class="t s4_115">KAFFARAH: </div>
+<div id="tw_115" class="t s3_115">To keep one fast after another for sixty days CONTINUOUSLY </div>
+<div id="tx_115" class="t s5_115">±</div>
+<div id="ty_115" class="t s1_115">However, if a person is unable to keep these 60 Fast, for some valid reason, e.g. continuous sickness, then </div>
+<div id="tz_115" class="t s1_115">one has the option of choosing from one of the following four : </div>
+<div id="t10_115" class="t s1_115">1.</div>
+<div id="t11_115" class="t s1_115">Feed sixty poor people to their full for two meals, or </div>
+<div id="t12_115" class="t s1_115">2.</div>
+<div id="t13_115" class="t s1_115">Feed one poor person two meals a day, for sixty days ; or </div>
+<div id="t14_115" class="t s1_115">3.</div>
+<div id="t15_115" class="t s1_115">Give 60 poor persons 31/2 lbs. (approx. 1.6kg. of wheat, or its value in cash or food grains ; </div>
+<div id="t16_115" class="t s1_115">4.</div>
+<div id="t17_115" class="t s1_115">Give to one poor person not less than 31/2 lbs. of wheat, rice or food grains, etc. to its value of cash for </div>
+<div id="t18_115" class="t s1_115">SIXTY days. </div>
+<div id="t19_115" class="t s2_115">THINGS THAT BREAK ONE'S FAST BUT MAKE ONLY QAZA WAJIB</div>
+<div id="t1a_115" class="t s1_115">1.</div>
+<div id="t1b_115" class="t s1_115">Anything put by force into the mouth of fasting persons </div>
+<div id="t1c_115" class="t s1_115">2.</div>
+<div id="t1d_115" class="t s1_115">Water goes down the throat whilst gargling, conscious of one' fasting. </div>
+<div id="t1e_115" class="t s1_115">3.</div>
+<div id="t1f_115" class="t s1_115">To Vomit mouthful intentionally or to return vomit down the throat. </div>
+<div id="t1g_115" class="t s1_115">4.</div>
+<div id="t1h_115" class="t s1_115">Swallowing intentionally a pebble, piece of paper or any item that is not used as food or medicine. </div>
+<div id="t1i_115" class="t s1_115">5.</div>
+<div id="t1j_115" class="t s1_115">Swallowing something edible, equal to or bigger than a grain of gram which was stuck between the teeth. </div>
+<div id="t1k_115" class="t s1_115">However if it is first taken out of the mouth and swallowed, it will break the fast whether it is smaller or </div>
+<div id="t1l_115" class="t s1_115">bigger than the size of a gram. </div>
+<div id="t1m_115" class="t s1_115">6.</div>
+<div id="t1n_115" class="t s1_115">Putting oil into the ear. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg115Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg115"><object width="935" height="1210" data="115/115.svg" type="image/svg+xml" id="pdf115" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld115" type="text/javascript">
+
+var isIE = false;
+var f115 = [['t3_115',1382],['t5_115',2453],['t6_115',1884],['t8_115',1952],['ta_115',1833],['tc_115',2493],['td_115',677],['tf_115',824],['th_115',1640],['tj_115',767],['tl_115',1164],['tn_115',1954],['to_115',1233],['tp_115',2819],['tq_115',1500],['tt_115',2182],['tw_115',1888],['ty_115',2600],['tz_115',1551],['t11_115',1285],['t13_115',1405],['t15_115',2257],['t17_115',2534],['t18_115',323],['t19_115',2366],['t1b_115',1368],['t1d_115',1715],['t1f_115',1670],['t1h_115',2412],['t1j_115',2587],['t1k_115',2550],['t1l_115',744],['t1n_115',563]];
+function load115(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f115);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 60;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_115");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

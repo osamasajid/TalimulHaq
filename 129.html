@@ -1,0 +1,303 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page129</title>
+</head>
+
+<body onload="load129()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_129{left:456px;top:1136px;}
+#t2_129{left:137px;top:54px;}
+#t3_129{left:165px;top:54px;}
+#t4_129{left:165px;top:72px;}
+#t5_129{left:165px;top:90px;}
+#t6_129{left:138px;top:123px;}
+#t7_129{left:165px;top:123px;}
+#t8_129{left:165px;top:141px;}
+#t9_129{left:138px;top:174px;}
+#ta_129{left:165px;top:174px;}
+#tb_129{left:165px;top:192px;}
+#tc_129{left:165px;top:210px;}
+#td_129{left:138px;top:243px;}
+#te_129{left:165px;top:243px;}
+#tf_129{left:165px;top:261px;}
+#tg_129{left:138px;top:294px;}
+#th_129{left:165px;top:294px;}
+#ti_129{left:165px;top:312px;}
+#tj_129{left:138px;top:345px;}
+#tk_129{left:165px;top:345px;}
+#tl_129{left:289px;top:370px;}
+#tm_129{left:110px;top:399px;}
+#tn_129{left:110px;top:420px;}
+#to_129{left:110px;top:442px;}
+#tp_129{left:110px;top:463px;}
+#tq_129{left:110px;top:484px;}
+#tr_129{left:110px;top:521px;}
+#ts_129{left:128px;top:521px;}
+#tt_129{left:186px;top:521px;}
+#tu_129{left:138px;top:558px;}
+#tv_129{left:165px;top:558px;}
+#tw_129{left:165px;top:576px;}
+#tx_129{left:165px;top:594px;}
+#ty_129{left:138px;top:627px;}
+#tz_129{left:165px;top:627px;}
+#t10_129{left:165px;top:645px;}
+#t11_129{left:165px;top:663px;}
+#t12_129{left:165px;top:680px;}
+#t13_129{left:165px;top:698px;}
+#t14_129{left:165px;top:716px;}
+#t15_129{left:138px;top:749px;}
+#t16_129{left:165px;top:749px;}
+#t17_129{left:165px;top:767px;}
+#t18_129{left:165px;top:785px;}
+#t19_129{left:110px;top:818px;}
+#t1a_129{left:128px;top:818px;}
+#t1b_129{left:260px;top:818px;}
+#t1c_129{left:138px;top:855px;}
+#t1d_129{left:165px;top:855px;}
+#t1e_129{left:165px;top:873px;}
+#t1f_129{left:165px;top:891px;}
+#t1g_129{left:138px;top:924px;}
+#t1h_129{left:165px;top:924px;}
+#t1i_129{left:165px;top:942px;}
+#t1j_129{left:165px;top:960px;}
+#t1k_129{left:137px;top:993px;}
+#t1l_129{left:165px;top:993px;}
+#t1m_129{left:165px;top:1011px;}
+#t1n_129{left:137px;top:1044px;}
+#t1o_129{left:165px;top:1044px;}
+#t1p_129{left:165px;top:1062px;}
+#t1q_129{left:165px;top:1079px;}
+#t1r_129{left:110px;top:1113px;}
+#t1s_129{left:128px;top:1113px;}
+#t1t_129{left:214px;top:1113px;}
+
+.s1_129{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT129;
+	color: rgb(0,0,0);
+}
+
+.s2_129{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT129;
+	color: rgb(0,0,0);
+}
+
+.s3_129{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM129;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM129;
+	src :url("129/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT129;
+	src :url("129/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_129" class="t s1_129">129</div>
+<div id="t2_129" class="t s1_129">3.</div>
+<div id="t3_129" class="t s1_129">Zakaat contributions cannot be given to such institutions or organizations who do not give the rightful </div>
+<div id="t4_129" class="t s1_129">recipients (Masaarif) possession of Zakaat, but instead use Zakaat funds for construction, investment or </div>
+<div id="t5_129" class="t s1_129">salaries. </div>
+<div id="t6_129" class="t s1_129">4.</div>
+<div id="t7_129" class="t s1_129">Zakaat cannot be given to non-Muslims. The same ruling applies to Wajib Sadaqah i.e. Sadaqatul Fit'r, </div>
+<div id="t8_129" class="t s1_129">Kaffaarah, Ush'r and Naz'r Naf'l Sadaqah could be given to non-Muslims. </div>
+<div id="t9_129" class="t s1_129">5.</div>
+<div id="ta_129" class="t s1_129">If one cannot determine whether the recipient is needy or not, then it is better to make certain before giving </div>
+<div id="tb_129" class="t s1_129">him Zakaat. If Zakaat is given without inquiry and subsequently it is known that the recipient is wealthy </div>
+<div id="tc_129" class="t s1_129">the Zakaat is not valid. It has to be given again. </div>
+<div id="td_129" class="t s1_129">6.</div>
+<div id="te_129" class="t s1_129">Zakaat will not be fulfilled by purchasing books for an institution, or land purchased for public utility and </div>
+<div id="tf_129" class="t s1_129">made Waq'f. </div>
+<div id="tg_129" class="t s1_129">7.</div>
+<div id="th_129" class="t s1_129">Zakaat cannot be used for the Kaf'n of a deceased person who has no heirs, because at that time he/she </div>
+<div id="ti_129" class="t s1_129">cannot become the owner. </div>
+<div id="tj_129" class="t s1_129">8.</div>
+<div id="tk_129" class="t s1_129">A dead peson's debt cannot be paid from Zakaat. </div>
+<div id="tl_129" class="t s2_129">WHEN IS ZAKAAT FARZ ON A CREDITOR. </div>
+<div id="tm_129" class="t s2_129">A person is obliged to give Zakaat on money or valuable owing to him, whether it be a loan or a </div>
+<div id="tn_129" class="t s2_129">business debt. This applies only if the debtor acknowledges that he owes the amount or promises </div>
+<div id="to_129" class="t s2_129">to pay it; or if on the contrary he refuses the claim, and there are witnesses or documentary proof </div>
+<div id="tp_129" class="t s2_129">to support such claim by which it could be recovered through a judiciary. Loans are basically of </div>
+<div id="tq_129" class="t s2_129">three types: </div>
+<div id="tr_129" class="t s2_129">1. </div>
+<div id="ts_129" class="t s3_129">QAWI</div>
+<div id="tt_129" class="t s2_129">(Secure loan) </div>
+<div id="tu_129" class="t s1_129">a.</div>
+<div id="tv_129" class="t s1_129">If cash, gold or silver has been given as a loan or when merchandise has been sold on terms and the </div>
+<div id="tw_129" class="t s1_129">payment is received after a year or two; and the value of the amount owing is that of Nisaab, then this is </div>
+<div id="tx_129" class="t s1_129">called a Qawi loan, and therefore, Zakaat for those years prior to payment will be Farz. </div>
+<div id="ty_129" class="t s1_129">b.</div>
+<div id="tz_129" class="t s1_129">In the case where this loan is repaid in instalments, if the repayment received equals to one fifth (20%) of </div>
+<div id="t10_129" class="t s1_129">the nisaab zakaat of this one fifth becomes Fardh. If several years have passed, then Zakaat must be given </div>
+<div id="t11_129" class="t s1_129">for all the past years. Zakaat of the past years has to be calculated annually in units, each unit being twenty </div>
+<div id="t12_129" class="t s1_129">percent of he Nisaub. </div>
+<div id="t13_129" class="t s1_129">Government bonds are of this category and Zakaat has to be paid on recovery of this loan as described </div>
+<div id="t14_129" class="t s1_129">above. </div>
+<div id="t15_129" class="t s1_129">c.</div>
+<div id="t16_129" class="t s1_129">If any such loan is not equal to Nisaab then Zakaat will not be Farz; but if this loan together with other </div>
+<div id="t17_129" class="t s1_129">excess wealth which is in one's possession when combined becomes equal to Nisaah' then Zakaat will be </div>
+<div id="t18_129" class="t s1_129">Farz on the combined total of both amounts. </div>
+<div id="t19_129" class="t s2_129">2. </div>
+<div id="t1a_129" class="t s3_129">MUTAWASSIT</div>
+<div id="t1b_129" class="t s2_129">(Insufficiently secure loan) </div>
+<div id="t1c_129" class="t s1_129">a.</div>
+<div id="t1d_129" class="t s1_129">If a loan is not cash, gold, silver or merchandise (as mentioned in 1. (a) above) but is personal effects sold </div>
+<div id="t1e_129" class="t s1_129">(old clothes, house-hold items etc. ) or is a property which was sold and the value of it is that of Nisaab, </div>
+<div id="t1f_129" class="t s1_129">then it is called a Mutawssit loan. Thus Zakaat for those year prior to payment will not be Farz. </div>
+<div id="t1g_129" class="t s1_129">b.</div>
+<div id="t1h_129" class="t s1_129">If this loan is equal to or in excess of Nisaab and is fully recovered after several years, then Zakaat on that </div>
+<div id="t1i_129" class="t s1_129">amount is not Farz for all the past years. However, if anyone in such an instance gave Zakaat, then such an </div>
+<div id="t1j_129" class="t s1_129">act is rewarded by Allah Ta'ala. </div>
+<div id="t1k_129" class="t s1_129">c.</div>
+<div id="t1l_129" class="t s1_129">In a case where the repayment is made in instalments, then Zakaat will only be Farz if the repayment is </div>
+<div id="t1m_129" class="t s1_129">equal to Nisaab and is retained for a full Islamic year. </div>
+<div id="t1n_129" class="t s1_129">d.</div>
+<div id="t1o_129" class="t s1_129">If the instalment received is less than Nisaab, but one is in possession of other wealth on which Zakaat is </div>
+<div id="t1p_129" class="t s1_129">due ( i.e. Nisaab on which a year has elapsed), then this instalment must be added to the wealth, and Zakaat </div>
+<div id="t1q_129" class="t s1_129">must be given on the total. It is not necessary for a year to pass over this instalment that is received. </div>
+<div id="t1r_129" class="t s2_129">3. </div>
+<div id="t1s_129" class="t s3_129">DHA'EEF</div>
+<div id="t1t_129" class="t s2_129">(Insecure loan.) </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg129Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg129"><object width="935" height="1210" data="129/129.svg" type="image/svg+xml" id="pdf129" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld129" type="text/javascript">
+
+var isIE = false;
+var f129 = [['t3_129',2503],['t4_129',2539],['t7_129',2522],['t8_129',1811],['ta_129',2629],['tb_129',2554],['tc_129',1161],['te_129',2594],['tf_129',310],['th_129',2515],['ti_129',643],['tk_129',1194],['tl_129',1424],['tm_129',2822],['tn_129',2841],['to_129',2844],['tp_129',2816],['tq_129',341],['tt_129',393],['tv_129',2442],['tw_129',2550],['tx_129',2135],['tz_129',2584],['t10_129',2594],['t11_129',2617],['t12_129',525],['t13_129',2511],['t16_129',2516],['t17_129',2568],['t18_129',1086],['t1b_129',795],['t1d_129',2598],['t1e_129',2549],['t1f_129',2335],['t1h_129',2603],['t1i_129',2617],['t1j_129',776],['t1l_129',2526],['t1m_129',1315],['t1o_129',2571],['t1p_129',2635],['t1q_129',2440],['t1t_129',461]];
+function load129(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f129);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 66;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_129");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

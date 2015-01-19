@@ -1,0 +1,278 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page126</title>
+</head>
+
+<body onload="load126()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_126{left:456px;top:1136px;}
+#t2_126{left:253px;top:63px;}
+#t3_126{left:457px;top:63px;}
+#t4_126{left:253px;top:97px;}
+#t5_126{left:457px;top:97px;}
+#t6_126{left:253px;top:131px;}
+#t7_126{left:457px;top:131px;}
+#t8_126{left:253px;top:165px;}
+#t9_126{left:457px;top:165px;}
+#ta_126{left:110px;top:201px;}
+#tb_126{left:213px;top:230px;}
+#tc_126{left:110px;top:259px;}
+#td_126{left:110px;top:280px;}
+#te_126{left:183px;top:320px;}
+#tf_126{left:360px;top:320px;}
+#tg_126{left:360px;top:354px;}
+#th_126{left:561px;top:354px;}
+#ti_126{left:183px;top:388px;}
+#tj_126{left:360px;top:388px;}
+#tk_126{left:183px;top:422px;}
+#tl_126{left:561px;top:422px;}
+#tm_126{left:183px;top:456px;}
+#tn_126{left:360px;top:456px;}
+#to_126{left:110px;top:491px;}
+#tp_126{left:110px;top:513px;}
+#tq_126{left:110px;top:549px;}
+#tr_126{left:183px;top:589px;}
+#ts_126{left:299px;top:589px;}
+#tt_126{left:299px;top:623px;}
+#tu_126{left:533px;top:623px;}
+#tv_126{left:183px;top:657px;}
+#tw_126{left:299px;top:657px;}
+#tx_126{left:533px;top:657px;}
+#ty_126{left:183px;top:691px;}
+#tz_126{left:533px;top:691px;}
+#t10_126{left:183px;top:725px;}
+#t11_126{left:299px;top:725px;}
+#t12_126{left:183px;top:759px;}
+#t13_126{left:299px;top:759px;}
+#t14_126{left:489px;top:759px;}
+#t15_126{left:183px;top:793px;}
+#t16_126{left:299px;top:793px;}
+#t17_126{left:491px;top:793px;}
+#t18_126{left:183px;top:827px;}
+#t19_126{left:299px;top:827px;}
+#t1a_126{left:488px;top:827px;}
+#t1b_126{left:315px;top:892px;}
+#t1c_126{left:138px;top:921px;}
+#t1d_126{left:165px;top:921px;}
+#t1e_126{left:138px;top:954px;}
+#t1f_126{left:165px;top:954px;}
+#t1g_126{left:165px;top:972px;}
+#t1h_126{left:138px;top:1005px;}
+#t1i_126{left:165px;top:1005px;}
+#t1j_126{left:165px;top:1023px;}
+#t1k_126{left:138px;top:1056px;}
+#t1l_126{left:165px;top:1056px;}
+#t1m_126{left:165px;top:1074px;}
+
+.s1_126{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT126;
+	color: rgb(0,0,0);
+}
+
+.s2_126{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT126;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT126;
+	src :url("126/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_126" class="t s1_126">126</div>
+<div id="t2_126" class="t s1_126">40- 120  </div>
+<div id="t3_126" class="t s1_126">1 animals</div>
+<div id="t4_126" class="t s1_126">121-200  </div>
+<div id="t5_126" class="t s1_126">2 animals</div>
+<div id="t6_126" class="t s1_126">201-399  </div>
+<div id="t7_126" class="t s1_126">3 animals</div>
+<div id="t8_126" class="t s1_126">400 </div>
+<div id="t9_126" class="t s1_126">4 animals</div>
+<div id="ta_126" class="t s2_126">Thereafter for each additional hundred, one sheep that is one year old must be given as Zakat. </div>
+<div id="tb_126" class="t s2_126">TABLE OF ZAKAAT FOR CATTLE AND WATER BUFFALOES. </div>
+<div id="tc_126" class="t s2_126">The Nisaab when Zakat becomes applicable is thirty animals. There is no Zakat if the number is </div>
+<div id="td_126" class="t s2_126">less than thirty. </div>
+<div id="te_126" class="t s1_126">Number  </div>
+<div id="tf_126" class="t s1_126">ZAKAAT </div>
+<div id="tg_126" class="t s1_126">I year old </div>
+<div id="th_126" class="t s1_126">2 year old</div>
+<div id="ti_126" class="t s1_126">30-39 </div>
+<div id="tj_126" class="t s1_126">1 animal</div>
+<div id="tk_126" class="t s1_126">40-59 </div>
+<div id="tl_126" class="t s1_126">1 animal</div>
+<div id="tm_126" class="t s1_126">60-69 </div>
+<div id="tn_126" class="t s1_126">2 animals</div>
+<div id="to_126" class="t s2_126">Thereafter, in every thirty animals, one, 1 year old animal should be given: and in every forty, a </div>
+<div id="tp_126" class="t s2_126">2 year old animal should be given as Zakat. </div>
+<div id="tq_126" class="t s2_126">Example: </div>
+<div id="tr_126" class="t s1_126">Number </div>
+<div id="ts_126" class="t s1_126">ZAKAAT  </div>
+<div id="tt_126" class="t s1_126">1 year old </div>
+<div id="tu_126" class="t s1_126">2 year old</div>
+<div id="tv_126" class="t s1_126">70  </div>
+<div id="tw_126" class="t s1_126">1 animal  </div>
+<div id="tx_126" class="t s1_126">1 animal</div>
+<div id="ty_126" class="t s1_126">80  </div>
+<div id="tz_126" class="t s1_126">2 animals</div>
+<div id="t10_126" class="t s1_126">90 </div>
+<div id="t11_126" class="t s1_126">3 animals </div>
+<div id="t12_126" class="t s1_126">100  </div>
+<div id="t13_126" class="t s1_126">2 animals plus 1 animals </div>
+<div id="t14_126" class="t s1_126">1,animal</div>
+<div id="t15_126" class="t s1_126">110  </div>
+<div id="t16_126" class="t s1_126">1 animal plus 2 animals </div>
+<div id="t17_126" class="t s1_126">2,animals</div>
+<div id="t18_126" class="t s1_126">120  </div>
+<div id="t19_126" class="t s1_126">4 animals or 3 animals </div>
+<div id="t1a_126" class="t s1_126">3,animals</div>
+<div id="t1b_126" class="t s2_126">THE NIYYAT (intention) OF ZAKAAT. </div>
+<div id="t1c_126" class="t s1_126">1.</div>
+<div id="t1d_126" class="t s1_126">It is Fardh to form niyyat for the fulfillment of Zakat. </div>
+<div id="t1e_126" class="t s1_126">2.</div>
+<div id="t1f_126" class="t s1_126">When giving Zakat to a needy person, the Niyyat should be that, "I am giving this as Zakat." If the Niyyat </div>
+<div id="t1g_126" class="t s1_126">is not made the Zakat will not be valid. </div>
+<div id="t1h_126" class="t s1_126">3.</div>
+<div id="t1i_126" class="t s1_126">It is not necessary to reveal to the needy person to whom Zakat is given, that the cash or kind which is </div>
+<div id="t1j_126" class="t s1_126">being given to him is Zakat. </div>
+<div id="t1k_126" class="t s1_126">4.</div>
+<div id="t1l_126" class="t s1_126">When one has put aside an amount for Zakat with the intention that he will give it to the needy, and at the </div>
+<div id="t1m_126" class="t s1_126">time of giving Zakat he forgets to make the Niyyat, the Zakat will still be valid. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg126Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg126"><object width="935" height="1210" data="126/126.svg" type="image/svg+xml" id="pdf126" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld126" type="text/javascript">
+
+var isIE = false;
+var f126 = [['t2_126',205],['t3_126',235],['t4_126',220],['t5_126',235],['t6_126',220],['t7_126',235],['t9_126',235],['ta_126',2752],['tb_126',2036],['tc_126',2819],['td_126',451],['te_126',215],['tg_126',235],['th_126',245],['tj_126',212],['tl_126',212],['tn_126',235],['to_126',2811],['tp_126',1278],['ts_126',267],['tt_126',245],['tu_126',245],['tv_126',77],['tw_126',227],['tx_126',212],['ty_126',77],['tz_126',235],['t11_126',235],['t12_126',107],['t13_126',605],['t15_126',107],['t16_126',581],['t18_126',107],['t19_126',554],['t1b_126',1219],['t1d_126',1309],['t1f_126',2599],['t1g_126',958],['t1i_126',2507],['t1j_126',687],['t1l_126',2590],['t1m_126',1947]];
+function load126(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f126);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 59;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_126");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

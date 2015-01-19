@@ -1,0 +1,267 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page157</title>
+</head>
+
+<body onload="load157()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_157{left:456px;top:1136px;}
+#t2_157{left:416px;top:54px;}
+#t3_157{left:110px;top:83px;}
+#t4_157{left:110px;top:104px;}
+#t5_157{left:110px;top:141px;}
+#t6_157{left:110px;top:177px;}
+#t7_157{left:110px;top:199px;}
+#t8_157{left:394px;top:228px;}
+#t9_157{left:110px;top:257px;}
+#ta_157{left:110px;top:278px;}
+#tb_157{left:138px;top:316px;}
+#tc_157{left:165px;top:316px;}
+#td_157{left:138px;top:350px;}
+#te_157{left:165px;top:350px;}
+#tf_157{left:339px;top:375px;}
+#tg_157{left:110px;top:532px;}
+#th_157{left:110px;top:553px;}
+#ti_157{left:110px;top:590px;}
+#tj_157{left:110px;top:611px;}
+#tk_157{left:110px;top:632px;}
+#tl_157{left:110px;top:654px;}
+#tm_157{left:138px;top:692px;}
+#tn_157{left:165px;top:692px;}
+#to_157{left:165px;top:709px;}
+#tp_157{left:138px;top:808px;}
+#tq_157{left:165px;top:808px;}
+#tr_157{left:165px;top:826px;}
+#ts_157{left:110px;top:859px;}
+#tt_157{left:110px;top:895px;}
+#tu_157{left:110px;top:917px;}
+#tv_157{left:110px;top:938px;}
+#tw_157{left:138px;top:976px;}
+#tx_157{left:165px;top:976px;}
+#ty_157{left:165px;top:994px;}
+#tz_157{left:165px;top:1012px;}
+#t10_157{left:165px;top:1030px;}
+#t11_157{left:165px;top:1063px;}
+#t12_157{left:165px;top:1084px;}
+
+.s1_157{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT157;
+	color: rgb(0,0,0);
+}
+
+.s4_157{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(0,0,0);
+	FONT-STYLE: italic;
+}
+
+.s3_157{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT157;
+	color: rgb(0,0,0);
+}
+
+.s2_157{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT157;
+	color: rgb(0,0,0);
+}
+
+.s5_157{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM157;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM157;
+	src :url("157/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT157;
+	src :url("157/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT157;
+	src :url("157/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_157" class="t s1_157">157</div>
+<div id="t2_157" class="t s2_157">5. IDTIBAA : </div>
+<div id="t3_157" class="t s2_157">Before commencing the Tawaaf, make Idtibaa, i.e. the covering of the body.in a manner that the </div>
+<div id="t4_157" class="t s2_157">left shoulder, left arm and back are covered and the right arm entirely exposed. </div>
+<div id="t5_157" class="t s2_157">Discontinue with the Idtibaa after the Tawaaf has been completed. </div>
+<div id="t6_157" class="t s2_157">The two Rak'aat Waajib Salaah should NOT be performed with the arm exposed (i.e. with </div>
+<div id="t7_157" class="t s2_157">Idtibaa). </div>
+<div id="t8_157" class="t s2_157">6. THE TAWAAF : </div>
+<div id="t9_157" class="t s2_157">After Idtibaa face the Ka'ha in a manner that the entire Hajare Aswad remains on your right and </div>
+<div id="ta_157" class="t s2_157">the left shoulder towards Rukne Yamaanee. </div>
+<div id="tb_157" class="t s3_157">•</div>
+<div id="tc_157" class="t s1_157">Stand as close as possible to the Hajare Aswad. </div>
+<div id="td_157" class="t s3_157">•</div>
+<div id="te_157" class="t s1_157">Now say the Niyyah, which is Waajib </div>
+<div id="tf_157" class="t s2_157">THE NIYYAH IS AS FOI,I,OWS: </div>
+<div id="tg_157" class="t s4_157">(O Allah, I intend performing Tawaaf around Your sacred house, seven circuits for Allah, who is </div>
+<div id="th_157" class="t s4_157">Mighty and Dignified, hence render it easy for me and accept from me.)</div>
+<div id="ti_157" class="t s2_157">Move sideways to your right, towards the Hajare Aswad (with the face and chest towards the </div>
+<div id="tj_157" class="t s2_157">Ka'ba until in line with (squarely opposite) the Hajare Aswad. This is Mustahab. If this is </div>
+<div id="tk_157" class="t s2_157">difficult, say the Niyyah while standing in the line with the Hajare Aswad (diametrically </div>
+<div id="tl_157" class="t s2_157">opposite). </div>
+<div id="tm_157" class="t s3_157">•</div>
+<div id="tn_157" class="t s1_157">When squarely opposite the Hajare Aswad, raise both the hands to the ears (as one does when beginning </div>
+<div id="to_157" class="t s1_157">Salaah). Say while raisinsg the hands. </div>
+<div id="tp_157" class="t s3_157">•</div>
+<div id="tq_157" class="t s1_157">After lowering the hands, make Istilaam of the Hajare Aswad. A Mu'tamir (one performing Umrah) will </div>
+<div id="tr_157" class="t s1_157">discontinue with the Talhiyah after the first Istillaam. </div>
+<div id="ts_157" class="t s5_157">7. ISTILAAM:</div>
+<div id="tt_157" class="t s2_157">Istilaam is to place both hands on the Hajare Aswad and to kiss it gently thrice, between the two </div>
+<div id="tu_157" class="t s2_157">palms. (Be careful not to harass, puch or hurt, anyone in the process.) Hands should not be </div>
+<div id="tv_157" class="t s2_157">placed on the silver ring when kissing the Hajare Aswad. </div>
+<div id="tw_157" class="t s3_157">•</div>
+<div id="tx_157" class="t s1_157">If Istilaam is not possible, merely place the hands on the Hajare Aswad. If this is also not possible, then </div>
+<div id="ty_157" class="t s1_157">one should stand diametrically opposite the Hajare Aswad and stretch both the hands, with the palms </div>
+<div id="tz_157" class="t s1_157">facing the Hajare Aswad, (as if one were placing them on it ). Thereafter kiss the hands and commence the </div>
+<div id="t10_157" class="t s1_157">Tawaaf. </div>
+<div id="t11_157" class="t s2_157">If this is also not possible, then merely say the Takbeer when raising the hands to the ears </div>
+<div id="t12_157" class="t s2_157">and commence the Tawaaf. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg157Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg157"><object width="935" height="1210" data="157/157.svg" type="image/svg+xml" id="pdf157" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld157" type="text/javascript">
+
+var isIE = false;
+var f157 = [['t2_157',413],['t3_157',2823],['t4_157',2318],['t5_157',1948],['t6_157',2644],['t8_157',585],['t9_157',2812],['ta_157',1284],['tc_157',1163],['te_157',932],['tf_157',1024],['tg_157',2846],['th_157',2112],['ti_157',2732],['tj_157',2622],['tk_157',2598],['tn_157',2563],['to_157',928],['tq_157',2555],['tr_157',1306],['ts_157',468],['tt_157',2824],['tu_157',2658],['tv_157',1676],['tx_157',2537],['ty_157',2475],['tz_157',2616],['t11_157',2630],['t12_157',805]];
+function load157(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f157);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 39;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_157");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

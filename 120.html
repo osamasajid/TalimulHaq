@@ -1,0 +1,293 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page120</title>
+</head>
+
+<body onload="load120()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_120{left:456px;top:1136px;}
+#t2_120{left:110px;top:54px;}
+#t3_120{left:138px;top:91px;}
+#t4_120{left:165px;top:91px;}
+#t5_120{left:138px;top:124px;}
+#t6_120{left:165px;top:124px;}
+#t7_120{left:138px;top:157px;}
+#t8_120{left:165px;top:157px;}
+#t9_120{left:138px;top:190px;}
+#ta_120{left:165px;top:190px;}
+#tb_120{left:138px;top:223px;}
+#tc_120{left:165px;top:223px;}
+#td_120{left:138px;top:256px;}
+#te_120{left:165px;top:256px;}
+#tf_120{left:138px;top:289px;}
+#tg_120{left:165px;top:289px;}
+#th_120{left:138px;top:322px;}
+#ti_120{left:165px;top:322px;}
+#tj_120{left:138px;top:355px;}
+#tk_120{left:165px;top:355px;}
+#tl_120{left:138px;top:389px;}
+#tm_120{left:165px;top:389px;}
+#tn_120{left:138px;top:422px;}
+#to_120{left:165px;top:422px;}
+#tp_120{left:138px;top:455px;}
+#tq_120{left:165px;top:455px;}
+#tr_120{left:138px;top:488px;}
+#ts_120{left:165px;top:488px;}
+#tt_120{left:110px;top:521px;}
+#tu_120{left:138px;top:558px;}
+#tv_120{left:165px;top:558px;}
+#tw_120{left:138px;top:591px;}
+#tx_120{left:165px;top:591px;}
+#ty_120{left:138px;top:624px;}
+#tz_120{left:165px;top:624px;}
+#t10_120{left:138px;top:657px;}
+#t11_120{left:165px;top:657px;}
+#t12_120{left:138px;top:690px;}
+#t13_120{left:165px;top:690px;}
+#t14_120{left:138px;top:723px;}
+#t15_120{left:165px;top:723px;}
+#t16_120{left:138px;top:756px;}
+#t17_120{left:165px;top:756px;}
+#t18_120{left:138px;top:789px;}
+#t19_120{left:165px;top:789px;}
+#t1a_120{left:138px;top:822px;}
+#t1b_120{left:165px;top:822px;}
+#t1c_120{left:138px;top:855px;}
+#t1d_120{left:165px;top:855px;}
+#t1e_120{left:138px;top:889px;}
+#t1f_120{left:165px;top:889px;}
+#t1g_120{left:138px;top:922px;}
+#t1h_120{left:165px;top:922px;}
+#t1i_120{left:138px;top:955px;}
+#t1j_120{left:165px;top:955px;}
+#t1k_120{left:138px;top:988px;}
+#t1l_120{left:165px;top:988px;}
+#t1m_120{left:138px;top:1021px;}
+#t1n_120{left:165px;top:1021px;}
+#t1o_120{left:138px;top:1054px;}
+#t1p_120{left:165px;top:1054px;}
+#t1q_120{left:138px;top:1087px;}
+#t1r_120{left:165px;top:1087px;}
+
+.s1_120{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT120;
+	color: rgb(0,0,0);
+}
+
+.s2_120{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM120;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM120;
+	src :url("120/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT120;
+	src :url("120/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_120" class="t s1_120">120</div>
+<div id="t2_120" class="t s2_120">SPIRITS OF RAMADAAN AND AT ALL TIMES.</div>
+<div id="t3_120" class="t s1_120">1.</div>
+<div id="t4_120" class="t s1_120">Don't speak without purpose. </div>
+<div id="t5_120" class="t s1_120">2.</div>
+<div id="t6_120" class="t s1_120">Don't be vulgar or rude. </div>
+<div id="t7_120" class="t s1_120">3.</div>
+<div id="t8_120" class="t s1_120">Don't be irritable. </div>
+<div id="t9_120" class="t s1_120">4.</div>
+<div id="ta_120" class="t s1_120">Don't tell lies. </div>
+<div id="tb_120" class="t s1_120">5.</div>
+<div id="tc_120" class="t s1_120">Don't backbite. </div>
+<div id="td_120" class="t s1_120">6.</div>
+<div id="te_120" class="t s1_120">Don't argue or fight. </div>
+<div id="tf_120" class="t s1_120">7.</div>
+<div id="tg_120" class="t s1_120">Don't be boastful and arrogant. </div>
+<div id="th_120" class="t s1_120">8.</div>
+<div id="ti_120" class="t s1_120">Don't swear. </div>
+<div id="tj_120" class="t s1_120">9.</div>
+<div id="tk_120" class="t s1_120">Don't eat doubtful food at IFTAR. </div>
+<div id="tl_120" class="t s1_120">10.</div>
+<div id="tm_120" class="t s1_120">Don't look at undesirable things. </div>
+<div id="tn_120" class="t s1_120">11.</div>
+<div id="to_120" class="t s1_120">Don't listen to objectionable speech. </div>
+<div id="tp_120" class="t s1_120">12.</div>
+<div id="tq_120" class="t s1_120">Don't gossip. </div>
+<div id="tr_120" class="t s1_120">13.</div>
+<div id="ts_120" class="t s1_120">Don't commit any sins. </div>
+<div id="tt_120" class="t s2_120">QUESTIONS</div>
+<div id="tu_120" class="t s1_120">1.</div>
+<div id="tv_120" class="t s1_120">Explain the term MUHTADAR. </div>
+<div id="tw_120" class="t s1_120">2.</div>
+<div id="tx_120" class="t s1_120">How should a Muhtadhar be made to lie (the Sunnah method)? </div>
+<div id="ty_120" class="t s1_120">3.</div>
+<div id="tz_120" class="t s1_120">If possible, which Suras should be recited in the presence of the Muhtadhar? </div>
+<div id="t10_120" class="t s1_120">4.</div>
+<div id="t11_120" class="t s1_120">What is Talqeen? </div>
+<div id="t12_120" class="t s1_120">5.</div>
+<div id="t13_120" class="t s1_120">What are the signs of a person nearing his end? </div>
+<div id="t14_120" class="t s1_120">6.</div>
+<div id="t15_120" class="t s1_120">Mention the ten important things to be carried out after a person has passed away. </div>
+<div id="t16_120" class="t s1_120">7.</div>
+<div id="t17_120" class="t s1_120">What are the requirements for a male and female Kafn. </div>
+<div id="t18_120" class="t s1_120">8.</div>
+<div id="t19_120" class="t s1_120">What are the requirements for the Qabr? </div>
+<div id="t1a_120" class="t s1_120">9.</div>
+<div id="t1b_120" class="t s1_120">Draw sketches and explain the two different types of Qabrs. </div>
+<div id="t1c_120" class="t s1_120">10.</div>
+<div id="t1d_120" class="t s1_120">It is (Makrooh, Haraam, and Mustahab) to have ones grave pre-pared during one’s lifetime. </div>
+<div id="t1e_120" class="t s1_120">11.</div>
+<div id="t1f_120" class="t s1_120">Write down all the requirements for Ghusl. </div>
+<div id="t1g_120" class="t s1_120">12.</div>
+<div id="t1h_120" class="t s1_120">If there are no women, can the husband perform the Ghusl of his wife? </div>
+<div id="t1i_120" class="t s1_120">13.</div>
+<div id="t1j_120" class="t s1_120">How should the Kafn be put on for the male? </div>
+<div id="t1k_120" class="t s1_120">14.</div>
+<div id="t1l_120" class="t s1_120">Is it permissible to include any Du’aa, Aya or any other charter in the Kafn? </div>
+<div id="t1m_120" class="t s1_120">15.</div>
+<div id="t1n_120" class="t s1_120">Is it permissible for Ghair Mahram women to see the face of any male? </div>
+<div id="t1o_120" class="t s1_120">16.</div>
+<div id="t1p_120" class="t s1_120">Can the Janaza Salaat be performed in the Masjid? </div>
+<div id="t1q_120" class="t s1_120">17.</div>
+<div id="t1r_120" class="t s1_120">The Janaza Salaat is (Farze Ain, Farze Kifayah, and Sunnat) on all Muslim males. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg120Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg120"><object width="935" height="1210" data="120/120.svg" type="image/svg+xml" id="pdf120" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld120" type="text/javascript">
+
+var isIE = false;
+var f120 = [['t2_120',1600],['t4_120',716],['t6_120',585],['t8_120',431],['ta_120',342],['tc_120',371],['te_120',498],['tg_120',759],['ti_120',307],['tk_120',839],['tm_120',796],['to_120',888],['tq_120',321],['ts_120',564],['tv_120',792],['tx_120',1544],['tz_120',1877],['t11_120',430],['t13_120',1162],['t15_120',2007],['t17_120',1350],['t19_120',992],['t1b_120',1472],['t1d_120',2245],['t1f_120',1057],['t1h_120',1738],['t1j_120',1110],['t1l_120',1868],['t1n_120',1746],['t1p_120',1243],['t1r_120',2010]];
+function load120(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f120);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 64;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_120");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

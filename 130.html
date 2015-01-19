@@ -1,0 +1,291 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page130</title>
+</head>
+
+<body onload="load130()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_130{left:456px;top:1136px;}
+#t2_130{left:137px;top:54px;}
+#t3_130{left:165px;top:54px;}
+#t4_130{left:165px;top:72px;}
+#t5_130{left:165px;top:90px;}
+#t6_130{left:137px;top:123px;}
+#t7_130{left:165px;top:123px;}
+#t8_130{left:165px;top:141px;}
+#t9_130{left:165px;top:159px;}
+#ta_130{left:137px;top:192px;}
+#tb_130{left:165px;top:192px;}
+#tc_130{left:165px;top:210px;}
+#td_130{left:165px;top:228px;}
+#te_130{left:165px;top:260px;}
+#tf_130{left:165px;top:282px;}
+#tg_130{left:165px;top:303px;}
+#th_130{left:165px;top:324px;}
+#ti_130{left:110px;top:361px;}
+#tj_130{left:138px;top:398px;}
+#tk_130{left:165px;top:398px;}
+#tl_130{left:165px;top:416px;}
+#tm_130{left:165px;top:434px;}
+#tn_130{left:165px;top:452px;}
+#to_130{left:137px;top:485px;}
+#tp_130{left:165px;top:485px;}
+#tq_130{left:192px;top:518px;}
+#tr_130{left:220px;top:518px;}
+#ts_130{left:192px;top:551px;}
+#tt_130{left:220px;top:551px;}
+#tu_130{left:192px;top:584px;}
+#tv_130{left:220px;top:584px;}
+#tw_130{left:192px;top:617px;}
+#tx_130{left:220px;top:617px;}
+#ty_130{left:192px;top:650px;}
+#tz_130{left:220px;top:650px;}
+#t10_130{left:192px;top:683px;}
+#t11_130{left:220px;top:683px;}
+#t12_130{left:192px;top:716px;}
+#t13_130{left:220px;top:716px;}
+#t14_130{left:192px;top:749px;}
+#t15_130{left:220px;top:749px;}
+#t16_130{left:192px;top:782px;}
+#t17_130{left:220px;top:782px;}
+#t18_130{left:192px;top:816px;}
+#t19_130{left:220px;top:816px;}
+#t1a_130{left:138px;top:849px;}
+#t1b_130{left:165px;top:849px;}
+#t1c_130{left:165px;top:867px;}
+#t1d_130{left:165px;top:884px;}
+#t1e_130{left:138px;top:917px;}
+#t1f_130{left:165px;top:917px;}
+#t1g_130{left:165px;top:935px;}
+#t1h_130{left:165px;top:953px;}
+#t1i_130{left:138px;top:986px;}
+#t1j_130{left:165px;top:986px;}
+#t1k_130{left:165px;top:1004px;}
+#t1l_130{left:137px;top:1037px;}
+#t1m_130{left:165px;top:1037px;}
+#t1n_130{left:165px;top:1055px;}
+
+.s1_130{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT130;
+	color: rgb(0,0,0);
+}
+
+.s2_130{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT130;
+	color: rgb(0,0,0);
+}
+
+.s3_130{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM130;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM130;
+	src :url("130/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT130;
+	src :url("130/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_130" class="t s1_130">130</div>
+<div id="t2_130" class="t s1_130">a.</div>
+<div id="t3_130" class="t s1_130">If money owing to one, is not in lieu of cash, gold, silver, merchandise or personal effects or property </div>
+<div id="t4_130" class="t s1_130">which is sold; but is due to outstanding inheritance, bequests, Meh'r (dowry) salary etc., then it is called </div>
+<div id="t5_130" class="t s1_130">Dha'eef loan. </div>
+<div id="t6_130" class="t s1_130">b.</div>
+<div id="t7_130" class="t s1_130">Zakaat will become Farz when these monies are received and they are equal to or in excess of Nisaab and </div>
+<div id="t8_130" class="t s1_130">further they are retained for a full Islamic year. There is no Zakaut for the years that have passed before </div>
+<div id="t9_130" class="t s1_130">receiving these amounts. </div>
+<div id="ta_130" class="t s1_130">c.</div>
+<div id="tb_130" class="t s1_130">There is no Zakaat on Provident and Pension funds. Zakaat must only be paid on these amount after they </div>
+<div id="tc_130" class="t s1_130">are recieved from such funds provided the amount is equal to or in excess of the Nisaab and is retained tor </div>
+<div id="td_130" class="t s1_130">a full Islamic year. </div>
+<div id="te_130" class="t s2_130">NOTE: Some Ulama have categorized these funds as Qawi or Mutawassit loans, and thus </div>
+<div id="tf_130" class="t s2_130">Zakaat becomes obligatory on the contributions for the past year as well. It is therefore </div>
+<div id="tg_130" class="t s2_130">advisable that as a precautionary measure Zakaat should be paid for the past years on </div>
+<div id="th_130" class="t s2_130">these as well. </div>
+<div id="ti_130" class="t s3_130">ZAKAAT ON MERCHANDISE.</div>
+<div id="tj_130" class="t s1_130">1.</div>
+<div id="tk_130" class="t s1_130">Articles that are purchased for resale are referred to as merchandise. The Nisaab for Zakaat on merchandise </div>
+<div id="tl_130" class="t s1_130">is the same as that for cash, i. e. if the value of the articles is equivalent to the value of 87,48 grams of gold </div>
+<div id="tm_130" class="t s1_130">(7,5 tolas =1350 grains =2,8125 troy. ounces ) or 612,36 grams of silver ( 52,5 tolas = 9450 grains </div>
+<div id="tn_130" class="t s1_130">=19,6875 troy ounces), or more, that it will be Fardh to give Zakaat at the rate of 2,5% or one fortieth. </div>
+<div id="to_130" class="t s1_130">2.</div>
+<div id="tp_130" class="t s1_130">Zakaat is Farz on the following items when drowing up a balance (calculating) sheet: </div>
+<div id="tq_130" class="t s1_130">a.</div>
+<div id="tr_130" class="t s1_130">Stock in trade; </div>
+<div id="ts_130" class="t s1_130">b.</div>
+<div id="tt_130" class="t s1_130">Goods in transit; (which have been paid for) </div>
+<div id="tu_130" class="t s1_130">c.</div>
+<div id="tv_130" class="t s1_130">Cash on hand; </div>
+<div id="tw_130" class="t s1_130">d.</div>
+<div id="tx_130" class="t s1_130">Outstanding cash and loans; (when repaid and if they are equal to Nisaab) </div>
+<div id="ty_130" class="t s1_130">e.</div>
+<div id="tz_130" class="t s1_130">Cash at bank; </div>
+<div id="t10_130" class="t s1_130">f.</div>
+<div id="t11_130" class="t s1_130">Savings account; </div>
+<div id="t12_130" class="t s1_130">g.</div>
+<div id="t13_130" class="t s1_130">Fixed deposits; </div>
+<div id="t14_130" class="t s1_130">h.</div>
+<div id="t15_130" class="t s1_130">Sundry outstanding; (when repaid and if they are equal to Nisaab ) </div>
+<div id="t16_130" class="t s1_130">i.</div>
+<div id="t17_130" class="t s1_130">Claims; (acknowledged ) </div>
+<div id="t18_130" class="t s1_130">j.</div>
+<div id="t19_130" class="t s1_130">Other savings - household balance; sundry cash. </div>
+<div id="t1a_130" class="t s1_130">3.</div>
+<div id="t1b_130" class="t s1_130">All these must be added as one amount, and after subtracting the creditors amount and/or any other </div>
+<div id="t1c_130" class="t s1_130">liabilities, the balance which is the profit must he added to the capital. Zakaat must then be given on this </div>
+<div id="t1d_130" class="t s1_130">combined figure. </div>
+<div id="t1e_130" class="t s1_130">4.</div>
+<div id="t1f_130" class="t s1_130">Zakaat should be given on the capital that exists at the end of the lunar year, which includes the profit, e. g. </div>
+<div id="t1g_130" class="t s1_130">at the beginning of the year the capital is $2000-00. When the year ends a profit of $500-00 is shown. </div>
+<div id="t1h_130" class="t s1_130">Zakaat must be given on $2500-00. </div>
+<div id="t1i_130" class="t s1_130">5.</div>
+<div id="t1j_130" class="t s1_130">If a bad debt is recovered and it is equal to or exceeds the Nisaab, then Zakaat on all the past years must be </div>
+<div id="t1k_130" class="t s1_130">given. </div>
+<div id="t1l_130" class="t s1_130">6.</div>
+<div id="t1m_130" class="t s1_130">If one has various different types of merchandise then the total value of all the goods should be calculated. </div>
+<div id="t1n_130" class="t s1_130">If it is equal to or exceeds the value of Nisaab then it will be necessary to give Zakaat. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg130Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg130"><object width="935" height="1210" data="130/130.svg" type="image/svg+xml" id="pdf130" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld130" type="text/javascript">
+
+var isIE = false;
+var f130 = [['t3_130',2490],['t4_130',2543],['t5_130',324],['t7_130',2588],['t8_130',2540],['t9_130',607],['tb_130',2570],['tc_130',2606],['td_130',458],['te_130',2628],['tf_130',2551],['tg_130',2500],['th_130',393],['ti_130',1034],['tk_130',2637],['tl_130',2622],['tm_130',2415],['tn_130',2507],['tp_130',2089],['tr_130',357],['tt_130',1086],['tv_130',351],['tx_130',1813],['tz_130',333],['t11_130',417],['t13_130',372],['t15_130',1634],['t17_130',615],['t19_130',1185],['t1b_130',2429],['t1c_130',2558],['t1d_130',418],['t1f_130',2628],['t1g_130',2494],['t1h_130',869],['t1j_130',2622],['t1m_130',2611],['t1n_130',2113]];
+function load130(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f130);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 60;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_130");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

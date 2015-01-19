@@ -1,0 +1,215 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page163</title>
+</head>
+
+<body onload="load163()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_163{left:456px;top:1136px;}
+#t2_163{left:406px;top:239px;}
+#t3_163{left:332px;top:254px;}
+#t4_163{left:350px;top:268px;}
+#t5_163{left:396px;top:283px;}
+#t6_163{left:738px;top:297px;}
+#t7_163{left:128px;top:959px;}
+#t8_163{left:128px;top:974px;}
+#t9_163{left:128px;top:988px;}
+#ta_163{left:128px;top:1002px;}
+#tb_163{left:128px;top:1017px;}
+#tc_163{left:128px;top:1031px;}
+#td_163{left:128px;top:1045px;}
+#te_163{left:128px;top:1060px;}
+#tf_163{left:128px;top:1074px;}
+#tg_163{left:128px;top:1089px;}
+#th_163{left:128px;top:1103px;}
+#ti_163{left:128px;top:1117px;}
+
+.s2_163{
+	FONT-SIZE: 48px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM163;
+	color: rgb(50,50,50);
+}
+
+.s1_163{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT163;
+	color: rgb(0,0,0);
+}
+
+.s4_163{
+	FONT-SIZE: 48px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT163;
+	color: rgb(0,0,0);
+}
+
+.s3_163{
+	FONT-SIZE: 42px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM163;
+	color: rgb(50,50,50);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM163;
+	src :url("163/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT163;
+	src :url("163/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_163" class="t s1_163">163</div>
+<div id="t2_163" class="t s2_163">In the name of Allah. </div>
+<div id="t3_163" class="t s2_163">O Allah! Send Your salutation upon Muhammad. </div>
+<div id="t4_163" class="t s2_163">O Allah! Forgive my sins, and open for me </div>
+<div id="t5_163" class="t s2_163">the doors of Your mercy.</div>
+<div id="t6_163" class="t s3_163">Abu Dawud</div>
+<div id="t7_163" class="t s4_163">Perform two rak`ahs Salah upon entry into the masjid. </div>
+<div id="t8_163" class="t s4_163">Women may not be able to gain entry to the Rawdah straight away. They should go into the women’s section at the rear of the masjid </div>
+<div id="t9_163" class="t s4_163">and perform these acts there. </div>
+<div id="ta_163" class="t s4_163">Women will be allowed to present themselves at the resting place of the Prophet (P.B.U.H.) at certain times. They should walk </div>
+<div id="tb_163" class="t s4_163">acknowledging the sacredness of the place, and get to whatever place is available and send salutations upon the Prophet (P.B.U.H.) and </div>
+<div id="tc_163" class="t s4_163">his Companions. Once there, they too can perform the various acts of the Masjid. </div>
+<div id="td_163" class="t s4_163">When inside the Masjid, while one will be overwhelmed by the magnificence of the place, one’s attention and focus should remain on </div>
+<div id="te_163" class="t s4_163">one’s `Ibadah, as one is not there to sightsee. </div>
+<div id="tf_163" class="t s4_163">Do not prostrate or even bend down (in ruku`) before the grave of the Prophet (P.B.U.H.). Do not face the grave from any direction for </div>
+<div id="tg_163" class="t s4_163">the sake of making Salah with the intention that the grave is there. To do so is not in accordance with the teachings or liking of the </div>
+<div id="th_163" class="t s4_163">Prophet (P.B.U.H.). One should remember that they are there out of love for the Prophet (P.B.U.H.), not for objects which were not </div>
+<div id="ti_163" class="t s4_163">around at the time of the Prophet (P.B.U.H.).</div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg163Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg163"><object width="935" height="1210" data="163/163.svg" type="image/svg+xml" id="pdf163" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld163" type="text/javascript">
+
+var isIE = false;
+var f163 = [['t2_163',439],['t3_163',1032],['t4_163',883],['t5_163',520],['t6_163',220],['t7_163',1057],['t8_163',2605],['t9_163',561],['ta_163',2473],['tb_163',2647],['tc_163',1585],['td_163',2617],['te_163',876],['tf_163',2634],['tg_163',2548],['th_163',2567],['ti_163',877]];
+function load163(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f163);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 19;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_163");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

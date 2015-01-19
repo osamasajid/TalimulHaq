@@ -1,0 +1,279 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page13</title>
+</head>
+
+<body onload="load13()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_13{left:460px;top:1136px;}
+#t2_13{left:138px;top:96px;}
+#t3_13{left:165px;top:96px;}
+#t4_13{left:193px;top:137px;}
+#t5_13{left:220px;top:137px;}
+#t6_13{left:193px;top:178px;}
+#t7_13{left:220px;top:178px;}
+#t8_13{left:193px;top:220px;}
+#t9_13{left:220px;top:220px;}
+#ta_13{left:193px;top:261px;}
+#tb_13{left:220px;top:261px;}
+#tc_13{left:138px;top:303px;}
+#td_13{left:165px;top:303px;}
+#te_13{left:165px;top:329px;}
+#tf_13{left:138px;top:370px;}
+#tg_13{left:165px;top:370px;}
+#th_13{left:165px;top:397px;}
+#ti_13{left:780px;top:397px;}
+#tj_13{left:165px;top:423px;}
+#tk_13{left:138px;top:464px;}
+#tl_13{left:165px;top:464px;}
+#tm_13{left:165px;top:490px;}
+#tn_13{left:165px;top:517px;}
+#to_13{left:138px;top:558px;}
+#tp_13{left:165px;top:558px;}
+#tq_13{left:165px;top:584px;}
+#tr_13{left:165px;top:610px;}
+#ts_13{left:138px;top:652px;}
+#tt_13{left:165px;top:652px;}
+#tu_13{left:165px;top:678px;}
+#tv_13{left:355px;top:720px;}
+#tw_13{left:138px;top:767px;}
+#tx_13{left:165px;top:767px;}
+#ty_13{left:193px;top:767px;}
+#tz_13{left:267px;top:767px;}
+#t10_13{left:293px;top:767px;}
+#t11_13{left:363px;top:767px;}
+#t12_13{left:138px;top:808px;}
+#t13_13{left:165px;top:808px;}
+#t14_13{left:165px;top:834px;}
+#t15_13{left:138px;top:876px;}
+#t16_13{left:165px;top:876px;}
+#t17_13{left:224px;top:876px;}
+#t18_13{left:296px;top:876px;}
+#t19_13{left:322px;top:876px;}
+#t1a_13{left:388px;top:876px;}
+#t1b_13{left:165px;top:902px;}
+#t1c_13{left:425px;top:936px;}
+#t1d_13{left:138px;top:1079px;}
+#t1e_13{left:165px;top:1079px;}
+
+.s1_13{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT13;
+	color: rgb(0,0,0);
+}
+
+.s3_13{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT13;
+	color: rgb(0,0,0);
+}
+
+.s4_13{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT13;
+	color: rgb(0,0,0);
+}
+
+.s2_13{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldMT13;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldMT13;
+	src :url("13/fonts/NJAOCH-TimesNewRomanPS-BoldMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT13;
+	src :url("13/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_13" class="t s1_13">13</div>
+<div id="t2_13" class="t s1_13">6.</div>
+<div id="t3_13" class="t s1_13">We know of four famous Angels. They are : </div>
+<div id="t4_13" class="t s1_13">1.</div>
+<div id="t5_13" class="t s1_13">Hazrat JIBRAEEL Alayhis Salaam. </div>
+<div id="t6_13" class="t s1_13">2.</div>
+<div id="t7_13" class="t s1_13">Hazrat MICHAAEEL Alayhis Salaam. </div>
+<div id="t8_13" class="t s1_13">3.</div>
+<div id="t9_13" class="t s1_13">Hazrat IZRAAEEL Alayhis Salaam. </div>
+<div id="ta_13" class="t s1_13">4.</div>
+<div id="tb_13" class="t s1_13">Hazrat ISRAAFEEL Alayhis Salaam. </div>
+<div id="tc_13" class="t s1_13">7.</div>
+<div id="td_13" class="t s1_13">Hazrat JIBRAEEL (Alayhis-Salaam) brought Allah's Book, Orders and messages to all the Prophets. He </div>
+<div id="te_13" class="t s1_13">was also sent to help the Prophets at times and fight against their enemies. </div>
+<div id="tf_13" class="t s1_13">8.</div>
+<div id="tg_13" class="t s1_13">Hazrat MICHAAEEL (A.S) is in charge of food and rain. Other Angels work under him who is in charge </div>
+<div id="th_13" class="t s1_13">of clouds, the seas, the rivers and the winds. He gets the order from Allah. He then order the others </div>
+<div id="ti_13" class="t s1_13">under </div>
+<div id="tj_13" class="t s1_13">his command. </div>
+<div id="tk_13" class="t s1_13">9.</div>
+<div id="tl_13" class="t s1_13">Hazrat IZRAAEEL (AS) takes away life with the order of Allah. He is in charge of death. Numerous </div>
+<div id="tm_13" class="t s1_13">Angels work under him. Some take away the lives of good persons whilst others looking very fearful take </div>
+<div id="tn_13" class="t s1_13">away the lives of sinners and disbelievers. </div>
+<div id="to_13" class="t s1_13">10.</div>
+<div id="tp_13" class="t s1_13">Hazrat ISRAAFEEL (AS) will blow the SOOR ( TRUMPET) on the DAY OF JUDGEMENT. The sound </div>
+<div id="tq_13" class="t s1_13">will destroy and kill everything that is on earth and in the skies. When he will blow for the second time all </div>
+<div id="tr_13" class="t s1_13">will come to life with the order of Allah. </div>
+<div id="ts_13" class="t s1_13">11.</div>
+<div id="tt_13" class="t s1_13">There are two Angels that are always with every person. One writes all his GOOD DEEDS whilst the other </div>
+<div id="tu_13" class="t s1_13">enters all his BAD DEEDS, They are known as </div>
+<div id="tv_13" class="t s2_13">KIRAAMAN-KAATIBEEN.</div>
+<div id="tw_13" class="t s1_13">12.</div>
+<div id="tx_13" class="t s1_13">The</div>
+<div id="ty_13" class="t s3_13">MUNKAR</div>
+<div id="tz_13" class="t s1_13">and </div>
+<div id="t10_13" class="t s3_13">NECKER</div>
+<div id="t11_13" class="t s1_13">question a person in the grave. </div>
+<div id="t12_13" class="t s1_13">13.</div>
+<div id="t13_13" class="t s1_13">Some Angels are in charge of the HEAVEN, some of the HELL, some of looking after children, the old, </div>
+<div id="t14_13" class="t s1_13">the weak and others whom Allah wishes to protect. </div>
+<div id="t15_13" class="t s1_13">14.</div>
+<div id="t16_13" class="t s1_13">From the </div>
+<div id="t17_13" class="t s3_13">QURAAN</div>
+<div id="t18_13" class="t s1_13">and </div>
+<div id="t19_13" class="t s3_13">HADITH </div>
+<div id="t1a_13" class="t s1_13">we come to know that various other Angles are in charge of various </div>
+<div id="t1b_13" class="t s1_13">other duties. </div>
+<div id="t1c_13" class="t s4_13">Books of Allah </div>
+<div id="t1d_13" class="t s1_13">1.</div>
+<div id="t1e_13" class="t s1_13">Allah has revealed His Books to various Prophets for the guidance of their nations. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg13Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg13"><object width="935" height="1210" data="13/13.svg" type="image/svg+xml" id="pdf13" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld13" type="text/javascript">
+
+var isIE = false;
+var f13 = [['t3_13',1085],['t5_13',876],['t7_13',955],['t9_13',894],['tb_13',924],['td_13',2558],['te_13',1817],['tg_13',2584],['th_13',2428],['tj_13',342],['tl_13',2474],['tm_13',2596],['tn_13',1033],['tp_13',2600],['tq_13',2605],['tr_13',995],['tt_13',2631],['tu_13',1163],['t11_13',750],['t13_13',2561],['t14_13',1255],['t16_13',222],['t1a_13',1663],['t1b_13',303],['t1c_13',448],['t1e_13',2034]];
+function load13(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f13);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 51;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_13");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

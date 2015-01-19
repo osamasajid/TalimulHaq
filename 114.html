@@ -1,0 +1,283 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page114</title>
+</head>
+
+<body onload="load114()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_114{left:456px;top:1136px;}
+#t2_114{left:137px;top:54px;}
+#t3_114{left:165px;top:54px;}
+#t4_114{left:165px;top:72px;}
+#t5_114{left:165px;top:90px;}
+#t6_114{left:137px;top:123px;}
+#t7_114{left:165px;top:123px;}
+#t8_114{left:165px;top:141px;}
+#t9_114{left:165px;top:159px;}
+#ta_114{left:137px;top:192px;}
+#tb_114{left:165px;top:192px;}
+#tc_114{left:165px;top:210px;}
+#td_114{left:534px;top:210px;}
+#te_114{left:137px;top:243px;}
+#tf_114{left:165px;top:243px;}
+#tg_114{left:165px;top:261px;}
+#th_114{left:137px;top:294px;}
+#ti_114{left:165px;top:294px;}
+#tj_114{left:165px;top:312px;}
+#tk_114{left:165px;top:330px;}
+#tl_114{left:346px;top:355px;}
+#tm_114{left:138px;top:384px;}
+#tn_114{left:165px;top:384px;}
+#to_114{left:165px;top:402px;}
+#tp_114{left:138px;top:435px;}
+#tq_114{left:165px;top:435px;}
+#tr_114{left:165px;top:453px;}
+#ts_114{left:356px;top:519px;}
+#tt_114{left:137px;top:552px;}
+#tu_114{left:165px;top:552px;}
+#tv_114{left:165px;top:570px;}
+#tw_114{left:137px;top:603px;}
+#tx_114{left:165px;top:603px;}
+#ty_114{left:299px;top:628px;}
+#tz_114{left:286px;top:819px;}
+#t10_114{left:194px;top:849px;}
+#t11_114{left:110px;top:882px;}
+#t12_114{left:138px;top:919px;}
+#t13_114{left:165px;top:919px;}
+#t14_114{left:138px;top:952px;}
+#t15_114{left:165px;top:952px;}
+#t16_114{left:138px;top:985px;}
+#t17_114{left:165px;top:985px;}
+#t18_114{left:138px;top:1018px;}
+#t19_114{left:165px;top:1018px;}
+#t1a_114{left:138px;top:1051px;}
+#t1b_114{left:165px;top:1051px;}
+#t1c_114{left:110px;top:1085px;}
+
+.s4_114{
+	FONT-SIZE: 52px;
+	FONT-FAMILY: TimesNewRomanPS-BoldItalicMT;
+	color: rgb(0,0,0);
+	FONT-WEIGHT: bold;
+	FONT-STYLE: italic;
+}
+
+.s1_114{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT114;
+	color: rgb(0,0,0);
+}
+
+.s2_114{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM114;
+	color: rgb(0,0,0);
+}
+
+.s3_114{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT114;
+	color: rgb(0,0,0);
+}
+
+.s5_114{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM114;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM114;
+	src :url("114/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT114;
+	src :url("114/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_114" class="t s1_114">114</div>
+<div id="t2_114" class="t s1_114">4.</div>
+<div id="t3_114" class="t s2_114">WAJIB MUAIYYAN</div>
+<div id="t4_114" class="t s1_114">To vow or pledge to keep a fast without fixing any day or date upon the fulfillment of a wish (Nazr). Those </div>
+<div id="t5_114" class="t s1_114">Fastings which are kept for breaking one's Qasm (oath) also fall under this category. </div>
+<div id="t6_114" class="t s1_114">5.</div>
+<div id="t7_114" class="t s2_114">SUNNAT</div>
+<div id="t8_114" class="t s1_114">Those Fastings which Rasulullah (S.A.W.) kept and encouraged others to keep, e.g. fasting on the 9th and </div>
+<div id="t9_114" class="t s1_114">10th of Muharram, the 9th of Zil Hijjah, etc. </div>
+<div id="ta_114" class="t s1_114">6.</div>
+<div id="tb_114" class="t s2_114">MUSTAHAB</div>
+<div id="tc_114" class="t s1_114">All fasts besides Farz, Wajib and Sunnah are Mustahab, e.g.</div>
+<div id="td_114" class="t s1_114">., fasting on Mondays and Thursdays. </div>
+<div id="te_114" class="t s1_114">7.</div>
+<div id="tf_114" class="t s2_114">MAKROOH</div>
+<div id="tg_114" class="t s1_114">Fasting ONLY on the 9th or 10th of Muharram or fasting ONLY on Saturdays. </div>
+<div id="th_114" class="t s1_114">8.</div>
+<div id="ti_114" class="t s2_114">HARAAM</div>
+<div id="tj_114" class="t s1_114">It is Haraam to fast on FIVE days during the year. They are Eidul Fitr, Eidul Adha and three days after </div>
+<div id="tk_114" class="t s1_114">Eidul Adha. </div>
+<div id="tl_114" class="t s3_114">THE NIYYAT OR INTENTION </div>
+<div id="tm_114" class="t s1_114">1.</div>
+<div id="tn_114" class="t s1_114">The Niyyat (intention) of fasting is NECESSARY. If a person stays away from all those things that break </div>
+<div id="to_114" class="t s1_114">ones fast without a Niyyat, the fast will NOT be valid. </div>
+<div id="tp_114" class="t s1_114">2.</div>
+<div id="tq_114" class="t s1_114">It is NOT necessary to express the Niyyat verbally as Niyyat means to intend. Thus, the intention at heart </div>
+<div id="tr_114" class="t s1_114">will suffice. However, it is better to express the Niyyat verbally also. </div>
+<div id="ts_114" class="t s1_114">{ Be SAUMI Ghadin Nawaytu} </div>
+<div id="tt_114" class="t s1_114">3.</div>
+<div id="tu_114" class="t s1_114">The time for Niyyat lasts up to midday for Farze Muaiyyan, Wajib Muaiyyan, Sunnat or Mustahab fasts. </div>
+<div id="tv_114" class="t s1_114">The hours of a day are from Subha Saadiq to sunset. </div>
+<div id="tw_114" class="t s1_114">4.</div>
+<div id="tx_114" class="t s1_114">The Niyyat for Farze Ghair Muaiyyan and Wajib Ghair Muaiyyan should be made before Subha Saadiq. </div>
+<div id="ty_114" class="t s3_114">DU'A AT THE TIME OF BREAKING FAST </div>
+<div id="tz_114" class="t s4_114">Allaahumma laka sumtu wa bika aamantu wa 'ala rizq-ika aftarthu </div>
+<div id="t10_114" class="t s1_114">O Allah! I fasted for You and I believe in You And I break my fast with Your sustenance </div>
+<div id="t11_114" class="t s5_114">MUSTAHABS IN FASTING </div>
+<div id="t12_114" class="t s1_114">1.</div>
+<div id="t13_114" class="t s1_114">To partake of SEHRI (the meal before Subha Sadiq). </div>
+<div id="t14_114" class="t s1_114">2.</div>
+<div id="t15_114" class="t s1_114">To delay the Sehri up to a little before Subha Sadiq. </div>
+<div id="t16_114" class="t s1_114">3.</div>
+<div id="t17_114" class="t s1_114">To break the fast immediately after sunset. </div>
+<div id="t18_114" class="t s1_114">4.</div>
+<div id="t19_114" class="t s1_114">To break one's fast with dry or fresh dates if available. If dates are not available, then with water. </div>
+<div id="t1a_114" class="t s1_114">5.</div>
+<div id="t1b_114" class="t s1_114">To make Niyyat at night. </div>
+<div id="t1c_114" class="t s5_114">THINGS MAKROOH WHILE FASTING</div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg114Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg114"><object width="935" height="1210" data="114/114.svg" type="image/svg+xml" id="pdf114" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld114" type="text/javascript">
+
+var isIE = false;
+var f114 = [['t3_114',563],['t4_114',2634],['t5_114',2068],['t8_114',2602],['t9_114',1088],['tc_114',1477],['td_114',924],['tg_114',1943],['tj_114',2520],['tk_114',296],['tl_114',973],['tn_114',2583],['to_114',1331],['tq_114',2580],['tr_114',1688],['ts_114',787],['tu_114',2564],['tv_114',1283],['tx_114',2561],['ty_114',1350],['tz_114',1450],['t10_114',2191],['t11_114',907],['t13_114',1299],['t15_114',1272],['t17_114',1045],['t19_114',2380],['t1b_114',613],['t1c_114',1326]];
+function load114(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f114);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 49;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_114");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

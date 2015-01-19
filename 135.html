@@ -1,0 +1,286 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page135</title>
+</head>
+
+<body onload="load135()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_135{left:456px;top:1136px;}
+#t2_135{left:165px;top:54px;}
+#t3_135{left:165px;top:72px;}
+#t4_135{left:137px;top:105px;}
+#t5_135{left:165px;top:105px;}
+#t6_135{left:362px;top:130px;}
+#t7_135{left:339px;top:152px;}
+#t8_135{left:315px;top:173px;}
+#t9_135{left:138px;top:202px;}
+#ta_135{left:165px;top:202px;}
+#tb_135{left:165px;top:220px;}
+#tc_135{left:138px;top:253px;}
+#td_135{left:165px;top:253px;}
+#te_135{left:165px;top:271px;}
+#tf_135{left:138px;top:304px;}
+#tg_135{left:165px;top:304px;}
+#th_135{left:165px;top:322px;}
+#ti_135{left:165px;top:340px;}
+#tj_135{left:165px;top:358px;}
+#tk_135{left:137px;top:391px;}
+#tl_135{left:165px;top:391px;}
+#tm_135{left:165px;top:409px;}
+#tn_135{left:165px;top:427px;}
+#to_135{left:137px;top:460px;}
+#tp_135{left:165px;top:460px;}
+#tq_135{left:165px;top:478px;}
+#tr_135{left:137px;top:511px;}
+#ts_135{left:165px;top:511px;}
+#tt_135{left:165px;top:529px;}
+#tu_135{left:137px;top:562px;}
+#tv_135{left:165px;top:562px;}
+#tw_135{left:165px;top:580px;}
+#tx_135{left:137px;top:613px;}
+#ty_135{left:165px;top:613px;}
+#tz_135{left:165px;top:630px;}
+#t10_135{left:165px;top:648px;}
+#t11_135{left:165px;top:666px;}
+#t12_135{left:137px;top:699px;}
+#t13_135{left:165px;top:699px;}
+#t14_135{left:165px;top:717px;}
+#t15_135{left:355px;top:742px;}
+#t16_135{left:371px;top:764px;}
+#t17_135{left:138px;top:793px;}
+#t18_135{left:165px;top:793px;}
+#t19_135{left:165px;top:811px;}
+#t1a_135{left:138px;top:844px;}
+#t1b_135{left:165px;top:844px;}
+#t1c_135{left:165px;top:862px;}
+#t1d_135{left:138px;top:895px;}
+#t1e_135{left:165px;top:895px;}
+#t1f_135{left:165px;top:913px;}
+#t1g_135{left:138px;top:946px;}
+#t1h_135{left:165px;top:946px;}
+#t1i_135{left:165px;top:964px;}
+#t1j_135{left:138px;top:997px;}
+#t1k_135{left:165px;top:997px;}
+#t1l_135{left:165px;top:1015px;}
+#t1m_135{left:138px;top:1048px;}
+#t1n_135{left:165px;top:1048px;}
+#t1o_135{left:165px;top:1066px;}
+#t1p_135{left:138px;top:1099px;}
+#t1q_135{left:165px;top:1099px;}
+
+.s1_135{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT135;
+	color: rgb(0,0,0);
+}
+
+.s2_135{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT135;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT135;
+	src :url("135/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_135" class="t s1_135">135</div>
+<div id="t2_135" class="t s1_135">to others. If the days of Qurbani have passed, then he must give the value of that amount of shares to the </div>
+<div id="t3_135" class="t s1_135">poor. </div>
+<div id="t4_135" class="t s1_135">14.</div>
+<div id="t5_135" class="t s1_135">The animals chosen for Qurbani should be healthy, free from faults and defects. </div>
+<div id="t6_135" class="t s2_135">THE QURBANI ANIMALS </div>
+<div id="t7_135" class="t s2_135">THAT HAVE THE FOLLOWING </div>
+<div id="t8_135" class="t s2_135">DEFECTS CANNOT BE SACRIFICED: </div>
+<div id="t9_135" class="t s1_135">1.</div>
+<div id="ta_135" class="t s1_135">An animal that was born without horns or the horns had broken off from the middle, can be used for </div>
+<div id="tb_135" class="t s1_135">Qurbani. If the horn has broken off from the root, it cannot be used for Qurbani. </div>
+<div id="tc_135" class="t s1_135">2.</div>
+<div id="td_135" class="t s1_135">Those animals that are totally blind or have lost one-third or more of their eye-sight, or one-third or more </div>
+<div id="te_135" class="t s1_135">of the tail is cut, are not allowed for Qurbani. </div>
+<div id="tf_135" class="t s1_135">3.</div>
+<div id="tg_135" class="t s1_135">An animal which limps and walks on three legs and cannot put the injured (4th) leg onto the ground, or that </div>
+<div id="th_135" class="t s1_135">it can put the injured leg onto the ground, but is unable to walk on it, cannot be used for Qurbani. </div>
+<div id="ti_135" class="t s1_135">However, if it is unable to walk on it, but can still take support from it, then Qurbani is allowed with it, </div>
+<div id="tj_135" class="t s1_135">even though it is limping. </div>
+<div id="tk_135" class="t s1_135">4.</div>
+<div id="tl_135" class="t s1_135">Animals having no teeth at all cannot he used for Qurbani. If an animal has lost some teeth only, and has </div>
+<div id="tm_135" class="t s1_135">most of the teeth, Qurbani is permissible with it. If most of the teeth are lost, Qurbani is not proper with </div>
+<div id="tn_135" class="t s1_135">that animal. </div>
+<div id="to_135" class="t s1_135">5.</div>
+<div id="tp_135" class="t s1_135">Animals born without ears cannot be used for Qurbani. Animals with very small ears can he used for </div>
+<div id="tq_135" class="t s1_135">Qurbani. </div>
+<div id="tr_135" class="t s1_135">6.</div>
+<div id="ts_135" class="t s1_135">Animals that are so thin and weak or sick that they are unable to walk the place for slaughtering, cannot be </div>
+<div id="tt_135" class="t s1_135">used for Qurbani. </div>
+<div id="tu_135" class="t s1_135">7.</div>
+<div id="tv_135" class="t s1_135">If an animal sustains an injury whilst slaughtering, ea. a leg breaks or an ear is cut etc. the Qurbani of such </div>
+<div id="tw_135" class="t s1_135">an animal will be valid. </div>
+<div id="tx_135" class="t s1_135">8.</div>
+<div id="ty_135" class="t s1_135">An animal was bought in a healthy and perfect state. After purchasing it, an accident occurred which </div>
+<div id="tz_135" class="t s1_135">rendered the animal unfit for Qurbani. In such a case, if the purchaser is not wealthy (Saahibe Nisaab), it </div>
+<div id="t10_135" class="t s1_135">will be permissible to offer the same animal for Qurbani. If the purchaser is Saahibe Nisaab, then it is </div>
+<div id="t11_135" class="t s1_135">compulsory upon him to obtain another animal in place of the injured animal. </div>
+<div id="t12_135" class="t s1_135">9.</div>
+<div id="t13_135" class="t s1_135">If an animal bought for Qurbani gives birth (before being slaughtered), then this- newly born animal should </div>
+<div id="t14_135" class="t s1_135">also be slaughtered. </div>
+<div id="t15_135" class="t s2_135">THE QURBANI MEAT AND </div>
+<div id="t16_135" class="t s2_135">SKIN OF THE A NIMAL </div>
+<div id="t17_135" class="t s1_135">1.</div>
+<div id="t18_135" class="t s1_135">It is allowed for a person who performs Qurbani (Waajib or Nafl), to either eat the flesh or to give it to </div>
+<div id="t19_135" class="t s1_135">whomsoever he pleases, rich or poor, Muslim or non-Muslim. </div>
+<div id="t1a_135" class="t s1_135">2.</div>
+<div id="t1b_135" class="t s1_135">It is preferable that the meat be divided into three parts. One part for the home, one part for relatives and </div>
+<div id="t1c_135" class="t s1_135">friends and one part for the poor and needy. </div>
+<div id="t1d_135" class="t s1_135">3.</div>
+<div id="t1e_135" class="t s1_135">The meat or skin cannot be given to an employee or to a butcher in payment of his labour. It may be given </div>
+<div id="t1f_135" class="t s1_135">to them as a gift. </div>
+<div id="t1g_135" class="t s1_135">4.</div>
+<div id="t1h_135" class="t s1_135">The skin of the Qurbani could be kept for one's personal use or could be given to anybody else for their </div>
+<div id="t1i_135" class="t s1_135">personal use. It could be used as a water bag, Musalla, etc. </div>
+<div id="t1j_135" class="t s1_135">5.</div>
+<div id="t1k_135" class="t s1_135">The Qurbani skin cannot be given in lieu of any type of services. Thus, the skin cannot be given to an </div>
+<div id="t1l_135" class="t s1_135">Imaam or Mu'azzin in lieu of their services. </div>
+<div id="t1m_135" class="t s1_135">6.</div>
+<div id="t1n_135" class="t s1_135">If the skin is sold, the amount received for it cannot be used by oneself. It Is Waajib to give it away as </div>
+<div id="t1o_135" class="t s1_135">Sadaqah (charity) to the poor and needy. </div>
+<div id="t1p_135" class="t s1_135">7.</div>
+<div id="t1q_135" class="t s1_135">It is not permissible for one to eat the meat of the following types of Qurbani: </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg135Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg135"><object width="935" height="1210" data="135/135.svg" type="image/svg+xml" id="pdf135" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld135" type="text/javascript">
+
+var isIE = false;
+var f135 = [['t2_135',2560],['t5_135',1958],['t6_135',845],['t7_135',1030],['t8_135',1218],['ta_135',2457],['tb_135',1965],['td_135',2579],['te_135',1109],['tg_135',2639],['th_135',2386],['ti_135',2525],['tj_135',628],['tl_135',2567],['tm_135',2542],['tn_135',288],['tp_135',2472],['ts_135',2617],['tt_135',431],['tv_135',2612],['tw_135',576],['ty_135',2469],['tz_135',2566],['t10_135',2488],['t11_135',1900],['t13_135',2639],['t14_135',485],['t15_135',896],['t16_135',772],['t18_135',2519],['t19_135',1520],['t1b_135',2561],['t1c_135',1076],['t1e_135',2606],['t1f_135',409],['t1h_135',2537],['t1i_135',1436],['t1k_135',2492],['t1l_135',1068],['t1n_135',2501],['t1o_135',997],['t1q_135',1904]];
+function load135(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f135);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 63;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_135");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

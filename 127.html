@@ -1,0 +1,316 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page127</title>
+</head>
+
+<body onload="load127()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_127{left:456px;top:1136px;}
+#t2_127{left:137px;top:54px;}
+#t3_127{left:165px;top:54px;}
+#t4_127{left:165px;top:72px;}
+#t5_127{left:110px;top:105px;}
+#t6_127{left:138px;top:142px;}
+#t7_127{left:165px;top:142px;}
+#t8_127{left:138px;top:175px;}
+#t9_127{left:165px;top:175px;}
+#ta_127{left:165px;top:193px;}
+#tb_127{left:138px;top:226px;}
+#tc_127{left:165px;top:226px;}
+#td_127{left:165px;top:244px;}
+#te_127{left:165px;top:262px;}
+#tf_127{left:138px;top:295px;}
+#tg_127{left:165px;top:295px;}
+#th_127{left:138px;top:328px;}
+#ti_127{left:165px;top:328px;}
+#tj_127{left:165px;top:346px;}
+#tk_127{left:138px;top:379px;}
+#tl_127{left:165px;top:379px;}
+#tm_127{left:165px;top:397px;}
+#tn_127{left:165px;top:414px;}
+#to_127{left:138px;top:448px;}
+#tp_127{left:165px;top:448px;}
+#tq_127{left:165px;top:465px;}
+#tr_127{left:165px;top:483px;}
+#ts_127{left:138px;top:516px;}
+#tt_127{left:165px;top:516px;}
+#tu_127{left:165px;top:534px;}
+#tv_127{left:138px;top:567px;}
+#tw_127{left:165px;top:567px;}
+#tx_127{left:165px;top:585px;}
+#ty_127{left:500px;top:585px;}
+#tz_127{left:138px;top:618px;}
+#t10_127{left:165px;top:618px;}
+#t11_127{left:165px;top:636px;}
+#t12_127{left:165px;top:654px;}
+#t13_127{left:138px;top:687px;}
+#t14_127{left:165px;top:687px;}
+#t15_127{left:261px;top:712px;}
+#t16_127{left:110px;top:741px;}
+#t17_127{left:110px;top:778px;}
+#t18_127{left:110px;top:799px;}
+#t19_127{left:110px;top:821px;}
+#t1a_127{left:110px;top:842px;}
+#t1b_127{left:138px;top:879px;}
+#t1c_127{left:165px;top:879px;}
+#t1d_127{left:250px;top:879px;}
+#t1e_127{left:165px;top:897px;}
+#t1f_127{left:138px;top:930px;}
+#t1g_127{left:165px;top:930px;}
+#t1h_127{left:265px;top:930px;}
+#t1i_127{left:165px;top:948px;}
+#t1j_127{left:138px;top:982px;}
+#t1k_127{left:165px;top:982px;}
+#t1l_127{left:274px;top:982px;}
+#t1m_127{left:165px;top:999px;}
+#t1n_127{left:138px;top:1033px;}
+#t1o_127{left:165px;top:1033px;}
+#t1p_127{left:360px;top:1033px;}
+#t1q_127{left:165px;top:1051px;}
+#t1r_127{left:165px;top:1069px;}
+
+.s1_127{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT127;
+	color: rgb(0,0,0);
+}
+
+.s4_127{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NKJHPH-Wingdings-Regular127;
+	color: rgb(0,0,0);
+}
+
+.s5_127{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM127;
+	color: rgb(0,0,0);
+}
+
+.s3_127{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT127;
+	color: rgb(0,0,0);
+}
+
+.s2_127{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM127;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM127;
+	src :url("127/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT127;
+	src :url("127/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NKJHPH-Wingdings-Regular127;
+	src :url("127/fonts/NKJHPH-Wingdings-Regular.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_127" class="t s1_127">127</div>
+<div id="t2_127" class="t s1_127">5.</div>
+<div id="t3_127" class="t s1_127">If one gives a deserving person some money as a gift but makes the Niyyat of Zakat, the Zakat will be </div>
+<div id="t4_127" class="t s1_127">valid. </div>
+<div id="t5_127" class="t s2_127">THE METHOD OF DISTRIBUTING ZAKAAT</div>
+<div id="t6_127" class="t s1_127">1.</div>
+<div id="t7_127" class="t s1_127">Zakat is Fardh at the rate of 2.5%. </div>
+<div id="t8_127" class="t s1_127">2.</div>
+<div id="t9_127" class="t s1_127">Zakat should be given as soon as possible after it becomes due. It is possible that death may occur and thus </div>
+<div id="ta_127" class="t s1_127">lead to failure in fulfilling one's obligations. </div>
+<div id="tb_127" class="t s1_127">3.</div>
+<div id="tc_127" class="t s1_127">A poor man cannot be paid for his work from Zakat, nor can Zakat be given in payment of anyone's </div>
+<div id="td_127" class="t s1_127">services, except when an Islamic government pays salaries to persons appointed by the government to </div>
+<div id="te_127" class="t s1_127">collect Zakat. </div>
+<div id="tf_127" class="t s1_127">4.</div>
+<div id="tg_127" class="t s1_127">Zakat will only be valid if the recipient is made the owner of that amount. </div>
+<div id="th_127" class="t s1_127">5.</div>
+<div id="ti_127" class="t s1_127">Zakat cannot be given or used for the construction of a masjid, madrasah, hospital, a well, a bridge or any </div>
+<div id="tj_127" class="t s1_127">other public amenity. </div>
+<div id="tk_127" class="t s1_127">6.</div>
+<div id="tl_127" class="t s1_127">Poor students can be given a bursary from Zakat. If the student is of an understanding age, the Zakat must </div>
+<div id="tm_127" class="t s1_127">be given to him personally; and if he is not of an understanding age, then his Shar'i Wakeel (parents or </div>
+<div id="tn_127" class="t s1_127">legal guardian) must be given possession of the amount. </div>
+<div id="to_127" class="t s1_127">7.</div>
+<div id="tp_127" class="t s1_127">Zakat can be paid in kind from the same merchandise on which it is due or alternatively, it could be paid in </div>
+<div id="tq_127" class="t s1_127">cash. It is of VITAL importance to ensure at all times that the recipient is made the OWNER of the </div>
+<div id="tr_127" class="t s1_127">ZAKAAT. </div>
+<div id="ts_127" class="t s1_127">8.</div>
+<div id="tt_127" class="t s1_127">Authority can be delegated to another person or an organization for the distribution of Zakat in order that it </div>
+<div id="tu_127" class="t s1_127">be utilised in accordance with the laws of Zakat. </div>
+<div id="tv_127" class="t s1_127">9.</div>
+<div id="tw_127" class="t s1_127">If a person requests someone to give a certain amount on his behalf as Zakat, and that sum is given out, </div>
+<div id="tx_127" class="t s1_127">then that Zakat will be valid. The sum given will be a </div>
+<div id="ty_127" class="t s1_127">debt upon the one who made this request. </div>
+<div id="tz_127" class="t s1_127">10.</div>
+<div id="t10_127" class="t s1_127">If an agent is given Zakat for distribution, and he does not distribute it then the Zakat will not be regarded </div>
+<div id="t11_127" class="t s1_127">as fulfilled, and the sin of not discharging the obligatory duty of Zakat will remain a burden on whom it </div>
+<div id="t12_127" class="t s1_127">was Farz. </div>
+<div id="t13_127" class="t s1_127">11.</div>
+<div id="t14_127" class="t s1_127">It is Afdhal (best) to give one's Zakat when it is due, rather than wait for Ramadan </div>
+<div id="t15_127" class="t s3_127">TO WHOM ZAKAAT CAN BE GIVEN (MASAARIF) </div>
+<div id="t16_127" class="t s3_127">The recipients of ZAKAAT according to the Qur'aan are as follows. </div>
+<div id="t17_127" class="t s3_127">"Zakat (contributions of cash money, merchandise, animals etc.) are for the poor and the needy; </div>
+<div id="t18_127" class="t s3_127">and those who collect them; for those whose hearts are to be reconciled; and to free the captives </div>
+<div id="t19_127" class="t s3_127">and the debtors; and for the cause of Allah Ta'ala; and for the wayfarer; A duty ordained by </div>
+<div id="t1a_127" class="t s3_127">Allah Ta'ala. Allah is All Knowing, Wise." (Surah Taubah: 60) </div>
+<div id="t1b_127" class="t s4_127">±</div>
+<div id="t1c_127" class="t s5_127">FUQA'RAA</div>
+<div id="t1d_127" class="t s1_127">People who are poor and who possess more than their basic needs but do not possess wealth </div>
+<div id="t1e_127" class="t s1_127">equal to Nisaab. </div>
+<div id="t1f_127" class="t s4_127">±</div>
+<div id="t1g_127" class="t s5_127">MASAAKEEN</div>
+<div id="t1h_127" class="t s1_127">. People who are destitute and extremely needy to the extent that they are forced to beg for </div>
+<div id="t1i_127" class="t s1_127">their daily food ration. </div>
+<div id="t1j_127" class="t s4_127">±</div>
+<div id="t1k_127" class="t s5_127">AL AAMILEEN</div>
+<div id="t1l_127" class="t s1_127">. Those persons who are appointed by an Islamic Head of State or Government to collect </div>
+<div id="t1m_127" class="t s1_127">Zakaat. It is not necessary that this be a needy person. </div>
+<div id="t1n_127" class="t s4_127">±</div>
+<div id="t1o_127" class="t s5_127">MU ALLAFATUL QULOOB</div>
+<div id="t1p_127" class="t s1_127">. Those persons that have recently accepted Islam and are in need of basic </div>
+<div id="t1q_127" class="t s1_127">necessities who would benefit from encouragement by the Muslims which would help to strengthen their </div>
+<div id="t1r_127" class="t s1_127">faith in Islam. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg127Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg127"><object width="935" height="1210" data="127/127.svg" type="image/svg+xml" id="pdf127" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld127" type="text/javascript">
+
+var isIE = false;
+var f127 = [['t3_127',2504],['t5_127',1517],['t7_127',836],['t9_127',2623],['ta_127',1079],['tc_127',2447],['td_127',2500],['te_127',333],['tg_127',1808],['ti_127',2590],['tj_127',521],['tl_127',2598],['tm_127',2515],['tn_127',1377],['tp_127',2625],['tq_127',2429],['tt_127',2627],['tu_127',1186],['tw_127',2534],['tx_127',1310],['ty_127',1018],['t10_127',2595],['t11_127',2545],['t12_127',235],['t14_127',2019],['t15_127',1650],['t16_127',1999],['t17_127',2812],['t18_127',2816],['t19_127',2685],['t1a_127',1852],['t1d_127',2259],['t1e_127',396],['t1h_127',2220],['t1i_127',551],['t1k_127',437],['t1l_127',2176],['t1m_127',1321],['t1o_127',779],['t1p_127',1811],['t1q_127',2573],['t1r_127',341]];
+function load127(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f127);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 64;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_127");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page142</title>
+</head>
+
+<body onload="load142()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_142{left:456px;top:1136px;}
+#t2_142{left:291px;top:54px;}
+#t3_142{left:110px;top:83px;}
+#t4_142{left:110px;top:104px;}
+#t5_142{left:138px;top:141px;}
+#t6_142{left:165px;top:141px;}
+#t7_142{left:138px;top:174px;}
+#t8_142{left:165px;top:174px;}
+#t9_142{left:138px;top:207px;}
+#ta_142{left:165px;top:207px;}
+#tb_142{left:138px;top:240px;}
+#tc_142{left:165px;top:240px;}
+#td_142{left:138px;top:273px;}
+#te_142{left:165px;top:273px;}
+#tf_142{left:138px;top:306px;}
+#tg_142{left:165px;top:306px;}
+#th_142{left:165px;top:324px;}
+#ti_142{left:165px;top:342px;}
+#tj_142{left:192px;top:375px;}
+#tk_142{left:220px;top:375px;}
+#tl_142{left:192px;top:408px;}
+#tm_142{left:220px;top:408px;}
+#tn_142{left:192px;top:441px;}
+#to_142{left:220px;top:441px;}
+#tp_142{left:192px;top:475px;}
+#tq_142{left:220px;top:475px;}
+#tr_142{left:165px;top:507px;}
+#ts_142{left:165px;top:529px;}
+#tt_142{left:138px;top:566px;}
+#tu_142{left:165px;top:566px;}
+#tv_142{left:138px;top:599px;}
+#tw_142{left:165px;top:599px;}
+#tx_142{left:165px;top:617px;}
+#ty_142{left:110px;top:649px;}
+#tz_142{left:110px;top:686px;}
+#t10_142{left:110px;top:707px;}
+#t11_142{left:299px;top:736px;}
+#t12_142{left:138px;top:766px;}
+#t13_142{left:165px;top:766px;}
+#t14_142{left:165px;top:783px;}
+#t15_142{left:138px;top:816px;}
+#t16_142{left:165px;top:816px;}
+#t17_142{left:165px;top:834px;}
+#t18_142{left:138px;top:867px;}
+#t19_142{left:165px;top:867px;}
+#t1a_142{left:138px;top:901px;}
+#t1b_142{left:165px;top:901px;}
+#t1c_142{left:138px;top:934px;}
+#t1d_142{left:165px;top:934px;}
+#t1e_142{left:165px;top:952px;}
+#t1f_142{left:756px;top:952px;}
+#t1g_142{left:165px;top:969px;}
+#t1h_142{left:165px;top:987px;}
+#t1i_142{left:391px;top:1013px;}
+#t1j_142{left:138px;top:1042px;}
+#t1k_142{left:165px;top:1042px;}
+#t1l_142{left:165px;top:1060px;}
+#t1m_142{left:138px;top:1093px;}
+#t1n_142{left:165px;top:1093px;}
+#t1o_142{left:165px;top:1111px;}
+
+.s1_142{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT142;
+	color: rgb(0,0,0);
+}
+
+.s3_142{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: CourierNewPSMT;
+	color: rgb(0,0,0);
+}
+
+.s2_142{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT142;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT142;
+	src :url("142/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_142" class="t s1_142">142</div>
+<div id="t2_142" class="t s2_142">UPON WHOM IS HAJ FARZ (CONDITIONS) </div>
+<div id="t3_142" class="t s2_142">HAJ is FARZ once in a lifetime upon every adult, male and female. The conditions that make </div>
+<div id="t4_142" class="t s2_142">Haj l--ARZ. are as follows. </div>
+<div id="t5_142" class="t s1_142">1.</div>
+<div id="t6_142" class="t s1_142">To be a Muslim; </div>
+<div id="t7_142" class="t s1_142">2.</div>
+<div id="t8_142" class="t s1_142">To be mentally fit (not insane); </div>
+<div id="t9_142" class="t s1_142">3.</div>
+<div id="ta_142" class="t s1_142">To be physically fit, (not invalid or handicapped ); </div>
+<div id="tb_142" class="t s1_142">4.</div>
+<div id="tc_142" class="t s1_142">Buloogh, (to he physically matured); </div>
+<div id="td_142" class="t s1_142">5.</div>
+<div id="te_142" class="t s1_142">To be a free person, (not to be a slave); </div>
+<div id="tf_142" class="t s1_142">6.</div>
+<div id="tg_142" class="t s1_142">To have sufficient provision for one's dependents,. eg. children, for the duration of one's absence as well as </div>
+<div id="th_142" class="t s1_142">to possess all requirments for travel and be financially independent. If one has the means to travel and </div>
+<div id="ti_142" class="t s1_142">staying at </div>
+<div id="tj_142" class="t s3_142">o</div>
+<div id="tk_142" class="t s1_142">Makkah Mukarramah </div>
+<div id="tl_142" class="t s3_142">o</div>
+<div id="tm_142" class="t s1_142">Muzdalifah. </div>
+<div id="tn_142" class="t s3_142">o</div>
+<div id="to_142" class="t s1_142">Meena and </div>
+<div id="tp_142" class="t s3_142">o</div>
+<div id="tq_142" class="t s1_142">Arafaat, </div>
+<div id="tr_142" class="t s2_142">HAJ becomes FARZ even though one does NOT have the means of going to Madinah </div>
+<div id="ts_142" class="t s2_142">Munawwarah. </div>
+<div id="tt_142" class="t s1_142">7.</div>
+<div id="tu_142" class="t s1_142">Security of route; </div>
+<div id="tv_142" class="t s1_142">8.</div>
+<div id="tw_142" class="t s1_142">A women must he accompanied by her husband or a Mahram. A Mahram is : </div>
+<div id="tx_142" class="t s1_142">a male member of the family whom she is NOT allowed to marry according to Islamic law. </div>
+<div id="ty_142" class="t s2_142">If any of the above conditions are not found, Haj will not be FARZ </div>
+<div id="tz_142" class="t s2_142">Once the above conditions are found, Haj becomes Farz. It becomes Waajih upon such a person </div>
+<div id="t10_142" class="t s2_142">to perform Haj during the first available Haj period. Delaying the Haj will be a sinful act. </div>
+<div id="t11_142" class="t s2_142">MASAA'IL REGARDING THE MAHRAM : </div>
+<div id="t12_142" class="t s1_142">1.</div>
+<div id="t13_142" class="t s1_142">If the Mahram is a minor or one who is so irreligious that he cannot he trusted by even his mother and </div>
+<div id="t14_142" class="t s1_142">sister, then it is not proper to travel with such a person. </div>
+<div id="t15_142" class="t s1_142">2.</div>
+<div id="t16_142" class="t s1_142">When a trustworthy Mahram is found, it is not permissible for the husband to refuse permission for her to </div>
+<div id="t17_142" class="t s1_142">travel. If he does, she should still proceed to Haj. </div>
+<div id="t18_142" class="t s1_142">3.</div>
+<div id="t19_142" class="t s1_142">A girl almost attaining maturity should also he accompanied by a Mahram. </div>
+<div id="t1a_142" class="t s1_142">4.</div>
+<div id="t1b_142" class="t s1_142">A woman going for Haj (with a Mahram) should bear all the cost of the Mahram. </div>
+<div id="t1c_142" class="t s1_142">5.</div>
+<div id="t1d_142" class="t s1_142">If no Mahram is found by a woman all her life, it will not be regarded a sin if she does not perform Haj. </div>
+<div id="t1e_142" class="t s1_142">However, such a woman MUST mention in her will that someone be sent for Haj on her behalf </div>
+<div id="t1f_142" class="t s1_142">after her </div>
+<div id="t1g_142" class="t s1_142">death.This will be binding on her inheritors provided it be possible to fulfil the Haj expenses from one-</div>
+<div id="t1h_142" class="t s1_142">third of her estate. </div>
+<div id="t1i_142" class="t s2_142">OTHER MASAA'IL </div>
+<div id="t1j_142" class="t s1_142">1.</div>
+<div id="t1k_142" class="t s1_142">A person delayed his FARZ Haj. He thereafter becomes blind or so ill that he is unable to undertake the </div>
+<div id="t1l_142" class="t s1_142">journey. Such a person should draw up a will for Hajje Badal after his death. </div>
+<div id="t1m_142" class="t s1_142">2.</div>
+<div id="t1n_142" class="t s1_142">If one has left so much wealth after his death that after discharging his liabilities, Hajje Badal can be </div>
+<div id="t1o_142" class="t s1_142">performed from One-third of the remaining wealth, then it is essentional for the heirs of the deceased to </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg142Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg142"><object width="935" height="1210" data="142/142.svg" type="image/svg+xml" id="pdf142" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld142" type="text/javascript">
+
+var isIE = false;
+var f142 = [['t2_142',1413],['t3_142',2750],['t4_142',803],['t6_142',406],['t8_142',763],['ta_142',1238],['tc_142',903],['te_142',961],['tg_142',2628],['th_142',2499],['ti_142',236],['tk_142',532],['to_142',270],['tr_142',2529],['tu_142',428],['tw_142',1893],['tx_142',2237],['ty_142',1969],['tz_142',2813],['t10_142',2623],['t11_142',1351],['t13_142',2501],['t14_142',1348],['t16_142',2590],['t17_142',1203],['t19_142',1835],['t1b_142',1992],['t1d_142',2542],['t1e_142',2334],['t1f_142',206],['t1g_142',2529],['t1h_142',446],['t1i_142',608],['t1k_142',2544],['t1l_142',1882],['t1n_142',2464],['t1o_142',2539]];
+function load142(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f142);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 61;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_142");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

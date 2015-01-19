@@ -1,0 +1,275 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page140</title>
+</head>
+
+<body onload="load140()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_140{left:456px;top:1136px;}
+#t2_140{left:277px;top:54px;}
+#t3_140{left:138px;top:84px;}
+#t4_140{left:165px;top:84px;}
+#t5_140{left:165px;top:102px;}
+#t6_140{left:138px;top:136px;}
+#t7_140{left:165px;top:136px;}
+#t8_140{left:165px;top:154px;}
+#t9_140{left:138px;top:188px;}
+#ta_140{left:165px;top:188px;}
+#tb_140{left:165px;top:206px;}
+#tc_140{left:298px;top:231px;}
+#td_140{left:110px;top:260px;}
+#te_140{left:138px;top:297px;}
+#tf_140{left:165px;top:297px;}
+#tg_140{left:138px;top:330px;}
+#th_140{left:165px;top:330px;}
+#ti_140{left:138px;top:363px;}
+#tj_140{left:165px;top:363px;}
+#tk_140{left:138px;top:396px;}
+#tl_140{left:165px;top:396px;}
+#tm_140{left:299px;top:421px;}
+#tn_140{left:138px;top:452px;}
+#to_140{left:165px;top:452px;}
+#tp_140{left:137px;top:486px;}
+#tq_140{left:165px;top:486px;}
+#tr_140{left:165px;top:504px;}
+#ts_140{left:138px;top:538px;}
+#tt_140{left:165px;top:538px;}
+#tu_140{left:165px;top:556px;}
+#tv_140{left:417px;top:581px;}
+#tw_140{left:110px;top:610px;}
+#tx_140{left:110px;top:631px;}
+#ty_140{left:110px;top:653px;}
+#tz_140{left:110px;top:674px;}
+#t10_140{left:110px;top:695px;}
+#t11_140{left:110px;top:717px;}
+#t12_140{left:110px;top:753px;}
+#t13_140{left:110px;top:790px;}
+#t14_140{left:110px;top:811px;}
+#t15_140{left:110px;top:833px;}
+#t16_140{left:110px;top:854px;}
+#t17_140{left:110px;top:890px;}
+#t18_140{left:110px;top:912px;}
+#t19_140{left:110px;top:933px;}
+#t1a_140{left:110px;top:955px;}
+#t1b_140{left:110px;top:991px;}
+#t1c_140{left:110px;top:1012px;}
+#t1d_140{left:274px;top:1058px;}
+#t1e_140{left:399px;top:1058px;}
+#t1f_140{left:550px;top:1060px;}
+
+.s1_140{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT140;
+	color: rgb(0,0,0);
+}
+
+.s3_140{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT140;
+	color: rgb(0,0,0);
+}
+
+.s2_140{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT140;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJIKOL-SymbolMT140;
+	src :url("140/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT140;
+	src :url("140/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_140" class="t s1_140">140</div>
+<div id="t2_140" class="t s2_140">TIME FOR DISCHARGING SADAQATUL FITR: </div>
+<div id="t3_140" class="t s3_140">•</div>
+<div id="t4_140" class="t s1_140">It is better to give Sadaqatul Fitr before reaching the Eidgaah. However, if it is not Driven before, it may </div>
+<div id="t5_140" class="t s1_140">then be given after the Eid Salaah. </div>
+<div id="t6_140" class="t s3_140">•</div>
+<div id="t7_140" class="t s1_140">If one discharge this duty before the day of Eid, i.e. during Kamadhaan, the duty will be regarded as </div>
+<div id="t8_140" class="t s1_140">discharged and will not have to be repeated. </div>
+<div id="t9_140" class="t s3_140">•</div>
+<div id="ta_140" class="t s1_140">If one did not give Sadaqatul Fitr on Eid day, he will not be absolved of this duty. He should thus give it </div>
+<div id="tb_140" class="t s1_140">can on subsequent day. </div>
+<div id="tc_140" class="t s2_140">RATE (AMOUNT) OF SADAQATUL FITR: </div>
+<div id="td_140" class="t s2_140">The following could be given has Sadaqatul Fiter: </div>
+<div id="te_140" class="t s1_140">1.</div>
+<div id="tf_140" class="t s1_140">1/2 Saa' wheat, flour, bran or raisins; or </div>
+<div id="tg_140" class="t s1_140">2.</div>
+<div id="th_140" class="t s1_140">one Saa' dates or barley; or </div>
+<div id="ti_140" class="t s1_140">3.</div>
+<div id="tj_140" class="t s1_140">The equivalent Of either one in cash or kind. </div>
+<div id="tk_140" class="t s1_140">4.</div>
+<div id="tl_140" class="t s1_140">One Saa' equals approximately 3.828 kg. </div>
+<div id="tm_140" class="t s2_140">THE RECIPIENTS OF SADAQATUL FITR: </div>
+<div id="tn_140" class="t s3_140">•</div>
+<div id="to_140" class="t s1_140">The recipients of Sadaqatul Fitr are the same as that of Zakaat. </div>
+<div id="tp_140" class="t s3_140">•</div>
+<div id="tq_140" class="t s1_140">Further, the Sadaqatul Fitr of one person could be given to just one rightful recipient or could be </div>
+<div id="tr_140" class="t s1_140">distributed between a few recipients of Sadaqatul Fitr. </div>
+<div id="ts_140" class="t s3_140">•</div>
+<div id="tt_140" class="t s1_140">It is also permissible that the Sadaqatul Fitr of a group of people be collectively given to just one individual </div>
+<div id="tu_140" class="t s1_140">(recipient of Sadaqatul Fitr). </div>
+<div id="tv_140" class="t s2_140">QUESTIONS </div>
+<div id="tw_140" class="t s2_140">1. Write 5 benefits of giving ZAKAAT? </div>
+<div id="tx_140" class="t s2_140">a..............................................................................................</div>
+<div id="ty_140" class="t s2_140">b..............................................................................................</div>
+<div id="tz_140" class="t s2_140">c..............................................................................................</div>
+<div id="t10_140" class="t s2_140">d..............................................................................................</div>
+<div id="t11_140" class="t s2_140">e..............................................................................................</div>
+<div id="t12_140" class="t s2_140">2. On whom is ZAKAAT FARZ? </div>
+<div id="t13_140" class="t s2_140">3. Name 3 types of wealth on which ZAKAAT is FARZ? </div>
+<div id="t14_140" class="t s2_140">a..............................................................................................</div>
+<div id="t15_140" class="t s2_140">b..............................................................................................</div>
+<div id="t16_140" class="t s2_140">c..............................................................................................</div>
+<div id="t17_140" class="t s2_140">4. Name 3 types of wealth on which ZAKAAT is not FARZ'? </div>
+<div id="t18_140" class="t s2_140">a..............................................................................................</div>
+<div id="t19_140" class="t s2_140">b..............................................................................................</div>
+<div id="t1a_140" class="t s2_140">c..............................................................................................</div>
+<div id="t1b_140" class="t s2_140">5. In the following table fill in the number and age of animals that should be paid as ZAKAAT </div>
+<div id="t1c_140" class="t s2_140">for sheeps and goats. </div>
+<div id="t1d_140" class="t s2_140">Number </div>
+<div id="t1e_140" class="t s2_140">Age </div>
+<div id="t1f_140" class="t s1_140">Zakaat. </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg140Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg140"><object width="935" height="1210" data="140/140.svg" type="image/svg+xml" id="pdf140" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld140" type="text/javascript">
+
+var isIE = false;
+var f140 = [['t2_140',1525],['t4_140',2564],['t5_140',843],['t7_140',2457],['t8_140',1080],['ta_140',2560],['tb_140',569],['tc_140',1354],['td_140',1470],['tf_140',970],['th_140',662],['tj_140',1099],['tl_140',1003],['tm_140',1350],['to_140',1534],['tq_140',2366],['tr_140',1328],['tt_140',2637],['tu_140',698],['tw_140',1183],['t12_140',988],['t13_140',1684],['t17_140',1808],['t1b_140',2781],['t1c_140',615]];
+function load140(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f140);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 52;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_140");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

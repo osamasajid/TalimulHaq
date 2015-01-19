@@ -1,0 +1,305 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page121</title>
+</head>
+
+<body onload="load121()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_121{left:456px;top:1136px;}
+#t2_121{left:137px;top:54px;}
+#t3_121{left:165px;top:54px;}
+#t4_121{left:137px;top:87px;}
+#t5_121{left:165px;top:87px;}
+#t6_121{left:137px;top:120px;}
+#t7_121{left:165px;top:120px;}
+#t8_121{left:137px;top:153px;}
+#t9_121{left:165px;top:153px;}
+#ta_121{left:137px;top:186px;}
+#tb_121{left:165px;top:186px;}
+#tc_121{left:137px;top:220px;}
+#td_121{left:165px;top:220px;}
+#te_121{left:137px;top:253px;}
+#tf_121{left:165px;top:253px;}
+#tg_121{left:137px;top:286px;}
+#th_121{left:165px;top:286px;}
+#ti_121{left:137px;top:319px;}
+#tj_121{left:165px;top:319px;}
+#tk_121{left:110px;top:352px;}
+#tl_121{left:138px;top:389px;}
+#tm_121{left:165px;top:389px;}
+#tn_121{left:138px;top:422px;}
+#to_121{left:165px;top:422px;}
+#tp_121{left:138px;top:455px;}
+#tq_121{left:165px;top:455px;}
+#tr_121{left:138px;top:488px;}
+#ts_121{left:165px;top:488px;}
+#tt_121{left:138px;top:521px;}
+#tu_121{left:165px;top:521px;}
+#tv_121{left:138px;top:554px;}
+#tw_121{left:165px;top:554px;}
+#tx_121{left:138px;top:587px;}
+#ty_121{left:165px;top:587px;}
+#tz_121{left:138px;top:620px;}
+#t10_121{left:165px;top:620px;}
+#t11_121{left:138px;top:653px;}
+#t12_121{left:165px;top:653px;}
+#t13_121{left:138px;top:686px;}
+#t14_121{left:165px;top:686px;}
+#t15_121{left:380px;top:686px;}
+#t16_121{left:422px;top:686px;}
+#t17_121{left:138px;top:719px;}
+#t18_121{left:165px;top:719px;}
+#t19_121{left:138px;top:753px;}
+#t1a_121{left:165px;top:753px;}
+#t1b_121{left:426px;top:753px;}
+#t1c_121{left:138px;top:786px;}
+#t1d_121{left:165px;top:786px;}
+#t1e_121{left:138px;top:819px;}
+#t1f_121{left:165px;top:819px;}
+#t1g_121{left:138px;top:852px;}
+#t1h_121{left:165px;top:852px;}
+#t1i_121{left:138px;top:885px;}
+#t1j_121{left:165px;top:885px;}
+#t1k_121{left:138px;top:918px;}
+#t1l_121{left:165px;top:918px;}
+#t1m_121{left:138px;top:951px;}
+#t1n_121{left:165px;top:951px;}
+#t1o_121{left:138px;top:984px;}
+#t1p_121{left:165px;top:984px;}
+#t1q_121{left:138px;top:1017px;}
+#t1r_121{left:165px;top:1017px;}
+#t1s_121{left:138px;top:1050px;}
+#t1t_121{left:165px;top:1050px;}
+#t1u_121{left:138px;top:1084px;}
+#t1v_121{left:165px;top:1084px;}
+#t1w_121{left:138px;top:1117px;}
+#t1x_121{left:165px;top:1117px;}
+
+.s1_121{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT121;
+	color: rgb(0,0,0);
+}
+
+.s2_121{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM121;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM121;
+	src :url("121/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT121;
+	src :url("121/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_121" class="t s1_121">121</div>
+<div id="t2_121" class="t s1_121">18.</div>
+<div id="t3_121" class="t s1_121">Mention the Farz of Janaza Salaat. </div>
+<div id="t4_121" class="t s1_121">19.</div>
+<div id="t5_121" class="t s1_121">How should late comers join and complete the Janaza Salaat? </div>
+<div id="t6_121" class="t s1_121">20.</div>
+<div id="t7_121" class="t s1_121">How should the Qabr be shaped? </div>
+<div id="t8_121" class="t s1_121">21.</div>
+<div id="t9_121" class="t s1_121">What is Ta'ziat? </div>
+<div id="ta_121" class="t s1_121">22.</div>
+<div id="tb_121" class="t s1_121">What are the points to be noted during Ta'ziat? </div>
+<div id="tc_121" class="t s1_121">23.</div>
+<div id="td_121" class="t s1_121">Is it necessary to set aside a specific day to visit the Qabrastaan? </div>
+<div id="te_121" class="t s1_121">24.</div>
+<div id="tf_121" class="t s1_121">Mention the Suras preferable to be recited at the Qabrastaan. </div>
+<div id="tg_121" class="t s1_121">25.</div>
+<div id="th_121" class="t s1_121">What is IDDAT and what is the period of Iddat? </div>
+<div id="ti_121" class="t s1_121">26.</div>
+<div id="tj_121" class="t s1_121">Who is a Mayyit? Is a still born child called a Mayyit? Should it be given Ghusl? </div>
+<div id="tk_121" class="t s2_121">QUESTIONS</div>
+<div id="tl_121" class="t s1_121">1.</div>
+<div id="tm_121" class="t s1_121">Outline the five pillars of Islam. </div>
+<div id="tn_121" class="t s1_121">2.</div>
+<div id="to_121" class="t s1_121">What does fasting mean to a Muslim? </div>
+<div id="tp_121" class="t s1_121">3.</div>
+<div id="tq_121" class="t s1_121">Mention the eight different types of fasts. </div>
+<div id="tr_121" class="t s1_121">4.</div>
+<div id="ts_121" class="t s1_121">Explain the first four. </div>
+<div id="tt_121" class="t s1_121">5.</div>
+<div id="tu_121" class="t s1_121">When is it: a) Sunnah, b) Mustahab, c) Makrooh and d) Haraam to Fast? </div>
+<div id="tv_121" class="t s1_121">6.</div>
+<div id="tw_121" class="t s1_121">What will happen if a person did not make an intention to fast? </div>
+<div id="tx_121" class="t s1_121">7.</div>
+<div id="ty_121" class="t s1_121">Mention the time for the Niyyat. </div>
+<div id="tz_121" class="t s1_121">8.</div>
+<div id="t10_121" class="t s1_121">Mention 3 Mustahab in Fasting. </div>
+<div id="t11_121" class="t s1_121">9.</div>
+<div id="t12_121" class="t s1_121">Mention 6 acts of Makrooh whilst fasting. </div>
+<div id="t13_121" class="t s1_121">10.</div>
+<div id="t14_121" class="t s1_121">Things that break one's fast are of .</div>
+<div id="t15_121" class="t s1_121">..........</div>
+<div id="t16_121" class="t s1_121">types. Mention and explain them. </div>
+<div id="t17_121" class="t s1_121">11.</div>
+<div id="t18_121" class="t s1_121">Explain the terms Qazaa and Kaffarah. </div>
+<div id="t19_121" class="t s1_121">12.</div>
+<div id="t1a_121" class="t s1_121">Mention all the items that break ones fast </div>
+<div id="t1b_121" class="t s1_121">only make Qazaa Wajib. </div>
+<div id="t1c_121" class="t s1_121">13.</div>
+<div id="t1d_121" class="t s1_121">If a person intentionally broke his Sunnah Roza, will Kaffarah become Wajib? If so, Why? </div>
+<div id="t1e_121" class="t s1_121">14.</div>
+<div id="t1f_121" class="t s1_121">Mention the items that make Qazaa and Kaffarah Wajib. </div>
+<div id="t1g_121" class="t s1_121">15.</div>
+<div id="t1h_121" class="t s1_121">Mention 7 items that do not break one's Fast. </div>
+<div id="t1i_121" class="t s1_121">16.</div>
+<div id="t1j_121" class="t s1_121">How many types of people are exempted from fasting? </div>
+<div id="t1k_121" class="t s1_121">17.</div>
+<div id="t1l_121" class="t s1_121">Explain the Fidya for a Fast. </div>
+<div id="t1m_121" class="t s1_121">18.</div>
+<div id="t1n_121" class="t s1_121">If a sick person, who has already given Fidya, recovers from his illness, what should he do? </div>
+<div id="t1o_121" class="t s1_121">19.</div>
+<div id="t1p_121" class="t s1_121">If a person is sick, can another person fast on his behalf? </div>
+<div id="t1q_121" class="t s1_121">20.</div>
+<div id="t1r_121" class="t s1_121">Mention the 3 types of ITIKAAF. </div>
+<div id="t1s_121" class="t s1_121">21.</div>
+<div id="t1t_121" class="t s1_121">Mention the conditions of ITIKAAF. </div>
+<div id="t1u_121" class="t s1_121">22.</div>
+<div id="t1v_121" class="t s1_121">Which acts are permitted during ITIKAAF? </div>
+<div id="t1w_121" class="t s1_121">23.</div>
+<div id="t1x_121" class="t s1_121">What will happen if a person leaves the Masjid without any valid Shar'ee reason? </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg121Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg121"><object width="935" height="1210" data="121/121.svg" type="image/svg+xml" id="pdf121" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld121" type="text/javascript">
+
+var isIE = false;
+var f121 = [['t3_121',847],['t5_121',1510],['t7_121',814],['t9_121',396],['tb_121',1149],['td_121',1579],['tf_121',1488],['th_121',1189],['tj_121',1992],['tm_121',786],['to_121',929],['tq_121',1016],['ts_121',528],['tu_121',1778],['tw_121',1548],['ty_121',795],['t10_121',785],['t12_121',1033],['t14_121',859],['t16_121',820],['t18_121',953],['t1a_121',1012],['t1b_121',605],['t1d_121',2234],['t1f_121',1387],['t1h_121',1101],['t1j_121',1348],['t1l_121',698],['t1n_121',2252],['t1p_121',1392],['t1r_121',831],['t1t_121',911],['t1v_121',1079],['t1x_121',1996]];
+function load121(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f121);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 70;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_121");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

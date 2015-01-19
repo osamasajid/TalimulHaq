@@ -1,0 +1,231 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page169</title>
+</head>
+
+<body onload="load169()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_169{left:456px;top:1136px;}
+#t2_169{left:388px;top:542px;}
+#t3_169{left:234px;top:583px;}
+#t4_169{left:478px;top:583px;}
+#t5_169{left:251px;top:629px;}
+#t6_169{left:367px;top:629px;}
+#t7_169{left:252px;top:678px;}
+#t8_169{left:367px;top:678px;}
+#t9_169{left:250px;top:724px;}
+#ta_169{left:367px;top:724px;}
+#tb_169{left:245px;top:771px;}
+#tc_169{left:367px;top:771px;}
+#td_169{left:245px;top:823px;}
+#te_169{left:367px;top:823px;}
+#tf_169{left:249px;top:871px;}
+#tg_169{left:367px;top:871px;}
+#th_169{left:249px;top:914px;}
+#ti_169{left:367px;top:914px;}
+#tj_169{left:245px;top:962px;}
+#tk_169{left:367px;top:962px;}
+#tl_169{left:249px;top:1011px;}
+#tm_169{left:367px;top:1011px;}
+#tn_169{left:250px;top:1076px;}
+#to_169{left:367px;top:1055px;}
+#tp_169{left:367px;top:1076px;}
+#tq_169{left:367px;top:1097px;}
+
+.s1_169{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT169;
+	color: rgb(0,0,0);
+}
+
+.s4_169{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT169;
+	color: rgb(0,0,0);
+}
+
+.s2_169{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT169;
+	color: rgb(204,154,0);
+}
+
+.s3_169{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM169;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM169;
+	src :url("169/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT169;
+	src :url("169/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_169" class="t s1_169">169</div>
+<div id="t2_169" class="t s2_169">System of Transliteration</div>
+<div id="t3_169" class="t s3_169">Code Arabic </div>
+<div id="t4_169" class="t s3_169">Pronunciation </div>
+<div id="t5_169" class="t s4_169">` </div>
+<div id="t6_169" class="t s4_169">Approximate with "a" as in "a stick". </div>
+<div id="t7_169" class="t s4_169">' </div>
+<div id="t8_169" class="t s4_169">Approximate with "a" as in "a stick". </div>
+<div id="t9_169" class="t s4_169">ä </div>
+<div id="ta_169" class="t s4_169">Pronounce like two "a"s in succession. </div>
+<div id="tb_169" class="t s4_169">dh </div>
+<div id="tc_169" class="t s4_169">Approximate with "d" as in "dark". </div>
+<div id="td_169" class="t s4_169">gh </div>
+<div id="te_169" class="t s4_169">Approximate with "g" as in "good". </div>
+<div id="tf_169" class="t s4_169">h </div>
+<div id="tg_169" class="t s4_169">Pronounced as the "h" in "hill". </div>
+<div id="th_169" class="t s4_169">h </div>
+<div id="ti_169" class="t s4_169">Approximate with "h" as in "heart". </div>
+<div id="tj_169" class="t s4_169">kh </div>
+<div id="tk_169" class="t s4_169">Approximate with "k". </div>
+<div id="tl_169" class="t s4_169">q </div>
+<div id="tm_169" class="t s4_169">Approximate with "q". </div>
+<div id="tn_169" class="t s4_169">s </div>
+<div id="to_169" class="t s4_169">Transliterated "s" should always be read as </div>
+<div id="tp_169" class="t s4_169">in </div>
+<div id="tq_169" class="t s4_169">"six", and should never be read as in "is". </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg169Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg169"><object width="935" height="1210" data="169/169.svg" type="image/svg+xml" id="pdf169" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld169" type="text/javascript">
+
+var isIE = false;
+var f169 = [['t2_169',746],['t3_169',457],['t6_169',1088],['t8_169',1088],['ta_169',1136],['tc_169',1033],['te_169',1049],['tg_169',923],['ti_169',1049],['tk_169',669],['tm_169',669],['to_169',1263],['tq_169',1217]];
+function load169(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f169);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 27;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_169");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

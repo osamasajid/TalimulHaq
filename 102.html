@@ -1,0 +1,224 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page102</title>
+</head>
+
+<body onload="load102()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_102{left:456px;top:1136px;}
+#t2_102{left:138px;top:594px;}
+#t3_102{left:165px;top:594px;}
+#t4_102{left:138px;top:638px;}
+#t5_102{left:165px;top:638px;}
+#t6_102{left:165px;top:656px;}
+#t7_102{left:165px;top:673px;}
+#t8_102{left:165px;top:691px;}
+#t9_102{left:138px;top:724px;}
+#ta_102{left:165px;top:724px;}
+#tb_102{left:165px;top:742px;}
+#tc_102{left:138px;top:775px;}
+#td_102{left:165px;top:775px;}
+#te_102{left:165px;top:793px;}
+#tf_102{left:138px;top:826px;}
+#tg_102{left:165px;top:826px;}
+#th_102{left:165px;top:844px;}
+#ti_102{left:165px;top:862px;}
+#tj_102{left:138px;top:903px;}
+#tk_102{left:165px;top:903px;}
+#tl_102{left:636px;top:903px;}
+#tm_102{left:165px;top:924px;}
+#tn_102{left:290px;top:924px;}
+#to_102{left:165px;top:946px;}
+#tp_102{left:165px;top:967px;}
+#tq_102{left:165px;top:988px;}
+#tr_102{left:165px;top:1010px;}
+
+.s1_102{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT102;
+	color: rgb(0,0,0);
+}
+
+.s3_102{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-BoldItalicMT;
+	color: rgb(0,0,0);
+	FONT-WEIGHT: bold;
+	FONT-STYLE: italic;
+}
+
+.s2_102{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT102;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT102;
+	src :url("102/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_102" class="t s1_102">102</div>
+<div id="t2_102" class="t s1_102">1.</div>
+<div id="t3_102" class="t s1_102">It its MAKROOH to add more soil to the QABR than that which was dug out from it. </div>
+<div id="t4_102" class="t s1_102">2.</div>
+<div id="t5_102" class="t s1_102">The shape of the QABR when filled should he like the HUMP of CAMEL. The height should be </div>
+<div id="t6_102" class="t s1_102">approximately 25 to 30 cms. It should NOT be made SQUARE or into any other shape. All types of </div>
+<div id="t7_102" class="t s1_102">buildings and enclosure on or around the QABR are NOT permissible. Building on KABR have been </div>
+<div id="t8_102" class="t s1_102">emphatically denounced in the Habit of Rasulullah (S.A.W.). </div>
+<div id="t9_102" class="t s1_102">3.</div>
+<div id="ta_102" class="t s1_102">It is MUSTAHAB to sprinkle water on the grave from the head to leg side thrice after the Kabr has been </div>
+<div id="tb_102" class="t s1_102">shaped. </div>
+<div id="tc_102" class="t s1_102">4.</div>
+<div id="td_102" class="t s1_102">To recite the Qur'an and mae Du’aa for the deceased at his grave side, after the grave is filled and shaped, </div>
+<div id="te_102" class="t s1_102">is also MUSTAHAB. </div>
+<div id="tf_102" class="t s1_102">5.</div>
+<div id="tg_102" class="t s1_102">It has been related by Hazrat UTHMAN (R.A.) that after Rasulullah (S.A.W.) buried the dead, he paused </div>
+<div id="th_102" class="t s1_102">and said: "Beseech forgiveness from Allah for your brother and make Dua for his steadfastness because he </div>
+<div id="ti_102" class="t s1_102">is going to be questioned now by the MUNKAR and NECKER." </div>
+<div id="tj_102" class="t s2_102">6.</div>
+<div id="tk_102" class="t s2_102">It has been related by Hazrat Uthmaan that after Rasulullah </div>
+<div id="tl_102" class="t s2_102">buried the dead, he </div>
+<div id="tm_102" class="t s2_102">paused and said, </div>
+<div id="tn_102" class="t s3_102">“Beseech forgiveness from Allah for your brother and make Dua for </div>
+<div id="to_102" class="t s3_102">his steadfastness because he is going to be questioned now by the MUNKAR and </div>
+<div id="tp_102" class="t s3_102">NECKER."</div>
+<div id="tq_102" class="t s2_102">7. After the burial the first Ruku of Suratul Bakarah should be read at the head side of the </div>
+<div id="tr_102" class="t s2_102">Qabr:- </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg102Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg102"><object width="935" height="1210" data="102/102.svg" type="image/svg+xml" id="pdf102" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld102" type="text/javascript">
+
+var isIE = false;
+var f102 = [['t3_102',2097],['t5_102',2371],['t6_102',2451],['t7_102',2487],['t8_102',1500],['ta_102',2561],['td_102',2592],['te_102',529],['tg_102',2579],['th_102',2617],['ti_102',1594],['tk_102',1743],['tl_102',558],['tm_102',483],['tn_102',2075],['to_102',2431],['tq_102',2628]];
+function load102(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f102);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 28;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_102");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

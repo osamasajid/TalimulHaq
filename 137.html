@@ -1,0 +1,266 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page137</title>
+</head>
+
+<body onload="load137()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_137{left:456px;top:1136px;}
+#t2_137{left:276px;top:54px;}
+#t3_137{left:110px;top:139px;}
+#t4_137{left:256px;top:168px;}
+#t5_137{left:110px;top:241px;}
+#t6_137{left:110px;top:263px;}
+#t7_137{left:138px;top:301px;}
+#t8_137{left:165px;top:301px;}
+#t9_137{left:110px;top:380px;}
+#ta_137{left:110px;top:402px;}
+#tb_137{left:331px;top:431px;}
+#tc_137{left:138px;top:460px;}
+#td_137{left:165px;top:460px;}
+#te_137{left:165px;top:478px;}
+#tf_137{left:165px;top:496px;}
+#tg_137{left:137px;top:529px;}
+#th_137{left:165px;top:529px;}
+#ti_137{left:137px;top:562px;}
+#tj_137{left:165px;top:562px;}
+#tk_137{left:137px;top:595px;}
+#tl_137{left:165px;top:595px;}
+#tm_137{left:165px;top:613px;}
+#tn_137{left:137px;top:646px;}
+#to_137{left:165px;top:646px;}
+#tp_137{left:110px;top:757px;}
+#tq_137{left:110px;top:778px;}
+#tr_137{left:110px;top:815px;}
+#ts_137{left:110px;top:836px;}
+#tt_137{left:353px;top:865px;}
+#tu_137{left:138px;top:894px;}
+#tv_137{left:165px;top:894px;}
+#tw_137{left:138px;top:927px;}
+#tx_137{left:165px;top:927px;}
+#ty_137{left:138px;top:960px;}
+#tz_137{left:165px;top:960px;}
+#t10_137{left:138px;top:993px;}
+#t11_137{left:165px;top:993px;}
+#t12_137{left:138px;top:1026px;}
+#t13_137{left:165px;top:1026px;}
+#t14_137{left:138px;top:1060px;}
+#t15_137{left:165px;top:1060px;}
+#t16_137{left:138px;top:1093px;}
+#t17_137{left:165px;top:1093px;}
+
+.s1_137{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT137;
+	color: rgb(0,0,0);
+}
+
+.s4_137{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT137;
+	color: rgb(0,0,0);
+}
+
+.s2_137{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT137;
+	color: rgb(0,0,0);
+}
+
+.s3_137{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(0,0,0);
+	FONT-STYLE: italic;
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJIKOL-SymbolMT137;
+	src :url("137/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT137;
+	src :url("137/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_137" class="t s1_137">137</div>
+<div id="t2_137" class="t s2_137">WHILE SLAUGHTERING THE ANIMAL READ: </div>
+<div id="t3_137" class="t s3_137">( "In the name of Allah, Allah is the Greatest.")</div>
+<div id="t4_137" class="t s2_137">DU'A TO BE RECITED AFTER ZABAH (SACRIFICE) </div>
+<div id="t5_137" class="t s2_137">( "O Allah, accept from me (this sacrifice) like You have accepted from Your beloved </div>
+<div id="t6_137" class="t s2_137">Muhammad and your friend Ibrahim. Peace be upon them.") </div>
+<div id="t7_137" class="t s4_137">•</div>
+<div id="t8_137" class="t s1_137">If these Du'as are not memorised then make intention of Qurbani and merely recite </div>
+<div id="t9_137" class="t s2_137">BISMII.LAH ALL AHU AKBAR. </div>
+<div id="ta_137" class="t s2_137">The Qurbani will he correct. </div>
+<div id="tb_137" class="t s2_137">THE TAKBEERAAT OF TASHRIQ </div>
+<div id="tc_137" class="t s1_137">1.</div>
+<div id="td_137" class="t s1_137">It is Waajib for every adult Muslim to recite the Takbeeraat of Tashriq after every Farz Salaat, which is </div>
+<div id="te_137" class="t s1_137">performed with Jamaat, from the Fajr Salaut on the 9th of Zil Hijjah until after the Asr Salaat on the 13th </div>
+<div id="tf_137" class="t s1_137">Zil Hijjah (23 Salaahes). </div>
+<div id="tg_137" class="t s1_137">2.</div>
+<div id="th_137" class="t s1_137">The Takbeer should be recited once after each of the 23 Salaahes. </div>
+<div id="ti_137" class="t s1_137">3.</div>
+<div id="tj_137" class="t s1_137">It should be reciting in an audible tone, not silently and not very loudly. </div>
+<div id="tk_137" class="t s1_137">4.</div>
+<div id="tl_137" class="t s1_137">It is desirable for those who peform their Salaat alone (men or women) and Musaufirs (travellers), to recite </div>
+<div id="tm_137" class="t s1_137">these Takheeraat softly. </div>
+<div id="tn_137" class="t s1_137">5.</div>
+<div id="to_137" class="t s1_137">The Takheeraat to be recited are as follows: </div>
+<div id="tp_137" class="t s2_137">'Allahu Akhar, Allahu Akhar, Laa llaha Illallahu Wallahu Akhar Allahu Akbar wa Lillahil </div>
+<div id="tq_137" class="t s2_137">Hamd.' </div>
+<div id="tr_137" class="t s2_137">("Allah is Great. Allah is Great. There is no Deity besides Allah and Allah is Great. Allah is </div>
+<div id="ts_137" class="t s2_137">Great and All praise belongs to him alone. ") </div>
+<div id="tt_137" class="t s2_137">SUNNATS OF EIDUL ADHA </div>
+<div id="tu_137" class="t s1_137">1.</div>
+<div id="tv_137" class="t s1_137">Awaken earlier than usual. </div>
+<div id="tw_137" class="t s1_137">2.</div>
+<div id="tx_137" class="t s1_137">Brush the teeth with Miswaak. </div>
+<div id="ty_137" class="t s1_137">3.</div>
+<div id="tz_137" class="t s1_137">Have a Ghusl (bath). </div>
+<div id="t10_137" class="t s1_137">4.</div>
+<div id="t11_137" class="t s1_137">Be well dressed in an Islamic manner. </div>
+<div id="t12_137" class="t s1_137">5.</div>
+<div id="t13_137" class="t s1_137">Dress in one's best clothes, not necessarilly new. </div>
+<div id="t14_137" class="t s1_137">6.</div>
+<div id="t15_137" class="t s1_137">Use Itr. </div>
+<div id="t16_137" class="t s1_137">7.</div>
+<div id="t17_137" class="t s1_137">Perform Eid Salaat at the Eidgaah. (place for Eid salah) </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg137Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg137"><object width="935" height="1210" data="137/137.svg" type="image/svg+xml" id="pdf137" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld137" type="text/javascript">
+
+var isIE = false;
+var f137 = [['t2_137',1528],['t3_137',1389],['t4_137',1688],['t5_137',2525],['t6_137',1772],['t8_137',2030],['t9_137',1026],['ta_137',834],['tb_137',1095],['td_137',2534],['te_137',2576],['tf_137',603],['th_137',1612],['tj_137',1759],['tl_137',2621],['tm_137',583],['to_137',1074],['tp_137',2651],['tr_137',2701],['ts_137',1316],['tt_137',916],['tv_137',657],['tx_137',751],['tz_137',511],['t11_137',933],['t13_137',1191],['t15_137',184],['t17_137',1361]];
+function load137(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f137);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 44;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_137");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page166</title>
+</head>
+
+<body onload="load166()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_166{left:456px;top:1136px;}
+#t2_166{left:128px;top:69px;}
+#t3_166{left:128px;top:83px;}
+#t4_166{left:128px;top:97px;}
+#t5_166{left:128px;top:127px;}
+#t6_166{left:128px;top:155px;}
+#t7_166{left:128px;top:169px;}
+#t8_166{left:128px;top:184px;}
+#t9_166{left:128px;top:213px;}
+#ta_166{left:128px;top:241px;}
+#tb_166{left:128px;top:270px;}
+#tc_166{left:128px;top:299px;}
+#td_166{left:128px;top:313px;}
+#te_166{left:245px;top:313px;}
+#tf_166{left:128px;top:328px;}
+#tg_166{left:331px;top:357px;}
+#th_166{left:380px;top:495px;}
+#ti_166{left:402px;top:511px;}
+#tj_166{left:128px;top:541px;}
+#tk_166{left:128px;top:569px;}
+#tl_166{left:409px;top:598px;}
+#tm_166{left:351px;top:721px;}
+#tn_166{left:750px;top:748px;}
+#to_166{left:128px;top:761px;}
+#tp_166{left:750px;top:775px;}
+#tq_166{left:128px;top:788px;}
+#tr_166{left:128px;top:817px;}
+#ts_166{left:128px;top:845px;}
+#tt_166{left:128px;top:860px;}
+#tu_166{left:128px;top:874px;}
+#tv_166{left:128px;top:903px;}
+#tw_166{left:128px;top:932px;}
+#tx_166{left:744px;top:946px;}
+#ty_166{left:128px;top:959px;}
+#tz_166{left:128px;top:973px;}
+#t10_166{left:760px;top:988px;}
+#t11_166{left:128px;top:1001px;}
+#t12_166{left:128px;top:1029px;}
+#t13_166{left:128px;top:1043px;}
+#t14_166{left:128px;top:1058px;}
+#t15_166{left:128px;top:1072px;}
+#t16_166{left:744px;top:1087px;}
+#t17_166{left:128px;top:1099px;}
+#t18_166{left:128px;top:1114px;}
+
+.s3_166{
+	FONT-SIZE: 48px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM166;
+	color: rgb(0,85,0);
+}
+
+.s1_166{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT166;
+	color: rgb(0,0,0);
+}
+
+.s5_166{
+	FONT-SIZE: 48px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM166;
+	color: rgb(50,50,50);
+}
+
+.s6_166{
+	FONT-SIZE: 42px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM166;
+	color: rgb(0,0,0);
+}
+
+.s2_166{
+	FONT-SIZE: 48px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT166;
+	color: rgb(0,0,0);
+}
+
+.s7_166{
+	FONT-SIZE: 42px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM166;
+	color: rgb(50,50,50);
+}
+
+.s4_166{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM166;
+	color: rgb(50,50,50);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM166;
+	src :url("166/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT166;
+	src :url("166/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_166" class="t s1_166">166</div>
+<div id="t2_166" class="t s2_166">Hars means to watch, protect or safeguard. This was next to where the door to the Prophet’s (P.B.U.H.) room used to be and is thus the </div>
+<div id="t3_166" class="t s2_166">place where, according to scholars, some of the Sa#abah used to sit when attending to the security of the Prophet (P.B.U.H.) at night. </div>
+<div id="t4_166" class="t s2_166">`Ali used to be the one who mostly acted as such, for which it is often called Ustuwanah `Ali. </div>
+<div id="t5_166" class="t s3_166">Ustuwanah Wufud </div>
+<div id="t6_166" class="t s2_166">Wufud means caravans or delegations. Scholars tell us that when tribal leaders or their representatives used to arrive wanting to meet </div>
+<div id="t7_166" class="t s2_166">Rasulullah on behalf of their tribes, they were attended to at this spot. It was also here that the Prophet (P.B.U.H.) used to teach Deen to </div>
+<div id="t8_166" class="t s2_166">them. </div>
+<div id="t9_166" class="t s3_166">Ustuwanah Tahajjud </div>
+<div id="ta_166" class="t s2_166">It has been noted that Rasulullah used to perform Tahajjud prayer at this spot and make excessive du`a’. </div>
+<div id="tb_166" class="t s3_166">Ustuwanah Jibril </div>
+<div id="tc_166" class="t s2_166">This has been marked as the place where Jibril used to visit Rasulullah. Today it cannot be seen as it lies inside the chamber of </div>
+<div id="td_166" class="t s2_166">Rasulullah (P.B.U.H.). </div>
+<div id="te_166" class="t s2_166">It is worth remembering that the entire area of the Masjid was walked and dwelled upon by the Prophet </div>
+<div id="tf_166" class="t s2_166">(P.B.U.H.) and his companions and is thus significant and of historical value to Muslims. </div>
+<div id="tg_166" class="t s4_166">DU`A’: FOR LEAVING THE MASJID </div>
+<div id="th_166" class="t s5_166">O Allah, I ask for Your favour.</div>
+<div id="ti_166" class="t s3_166">Other Places in Madinah </div>
+<div id="tj_166" class="t s3_166">Jannah al-Baqi` (or Baqi` al-Gharqad) </div>
+<div id="tk_166" class="t s2_166">This is the Graveyard of Madinah where rest many of the illustrious companions of the Prophet (P.B.U.H.). </div>
+<div id="tl_166" class="t s4_166">Du`a’: At Baqi` </div>
+<div id="tm_166" class="t s5_166">Peace be upon you, O inhabitants of Baqi`</div>
+<div id="tn_166" class="t s6_166">al-Hakim</div>
+<div id="to_166" class="t s2_166">Make du`a’ for it’s inhabitants and pray for their forgiveness, as this was the practice of the Prophet (P.B.U.H.). </div>
+<div id="tp_166" class="t s6_166">al-Hakim</div>
+<div id="tq_166" class="t s2_166">Many buried here are those whom Allah had used to propagate His Deen. Through their efforts we have directly benefitted. </div>
+<div id="tr_166" class="t s3_166">Badr: </div>
+<div id="ts_166" class="t s2_166">The town of Badr is 12km to the south of Madinah. It is the place where in the second year of Hijrah a small army of very ill-equipped </div>
+<div id="tt_166" class="t s2_166">Muslims (313 in total) defeated the Pagan Arabs who had an army over three times the size and several times better equipped than their </div>
+<div id="tu_166" class="t s2_166">own. </div>
+<div id="tv_166" class="t s3_166">Mount Uhud: </div>
+<div id="tw_166" class="t s2_166">Regarding the mountain of Uhud, the Prophet (P.B.U.H.) has stated, “Uhud is a mountain that loves us, and we love it.” </div>
+<div id="tx_166" class="t s6_166">Ibn Majah</div>
+<div id="ty_166" class="t s2_166">There one should visit the graves of the martyrs of Uhud. The most well-known of whom is the uncle of the Prophet (P.B.U.H.), </div>
+<div id="tz_166" class="t s2_166">Hamzah (R.A.). </div>
+<div id="t10_166" class="t s7_166">Ahmad</div>
+<div id="t11_166" class="t s3_166">Masjid Quba / Taqwa </div>
+<div id="t12_166" class="t s2_166">This was the first Masjid built by the Muslims. It is situated in a village called Quba on the outskirts of Madinah, therefore a taxi will be </div>
+<div id="t13_166" class="t s2_166">needed to get there. Before going one should make sure one is in a state of purity. </div>
+<div id="t14_166" class="t s2_166">It is Sunnah to visit on Saturday and perform two rak`ahs in the Masjid. In a Hadith it is mentioned that the Prophet (P.B.U.H.) used to </div>
+<div id="t15_166" class="t s2_166">visit Masjid Quba every Saturday. </div>
+<div id="t16_166" class="t s6_166">al-Bukhari</div>
+<div id="t17_166" class="t s2_166">It has also been mentioned that the Messenger (P.B.U.H.) has said, ‘Whoever purifies him (or her) self at home and then goes to Masjid </div>
+<div id="t18_166" class="t s2_166">Quba and performs Salah, for him is a reward likened to that of `Umrah.’ </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg166Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg166"><object width="935" height="1210" data="166/166.svg" type="image/svg+xml" id="pdf166" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld166" type="text/javascript">
+
+var isIE = false;
+var f166 = [['t2_166',2635],['t3_166',2599],['t4_166',1827],['t5_166',395],['t6_166',2597],['t7_166',2653],['t9_166',444],['ta_166',2033],['tb_166',362],['tc_166',2473],['td_166',444],['te_166',2015],['tf_166',1744],['tg_166',1036],['th_166',647],['ti_166',521],['tj_166',808],['tk_166',2098],['tl_166',409],['tm_166',875],['to_166',2185],['tq_166',2411],['ts_166',2628],['tt_166',2644],['tv_166',285],['tw_166',2340],['tx_166',196],['ty_166',2504],['tz_166',310],['t11_166',457],['t12_166',2660],['t13_166',1595],['t14_166',2631],['t15_166',667],['t17_166',2649],['t18_166',1428]];
+function load166(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f166);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 45;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_166");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

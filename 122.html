@@ -1,0 +1,281 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page122</title>
+</head>
+
+<body onload="load122()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_122{left:456px;top:1136px;}
+#t2_122{left:137px;top:54px;}
+#t3_122{left:165px;top:54px;}
+#t4_122{left:137px;top:87px;}
+#t5_122{left:165px;top:87px;}
+#t6_122{left:137px;top:120px;}
+#t7_122{left:165px;top:120px;}
+#t8_122{left:137px;top:153px;}
+#t9_122{left:165px;top:153px;}
+#ta_122{left:137px;top:186px;}
+#tb_122{left:165px;top:186px;}
+#tc_122{left:137px;top:220px;}
+#td_122{left:165px;top:220px;}
+#te_122{left:137px;top:253px;}
+#tf_122{left:165px;top:253px;}
+#tg_122{left:137px;top:286px;}
+#th_122{left:165px;top:286px;}
+#ti_122{left:360px;top:311px;}
+#tj_122{left:433px;top:332px;}
+#tk_122{left:354px;top:354px;}
+#tl_122{left:110px;top:383px;}
+#tm_122{left:110px;top:404px;}
+#tn_122{left:110px;top:441px;}
+#to_122{left:110px;top:462px;}
+#tp_122{left:110px;top:483px;}
+#tq_122{left:110px;top:505px;}
+#tr_122{left:110px;top:541px;}
+#ts_122{left:110px;top:563px;}
+#tt_122{left:110px;top:584px;}
+#tu_122{left:110px;top:621px;}
+#tv_122{left:110px;top:657px;}
+#tw_122{left:110px;top:694px;}
+#tx_122{left:110px;top:715px;}
+#ty_122{left:110px;top:752px;}
+#tz_122{left:138px;top:789px;}
+#t10_122{left:165px;top:789px;}
+#t11_122{left:165px;top:806px;}
+#t12_122{left:138px;top:840px;}
+#t13_122{left:165px;top:840px;}
+#t14_122{left:165px;top:857px;}
+#t15_122{left:165px;top:875px;}
+#t16_122{left:110px;top:908px;}
+#t17_122{left:138px;top:945px;}
+#t18_122{left:165px;top:945px;}
+#t19_122{left:138px;top:978px;}
+#t1a_122{left:165px;top:978px;}
+#t1b_122{left:138px;top:1011px;}
+#t1c_122{left:165px;top:1011px;}
+#t1d_122{left:138px;top:1044px;}
+#t1e_122{left:165px;top:1044px;}
+#t1f_122{left:138px;top:1077px;}
+#t1g_122{left:165px;top:1077px;}
+#t1h_122{left:138px;top:1110px;}
+#t1i_122{left:165px;top:1110px;}
+
+.s1_122{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT122;
+	color: rgb(0,0,0);
+}
+
+.s3_122{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT122;
+	color: rgb(0,0,0);
+}
+
+.s2_122{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM122;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM122;
+	src :url("122/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT122;
+	src :url("122/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_122" class="t s1_122">122</div>
+<div id="t2_122" class="t s1_122">24.</div>
+<div id="t3_122" class="t s1_122">Where should a woman make ITIKAAF? </div>
+<div id="t4_122" class="t s1_122">25.</div>
+<div id="t5_122" class="t s1_122">Taraaweeh Salaah is (Farz, Sunnate Muakkadah, and Wajib) for (men only, women only, both). </div>
+<div id="t6_122" class="t s1_122">26.</div>
+<div id="t7_122" class="t s1_122">How should one read the Tasbih after every four Rak'aats? </div>
+<div id="t8_122" class="t s1_122">27.</div>
+<div id="t9_122" class="t s1_122">How is it to perform Taraaweeh seated? </div>
+<div id="ta_122" class="t s1_122">28.</div>
+<div id="tb_122" class="t s1_122">Mention 3 virtues of Fasting. </div>
+<div id="tc_122" class="t s1_122">29.</div>
+<div id="td_122" class="t s1_122">Mention 4 Sunnats of Fasting. </div>
+<div id="te_122" class="t s1_122">30.</div>
+<div id="tf_122" class="t s1_122">What does fasting teach a Muslim? </div>
+<div id="tg_122" class="t s1_122">31.</div>
+<div id="th_122" class="t s1_122">Mention 7 "Don’ts" of Ramadhaaan. </div>
+<div id="ti_122" class="t s2_122">Zakat (Obligatory Charity) </div>
+<div id="tj_122" class="t s3_122">PART 12 </div>
+<div id="tk_122" class="t s3_122">IMPORTANCE OF ZAKAAT </div>
+<div id="tl_122" class="t s3_122">Zakat is a monetary devotion and an Ibaadat that has been ordained in the Shariat of all the </div>
+<div id="tm_122" class="t s3_122">Ambiya (Peace be upon them). Zakat is one of the five pillars of Islam. </div>
+<div id="tn_122" class="t s3_122">Zakat literally means to increase. Technically it means to purify one's position of wealth by </div>
+<div id="to_122" class="t s3_122">distributing a prescribed amount which has to be given to the poor as a fundamental Ibaadat. </div>
+<div id="tp_122" class="t s3_122">Zakat is not a governmental tax, but its main purpose is to keep those who are wealthy clean </div>
+<div id="tq_122" class="t s3_122">monetarily from sins. </div>
+<div id="tr_122" class="t s3_122">Zakat was made compulsory at Makkah at the same time as Salaat. This can be seen in the Suras </div>
+<div id="ts_122" class="t s3_122">of the Qur'an where the laws of Zakat are mentioned. The amount, distribution, etc. was defined </div>
+<div id="tt_122" class="t s3_122">at Madinah in the second year of Hijri. </div>
+<div id="tu_122" class="t s2_122">THE VIRTUES OF ZAKAAT.</div>
+<div id="tv_122" class="t s3_122">Allah Ta’aala says in the Qur’an; </div>
+<div id="tw_122" class="t s3_122">"Allah destroys wealth obtained from interest and will give increase for deed of charity". Surah </div>
+<div id="tx_122" class="t s3_122">Baqarah: 276 </div>
+<div id="ty_122" class="t s3_122">Rasulullah S.A.W. has said; </div>
+<div id="tz_122" class="t s1_122">1.</div>
+<div id="t10_122" class="t s1_122">"The nation that does not give Zakat, Allah will bring about a drought on them (i. e. necessities of life will </div>
+<div id="t11_122" class="t s1_122">become scarce)" </div>
+<div id="t12_122" class="t s1_122">2.</div>
+<div id="t13_122" class="t s1_122">"The persons on whom Allah has bestowed, wealth, and he does not give Zakat, on the Day ofJudgement, </div>
+<div id="t14_122" class="t s1_122">this wealth will turned into a venomous bald serpent which will wind around his neck and, bite his jaws </div>
+<div id="t15_122" class="t s1_122">and,, say: "I am your wealth, I am your treasure" (Bukhari) </div>
+<div id="t16_122" class="t s3_122">It is stated in the Hadith that by giving Zakat the following benefits are derived : </div>
+<div id="t17_122" class="t s1_122">1.</div>
+<div id="t18_122" class="t s1_122">Gaining of the pleasure of Allah. </div>
+<div id="t19_122" class="t s1_122">2.</div>
+<div id="t1a_122" class="t s1_122">Increase in wealth; </div>
+<div id="t1b_122" class="t s1_122">3.</div>
+<div id="t1c_122" class="t s1_122">Protection from losses; </div>
+<div id="t1d_122" class="t s1_122">4.</div>
+<div id="t1e_122" class="t s1_122">A cause thus established for Allah's forgiveness and blessings are obtained; </div>
+<div id="t1f_122" class="t s1_122">5.</div>
+<div id="t1g_122" class="t s1_122">Safety from calamities; </div>
+<div id="t1h_122" class="t s1_122">6.</div>
+<div id="t1i_122" class="t s1_122">Protection from the wrath of Allah and from a bad death; </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg122Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg122"><object width="935" height="1210" data="122/122.svg" type="image/svg+xml" id="pdf122" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld122" type="text/javascript">
+
+var isIE = false;
+var f122 = [['t3_122',1017],['t5_122',2351],['t7_122',1441],['t9_122',981],['tb_122',714],['td_122',741],['tf_122',863],['th_122',899],['ti_122',860],['tj_122',278],['tk_122',906],['tl_122',2669],['tm_122',2088],['tn_122',2682],['to_122',2715],['tp_122',2712],['tq_122',629],['tr_122',2834],['ts_122',2819],['tt_122',1137],['tu_122',967],['tv_122',977],['tw_122',2798],['tx_122',393],['ty_122',823],['t10_122',2608],['t11_122',403],['t13_122',2596],['t14_122',2543],['t15_122',1447],['t16_122',2364],['t18_122',807],['t1a_122',462],['t1c_122',564],['t1e_122',1851],['t1g_122',569],['t1i_122',1399]];
+function load122(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f122);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 55;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_122");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

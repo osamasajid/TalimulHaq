@@ -1,0 +1,287 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page132</title>
+</head>
+
+<body onload="load132()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_132{left:456px;top:1136px;}
+#t2_132{left:110px;top:54px;}
+#t3_132{left:110px;top:87px;}
+#t4_132{left:110px;top:108px;}
+#t5_132{left:110px;top:130px;}
+#t6_132{left:138px;top:167px;}
+#t7_132{left:165px;top:167px;}
+#t8_132{left:138px;top:202px;}
+#t9_132{left:165px;top:202px;}
+#ta_132{left:138px;top:236px;}
+#tb_132{left:165px;top:236px;}
+#tc_132{left:138px;top:270px;}
+#td_132{left:165px;top:270px;}
+#te_132{left:110px;top:303px;}
+#tf_132{left:110px;top:339px;}
+#tg_132{left:110px;top:361px;}
+#th_132{left:110px;top:382px;}
+#ti_132{left:110px;top:419px;}
+#tj_132{left:110px;top:452px;}
+#tk_132{left:110px;top:473px;}
+#tl_132{left:110px;top:509px;}
+#tm_132{left:110px;top:531px;}
+#tn_132{left:110px;top:567px;}
+#to_132{left:110px;top:600px;}
+#tp_132{left:110px;top:622px;}
+#tq_132{left:110px;top:658px;}
+#tr_132{left:110px;top:680px;}
+#ts_132{left:110px;top:701px;}
+#tt_132{left:110px;top:738px;}
+#tu_132{left:110px;top:771px;}
+#tv_132{left:138px;top:807px;}
+#tw_132{left:165px;top:807px;}
+#tx_132{left:138px;top:840px;}
+#ty_132{left:165px;top:840px;}
+#tz_132{left:165px;top:858px;}
+#t10_132{left:165px;top:876px;}
+#t11_132{left:165px;top:894px;}
+#t12_132{left:165px;top:912px;}
+#t13_132{left:138px;top:945px;}
+#t14_132{left:165px;top:945px;}
+#t15_132{left:165px;top:963px;}
+#t16_132{left:165px;top:981px;}
+#t17_132{left:165px;top:999px;}
+#t18_132{left:165px;top:1017px;}
+#t19_132{left:138px;top:1050px;}
+#t1a_132{left:165px;top:1050px;}
+#t1b_132{left:165px;top:1068px;}
+#t1c_132{left:165px;top:1085px;}
+
+.s1_132{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT132;
+	color: rgb(0,0,0);
+}
+
+.s4_132{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: TimesNewRomanPS-ItalicMT;
+	color: rgb(0,0,0);
+	FONT-STYLE: italic;
+}
+
+.s3_132{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT132;
+	color: rgb(0,0,0);
+}
+
+.s2_132{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT132;
+	color: rgb(0,0,0);
+}
+
+.s5_132{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NJAOCH-TimesNewRomanPS-BoldM132;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJAOCH-TimesNewRomanPS-BoldM132;
+	src :url("132/fonts/NJAOCH-TimesNewRomanPS-BoldM.woff") format("woff");
+}
+
+@font-face {
+	font-family: NJIKOL-SymbolMT132;
+	src :url("132/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT132;
+	src :url("132/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_132" class="t s1_132">132</div>
+<div id="t2_132" class="t s1_132">Tirmizi &amp; Ibn Maajah. </div>
+<div id="t3_132" class="t s2_132">It is related from Ibn Abbas (R.A) that Rasulullah (S.A.W.) said: "No days are as weighty with </div>
+<div id="t4_132" class="t s2_132">Allah and so liked by Him for good deeds than the first ten days of Zil Hijjah. So in these days </div>
+<div id="t5_132" class="t s2_132">increasingly read: </div>
+<div id="t6_132" class="t s3_132">•</div>
+<div id="t7_132" class="t s1_132">TASBEEH (Subhanallah) </div>
+<div id="t8_132" class="t s3_132">•</div>
+<div id="t9_132" class="t s1_132">TAHLEEI (Lailaha Illallah) </div>
+<div id="ta_132" class="t s3_132">•</div>
+<div id="tb_132" class="t s1_132">TAHMEED (Alhamdulillah) </div>
+<div id="tc_132" class="t s3_132">•</div>
+<div id="td_132" class="t s1_132">TAKBEER (Allahu Akbar) </div>
+<div id="te_132" class="t s2_132">THE FAST OF YOWM - E - ARAFAH </div>
+<div id="tf_132" class="t s2_132">Hazrat Abu Qataadah al-Ansari (R.A.) relates that Rasulullah (S.A.W.) was asked about the </div>
+<div id="tg_132" class="t s2_132">Saum (fast) on the day of Arafah (i.e. the 9th Zill Hijjah). He said: "It compensates for the minor </div>
+<div id="th_132" class="t s2_132">sins of the past year and the coming year." </div>
+<div id="ti_132" class="t s1_132">Muslim. </div>
+<div id="tj_132" class="t s2_132">Rasulullah (S.A.W.) has said: "The most acceptable Dutaa is that which is made on the day of </div>
+<div id="tk_132" class="t s2_132">A'afah, and the best Du'aa which the Prophets before me, and 1, have made is: </div>
+<div id="tl_132" class="t s4_132">("There is no Deity besides Allah, He is alone. He has no partner. To Him belongs the </div>
+<div id="tm_132" class="t s4_132">sovereignty, and unto Him belongs all praise, and He is all-powerful.) </div>
+<div id="tn_132" class="t s1_132">[Tirmizi] </div>
+<div id="to_132" class="t s2_132">It is related that Rasulullah (S.A.W.) said: "Whoever stays awake and make Ibaadat on the nights </div>
+<div id="tp_132" class="t s2_132">of Eidul Fitr and Eidul Adhaa, his heart will not die on the day when all the hearts will be dead." </div>
+<div id="tq_132" class="t s2_132">Hazrat Muaaz ibn Jabal (R.A.) relates that Rasulullah (S.A.W.) said,: "Jannat is Waajib for those </div>
+<div id="tr_132" class="t s2_132">who stay awake with the intention of making Ibaadat on the following nights: 8th, 9th and 10th </div>
+<div id="ts_132" class="t s2_132">of Zil Hijjah, the night of Eidul Fitr and the night of the 15th of Sha'baan." </div>
+<div id="tt_132" class="t s1_132">[Targheeb]. </div>
+<div id="tu_132" class="t s5_132">THE IMPORTANCE OF QURBANI</div>
+<div id="tv_132" class="t s1_132">1.</div>
+<div id="tw_132" class="t s1_132">It is not their meat, nor their blood that reaches Allah. It is your piety that reaches Him: QURAN. </div>
+<div id="tx_132" class="t s1_132">2.</div>
+<div id="ty_132" class="t s1_132">It is related from Hadrat Ayesha (R.A.) that Rasulullah (Salallaho Alaihe Wa Sallam) has said: "There is </div>
+<div id="tz_132" class="t s1_132">nothing dearer to Allah during the days of Qurbani than the sacrific-ing of animals. The sacrificed animal </div>
+<div id="t10_132" class="t s1_132">shall come on the day of Qiyamah with its horns, hair and hooves (to be weighed in Sawaab). The sacrifice </div>
+<div id="t11_132" class="t s1_132">is accepted by Allah before the blood reaches the ground. Therefore sacrifice with an open and happy </div>
+<div id="t12_132" class="t s1_132">heart." </div>
+<div id="t13_132" class="t s1_132">3.</div>
+<div id="t14_132" class="t s1_132">Hadrat Zaid ibn Arqam R.A. relates that the companions of Rasulullah (Salallaho Alaihe Wa Sallam) </div>
+<div id="t15_132" class="t s1_132">asked: "O Rasulullah what is Qurbani?" He replied: "It is the Sunnah of your father Ibrahim." They asked </div>
+<div id="t16_132" class="t s1_132">again: "What benefit do we get from it?" He answered, "A reward for every hair of the sacrificed animal." </div>
+<div id="t17_132" class="t s1_132">"And what reward is there for ani-mals with wool? they aksed. "A reward for every fibre of the wool," </div>
+<div id="t18_132" class="t s1_132">replied the Holy Prophet (Salallaho Alaihe wa Sallam). </div>
+<div id="t19_132" class="t s1_132">4.</div>
+<div id="t1a_132" class="t s1_132">Rasulullah (Salallaho Alaihe Wa Salllam) has said: "The person who makes Qurbani with a willing heart </div>
+<div id="t1b_132" class="t s1_132">and with the niyyat of Sawaab, then on the day of Judgement that Qurbani will shield him from the fires of </div>
+<div id="t1c_132" class="t s1_132">Hell." Every Muslim should take advantage of this opportunity and sacrifice as many animals as he can </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg132Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg132"><object width="935" height="1210" data="132/132.svg" type="image/svg+xml" id="pdf132" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld132" type="text/javascript">
+
+var isIE = false;
+var f132 = [['t2_132',557],['t3_132',2785],['t4_132',2778],['t5_132',524],['t7_132',635],['t9_132',687],['tb_132',709],['td_132',674],['te_132',1177],['tf_132',2697],['tg_132',2840],['th_132',1247],['tj_132',2759],['tk_132',2297],['tl_132',2532],['tm_132',2065],['to_132',2855],['tp_132',2836],['tq_132',2843],['tr_132',2795],['ts_132',2189],['tu_132',1165],['tw_132',2387],['ty_132',2563],['tz_132',2586],['t10_132',2627],['t11_132',2493],['t14_132',2481],['t15_132',2590],['t16_132',2600],['t17_132',2516],['t18_132',1354],['t1a_132',2573],['t1b_132',2619],['t1c_132',2534]];
+function load132(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f132);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 49;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_132");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>

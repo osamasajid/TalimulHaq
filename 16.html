@@ -1,0 +1,299 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>Taleem_Ul_Haq Page16</title>
+</head>
+
+<body onload="load16()">
+<script type='text/javascript'>
+function adjustWordSpacing(widths) {
+    var i, allLinesDone = false;
+    var isDone = [];
+    var currentSpacing = [];
+    var elements = [];
+    
+    // Initialise arrays
+    for (i = 0; i < widths.length; i++) {
+        elements[i] = document.getElementById(widths[i][0]);
+        if (isIE) widths[i][1] = widths[i][1] * 4;
+        currentSpacing[i] = Math.floor((widths[i][1] - elements[i].offsetWidth) / elements[i].innerHTML.match(/\s.|&nbsp;./g).length);//min
+        if (isIE) currentSpacing[i] = Math.floor(currentSpacing[i] / 4);
+        isDone[i] = false;
+    }
+    
+    while (!allLinesDone) {
+        // Add each adjustment to the render queue without forcing a render
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i]) {
+                elements[i].style.wordSpacing = currentSpacing[i] + 'px';
+            }            
+        }
+        
+        allLinesDone = true;
+        // If elements still need to be wider, add 1 to the word spacing
+        for (i = 0; i < widths.length; i++) {
+            if (!isDone[i] && currentSpacing[i] < 160) {
+                if (elements[i].offsetWidth >= widths[i][1]) {
+                    isDone[i] = true;
+                } else {
+                    currentSpacing[i]++;
+                    allLinesDone = false;
+                }
+            }
+        }
+    }
+    
+    for (i = 0; i < widths.length; i++) {
+        elements[i].style.wordSpacing = (currentSpacing[i] - 1) + 'px';
+    }
+}
+
+</script>
+
+<div id="jpedal" style="position:absolute;left:0px;top:0px; width: 935px; height: 1210px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	position: absolute;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position:absolute;
+	white-space:nowrap;
+	overflow:visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+<!-- Begin shared JS -->
+<script type="text/javascript">
+
+// Ensure that we're not replacing any onload events
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+<!-- End shared JS -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_16{left:460px;top:1136px;}
+#t2_16{left:246px;top:58px;}
+#t3_16{left:703px;top:58px;}
+#t4_16{left:110px;top:87px;}
+#t5_16{left:110px;top:118px;}
+#t6_16{left:138px;top:165px;}
+#t7_16{left:165px;top:165px;}
+#t8_16{left:165px;top:191px;}
+#t9_16{left:138px;top:232px;}
+#ta_16{left:165px;top:232px;}
+#tb_16{left:165px;top:259px;}
+#tc_16{left:110px;top:300px;}
+#td_16{left:138px;top:348px;}
+#te_16{left:165px;top:348px;}
+#tf_16{left:138px;top:390px;}
+#tg_16{left:165px;top:390px;}
+#th_16{left:138px;top:433px;}
+#ti_16{left:165px;top:433px;}
+#tj_16{left:138px;top:475px;}
+#tk_16{left:165px;top:475px;}
+#tl_16{left:110px;top:516px;}
+#tm_16{left:110px;top:563px;}
+#tn_16{left:110px;top:594px;}
+#to_16{left:110px;top:626px;}
+#tp_16{left:120px;top:665px;}
+#tq_16{left:185px;top:665px;}
+#tr_16{left:414px;top:665px;}
+#ts_16{left:120px;top:690px;}
+#tt_16{left:198px;top:690px;}
+#tu_16{left:414px;top:690px;}
+#tv_16{left:120px;top:715px;}
+#tw_16{left:193px;top:715px;}
+#tx_16{left:414px;top:715px;}
+#ty_16{left:120px;top:740px;}
+#tz_16{left:205px;top:740px;}
+#t10_16{left:384px;top:740px;}
+#t11_16{left:120px;top:766px;}
+#t12_16{left:198px;top:766px;}
+#t13_16{left:414px;top:766px;}
+#t14_16{left:120px;top:791px;}
+#t15_16{left:195px;top:791px;}
+#t16_16{left:414px;top:791px;}
+#t17_16{left:120px;top:816px;}
+#t18_16{left:407px;top:816px;}
+#t19_16{left:120px;top:841px;}
+#t1a_16{left:150px;top:841px;}
+#t1b_16{left:407px;top:841px;}
+#t1c_16{left:120px;top:866px;}
+#t1d_16{left:169px;top:866px;}
+#t1e_16{left:407px;top:866px;}
+#t1f_16{left:116px;top:892px;}
+#t1g_16{left:164px;top:892px;}
+#t1h_16{left:217px;top:909px;}
+#t1i_16{left:407px;top:892px;}
+#t1j_16{left:138px;top:945px;}
+#t1k_16{left:165px;top:945px;}
+#t1l_16{left:165px;top:971px;}
+#t1m_16{left:138px;top:1014px;}
+#t1n_16{left:165px;top:1014px;}
+#t1o_16{left:165px;top:1040px;}
+#t1p_16{left:138px;top:1082px;}
+#t1q_16{left:165px;top:1082px;}
+#t1r_16{left:165px;top:1108px;}
+
+.s1_16{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT16;
+	color: rgb(0,0,0);
+}
+
+.s3_16{
+	FONT-SIZE: 61px;
+	FONT-FAMILY: NJIKOL-SymbolMT16;
+	color: rgb(0,0,0);
+}
+
+.s2_16{
+	FONT-SIZE: 73px;
+	FONT-FAMILY: NINLBE-TimesNewRomanPSMT16;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style type="text/css" >
+
+@font-face {
+	font-family: NJIKOL-SymbolMT16;
+	src :url("16/fonts/NJIKOL-SymbolMT.woff") format("woff");
+}
+
+@font-face {
+	font-family: NINLBE-TimesNewRomanPSMT16;
+	src :url("16/fonts/NINLBE-TimesNewRomanPSMT.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_16" class="t s1_16">16</div>
+<div id="t2_16" class="t s1_16">Singular : Sahaabi </div>
+<div id="t3_16" class="t s1_16">Plural : Sahabah. </div>
+<div id="t4_16" class="t s2_16">Any person who was in the companionship of saw NABI (S.A.W) for even a very little while is a </div>
+<div id="t5_16" class="t s2_16">Sahaabi provided he or she died as MUSLIM. </div>
+<div id="t6_16" class="t s1_16">1.</div>
+<div id="t7_16" class="t s1_16">Rasulullah (S.A.W.) mentioned : "All the Sahaabah are just and pious and whomsoever amongst them you </div>
+<div id="t8_16" class="t s1_16">shall follow you shall be guided." </div>
+<div id="t9_16" class="t s1_16">2.</div>
+<div id="ta_16" class="t s1_16">The highest rank amongst the Sahaabah is that of Hazrat ABU BAKR (RA). His position is superior to the </div>
+<div id="tb_16" class="t s1_16">entire Ummah (followers) of Rasulullah (Sallallaho-Alaihe-Wa-Sallam) till the day of Judgement. </div>
+<div id="tc_16" class="t s2_16">Next in rank is </div>
+<div id="td_16" class="t s3_16">•</div>
+<div id="te_16" class="t s1_16">Hazrat UMAR bin KHATTAB Radiallahuanhu. </div>
+<div id="tf_16" class="t s3_16">•</div>
+<div id="tg_16" class="t s1_16">Thereafter is the position of </div>
+<div id="th_16" class="t s3_16">•</div>
+<div id="ti_16" class="t s1_16">Hazrat USMAN Radiallahuanhu and then </div>
+<div id="tj_16" class="t s3_16">•</div>
+<div id="tk_16" class="t s1_16">Hazrat ALI KARRAMALLAHO WAJHAHU. </div>
+<div id="tl_16" class="t s2_16">Thereafter the position of the other Sahaabah is best known by ALLAH TA'ALA alone. </div>
+<div id="tm_16" class="t s2_16">3. Amongst the Sahaabah is a group of TEN companions regarding whom NABI (S.A.W.) gave </div>
+<div id="tn_16" class="t s2_16">the glad tiding of JANNAT (Paradise). These are known as the ASHARA-E-</div>
+<div id="to_16" class="t s2_16">MUBASHSHARAH (the ten who have been given the glad tidings of JANNAT) they are : </div>
+<div id="tp_16" class="t s1_16">1. </div>
+<div id="tq_16" class="t s1_16">Hazrat Abu Bakr  </div>
+<div id="tr_16" class="t s1_16">(Radiallahuanh) </div>
+<div id="ts_16" class="t s1_16">2. </div>
+<div id="tt_16" class="t s1_16">Hazrat Umar </div>
+<div id="tu_16" class="t s1_16">(Radiallahuanh) </div>
+<div id="tv_16" class="t s1_16">3. </div>
+<div id="tw_16" class="t s1_16">Hazrat Usman  </div>
+<div id="tx_16" class="t s1_16">(Radiallahuanh) </div>
+<div id="ty_16" class="t s1_16">4. </div>
+<div id="tz_16" class="t s1_16">Hazrat Ali  </div>
+<div id="t10_16" class="t s1_16">(Karramallaho Wajhahu). </div>
+<div id="t11_16" class="t s1_16">5. </div>
+<div id="t12_16" class="t s1_16">Hazrat Talha </div>
+<div id="t13_16" class="t s1_16">(Radiallahuanh) </div>
+<div id="t14_16" class="t s1_16">6. </div>
+<div id="t15_16" class="t s1_16">Hazrat Zubair  </div>
+<div id="t16_16" class="t s1_16">(Radiallahuanh) </div>
+<div id="t17_16" class="t s1_16">7. Hazrat Abdur Rahman bin Auf </div>
+<div id="t18_16" class="t s1_16">(Radiyallahu-anh) </div>
+<div id="t19_16" class="t s1_16">8. </div>
+<div id="t1a_16" class="t s1_16">Hazrat Saad bin abi Waqqas  </div>
+<div id="t1b_16" class="t s1_16">(Radiyallahu-anh) </div>
+<div id="t1c_16" class="t s1_16">9. </div>
+<div id="t1d_16" class="t s1_16">Hazrat Saeed bin Zaid  </div>
+<div id="t1e_16" class="t s1_16">(Radiyallahu-anh) </div>
+<div id="t1f_16" class="t s1_16">10. </div>
+<div id="t1g_16" class="t s1_16">Hazrat abu Ubaidah bin </div>
+<div id="t1h_16" class="t s1_16">Jarrah.  </div>
+<div id="t1i_16" class="t s1_16">(Radiyallahu-anh) </div>
+<div id="t1j_16" class="t s3_16">•</div>
+<div id="t1k_16" class="t s1_16">It is from the Sahaaba the world learnt the DEEN of ISLAM. It is from them that we established the </div>
+<div id="t1l_16" class="t s1_16">SHARIAT and obtained the SUNNAH of our NABI (Sallallaahu-Alaihi-Wa-Sallam). </div>
+<div id="t1m_16" class="t s3_16">•</div>
+<div id="t1n_16" class="t s1_16">A non-Sahabi is not equal in rank to the LOWEST Sahaabi, even though the non-Sahaabi may be the </div>
+<div id="t1o_16" class="t s1_16">greatest WALI (pious friend of Allah). </div>
+<div id="t1p_16" class="t s3_16">•</div>
+<div id="t1q_16" class="t s1_16">It is COMPULSORY to show respect to all the sahaabah Radiyallahu anh and ABSTAIN from speaking ill </div>
+<div id="t1r_16" class="t s1_16">and criticizing the noble Sahaabah of Rasullah (Sallallaahu-Alaihi-Wa-Sallam). </div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg16Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg16"><object width="935" height="1210" data="16/16.svg" type="image/svg+xml" id="pdf16" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!-- Begin page loading JS -->
+<script id="ld16" type="text/javascript">
+
+var isIE = false;
+var f16 = [['t2_16',449],['t3_16',417],['t4_16',2856],['t5_16',1349],['t7_16',2613],['t8_16',825],['ta_16',2611],['tb_16',2402],['tc_16',434],['te_16',1180],['tg_16',681],['ti_16',1025],['tk_16',1152],['tl_16',2580],['tm_16',2809],['tn_16',2261],['to_16',2665],['tq_16',434],['tt_16',317],['tw_16',367],['tz_16',272],['t10_16',630],['t12_16',318],['t15_16',357],['t17_16',848],['t1a_16',710],['t1d_16',561],['t1g_16',584],['t1h_16',180],['t1k_16',2451],['t1l_16',2100],['t1n_16',2481],['t1o_16',951],['t1q_16',2629],['t1r_16',1953]];
+function load16(){
+	var timeout = 100;
+	if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) timeout = 500;
+	setTimeout(function() {adjustWordSpacing(f16);},timeout);
+}
+</script>
+<!--[if lt IE 9]><script type="text/javascript">
+isIE = true;
+
+var divCount = 64;
+for (var i = 1; i < divCount; i++) {
+	var div = document.getElementById("t" + i.toString(36) + "_16");
+	div.style.top = (div.offsetTop * 4) + "px";
+	div.style.left = (div.offsetLeft * 4) + "px";
+	div.style.zoom = "25%";}
+</script><![endif]-->
+<!-- End page loading JS -->
+
+</div>
+</body>
+</html>
